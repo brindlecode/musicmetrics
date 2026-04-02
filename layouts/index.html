@@ -37,22 +37,22 @@
     <div class="grid grid--4">
       <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
         <span class="stat-card__label">Spotify {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.spotify_global }}{{ .total }}{{ else }}--{{ end }}</span>
+        <span class="stat-card__value">{{ with site.Data.charts.spotify_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-youtube)">
         <span class="stat-card__label">YouTube {{ i18n "most_viewed" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.youtube_global }}{{ .total }}{{ else }}--{{ end }}</span>
+        <span class="stat-card__value">{{ with site.Data.charts.youtube_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily" }} {{ i18n "views" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-apple)">
         <span class="stat-card__label">Apple Music {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.apple_global }}{{ .total }}{{ else }}--{{ end }}</span>
+        <span class="stat-card__value">{{ with site.Data.charts.apple_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-deezer)">
         <span class="stat-card__label">Deezer {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.deezer_global }}{{ .total }}{{ else }}--{{ end }}</span>
+        <span class="stat-card__value">{{ with site.Data.charts.deezer_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
     </div>
