@@ -27,6 +27,16 @@ jobs:
       - name: Fetch Deezer Charts
         run: node scripts/fetch-deezer.js
 
+      - name: Verify Deezer data
+        run: |
+          echo "=== Deezer data check ==="
+          if [ -f data/charts/deezer_global.json ]; then
+            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/deezer_global.json')).tracks.length)")
+            echo "deezer_global.json: $TRACKS tracks"
+          else
+            echo "WARNING: deezer_global.json not found"
+          fi
+
       - name: Upload data artifact
         uses: actions/upload-artifact@v4
         with:
@@ -45,6 +55,16 @@ jobs:
 
       - name: Fetch Apple Music Charts
         run: node scripts/fetch-apple-music.js
+
+      - name: Verify Apple data
+        run: |
+          echo "=== Apple Music data check ==="
+          if [ -f data/charts/apple_global.json ]; then
+            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/apple_global.json')).tracks.length)")
+            echo "apple_global.json: $TRACKS tracks"
+          else
+            echo "WARNING: apple_global.json not found"
+          fi
 
       - name: Upload data artifact
         uses: actions/upload-artifact@v4
@@ -67,6 +87,16 @@ jobs:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: node scripts/fetch-spotify.js
+
+      - name: Verify Spotify data
+        run: |
+          echo "=== Spotify data check ==="
+          if [ -f data/charts/spotify_global.json ]; then
+            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/spotify_global.json')).tracks.length)")
+            echo "spotify_global.json: $TRACKS tracks"
+          else
+            echo "WARNING: spotify_global.json not found"
+          fi
 
       - name: Upload data artifact
         uses: actions/upload-artifact@v4
@@ -109,9 +139,20 @@ jobs:
 
       - name: Merge data
         run: |
-          # Merge all data into the data directory
+          echo "=== Merging artifacts ==="
+          ls -la data-artifacts/
           for dir in data-artifacts/*/; do
-            cp -r "$dir"* data/ 2>/dev/null || true
+            echo "Copying from $dir ..."
+            cp -rv "$dir"* data/ 2>&1 | tail -5
+          done
+          echo ""
+          echo "=== Final data/charts/ contents ==="
+          ls -la data/charts/ | head -30
+          echo ""
+          echo "=== Track counts ==="
+          for f in data/charts/*_global.json; do
+            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$f')).tracks.length)" 2>/dev/null || echo "ERROR")
+            echo "  $(basename $f): $TRACKS tracks"
           done
 
       - uses: actions/setup-node@v4

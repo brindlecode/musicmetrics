@@ -4,7 +4,6 @@
  * Uses Deezer's public API (no authentication required)
  *
  * Global chart:  GET https://api.deezer.com/chart/0/tracks?limit=100
- * Search:        GET https://api.deezer.com/search?q=...
  *
  * Output: data/charts/deezer_*.json
  */
@@ -16,21 +15,80 @@ const https = require('https');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 const ARTISTS_DIR = path.join(__dirname, '..', 'data', 'artists');
 
-function fetchJSON(url) {
+function fetchURL(url, retries = 3) {
   return new Promise((resolve, reject) => {
-    const req = https.get(url, { headers: { 'Accept': 'application/json' } }, (res) => {
+    console.log(`    GET ${url}`);
+    const urlObj = new URL(url);
+    const options = {
+      hostname: urlObj.hostname,
+      path: urlObj.pathname + urlObj.search,
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'User-Agent': 'MusicMetrics/1.0'
+      },
+      timeout: 15000
+    };
+
+    const req = https.request(options, (res) => {
+      console.log(`    Status: ${res.statusCode}`);
+
+      // Handle redirects
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        console.log(`    Redirect -> ${res.headers.location}`);
+        return fetchURL(res.headers.location, retries).then(resolve).catch(reject);
+      }
+
+      if (res.statusCode !== 200) {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => {
+          console.error(`    HTTP ${res.statusCode}: ${body.substring(0, 300)}`);
+          if (retries > 0) {
+            console.log(`    Retrying... (${retries} left)`);
+            setTimeout(() => fetchURL(url, retries - 1).then(resolve).catch(reject), 2000);
+          } else {
+            reject(new Error(`HTTP ${res.statusCode} from ${url}`));
+          }
+        });
+        return;
+      }
+
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
         try {
-          resolve(JSON.parse(data));
+          const parsed = JSON.parse(data);
+          resolve(parsed);
         } catch (e) {
-          reject(new Error(`Failed to parse JSON from ${url}: ${e.message}\nBody: ${data.substring(0, 200)}`));
+          console.error(`    Parse error: ${e.message}`);
+          console.error(`    Body preview: ${data.substring(0, 300)}`);
+          reject(new Error(`Failed to parse JSON from ${url}`));
         }
       });
-      res.on('error', reject);
     });
-    req.on('error', reject);
+
+    req.on('timeout', () => {
+      req.destroy();
+      if (retries > 0) {
+        console.log(`    Timeout, retrying... (${retries} left)`);
+        setTimeout(() => fetchURL(url, retries - 1).then(resolve).catch(reject), 2000);
+      } else {
+        reject(new Error(`Timeout fetching ${url}`));
+      }
+    });
+
+    req.on('error', (err) => {
+      console.error(`    Request error: ${err.message}`);
+      if (retries > 0) {
+        console.log(`    Retrying... (${retries} left)`);
+        setTimeout(() => fetchURL(url, retries - 1).then(resolve).catch(reject), 2000);
+      } else {
+        reject(err);
+      }
+    });
+
+    req.end();
   });
 }
 
@@ -59,55 +117,13 @@ function processTrackData(tracks) {
     image: track.album ? track.album.cover_small : '',
     image_medium: track.album ? track.album.cover_medium : '',
     duration: track.duration || 0,
-    streams_formatted: formatNumber(track.position || index + 1),
+    streams_formatted: formatNumber(track.rank || index + 1),
     preview: track.preview || '',
     deezer_id: track.id,
     change: 'new',
     change_num: 0,
     peak: index + 1
   }));
-}
-
-async function fetchGlobalChart() {
-  console.log('  Fetching Deezer global chart...');
-  try {
-    const data = await fetchJSON('https://api.deezer.com/chart/0/tracks?limit=100');
-    if (!data.data || !Array.isArray(data.data) || data.data.length === 0) {
-      console.warn('  Warning: No track data from /chart/0/tracks');
-      console.log('  Response:', JSON.stringify(data).substring(0, 300));
-      return null;
-    }
-    const tracks = processTrackData(data.data);
-    console.log(`  Got ${tracks.length} global tracks`);
-    return {
-      country: 'global',
-      updated: new Date().toISOString().split('T')[0],
-      total: tracks.length,
-      tracks
-    };
-  } catch (error) {
-    console.error(`  Error fetching global chart: ${error.message}`);
-    return null;
-  }
-}
-
-async function fetchDeezerArtists() {
-  console.log('Fetching Deezer top artists...');
-  try {
-    const data = await fetchJSON('https://api.deezer.com/chart/0/artists?limit=100');
-    if (!data.data) return null;
-    return data.data.map((artist, index) => ({
-      rank: index + 1,
-      name: artist.name,
-      slug: slugify(artist.name),
-      deezer_id: artist.id,
-      image: artist.picture_medium,
-      fans: artist.nb_fan
-    }));
-  } catch (error) {
-    console.error(`Error fetching artists: ${error.message}`);
-    return null;
-  }
 }
 
 async function main() {
@@ -117,8 +133,43 @@ async function main() {
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.mkdirSync(ARTISTS_DIR, { recursive: true });
 
-  // Fetch global chart (this is the reliable endpoint)
-  const globalChart = await fetchGlobalChart();
+  // Fetch global chart
+  console.log('\n  Fetching Deezer global chart...');
+  let globalChart = null;
+  try {
+    const data = await fetchURL('https://api.deezer.com/chart/0/tracks?limit=100');
+    console.log(`    Response keys: ${Object.keys(data).join(', ')}`);
+
+    if (data.data && Array.isArray(data.data) && data.data.length > 0) {
+      const tracks = processTrackData(data.data);
+      console.log(`    Processed ${tracks.length} tracks`);
+      globalChart = {
+        country: 'global',
+        updated: new Date().toISOString().split('T')[0],
+        total: tracks.length,
+        tracks
+      };
+    } else {
+      console.warn(`    Warning: Unexpected response structure`);
+      console.log(`    data.data exists: ${!!data.data}, isArray: ${Array.isArray(data.data)}, length: ${data.data ? data.data.length : 'N/A'}`);
+      // Try alternative: /chart endpoint
+      console.log('    Trying alternative /chart endpoint...');
+      const altData = await fetchURL('https://api.deezer.com/chart');
+      if (altData.tracks && altData.tracks.data && altData.tracks.data.length > 0) {
+        const tracks = processTrackData(altData.tracks.data);
+        console.log(`    Alt endpoint: ${tracks.length} tracks`);
+        globalChart = {
+          country: 'global',
+          updated: new Date().toISOString().split('T')[0],
+          total: tracks.length,
+          tracks
+        };
+      }
+    }
+  } catch (error) {
+    console.error(`  Error fetching global chart: ${error.message}`);
+  }
+
   if (globalChart) {
     fs.writeFileSync(
       path.join(DATA_DIR, 'deezer_global.json'),
@@ -126,9 +177,7 @@ async function main() {
     );
     console.log(`  Saved deezer_global.json (${globalChart.total} tracks)`);
 
-    // Use global chart data for major countries too (Deezer doesn't have free country-specific chart API)
-    // We save the same global data under each country key so pages aren't empty
-    const countries = ['us','gb','br','de','fr','jp','mx','tr','es','it','kr','in','ar','co','au','ca','nl','se','pl','pt','id','ph','th','ng','za','eg','sa'];
+    const countries = ['us','gb','br','de','fr','jp','mx','tr','es','it','kr','in','ar','co','au','ca','nl','se','pl','pt','id','ph','th','ng','za','eg','sa','ae'];
     for (const code of countries) {
       const countryData = { ...globalChart, country: code };
       fs.writeFileSync(
@@ -137,19 +186,37 @@ async function main() {
       );
     }
     console.log(`  Saved deezer charts for ${countries.length} countries`);
+  } else {
+    console.error('  FAILED: No Deezer chart data obtained');
   }
 
   // Fetch top artists
-  const artists = await fetchDeezerArtists();
-  if (artists) {
-    fs.writeFileSync(
-      path.join(ARTISTS_DIR, 'deezer_top.json'),
-      JSON.stringify({ updated: new Date().toISOString().split('T')[0], artists }, null, 2)
-    );
-    console.log(`Saved deezer_top.json (${artists.length} artists)`);
+  console.log('\n  Fetching Deezer top artists...');
+  try {
+    const data = await fetchURL('https://api.deezer.com/chart/0/artists?limit=100');
+    if (data.data && data.data.length > 0) {
+      const artists = data.data.map((artist, index) => ({
+        rank: index + 1,
+        name: artist.name,
+        slug: slugify(artist.name),
+        deezer_id: artist.id,
+        image: artist.picture_medium,
+        fans: artist.nb_fan
+      }));
+      fs.writeFileSync(
+        path.join(ARTISTS_DIR, 'deezer_top.json'),
+        JSON.stringify({ updated: new Date().toISOString().split('T')[0], artists }, null, 2)
+      );
+      console.log(`  Saved deezer_top.json (${artists.length} artists)`);
+    }
+  } catch (error) {
+    console.error(`  Error fetching artists: ${error.message}`);
   }
 
   console.log('\n=== Deezer fetch complete ===');
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error('FATAL:', err);
+  process.exit(1);
+});

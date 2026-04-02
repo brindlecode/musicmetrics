@@ -11,7 +11,6 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const querystring = require('querystring');
 
 const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 
@@ -38,20 +37,56 @@ const SPOTIFY_PLAYLISTS = {
 
 let accessToken = null;
 
-function httpsRequest(options, postData) {
+function httpsRequest(options, postData, retries = 3) {
   return new Promise((resolve, reject) => {
+    console.log(`    ${options.method || 'GET'} ${options.hostname}${options.path}`);
     const req = https.request(options, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
+        console.log(`    Status: ${res.statusCode}`);
         try {
-          resolve({ status: res.statusCode, data: JSON.parse(data) });
+          const parsed = JSON.parse(data);
+          if (res.statusCode === 429) {
+            const retryAfter = parseInt(res.headers['retry-after'] || '3');
+            console.log(`    Rate limited, waiting ${retryAfter}s...`);
+            setTimeout(() => httpsRequest(options, postData, retries).then(resolve).catch(reject), retryAfter * 1000);
+            return;
+          }
+          resolve({ status: res.statusCode, data: parsed });
         } catch (e) {
-          reject(new Error(`Parse error: ${e.message}\nBody: ${data.substring(0, 200)}`));
+          console.error(`    Parse error: ${e.message}`);
+          console.error(`    Body preview: ${data.substring(0, 300)}`);
+          if (retries > 0) {
+            console.log(`    Retrying... (${retries} left)`);
+            setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+          } else {
+            reject(new Error(`Parse error from ${options.hostname}${options.path}`));
+          }
         }
       });
     });
-    req.on('error', reject);
+
+    req.on('timeout', () => {
+      req.destroy();
+      if (retries > 0) {
+        console.log(`    Timeout, retrying... (${retries} left)`);
+        setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+      } else {
+        reject(new Error(`Timeout: ${options.hostname}${options.path}`));
+      }
+    });
+
+    req.on('error', (err) => {
+      console.error(`    Request error: ${err.message}`);
+      if (retries > 0) {
+        console.log(`    Retrying... (${retries} left)`);
+        setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+      } else {
+        reject(err);
+      }
+    });
+
     if (postData) req.write(postData);
     req.end();
   });
@@ -62,10 +97,13 @@ async function getSpotifyToken() {
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
-    console.error('Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET');
+    console.error('ERROR: Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET');
+    console.error(`  SPOTIFY_CLIENT_ID present: ${!!clientId}`);
+    console.error(`  SPOTIFY_CLIENT_SECRET present: ${!!clientSecret}`);
     return false;
   }
 
+  console.log(`  Client ID: ${clientId.substring(0, 4)}...${clientId.substring(clientId.length - 4)}`);
   const auth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
   const postData = 'grant_type=client_credentials';
 
@@ -78,49 +116,41 @@ async function getSpotifyToken() {
         'Authorization': `Basic ${auth}`,
         'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': Buffer.byteLength(postData),
-      }
+      },
+      timeout: 10000
     }, postData);
 
     if (response.status !== 200) {
-      console.error(`Auth failed: ${JSON.stringify(response.data)}`);
+      console.error(`  Auth failed (HTTP ${response.status}): ${JSON.stringify(response.data)}`);
       return false;
     }
 
     accessToken = response.data.access_token;
-    console.log('Spotify access token obtained');
+    console.log(`  Access token obtained (${accessToken.substring(0, 8)}...)`);
     return true;
   } catch (error) {
-    console.error(`Auth error: ${error.message}`);
+    console.error(`  Auth error: ${error.message}`);
     return false;
   }
 }
 
-function spotifyGet(endpoint) {
-  return new Promise((resolve, reject) => {
-    const req = https.get({
-      hostname: 'api.spotify.com',
-      path: `/v1${endpoint}`,
-      headers: { 'Authorization': `Bearer ${accessToken}` }
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          if (res.statusCode === 429) {
-            const retryAfter = parseInt(res.headers['retry-after'] || '2');
-            console.log(`  Rate limited, waiting ${retryAfter}s...`);
-            setTimeout(() => spotifyGet(endpoint).then(resolve).catch(reject), retryAfter * 1000);
-            return;
-          }
-          resolve(parsed);
-        } catch (e) {
-          reject(new Error(`Parse error: ${e.message}`));
-        }
-      });
-    });
-    req.on('error', reject);
-  });
+async function spotifyGet(endpoint) {
+  const response = await httpsRequest({
+    hostname: 'api.spotify.com',
+    path: `/v1${endpoint}`,
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+      'Accept': 'application/json'
+    },
+    timeout: 15000
+  }, null);
+
+  if (response.status !== 200) {
+    console.error(`    Spotify API error (HTTP ${response.status}): ${JSON.stringify(response.data).substring(0, 200)}`);
+    return null;
+  }
+  return response.data;
 }
 
 function slugify(str) {
@@ -131,13 +161,19 @@ function slugify(str) {
 }
 
 async function fetchPlaylistChart(countryCode, playlistId) {
-  console.log(`  Fetching Spotify chart for ${countryCode}...`);
+  console.log(`\n  Fetching Spotify chart for ${countryCode.toUpperCase()} (playlist: ${playlistId})...`);
 
   try {
     const data = await spotifyGet(`/playlists/${playlistId}?fields=name,tracks.items(track(name,artists,album(name,images),popularity,id,external_urls))`);
 
+    if (!data) {
+      console.warn(`    No response for ${countryCode}`);
+      return null;
+    }
+
     if (!data.tracks || !data.tracks.items) {
-      console.warn(`  No tracks for ${countryCode}: ${JSON.stringify(data).substring(0, 200)}`);
+      console.warn(`    No tracks in response for ${countryCode}`);
+      console.log(`    Response keys: ${Object.keys(data).join(', ')}`);
       return null;
     }
 
@@ -168,7 +204,7 @@ async function fetchPlaylistChart(countryCode, playlistId) {
         };
       });
 
-    console.log(`  Got ${tracks.length} tracks for ${countryCode}`);
+    console.log(`    Got ${tracks.length} tracks for ${countryCode}`);
 
     return {
       country: countryCode,
@@ -179,7 +215,7 @@ async function fetchPlaylistChart(countryCode, playlistId) {
       tracks
     };
   } catch (error) {
-    console.error(`  Error: ${error.message}`);
+    console.error(`    Error: ${error.message}`);
     return null;
   }
 }
@@ -187,14 +223,18 @@ async function fetchPlaylistChart(countryCode, playlistId) {
 async function main() {
   console.log('=== Spotify Data Fetcher ===');
   console.log(`Date: ${new Date().toISOString()}`);
+  console.log(`Node: ${process.version}`);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
 
+  console.log('\n  Authenticating with Spotify...');
   const authed = await getSpotifyToken();
   if (!authed) {
-    console.error('Failed to authenticate with Spotify. Skipping.');
+    console.error('FAILED: Could not authenticate with Spotify. Exiting.');
     return;
   }
+
+  let successCount = 0;
 
   for (const [code, playlistId] of Object.entries(SPOTIFY_PLAYLISTS)) {
     const chart = await fetchPlaylistChart(code, playlistId);
@@ -203,12 +243,17 @@ async function main() {
         path.join(DATA_DIR, `spotify_${code}.json`),
         JSON.stringify(chart, null, 2)
       );
-      console.log(`  Saved spotify_${code}.json`);
+      console.log(`    Saved spotify_${code}.json`);
+      successCount++;
     }
+    // Delay between requests to avoid rate limiting
     await new Promise(r => setTimeout(r, 500));
   }
 
-  console.log('\n=== Spotify fetch complete ===');
+  console.log(`\n=== Spotify fetch complete: ${successCount}/${Object.keys(SPOTIFY_PLAYLISTS).length} playlists fetched ===`);
 }
 
-main().catch(console.error);
+main().catch(err => {
+  console.error('FATAL:', err);
+  process.exit(1);
+});
