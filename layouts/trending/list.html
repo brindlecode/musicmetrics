@@ -1,0 +1,45 @@
+{{ define "title" }}{{ i18n "nav_trending" }} - Music {{ i18n "nav_charts" }} | {{ site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <span>{{ i18n "nav_trending" }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ i18n "nav_trending" }}</h1>
+    <p class="page-header__subtitle">{{ i18n "nav_trending" }} - Spotify &middot; YouTube &middot; Apple Music &middot; Deezer &middot; Shazam</p>
+  </div>
+
+  <div class="ad-slot ad-slot--header" data-ad-slot="trending-top"></div>
+
+  {{/* Spotify trending */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M8 15c2.5-1 5-1 7.5 0M7.5 12.5c3-1.5 6-1.5 9 0M7 10c3.5-2 7-2 10.5 0" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+        Spotify {{ i18n "nav_trending" }}
+      </h2>
+      <a href="{{ relLangURL "/spotify/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+    {{ partial "chart-table.html" (dict "platform" "spotify" "id" "trendingSpotify" "lang" .Lang) }}
+  </section>
+
+  <div class="ad-slot ad-slot--in-content" data-ad-slot="trending-mid"></div>
+
+  {{/* YouTube trending */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8.5 16,12 10,15.5" fill="#fff"/></svg>
+        YouTube {{ i18n "nav_trending" }}
+      </h2>
+      <a href="{{ relLangURL "/youtube/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+    {{ partial "chart-table.html" (dict "platform" "youtube" "id" "trendingYoutube" "lang" .Lang) }}
+  </section>
+
+  <div class="ad-slot ad-slot--footer" data-ad-slot="trending-bottom"></div>
+</div>
+{{ end }}

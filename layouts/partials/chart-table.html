@@ -1,8 +1,19 @@
 {{/* Reusable chart table partial
-     Params: .platform (spotify|apple|deezer|youtube|shazam), .id, .lang */}}
+     Params: .platform (e.g. "spotify", "spotify_us", "deezer_br"), .id, .lang */}}
 
 {{ $platform := .platform }}
 {{ $id := .id }}
+
+{{/* Build the data key: platform param maps to data/charts/{platform}_global.json or data/charts/{platform}.json */}}
+{{ $data := false }}
+{{ with index site.Data.charts $platform }}
+  {{ $data = . }}
+{{ else }}
+  {{ $globalKey := printf "%s_global" $platform }}
+  {{ with index site.Data.charts $globalKey }}
+    {{ $data = . }}
+  {{ end }}
+{{ end }}
 
 <div class="chart-table-wrapper">
   <table class="chart-table" id="{{ $id }}">
@@ -12,16 +23,14 @@
         <th>{{ i18n "song" }}</th>
         <th>{{ i18n "artist" }}</th>
         <th data-sort="num" class="text-right">
-          {{ if eq $platform "youtube" }}{{ i18n "views" }}{{ else }}{{ i18n "streams" }}{{ end }}
+          {{ if in $platform "youtube" }}{{ i18n "views" }}{{ else }}{{ i18n "streams" }}{{ end }}
         </th>
         <th data-sort="num" class="text-right">{{ i18n "change" }}</th>
         <th data-sort="num" class="text-right">{{ i18n "peak_position" }}</th>
       </tr>
     </thead>
     <tbody>
-      {{/* Data will be populated from JSON data files or at build time */}}
-      {{ $dataFile := printf "charts/%s_global" $platform }}
-      {{ with index site.Data $dataFile }}
+      {{ with $data }}
         {{ range first 50 .tracks }}
         <tr>
           <td class="chart-table__rank {{ if le .rank 3 }}chart-table__rank--top3{{ end }}">{{ .rank }}</td>
@@ -38,15 +47,19 @@
             </div>
           </td>
           <td>
-            <a href="{{ relLangURL (printf "/artists/%s/" .artist_slug) }}">{{ .artist }}</a>
+            {{ with .artist_slug }}
+              <a href="{{ relLangURL (printf "/artists/%s/" .) }}">{{ $.artist }}</a>
+            {{ else }}
+              {{ .artist }}
+            {{ end }}
           </td>
           <td class="chart-table__streams text-right">{{ .streams_formatted }}</td>
           <td class="text-right">
-            {{ if eq .change "new" }}
+            {{ if eq (printf "%v" .change) "new" }}
               <span class="chart-table__change--new">NEW</span>
-            {{ else if gt .change_num 0 }}
+            {{ else if and .change_num (gt .change_num 0) }}
               <span class="chart-table__change chart-table__change--up">&#9650; {{ .change_num }}</span>
-            {{ else if lt .change_num 0 }}
+            {{ else if and .change_num (lt .change_num 0) }}
               <span class="chart-table__change chart-table__change--down">&#9660; {{ math.Abs .change_num }}</span>
             {{ else }}
               <span class="chart-table__change chart-table__change--same">&mdash;</span>

@@ -1,70 +1,156 @@
-{{ define "title" }}{{ i18n "nav_charts" }} - Spotify, Apple Music, YouTube, Shazam, Deezer | {{ site.Title }}{{ end }}
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="container">
-  <div class="page-header">
-    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-      <span>/</span>
-      <span>{{ i18n "nav_charts" }}</span>
-    </nav>
-    <h1 class="page-header__title">{{ i18n "nav_charts" }}</h1>
-    <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Shazam &middot; Deezer</p>
+{{ $platform := .Params.platform | default "" }}
+{{ $countryCode := .Params.country_code | default "" }}
+
+{{ if and $platform $countryCode }}
+  {{/* === PLATFORM + COUNTRY DETAIL (e.g. /charts/shazam/us/) === */}}
+  <div class="container">
+    <div class="page-header">
+      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+        <span>/</span>
+        <a href="{{ relLangURL "/charts/" }}">{{ i18n "nav_charts" }}</a>
+        <span>/</span>
+        <a href="{{ relLangURL (printf "/charts/%s/" $platform) }}">{{ $platform | title }}</a>
+        <span>/</span>
+        <span>{{ .Title }}</span>
+      </nav>
+      <h1 class="page-header__title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
+    </div>
+
+    <div class="ad-slot ad-slot--header" data-ad-slot="chart-top"></div>
+
+    <div class="country-selector">
+      <label for="chartCountry">{{ i18n "select_country" }}:</label>
+      <select id="chartCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
+        <option value="{{ relLangURL (printf "/charts/%s/" $platform) }}">{{ i18n "worldwide" }}</option>
+        {{ range site.Data.countries }}
+        <option value="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}" {{ if eq .code $countryCode }}selected{{ end }}>{{ .flag }} {{ .name }}</option>
+        {{ end }}
+      </select>
+    </div>
+
+    {{ partial "chart-table.html" (dict "platform" (printf "%s_%s" $platform $countryCode) "id" "platformChart" "lang" .Lang) }}
+
+    <div class="ad-slot ad-slot--footer" data-ad-slot="chart-bottom"></div>
   </div>
 
-  <div class="ad-slot ad-slot--header" data-ad-slot="charts-top"></div>
+{{ else if $platform }}
+  {{/* === PLATFORM INDEX (e.g. /charts/shazam/) === */}}
+  <div class="container">
+    <div class="page-header">
+      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+        <span>/</span>
+        <a href="{{ relLangURL "/charts/" }}">{{ i18n "nav_charts" }}</a>
+        <span>/</span>
+        <span>{{ $platform | title }}</span>
+      </nav>
+      <h1 class="page-header__title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
+    </div>
 
-  {{/* Platform sections */}}
-  <div class="grid grid--3 mb-8">
-    <a href="{{ relLangURL "/spotify/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">Spotify {{ i18n "nav_charts" }}</h3>
-        <span class="card__badge card__badge--spotify">Spotify</span>
-      </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "daily_chart" }} &middot; {{ i18n "weekly_chart" }} &middot; {{ i18n "top_artists" }} &middot; {{ i18n "all_countries" }}</p>
-    </a>
+    <div class="ad-slot ad-slot--header" data-ad-slot="chart-top"></div>
 
-    <a href="{{ relLangURL "/youtube/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">YouTube {{ i18n "nav_charts" }}</h3>
-        <span class="card__badge card__badge--youtube">YouTube</span>
-      </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "most_viewed" }} &middot; {{ i18n "nav_trending" }} &middot; Milestones</p>
-    </a>
+    <div class="country-selector">
+      <label for="chartCountry">{{ i18n "select_country" }}:</label>
+      <select id="chartCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
+        <option value="" selected>{{ i18n "select_country" }}</option>
+        {{ range site.Data.countries }}
+        <option value="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}">{{ .flag }} {{ .name }}</option>
+        {{ end }}
+      </select>
+    </div>
 
-    <a href="{{ relLangURL "/apple-music/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">Apple Music {{ i18n "nav_charts" }}</h3>
-        <span class="card__badge card__badge--apple">Apple Music</span>
-      </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "top_albums" }} &middot; {{ i18n "all_countries" }}</p>
-    </a>
+    {{ partial "chart-table.html" (dict "platform" $platform "id" "platformGlobalChart" "lang" .Lang) }}
 
-    <a href="{{ relLangURL "/charts/shazam/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">Shazam {{ i18n "nav_charts" }}</h3>
-        <span class="card__badge card__badge--shazam">Shazam</span>
+    {{/* Country grid */}}
+    <section class="mt-8">
+      <h2 class="section-header__title mb-4">{{ i18n "all_countries" }}</h2>
+      <div class="grid grid--4">
+        {{ range site.Data.countries }}
+        <a href="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}" class="card" style="padding: var(--space-4)">
+          <div class="flex items-center gap-4">
+            <span style="font-size: 1.5rem">{{ .flag }}</span>
+            <strong>{{ .name }}</strong>
+          </div>
+        </a>
+        {{ end }}
       </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "worldwide" }} &middot; {{ i18n "all_countries" }}</p>
-    </a>
+    </section>
 
-    <a href="{{ relLangURL "/charts/deezer/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">Deezer {{ i18n "nav_charts" }}</h3>
-        <span class="card__badge card__badge--deezer">Deezer</span>
-      </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "top_albums" }} &middot; {{ i18n "all_countries" }}</p>
-    </a>
-
-    <a href="{{ relLangURL "/charts/global/" }}" class="card">
-      <div class="card__header">
-        <h3 class="card__title">{{ i18n "global" }} Combined</h3>
-        <span class="card__badge" style="background: var(--color-primary-light); color: var(--color-primary)">All</span>
-      </div>
-      <p class="text-muted" style="font-size: var(--font-size-sm)">Cross-platform combined rankings</p>
-    </a>
+    <div class="ad-slot ad-slot--footer" data-ad-slot="chart-bottom"></div>
   </div>
 
-  <div class="ad-slot ad-slot--footer" data-ad-slot="charts-bottom"></div>
-</div>
+{{ else }}
+  {{/* === MAIN CHARTS HUB === */}}
+  <div class="container">
+    <div class="page-header">
+      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+        <span>/</span>
+        <span>{{ i18n "nav_charts" }}</span>
+      </nav>
+      <h1 class="page-header__title">{{ i18n "nav_charts" }}</h1>
+      <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Shazam &middot; Deezer</p>
+    </div>
+
+    <div class="ad-slot ad-slot--header" data-ad-slot="charts-top"></div>
+
+    <div class="grid grid--3 mb-8">
+      <a href="{{ relLangURL "/spotify/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">Spotify {{ i18n "nav_charts" }}</h3>
+          <span class="card__badge card__badge--spotify">Spotify</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "daily_chart" }} &middot; {{ i18n "weekly_chart" }} &middot; {{ i18n "top_artists" }}</p>
+      </a>
+
+      <a href="{{ relLangURL "/youtube/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">YouTube {{ i18n "nav_charts" }}</h3>
+          <span class="card__badge card__badge--youtube">YouTube</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "most_viewed" }} &middot; {{ i18n "nav_trending" }} &middot; Milestones</p>
+      </a>
+
+      <a href="{{ relLangURL "/apple-music/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">Apple Music {{ i18n "nav_charts" }}</h3>
+          <span class="card__badge card__badge--apple">Apple Music</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "top_albums" }}</p>
+      </a>
+
+      <a href="{{ relLangURL "/charts/shazam/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">Shazam {{ i18n "nav_charts" }}</h3>
+          <span class="card__badge card__badge--shazam">Shazam</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "all_countries" }}</p>
+      </a>
+
+      <a href="{{ relLangURL "/charts/deezer/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">Deezer {{ i18n "nav_charts" }}</h3>
+          <span class="card__badge card__badge--deezer">Deezer</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "all_countries" }}</p>
+      </a>
+
+      <a href="{{ relLangURL "/charts/global/" }}" class="card">
+        <div class="card__header">
+          <h3 class="card__title">{{ i18n "global" }} Combined</h3>
+          <span class="card__badge" style="background: var(--color-primary-light); color: var(--color-primary)">All</span>
+        </div>
+        <p class="text-muted" style="font-size: var(--font-size-sm)">Cross-platform combined rankings</p>
+      </a>
+    </div>
+
+    <div class="ad-slot ad-slot--footer" data-ad-slot="charts-bottom"></div>
+  </div>
+{{ end }}
 {{ end }}

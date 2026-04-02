@@ -1,43 +1,38 @@
-{{ define "title" }}YouTube {{ i18n "nav_charts" }} - {{ i18n "most_viewed" }} Music Videos | {{ site.Title }}{{ end }}
-
-{{ define "schema" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "YouTube Most Viewed Music Videos",
-  "description": "Real-time YouTube music video charts - most viewed, trending, and milestone tracking",
-  "url": "{{ .Permalink }}"
-}
-</script>
-{{ end }}
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
 
 {{ define "main" }}
+{{ $countryCode := .Params.country_code | default "" }}
+
 <div class="container">
   <div class="page-header">
     <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
       <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
       <span>/</span>
-      <span>YouTube</span>
+      {{ if $countryCode }}
+        <a href="{{ relLangURL "/youtube/" }}">YouTube</a>
+        <span>/</span>
+        <span>{{ .Title }}</span>
+      {{ else }}
+        <span>YouTube</span>
+      {{ end }}
     </nav>
     <h1 class="page-header__title">
       <svg class="nav-icon" viewBox="0 0 24 24" width="32" height="32" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8.5 16,12 10,15.5" fill="#fff"/></svg>
-      YouTube {{ i18n "nav_charts" }}
+      {{ .Title }}
     </h1>
-    <p class="page-header__subtitle">{{ i18n "most_viewed" }} Music Videos &middot; Trending &middot; Milestones</p>
+    {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
   </div>
 
   <div class="ad-slot ad-slot--header" data-ad-slot="youtube-top"></div>
 
-  {{/* Sub-navigation */}}
   <div class="platform-tabs">
-    <a href="{{ relLangURL "/youtube/" }}" class="platform-tab platform-tab--youtube platform-tab--active">{{ i18n "most_viewed" }}</a>
+    <a href="{{ relLangURL "/youtube/" }}" class="platform-tab platform-tab--youtube">{{ i18n "most_viewed" }}</a>
     <a href="{{ relLangURL "/youtube/trending/" }}" class="platform-tab platform-tab--youtube">{{ i18n "nav_trending" }}</a>
     <a href="{{ relLangURL "/youtube/milestones/" }}" class="platform-tab platform-tab--youtube">Milestones</a>
     <a href="{{ relLangURL "/youtube/records/" }}" class="platform-tab platform-tab--youtube">Records</a>
   </div>
 
-  {{/* Country Selector */}}
+  {{ if not $countryCode }}
   <div class="country-selector">
     <label for="youtubeCountry">{{ i18n "select_country" }}:</label>
     <select id="youtubeCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
@@ -47,18 +42,23 @@
       {{ end }}
     </select>
   </div>
+  {{ end }}
+
+  {{ $chartKey := "youtube" }}
+  {{ if $countryCode }}
+    {{ $chartKey = printf "youtube_%s" $countryCode }}
+  {{ end }}
 
   <div class="last-updated">
     <span class="last-updated__dot"></span>
-    {{ i18n "last_updated" }}: {{ with site.Data.charts.youtube_global }}{{ .updated }}{{ end }}
+    {{ i18n "last_updated" }}: {{ with index site.Data.charts $chartKey }}{{ .updated }}{{ else }}--{{ end }}
   </div>
 
-  {{/* YouTube Chart Table */}}
-  {{ partial "chart-table.html" (dict "platform" "youtube" "id" "youtubeMainChart" "lang" .Lang) }}
+  {{ partial "chart-table.html" (dict "platform" $chartKey "id" "youtubeMainChart" "lang" .Lang) }}
 
   <div class="ad-slot ad-slot--in-content" data-ad-slot="youtube-mid"></div>
 
-  {{ if .Pages }}
+  {{ if and (not $countryCode) .Pages }}
   <section class="mt-8">
     <div class="grid grid--3">
       {{ range .Pages }}

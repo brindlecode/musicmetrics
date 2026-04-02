@@ -1,38 +1,51 @@
-{{ define "title" }}Apple Music {{ i18n "nav_charts" }} - {{ i18n "top_songs" }} &amp; {{ i18n "top_albums" }} | {{ site.Title }}{{ end }}
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
 
 {{ define "main" }}
+{{ $countryCode := .Params.country_code | default "" }}
+
 <div class="container">
   <div class="page-header">
     <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
       <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
       <span>/</span>
-      <span>Apple Music</span>
+      {{ if $countryCode }}
+        <a href="{{ relLangURL "/apple-music/" }}">Apple Music</a>
+        <span>/</span>
+        <span>{{ .Title }}</span>
+      {{ else }}
+        <span>Apple Music</span>
+      {{ end }}
     </nav>
     <h1 class="page-header__title">
       <svg class="nav-icon" viewBox="0 0 24 24" width="32" height="32" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#FA243C"/><path d="M15 6.5v8.5a2 2 0 1 1-2-2V9l-4 1v6a2 2 0 1 1-2-2V8l8-2z" fill="#fff"/></svg>
-      Apple Music {{ i18n "nav_charts" }}
+      {{ .Title }}
     </h1>
-    <p class="page-header__subtitle">{{ i18n "top_songs" }} &middot; {{ i18n "top_albums" }} &middot; {{ i18n "all_countries" }}</p>
+    {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
   </div>
 
   <div class="ad-slot ad-slot--header" data-ad-slot="apple-top"></div>
 
   <div class="platform-tabs">
-    <a href="{{ relLangURL "/apple-music/" }}" class="platform-tab platform-tab--apple platform-tab--active">{{ i18n "global" }} {{ i18n "top_songs" }}</a>
-    <a href="{{ relLangURL "/apple-music/albums/" }}" class="platform-tab platform-tab--apple">{{ i18n "global" }} {{ i18n "top_albums" }}</a>
+    <a href="{{ relLangURL "/apple-music/" }}" class="platform-tab platform-tab--apple">{{ i18n "global" }} {{ i18n "top_songs" }}</a>
+    <a href="{{ relLangURL "/apple-music/albums/" }}" class="platform-tab platform-tab--apple">{{ i18n "top_albums" }}</a>
   </div>
 
   <div class="country-selector">
     <label for="appleCountry">{{ i18n "select_country" }}:</label>
     <select id="appleCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
-      <option value="{{ relLangURL "/apple-music/" }}">{{ i18n "worldwide" }}</option>
+      <option value="{{ relLangURL "/apple-music/" }}" {{ if not $countryCode }}selected{{ end }}>{{ i18n "worldwide" }}</option>
       {{ range site.Data.countries }}
-      <option value="{{ relLangURL (printf "/apple-music/%s/" .code) }}">{{ .flag }} {{ .name }}</option>
+      <option value="{{ relLangURL (printf "/apple-music/%s/" .code) }}" {{ if eq .code $countryCode }}selected{{ end }}>{{ .flag }} {{ .name }}</option>
       {{ end }}
     </select>
   </div>
 
-  {{ partial "chart-table.html" (dict "platform" "apple" "id" "appleMainChart" "lang" .Lang) }}
+  {{ $chartKey := "apple" }}
+  {{ if $countryCode }}
+    {{ $chartKey = printf "apple_%s" $countryCode }}
+  {{ end }}
+
+  {{ partial "chart-table.html" (dict "platform" $chartKey "id" "appleMainChart" "lang" .Lang) }}
 
   <div class="ad-slot ad-slot--footer" data-ad-slot="apple-bottom"></div>
 </div>
