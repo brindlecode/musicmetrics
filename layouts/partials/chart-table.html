@@ -53,7 +53,7 @@
               {{ .artist }}
             {{ end }}
           </td>
-          <td class="chart-table__streams text-right">{{ .streams_formatted }}</td>
+          <td class="chart-table__streams text-right">{{ if and .streams_formatted (ne .streams_formatted "#0") }}{{ .streams_formatted }}{{ else }}&mdash;{{ end }}</td>
           <td class="text-right">
             {{ if eq (printf "%v" .change) "new" }}
               <span class="chart-table__change--new">NEW</span>

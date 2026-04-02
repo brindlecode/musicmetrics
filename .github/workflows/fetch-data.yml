@@ -15,150 +15,74 @@ permissions:
   contents: write
 
 jobs:
-  fetch-deezer:
+  fetch-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      # ===== Fetch all data sources sequentially in one job =====
+      # This prevents the artifact merge bug where stale data overwrites fresh data
 
       - name: Fetch Deezer Charts
         run: node scripts/fetch-deezer.js
-
-      - name: Verify Deezer data
-        run: |
-          echo "=== Deezer data check ==="
-          if [ -f data/charts/deezer_global.json ]; then
-            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/deezer_global.json')).tracks.length)")
-            echo "deezer_global.json: $TRACKS tracks"
-          else
-            echo "WARNING: deezer_global.json not found"
-          fi
-
-      - name: Upload data artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: deezer-data
-          path: data/
-          retention-days: 1
-
-  fetch-apple-music:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+        continue-on-error: true
 
       - name: Fetch Apple Music Charts
         run: node scripts/fetch-apple-music.js
-
-      - name: Verify Apple data
-        run: |
-          echo "=== Apple Music data check ==="
-          if [ -f data/charts/apple_global.json ]; then
-            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/apple_global.json')).tracks.length)")
-            echo "apple_global.json: $TRACKS tracks"
-          else
-            echo "WARNING: apple_global.json not found"
-          fi
-
-      - name: Upload data artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: apple-data
-          path: data/
-          retention-days: 1
-
-  fetch-spotify:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+        continue-on-error: true
 
       - name: Fetch Spotify Charts
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: node scripts/fetch-spotify.js
-
-      - name: Verify Spotify data
-        run: |
-          echo "=== Spotify data check ==="
-          if [ -f data/charts/spotify_global.json ]; then
-            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/charts/spotify_global.json')).tracks.length)")
-            echo "spotify_global.json: $TRACKS tracks"
-          else
-            echo "WARNING: spotify_global.json not found"
-          fi
-
-      - name: Upload data artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: spotify-data
-          path: data/
-          retention-days: 1
-
-  fetch-youtube:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+        continue-on-error: true
 
       - name: Fetch YouTube Trending
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/fetch-youtube.js
+        continue-on-error: true
 
-      - name: Upload data artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: youtube-data
-          path: data/
-          retention-days: 1
-
-  build-and-deploy:
-    needs: [fetch-deezer, fetch-apple-music, fetch-spotify, fetch-youtube]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Download all data artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: data-artifacts/
-
-      - name: Merge data
+      # ===== Verify data =====
+      - name: Verify fetched data
         run: |
-          echo "=== Merging artifacts ==="
-          ls -la data-artifacts/
-          for dir in data-artifacts/*/; do
-            echo "Copying from $dir ..."
-            cp -rv "$dir"* data/ 2>&1 | tail -5
-          done
+          echo "=== Data Verification ==="
           echo ""
-          echo "=== Final data/charts/ contents ==="
-          ls -la data/charts/ | head -30
-          echo ""
-          echo "=== Track counts ==="
+          TOTAL_SUCCESS=0
+          TOTAL_FAIL=0
+
           for f in data/charts/*_global.json; do
-            TRACKS=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$f')).tracks.length)" 2>/dev/null || echo "ERROR")
-            echo "  $(basename $f): $TRACKS tracks"
+            TRACKS=$(node -e "try { console.log(JSON.parse(require('fs').readFileSync('$f')).total) } catch(e) { console.log(0) }" 2>/dev/null)
+            NAME=$(basename $f)
+            if [ "$TRACKS" -gt 0 ] 2>/dev/null; then
+              echo "  ✓ $NAME: $TRACKS tracks"
+              TOTAL_SUCCESS=$((TOTAL_SUCCESS + 1))
+            else
+              echo "  ✗ $NAME: NO DATA"
+              TOTAL_FAIL=$((TOTAL_FAIL + 1))
+            fi
           done
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+          echo ""
+          echo "=== Summary: $TOTAL_SUCCESS success, $TOTAL_FAIL failed ==="
 
+          # Count total chart files with data
+          TOTAL_FILES=$(find data/charts -name "*.json" -size +200c | wc -l)
+          echo "Total chart files with data: $TOTAL_FILES"
+
+          # At least one platform must have data to proceed
+          if [ "$TOTAL_SUCCESS" -eq 0 ]; then
+            echo "ERROR: No platform has data. Aborting deployment."
+            exit 1
+          fi
+
+      # ===== Generate content & build =====
       - name: Generate artist pages
         run: node scripts/generate-artist-pages.js
 
@@ -171,6 +95,7 @@ jobs:
       - name: Build site
         run: hugo --minify
 
+      # ===== Commit & Deploy =====
       - name: Commit data updates
         run: |
           git config --local user.email "action@github.com"
