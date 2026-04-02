@@ -54,6 +54,17 @@
       {{ partial "chart-table.html" (dict "platform" (printf "apple_%s" $countryCode) "id" "appleCountryChart" "lang" .Lang) }}
     </section>
 
+    {{/* YouTube Trending for this country */}}
+    <section class="mb-8">
+      <div class="section-header">
+        <h2 class="section-header__title">
+          <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
+          YouTube {{ i18n "most_viewed" }} - {{ $countryName }}
+        </h2>
+      </div>
+      {{ partial "chart-table.html" (dict "platform" (printf "youtube_%s" $countryCode) "id" "youtubeCountryChart" "lang" .Lang) }}
+    </section>
+
     {{/* Deezer Chart for this country */}}
     <section class="mb-8">
       <div class="section-header">
