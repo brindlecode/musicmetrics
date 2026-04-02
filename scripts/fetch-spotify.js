@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fetch Spotify Data via Web API
- * Uses client credentials flow (free)
+ * Fetch Spotify Charts Data via Public Charts API
  *
- * Required env vars: SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET
+ * Uses Spotify's public charts endpoint (same as charts.spotify.com)
+ * NO authentication required - completely free
+ *
+ * Endpoint: https://charts-spotify-com-service.spotify.com/public/v0/charts
  *
  * Output: data/charts/spotify_*.json
  */
@@ -14,7 +16,39 @@ const https = require('https');
 
 const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 
-// Official Spotify Top 50 playlist IDs
+// Country codes supported by Spotify Charts
+const COUNTRIES = {
+  global: 'global',
+  us: 'us',
+  gb: 'gb',
+  br: 'br',
+  de: 'de',
+  fr: 'fr',
+  jp: 'jp',
+  mx: 'mx',
+  tr: 'tr',
+  es: 'es',
+  it: 'it',
+  kr: 'kr',
+  in: 'in',
+  ar: 'ar',
+  co: 'co',
+  au: 'au',
+  ca: 'ca',
+  nl: 'nl',
+  se: 'se',
+  pl: 'pl',
+  id: 'id',
+  ph: 'ph',
+  th: 'th',
+  ng: 'ng',
+  za: 'za',
+  eg: 'eg',
+  sa: 'sa',
+  ae: 'ae',
+};
+
+// Fallback: Official Spotify Top 50 playlist IDs (used if Charts API fails)
 const SPOTIFY_PLAYLISTS = {
   global: '37i9dQZEVXbMDoHDwVN2tF',
   us: '37i9dQZEVXbLRQDuF5jeBp',
@@ -35,33 +69,67 @@ const SPOTIFY_PLAYLISTS = {
   ca: '37i9dQZEVXbKj23U1GF4IR',
 };
 
-let accessToken = null;
-
-function httpsRequest(options, postData, retries = 3) {
+function httpsRequest(url, options = {}, retries = 3) {
   return new Promise((resolve, reject) => {
-    console.log(`    ${options.method || 'GET'} ${options.hostname}${options.path}`);
-    const req = https.request(options, (res) => {
+    const urlObj = new URL(url);
+    const reqOptions = {
+      hostname: urlObj.hostname,
+      path: urlObj.pathname + urlObj.search,
+      method: options.method || 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        ...options.headers,
+      },
+      timeout: 20000,
+    };
+
+    console.log(`    ${reqOptions.method} ${url}`);
+
+    const req = https.request(reqOptions, (res) => {
+      // Follow redirects
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        console.log(`    Redirect -> ${res.headers.location}`);
+        return httpsRequest(res.headers.location, options, retries).then(resolve).catch(reject);
+      }
+
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        console.log(`    Status: ${res.statusCode}`);
-        try {
-          const parsed = JSON.parse(data);
-          if (res.statusCode === 429) {
-            const retryAfter = parseInt(res.headers['retry-after'] || '3');
-            console.log(`    Rate limited, waiting ${retryAfter}s...`);
-            setTimeout(() => httpsRequest(options, postData, retries).then(resolve).catch(reject), retryAfter * 1000);
-            return;
+        console.log(`    Status: ${res.statusCode} (${data.length} bytes)`);
+
+        if (res.statusCode === 429) {
+          const retryAfter = parseInt(res.headers['retry-after'] || '5');
+          console.log(`    Rate limited, waiting ${retryAfter}s...`);
+          if (retries > 0) {
+            setTimeout(() => httpsRequest(url, options, retries - 1).then(resolve).catch(reject), retryAfter * 1000);
+          } else {
+            reject(new Error(`Rate limited after all retries: ${url}`));
           }
-          resolve({ status: res.statusCode, data: parsed });
+          return;
+        }
+
+        if (res.statusCode !== 200) {
+          console.error(`    HTTP ${res.statusCode}: ${data.substring(0, 300)}`);
+          if (retries > 0) {
+            console.log(`    Retrying... (${retries} left)`);
+            setTimeout(() => httpsRequest(url, options, retries - 1).then(resolve).catch(reject), 2000);
+          } else {
+            reject(new Error(`HTTP ${res.statusCode} from ${url}`));
+          }
+          return;
+        }
+
+        try {
+          resolve(JSON.parse(data));
         } catch (e) {
           console.error(`    Parse error: ${e.message}`);
           console.error(`    Body preview: ${data.substring(0, 300)}`);
           if (retries > 0) {
             console.log(`    Retrying... (${retries} left)`);
-            setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+            setTimeout(() => httpsRequest(url, options, retries - 1).then(resolve).catch(reject), 2000);
           } else {
-            reject(new Error(`Parse error from ${options.hostname}${options.path}`));
+            reject(new Error(`Parse error from ${url}`));
           }
         }
       });
@@ -71,9 +139,9 @@ function httpsRequest(options, postData, retries = 3) {
       req.destroy();
       if (retries > 0) {
         console.log(`    Timeout, retrying... (${retries} left)`);
-        setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+        setTimeout(() => httpsRequest(url, options, retries - 1).then(resolve).catch(reject), 2000);
       } else {
-        reject(new Error(`Timeout: ${options.hostname}${options.path}`));
+        reject(new Error(`Timeout: ${url}`));
       }
     });
 
@@ -81,76 +149,15 @@ function httpsRequest(options, postData, retries = 3) {
       console.error(`    Request error: ${err.message}`);
       if (retries > 0) {
         console.log(`    Retrying... (${retries} left)`);
-        setTimeout(() => httpsRequest(options, postData, retries - 1).then(resolve).catch(reject), 2000);
+        setTimeout(() => httpsRequest(url, options, retries - 1).then(resolve).catch(reject), 3000);
       } else {
         reject(err);
       }
     });
 
-    if (postData) req.write(postData);
+    if (options.body) req.write(options.body);
     req.end();
   });
-}
-
-async function getSpotifyToken() {
-  const clientId = process.env.SPOTIFY_CLIENT_ID;
-  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-
-  if (!clientId || !clientSecret) {
-    console.error('ERROR: Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET');
-    console.error(`  SPOTIFY_CLIENT_ID present: ${!!clientId}`);
-    console.error(`  SPOTIFY_CLIENT_SECRET present: ${!!clientSecret}`);
-    return false;
-  }
-
-  console.log(`  Client ID: ${clientId.substring(0, 4)}...${clientId.substring(clientId.length - 4)}`);
-  const auth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
-  const postData = 'grant_type=client_credentials';
-
-  try {
-    const response = await httpsRequest({
-      hostname: 'accounts.spotify.com',
-      path: '/api/token',
-      method: 'POST',
-      headers: {
-        'Authorization': `Basic ${auth}`,
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(postData),
-      },
-      timeout: 10000
-    }, postData);
-
-    if (response.status !== 200) {
-      console.error(`  Auth failed (HTTP ${response.status}): ${JSON.stringify(response.data)}`);
-      return false;
-    }
-
-    accessToken = response.data.access_token;
-    console.log(`  Access token obtained (${accessToken.substring(0, 8)}...)`);
-    return true;
-  } catch (error) {
-    console.error(`  Auth error: ${error.message}`);
-    return false;
-  }
-}
-
-async function spotifyGet(endpoint) {
-  const response = await httpsRequest({
-    hostname: 'api.spotify.com',
-    path: `/v1${endpoint}`,
-    method: 'GET',
-    headers: {
-      'Authorization': `Bearer ${accessToken}`,
-      'Accept': 'application/json'
-    },
-    timeout: 15000
-  }, null);
-
-  if (response.status !== 200) {
-    console.error(`    Spotify API error (HTTP ${response.status}): ${JSON.stringify(response.data).substring(0, 200)}`);
-    return null;
-  }
-  return response.data;
 }
 
 function slugify(str) {
@@ -160,20 +167,153 @@ function slugify(str) {
     .replace(/^-+|-+$/g, '');
 }
 
-async function fetchPlaylistChart(countryCode, playlistId) {
-  console.log(`\n  Fetching Spotify chart for ${countryCode.toUpperCase()} (playlist: ${playlistId})...`);
+function formatNumber(num) {
+  if (!num || isNaN(num)) return '--';
+  num = parseInt(num);
+  if (num >= 1e9) return (num / 1e9).toFixed(1) + 'B';
+  if (num >= 1e6) return (num / 1e6).toFixed(1) + 'M';
+  if (num >= 1e3) return (num / 1e3).toFixed(1) + 'K';
+  return num.toString();
+}
+
+/**
+ * Strategy 1: Spotify Public Charts API
+ * This is the same API that charts.spotify.com uses - no auth needed
+ */
+async function fetchFromChartsAPI(countryCode) {
+  const region = countryCode === 'global' ? 'global' : countryCode;
+  const url = `https://charts-spotify-com-service.spotify.com/public/v0/charts?offset=0&limit=200&type=regional&country=${region}&recurrence=daily&date=latest`;
+
+  console.log(`\n  [Charts API] Fetching Spotify chart for ${countryCode.toUpperCase()}...`);
 
   try {
-    const data = await spotifyGet(`/playlists/${playlistId}?fields=name,tracks.items(track(name,artists,album(name,images),popularity,id,external_urls))`);
+    const data = await httpsRequest(url);
 
-    if (!data) {
-      console.warn(`    No response for ${countryCode}`);
+    if (!data.entries && !data.chartEntryViewResponses) {
+      console.warn(`    Unexpected response structure. Keys: ${Object.keys(data).join(', ')}`);
       return null;
     }
 
+    const entries = data.entries || data.chartEntryViewResponses || [];
+    if (entries.length === 0) {
+      console.warn(`    No entries for ${countryCode}`);
+      return null;
+    }
+
+    const tracks = entries.map((entry, index) => {
+      const meta = entry.trackMetadata || entry.track || {};
+      const chartData = entry.chartEntryData || entry.chartEntry || {};
+      const artists = meta.artists || [];
+      const artistName = artists.map(a => a.name).join(', ') || meta.artistName || '';
+      const firstArtist = artists[0] ? artists[0].name : artistName.split(',')[0].trim();
+
+      return {
+        rank: chartData.currentRank || index + 1,
+        title: meta.trackName || meta.name || '',
+        artist: artistName,
+        artist_slug: slugify(firstArtist),
+        album: meta.albumName || meta.album || '',
+        image: meta.displayImageUri || meta.imageUrl || '',
+        image_medium: meta.displayImageUri || meta.imageUrl || '',
+        spotify_id: meta.trackUri ? meta.trackUri.replace('spotify:track:', '') : '',
+        spotify_url: meta.trackUri ? `https://open.spotify.com/track/${meta.trackUri.replace('spotify:track:', '')}` : '',
+        streams_formatted: formatNumber(chartData.totalStreams || chartData.streams),
+        streams: chartData.totalStreams || chartData.streams || 0,
+        change: chartData.entryStatus === 'NEW' ? 'new' : (chartData.rankingMetric || 'same'),
+        change_num: chartData.previousRank ? (chartData.previousRank - (chartData.currentRank || index + 1)) : 0,
+        peak: chartData.peakRank || chartData.currentRank || index + 1
+      };
+    });
+
+    console.log(`    Got ${tracks.length} tracks for ${countryCode} via Charts API`);
+
+    return {
+      country: countryCode,
+      platform: 'spotify',
+      updated: new Date().toISOString().split('T')[0],
+      total: tracks.length,
+      tracks
+    };
+  } catch (error) {
+    console.error(`    Charts API error for ${countryCode}: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Strategy 2: Get anonymous access token from Spotify web player
+ * Then use regular Web API with that token (no Premium needed)
+ */
+async function getAnonymousToken() {
+  console.log('  Attempting to get anonymous Spotify token...');
+  try {
+    const data = await httpsRequest('https://open.spotify.com/get_access_token?reason=transport&productType=web_player');
+    if (data.accessToken) {
+      console.log(`  Got anonymous token: ${data.accessToken.substring(0, 12)}...`);
+      return data.accessToken;
+    }
+    console.warn('  No accessToken in response');
+    return null;
+  } catch (error) {
+    console.error(`  Anonymous token error: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Strategy 3: Client Credentials flow (only works if user has Premium)
+ */
+async function getClientCredentialsToken() {
+  const clientId = process.env.SPOTIFY_CLIENT_ID;
+  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+
+  if (!clientId || !clientSecret) {
+    console.log('  No Spotify client credentials available');
+    return null;
+  }
+
+  console.log('  Attempting client credentials auth...');
+  const auth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
+  const postData = 'grant_type=client_credentials';
+
+  try {
+    const data = await httpsRequest('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Basic ${auth}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(postData),
+      },
+      body: postData,
+    });
+
+    if (data.access_token) {
+      console.log(`  Got client token: ${data.access_token.substring(0, 12)}...`);
+      return data.access_token;
+    }
+    console.warn(`  Auth response: ${JSON.stringify(data).substring(0, 200)}`);
+    return null;
+  } catch (error) {
+    console.error(`  Client credentials error: ${error.message}`);
+    return null;
+  }
+}
+
+async function fetchFromWebAPI(countryCode, playlistId, token) {
+  console.log(`\n  [Web API] Fetching playlist for ${countryCode.toUpperCase()} (${playlistId})...`);
+
+  try {
+    const data = await httpsRequest(
+      `https://api.spotify.com/v1/playlists/${playlistId}?fields=name,tracks.items(track(name,artists,album(name,images),popularity,id,external_urls))`,
+      {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      }
+    );
+
     if (!data.tracks || !data.tracks.items) {
       console.warn(`    No tracks in response for ${countryCode}`);
-      console.log(`    Response keys: ${Object.keys(data).join(', ')}`);
       return null;
     }
 
@@ -198,13 +338,14 @@ async function fetchPlaylistChart(countryCode, playlistId) {
           spotify_id: track.id,
           spotify_url: (track.external_urls || {}).spotify || '',
           streams_formatted: `Pop: ${track.popularity}`,
+          streams: 0,
           change: 'new',
           change_num: 0,
           peak: index + 1
         };
       });
 
-    console.log(`    Got ${tracks.length} tracks for ${countryCode}`);
+    console.log(`    Got ${tracks.length} tracks for ${countryCode} via Web API`);
 
     return {
       country: countryCode,
@@ -215,42 +356,127 @@ async function fetchPlaylistChart(countryCode, playlistId) {
       tracks
     };
   } catch (error) {
-    console.error(`    Error: ${error.message}`);
+    console.error(`    Web API error: ${error.message}`);
     return null;
   }
 }
 
 async function main() {
-  console.log('=== Spotify Data Fetcher ===');
+  console.log('=== Spotify Data Fetcher (Multi-Strategy) ===');
   console.log(`Date: ${new Date().toISOString()}`);
   console.log(`Node: ${process.version}`);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
 
-  console.log('\n  Authenticating with Spotify...');
-  const authed = await getSpotifyToken();
-  if (!authed) {
-    console.error('FAILED: Could not authenticate with Spotify. Exiting.');
-    return;
-  }
-
   let successCount = 0;
+  let strategy = 'none';
 
-  for (const [code, playlistId] of Object.entries(SPOTIFY_PLAYLISTS)) {
-    const chart = await fetchPlaylistChart(code, playlistId);
-    if (chart) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, `spotify_${code}.json`),
-        JSON.stringify(chart, null, 2)
-      );
-      console.log(`    Saved spotify_${code}.json`);
-      successCount++;
+  // ===== STRATEGY 1: Public Charts API (preferred - has actual stream counts) =====
+  console.log('\n--- Strategy 1: Spotify Public Charts API ---');
+  const globalChart = await fetchFromChartsAPI('global');
+
+  if (globalChart && globalChart.tracks.length > 0) {
+    strategy = 'charts_api';
+    console.log('  Charts API works! Using it for all countries.');
+
+    fs.writeFileSync(
+      path.join(DATA_DIR, 'spotify_global.json'),
+      JSON.stringify(globalChart, null, 2)
+    );
+    successCount++;
+
+    for (const code of Object.keys(COUNTRIES)) {
+      if (code === 'global') continue;
+
+      const chart = await fetchFromChartsAPI(code);
+      if (chart && chart.tracks.length > 0) {
+        fs.writeFileSync(
+          path.join(DATA_DIR, `spotify_${code}.json`),
+          JSON.stringify(chart, null, 2)
+        );
+        successCount++;
+      }
+      await new Promise(r => setTimeout(r, 300));
     }
-    // Delay between requests to avoid rate limiting
-    await new Promise(r => setTimeout(r, 500));
   }
 
-  console.log(`\n=== Spotify fetch complete: ${successCount}/${Object.keys(SPOTIFY_PLAYLISTS).length} playlists fetched ===`);
+  // ===== STRATEGY 2: Anonymous Token + Web API =====
+  if (strategy === 'none') {
+    console.log('\n--- Strategy 2: Anonymous Token ---');
+    const anonToken = await getAnonymousToken();
+
+    if (anonToken) {
+      // Test with global playlist
+      const testChart = await fetchFromWebAPI('global', SPOTIFY_PLAYLISTS.global, anonToken);
+      if (testChart && testChart.tracks.length > 0) {
+        strategy = 'anonymous_token';
+        console.log('  Anonymous token works! Using it for all countries.');
+
+        fs.writeFileSync(
+          path.join(DATA_DIR, 'spotify_global.json'),
+          JSON.stringify(testChart, null, 2)
+        );
+        successCount++;
+
+        for (const [code, playlistId] of Object.entries(SPOTIFY_PLAYLISTS)) {
+          if (code === 'global') continue;
+          const chart = await fetchFromWebAPI(code, playlistId, anonToken);
+          if (chart) {
+            fs.writeFileSync(
+              path.join(DATA_DIR, `spotify_${code}.json`),
+              JSON.stringify(chart, null, 2)
+            );
+            successCount++;
+          }
+          await new Promise(r => setTimeout(r, 500));
+        }
+      }
+    }
+  }
+
+  // ===== STRATEGY 3: Client Credentials (requires Premium) =====
+  if (strategy === 'none') {
+    console.log('\n--- Strategy 3: Client Credentials ---');
+    const clientToken = await getClientCredentialsToken();
+
+    if (clientToken) {
+      const testChart = await fetchFromWebAPI('global', SPOTIFY_PLAYLISTS.global, clientToken);
+      if (testChart && testChart.tracks.length > 0) {
+        strategy = 'client_credentials';
+        console.log('  Client credentials work! Using for all countries.');
+
+        fs.writeFileSync(
+          path.join(DATA_DIR, 'spotify_global.json'),
+          JSON.stringify(testChart, null, 2)
+        );
+        successCount++;
+
+        for (const [code, playlistId] of Object.entries(SPOTIFY_PLAYLISTS)) {
+          if (code === 'global') continue;
+          const chart = await fetchFromWebAPI(code, playlistId, clientToken);
+          if (chart) {
+            fs.writeFileSync(
+              path.join(DATA_DIR, `spotify_${code}.json`),
+              JSON.stringify(chart, null, 2)
+            );
+            successCount++;
+          }
+          await new Promise(r => setTimeout(r, 500));
+        }
+      }
+    }
+  }
+
+  if (strategy === 'none') {
+    console.error('\n=== FAILED: All Spotify strategies failed ===');
+    console.error('Possible solutions:');
+    console.error('  1. Check if charts-spotify-com-service.spotify.com is accessible');
+    console.error('  2. Get a Spotify Premium subscription for Web API access');
+    console.error('  3. Check open.spotify.com anonymous token availability');
+    process.exit(1);
+  }
+
+  console.log(`\n=== Spotify fetch complete (strategy: ${strategy}): ${successCount} charts saved ===`);
 }
 
 main().catch(err => {

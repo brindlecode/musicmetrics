@@ -4,14 +4,40 @@
 {{ $platform := .platform }}
 {{ $id := .id }}
 
-{{/* Build the data key: platform param maps to data/charts/{platform}_global.json or data/charts/{platform}.json */}}
+{{/* Build the data key: try exact match first, then _global fallback */}}
 {{ $data := false }}
+{{ $tracks := slice }}
+
+{{/* Step 1: Try exact key (e.g. "deezer_gb") */}}
 {{ with index site.Data.charts $platform }}
-  {{ $data = . }}
-{{ else }}
+  {{ if and .tracks (gt (len .tracks) 0) }}
+    {{ $data = . }}
+    {{ $tracks = .tracks }}
+  {{ end }}
+{{ end }}
+
+{{/* Step 2: If no tracks found, try {platform}_global key */}}
+{{ if eq (len $tracks) 0 }}
   {{ $globalKey := printf "%s_global" $platform }}
   {{ with index site.Data.charts $globalKey }}
-    {{ $data = . }}
+    {{ if and .tracks (gt (len .tracks) 0) }}
+      {{ $data = . }}
+      {{ $tracks = .tracks }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Step 3: If platform is like "deezer_gb" and still no data, try "deezer_global" */}}
+{{ if eq (len $tracks) 0 }}
+  {{ $parts := split $platform "_" }}
+  {{ if gt (len $parts) 1 }}
+    {{ $baseGlobalKey := printf "%s_global" (index $parts 0) }}
+    {{ with index site.Data.charts $baseGlobalKey }}
+      {{ if and .tracks (gt (len .tracks) 0) }}
+        {{ $data = . }}
+        {{ $tracks = .tracks }}
+      {{ end }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -30,8 +56,8 @@
       </tr>
     </thead>
     <tbody>
-      {{ with $data }}
-        {{ range first 50 .tracks }}
+      {{ if gt (len $tracks) 0 }}
+        {{ range first 50 $tracks }}
         <tr>
           <td class="chart-table__rank {{ if le .rank 3 }}chart-table__rank--top3{{ end }}">{{ .rank }}</td>
           <td>
@@ -53,7 +79,7 @@
               {{ .artist }}
             {{ end }}
           </td>
-          <td class="chart-table__streams text-right">{{ .streams_formatted }}</td>
+          <td class="chart-table__streams text-right">{{ if and .streams_formatted (ne .streams_formatted "#0") (ne .streams_formatted "Pop: 0") }}{{ .streams_formatted }}{{ else }}&mdash;{{ end }}</td>
           <td class="text-right">
             {{ if eq (printf "%v" .change) "new" }}
               <span class="chart-table__change--new">NEW</span>
