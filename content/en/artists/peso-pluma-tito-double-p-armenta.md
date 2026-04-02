@@ -1,0 +1,12 @@
+---
+title: "Peso Pluma, Tito Double P & Armenta"
+slug: "peso-pluma-tito-double-p-armenta"
+type: "artists"
+image: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/18/df/e018df9b-e0e8-2a69-a2d0-0dc0bb5baf01/820200237644.jpg/100x100bb.jpg"
+platforms: ["apple"]
+spotify_streams: "--"
+youtube_views: "--"
+apple_rank: "#32"
+monthly_listeners: "--"
+description: "Peso Pluma, Tito Double P & Armenta streaming statistics, chart positions and analytics across apple"
+---
