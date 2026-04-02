@@ -13,9 +13,6 @@ other = "Spotify"
 [nav_youtube]
 other = "YouTube"
 
-[nav_apple_music]
-other = "Apple Music"
-
 [nav_charts]
 other = "Charts"
 
@@ -156,12 +153,6 @@ other = "Select Country"
 
 [all_countries]
 other = "All Countries"
-
-[shazam]
-other = "Shazam"
-
-[deezer]
-other = "Deezer"
 
 [radio]
 other = "Radio"

@@ -5,7 +5,7 @@
 {{ $countryCode := .Params.country_code | default "" }}
 
 {{ if and $platform $countryCode }}
-  {{/* === PLATFORM + COUNTRY DETAIL (e.g. /charts/shazam/us/) === */}}
+  {{/* === PLATFORM + COUNTRY DETAIL === */}}
   <div class="container">
     <div class="page-header">
       <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
@@ -39,7 +39,7 @@
   </div>
 
 {{ else if $platform }}
-  {{/* === PLATFORM INDEX (e.g. /charts/shazam/) === */}}
+  {{/* === PLATFORM INDEX === */}}
   <div class="container">
     <div class="page-header">
       <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
@@ -95,7 +95,7 @@
         <span>{{ i18n "nav_charts" }}</span>
       </nav>
       <h1 class="page-header__title">{{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Shazam &middot; Deezer</p>
+      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
     </div>
 
     <div class="ad-slot ad-slot--header" data-ad-slot="charts-top"></div>
@@ -115,30 +115,6 @@
           <span class="card__badge card__badge--youtube">YouTube</span>
         </div>
         <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "most_viewed" }} &middot; {{ i18n "nav_trending" }} &middot; Milestones</p>
-      </a>
-
-      <a href="{{ relLangURL "/apple-music/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">Apple Music {{ i18n "nav_charts" }}</h3>
-          <span class="card__badge card__badge--apple">Apple Music</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "top_albums" }}</p>
-      </a>
-
-      <a href="{{ relLangURL "/charts/shazam/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">Shazam {{ i18n "nav_charts" }}</h3>
-          <span class="card__badge card__badge--shazam">Shazam</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "all_countries" }}</p>
-      </a>
-
-      <a href="{{ relLangURL "/charts/deezer/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">Deezer {{ i18n "nav_charts" }}</h3>
-          <span class="card__badge card__badge--deezer">Deezer</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "top_songs" }} &middot; {{ i18n "all_countries" }}</p>
       </a>
 
       <a href="{{ relLangURL "/charts/global/" }}" class="card">

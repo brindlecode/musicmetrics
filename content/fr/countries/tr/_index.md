@@ -1,6 +1,6 @@
 ---
 title: "Turkey Music Charts"
-description: "Turkey top songs and streaming charts from Spotify, Apple Music, YouTube, Deezer and Shazam"
+description: "Turkey top songs and streaming charts from Spotify and YouTube"
 type: "countries"
 country_code: "tr"
 country_name: "Turkey"

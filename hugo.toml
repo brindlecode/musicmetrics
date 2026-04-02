@@ -43,7 +43,7 @@ enableGitInfo = true
     weight = 1
     contentDir = "content/en"
     [languages.en.params]
-      description = "Real-time music charts, streaming stats & analytics from Spotify, YouTube, Apple Music, Deezer & Shazam. Track your favorite artists worldwide."
+      description = "Real-time music charts, streaming stats & analytics from Spotify and YouTube. Track your favorite artists worldwide."
       locale = "en_US"
 
   [languages.tr]
@@ -51,7 +51,7 @@ enableGitInfo = true
     weight = 2
     contentDir = "content/tr"
     [languages.tr.params]
-      description = "Spotify, YouTube, Apple Music, Deezer ve Shazam'dan gerçek zamanlı müzik listeleri, yayın istatistikleri ve analizler."
+      description = "Spotify ve YouTube'dan gerçek zamanlı müzik listeleri, yayın istatistikleri ve analizler."
       locale = "tr_TR"
 
   [languages.es]
@@ -59,7 +59,7 @@ enableGitInfo = true
     weight = 3
     contentDir = "content/es"
     [languages.es.params]
-      description = "Listas de música en tiempo real, estadísticas de streaming y análisis de Spotify, YouTube, Apple Music, Deezer y Shazam."
+      description = "Listas de música en tiempo real, estadísticas de streaming y análisis de Spotify y YouTube."
       locale = "es_ES"
 
   [languages.pt]
@@ -67,7 +67,7 @@ enableGitInfo = true
     weight = 4
     contentDir = "content/pt"
     [languages.pt.params]
-      description = "Paradas de música em tempo real, estatísticas de streaming e análises do Spotify, YouTube, Apple Music, Deezer e Shazam."
+      description = "Paradas de música em tempo real, estatísticas de streaming e análises do Spotify e YouTube."
       locale = "pt_BR"
 
   [languages.de]
@@ -75,7 +75,7 @@ enableGitInfo = true
     weight = 5
     contentDir = "content/de"
     [languages.de.params]
-      description = "Echtzeit-Musikcharts, Streaming-Statistiken und Analysen von Spotify, YouTube, Apple Music, Deezer und Shazam."
+      description = "Echtzeit-Musikcharts, Streaming-Statistiken und Analysen von Spotify und YouTube."
       locale = "de_DE"
 
   [languages.fr]
@@ -83,7 +83,7 @@ enableGitInfo = true
     weight = 6
     contentDir = "content/fr"
     [languages.fr.params]
-      description = "Classements musicaux en temps réel, statistiques de streaming et analyses de Spotify, YouTube, Apple Music, Deezer et Shazam."
+      description = "Classements musicaux en temps réel, statistiques de streaming et analyses de Spotify et YouTube."
       locale = "fr_FR"
 
   [languages.ja]
@@ -91,7 +91,7 @@ enableGitInfo = true
     weight = 7
     contentDir = "content/ja"
     [languages.ja.params]
-      description = "Spotify、YouTube、Apple Music、Deezer、Shazamのリアルタイム音楽チャート、ストリーミング統計、分析。"
+      description = "SpotifyとYouTubeのリアルタイム音楽チャート、ストリーミング統計、分析。"
       locale = "ja_JP"
 
 [params]

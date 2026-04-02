@@ -34,7 +34,7 @@
 
   {{/* Platform Quick Stats */}}
   <section class="mb-8">
-    <div class="grid grid--4">
+    <div class="grid grid--2">
       <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
         <span class="stat-card__label">Spotify {{ i18n "top_songs" }}</span>
         <span class="stat-card__value">{{ with site.Data.charts.spotify_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
@@ -44,16 +44,6 @@
         <span class="stat-card__label">YouTube {{ i18n "most_viewed" }}</span>
         <span class="stat-card__value">{{ with site.Data.charts.youtube_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily" }} {{ i18n "views" }}</span>
-      </div>
-      <div class="stat-card" style="border-left: 3px solid var(--color-apple)">
-        <span class="stat-card__label">Apple Music {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.apple_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
-        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
-      </div>
-      <div class="stat-card" style="border-left: 3px solid var(--color-deezer)">
-        <span class="stat-card__label">Deezer {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.deezer_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
-        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
     </div>
   </section>
@@ -92,32 +82,6 @@
   {{/* Ad Slot - Mid */}}
   <div class="ad-slot ad-slot--in-content" data-ad-slot="home-mid"></div>
 
-  {{/* Apple Music Global Chart */}}
-  <section class="mb-8">
-    <div class="section-header">
-      <h2 class="section-header__title">
-        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#FA243C"/><path d="M15 6.5v8.5a2 2 0 1 1-2-2V9l-4 1v6a2 2 0 1 1-2-2V8l8-2z" fill="#fff"/></svg>
-        Apple Music {{ i18n "global" }} {{ i18n "top_songs" }}
-      </h2>
-      <a href="{{ relLangURL "/apple-music/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" "apple" "id" "appleChart" "lang" .Lang) }}
-  </section>
-
-  {{/* Deezer Global Chart */}}
-  <section class="mb-8">
-    <div class="section-header">
-      <h2 class="section-header__title">
-        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="2" width="20" height="20" rx="4" fill="#A238FF"/><rect x="6" y="14" width="3" height="4" rx="1" fill="#fff"/><rect x="10.5" y="10" width="3" height="8" rx="1" fill="#fff"/><rect x="15" y="6" width="3" height="12" rx="1" fill="#fff"/></svg>
-        Deezer {{ i18n "global" }} {{ i18n "top_songs" }}
-      </h2>
-      <a href="{{ relLangURL "/charts/deezer/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" "deezer" "id" "deezerChart" "lang" .Lang) }}
-  </section>
-
   {{/* Countries Grid */}}
   <section class="mb-8">
     <div class="section-header">
@@ -133,7 +97,7 @@
           <span style="font-size: 2rem">{{ .flag }}</span>
           <div>
             <strong>{{ .name }}</strong>
-            <span class="text-muted" style="display: block; font-size: 0.8rem;">Spotify &middot; Apple Music &middot; YouTube</span>
+            <span class="text-muted" style="display: block; font-size: 0.8rem;">Spotify &middot; YouTube</span>
           </div>
         </div>
       </a>

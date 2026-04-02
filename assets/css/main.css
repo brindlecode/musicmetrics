@@ -26,9 +26,6 @@
   /* Platform Colors */
   --color-spotify: #1DB954;
   --color-youtube: #FF0000;
-  --color-apple: #FA243C;
-  --color-deezer: #A238FF;
-  --color-shazam: #0088FF;
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -367,9 +364,6 @@ main {
 }
 .card__badge--spotify { background: rgba(29,185,84,0.1); color: var(--color-spotify); }
 .card__badge--youtube { background: rgba(255,0,0,0.1); color: var(--color-youtube); }
-.card__badge--apple { background: rgba(250,36,60,0.1); color: var(--color-apple); }
-.card__badge--deezer { background: rgba(162,56,255,0.1); color: var(--color-deezer); }
-.card__badge--shazam { background: rgba(0,136,255,0.1); color: var(--color-shazam); }
 
 /* ============================================
    STAT CARDS (Dashboard)
@@ -527,7 +521,6 @@ main {
 .platform-tab--active { border-color: var(--color-primary); color: var(--color-primary); background: var(--color-primary-light); }
 .platform-tab--spotify.platform-tab--active { border-color: var(--color-spotify); color: var(--color-spotify); background: rgba(29,185,84,0.1); }
 .platform-tab--youtube.platform-tab--active { border-color: var(--color-youtube); color: var(--color-youtube); background: rgba(255,0,0,0.1); }
-.platform-tab--apple.platform-tab--active { border-color: var(--color-apple); color: var(--color-apple); background: rgba(250,36,60,0.1); }
 
 /* ============================================
    COUNTRY SELECTOR

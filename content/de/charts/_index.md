@@ -1,5 +1,5 @@
 ---
 title: "Charts"
-description: "Current music charts from Spotify, Apple Music, YouTube, Shazam, and Deezer"
+description: "Current music charts from Spotify and YouTube"
 type: "charts"
 ---

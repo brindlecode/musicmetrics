@@ -6,7 +6,6 @@ image: "https://i.ytimg.com/vi/HttxcynVU48/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
-apple_rank: "--"
 monthly_listeners: "--"
 description: "Hearts2Hearts - Topic streaming statistics, chart positions and analytics across youtube"
 ---

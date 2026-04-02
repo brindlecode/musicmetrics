@@ -24,11 +24,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch YouTube Trending
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/fetch-youtube.js
-
       - name: Fetch Spotify Charts
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
@@ -36,16 +31,10 @@ jobs:
         run: node scripts/fetch-spotify.js
         continue-on-error: true
 
-      - name: Fetch Deezer Charts
-        run: node scripts/fetch-deezer.js
-        continue-on-error: true
-
-      - name: Fetch Apple Music Charts
-        run: node scripts/fetch-apple-music.js
-        continue-on-error: true
-
-      - name: Fetch Shazam Charts
-        run: node scripts/fetch-shazam.js
+      - name: Fetch YouTube Trending
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/fetch-youtube.js
         continue-on-error: true
 
       - name: Verify data
