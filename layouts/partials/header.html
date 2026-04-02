@@ -23,10 +23,6 @@
             <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8.5 16,12 10,15.5" fill="#fff"/></svg>
             {{ i18n "nav_youtube" }}
           </a></li>
-          <li><a href="{{ relLangURL "/apple-music/" }}" class="nav-link {{ if in .RelPermalink "apple-music" }}active{{ end }}">
-            <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="#FA243C"/><path d="M15 6.5v8.5a2 2 0 1 1-2-2V9l-4 1v6a2 2 0 1 1-2-2V8l8-2z" fill="#fff"/></svg>
-            {{ i18n "nav_apple_music" }}
-          </a></li>
           <li><a href="{{ relLangURL "/charts/" }}" class="nav-link {{ if in .RelPermalink "charts" }}active{{ end }}">
             <svg class="nav-icon" viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="4" fill="#6366f1"/><rect x="6" y="12" width="3" height="6" rx="1" fill="#fff"/><rect x="10.5" y="8" width="3" height="10" rx="1" fill="#fff"/><rect x="15" y="5" width="3" height="13" rx="1" fill="#fff"/></svg>
             {{ i18n "nav_charts" }}

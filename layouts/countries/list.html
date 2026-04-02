@@ -16,7 +16,7 @@
         <span>{{ $countryName }}</span>
       </nav>
       <h1 class="page-header__title">{{ $countryName }} Music {{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Deezer &middot; Shazam</p>
+      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
     </div>
 
     <div class="ad-slot ad-slot--header" data-ad-slot="country-top"></div>
@@ -24,10 +24,7 @@
     {{/* Platform quick links */}}
     <div class="platform-tabs mb-8">
       <a href="{{ relLangURL (printf "/spotify/country/%s/" $countryCode) }}" class="platform-tab platform-tab--spotify">Spotify {{ i18n "nav_charts" }}</a>
-      <a href="{{ relLangURL (printf "/apple-music/%s/" $countryCode) }}" class="platform-tab platform-tab--apple">Apple Music</a>
       <a href="{{ relLangURL (printf "/youtube/trending/%s/" $countryCode) }}" class="platform-tab platform-tab--youtube">YouTube</a>
-      <a href="{{ relLangURL (printf "/charts/deezer/%s/" $countryCode) }}" class="platform-tab" style="border-color: var(--color-deezer); color: var(--color-deezer)">Deezer</a>
-      <a href="{{ relLangURL (printf "/charts/shazam/%s/" $countryCode) }}" class="platform-tab" style="border-color: var(--color-shazam); color: var(--color-shazam)">Shazam</a>
     </div>
 
     {{/* Spotify Chart for this country */}}
@@ -43,17 +40,6 @@
 
     <div class="ad-slot ad-slot--in-content" data-ad-slot="country-mid"></div>
 
-    {{/* Apple Music Chart for this country */}}
-    <section class="mb-8">
-      <div class="section-header">
-        <h2 class="section-header__title">
-          <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#FA243C"/><path d="M15 6.5v8.5a2 2 0 1 1-2-2V9l-4 1v6a2 2 0 1 1-2-2V8l8-2z" fill="#fff"/></svg>
-          Apple Music {{ i18n "top_songs" }} - {{ $countryName }}
-        </h2>
-      </div>
-      {{ partial "chart-table.html" (dict "platform" (printf "apple_%s" $countryCode) "id" "appleCountryChart" "lang" .Lang) }}
-    </section>
-
     {{/* YouTube Trending for this country */}}
     <section class="mb-8">
       <div class="section-header">
@@ -63,17 +49,6 @@
         </h2>
       </div>
       {{ partial "chart-table.html" (dict "platform" (printf "youtube_%s" $countryCode) "id" "youtubeCountryChart" "lang" .Lang) }}
-    </section>
-
-    {{/* Deezer Chart for this country */}}
-    <section class="mb-8">
-      <div class="section-header">
-        <h2 class="section-header__title">
-          <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="2" width="20" height="20" rx="4" fill="#A238FF"/><rect x="6" y="14" width="3" height="4" rx="1" fill="#fff"/><rect x="10.5" y="10" width="3" height="8" rx="1" fill="#fff"/><rect x="15" y="6" width="3" height="12" rx="1" fill="#fff"/></svg>
-          Deezer {{ i18n "top_songs" }} - {{ $countryName }}
-        </h2>
-      </div>
-      {{ partial "chart-table.html" (dict "platform" (printf "deezer_%s" $countryCode) "id" "deezerCountryChart" "lang" .Lang) }}
     </section>
 
     <div class="ad-slot ad-slot--footer" data-ad-slot="country-bottom"></div>
@@ -89,7 +64,7 @@
         <span>{{ i18n "nav_countries" }}</span>
       </nav>
       <h1 class="page-header__title">{{ i18n "all_countries" }} - Music {{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Deezer &middot; Shazam</p>
+      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
     </div>
 
     <div class="ad-slot ad-slot--header" data-ad-slot="countries-top"></div>
@@ -103,9 +78,7 @@
             <strong style="display: block">{{ .name }}</strong>
             <span class="text-muted" style="font-size: var(--font-size-xs)">
               {{ if .has_spotify }}Spotify{{ end }}
-              {{ if .has_apple }}&middot; Apple Music{{ end }}
               {{ if .has_youtube }}&middot; YouTube{{ end }}
-              {{ if .has_deezer }}&middot; Deezer{{ end }}
             </span>
           </div>
         </div>

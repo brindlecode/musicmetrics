@@ -13,9 +13,6 @@ other = "Spotify"
 [nav_youtube]
 other = "YouTube"
 
-[nav_apple_music]
-other = "Apple Music"
-
 [nav_charts]
 other = "チャート"
 
@@ -156,12 +153,6 @@ other = "国を選択"
 
 [all_countries]
 other = "すべての国"
-
-[shazam]
-other = "Shazam"
-
-[deezer]
-other = "Deezer"
 
 [radio]
 other = "ラジオ"

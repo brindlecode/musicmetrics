@@ -26,15 +26,6 @@ jobs:
           node-version: '20'
 
       # ===== Fetch all data sources sequentially in one job =====
-      # This prevents the artifact merge bug where stale data overwrites fresh data
-
-      - name: Fetch Deezer Charts
-        run: node scripts/fetch-deezer.js
-        continue-on-error: true
-
-      - name: Fetch Apple Music Charts
-        run: node scripts/fetch-apple-music.js
-        continue-on-error: true
 
       - name: Fetch Spotify Charts
         env:
@@ -47,10 +38,6 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/fetch-youtube.js
-        continue-on-error: true
-
-      - name: Fetch Shazam Charts
-        run: node scripts/fetch-shazam.js
         continue-on-error: true
 
       # ===== Verify data =====

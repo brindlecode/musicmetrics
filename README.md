@@ -1,17 +1,17 @@
 # MusicMetrics
 
-> Real-time music charts, streaming stats & analytics from Spotify, YouTube, Apple Music, Deezer & Shazam.
+> Real-time music charts, streaming stats & analytics from Spotify and YouTube.
 
 ## Architecture
 
 - **Static Site Generator:** [Hugo](https://gohugo.io/) (extended)
 - **Hosting:** [Netlify](https://netlify.com/) (free tier)
 - **Data Collection:** GitHub Actions (cron every 6 hours)
-- **Data Sources:** Deezer API, Apple Music RSS, Spotify API, YouTube Data API
+- **Data Sources:** Spotify API, YouTube Data API
 
 ## Features
 
-- Multi-platform chart tracking (Spotify, YouTube, Apple Music, Deezer, Shazam)
+- Multi-platform chart tracking (Spotify, YouTube)
 - 40+ country charts
 - Global artist rankings
 - 7 languages (EN, TR, ES, PT, DE, FR, JA)
@@ -27,8 +27,6 @@
 hugo server -D
 
 # Fetch data manually
-node scripts/fetch-deezer.js
-node scripts/fetch-apple-music.js
 SPOTIFY_CLIENT_ID=xxx SPOTIFY_CLIENT_SECRET=xxx node scripts/fetch-spotify.js
 YOUTUBE_API_KEY=xxx node scripts/fetch-youtube.js
 
@@ -53,8 +51,6 @@ hugo --minify
 
 | Platform | API | Auth Required |
 |----------|-----|---------------|
-| Deezer | Public API | No |
-| Apple Music | RSS Feed | No |
 | Spotify | Web API | Yes (free) |
 | YouTube | Data API v3 | Yes (free) |
 
