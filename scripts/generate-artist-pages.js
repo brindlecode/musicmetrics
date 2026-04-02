@@ -148,11 +148,9 @@ function main() {
     let count = 0;
     for (const artist of artists.values()) {
       const filePath = path.join(langDir, `${artist.slug}.md`);
-      // Don't overwrite existing custom content
-      if (!fs.existsSync(filePath)) {
-        fs.writeFileSync(filePath, generateArtistContent(artist));
-        count++;
-      }
+      // Always update artist pages with fresh chart data
+      fs.writeFileSync(filePath, generateArtistContent(artist));
+      count++;
     }
     console.log(`Generated ${count} new artist pages for ${lang}`);
   }

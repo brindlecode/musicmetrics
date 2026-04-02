@@ -19,39 +19,15 @@ const http = require('http');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 const ARTISTS_DIR = path.join(__dirname, '..', 'data', 'artists');
 
-// Deezer editorial/chart playlist IDs per country
-// These are Deezer's official "Top [Country]" playlists
-const DEEZER_PLAYLISTS = {
-  global: null, // use /chart endpoint
-  us: '1313621735',
-  gb: '1313623125',
-  br: '1111143121',
-  de: '1116190041',
-  fr: '1109890291',
-  jp: '1279119721',
-  mx: '1116187241',
-  tr: '1116189381',
-  es: '1116188681',
-  it: '1116189161',
-  kr: '1362510315',
-  in: '1362516455',
-  ar: '1116185541',
-  co: '1116186481',
-  au: '1313622565',
-  ca: '1313622025',
-  nl: '1116190451',
-  se: '1116190861',
-  pl: '1116190651',
-  pt: '1116190751',
-  id: '1362508755',
-  ph: '1362512985',
-  th: '1362514615',
-  ng: '1362519225',
-  za: '1362520845',
-  eg: '1362521775',
-  sa: '1362523265',
-  ae: '1362524165',
-};
+// All countries we want to support
+// Deezer's public API only has global charts, so country files use global data
+// The /chart/0/tracks endpoint provides the worldwide chart
+const COUNTRIES = [
+  'us', 'gb', 'br', 'de', 'fr', 'jp', 'mx', 'tr', 'es', 'it',
+  'kr', 'in', 'ar', 'co', 'au', 'ca', 'nl', 'se', 'pl', 'pt',
+  'id', 'ph', 'th', 'ng', 'za', 'eg', 'sa', 'ae',
+  'at', 'ch', 'dk', 'fi', 'gr', 'ie', 'il', 'no', 'nz', 'ro',
+];
 
 function fetchURL(url, retries = 3) {
   return new Promise((resolve, reject) => {
@@ -172,7 +148,7 @@ function processChartTracks(tracks) {
     image: track.album ? (track.album.cover_small || track.album.cover || '') : '',
     image_medium: track.album ? (track.album.cover_medium || track.album.cover || '') : '',
     duration: track.duration || 0,
-    streams_formatted: track.rank ? formatNumber(track.rank) : `#${index + 1}`,
+    streams_formatted: `#${index + 1}`,
     preview: track.preview || '',
     deezer_id: track.id,
     deezer_url: track.link || `https://www.deezer.com/track/${track.id}`,
@@ -180,31 +156,6 @@ function processChartTracks(tracks) {
     change_num: 0,
     peak: index + 1
   }));
-}
-
-function processPlaylistTracks(tracks) {
-  return tracks.map((item, index) => {
-    // Playlist tracks may be wrapped in a data property
-    const track = item.track || item;
-    return {
-      rank: index + 1,
-      title: track.title || track.title_short || '',
-      artist: track.artist ? track.artist.name : '',
-      artist_slug: track.artist ? slugify(track.artist.name) : '',
-      artist_id: track.artist ? track.artist.id : 0,
-      album: track.album ? track.album.title : '',
-      image: track.album ? (track.album.cover_small || track.album.cover || '') : '',
-      image_medium: track.album ? (track.album.cover_medium || track.album.cover || '') : '',
-      duration: track.duration || 0,
-      streams_formatted: `#${index + 1}`,
-      preview: track.preview || '',
-      deezer_id: track.id,
-      deezer_url: track.link || `https://www.deezer.com/track/${track.id}`,
-      change: 'new',
-      change_num: 0,
-      peak: index + 1
-    };
-  });
 }
 
 async function fetchGlobalChart() {
@@ -271,27 +222,6 @@ async function fetchGlobalChart() {
   return null;
 }
 
-async function fetchCountryChart(countryCode, playlistId) {
-  if (!playlistId) return null;
-
-  console.log(`\n  Fetching Deezer chart for ${countryCode.toUpperCase()} (playlist: ${playlistId})...`);
-
-  try {
-    const data = await fetchURL(`https://api.deezer.com/playlist/${playlistId}/tracks?limit=100`);
-
-    if (data.data && Array.isArray(data.data) && data.data.length > 0) {
-      const tracks = processPlaylistTracks(data.data);
-      console.log(`    Got ${tracks.length} tracks for ${countryCode}`);
-      return tracks;
-    }
-    console.warn(`    No tracks in playlist ${playlistId} for ${countryCode}`);
-    return null;
-  } catch (error) {
-    console.error(`    Error for ${countryCode}: ${error.message}`);
-    return null;
-  }
-}
-
 async function main() {
   console.log('=== Deezer Data Fetcher (Enhanced) ===');
   console.log(`Date: ${new Date().toISOString()}`);
@@ -321,43 +251,18 @@ async function main() {
     console.log(`\n  Saved deezer_global.json (${globalTracks.length} tracks)`);
     successCount++;
 
-    // For countries without specific playlists, use global data
-    const countriesWithoutPlaylists = Object.entries(DEEZER_PLAYLISTS)
-      .filter(([code, id]) => !id && code !== 'global')
-      .map(([code]) => code);
-
-    for (const code of countriesWithoutPlaylists) {
+    // Write global chart to all country files too
+    // Deezer's public API only provides global charts, not per-country
+    for (const code of COUNTRIES) {
       const countryData = { ...globalChart, country: code };
       fs.writeFileSync(
         path.join(DATA_DIR, `deezer_${code}.json`),
         JSON.stringify(countryData, null, 2)
       );
     }
+    console.log(`  Saved deezer charts for ${COUNTRIES.length} countries (using global data)`);
   } else {
     console.error('\n  FAILED: Could not get global chart data');
-  }
-
-  // Fetch country-specific charts via playlists
-  for (const [code, playlistId] of Object.entries(DEEZER_PLAYLISTS)) {
-    if (code === 'global' || !playlistId) continue;
-
-    const tracks = await fetchCountryChart(code, playlistId);
-    if (tracks && tracks.length > 0) {
-      const chartData = {
-        country: code,
-        platform: 'deezer',
-        updated: new Date().toISOString().split('T')[0],
-        total: tracks.length,
-        tracks
-      };
-      fs.writeFileSync(
-        path.join(DATA_DIR, `deezer_${code}.json`),
-        JSON.stringify(chartData, null, 2)
-      );
-      successCount++;
-    }
-    // Respect rate limit: 50 requests per 5 seconds
-    await new Promise(r => setTimeout(r, 200));
   }
 
   // Fetch top artists

@@ -24,7 +24,10 @@ const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 const COUNTRIES = [
   'US', 'GB', 'BR', 'DE', 'FR', 'JP', 'MX', 'TR', 'ES', 'IT',
   'KR', 'IN', 'AR', 'CO', 'AU', 'CA', 'NL', 'SE', 'PL', 'ID',
-  'PH', 'TH', 'NG', 'ZA', 'EG', 'SA', 'AE'
+  'PH', 'TH', 'NG', 'ZA', 'EG', 'SA', 'AE',
+  'AT', 'CH', 'DK', 'FI', 'GR', 'IE', 'IL', 'NO', 'NZ', 'RO',
+  'CL', 'HU', 'CZ', 'BG', 'HR', 'SK', 'RS', 'UA', 'PE', 'EC',
+  'SG', 'MY', 'TW', 'HK', 'VN'
 ];
 
 function fetchJSON(url, retries = 3) {
