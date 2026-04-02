@@ -1,5 +1,5 @@
 {{/* Reusable chart table partial
-     Params: .platform (e.g. "spotify", "spotify_us", "deezer_br"), .id, .lang */}}
+     Params: .platform (e.g. "spotify", "spotify_us", "youtube_br"), .id, .lang */}}
 
 {{ $platform := .platform }}
 {{ $id := .id }}
@@ -8,7 +8,7 @@
 {{ $data := false }}
 {{ $tracks := slice }}
 
-{{/* Step 1: Try exact key (e.g. "deezer_gb") */}}
+{{/* Step 1: Try exact key (e.g. "spotify_gb") */}}
 {{ with index site.Data.charts $platform }}
   {{ if and .tracks (gt (len .tracks) 0) }}
     {{ $data = . }}
@@ -27,7 +27,7 @@
   {{ end }}
 {{ end }}
 
-{{/* Step 3: If platform is like "deezer_gb" and still no data, try "deezer_global" */}}
+{{/* Step 3: If platform is like "spotify_gb" and still no data, try "spotify_global" */}}
 {{ if eq (len $tracks) 0 }}
   {{ $parts := split $platform "_" }}
   {{ if gt (len $parts) 1 }}

@@ -36,7 +36,7 @@ function collectArtists() {
   for (const file of files) {
     try {
       const data = JSON.parse(fs.readFileSync(path.join(DATA_DIR, file), 'utf-8'));
-      const platform = file.split('_')[0]; // spotify, apple, deezer, youtube
+      const platform = file.split('_')[0]; // spotify, youtube
       const tracks = data.tracks || [];
 
       for (const track of tracks) {
@@ -98,7 +98,6 @@ image: "${artist.image}"
 platforms: [${platforms.map(p => `"${p}"`).join(', ')}]
 spotify_streams: "${artist.platforms.spotify ? 'Charting' : '--'}"
 youtube_views: "${artist.platforms.youtube ? 'Charting' : '--'}"
-apple_rank: "${artist.platforms.apple ? '#' + artist.platforms.apple.best_rank : '--'}"
 monthly_listeners: "--"
 description: "${artist.name} streaming statistics, chart positions and analytics across ${platformStr}"
 ---
