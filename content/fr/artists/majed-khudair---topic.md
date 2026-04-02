@@ -1,0 +1,12 @@
+---
+title: "Majed Khudair - Topic"
+slug: "majed-khudair---topic"
+type: "artists"
+image: "https://i.ytimg.com/vi/TQTUjGj80LQ/mqdefault.jpg"
+platforms: ["youtube"]
+spotify_streams: "--"
+youtube_views: "Charting"
+apple_rank: "--"
+monthly_listeners: "--"
+description: "Majed Khudair - Topic streaming statistics, chart positions and analytics across youtube"
+---

@@ -1,0 +1,12 @@
+---
+title: "العبد للإنتاج الفني - El Abd Production"
+slug: "el-abd-production"
+type: "artists"
+image: "https://i.ytimg.com/vi/4ulSR860HyU/mqdefault.jpg"
+platforms: ["youtube"]
+spotify_streams: "--"
+youtube_views: "Charting"
+apple_rank: "--"
+monthly_listeners: "--"
+description: "العبد للإنتاج الفني - El Abd Production streaming statistics, chart positions and analytics across youtube"
+---
