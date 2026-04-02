@@ -1,44 +1,15 @@
 {{/* Reusable chart table partial
-     Params: .platform (e.g. "spotify", "spotify_us", "youtube_br"), .id, .lang */}}
+     Params: .platform (e.g. "spotify", "youtube", "spotify_us"), .id, .lang */}}
 
 {{ $platform := .platform }}
 {{ $id := .id }}
 
-{{/* Build the data key: try exact match first, then _global fallback */}}
-{{ $data := false }}
-{{ $tracks := slice }}
+{{/* Look up chart data */}}
+{{ $data := index site.Data.charts $platform }}
 
-{{/* Step 1: Try exact key (e.g. "spotify_gb") */}}
-{{ with index site.Data.charts $platform }}
-  {{ if and .tracks (gt (len .tracks) 0) }}
-    {{ $data = . }}
-    {{ $tracks = .tracks }}
-  {{ end }}
-{{ end }}
-
-{{/* Step 2: If no tracks found, try {platform}_global key */}}
-{{ if eq (len $tracks) 0 }}
-  {{ $globalKey := printf "%s_global" $platform }}
-  {{ with index site.Data.charts $globalKey }}
-    {{ if and .tracks (gt (len .tracks) 0) }}
-      {{ $data = . }}
-      {{ $tracks = .tracks }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{/* Step 3: If platform is like "spotify_gb" and still no data, try "spotify_global" */}}
-{{ if eq (len $tracks) 0 }}
-  {{ $parts := split $platform "_" }}
-  {{ if gt (len $parts) 1 }}
-    {{ $baseGlobalKey := printf "%s_global" (index $parts 0) }}
-    {{ with index site.Data.charts $baseGlobalKey }}
-      {{ if and .tracks (gt (len .tracks) 0) }}
-        {{ $data = . }}
-        {{ $tracks = .tracks }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
+{{/* Fallback: try {platform}_global */}}
+{{ if not $data }}
+  {{ $data = index site.Data.charts (printf "%s_global" $platform) }}
 {{ end }}
 
 <div class="chart-table-wrapper">
@@ -56,8 +27,8 @@
       </tr>
     </thead>
     <tbody>
-      {{ if gt (len $tracks) 0 }}
-        {{ range first 50 $tracks }}
+      {{ if and $data $data.tracks }}
+        {{ range first 50 $data.tracks }}
         <tr>
           <td class="chart-table__rank {{ if le .rank 3 }}chart-table__rank--top3{{ end }}">{{ .rank }}</td>
           <td>
@@ -65,7 +36,7 @@
               {{ with .image }}
               <img src="{{ . }}" alt="" class="chart-table__art" loading="lazy" width="40" height="40">
               {{ else }}
-              <div class="chart-table__art"></div>
+              <div class="chart-table__art chart-table__art--empty"></div>
               {{ end }}
               <div class="chart-table__song-info">
                 <span class="chart-table__song-title">{{ .title }}</span>
@@ -79,7 +50,7 @@
               {{ .artist }}
             {{ end }}
           </td>
-          <td class="chart-table__streams text-right">{{ if and .streams_formatted (ne .streams_formatted "#0") (ne .streams_formatted "Pop: 0") }}{{ .streams_formatted }}{{ else }}&mdash;{{ end }}</td>
+          <td class="chart-table__streams text-right">{{ with .streams_formatted }}{{ . }}{{ else }}&mdash;{{ end }}</td>
           <td class="text-right">
             {{ if eq (printf "%v" .change) "new" }}
               <span class="chart-table__change--new">NEW</span>

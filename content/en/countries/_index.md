@@ -1,5 +1,5 @@
 ---
 title: "Countries"
-description: "Music charts by country - Spotify, Apple Music, YouTube, Deezer, and Shazam"
+description: "Music charts by country - Spotify and YouTube"
 type: "countries"
 ---

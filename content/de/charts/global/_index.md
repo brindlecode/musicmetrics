@@ -1,5 +1,5 @@
 ---
 title: "Global Combined Charts"
-description: "Cross-platform combined music rankings from Spotify, Apple Music, YouTube, Deezer and Shazam"
+description: "Cross-platform combined music rankings from Spotify and YouTube"
 type: "charts"
 ---

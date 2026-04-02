@@ -6,7 +6,6 @@ image: "https://i.ytimg.com/vi/giA1Y3VB3CM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
-apple_rank: "--"
 monthly_listeners: "--"
 description: "What We Cookin? streaming statistics, chart positions and analytics across youtube"
 ---

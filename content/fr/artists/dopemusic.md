@@ -6,7 +6,6 @@ image: "https://i.ytimg.com/vi/R136L-Q3rAk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
-apple_rank: "--"
 monthly_listeners: "--"
 description: "DopeMusic streaming statistics, chart positions and analytics across youtube"
 ---

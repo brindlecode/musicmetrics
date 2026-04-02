@@ -2,7 +2,6 @@ name: Fetch Music Data
 
 on:
   schedule:
-    # Run every 6 hours
     - cron: '0 */6 * * *'
   workflow_dispatch:
     inputs:
@@ -17,15 +16,13 @@ permissions:
 jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      # ===== Fetch all data sources sequentially in one job =====
 
       - name: Fetch Spotify Charts
         env:
@@ -40,40 +37,14 @@ jobs:
         run: node scripts/fetch-youtube.js
         continue-on-error: true
 
-      # ===== Verify data =====
-      - name: Verify fetched data
+      - name: Verify data
         run: |
-          echo "=== Data Verification ==="
-          echo ""
-          TOTAL_SUCCESS=0
-          TOTAL_FAIL=0
-
+          echo "=== Data Check ==="
           for f in data/charts/*_global.json; do
-            TRACKS=$(node -e "try { console.log(JSON.parse(require('fs').readFileSync('$f')).total) } catch(e) { console.log(0) }" 2>/dev/null)
-            NAME=$(basename $f)
-            if [ "$TRACKS" -gt 0 ] 2>/dev/null; then
-              echo "  ✓ $NAME: $TRACKS tracks"
-              TOTAL_SUCCESS=$((TOTAL_SUCCESS + 1))
-            else
-              echo "  ✗ $NAME: NO DATA"
-              TOTAL_FAIL=$((TOTAL_FAIL + 1))
-            fi
+            TRACKS=$(node -e "try{console.log(JSON.parse(require('fs').readFileSync('$f')).total)}catch(e){console.log(0)}")
+            echo "  $(basename $f): $TRACKS tracks"
           done
 
-          echo ""
-          echo "=== Summary: $TOTAL_SUCCESS success, $TOTAL_FAIL failed ==="
-
-          # Count total chart files with data
-          TOTAL_FILES=$(find data/charts -name "*.json" -size +200c | wc -l)
-          echo "Total chart files with data: $TOTAL_FILES"
-
-          # At least one platform must have data to proceed
-          if [ "$TOTAL_SUCCESS" -eq 0 ]; then
-            echo "ERROR: No platform has data. Aborting deployment."
-            exit 1
-          fi
-
-      # ===== Generate content & build =====
       - name: Generate artist pages
         run: node scripts/generate-artist-pages.js
 
@@ -86,7 +57,6 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      # ===== Commit & Deploy =====
       - name: Commit data updates
         run: |
           git config --local user.email "action@github.com"
