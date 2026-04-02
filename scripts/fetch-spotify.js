@@ -1,70 +1,58 @@
 #!/usr/bin/env node
 /**
- * Fetch Spotify Data
- * Uses Spotify Web API with client credentials flow (free)
+ * Fetch Spotify Data via Web API
+ * Uses client credentials flow (free)
  *
- * Required env vars:
- *   SPOTIFY_CLIENT_ID
- *   SPOTIFY_CLIENT_SECRET
+ * Required env vars: SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET
  *
- * Note: Spotify API doesn't provide chart data directly.
- * We use playlist endpoints for official Spotify playlists (Top 50, Viral 50)
- * and artist/search endpoints for metadata.
- *
- * Output: data/charts/spotify_*.json, data/artists/spotify_*.json
+ * Output: data/charts/spotify_*.json
  */
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const querystring = require('querystring');
 
 const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
-const ARTISTS_DIR = path.join(__dirname, '..', 'data', 'artists');
 
-// Official Spotify playlist IDs for Top 50 charts
+// Official Spotify Top 50 playlist IDs
 const SPOTIFY_PLAYLISTS = {
-  global: '37i9dQZEVXbMDoHDwVN2tF',      // Top 50 - Global
-  us: '37i9dQZEVXbLRQDuF5jeBp',          // Top 50 - USA
-  gb: '37i9dQZEVXbLnolsZ8PSNw',          // Top 50 - UK
-  br: '37i9dQZEVXbMXbN3EUUhlg',          // Top 50 - Brazil
-  de: '37i9dQZEVXbJiZcmkrIHGU',          // Top 50 - Germany
-  fr: '37i9dQZEVXbIPWwFssbupI',          // Top 50 - France
-  jp: '37i9dQZEVXbKXQ4mDTEBXq',          // Top 50 - Japan
-  mx: '37i9dQZEVXbO3qyFxbkOE1',          // Top 50 - Mexico
-  tr: '37i9dQZEVXbIVYVBNw9D5K',          // Top 50 - Turkey
-  es: '37i9dQZEVXbNFJfN1Vw8d9',          // Top 50 - Spain
-  it: '37i9dQZEVXbIQnj7RRhdSX',          // Top 50 - Italy
-  kr: '37i9dQZEVXbNxXF4SkHj9F',          // Top 50 - South Korea
-  in: '37i9dQZEVXbLZ52XmnySJg',          // Top 50 - India
-  ar: '37i9dQZEVXbMMy2roB9myp',          // Top 50 - Argentina
-  co: '37i9dQZEVXbOa2lmxNORXQ',          // Top 50 - Colombia
-  au: '37i9dQZEVXbJPcfkRz0wJ0',          // Top 50 - Australia
-  ca: '37i9dQZEVXbKj23U1GF4IR',          // Top 50 - Canada
-};
-
-// Viral 50 playlists
-const VIRAL_PLAYLISTS = {
-  global: '37i9dQZEVXbLiRSasKsNU9',      // Viral 50 - Global
+  global: '37i9dQZEVXbMDoHDwVN2tF',
+  us: '37i9dQZEVXbLRQDuF5jeBp',
+  gb: '37i9dQZEVXbLnolsZ8PSNw',
+  br: '37i9dQZEVXbMXbN3EUUhlg',
+  de: '37i9dQZEVXbJiZcmkrIHGU',
+  fr: '37i9dQZEVXbIPWwFssbupI',
+  jp: '37i9dQZEVXbKXQ4mDTEBXq',
+  mx: '37i9dQZEVXbO3qyFxbkOE1',
+  tr: '37i9dQZEVXbIVYVBNw9D5K',
+  es: '37i9dQZEVXbNFJfN1Vw8d9',
+  it: '37i9dQZEVXbIQnj7RRhdSX',
+  kr: '37i9dQZEVXbNxXF4SkHj9F',
+  in: '37i9dQZEVXbLZ52XmnySJg',
+  ar: '37i9dQZEVXbMMy2roB9myp',
+  co: '37i9dQZEVXbOa2lmxNORXQ',
+  au: '37i9dQZEVXbJPcfkRz0wJ0',
+  ca: '37i9dQZEVXbKj23U1GF4IR',
 };
 
 let accessToken = null;
 
-function httpsRequest(url, options = {}) {
+function httpsRequest(options, postData) {
   return new Promise((resolve, reject) => {
-    const req = https.request(url, options, (res) => {
+    const req = https.request(options, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
         try {
           resolve({ status: res.statusCode, data: JSON.parse(data) });
         } catch (e) {
-          reject(new Error(`Parse error: ${e.message}`));
+          reject(new Error(`Parse error: ${e.message}\nBody: ${data.substring(0, 200)}`));
         }
       });
-      res.on('error', reject);
     });
     req.on('error', reject);
-    if (options.body) req.write(options.body);
+    if (postData) req.write(postData);
     req.end();
   });
 }
@@ -75,56 +63,64 @@ async function getSpotifyToken() {
 
   if (!clientId || !clientSecret) {
     console.error('Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET');
-    process.exit(1);
+    return false;
   }
 
   const auth = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
-  const body = 'grant_type=client_credentials';
+  const postData = 'grant_type=client_credentials';
 
-  const url = new URL('https://accounts.spotify.com/api/token');
-  const response = await httpsRequest(url, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Basic ${auth}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Content-Length': Buffer.byteLength(body),
-    },
-    body
-  });
+  try {
+    const response = await httpsRequest({
+      hostname: 'accounts.spotify.com',
+      path: '/api/token',
+      method: 'POST',
+      headers: {
+        'Authorization': `Basic ${auth}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(postData),
+      }
+    }, postData);
 
-  if (response.status !== 200) {
-    throw new Error(`Auth failed: ${JSON.stringify(response.data)}`);
-  }
-
-  accessToken = response.data.access_token;
-  console.log('Spotify access token obtained');
-}
-
-async function spotifyGet(endpoint) {
-  const url = new URL(`https://api.spotify.com/v1${endpoint}`);
-  const response = await httpsRequest(url, {
-    method: 'GET',
-    headers: {
-      'Authorization': `Bearer ${accessToken}`,
+    if (response.status !== 200) {
+      console.error(`Auth failed: ${JSON.stringify(response.data)}`);
+      return false;
     }
-  });
 
-  if (response.status === 429) {
-    const retryAfter = 2;
-    console.log(`  Rate limited, waiting ${retryAfter}s...`);
-    await new Promise(r => setTimeout(r, retryAfter * 1000));
-    return spotifyGet(endpoint);
+    accessToken = response.data.access_token;
+    console.log('Spotify access token obtained');
+    return true;
+  } catch (error) {
+    console.error(`Auth error: ${error.message}`);
+    return false;
   }
-
-  return response.data;
 }
 
-function formatNumber(num) {
-  if (!num) return '0';
-  if (num >= 1e9) return (num / 1e9).toFixed(1) + 'B';
-  if (num >= 1e6) return (num / 1e6).toFixed(1) + 'M';
-  if (num >= 1e3) return (num / 1e3).toFixed(1) + 'K';
-  return num.toString();
+function spotifyGet(endpoint) {
+  return new Promise((resolve, reject) => {
+    const req = https.get({
+      hostname: 'api.spotify.com',
+      path: `/v1${endpoint}`,
+      headers: { 'Authorization': `Bearer ${accessToken}` }
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (res.statusCode === 429) {
+            const retryAfter = parseInt(res.headers['retry-after'] || '2');
+            console.log(`  Rate limited, waiting ${retryAfter}s...`);
+            setTimeout(() => spotifyGet(endpoint).then(resolve).catch(reject), retryAfter * 1000);
+            return;
+          }
+          resolve(parsed);
+        } catch (e) {
+          reject(new Error(`Parse error: ${e.message}`));
+        }
+      });
+    });
+    req.on('error', reject);
+  });
 }
 
 function slugify(str) {
@@ -135,35 +131,36 @@ function slugify(str) {
 }
 
 async function fetchPlaylistChart(countryCode, playlistId) {
-  console.log(`  Fetching Spotify chart for ${countryCode} (${playlistId})...`);
+  console.log(`  Fetching Spotify chart for ${countryCode}...`);
 
   try {
-    const data = await spotifyGet(`/playlists/${playlistId}?fields=name,description,tracks.items(track(name,artists,album(name,images),popularity,id,duration_ms,external_urls))`);
+    const data = await spotifyGet(`/playlists/${playlistId}?fields=name,tracks.items(track(name,artists,album(name,images),popularity,id,external_urls))`);
 
     if (!data.tracks || !data.tracks.items) {
-      console.warn(`  No tracks for ${countryCode}`);
+      console.warn(`  No tracks for ${countryCode}: ${JSON.stringify(data).substring(0, 200)}`);
       return null;
     }
 
     const tracks = data.tracks.items
-      .filter(item => item.track)
+      .filter(item => item.track && item.track.name)
       .map((item, index) => {
         const track = item.track;
         const artist = track.artists.map(a => a.name).join(', ');
-        const image = track.album.images.length > 0 ? track.album.images[track.album.images.length - 1].url : '';
+        const images = track.album.images || [];
+        const image = images.length > 0 ? images[images.length - 1].url : '';
+        const imageMed = images.length > 1 ? images[1].url : image;
 
         return {
           rank: index + 1,
           title: track.name,
           artist,
           artist_slug: slugify(track.artists[0].name),
-          artist_id: track.artists[0].id || '',
           album: track.album.name,
           image,
-          image_medium: track.album.images.length > 1 ? track.album.images[1].url : image,
+          image_medium: imageMed,
           popularity: track.popularity,
           spotify_id: track.id,
-          spotify_url: track.external_urls.spotify || '',
+          spotify_url: (track.external_urls || {}).spotify || '',
           streams_formatted: `Pop: ${track.popularity}`,
           change: 'new',
           change_num: 0,
@@ -171,10 +168,12 @@ async function fetchPlaylistChart(countryCode, playlistId) {
         };
       });
 
+    console.log(`  Got ${tracks.length} tracks for ${countryCode}`);
+
     return {
       country: countryCode,
       platform: 'spotify',
-      playlist_name: data.name,
+      playlist_name: data.name || `Top 50 - ${countryCode.toUpperCase()}`,
       updated: new Date().toISOString().split('T')[0],
       total: tracks.length,
       tracks
@@ -190,12 +189,13 @@ async function main() {
   console.log(`Date: ${new Date().toISOString()}`);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
-  fs.mkdirSync(ARTISTS_DIR, { recursive: true });
 
-  // Get access token
-  await getSpotifyToken();
+  const authed = await getSpotifyToken();
+  if (!authed) {
+    console.error('Failed to authenticate with Spotify. Skipping.');
+    return;
+  }
 
-  // Fetch Top 50 playlists
   for (const [code, playlistId] of Object.entries(SPOTIFY_PLAYLISTS)) {
     const chart = await fetchPlaylistChart(code, playlistId);
     if (chart) {
@@ -203,21 +203,9 @@ async function main() {
         path.join(DATA_DIR, `spotify_${code}.json`),
         JSON.stringify(chart, null, 2)
       );
-      console.log(`  Saved spotify_${code}.json (${chart.total} tracks)`);
+      console.log(`  Saved spotify_${code}.json`);
     }
-    await new Promise(r => setTimeout(r, 300));
-  }
-
-  // Fetch Viral 50
-  for (const [code, playlistId] of Object.entries(VIRAL_PLAYLISTS)) {
-    const chart = await fetchPlaylistChart(`viral_${code}`, playlistId);
-    if (chart) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, `spotify_viral_${code}.json`),
-        JSON.stringify(chart, null, 2)
-      );
-    }
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 500));
   }
 
   console.log('\n=== Spotify fetch complete ===');

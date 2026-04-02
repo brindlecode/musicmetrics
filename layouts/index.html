@@ -37,22 +37,22 @@
     <div class="grid grid--4">
       <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
         <span class="stat-card__label">Spotify {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value" id="spotifyCount">--</span>
+        <span class="stat-card__value">{{ with site.Data.charts.spotify_global }}{{ .total }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-youtube)">
         <span class="stat-card__label">YouTube {{ i18n "most_viewed" }}</span>
-        <span class="stat-card__value" id="youtubeCount">--</span>
+        <span class="stat-card__value">{{ with site.Data.charts.youtube_global }}{{ .total }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily" }} {{ i18n "views" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-apple)">
         <span class="stat-card__label">Apple Music {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value" id="appleCount">--</span>
+        <span class="stat-card__value">{{ with site.Data.charts.apple_global }}{{ .total }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
       <div class="stat-card" style="border-left: 3px solid var(--color-deezer)">
         <span class="stat-card__label">Deezer {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value" id="deezerCount">--</span>
+        <span class="stat-card__value">{{ with site.Data.charts.deezer_global }}{{ .total }}{{ else }}--{{ end }}</span>
         <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
       </div>
     </div>
@@ -74,6 +74,19 @@
     </div>
 
     {{ partial "chart-table.html" (dict "platform" "spotify" "id" "spotifyChart" "lang" .Lang) }}
+  </section>
+
+  {{/* YouTube Global Trending */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
+        YouTube {{ i18n "global" }} {{ i18n "most_viewed" }}
+      </h2>
+      <a href="{{ relLangURL "/youtube/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+
+    {{ partial "chart-table.html" (dict "platform" "youtube" "id" "youtubeChart" "lang" .Lang) }}
   </section>
 
   {{/* Ad Slot - Mid */}}

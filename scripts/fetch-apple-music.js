@@ -5,7 +5,6 @@
  *
  * Endpoint:
  *   https://rss.applemarketingtools.com/api/v2/{country}/music/most-played/{limit}/songs.json
- *   https://rss.applemarketingtools.com/api/v2/{country}/music/top/{limit}/albums.json
  *
  * Output: data/charts/apple_*.json
  */
@@ -19,16 +18,32 @@ const DATA_DIR = path.join(__dirname, '..', 'data', 'charts');
 const COUNTRIES = [
   'us', 'gb', 'br', 'de', 'fr', 'jp', 'mx', 'tr', 'es', 'it',
   'kr', 'in', 'ar', 'co', 'au', 'ca', 'nl', 'se', 'pl', 'pt',
-  'id', 'ph', 'th', 'ng', 'za', 'eg', 'sa', 'ae', 'at', 'be',
-  'ch', 'dk', 'fi', 'ie', 'nz', 'ro', 'gr', 'il'
+  'id', 'ph', 'th', 'ng', 'za', 'eg', 'sa', 'ae'
 ];
 
 function fetchJSON(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      if (res.statusCode === 301 || res.statusCode === 302) {
+    const urlObj = new URL(url);
+    const options = {
+      hostname: urlObj.hostname,
+      path: urlObj.pathname + urlObj.search,
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'User-Agent': 'MusicMetrics/1.0'
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      // Handle redirects
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         return fetchJSON(res.headers.location).then(resolve).catch(reject);
       }
+
+      if (res.statusCode !== 200) {
+        return reject(new Error(`HTTP ${res.statusCode} from ${url}`));
+      }
+
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
@@ -38,8 +53,9 @@ function fetchJSON(url) {
           reject(new Error(`Parse error from ${url}: ${e.message}`));
         }
       });
-      res.on('error', reject);
-    }).on('error', reject);
+    });
+    req.on('error', reject);
+    req.end();
   });
 }
 
@@ -57,7 +73,7 @@ async function fetchAppleMusicSongs(country) {
   try {
     const data = await fetchJSON(url);
 
-    if (!data.feed || !data.feed.results) {
+    if (!data.feed || !data.feed.results || data.feed.results.length === 0) {
       console.warn(`  Warning: No data for ${country}`);
       return null;
     }
@@ -71,58 +87,26 @@ async function fetchAppleMusicSongs(country) {
       image: song.artworkUrl100,
       apple_id: song.id,
       apple_url: song.url,
-      genre: song.genres ? song.genres[0].name : '',
-      release_date: song.releaseDate,
+      genre: (song.genres && song.genres.length > 0) ? song.genres[0].name : '',
+      release_date: song.releaseDate || '',
       streams_formatted: `#${index + 1}`,
       change: 'new',
       change_num: 0,
       peak: index + 1
     }));
 
+    console.log(`  Got ${tracks.length} tracks for ${country}`);
+
     return {
       country,
       platform: 'apple_music',
-      updated: data.feed.updated || new Date().toISOString().split('T')[0],
-      title: data.feed.title,
+      updated: new Date().toISOString().split('T')[0],
+      title: data.feed.title || `Apple Music Top Songs - ${country.toUpperCase()}`,
       total: tracks.length,
       tracks
     };
   } catch (error) {
     console.error(`  Error fetching ${country}: ${error.message}`);
-    return null;
-  }
-}
-
-async function fetchAppleMusicAlbums(country) {
-  const url = `https://rss.applemarketingtools.com/api/v2/${country}/music/top/100/albums.json`;
-  console.log(`  Fetching Apple Music albums for ${country}...`);
-
-  try {
-    const data = await fetchJSON(url);
-
-    if (!data.feed || !data.feed.results) return null;
-
-    const albums = data.feed.results.map((album, index) => ({
-      rank: index + 1,
-      title: album.name,
-      artist: album.artistName,
-      artist_slug: slugify(album.artistName),
-      image: album.artworkUrl100,
-      apple_id: album.id,
-      apple_url: album.url,
-      genre: album.genres ? album.genres[0].name : '',
-      release_date: album.releaseDate
-    }));
-
-    return {
-      country,
-      platform: 'apple_music_albums',
-      updated: data.feed.updated || new Date().toISOString().split('T')[0],
-      total: albums.length,
-      albums
-    };
-  } catch (error) {
-    console.error(`  Error fetching albums ${country}: ${error.message}`);
     return null;
   }
 }
@@ -133,47 +117,23 @@ async function main() {
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
 
-  // Fetch US as "global" reference
-  const globalSongs = await fetchAppleMusicSongs('us');
-  if (globalSongs) {
-    // Save as both global and US
-    const globalData = { ...globalSongs, country: 'global' };
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'apple_global.json'),
-      JSON.stringify(globalData, null, 2)
-    );
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'apple_us.json'),
-      JSON.stringify(globalSongs, null, 2)
-    );
-    console.log(`  Saved apple_global.json & apple_us.json`);
+  // Fetch US as global
+  const usSongs = await fetchAppleMusicSongs('us');
+  if (usSongs) {
+    const globalData = { ...usSongs, country: 'global' };
+    fs.writeFileSync(path.join(DATA_DIR, 'apple_global.json'), JSON.stringify(globalData, null, 2));
+    fs.writeFileSync(path.join(DATA_DIR, 'apple_us.json'), JSON.stringify(usSongs, null, 2));
+    console.log('  Saved apple_global.json & apple_us.json');
   }
 
-  // Fetch all countries (songs)
+  // Fetch all countries
   for (const country of COUNTRIES) {
     if (country === 'us') continue;
-
     const songs = await fetchAppleMusicSongs(country);
     if (songs) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, `apple_${country}.json`),
-        JSON.stringify(songs, null, 2)
-      );
+      fs.writeFileSync(path.join(DATA_DIR, `apple_${country}.json`), JSON.stringify(songs, null, 2));
     }
-    await new Promise(r => setTimeout(r, 200));
-  }
-
-  // Fetch albums for major markets
-  const majorMarkets = ['us', 'gb', 'de', 'fr', 'jp', 'br', 'mx', 'kr', 'es', 'it', 'tr'];
-  for (const country of majorMarkets) {
-    const albums = await fetchAppleMusicAlbums(country);
-    if (albums) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, `apple_albums_${country}.json`),
-        JSON.stringify(albums, null, 2)
-      );
-    }
-    await new Promise(r => setTimeout(r, 200));
+    await new Promise(r => setTimeout(r, 300));
   }
 
   console.log('\n=== Apple Music fetch complete ===');

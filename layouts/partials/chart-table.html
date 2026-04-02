@@ -47,8 +47,8 @@
             </div>
           </td>
           <td>
-            {{ with .artist_slug }}
-              <a href="{{ relLangURL (printf "/artists/%s/" .) }}">{{ $.artist }}</a>
+            {{ if .artist_slug }}
+              <a href="{{ relLangURL (printf "/artists/%s/" .artist_slug) }}">{{ .artist }}</a>
             {{ else }}
               {{ .artist }}
             {{ end }}
