@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+
+  {{/* SEO Meta */}}
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* hreflang for multilingual SEO */}}
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ replace .Permalink (printf "/%s/" .Lang) "/en/" }}">
+
+  {{/* Open Graph */}}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:locale" content="{{ site.Language.Params.locale | default "en_US" }}">
+
+  {{/* Twitter Card */}}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+
+  {{/* Favicon */}}
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+  {{/* Preconnect */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  {{/* Main CSS */}}
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  {{/* Schema.org structured data */}}
+  {{ block "schema" . }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MusicMetrics",
+    "url": "{{ site.BaseURL }}",
+    "description": "{{ site.Params.description }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.BaseURL }}{{ .Lang }}/search/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {{ end }}
+
+  {{/* AdSense - uncomment when approved */}}
+  {{/* {{ with site.Params.adsenseId }}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>{{ end }} */}}
+
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  {{/* Skip to content for accessibility */}}
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  {{ partial "header.html" . }}
+
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{/* Chart.js from CDN */}}
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+
+  {{/* Theme toggle + main JS */}}
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

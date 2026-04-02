@@ -1,0 +1,39 @@
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <span>{{ .Title }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
+  </div>
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--header" data-ad-slot="list-top"></div>
+
+  {{ .Content }}
+
+  {{ if .Pages }}
+  <div class="grid grid--3">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="card">
+      <div class="card__header">
+        <h3 class="card__title">{{ .Title }}</h3>
+        {{ with .Params.platform }}
+        <span class="card__badge card__badge--{{ . }}">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ with .Description }}<p class="text-muted" style="font-size: var(--font-size-sm)">{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--footer" data-ad-slot="list-bottom"></div>
+</div>
+{{ end }}

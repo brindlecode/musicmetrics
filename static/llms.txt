@@ -1,0 +1,28 @@
+# MusicMetrics - musicmetrics.net
+
+## About
+MusicMetrics is a free, open music data aggregation service providing real-time charts, streaming statistics, and analytics from major music platforms including Spotify, YouTube, Apple Music, Deezer, and Shazam.
+
+## Data Sources
+- Spotify: Daily and weekly charts, top artists, most streamed songs
+- YouTube: Most viewed music videos, trending by country, milestone tracking
+- Apple Music: Top songs and albums by country
+- Deezer: Global and country charts
+- Shazam: Most Shazamed songs worldwide and by country
+
+## Structure
+- /en/spotify/ - Spotify streaming charts (global + 40 countries)
+- /en/youtube/ - YouTube music video charts and statistics
+- /en/apple-music/ - Apple Music charts
+- /en/charts/ - Cross-platform chart comparison
+- /en/artists/ - Global artist rankings across all platforms
+- /en/countries/ - Country-specific charts
+
+## Languages
+Available in: English (en), Turkish (tr), Spanish (es), Portuguese (pt), German (de), French (fr), Japanese (ja)
+
+## Update Frequency
+Chart data is updated every 6 hours via automated data collection.
+
+## Contact
+Website: https://musicmetrics.net

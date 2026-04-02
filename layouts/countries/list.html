@@ -1,0 +1,38 @@
+{{ define "title" }}{{ i18n "all_countries" }} - Music {{ i18n "nav_charts" }} | {{ site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <span>{{ i18n "nav_countries" }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ i18n "all_countries" }} - Music {{ i18n "nav_charts" }}</h1>
+    <p class="page-header__subtitle">Spotify &middot; Apple Music &middot; YouTube &middot; Deezer &middot; Shazam</p>
+  </div>
+
+  <div class="ad-slot ad-slot--header" data-ad-slot="countries-top"></div>
+
+  <div class="grid grid--4">
+    {{ range site.Data.countries }}
+    <a href="{{ relLangURL (printf "/countries/%s/" .code) }}" class="card" style="padding: var(--space-4)">
+      <div class="flex items-center gap-4">
+        <span style="font-size: 2.5rem">{{ .flag }}</span>
+        <div>
+          <strong style="display: block">{{ .name }}</strong>
+          <span class="text-muted" style="font-size: var(--font-size-xs)">
+            {{ if .has_spotify }}Spotify{{ end }}
+            {{ if .has_apple }}&middot; Apple Music{{ end }}
+            {{ if .has_youtube }}&middot; YouTube{{ end }}
+            {{ if .has_deezer }}&middot; Deezer{{ end }}
+          </span>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+
+  <div class="ad-slot ad-slot--footer" data-ad-slot="countries-bottom"></div>
+</div>
+{{ end }}

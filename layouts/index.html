@@ -1,0 +1,160 @@
+{{ define "title" }}{{ i18n "site_title" }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MusicMetrics",
+  "alternateName": "Music Metrics",
+  "url": "{{ site.BaseURL }}",
+  "description": "{{ site.Params.description }}",
+  "inLanguage": "{{ .Lang }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.BaseURL }}{{ .Lang }}/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  {{/* Hero Section */}}
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">{{ i18n "tagline" }}</h1>
+      <p class="hero__subtitle">{{ T "site_title" }}</p>
+    </div>
+  </section>
+
+  {{/* Ad Slot - Top */}}
+  <div class="ad-slot ad-slot--header" data-ad-slot="home-top"></div>
+
+  {{/* Platform Quick Stats */}}
+  <section class="mb-8">
+    <div class="grid grid--4">
+      <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
+        <span class="stat-card__label">Spotify {{ i18n "top_songs" }}</span>
+        <span class="stat-card__value" id="spotifyCount">--</span>
+        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-youtube)">
+        <span class="stat-card__label">YouTube {{ i18n "most_viewed" }}</span>
+        <span class="stat-card__value" id="youtubeCount">--</span>
+        <span class="stat-card__change stat-card__change--up">{{ i18n "daily" }} {{ i18n "views" }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-apple)">
+        <span class="stat-card__label">Apple Music {{ i18n "top_songs" }}</span>
+        <span class="stat-card__value" id="appleCount">--</span>
+        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-deezer)">
+        <span class="stat-card__label">Deezer {{ i18n "top_songs" }}</span>
+        <span class="stat-card__value" id="deezerCount">--</span>
+        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
+      </div>
+    </div>
+  </section>
+
+  {{/* Spotify Global Daily Chart */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M8 15c2.5-1 5-1 7.5 0M7.5 12.5c3-1.5 6-1.5 9 0M7 10c3.5-2 7-2 10.5 0" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+        Spotify {{ i18n "global" }} {{ i18n "daily_chart" }}
+      </h2>
+      <a href="{{ relLangURL "/spotify/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+
+    <div class="last-updated">
+      <span class="last-updated__dot"></span>
+      {{ i18n "last_updated" }}: <time id="spotifyUpdated">--</time>
+    </div>
+
+    {{ partial "chart-table.html" (dict "platform" "spotify" "id" "spotifyChart" "lang" .Lang) }}
+  </section>
+
+  {{/* Ad Slot - Mid */}}
+  <div class="ad-slot ad-slot--in-content" data-ad-slot="home-mid"></div>
+
+  {{/* Apple Music Global Chart */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#FA243C"/><path d="M15 6.5v8.5a2 2 0 1 1-2-2V9l-4 1v6a2 2 0 1 1-2-2V8l8-2z" fill="#fff"/></svg>
+        Apple Music {{ i18n "global" }} {{ i18n "top_songs" }}
+      </h2>
+      <a href="{{ relLangURL "/apple-music/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+
+    {{ partial "chart-table.html" (dict "platform" "apple" "id" "appleChart" "lang" .Lang) }}
+  </section>
+
+  {{/* Deezer Global Chart */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="2" width="20" height="20" rx="4" fill="#A238FF"/><rect x="6" y="14" width="3" height="4" rx="1" fill="#fff"/><rect x="10.5" y="10" width="3" height="8" rx="1" fill="#fff"/><rect x="15" y="6" width="3" height="12" rx="1" fill="#fff"/></svg>
+        Deezer {{ i18n "global" }} {{ i18n "top_songs" }}
+      </h2>
+      <a href="{{ relLangURL "/charts/deezer/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+
+    {{ partial "chart-table.html" (dict "platform" "deezer" "id" "deezerChart" "lang" .Lang) }}
+  </section>
+
+  {{/* Countries Grid */}}
+  <section class="mb-8">
+    <div class="section-header">
+      <h2 class="section-header__title">{{ i18n "nav_charts" }} {{ i18n "all_countries" }}</h2>
+      <a href="{{ relLangURL "/countries/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
+    </div>
+
+    <div class="grid grid--4">
+      {{ range site.Data.countries }}
+      {{ if .featured }}
+      <a href="{{ relLangURL (printf "/countries/%s/" .code) }}" class="card" style="padding: var(--space-4)">
+        <div class="flex items-center gap-4">
+          <span style="font-size: 2rem">{{ .flag }}</span>
+          <div>
+            <strong>{{ .name }}</strong>
+            <span class="text-muted" style="display: block; font-size: 0.8rem;">Spotify &middot; Apple Music &middot; YouTube</span>
+          </div>
+        </div>
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* Ad Slot - Bottom */}}
+  <div class="ad-slot ad-slot--footer" data-ad-slot="home-bottom"></div>
+</div>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: var(--space-10) 0;
+  }
+  .hero__title {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-spotify), var(--color-youtube));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-3);
+  }
+  .hero__subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .hero__title { font-size: var(--font-size-2xl); }
+  }
+</style>
+{{ end }}

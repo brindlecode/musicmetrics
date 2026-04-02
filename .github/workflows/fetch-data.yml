@@ -1,0 +1,143 @@
+name: Fetch Music Data
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-deezer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Deezer Charts
+        run: node scripts/fetch-deezer.js
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: deezer-data
+          path: data/
+          retention-days: 1
+
+  fetch-apple-music:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Apple Music Charts
+        run: node scripts/fetch-apple-music.js
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: apple-data
+          path: data/
+          retention-days: 1
+
+  fetch-spotify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Spotify Charts
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: node scripts/fetch-spotify.js
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: spotify-data
+          path: data/
+          retention-days: 1
+
+  fetch-youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch YouTube Trending
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/fetch-youtube.js
+
+      - name: Upload data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-data
+          path: data/
+          retention-days: 1
+
+  build-and-deploy:
+    needs: [fetch-deezer, fetch-apple-music, fetch-spotify, fetch-youtube]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all data artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: data-artifacts/
+
+      - name: Merge data
+        run: |
+          # Merge all data into the data directory
+          for dir in data-artifacts/*/; do
+            cp -r "$dir"* data/ 2>/dev/null || true
+          done
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate artist pages
+        run: node scripts/generate-artist-pages.js
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build site
+        run: hugo --minify
+
+      - name: Commit data updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ content/
+          git diff --staged --quiet || git commit -m "chore: update chart data $(date -u +%Y-%m-%d_%H:%M)"
+          git push
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
+        with:
+          publish-dir: './public'
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

@@ -1,0 +1,114 @@
+{{ define "title" }}{{ .Title }} - Streaming Stats, Charts & Analytics | {{ site.Title }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ .Title }} streaming statistics, chart positions and analytics across Spotify, YouTube, Apple Music, Deezer and Shazam"
+  {{ with .Params.image }},"image": "{{ . }}"{{ end }}
+  {{ with .Params.genre }},"genre": "{{ . }}"{{ end }}
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <a href="{{ relLangURL "/artists/" }}">{{ i18n "nav_artists" }}</a>
+      <span>/</span>
+      <span>{{ .Title }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    <p class="page-header__subtitle">Streaming Stats, {{ i18n "nav_charts" }} &amp; Analytics</p>
+  </div>
+
+  <div class="ad-slot ad-slot--header" data-ad-slot="artist-top"></div>
+
+  {{/* Stats Overview */}}
+  <section class="mb-8">
+    <div class="grid grid--4">
+      <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
+        <span class="stat-card__label">Spotify {{ i18n "streams" }}</span>
+        <span class="stat-card__value">{{ with .Params.spotify_streams }}{{ . }}{{ else }}--{{ end }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-youtube)">
+        <span class="stat-card__label">YouTube {{ i18n "views" }}</span>
+        <span class="stat-card__value">{{ with .Params.youtube_views }}{{ . }}{{ else }}--{{ end }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-apple)">
+        <span class="stat-card__label">Apple Music {{ i18n "rank" }}</span>
+        <span class="stat-card__value">{{ with .Params.apple_rank }}#{{ . }}{{ else }}--{{ end }}</span>
+      </div>
+      <div class="stat-card" style="border-left: 3px solid var(--color-deezer)">
+        <span class="stat-card__label">{{ i18n "monthly_listeners" }}</span>
+        <span class="stat-card__value">{{ with .Params.monthly_listeners }}{{ . }}{{ else }}--{{ end }}</span>
+      </div>
+    </div>
+  </section>
+
+  {{/* Platform Tabs */}}
+  <div class="platform-tabs">
+    <button class="platform-tab platform-tab--spotify platform-tab--active" data-tab="spotify">Spotify</button>
+    <button class="platform-tab platform-tab--youtube" data-tab="youtube">YouTube</button>
+    <button class="platform-tab platform-tab--apple" data-tab="apple">Apple Music</button>
+    <button class="platform-tab platform-tab--active" data-tab="all">{{ i18n "all_countries" }}</button>
+  </div>
+
+  {{/* Chart Positions */}}
+  <section class="mb-8">
+    <h2 class="section-header__title mb-4">{{ i18n "chart_history" }}</h2>
+    <div class="chart-table-wrapper">
+      <table class="chart-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "song" }}</th>
+            <th>{{ i18n "country" }}</th>
+            <th data-sort="num" class="text-right">{{ i18n "current_position" }}</th>
+            <th data-sort="num" class="text-right">{{ i18n "peak_position" }}</th>
+            <th data-sort="num" class="text-right">{{ i18n "days_on_chart" }}</th>
+            <th data-sort="num" class="text-right">{{ i18n "streams" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="6" class="text-center text-muted" style="padding: var(--space-8)">{{ i18n "no_data" }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  {{/* Listen / Buy Links (Affiliate) */}}
+  <section class="mb-8">
+    <h2 class="section-header__title mb-4">{{ i18n "listen_on" }}</h2>
+    <div class="flex flex-wrap gap-4">
+      {{ with .Params.spotify_url }}
+      <a href="{{ . }}" class="platform-tab platform-tab--spotify" target="_blank" rel="nofollow noopener">
+        Spotify
+      </a>
+      {{ end }}
+      {{ with .Params.apple_url }}
+      <a href="{{ . }}" class="platform-tab platform-tab--apple" target="_blank" rel="nofollow noopener">
+        Apple Music
+      </a>
+      {{ end }}
+      {{ with .Params.youtube_url }}
+      <a href="{{ . }}" class="platform-tab platform-tab--youtube" target="_blank" rel="nofollow noopener">
+        YouTube
+      </a>
+      {{ end }}
+      {{ with .Params.amazon_url }}
+      <a href="{{ . }}" class="platform-tab" style="border-color: #ff9900; color: #ff9900" target="_blank" rel="nofollow noopener">
+        {{ i18n "buy_on_amazon" }}
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <div class="ad-slot ad-slot--footer" data-ad-slot="artist-bottom"></div>
+</div>
+{{ end }}

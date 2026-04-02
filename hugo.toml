@@ -1,0 +1,110 @@
+baseURL = "https://musicmetrics.net/"
+title = "MusicMetrics"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+enableGitInfo = true
+
+[pagination]
+  pagerSize = 100
+
+[taxonomies]
+  artist = "artists"
+  country = "countries"
+  platform = "platforms"
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "JSON"]
+
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "Real-time music charts, streaming stats & analytics from Spotify, YouTube, Apple Music, Deezer & Shazam. Track your favorite artists worldwide."
+      locale = "en_US"
+
+  [languages.tr]
+    languageName = "Türkçe"
+    weight = 2
+    contentDir = "content/tr"
+    [languages.tr.params]
+      description = "Spotify, YouTube, Apple Music, Deezer ve Shazam'dan gerçek zamanlı müzik listeleri, yayın istatistikleri ve analizler."
+      locale = "tr_TR"
+
+  [languages.es]
+    languageName = "Español"
+    weight = 3
+    contentDir = "content/es"
+    [languages.es.params]
+      description = "Listas de música en tiempo real, estadísticas de streaming y análisis de Spotify, YouTube, Apple Music, Deezer y Shazam."
+      locale = "es_ES"
+
+  [languages.pt]
+    languageName = "Português"
+    weight = 4
+    contentDir = "content/pt"
+    [languages.pt.params]
+      description = "Paradas de música em tempo real, estatísticas de streaming e análises do Spotify, YouTube, Apple Music, Deezer e Shazam."
+      locale = "pt_BR"
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 5
+    contentDir = "content/de"
+    [languages.de.params]
+      description = "Echtzeit-Musikcharts, Streaming-Statistiken und Analysen von Spotify, YouTube, Apple Music, Deezer und Shazam."
+      locale = "de_DE"
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 6
+    contentDir = "content/fr"
+    [languages.fr.params]
+      description = "Classements musicaux en temps réel, statistiques de streaming et analyses de Spotify, YouTube, Apple Music, Deezer et Shazam."
+      locale = "fr_FR"
+
+  [languages.ja]
+    languageName = "日本語"
+    weight = 7
+    contentDir = "content/ja"
+    [languages.ja.params]
+      description = "Spotify、YouTube、Apple Music、Deezer、Shazamのリアルタイム音楽チャート、ストリーミング統計、分析。"
+      locale = "ja_JP"
+
+[params]
+  siteName = "MusicMetrics"
+  tagline = "All your music data needs in one place"
+  logo = "/images/logo.svg"
+  themeColor = "#6366f1"
+  adsenseId = ""
+  amazonAffiliateTag = ""
+
+  [params.social]
+    twitter = "musicmetricsnet"
+
+  [params.seo]
+    googleVerification = ""
+    bingVerification = ""

@@ -1,0 +1,81 @@
+{{ define "title" }}Spotify {{ i18n "nav_charts" }} - {{ i18n "most_streamed" }} {{ i18n "top_songs" }} | {{ site.Title }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicPlaylist",
+  "name": "Spotify Global Top Songs",
+  "description": "Real-time Spotify charts tracking the most streamed songs globally and by country",
+  "url": "{{ .Permalink }}",
+  "numTracks": 200
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <span>Spotify</span>
+    </nav>
+    <h1 class="page-header__title">
+      <svg class="nav-icon" viewBox="0 0 24 24" width="32" height="32" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M8 15c2.5-1 5-1 7.5 0M7.5 12.5c3-1.5 6-1.5 9 0M7 10c3.5-2 7-2 10.5 0" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      Spotify {{ i18n "nav_charts" }}
+    </h1>
+    <p class="page-header__subtitle">{{ i18n "most_streamed" }} {{ i18n "top_songs" }} &middot; {{ i18n "top_artists" }} &middot; {{ i18n "all_countries" }}</p>
+  </div>
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--header" data-ad-slot="spotify-top"></div>
+
+  {{/* Sub-navigation */}}
+  <div class="platform-tabs">
+    <a href="{{ relLangURL "/spotify/" }}" class="platform-tab platform-tab--spotify platform-tab--active">{{ i18n "global" }} {{ i18n "daily_chart" }}</a>
+    <a href="{{ relLangURL "/spotify/weekly/" }}" class="platform-tab platform-tab--spotify">{{ i18n "global" }} {{ i18n "weekly_chart" }}</a>
+    <a href="{{ relLangURL "/spotify/artists/" }}" class="platform-tab platform-tab--spotify">{{ i18n "top_artists" }}</a>
+    <a href="{{ relLangURL "/spotify/most-streamed/" }}" class="platform-tab platform-tab--spotify">{{ i18n "all_time" }} {{ i18n "most_streamed" }}</a>
+  </div>
+
+  {{/* Country Selector */}}
+  <div class="country-selector">
+    <label for="spotifyCountry">{{ i18n "select_country" }}:</label>
+    <select id="spotifyCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
+      <option value="{{ relLangURL "/spotify/" }}">{{ i18n "global" }}</option>
+      {{ range site.Data.countries }}
+      <option value="{{ relLangURL (printf "/spotify/country/%s/" .code) }}">{{ .flag }} {{ .name }}</option>
+      {{ end }}
+    </select>
+  </div>
+
+  {{/* Last Updated */}}
+  <div class="last-updated">
+    <span class="last-updated__dot"></span>
+    {{ i18n "last_updated" }}: {{ with site.Data.charts.spotify_global }}{{ .updated }}{{ end }}
+  </div>
+
+  {{/* Chart Table */}}
+  {{ partial "chart-table.html" (dict "platform" "spotify" "id" "spotifyMainChart" "lang" .Lang) }}
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--in-content" data-ad-slot="spotify-mid"></div>
+
+  {{/* Sub pages */}}
+  {{ if .Pages }}
+  <section class="mt-8">
+    <h2 class="section-header__title mb-4">{{ i18n "nav_charts" }}</h2>
+    <div class="grid grid--3">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="card" style="padding: var(--space-4)">
+        <strong>{{ .Title }}</strong>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <div class="ad-slot ad-slot--footer" data-ad-slot="spotify-bottom"></div>
+</div>
+{{ end }}

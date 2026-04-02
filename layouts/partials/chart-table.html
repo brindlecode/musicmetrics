@@ -1,0 +1,67 @@
+{{/* Reusable chart table partial
+     Params: .platform (spotify|apple|deezer|youtube|shazam), .id, .lang */}}
+
+{{ $platform := .platform }}
+{{ $id := .id }}
+
+<div class="chart-table-wrapper">
+  <table class="chart-table" id="{{ $id }}">
+    <thead>
+      <tr>
+        <th data-sort="num" class="chart-table__rank">#</th>
+        <th>{{ i18n "song" }}</th>
+        <th>{{ i18n "artist" }}</th>
+        <th data-sort="num" class="text-right">
+          {{ if eq $platform "youtube" }}{{ i18n "views" }}{{ else }}{{ i18n "streams" }}{{ end }}
+        </th>
+        <th data-sort="num" class="text-right">{{ i18n "change" }}</th>
+        <th data-sort="num" class="text-right">{{ i18n "peak_position" }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{/* Data will be populated from JSON data files or at build time */}}
+      {{ $dataFile := printf "charts/%s_global" $platform }}
+      {{ with index site.Data $dataFile }}
+        {{ range first 50 .tracks }}
+        <tr>
+          <td class="chart-table__rank {{ if le .rank 3 }}chart-table__rank--top3{{ end }}">{{ .rank }}</td>
+          <td>
+            <div class="chart-table__song">
+              {{ with .image }}
+              <img src="{{ . }}" alt="" class="chart-table__art" loading="lazy" width="40" height="40">
+              {{ else }}
+              <div class="chart-table__art"></div>
+              {{ end }}
+              <div class="chart-table__song-info">
+                <span class="chart-table__song-title">{{ .title }}</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <a href="{{ relLangURL (printf "/artists/%s/" .artist_slug) }}">{{ .artist }}</a>
+          </td>
+          <td class="chart-table__streams text-right">{{ .streams_formatted }}</td>
+          <td class="text-right">
+            {{ if eq .change "new" }}
+              <span class="chart-table__change--new">NEW</span>
+            {{ else if gt .change_num 0 }}
+              <span class="chart-table__change chart-table__change--up">&#9650; {{ .change_num }}</span>
+            {{ else if lt .change_num 0 }}
+              <span class="chart-table__change chart-table__change--down">&#9660; {{ math.Abs .change_num }}</span>
+            {{ else }}
+              <span class="chart-table__change chart-table__change--same">&mdash;</span>
+            {{ end }}
+          </td>
+          <td class="text-right">{{ .peak }}</td>
+        </tr>
+        {{ end }}
+      {{ else }}
+        <tr>
+          <td colspan="6" class="text-center text-muted" style="padding: var(--space-8)">
+            {{ i18n "no_data" }}
+          </td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

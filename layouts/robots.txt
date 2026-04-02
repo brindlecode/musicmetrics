@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /

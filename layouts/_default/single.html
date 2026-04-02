@@ -1,0 +1,29 @@
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      {{ with .Parent }}
+      <span>/</span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
+      <span>/</span>
+      <span>{{ .Title }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
+  </div>
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--header" data-ad-slot="single-top"></div>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  {{/* Ad Slot */}}
+  <div class="ad-slot ad-slot--footer" data-ad-slot="single-bottom"></div>
+</div>
+{{ end }}

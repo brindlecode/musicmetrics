@@ -1,0 +1,73 @@
+{{ define "title" }}{{ i18n "top_artists" }} - {{ i18n "global" }} {{ i18n "rank" }} | {{ site.Title }}{{ end }}
+
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Global Top Artists Ranking",
+  "description": "Global artist ranking combining Spotify, Apple Music, YouTube, and Deezer chart positions",
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="page-header">
+    <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
+      <span>/</span>
+      <span>{{ i18n "nav_artists" }}</span>
+    </nav>
+    <h1 class="page-header__title">{{ i18n "global" }} {{ i18n "top_artists" }}</h1>
+    <p class="page-header__subtitle">{{ i18n "rank" }} - Spotify &middot; YouTube &middot; Apple Music &middot; Deezer</p>
+  </div>
+
+  <div class="ad-slot ad-slot--header" data-ad-slot="artists-top"></div>
+
+  {{/* Artist Ranking Table */}}
+  <div class="chart-table-wrapper">
+    <table class="chart-table" id="artistRanking">
+      <thead>
+        <tr>
+          <th data-sort="num" class="chart-table__rank">#</th>
+          <th>{{ i18n "artist" }}</th>
+          <th data-sort="num" class="text-right">Spotify {{ i18n "streams" }}</th>
+          <th data-sort="num" class="text-right">YouTube {{ i18n "views" }}</th>
+          <th data-sort="num" class="text-right">{{ i18n "monthly_listeners" }}</th>
+          <th data-sort="num" class="text-right">{{ i18n "change" }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ with site.Data.artists.global_ranking }}
+          {{ range first 100 .artists }}
+          <tr>
+            <td class="chart-table__rank {{ if le .rank 3 }}chart-table__rank--top3{{ end }}">{{ .rank }}</td>
+            <td>
+              <a href="{{ relLangURL (printf "/artists/%s/" .slug) }}" style="font-weight: 600; color: var(--color-text)">{{ .name }}</a>
+            </td>
+            <td class="chart-table__streams text-right">{{ .spotify_streams }}</td>
+            <td class="chart-table__streams text-right">{{ .youtube_views }}</td>
+            <td class="chart-table__streams text-right">{{ .monthly_listeners }}</td>
+            <td class="text-right">
+              {{ if gt .change 0 }}
+                <span class="chart-table__change chart-table__change--up">&#9650; {{ .change }}</span>
+              {{ else if lt .change 0 }}
+                <span class="chart-table__change chart-table__change--down">&#9660; {{ math.Abs .change }}</span>
+              {{ else }}
+                <span class="chart-table__change chart-table__change--same">&mdash;</span>
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        {{ else }}
+          <tr><td colspan="6" class="text-center text-muted" style="padding: var(--space-8)">{{ i18n "no_data" }}</td></tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ad-slot ad-slot--footer" data-ad-slot="artists-bottom"></div>
+</div>
+{{ end }}
