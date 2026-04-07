@@ -1,11 +1,11 @@
 ---
-title: "MUSliM - مُسلِم "
+title: "MUSliM - مُسلِم"
 slug: "muslim"
 type: "artists"
-image: "https://i.ytimg.com/vi/p9nf0wX6xYg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SSrG8wHz83c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "MUSliM - مُسلِم  streaming statistics, chart positions and analytics across youtube"
+description: "MUSliM - مُسلِم streaming statistics, chart positions and analytics across youtube"
 ---

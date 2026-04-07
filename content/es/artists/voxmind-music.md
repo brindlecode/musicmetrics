@@ -2,7 +2,7 @@
 title: "VoxMind Music"
 slug: "voxmind-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/plgKSJdAL4Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Pu2G6GC92ZE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

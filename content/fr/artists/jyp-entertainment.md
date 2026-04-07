@@ -2,7 +2,7 @@
 title: "JYP Entertainment"
 slug: "jyp-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/yiPTOpGWaeM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x0FwbTiD3iA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

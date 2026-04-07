@@ -2,7 +2,7 @@
 title: "DOPEHOUSE RECORDS"
 slug: "dopehouse-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/Z12Rk-Q9gCo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3yz627lwqss/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

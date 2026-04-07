@@ -1,11 +1,11 @@
 ---
-title: "한로로 HANRORO"
+title: "HANRORO"
 slug: "hanroro"
 type: "artists"
-image: "https://i.ytimg.com/vi/Gofn_ULNd5Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PYpOJyl3Sbg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "한로로 HANRORO streaming statistics, chart positions and analytics across youtube"
+description: "HANRORO streaming statistics, chart positions and analytics across youtube"
 ---

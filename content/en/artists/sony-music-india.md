@@ -2,7 +2,7 @@
 title: "Sony Music India"
 slug: "sony-music-india"
 type: "artists"
-image: "https://i.ytimg.com/vi/o9vEfB1GNio/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1pnKd6YHmV4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

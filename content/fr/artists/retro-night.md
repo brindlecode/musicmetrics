@@ -2,7 +2,7 @@
 title: "Retro Night"
 slug: "retro-night"
 type: "artists"
-image: "https://i.ytimg.com/vi/rtfJtZju3tg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uPAbxLB3LhQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
