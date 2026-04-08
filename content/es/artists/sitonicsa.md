@@ -2,7 +2,7 @@
 title: "SitonicSA"
 slug: "sitonicsa"
 type: "artists"
-image: "https://i.ytimg.com/vi/9EtykBcFXDk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g07xZAMEDtY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

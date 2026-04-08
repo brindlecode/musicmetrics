@@ -2,7 +2,7 @@
 title: "Alena Omargalieva"
 slug: "alena-omargalieva"
 type: "artists"
-image: "https://i.ytimg.com/vi/BaFrPN0vUFI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t3Xlv_kDDu0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

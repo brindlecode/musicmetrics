@@ -2,7 +2,7 @@
 title: "Rico Nadara"
 slug: "rico-nadara"
 type: "artists"
-image: "https://i.ytimg.com/vi/uoJ8hW0sXAw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t87ro12RU6k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

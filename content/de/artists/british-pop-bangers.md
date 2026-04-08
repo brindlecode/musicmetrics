@@ -2,7 +2,7 @@
 title: "British Pop Bangers"
 slug: "british-pop-bangers"
 type: "artists"
-image: "https://i.ytimg.com/vi/ifcvjI8udJc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RKbqDzQ_r7U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

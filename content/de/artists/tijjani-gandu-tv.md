@@ -2,7 +2,7 @@
 title: "Tijjani Gandu TV"
 slug: "tijjani-gandu-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/4BRJGA16El8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oZJtSTcdgmU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
