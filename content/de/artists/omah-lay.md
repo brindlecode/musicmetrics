@@ -2,7 +2,7 @@
 title: "Omah Lay"
 slug: "omah-lay"
 type: "artists"
-image: "https://i.ytimg.com/vi/LXhzfJGPbhI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W2GInOwL1zQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
