@@ -2,7 +2,7 @@
 title: "FURIA"
 slug: "furia"
 type: "artists"
-image: "https://i.ytimg.com/vi/0YbeqMM2Rmg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jupIcJNRSZo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
