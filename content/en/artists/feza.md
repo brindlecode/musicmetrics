@@ -2,7 +2,7 @@
 title: "Feza"
 slug: "feza"
 type: "artists"
-image: "https://i.ytimg.com/vi/OFUSq3rah_o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XSZsOFlx678/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

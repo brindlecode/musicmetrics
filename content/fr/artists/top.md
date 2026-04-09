@@ -2,7 +2,7 @@
 title: "T.O.P"
 slug: "top"
 type: "artists"
-image: "https://i.ytimg.com/vi/lh7yT1PF2Y4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cfaybWG25D4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
