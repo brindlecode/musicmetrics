@@ -2,7 +2,7 @@
 title: "Nav Haryanvi"
 slug: "nav-haryanvi"
 type: "artists"
-image: "https://i.ytimg.com/vi/Wkryw2TNl28/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/16Tu6j9MzWg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "TikTokHymn"
 slug: "tiktokhymn"
 type: "artists"
-image: "https://i.ytimg.com/vi/wSzZ6n9bs1Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/s4bPr-dLapo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
