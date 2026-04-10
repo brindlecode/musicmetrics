@@ -2,7 +2,7 @@
 title: "Sarettii"
 slug: "sarettii"
 type: "artists"
-image: "https://i.ytimg.com/vi/Qjy5wLKzUqQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wrRr72XTE9s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
