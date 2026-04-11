@@ -2,7 +2,7 @@
 title: "SIL3A KG"
 slug: "sil3a-kg"
 type: "artists"
-image: "https://i.ytimg.com/vi/UnssULwQRHY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uu2H2hx-0Sg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
