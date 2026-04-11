@@ -2,7 +2,7 @@
 title: "SIEMPRE BLESSD 💙"
 slug: "siempre-blessd"
 type: "artists"
-image: "https://i.ytimg.com/vi/sQsFyYlOQFw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z7APWgSSTq4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
