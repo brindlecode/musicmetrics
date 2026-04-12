@@ -2,7 +2,7 @@
 title: "7clouds"
 slug: "7clouds"
 type: "artists"
-image: "https://i.ytimg.com/vi/IAMBPsFPK0I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9HJpEj_2RKQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
