@@ -2,7 +2,7 @@
 title: "Anatolian Land"
 slug: "anatolian-land"
 type: "artists"
-image: "https://i.ytimg.com/vi/1uOzOPSqzEc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S4Oy4sVXzHA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
