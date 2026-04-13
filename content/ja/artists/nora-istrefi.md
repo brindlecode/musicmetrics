@@ -2,7 +2,7 @@
 title: "Nora Istrefi"
 slug: "nora-istrefi"
 type: "artists"
-image: "https://i.ytimg.com/vi/cOSuYhYUvOY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4ngV82tCXrc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
