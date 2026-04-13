@@ -2,7 +2,7 @@
 title: "IngaRose Music"
 slug: "ingarose-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/NdWX0QmnM8M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KjTGyed_YSI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
