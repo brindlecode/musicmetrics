@@ -2,7 +2,7 @@
 title: "RockHype"
 slug: "rockhype"
 type: "artists"
-image: "https://i.ytimg.com/vi/-A71LF-7RX8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VshKN56QaMM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
