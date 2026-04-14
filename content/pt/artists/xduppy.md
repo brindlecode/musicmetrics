@@ -2,7 +2,7 @@
 title: "Xduppy"
 slug: "xduppy"
 type: "artists"
-image: "https://i.ytimg.com/vi/I-w0GXj6qZs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uo_BnlG9zKM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
