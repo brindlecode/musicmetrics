@@ -2,7 +2,7 @@
 title: "Molly Sandén"
 slug: "molly-sandn"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vrraee4aK7A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ceYqWsu1SyQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
