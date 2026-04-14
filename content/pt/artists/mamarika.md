@@ -2,7 +2,7 @@
 title: "MamaRika"
 slug: "mamarika"
 type: "artists"
-image: "https://i.ytimg.com/vi/KMuEJXOhOHQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BUC7z5mmVV8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

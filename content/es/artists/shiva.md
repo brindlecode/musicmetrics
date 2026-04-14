@@ -2,7 +2,7 @@
 title: "SHIVA"
 slug: "shiva"
 type: "artists"
-image: "https://i.ytimg.com/vi/QWVc1g9F5oE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I2DIS-eefFg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
