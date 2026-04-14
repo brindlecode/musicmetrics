@@ -2,7 +2,7 @@
 title: "KAVAK"
 slug: "kavak"
 type: "artists"
-image: "https://i.ytimg.com/vi/AHwDtUpEnVc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k_S10l_4nMc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
