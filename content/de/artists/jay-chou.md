@@ -1,11 +1,11 @@
 ---
-title: "周杰倫 Jay Chou"
+title: "Jay Chou"
 slug: "jay-chou"
 type: "artists"
-image: "https://i.ytimg.com/vi/wIgduzASI6A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lNCQbx-y9V8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "周杰倫 Jay Chou streaming statistics, chart positions and analytics across youtube"
+description: "Jay Chou streaming statistics, chart positions and analytics across youtube"
 ---

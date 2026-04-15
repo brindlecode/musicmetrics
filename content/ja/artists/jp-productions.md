@@ -1,5 +1,5 @@
 ---
-title: "JP Productions جيمي"
+title: "JP Productions چيمي"
 slug: "jp-productions"
 type: "artists"
 image: "https://i.ytimg.com/vi/0I09Zq3eoRs/mqdefault.jpg"
@@ -7,5 +7,5 @@ platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "JP Productions جيمي streaming statistics, chart positions and analytics across youtube"
+description: "JP Productions چيمي streaming statistics, chart positions and analytics across youtube"
 ---
