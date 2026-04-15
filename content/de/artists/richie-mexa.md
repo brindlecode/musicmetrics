@@ -2,7 +2,7 @@
 title: "Richie Mexa"
 slug: "richie-mexa"
 type: "artists"
-image: "https://i.ytimg.com/vi/HZ0jjGmYIZ8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LLnniO9Jfuk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

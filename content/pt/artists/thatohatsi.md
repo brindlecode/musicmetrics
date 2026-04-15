@@ -2,7 +2,7 @@
 title: "Thatohatsi"
 slug: "thatohatsi"
 type: "artists"
-image: "https://i.ytimg.com/vi/dbvq2SfoVDc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oGtwmPiSjC4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
