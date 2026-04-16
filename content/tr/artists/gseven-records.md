@@ -2,7 +2,7 @@
 title: "Gseven Records"
 slug: "gseven-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/PNHUVELtnJY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z9d9KuHNtG0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

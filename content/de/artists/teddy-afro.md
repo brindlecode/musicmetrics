@@ -2,7 +2,7 @@
 title: "Teddy Afro"
 slug: "teddy-afro"
 type: "artists"
-image: "https://i.ytimg.com/vi/PA2aWF37Ljk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ADc9JPeLYi4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Allstar JR"
 slug: "allstar-jr"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vn5ohnD0Jns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EImIUIy1Lp4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

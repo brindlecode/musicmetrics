@@ -2,7 +2,7 @@
 title: "BTS"
 slug: "bts"
 type: "artists"
-image: "https://i.ytimg.com/vi/diBO0gMuTXo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_gyultVTesk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
