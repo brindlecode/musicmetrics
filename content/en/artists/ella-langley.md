@@ -2,7 +2,7 @@
 title: "Ella Langley"
 slug: "ella-langley"
 type: "artists"
-image: "https://i.ytimg.com/vi/2xklUpzCXcQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J9H4PZHmceI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
