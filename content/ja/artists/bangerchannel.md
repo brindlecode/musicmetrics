@@ -2,7 +2,7 @@
 title: "BangerChannel"
 slug: "bangerchannel"
 type: "artists"
-image: "https://i.ytimg.com/vi/ijhu85HTEYY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w0hM-7F_8iw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

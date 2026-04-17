@@ -2,7 +2,7 @@
 title: "SVM!R"
 slug: "svmr"
 type: "artists"
-image: "https://i.ytimg.com/vi/ykluN7v4rvQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Jm90iQ4uI_g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

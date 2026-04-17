@@ -2,7 +2,7 @@
 title: "AIRBAG"
 slug: "airbag"
 type: "artists"
-image: "https://i.ytimg.com/vi/COlfh2aLxQ4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qUnlOVpNONA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

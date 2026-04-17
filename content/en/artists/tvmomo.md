@@ -2,7 +2,7 @@
 title: "TVMOMO"
 slug: "tvmomo"
 type: "artists"
-image: "https://i.ytimg.com/vi/y2fl4l5rDP8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o3l6RhQ7Qsw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
