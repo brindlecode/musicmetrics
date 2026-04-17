@@ -2,7 +2,7 @@
 title: "Poizi"
 slug: "poizi"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZVL2OVN0pQw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eG79aUWKkKo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

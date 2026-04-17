@@ -2,7 +2,7 @@
 title: "Iman Troye"
 slug: "iman-troye"
 type: "artists"
-image: "https://i.ytimg.com/vi/wD5tOjw4Cv4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1w6KuNFukYU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

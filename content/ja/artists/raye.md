@@ -2,7 +2,7 @@
 title: "RAYE"
 slug: "raye"
 type: "artists"
-image: "https://i.ytimg.com/vi/94mq0YBsn8U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HtVcltkn3HI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
