@@ -2,7 +2,7 @@
 title: "COLORS"
 slug: "colors"
 type: "artists"
-image: "https://i.ytimg.com/vi/eOfN1tnU340/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Jc9c_ehXrsg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

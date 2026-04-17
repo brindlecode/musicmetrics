@@ -2,7 +2,7 @@
 title: "Bernadya"
 slug: "bernadya"
 type: "artists"
-image: "https://i.ytimg.com/vi/9ogdEYPggzE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8lPDFoOY9yU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

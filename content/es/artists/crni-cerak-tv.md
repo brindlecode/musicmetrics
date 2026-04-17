@@ -2,7 +2,7 @@
 title: "Crni Cerak TV"
 slug: "crni-cerak-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/haPc_eMzuF8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IaZKywV4jVQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
