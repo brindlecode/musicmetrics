@@ -2,7 +2,7 @@
 title: "GJ Echo"
 slug: "gj-echo"
 type: "artists"
-image: "https://i.ytimg.com/vi/D5Qu568N32E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8DnFbGYpazI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

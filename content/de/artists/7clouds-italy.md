@@ -2,7 +2,7 @@
 title: "7clouds Italy"
 slug: "7clouds-italy"
 type: "artists"
-image: "https://i.ytimg.com/vi/n5RoTU2intE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gooZVBnltZo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

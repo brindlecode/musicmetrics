@@ -2,7 +2,7 @@
 title: "Lauri Haav"
 slug: "lauri-haav"
 type: "artists"
-image: "https://i.ytimg.com/vi/omh63FeyV9Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SzcynhTLBdg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
