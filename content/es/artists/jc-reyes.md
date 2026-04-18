@@ -2,7 +2,7 @@
 title: "JC REYES"
 slug: "jc-reyes"
 type: "artists"
-image: "https://i.ytimg.com/vi/IsaBrMthhLI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CiO1c1loEW0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

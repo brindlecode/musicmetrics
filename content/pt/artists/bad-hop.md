@@ -2,7 +2,7 @@
 title: "BAD HOP"
 slug: "bad-hop"
 type: "artists"
-image: "https://i.ytimg.com/vi/NLRbB4lTiYc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9AO5C7ZozT4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
