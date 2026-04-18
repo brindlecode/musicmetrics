@@ -2,7 +2,7 @@
 title: "JKT48"
 slug: "jkt48"
 type: "artists"
-image: "https://i.ytimg.com/vi/QtdsUJxiwNM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n3EpgnAqlvE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

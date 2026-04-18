@@ -2,7 +2,7 @@
 title: "Mai Kim Music"
 slug: "mai-kim-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/E6GR0pdqUoA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-EzoTLZXRbA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
