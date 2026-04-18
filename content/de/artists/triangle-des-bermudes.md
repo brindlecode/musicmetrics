@@ -1,11 +1,11 @@
 ---
-title: "TRIANGLE DES BERMUDES"
+title: "Triangle des bermudes"
 slug: "triangle-des-bermudes"
 type: "artists"
-image: "https://i.ytimg.com/vi/8Wc9K2I8L2g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RjKXct8sHEQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "TRIANGLE DES BERMUDES streaming statistics, chart positions and analytics across youtube"
+description: "Triangle des bermudes streaming statistics, chart positions and analytics across youtube"
 ---
