@@ -2,7 +2,7 @@
 title: "Sertanejo Play"
 slug: "sertanejo-play"
 type: "artists"
-image: "https://i.ytimg.com/vi/72M9HxL3FoE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RHqjaWFGong/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
