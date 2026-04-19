@@ -2,7 +2,7 @@
 title: "Calle 24"
 slug: "calle-24"
 type: "artists"
-image: "https://i.ytimg.com/vi/-m_THSd7Aq8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NJUQfvK0UZY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

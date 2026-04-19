@@ -2,7 +2,7 @@
 title: "Usimamane"
 slug: "usimamane"
 type: "artists"
-image: "https://i.ytimg.com/vi/FPg1RDXJ4uc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WJU7YBKK6PI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

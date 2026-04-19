@@ -2,7 +2,7 @@
 title: "ZZ"
 slug: "zz"
 type: "artists"
-image: "https://i.ytimg.com/vi/XjjcTpNWK0c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A2qLpBCEvhY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
