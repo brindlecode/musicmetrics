@@ -2,7 +2,7 @@
 title: "SHUBH"
 slug: "shubh"
 type: "artists"
-image: "https://i.ytimg.com/vi/raaqmralEZw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tlkb3cLfaOQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

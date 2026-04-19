@@ -2,7 +2,7 @@
 title: "MEDA"
 slug: "meda"
 type: "artists"
-image: "https://i.ytimg.com/vi/GRtLVwJ4yhc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uTymkLdTSl8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "ST.319 Entertainment"
 slug: "st319-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/SIxXaXF09oI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bZZn2B11b_c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

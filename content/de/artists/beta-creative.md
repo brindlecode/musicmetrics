@@ -2,7 +2,7 @@
 title: "Beta Creative"
 slug: "beta-creative"
 type: "artists"
-image: "https://i.ytimg.com/vi/REAt8S0v6bQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b8jNeQT81Go/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
