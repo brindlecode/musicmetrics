@@ -2,7 +2,7 @@
 title: "Ved Entertainment Studio"
 slug: "ved-entertainment-studio"
 type: "artists"
-image: "https://i.ytimg.com/vi/2Y1_bZ4OpiE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vknM0TpnqNQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
