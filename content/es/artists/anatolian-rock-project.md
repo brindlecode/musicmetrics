@@ -2,7 +2,7 @@
 title: "Anatolian Rock Project"
 slug: "anatolian-rock-project"
 type: "artists"
-image: "https://i.ytimg.com/vi/GgZeYCYCVWY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oPacsBR-FhM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

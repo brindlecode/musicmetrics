@@ -2,7 +2,7 @@
 title: "Sefo"
 slug: "sefo"
 type: "artists"
-image: "https://i.ytimg.com/vi/_6nfCfOn2cs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NIvPHeA5hTo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

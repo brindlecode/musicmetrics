@@ -2,7 +2,7 @@
 title: "HarryStyles"
 slug: "harrystyles"
 type: "artists"
-image: "https://i.ytimg.com/vi/o6jQo3-iCao/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g4R9UCu4gvg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
