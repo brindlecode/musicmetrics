@@ -1,11 +1,11 @@
 ---
-title: "PLAVE 플레이브"
+title: "PLAVE"
 slug: "plave"
 type: "artists"
-image: "https://i.ytimg.com/vi/XukB7ZG8CDQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AdXpX5e4-V0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "PLAVE 플레이브 streaming statistics, chart positions and analytics across youtube"
+description: "PLAVE streaming statistics, chart positions and analytics across youtube"
 ---

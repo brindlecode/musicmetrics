@@ -2,7 +2,7 @@
 title: "Kiều Chi"
 slug: "kiu-chi"
 type: "artists"
-image: "https://i.ytimg.com/vi/UwDKu7VYtTw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CD_BFGQkIgY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
