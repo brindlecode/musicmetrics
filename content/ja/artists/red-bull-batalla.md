@@ -2,7 +2,7 @@
 title: "Red Bull Batalla"
 slug: "red-bull-batalla"
 type: "artists"
-image: "https://i.ytimg.com/vi/SEjEwxnelpw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b53I35JQna0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
