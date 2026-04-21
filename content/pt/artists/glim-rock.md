@@ -2,7 +2,7 @@
 title: "Glim Rock"
 slug: "glim-rock"
 type: "artists"
-image: "https://i.ytimg.com/vi/JkaBMKE7Cp4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x4P-bwylFaM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
