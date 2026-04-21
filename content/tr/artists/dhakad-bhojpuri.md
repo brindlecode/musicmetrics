@@ -2,7 +2,7 @@
 title: "Dhakad Bhojpuri"
 slug: "dhakad-bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ug0PZDPepr4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XGevebT-JmM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
