@@ -2,7 +2,7 @@
 title: "Ordinary Kid"
 slug: "ordinary-kid"
 type: "artists"
-image: "https://i.ytimg.com/vi/VburLddfoZ0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z-N-YJYFZJw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "HIEUTHUHAI"
 slug: "hieuthuhai"
 type: "artists"
-image: "https://i.ytimg.com/vi/8sVtL0o-v7U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wHwRdqJ3TD4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
