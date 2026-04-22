@@ -1,11 +1,11 @@
 ---
-title: "Hamo ElMorshdy"
+title: "Hamo ELMorshdy - حمو المرشدي"
 slug: "hamo-elmorshdy"
 type: "artists"
-image: "https://i.ytimg.com/vi/kbrEaEjZn60/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iq05BWnXHoI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Hamo ElMorshdy streaming statistics, chart positions and analytics across youtube"
+description: "Hamo ELMorshdy - حمو المرشدي streaming statistics, chart positions and analytics across youtube"
 ---
