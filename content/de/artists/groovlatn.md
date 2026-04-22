@@ -2,7 +2,7 @@
 title: "GroovLatn"
 slug: "groovlatn"
 type: "artists"
-image: "https://i.ytimg.com/vi/LmN-BbEToAk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6BcJ5YiYh0k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

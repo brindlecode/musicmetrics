@@ -2,7 +2,7 @@
 title: "Gloria"
 slug: "gloria"
 type: "artists"
-image: "https://i.ytimg.com/vi/BcGb0Ucf1Is/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/snGbZONJoL4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

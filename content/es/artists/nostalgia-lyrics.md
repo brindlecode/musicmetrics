@@ -2,7 +2,7 @@
 title: "nostalgia lyrics."
 slug: "nostalgia-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/WNESVCYOB9M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WLK3gicdGuo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
