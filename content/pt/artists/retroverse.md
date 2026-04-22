@@ -2,7 +2,7 @@
 title: "RetroVerse"
 slug: "retroverse"
 type: "artists"
-image: "https://i.ytimg.com/vi/UqPmR_lSt4o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GJj5QP6lWB8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

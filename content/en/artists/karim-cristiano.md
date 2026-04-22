@@ -2,7 +2,7 @@
 title: "كريم كرستيانو - karim Cristiano"
 slug: "karim-cristiano"
 type: "artists"
-image: "https://i.ytimg.com/vi/PSweNeSkKHo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tJeQYR5aL6k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

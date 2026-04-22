@@ -2,7 +2,7 @@
 title: "PURPEECH"
 slug: "purpeech"
 type: "artists"
-image: "https://i.ytimg.com/vi/40zxsFPWjZU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i9o-7NzuBiI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
