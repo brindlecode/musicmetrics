@@ -2,7 +2,7 @@
 title: "sweetblue."
 slug: "sweetblue"
 type: "artists"
-image: "https://i.ytimg.com/vi/otT0x6nUBUg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pUe4rcbBfWI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "A-Lin官方專屬頻道"
 slug: "a-lin"
 type: "artists"
-image: "https://i.ytimg.com/vi/BqG4Xzn2G-k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bWeNi_XzS5s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

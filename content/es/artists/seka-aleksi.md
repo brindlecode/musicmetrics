@@ -2,7 +2,7 @@
 title: "Seka Aleksić"
 slug: "seka-aleksi"
 type: "artists"
-image: "https://i.ytimg.com/vi/KWrVdxw65rA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uCOefZeMIdE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
