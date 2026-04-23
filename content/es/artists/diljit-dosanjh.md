@@ -2,7 +2,7 @@
 title: "Diljit Dosanjh"
 slug: "diljit-dosanjh"
 type: "artists"
-image: "https://i.ytimg.com/vi/9wTEmuv6SvU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5meceygQZ-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
