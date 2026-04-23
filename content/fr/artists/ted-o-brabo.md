@@ -2,7 +2,7 @@
 title: "Ted O Brabo"
 slug: "ted-o-brabo"
 type: "artists"
-image: "https://i.ytimg.com/vi/Hfm2YIEtILs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ty7_nlAbVgc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

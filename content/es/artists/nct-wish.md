@@ -2,7 +2,7 @@
 title: "NCT WISH"
 slug: "nct-wish"
 type: "artists"
-image: "https://i.ytimg.com/vi/Hc7qH-MJds4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1BRDK2mMI98/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

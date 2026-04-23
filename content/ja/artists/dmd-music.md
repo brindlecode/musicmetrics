@@ -2,7 +2,7 @@
 title: "DMD MUSIC"
 slug: "dmd-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/UKUraJsUkk0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AM_Evqbua10/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

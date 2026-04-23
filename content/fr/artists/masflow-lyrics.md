@@ -2,7 +2,7 @@
 title: "MasFlow Lyrics 🔥"
 slug: "masflow-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/Et_kj_9SJos/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j4t_o-lT15o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
