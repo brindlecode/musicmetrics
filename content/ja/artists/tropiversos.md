@@ -2,7 +2,7 @@
 title: "Tropiversos"
 slug: "tropiversos"
 type: "artists"
-image: "https://i.ytimg.com/vi/GMvMDnNUzwA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mxNvr-8kN_c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Millennium Audios"
 slug: "millennium-audios"
 type: "artists"
-image: "https://i.ytimg.com/vi/WcuwdItUHFI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6k2Pq-dV_gI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
