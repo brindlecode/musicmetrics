@@ -2,7 +2,7 @@
 title: "Kuya Magik"
 slug: "kuya-magik"
 type: "artists"
-image: "https://i.ytimg.com/vi/VYIAHZ0u1BI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/v4CRf2iEqfw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

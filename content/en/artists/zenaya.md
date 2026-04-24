@@ -2,7 +2,7 @@
 title: "Zenaya"
 slug: "zenaya"
 type: "artists"
-image: "https://i.ytimg.com/vi/qWy2t756p4U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G5h6FiicrxY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
