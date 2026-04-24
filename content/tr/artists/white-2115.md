@@ -2,7 +2,7 @@
 title: "White 2115"
 slug: "white-2115"
 type: "artists"
-image: "https://i.ytimg.com/vi/LQ_ANsNDQ5I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8hcMj5wWQcU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

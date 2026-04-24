@@ -2,7 +2,7 @@
 title: "Moonlight Tunes"
 slug: "moonlight-tunes"
 type: "artists"
-image: "https://i.ytimg.com/vi/lIdMKK-ix-s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lvCMf4eu2_k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

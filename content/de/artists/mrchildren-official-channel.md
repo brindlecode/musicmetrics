@@ -2,7 +2,7 @@
 title: "Mr.Children Official Channel"
 slug: "mrchildren-official-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/FzC45TwOkQk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/elx-AYc3Bko/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
