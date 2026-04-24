@@ -2,7 +2,7 @@
 title: "Joé Dwèt Filé"
 slug: "jo-dwt-fil"
 type: "artists"
-image: "https://i.ytimg.com/vi/VQzX2pg8oF0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zyU1kWSeitY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

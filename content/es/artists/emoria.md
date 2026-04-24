@@ -2,7 +2,7 @@
 title: "Emoria"
 slug: "emoria"
 type: "artists"
-image: "https://i.ytimg.com/vi/tUQblHnn9n8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Pl9dTR4aOXo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

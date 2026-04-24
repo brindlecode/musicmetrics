@@ -2,7 +2,7 @@
 title: "Quevedo"
 slug: "quevedo"
 type: "artists"
-image: "https://i.ytimg.com/vi/knGfe_UujWE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LZPLBSRnxSY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

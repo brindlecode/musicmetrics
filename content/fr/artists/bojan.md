@@ -2,7 +2,7 @@
 title: "BOJAN"
 slug: "bojan"
 type: "artists"
-image: "https://i.ytimg.com/vi/cVvQAh8lxZo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/si6OyQjFvfI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
