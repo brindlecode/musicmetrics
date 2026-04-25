@@ -2,7 +2,7 @@
 title: "BoneyM"
 slug: "boneym"
 type: "artists"
-image: "https://i.ytimg.com/vi/yiYOHK1F4cg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ici8cpI2Jog/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

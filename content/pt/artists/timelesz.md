@@ -2,7 +2,7 @@
 title: "timelesz [タイムレス]"
 slug: "timelesz"
 type: "artists"
-image: "https://i.ytimg.com/vi/wWNXVB1av-g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w3LT7ZQ-DK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
