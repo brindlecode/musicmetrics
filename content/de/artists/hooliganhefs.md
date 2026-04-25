@@ -2,7 +2,7 @@
 title: "hooliganhefs"
 slug: "hooliganhefs"
 type: "artists"
-image: "https://i.ytimg.com/vi/rJa8w61_iC4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RzXpL3jZBUs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Mr.Nobody"
 slug: "mrnobody"
 type: "artists"
-image: "https://i.ytimg.com/vi/OPTy-yU2rNs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gJUMIxIXiVI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
