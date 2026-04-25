@@ -2,7 +2,7 @@
 title: "Nightfall Tunes"
 slug: "nightfall-tunes"
 type: "artists"
-image: "https://i.ytimg.com/vi/DC1h70hAXZ8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WtYhumaYZgQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
