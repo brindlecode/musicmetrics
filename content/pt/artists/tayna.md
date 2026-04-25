@@ -2,7 +2,7 @@
 title: "Tayna"
 slug: "tayna"
 type: "artists"
-image: "https://i.ytimg.com/vi/8ytmo-ewVLw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wnxth6evoW0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

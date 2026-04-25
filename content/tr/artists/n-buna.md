@@ -2,7 +2,7 @@
 title: "ヨルシカ / n-buna"
 slug: "n-buna"
 type: "artists"
-image: "https://i.ytimg.com/vi/VD_ztcqWBAY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OHAjc-ayhus/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

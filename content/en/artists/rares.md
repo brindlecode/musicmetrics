@@ -2,7 +2,7 @@
 title: "rares"
 slug: "rares"
 type: "artists"
-image: "https://i.ytimg.com/vi/uQKr16NLX10/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/a8nX2vdNmYg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

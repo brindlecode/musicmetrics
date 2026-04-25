@@ -2,7 +2,7 @@
 title: "Rock Universe"
 slug: "rock-universe"
 type: "artists"
-image: "https://i.ytimg.com/vi/5Q1BFGdhFtU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9rBiv-puIp8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
