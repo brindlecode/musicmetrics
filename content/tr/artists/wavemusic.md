@@ -2,7 +2,7 @@
 title: "WaveMusic"
 slug: "wavemusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/47Xc3naUOoM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DHwGWgWMD-w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
