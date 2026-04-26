@@ -2,7 +2,7 @@
 title: "SoyLatino"
 slug: "soylatino"
 type: "artists"
-image: "https://i.ytimg.com/vi/oVKIlLW-Qls/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I2AnG97ioEU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

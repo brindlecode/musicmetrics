@@ -2,7 +2,7 @@
 title: "INTERNAZIOMALE"
 slug: "internaziomale"
 type: "artists"
-image: "https://i.ytimg.com/vi/biPzykprUjU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ddj2ApTSEJI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

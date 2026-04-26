@@ -2,7 +2,7 @@
 title: "Rohff"
 slug: "rohff"
 type: "artists"
-image: "https://i.ytimg.com/vi/RDpz9QxceyA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KfXgMhD-Cd0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

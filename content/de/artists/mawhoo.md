@@ -2,7 +2,7 @@
 title: "MaWhoo"
 slug: "mawhoo"
 type: "artists"
-image: "https://i.ytimg.com/vi/5o2eNN6c9VM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nkE3yC5PQRE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
