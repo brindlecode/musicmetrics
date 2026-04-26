@@ -2,7 +2,7 @@
 title: "Eva Records"
 slug: "eva-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/cahWIOCm5YM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CRxxy29b06M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
