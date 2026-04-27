@@ -2,7 +2,7 @@
 title: "DC. PRODUCTION"
 slug: "dc-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/YvhQTRcOmMo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TdqzvjWnccA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
