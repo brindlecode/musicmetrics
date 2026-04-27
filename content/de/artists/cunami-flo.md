@@ -2,7 +2,7 @@
 title: "Cunami Flo"
 slug: "cunami-flo"
 type: "artists"
-image: "https://i.ytimg.com/vi/_Xd-m0O9IEQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dneEpXzjA_E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
