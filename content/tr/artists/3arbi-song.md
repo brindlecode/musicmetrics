@@ -2,7 +2,7 @@
 title: "3arbi song"
 slug: "3arbi-song"
 type: "artists"
-image: "https://i.ytimg.com/vi/3Clq7gd4p7I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tKlDoUlJeWY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

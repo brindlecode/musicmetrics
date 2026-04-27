@@ -2,7 +2,7 @@
 title: "Invited Kingdom"
 slug: "invited-kingdom"
 type: "artists"
-image: "https://i.ytimg.com/vi/NhWtqZRCT1M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PZR8Sp02X2U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
