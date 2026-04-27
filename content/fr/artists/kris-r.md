@@ -2,7 +2,7 @@
 title: "Kris R."
 slug: "kris-r"
 type: "artists"
-image: "https://i.ytimg.com/vi/hWjij6OZJZk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aQnsbFtUHG4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

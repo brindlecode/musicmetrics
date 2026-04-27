@@ -2,7 +2,7 @@
 title: "JVLI"
 slug: "jvli"
 type: "artists"
-image: "https://i.ytimg.com/vi/nhh7ffg87BM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8SUAcGP3Xo0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

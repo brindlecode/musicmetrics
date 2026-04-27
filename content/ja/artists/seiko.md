@@ -2,7 +2,7 @@
 title: "SEIKO"
 slug: "seiko"
 type: "artists"
-image: "https://i.ytimg.com/vi/OqcFYr5KIMw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WAHaBF2YJL8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
