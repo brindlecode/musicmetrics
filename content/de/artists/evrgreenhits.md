@@ -2,7 +2,7 @@
 title: "EVRgreenhits"
 slug: "evrgreenhits"
 type: "artists"
-image: "https://i.ytimg.com/vi/zl5ZYQeX3-E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mUY25OVUXmQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

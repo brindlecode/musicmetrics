@@ -2,7 +2,7 @@
 title: "RnBoi"
 slug: "rnboi"
 type: "artists"
-image: "https://i.ytimg.com/vi/Mzgx9dp0Jdw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fj2mKNEYq7Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

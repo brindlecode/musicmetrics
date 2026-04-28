@@ -2,7 +2,7 @@
 title: "Sidhu Moose Wala"
 slug: "sidhu-moose-wala"
 type: "artists"
-image: "https://i.ytimg.com/vi/qDKDqTAzEKs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lJZ8wWCnwow/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

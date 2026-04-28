@@ -2,7 +2,7 @@
 title: "Amanecer"
 slug: "amanecer"
 type: "artists"
-image: "https://i.ytimg.com/vi/SmV5_T8bzes/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uBSyZdwrEK0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

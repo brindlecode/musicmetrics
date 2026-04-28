@@ -2,7 +2,7 @@
 title: "QWER"
 slug: "qwer"
 type: "artists"
-image: "https://i.ytimg.com/vi/A8d2Gx91zwk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uXgk1YLRIN0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

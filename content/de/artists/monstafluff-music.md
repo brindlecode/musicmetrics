@@ -2,7 +2,7 @@
 title: "Monstafluff Music"
 slug: "monstafluff-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/KPr3ScyaonY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Kh1k71NAF_A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
