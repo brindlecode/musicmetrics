@@ -2,7 +2,7 @@
 title: "SPICYAF"
 slug: "spicyaf"
 type: "artists"
-image: "https://i.ytimg.com/vi/GQ2iUgeeebs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cxDpe7McY6Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
