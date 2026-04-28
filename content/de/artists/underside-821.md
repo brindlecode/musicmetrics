@@ -2,7 +2,7 @@
 title: "UnderSide 821"
 slug: "underside-821"
 type: "artists"
-image: "https://i.ytimg.com/vi/dtQiuRsVIfI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VZrRNaskr_U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

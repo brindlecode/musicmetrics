@@ -2,7 +2,7 @@
 title: "Proponuję Ci kawałek"
 slug: "proponuj-ci-kawaek"
 type: "artists"
-image: "https://i.ytimg.com/vi/4wONbvnWRa4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rYS3WqhOnJM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

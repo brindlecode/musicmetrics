@@ -2,7 +2,7 @@
 title: "Bebeshito"
 slug: "bebeshito"
 type: "artists"
-image: "https://i.ytimg.com/vi/BO1y_YgS8yY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SCK13OlZZfs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
