@@ -2,7 +2,7 @@
 title: "Leo + The Pears"
 slug: "leo-the-pears"
 type: "artists"
-image: "https://i.ytimg.com/vi/j7H10pUMq9o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-47vHG40lk8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

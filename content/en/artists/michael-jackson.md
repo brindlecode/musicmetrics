@@ -2,7 +2,7 @@
 title: "Michael Jackson"
 slug: "michael-jackson"
 type: "artists"
-image: "https://i.ytimg.com/vi/cgE8HEflQPg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lr1gApNmFog/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
