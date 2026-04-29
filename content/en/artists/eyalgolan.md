@@ -2,7 +2,7 @@
 title: "EyalGolan"
 slug: "eyalgolan"
 type: "artists"
-image: "https://i.ytimg.com/vi/kQ5OFJxgL0M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lFpxMCA3hvk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

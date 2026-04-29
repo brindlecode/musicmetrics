@@ -2,7 +2,7 @@
 title: "OgeNus"
 slug: "ogenus"
 type: "artists"
-image: "https://i.ytimg.com/vi/lqc6iYT2QaY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/01_j6ahLhA4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

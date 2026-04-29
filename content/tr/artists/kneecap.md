@@ -2,7 +2,7 @@
 title: "KNEECAP"
 slug: "kneecap"
 type: "artists"
-image: "https://i.ytimg.com/vi/PLDHQVJZuGQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/khXv1RvAZF0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

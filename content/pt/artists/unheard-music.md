@@ -2,7 +2,7 @@
 title: "UNHEARD MUSIC 🖤"
 slug: "unheard-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/VoYfJKbK71w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/flWI2OXe-Ho/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
