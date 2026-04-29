@@ -2,7 +2,7 @@
 title: "PanikRecordsTube"
 slug: "panikrecordstube"
 type: "artists"
-image: "https://i.ytimg.com/vi/pXkjKtg7tTs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tz4KPBW-RJY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

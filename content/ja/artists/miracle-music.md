@@ -2,7 +2,7 @@
 title: "Miracle Music"
 slug: "miracle-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/G_cufwLwNTw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cMt-Unsw8o4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

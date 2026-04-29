@@ -2,7 +2,7 @@
 title: "HANRORO"
 slug: "hanroro"
 type: "artists"
-image: "https://i.ytimg.com/vi/PYpOJyl3Sbg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DaI8s1s3phM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Arman Ofi"
 slug: "arman-ofi"
 type: "artists"
-image: "https://i.ytimg.com/vi/rVMJ2v5GccA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FGJ8GAZW6lI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

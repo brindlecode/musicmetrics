@@ -2,7 +2,7 @@
 title: "Jassa Dhillon"
 slug: "jassa-dhillon"
 type: "artists"
-image: "https://i.ytimg.com/vi/fRIPgxPthO4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sLueqNhgB3E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
