@@ -2,7 +2,7 @@
 title: "Châu Khải Phong"
 slug: "chu-khi-phong"
 type: "artists"
-image: "https://i.ytimg.com/vi/r0uH9lOqPZI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Da8KLTSYnf0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
