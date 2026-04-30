@@ -2,7 +2,7 @@
 title: "Charlotte Gott"
 slug: "charlotte-gott"
 type: "artists"
-image: "https://i.ytimg.com/vi/vPepu6O_wzo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4L1Sm7TjWbQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
