@@ -2,7 +2,7 @@
 title: "Harlem Fetty"
 slug: "harlem-fetty"
 type: "artists"
-image: "https://i.ytimg.com/vi/aB57_9rLZE8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A02IAIbFSrE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
