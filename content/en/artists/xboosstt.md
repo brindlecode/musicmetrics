@@ -2,7 +2,7 @@
 title: "XBoosstt"
 slug: "xboosstt"
 type: "artists"
-image: "https://i.ytimg.com/vi/x64H0oo6hI4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/haPvQ7U5l2M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

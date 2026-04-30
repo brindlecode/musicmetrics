@@ -2,7 +2,7 @@
 title: "キタニタツヤ / Tatsuya Kitani"
 slug: "tatsuya-kitani"
 type: "artists"
-image: "https://i.ytimg.com/vi/hA_9r-3jkSg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l7hbIgnyhe0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
