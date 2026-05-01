@@ -2,7 +2,7 @@
 title: "AKMU"
 slug: "akmu"
 type: "artists"
-image: "https://i.ytimg.com/vi/6Xa1VDLACPo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oJbxC56MPsc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

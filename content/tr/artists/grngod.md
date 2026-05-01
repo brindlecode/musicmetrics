@@ -1,0 +1,11 @@
+---
+title: "GR!NGOD"
+slug: "grngod"
+type: "artists"
+image: "https://i.ytimg.com/vi/2sA9Fs8LJf4/mqdefault.jpg"
+platforms: ["youtube"]
+spotify_streams: "--"
+youtube_views: "Charting"
+monthly_listeners: "--"
+description: "GR!NGOD streaming statistics, chart positions and analytics across youtube"
+---
