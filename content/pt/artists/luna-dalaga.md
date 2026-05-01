@@ -2,7 +2,7 @@
 title: "Luna Dalaga"
 slug: "luna-dalaga"
 type: "artists"
-image: "https://i.ytimg.com/vi/7hwhfO719A8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TGu1a8gMGsc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
