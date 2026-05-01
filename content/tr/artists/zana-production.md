@@ -2,7 +2,7 @@
 title: "Zana Production"
 slug: "zana-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/9FOTjla_sgI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NCiSZGnc6cQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
