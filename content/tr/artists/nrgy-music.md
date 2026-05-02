@@ -2,7 +2,7 @@
 title: "NRGY Music"
 slug: "nrgy-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/_LSjidgAS30/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mJd1nzU2krc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
