@@ -2,7 +2,7 @@
 title: "Lawrence Oyor"
 slug: "lawrence-oyor"
 type: "artists"
-image: "https://i.ytimg.com/vi/EigC4iGNa50/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w01EjKHvXPg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

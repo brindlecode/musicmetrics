@@ -2,7 +2,7 @@
 title: "تعاليل / t3alil"
 slug: "t3alil"
 type: "artists"
-image: "https://i.ytimg.com/vi/LEA8hp2RaGE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jDIPiWyDx-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

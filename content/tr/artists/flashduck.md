@@ -2,7 +2,7 @@
 title: "Flashduck"
 slug: "flashduck"
 type: "artists"
-image: "https://i.ytimg.com/vi/Bk75P1_htH8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R-6487aG95g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

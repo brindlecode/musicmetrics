@@ -2,7 +2,7 @@
 title: "MISIA"
 slug: "misia"
 type: "artists"
-image: "https://i.ytimg.com/vi/uu_BXk4Oy-k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/m4UuJWVt4Zc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

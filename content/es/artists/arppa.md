@@ -2,7 +2,7 @@
 title: "Arppa"
 slug: "arppa"
 type: "artists"
-image: "https://i.ytimg.com/vi/bCOAZHUbU6M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RvOQHcFFT_8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

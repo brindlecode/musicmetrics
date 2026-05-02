@@ -2,7 +2,7 @@
 title: "EFRA"
 slug: "efra"
 type: "artists"
-image: "https://i.ytimg.com/vi/FFUQgTEliVQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jIqeIusG85o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

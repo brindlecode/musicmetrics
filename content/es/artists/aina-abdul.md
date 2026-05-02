@@ -2,7 +2,7 @@
 title: "Aina Abdul"
 slug: "aina-abdul"
 type: "artists"
-image: "https://i.ytimg.com/vi/eEmR28zXY_U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M1hzdL57HzM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

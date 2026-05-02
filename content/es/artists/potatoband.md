@@ -2,7 +2,7 @@
 title: "potatoband"
 slug: "potatoband"
 type: "artists"
-image: "https://i.ytimg.com/vi/IIOAf_PL3qE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EgtKf-oE77k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

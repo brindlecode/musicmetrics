@@ -2,7 +2,7 @@
 title: "Attar - عطار"
 slug: "attar"
 type: "artists"
-image: "https://i.ytimg.com/vi/7znw2Of6cxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3aY5M03_fr0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
