@@ -2,7 +2,7 @@
 title: "Guizmo"
 slug: "guizmo"
 type: "artists"
-image: "https://i.ytimg.com/vi/tws5aP7mapc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Y-umzLsGPgY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

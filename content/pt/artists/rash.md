@@ -2,7 +2,7 @@
 title: "rash"
 slug: "rash"
 type: "artists"
-image: "https://i.ytimg.com/vi/N8uInPlN3vo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S2VyS_2tMzw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
