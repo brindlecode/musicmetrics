@@ -2,7 +2,7 @@
 title: "GRM Daily"
 slug: "grm-daily"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZiRNLITwUv8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b6D3DKVicZU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

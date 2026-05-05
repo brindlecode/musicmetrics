@@ -2,7 +2,7 @@
 title: "Karizma Production"
 slug: "karizma-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/jWfS90mMQzM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gGdeOZpPa28/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

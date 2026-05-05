@@ -2,7 +2,7 @@
 title: "Samuel Batista Filho"
 slug: "samuel-batista-filho"
 type: "artists"
-image: "https://i.ytimg.com/vi/WNJFBsdep0k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oKyo455nsoo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

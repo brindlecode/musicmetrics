@@ -2,7 +2,7 @@
 title: "Aashish Yadav Entertainment"
 slug: "aashish-yadav-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/a_RlSlsodkk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EWq5WaBB6tE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

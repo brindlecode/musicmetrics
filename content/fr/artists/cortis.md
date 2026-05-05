@@ -2,7 +2,7 @@
 title: "CORTIS"
 slug: "cortis"
 type: "artists"
-image: "https://i.ytimg.com/vi/U6BDbXIah-Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kRpaqR5sbf0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "NEJ’"
 slug: "nej"
 type: "artists"
-image: "https://i.ytimg.com/vi/BwHxJoO5hXo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/03oifHftT78/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

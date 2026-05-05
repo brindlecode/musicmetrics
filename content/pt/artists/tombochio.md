@@ -2,7 +2,7 @@
 title: "Tombochio"
 slug: "tombochio"
 type: "artists"
-image: "https://i.ytimg.com/vi/WsfGzWzbMbg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8ybjPC7GZcg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

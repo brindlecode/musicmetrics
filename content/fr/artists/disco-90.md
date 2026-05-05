@@ -2,7 +2,7 @@
 title: "Disco 90"
 slug: "disco-90"
 type: "artists"
-image: "https://i.ytimg.com/vi/npP_QVdlrd8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/viQKYRrDBmY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

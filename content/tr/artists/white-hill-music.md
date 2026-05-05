@@ -2,7 +2,7 @@
 title: "White Hill Music"
 slug: "white-hill-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/Oy6LzTNJy3g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4t3CO6zGtA0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

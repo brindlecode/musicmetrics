@@ -2,7 +2,7 @@
 title: "M4rkim"
 slug: "m4rkim"
 type: "artists"
-image: "https://i.ytimg.com/vi/VABa27dDy1c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fL46tziPJzk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

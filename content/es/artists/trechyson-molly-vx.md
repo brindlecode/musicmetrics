@@ -2,7 +2,7 @@
 title: "Trechyson Molly vx"
 slug: "trechyson-molly-vx"
 type: "artists"
-image: "https://i.ytimg.com/vi/b7zibiYIw4w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qyqu53LNmJM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

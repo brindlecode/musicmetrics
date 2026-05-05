@@ -2,7 +2,7 @@
 title: "Bob Dominator"
 slug: "bob-dominator"
 type: "artists"
-image: "https://i.ytimg.com/vi/QalSaJMqVPE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QHnkGrwqWKE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

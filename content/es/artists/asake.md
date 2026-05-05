@@ -2,7 +2,7 @@
 title: "Asake"
 slug: "asake"
 type: "artists"
-image: "https://i.ytimg.com/vi/YKtAUlGjgLA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RTT1C6EIFXE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

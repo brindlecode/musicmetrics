@@ -2,7 +2,7 @@
 title: "SEECOO سيكو"
 slug: "seecoo"
 type: "artists"
-image: "https://i.ytimg.com/vi/i7be7NugYRE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1nX5Uumnjuw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

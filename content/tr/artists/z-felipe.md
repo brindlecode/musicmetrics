@@ -2,7 +2,7 @@
 title: "Zé Felipe"
 slug: "z-felipe"
 type: "artists"
-image: "https://i.ytimg.com/vi/P49f3Q7KUhE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CvmxO6J1gTs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

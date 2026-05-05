@@ -2,7 +2,7 @@
 title: "Niko Pandetta"
 slug: "niko-pandetta"
 type: "artists"
-image: "https://i.ytimg.com/vi/NYmgdcIJYUI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GvQ9D8j73wk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

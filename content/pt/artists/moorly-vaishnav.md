@@ -2,7 +2,7 @@
 title: "Moorly Vaishnav"
 slug: "moorly-vaishnav"
 type: "artists"
-image: "https://i.ytimg.com/vi/RnSv0GEJS8Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tOXj1qC-rD8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

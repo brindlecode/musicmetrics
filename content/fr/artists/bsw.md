@@ -2,7 +2,7 @@
 title: "BSW"
 slug: "bsw"
 type: "artists"
-image: "https://i.ytimg.com/vi/EKY-12Y8Y2Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K-o2fbMt4O0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

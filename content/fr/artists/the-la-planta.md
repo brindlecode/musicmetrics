@@ -2,7 +2,7 @@
 title: "The La Planta"
 slug: "the-la-planta"
 type: "artists"
-image: "https://i.ytimg.com/vi/o9RfPHyp1nI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9rbbXPlHDkY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "GOODMOOD"
 slug: "goodmood"
 type: "artists"
-image: "https://i.ytimg.com/vi/oAMPYKHwpm4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sZP3hbmagjQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

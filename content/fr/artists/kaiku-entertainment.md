@@ -2,7 +2,7 @@
 title: "Kaiku Entertainment"
 slug: "kaiku-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/kMzxj47CWYo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OapM-iZkt9s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

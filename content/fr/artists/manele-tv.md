@@ -2,7 +2,7 @@
 title: "Manele TV"
 slug: "manele-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/xqVWXZwglV4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qIyzTV1ZgQQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
