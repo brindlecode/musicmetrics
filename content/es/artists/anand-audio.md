@@ -2,7 +2,7 @@
 title: "Anand Audio"
 slug: "anand-audio"
 type: "artists"
-image: "https://i.ytimg.com/vi/gK0iaGa38-o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t2DkunISJx4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

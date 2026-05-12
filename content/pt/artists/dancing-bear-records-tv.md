@@ -2,7 +2,7 @@
 title: "Dancing Bear Records TV"
 slug: "dancing-bear-records-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/3d1OOXacto4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3i-34Al6ujw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
