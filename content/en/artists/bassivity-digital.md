@@ -2,7 +2,7 @@
 title: "Bassivity Digital"
 slug: "bassivity-digital"
 type: "artists"
-image: "https://i.ytimg.com/vi/CPoz1omGlZY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GCAQvRM71dY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

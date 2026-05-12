@@ -2,7 +2,7 @@
 title: "Hamo ELMorshdy - حمو المرشدي"
 slug: "hamo-elmorshdy"
 type: "artists"
-image: "https://i.ytimg.com/vi/iq05BWnXHoI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5uFNXP4WP8s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

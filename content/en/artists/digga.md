@@ -2,7 +2,7 @@
 title: "Digga"
 slug: "digga"
 type: "artists"
-image: "https://i.ytimg.com/vi/Y-JxRuqBBsE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JqERxvd6pgo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

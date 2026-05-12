@@ -2,7 +2,7 @@
 title: "GALVAN REAL"
 slug: "galvan-real"
 type: "artists"
-image: "https://i.ytimg.com/vi/uyCHZKxFPig/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/guCuhDCEcFE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

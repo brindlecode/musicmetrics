@@ -2,7 +2,7 @@
 title: "VORSKIY"
 slug: "vorskiy"
 type: "artists"
-image: "https://i.ytimg.com/vi/mKqkCvOm_2Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GQk-ftdLy2I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

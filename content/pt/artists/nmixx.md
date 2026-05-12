@@ -2,7 +2,7 @@
 title: "NMIXX"
 slug: "nmixx"
 type: "artists"
-image: "https://i.ytimg.com/vi/-SEKt_0pdHM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6Ycn9qZK09I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Alonzo"
 slug: "alonzo"
 type: "artists"
-image: "https://i.ytimg.com/vi/SJjRoWEBdRE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qVuQVxhl-rU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

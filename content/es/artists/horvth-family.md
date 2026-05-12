@@ -2,7 +2,7 @@
 title: "Horváth Family"
 slug: "horvth-family"
 type: "artists"
-image: "https://i.ytimg.com/vi/M8oWaug4hlA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i2SpgEXQNww/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "icyball 冰球樂團"
 slug: "icyball"
 type: "artists"
-image: "https://i.ytimg.com/vi/TomjtCyesT0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z0QdBX4WAIU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

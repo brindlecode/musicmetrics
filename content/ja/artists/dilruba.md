@@ -2,7 +2,7 @@
 title: "Dilruba"
 slug: "dilruba"
 type: "artists"
-image: "https://i.ytimg.com/vi/sVpskF2dj0w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EBGoDFU4KqM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

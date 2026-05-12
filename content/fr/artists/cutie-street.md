@@ -2,7 +2,7 @@
 title: "CUTIE STREET"
 slug: "cutie-street"
 type: "artists"
-image: "https://i.ytimg.com/vi/o-N7lgayxPA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7HTduQEJpNE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

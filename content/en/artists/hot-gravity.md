@@ -2,7 +2,7 @@
 title: "Hot Gravity"
 slug: "hot-gravity"
 type: "artists"
-image: "https://i.ytimg.com/vi/eO4s-SPkQSA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XBFNf66bhyE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

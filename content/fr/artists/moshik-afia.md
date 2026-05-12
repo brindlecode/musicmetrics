@@ -2,7 +2,7 @@
 title: "מושיק עפיה הערוץ הרשמי Moshik Afia"
 slug: "moshik-afia"
 type: "artists"
-image: "https://i.ytimg.com/vi/A1iQON_bYsg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fxssoOi75qY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MUSliM - مُسلِم"
 slug: "muslim"
 type: "artists"
-image: "https://i.ytimg.com/vi/SSrG8wHz83c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MEFdvR2WSNo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

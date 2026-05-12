@@ -2,7 +2,7 @@
 title: "Käärijä"
 slug: "krij"
 type: "artists"
-image: "https://i.ytimg.com/vi/UzTNNzRPwI8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b3Mk0OFuiT8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

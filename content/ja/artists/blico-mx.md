@@ -2,7 +2,7 @@
 title: "Bélico Mx"
 slug: "blico-mx"
 type: "artists"
-image: "https://i.ytimg.com/vi/Fwm9db1vQqc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7G0mgor3qEA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

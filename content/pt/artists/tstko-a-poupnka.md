@@ -2,7 +2,7 @@
 title: "Štístko a Poupěnka"
 slug: "tstko-a-poupnka"
 type: "artists"
-image: "https://i.ytimg.com/vi/jfHJx6JKG-A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t8sUgnIqwuk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Romance Season"
 slug: "romance-season"
 type: "artists"
-image: "https://i.ytimg.com/vi/0xlmPglHEqQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OojyLAt_F6Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

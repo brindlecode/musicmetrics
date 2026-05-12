@@ -2,7 +2,7 @@
 title: "Chivateando x world"
 slug: "chivateando-x-world"
 type: "artists"
-image: "https://i.ytimg.com/vi/PwyH2_DAnSM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XUxWl0vpZDc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

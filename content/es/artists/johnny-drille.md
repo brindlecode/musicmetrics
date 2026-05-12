@@ -2,7 +2,7 @@
 title: "Johnny Drille"
 slug: "johnny-drille"
 type: "artists"
-image: "https://i.ytimg.com/vi/cIl14QhQGRY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MS7I2kVp0bw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

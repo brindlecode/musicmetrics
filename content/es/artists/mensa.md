@@ -2,7 +2,7 @@
 title: "Mensa"
 slug: "mensa"
 type: "artists"
-image: "https://i.ytimg.com/vi/has0hrS3EBM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yAAyQN_NqEQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

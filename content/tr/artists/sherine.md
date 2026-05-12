@@ -2,7 +2,7 @@
 title: "Sherine"
 slug: "sherine"
 type: "artists"
-image: "https://i.ytimg.com/vi/iwg8F1ADyPM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-0RUAQAMUac/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

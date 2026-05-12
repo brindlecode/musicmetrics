@@ -2,7 +2,7 @@
 title: "Romantic FM"
 slug: "romantic-fm"
 type: "artists"
-image: "https://i.ytimg.com/vi/_MVCvS2koME/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2DTXdoxFJGg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

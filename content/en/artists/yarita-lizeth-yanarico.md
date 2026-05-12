@@ -2,7 +2,7 @@
 title: "Yarita Lizeth Yanarico"
 slug: "yarita-lizeth-yanarico"
 type: "artists"
-image: "https://i.ytimg.com/vi/lfjXKiGEfdA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KopkuLh3isw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

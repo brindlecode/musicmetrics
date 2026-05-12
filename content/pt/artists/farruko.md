@@ -2,7 +2,7 @@
 title: "Farruko"
 slug: "farruko"
 type: "artists"
-image: "https://i.ytimg.com/vi/E8-LB6Vzb2A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dZzBa7jlXY0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

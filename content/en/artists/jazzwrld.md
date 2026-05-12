@@ -2,7 +2,7 @@
 title: "JAZZWRLD"
 slug: "jazzwrld"
 type: "artists"
-image: "https://i.ytimg.com/vi/WnmgItmroVo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UH-ueilqSc8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

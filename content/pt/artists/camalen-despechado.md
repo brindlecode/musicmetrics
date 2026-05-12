@@ -2,7 +2,7 @@
 title: "Camaleón Despechado"
 slug: "camalen-despechado"
 type: "artists"
-image: "https://i.ytimg.com/vi/k9WRKrAf8pM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gHVLeKoW9Dc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

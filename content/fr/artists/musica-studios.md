@@ -2,7 +2,7 @@
 title: "Musica Studios"
 slug: "musica-studios"
 type: "artists"
-image: "https://i.ytimg.com/vi/KpkR77OdOeo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XeNibQZwp00/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

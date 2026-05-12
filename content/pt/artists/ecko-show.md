@@ -2,7 +2,7 @@
 title: "ECKO SHOW"
 slug: "ecko-show"
 type: "artists"
-image: "https://i.ytimg.com/vi/aoTkQvKcGGA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZGiniSAS9_8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

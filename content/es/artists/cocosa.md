@@ -2,7 +2,7 @@
 title: "CocoSA"
 slug: "cocosa"
 type: "artists"
-image: "https://i.ytimg.com/vi/hevMFDEmxjs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nMgvFWmlrgs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

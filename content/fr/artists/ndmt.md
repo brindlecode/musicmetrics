@@ -2,7 +2,7 @@
 title: "NDMT"
 slug: "ndmt"
 type: "artists"
-image: "https://i.ytimg.com/vi/8uNSAFXzu-o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7Tq__Up58k0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

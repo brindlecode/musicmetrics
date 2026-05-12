@@ -2,7 +2,7 @@
 title: "Ben&Ben"
 slug: "benben"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vd4E1wBRhdA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TKS4UOXlITI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

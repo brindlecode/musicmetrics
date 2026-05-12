@@ -2,7 +2,7 @@
 title: "Candemirtheater"
 slug: "candemirtheater"
 type: "artists"
-image: "https://i.ytimg.com/vi/uOgJlNy8xMg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4tqMFMkU50s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

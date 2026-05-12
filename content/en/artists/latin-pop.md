@@ -2,7 +2,7 @@
 title: "Latin Pop"
 slug: "latin-pop"
 type: "artists"
-image: "https://i.ytimg.com/vi/Wzh-G8FHYiI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WYDC6zW17p4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

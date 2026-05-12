@@ -2,7 +2,7 @@
 title: "IVE"
 slug: "ive"
 type: "artists"
-image: "https://i.ytimg.com/vi/r_dVIEF1Sq4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XHtO7as5v0I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

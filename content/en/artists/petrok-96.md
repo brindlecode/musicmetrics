@@ -2,7 +2,7 @@
 title: "PETROK 96"
 slug: "petrok-96"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ne9fMcUrWz4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PbPSLk2gq2I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

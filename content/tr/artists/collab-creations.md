@@ -2,7 +2,7 @@
 title: "Collab Creations"
 slug: "collab-creations"
 type: "artists"
-image: "https://i.ytimg.com/vi/jHc93kjETzo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i9ZBe2jMj8E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

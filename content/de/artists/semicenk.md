@@ -2,7 +2,7 @@
 title: "Semicenk"
 slug: "semicenk"
 type: "artists"
-image: "https://i.ytimg.com/vi/MQ16vrhi5WY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Iwu3lomiYfA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

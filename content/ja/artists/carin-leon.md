@@ -2,7 +2,7 @@
 title: "Carin Leon"
 slug: "carin-leon"
 type: "artists"
-image: "https://i.ytimg.com/vi/zRvGNfk9fDY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pb6r1hQLLo8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Henny Adella"
 slug: "henny-adella"
 type: "artists"
-image: "https://i.ytimg.com/vi/MvtVNyqrCb0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/osTd_sxPCik/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Torino"
 slug: "torino"
 type: "artists"
-image: "https://i.ytimg.com/vi/V8Iu9ffe6GU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qLj7mQiQge0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

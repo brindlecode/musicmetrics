@@ -2,7 +2,7 @@
 title: "FUNK DE BIGODE"
 slug: "funk-de-bigode"
 type: "artists"
-image: "https://i.ytimg.com/vi/toG-OiWgb8Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IXX1etoggrM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

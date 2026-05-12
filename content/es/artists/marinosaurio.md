@@ -2,7 +2,7 @@
 title: "Marinosaurio"
 slug: "marinosaurio"
 type: "artists"
-image: "https://i.ytimg.com/vi/NKkQAMp35c0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vSrQVMKcGyY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

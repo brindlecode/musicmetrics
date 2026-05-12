@@ -2,7 +2,7 @@
 title: "Even Tot Hier"
 slug: "even-tot-hier"
 type: "artists"
-image: "https://i.ytimg.com/vi/1xjlWzZX5b8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AE-4xDDtwnQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

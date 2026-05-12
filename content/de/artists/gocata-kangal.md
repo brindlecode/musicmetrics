@@ -2,7 +2,7 @@
 title: "GOCATA KANGAL"
 slug: "gocata-kangal"
 type: "artists"
-image: "https://i.ytimg.com/vi/uo_SdNNZX90/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SkT8S_uOD3w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Cardinal X25"
 slug: "cardinal-x25"
 type: "artists"
-image: "https://i.ytimg.com/vi/QHlQVm8xPAU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M1dgChc54Sk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

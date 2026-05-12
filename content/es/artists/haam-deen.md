@@ -2,7 +2,7 @@
 title: "Haam Deen"
 slug: "haam-deen"
 type: "artists"
-image: "https://i.ytimg.com/vi/ajCURHj3dgU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/p8bVGwnHNsU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

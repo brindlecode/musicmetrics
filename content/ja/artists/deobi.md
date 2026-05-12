@@ -2,7 +2,7 @@
 title: "Deobi"
 slug: "deobi"
 type: "artists"
-image: "https://i.ytimg.com/vi/-6JPWC6uIXs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vd7vG0AHikI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

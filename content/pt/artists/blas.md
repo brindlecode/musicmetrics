@@ -2,7 +2,7 @@
 title: "BLAS"
 slug: "blas"
 type: "artists"
-image: "https://i.ytimg.com/vi/fr-HrswIu4I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/d08zVzhUh0o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
