@@ -2,7 +2,7 @@
 title: "DJ XOXO"
 slug: "dj-xoxo"
 type: "artists"
-image: "https://i.ytimg.com/vi/xba6s-xhj8Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qb0Dkfutff4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
