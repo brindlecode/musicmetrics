@@ -2,7 +2,7 @@
 title: "KAVEANA"
 slug: "kaveana"
 type: "artists"
-image: "https://i.ytimg.com/vi/YneLEK0_9sY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/psa4fZ79_J0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
