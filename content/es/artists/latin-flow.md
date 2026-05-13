@@ -2,7 +2,7 @@
 title: "Latin Flow"
 slug: "latin-flow"
 type: "artists"
-image: "https://i.ytimg.com/vi/k9qbD7XlZrs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BmC4K12oUMw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

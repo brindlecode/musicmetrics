@@ -2,7 +2,7 @@
 title: "Lee HT TopHits"
 slug: "lee-ht-tophits"
 type: "artists"
-image: "https://i.ytimg.com/vi/aMDZQ2hRUvc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6hIddNMAJ9Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
