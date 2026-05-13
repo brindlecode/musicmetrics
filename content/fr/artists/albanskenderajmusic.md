@@ -2,7 +2,7 @@
 title: "AlbanSkenderajMusic"
 slug: "albanskenderajmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/TZoXQuWKo6M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3oSg3oTy7Hg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
