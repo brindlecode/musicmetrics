@@ -2,7 +2,7 @@
 title: "Urbanmx Ly"
 slug: "urbanmx-ly"
 type: "artists"
-image: "https://i.ytimg.com/vi/BzsCsCRakPE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AmmsouOuaPU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

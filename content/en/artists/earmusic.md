@@ -2,7 +2,7 @@
 title: "earMUSIC"
 slug: "earmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/4i9d4Rpjzp0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SoSr0sStFaE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

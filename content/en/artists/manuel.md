@@ -2,7 +2,7 @@
 title: "Manuel"
 slug: "manuel"
 type: "artists"
-image: "https://i.ytimg.com/vi/BLhZUTO3wJE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EFHSSNH6Z-k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
