@@ -2,7 +2,7 @@
 title: "P T K"
 slug: "p-t-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/nf4ewyMN-yM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5UGJtc1Wruc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
