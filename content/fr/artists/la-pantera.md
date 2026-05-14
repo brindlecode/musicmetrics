@@ -2,7 +2,7 @@
 title: "La Pantera"
 slug: "la-pantera"
 type: "artists"
-image: "https://i.ytimg.com/vi/lwj935u0ibI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6TCXVkGstNo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

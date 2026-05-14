@@ -1,0 +1,11 @@
+---
+title: "iPop Superhits"
+slug: "ipop-superhits"
+type: "artists"
+image: "https://i.ytimg.com/vi/aETJ42yw8qw/mqdefault.jpg"
+platforms: ["youtube"]
+spotify_streams: "--"
+youtube_views: "Charting"
+monthly_listeners: "--"
+description: "iPop Superhits streaming statistics, chart positions and analytics across youtube"
+---
