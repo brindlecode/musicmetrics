@@ -2,7 +2,7 @@
 title: "GurBilling Music"
 slug: "gurbilling-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/lTI_zV_cDeY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZeQTHE2tAXc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

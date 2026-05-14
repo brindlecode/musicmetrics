@@ -2,7 +2,7 @@
 title: "LetrasMX"
 slug: "letrasmx"
 type: "artists"
-image: "https://i.ytimg.com/vi/YGQbEphD2HI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x_T2vZYQzKU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

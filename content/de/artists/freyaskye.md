@@ -2,7 +2,7 @@
 title: "FreyaSkye"
 slug: "freyaskye"
 type: "artists"
-image: "https://i.ytimg.com/vi/_SdshlZk-po/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ycN_H2OTFeA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

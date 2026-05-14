@@ -1,11 +1,11 @@
 ---
-title: "Kesi"
+title: "KESI"
 slug: "kesi"
 type: "artists"
-image: "https://i.ytimg.com/vi/TxWc1WOnBSA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tjq9tcJC3Bo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Kesi streaming statistics, chart positions and analytics across youtube"
+description: "KESI streaming statistics, chart positions and analytics across youtube"
 ---

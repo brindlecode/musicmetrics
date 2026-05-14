@@ -2,7 +2,7 @@
 title: "HAON"
 slug: "haon"
 type: "artists"
-image: "https://i.ytimg.com/vi/eMouvDpiEVU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ICOB_gz4k6E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
