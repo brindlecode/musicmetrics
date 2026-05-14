@@ -2,7 +2,7 @@
 title: "Mikasa Music"
 slug: "mikasa-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/JXvT0XLS-ps/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NrYdRLz5DIw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sara do Vale"
 slug: "sara-do-vale"
 type: "artists"
-image: "https://i.ytimg.com/vi/epCBFbXQMPw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EqugXQ84xLA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

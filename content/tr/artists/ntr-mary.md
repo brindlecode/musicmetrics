@@ -2,7 +2,7 @@
 title: "Nótár Mary"
 slug: "ntr-mary"
 type: "artists"
-image: "https://i.ytimg.com/vi/x8GylOpkmrg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tChUkmHsAkA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

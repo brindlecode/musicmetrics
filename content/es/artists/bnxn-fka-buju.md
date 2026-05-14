@@ -2,7 +2,7 @@
 title: "BNXN fka Buju"
 slug: "bnxn-fka-buju"
 type: "artists"
-image: "https://i.ytimg.com/vi/O3t82g5EUgc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ylHyosqrtdA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

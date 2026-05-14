@@ -2,7 +2,7 @@
 title: "Arabesk Design Music"
 slug: "arabesk-design-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/yzZgGL0aPgY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sZ1hCl4tt0I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

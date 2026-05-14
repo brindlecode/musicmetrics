@@ -2,7 +2,7 @@
 title: "MAKIANOV"
 slug: "makianov"
 type: "artists"
-image: "https://i.ytimg.com/vi/-MmmlO68Y8M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NsG_WoPIGw0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
