@@ -2,7 +2,7 @@
 title: "Xiyo y Fernandezz"
 slug: "xiyo-y-fernandezz"
 type: "artists"
-image: "https://i.ytimg.com/vi/hti1K3-9V7U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WuQRVL6FFrc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

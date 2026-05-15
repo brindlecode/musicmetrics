@@ -2,7 +2,7 @@
 title: "Aぇ! group"
 slug: "a-group"
 type: "artists"
-image: "https://i.ytimg.com/vi/If7FaIrGzic/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M-ATyBXMzg0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

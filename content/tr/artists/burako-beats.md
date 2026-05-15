@@ -2,7 +2,7 @@
 title: "Burako Beats"
 slug: "burako-beats"
 type: "artists"
-image: "https://i.ytimg.com/vi/qyYa9d1pkzI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/s5R1Bsqqo04/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

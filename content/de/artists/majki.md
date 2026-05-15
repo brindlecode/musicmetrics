@@ -2,7 +2,7 @@
 title: "Majki"
 slug: "majki"
 type: "artists"
-image: "https://i.ytimg.com/vi/pQ2Gfch-5TA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R3GzSxFZIWA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
