@@ -2,7 +2,7 @@
 title: "DJ Tunez"
 slug: "dj-tunez"
 type: "artists"
-image: "https://i.ytimg.com/vi/3szd37cj36s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fktojLlj778/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

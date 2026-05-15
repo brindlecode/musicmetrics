@@ -2,7 +2,7 @@
 title: "TizianoFerro"
 slug: "tizianoferro"
 type: "artists"
-image: "https://i.ytimg.com/vi/-llpE6s4nM0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NdT69GVH-Ak/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

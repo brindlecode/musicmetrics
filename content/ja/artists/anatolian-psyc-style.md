@@ -2,7 +2,7 @@
 title: "Anatolian Psyc Style"
 slug: "anatolian-psyc-style"
 type: "artists"
-image: "https://i.ytimg.com/vi/7fmQRbRODvY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W9nJmQxS6Hk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
