@@ -2,7 +2,7 @@
 title: "KRBK"
 slug: "krbk"
 type: "artists"
-image: "https://i.ytimg.com/vi/MLFzhRW_BH0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pgc8vNzsJes/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

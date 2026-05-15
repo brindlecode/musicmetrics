@@ -2,7 +2,7 @@
 title: "LUCY"
 slug: "lucy"
 type: "artists"
-image: "https://i.ytimg.com/vi/2h-6wtvJO7Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wcnz1kVKC7I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
