@@ -2,7 +2,7 @@
 title: "Siemano Soprano"
 slug: "siemano-soprano"
 type: "artists"
-image: "https://i.ytimg.com/vi/Od90LWgNtA4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4kmEtFBhXKI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

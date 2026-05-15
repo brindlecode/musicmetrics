@@ -2,7 +2,7 @@
 title: "Gold AG"
 slug: "gold-ag"
 type: "artists"
-image: "https://i.ytimg.com/vi/o3oiuOWKXXw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-LoY8g018p0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

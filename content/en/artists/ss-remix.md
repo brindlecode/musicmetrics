@@ -2,7 +2,7 @@
 title: "SS Remix"
 slug: "ss-remix"
 type: "artists"
-image: "https://i.ytimg.com/vi/85xwdLo4wVE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2OOwjzrCLl8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

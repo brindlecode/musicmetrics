@@ -2,7 +2,7 @@
 title: "Mohammed Bin Grman | محمد بن غرمان"
 slug: "mohammed-bin-grman"
 type: "artists"
-image: "https://i.ytimg.com/vi/3bWNo_GjNm8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g8aygvrIPaI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

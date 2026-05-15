@@ -2,7 +2,7 @@
 title: "RendyCico TV"
 slug: "rendycico-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/jKlllxPaiHA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0eqUtK_CHxA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
