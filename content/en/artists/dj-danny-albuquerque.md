@@ -2,7 +2,7 @@
 title: "Dj Danny Albuquerque"
 slug: "dj-danny-albuquerque"
 type: "artists"
-image: "https://i.ytimg.com/vi/qHN7IOGyedo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/osAse9U_n6w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

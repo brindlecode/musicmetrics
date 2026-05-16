@@ -2,7 +2,7 @@
 title: "Famous Pluto"
 slug: "famous-pluto"
 type: "artists"
-image: "https://i.ytimg.com/vi/TipUsYlMPsY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hqpLMGo0Ous/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

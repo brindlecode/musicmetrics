@@ -2,7 +2,7 @@
 title: "Regiomoon"
 slug: "regiomoon"
 type: "artists"
-image: "https://i.ytimg.com/vi/dEEcOPXtRXs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ysEWFyXDqYA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
