@@ -2,7 +2,7 @@
 title: "Moonshine"
 slug: "moonshine"
 type: "artists"
-image: "https://i.ytimg.com/vi/2VHfRimi9no/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Hi1EGT4MU1M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "ChroNoiR"
 slug: "chronoir"
 type: "artists"
-image: "https://i.ytimg.com/vi/dxrt5cpdcF8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SKQFauN1esg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

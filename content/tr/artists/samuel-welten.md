@@ -2,7 +2,7 @@
 title: "Samuel Welten"
 slug: "samuel-welten"
 type: "artists"
-image: "https://i.ytimg.com/vi/G0Q5QBqxg0k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sIBqC9b6fMA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

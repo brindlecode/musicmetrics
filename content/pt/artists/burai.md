@@ -2,7 +2,7 @@
 title: "BURAI"
 slug: "burai"
 type: "artists"
-image: "https://i.ytimg.com/vi/GOi8GD_UOrc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kiFZ8TNuUoM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

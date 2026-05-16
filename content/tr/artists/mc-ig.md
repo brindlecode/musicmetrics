@@ -2,7 +2,7 @@
 title: "MC IG 🔺"
 slug: "mc-ig"
 type: "artists"
-image: "https://i.ytimg.com/vi/yhhL_sIFFPY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gv_zam5wWKs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

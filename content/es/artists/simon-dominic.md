@@ -2,7 +2,7 @@
 title: "SIMON DOMINIC"
 slug: "simon-dominic"
 type: "artists"
-image: "https://i.ytimg.com/vi/VQ-z0VGRVm4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ew65b9BMrjU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

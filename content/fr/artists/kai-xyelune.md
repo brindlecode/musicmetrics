@@ -2,7 +2,7 @@
 title: "Kai Xyelune"
 slug: "kai-xyelune"
 type: "artists"
-image: "https://i.ytimg.com/vi/SbMlJ2ku_kY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SQjRdv-gSts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
