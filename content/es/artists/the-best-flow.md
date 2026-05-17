@@ -2,7 +2,7 @@
 title: "The Best Flow"
 slug: "the-best-flow"
 type: "artists"
-image: "https://i.ytimg.com/vi/5s9knBbsO-8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZohlBJs9n-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

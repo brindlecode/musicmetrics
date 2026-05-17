@@ -2,7 +2,7 @@
 title: "Djadja & Dinaz"
 slug: "djadja-dinaz"
 type: "artists"
-image: "https://i.ytimg.com/vi/0MCn0QdsGsU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tX8lSL02SvM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Nina Lakomy"
 slug: "nina-lakomy"
 type: "artists"
-image: "https://i.ytimg.com/vi/0NfDB0QhlaE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U-54rlIW5is/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

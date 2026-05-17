@@ -2,7 +2,7 @@
 title: "Saregama Hum Bhojpuri"
 slug: "saregama-hum-bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/VJxkZSYdI2Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Kcs0GjQiQAI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

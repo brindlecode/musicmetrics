@@ -2,7 +2,7 @@
 title: "Midnight Drill"
 slug: "midnight-drill"
 type: "artists"
-image: "https://i.ytimg.com/vi/eY8n2SBWOXg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bNGN1vI_NgU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
