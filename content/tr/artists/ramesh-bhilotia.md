@@ -2,7 +2,7 @@
 title: "Ramesh Bhilotia"
 slug: "ramesh-bhilotia"
 type: "artists"
-image: "https://i.ytimg.com/vi/qa01ZAuuRdc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yWGT5gncNJw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

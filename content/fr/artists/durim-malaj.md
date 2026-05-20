@@ -2,7 +2,7 @@
 title: "Durim Malaj"
 slug: "durim-malaj"
 type: "artists"
-image: "https://i.ytimg.com/vi/XB7QWkEPTtA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Y-A-bQ9dH44/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

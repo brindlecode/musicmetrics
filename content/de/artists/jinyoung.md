@@ -2,7 +2,7 @@
 title: "JINYOUNG"
 slug: "jinyoung"
 type: "artists"
-image: "https://i.ytimg.com/vi/HTTQVgGc1sY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x8fOG6EZuiI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "SEKAI NO OWARI"
 slug: "sekai-no-owari"
 type: "artists"
-image: "https://i.ytimg.com/vi/QqbKdtSFpiA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AGyMG8ZaEk0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

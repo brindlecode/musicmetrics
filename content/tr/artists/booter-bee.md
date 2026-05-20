@@ -2,7 +2,7 @@
 title: "Booter Bee"
 slug: "booter-bee"
 type: "artists"
-image: "https://i.ytimg.com/vi/sEcyiHx0828/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_vmSIONQa3U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

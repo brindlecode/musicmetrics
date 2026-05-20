@@ -2,7 +2,7 @@
 title: "Makhadzi"
 slug: "makhadzi"
 type: "artists"
-image: "https://i.ytimg.com/vi/_FOAvO8SwuI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n3_NaRTCix4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

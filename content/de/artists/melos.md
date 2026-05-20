@@ -2,7 +2,7 @@
 title: "melos"
 slug: "melos"
 type: "artists"
-image: "https://i.ytimg.com/vi/5F7AzpAsIYc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FZOm_hYZCfw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
