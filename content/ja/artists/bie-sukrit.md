@@ -2,7 +2,7 @@
 title: "BIE SUKRIT"
 slug: "bie-sukrit"
 type: "artists"
-image: "https://i.ytimg.com/vi/n7Vkaxa26cA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QrnWzqRYz_M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

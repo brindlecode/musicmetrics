@@ -2,7 +2,7 @@
 title: "Dead Radio Club"
 slug: "dead-radio-club"
 type: "artists"
-image: "https://i.ytimg.com/vi/hmmeI0Dkk8M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CvccIKg4P6M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

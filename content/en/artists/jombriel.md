@@ -2,7 +2,7 @@
 title: "Jombriel"
 slug: "jombriel"
 type: "artists"
-image: "https://i.ytimg.com/vi/664XA-xb4Kk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8F_YVDodd0s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Alpha"
 slug: "alpha"
 type: "artists"
-image: "https://i.ytimg.com/vi/tgJPfeLrza0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/azDQhJ7vOec/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Haven222"
 slug: "haven222"
 type: "artists"
-image: "https://i.ytimg.com/vi/bGqeChiaepo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kRiKv-a-wqc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

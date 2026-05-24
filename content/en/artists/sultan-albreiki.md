@@ -2,7 +2,7 @@
 title: "سلطان البريكي Sultan Albreiki"
 slug: "sultan-albreiki"
 type: "artists"
-image: "https://i.ytimg.com/vi/znusFC2lLHA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xc74ptki9FI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

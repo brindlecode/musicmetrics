@@ -2,7 +2,7 @@
 title: "Triangle des bermudes"
 slug: "triangle-des-bermudes"
 type: "artists"
-image: "https://i.ytimg.com/vi/RjKXct8sHEQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J6Q2Igvm3sE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

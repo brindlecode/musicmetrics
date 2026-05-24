@@ -2,7 +2,7 @@
 title: "RAF Camora"
 slug: "raf-camora"
 type: "artists"
-image: "https://i.ytimg.com/vi/C3G67pN7oy4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Lkz8vWkZX3c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

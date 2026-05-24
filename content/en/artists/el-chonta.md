@@ -2,7 +2,7 @@
 title: "El Chonta"
 slug: "el-chonta"
 type: "artists"
-image: "https://i.ytimg.com/vi/gf2AzEJs3LI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hvcbOlebRkg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

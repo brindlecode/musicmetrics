@@ -2,7 +2,7 @@
 title: "Oanh Tạ official"
 slug: "oanh-t-official"
 type: "artists"
-image: "https://i.ytimg.com/vi/T66fTPq36q8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nTKNk0CWpqA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

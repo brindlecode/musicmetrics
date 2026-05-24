@@ -2,7 +2,7 @@
 title: "UMusicIndia"
 slug: "umusicindia"
 type: "artists"
-image: "https://i.ytimg.com/vi/fsaPRxFjfSM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mOE34PZr6uU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

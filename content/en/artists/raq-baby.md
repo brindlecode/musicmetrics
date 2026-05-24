@@ -2,7 +2,7 @@
 title: "Raq baby"
 slug: "raq-baby"
 type: "artists"
-image: "https://i.ytimg.com/vi/rhafluNvZok/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QasS12PmC6g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

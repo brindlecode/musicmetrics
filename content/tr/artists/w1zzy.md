@@ -2,7 +2,7 @@
 title: "W1ZZY"
 slug: "w1zzy"
 type: "artists"
-image: "https://i.ytimg.com/vi/Jb18sOpNn_M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B63BXwhzzjI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

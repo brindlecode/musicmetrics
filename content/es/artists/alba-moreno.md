@@ -2,7 +2,7 @@
 title: "Alba Moreno"
 slug: "alba-moreno"
 type: "artists"
-image: "https://i.ytimg.com/vi/nGPv4a_aHd4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0hcfKmwxxc8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

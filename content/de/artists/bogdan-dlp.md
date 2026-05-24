@@ -2,7 +2,7 @@
 title: "Bogdan DLP"
 slug: "bogdan-dlp"
 type: "artists"
-image: "https://i.ytimg.com/vi/ipdQ9TpkCHA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MbBWkJckso8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

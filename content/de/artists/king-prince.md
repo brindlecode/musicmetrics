@@ -2,7 +2,7 @@
 title: "King & Prince"
 slug: "king-prince"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZICsvkMUjXM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mJL_eqykj9c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

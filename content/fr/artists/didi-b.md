@@ -2,7 +2,7 @@
 title: "Didi B"
 slug: "didi-b"
 type: "artists"
-image: "https://i.ytimg.com/vi/pkvdm8tqx6w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DDzL3ZlufQw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

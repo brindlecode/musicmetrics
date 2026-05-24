@@ -2,7 +2,7 @@
 title: "Maria Becerra"
 slug: "maria-becerra"
 type: "artists"
-image: "https://i.ytimg.com/vi/SJBoRe0qNos/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UycP7MW2F_k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

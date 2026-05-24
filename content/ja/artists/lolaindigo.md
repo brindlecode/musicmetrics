@@ -2,7 +2,7 @@
 title: "LolaIndigo"
 slug: "lolaindigo"
 type: "artists"
-image: "https://i.ytimg.com/vi/bBWzcvZRlU0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/20UtEjuTciQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

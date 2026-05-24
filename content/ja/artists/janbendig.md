@@ -2,7 +2,7 @@
 title: "JanBendig"
 slug: "janbendig"
 type: "artists"
-image: "https://i.ytimg.com/vi/OLAw6si9DYk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4VUy8IYQWF0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Ren"
 slug: "ren"
 type: "artists"
-image: "https://i.ytimg.com/vi/7y4MUCCHFGY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Hd19DLlHA7w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

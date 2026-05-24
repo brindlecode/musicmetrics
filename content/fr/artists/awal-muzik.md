@@ -2,7 +2,7 @@
 title: "Awal Muzik"
 slug: "awal-muzik"
 type: "artists"
-image: "https://i.ytimg.com/vi/nAQfKsVb880/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ConUwSndl6Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

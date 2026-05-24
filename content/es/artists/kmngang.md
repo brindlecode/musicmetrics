@@ -2,7 +2,7 @@
 title: "KMNGANG"
 slug: "kmngang"
 type: "artists"
-image: "https://i.ytimg.com/vi/li6ckx6F-28/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HAwSzWH1TLI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sony Music South"
 slug: "sony-music-south"
 type: "artists"
-image: "https://i.ytimg.com/vi/5EBzjfIcqhU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rS3-P_X3KOA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "RiBen"
 slug: "riben"
 type: "artists"
-image: "https://i.ytimg.com/vi/ECKwNERZEpA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/m1zf6ICJZCs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

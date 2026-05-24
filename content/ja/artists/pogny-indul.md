@@ -2,7 +2,7 @@
 title: "Pogány Induló"
 slug: "pogny-indul"
 type: "artists"
-image: "https://i.ytimg.com/vi/ryLsNbqRs8Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/H5PyPqKfKY0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Metronom Akademi"
 slug: "metronom-akademi"
 type: "artists"
-image: "https://i.ytimg.com/vi/zWyG5Icn0Ns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9kozM77yDQI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

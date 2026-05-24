@@ -2,7 +2,7 @@
 title: "Idgitaf"
 slug: "idgitaf"
 type: "artists"
-image: "https://i.ytimg.com/vi/Pk_iUSZSTao/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dDG3gxB-FaA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "豪記唱片 HCM Music"
 slug: "hcm-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/YBGMYSSYLZs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1gMfIl-zhhE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

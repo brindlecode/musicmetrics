@@ -2,7 +2,7 @@
 title: "Kicks Records"
 slug: "kicks-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/HJKGDg4MiTo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/13dCeAZa70g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

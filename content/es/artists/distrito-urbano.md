@@ -2,7 +2,7 @@
 title: "Distrito Urbano"
 slug: "distrito-urbano"
 type: "artists"
-image: "https://i.ytimg.com/vi/xDKxFyE31Sk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9z5Zmkpq_yA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

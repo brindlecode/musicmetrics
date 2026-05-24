@@ -2,7 +2,7 @@
 title: "YAKTAK"
 slug: "yaktak"
 type: "artists"
-image: "https://i.ytimg.com/vi/Q3iCn9hdKkQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nih6hfD5O2k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

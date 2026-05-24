@@ -1,11 +1,11 @@
 ---
-title: "คนหลง Music"
+title: "ทางฝุ่น Music"
 slug: "music"
 type: "artists"
-image: "https://i.ytimg.com/vi/scwPtcZGyN8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/feM0s2uu8vk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "คนหลง Music streaming statistics, chart positions and analytics across youtube"
+description: "ทางฝุ่น Music streaming statistics, chart positions and analytics across youtube"
 ---

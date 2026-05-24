@@ -2,7 +2,7 @@
 title: "C.R.O"
 slug: "cro"
 type: "artists"
-image: "https://i.ytimg.com/vi/iLZEHWLpl3I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9uFg-JOe5c8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

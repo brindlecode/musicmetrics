@@ -2,7 +2,7 @@
 title: "Hurricane Wisdom"
 slug: "hurricane-wisdom"
 type: "artists"
-image: "https://i.ytimg.com/vi/PjjOXKDXLm0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/POEtNqTuB48/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

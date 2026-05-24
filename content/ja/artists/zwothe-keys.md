@@ -2,7 +2,7 @@
 title: "ZWOTHE KEYS"
 slug: "zwothe-keys"
 type: "artists"
-image: "https://i.ytimg.com/vi/0hWCXVXp7FI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x2UPJ7UjzJM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

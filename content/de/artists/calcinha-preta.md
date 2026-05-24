@@ -2,7 +2,7 @@
 title: "Calcinha Preta"
 slug: "calcinha-preta"
 type: "artists"
-image: "https://i.ytimg.com/vi/EhWQqjao4xE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OCvg2LbB6d0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "SHUMEI"
 slug: "shumei"
 type: "artists"
-image: "https://i.ytimg.com/vi/tjtRSMbaXog/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9BuAgyWClho/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

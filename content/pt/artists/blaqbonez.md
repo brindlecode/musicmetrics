@@ -2,7 +2,7 @@
 title: "Blaqbonez"
 slug: "blaqbonez"
 type: "artists"
-image: "https://i.ytimg.com/vi/ih906HgIO_4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HRfb4NVD8LE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Omar Keif"
 slug: "omar-keif"
 type: "artists"
-image: "https://i.ytimg.com/vi/8gg77oqCkoQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VM_2Lqsroz0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

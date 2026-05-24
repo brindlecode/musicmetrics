@@ -2,7 +2,7 @@
 title: "DJ X PRO"
 slug: "dj-x-pro"
 type: "artists"
-image: "https://i.ytimg.com/vi/UscirI3eZIU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WnQMhBU03I0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

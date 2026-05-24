@@ -2,7 +2,7 @@
 title: "Orquesta LA BELLA LUZ"
 slug: "orquesta-la-bella-luz"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZdTbnEi9clI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PFjqkJNQ65g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
