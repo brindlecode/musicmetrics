@@ -2,7 +2,7 @@
 title: "Emotion Entertainment"
 slug: "emotion-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/g3ZWhi29QFI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cDS0yAInyZs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Alpha Music Bulgaria"
 slug: "alpha-music-bulgaria"
 type: "artists"
-image: "https://i.ytimg.com/vi/jB7E3VxD8Ak/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Rd7KKygHCtM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

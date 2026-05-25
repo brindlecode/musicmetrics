@@ -2,7 +2,7 @@
 title: "Mankirt Aulakh"
 slug: "mankirt-aulakh"
 type: "artists"
-image: "https://i.ytimg.com/vi/C6TbXCj6_oE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bj_OQGwcoJU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

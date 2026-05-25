@@ -2,7 +2,7 @@
 title: "Tzanca Uraganu"
 slug: "tzanca-uraganu"
 type: "artists"
-image: "https://i.ytimg.com/vi/GKJgMb9EUww/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-EAw4le65aw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Banda MS de Sergio Lizárraga"
 slug: "banda-ms-de-sergio-lizrraga"
 type: "artists"
-image: "https://i.ytimg.com/vi/jz_pjRgWlWQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cYGBaL0Pp1g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
