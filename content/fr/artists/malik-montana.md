@@ -2,7 +2,7 @@
 title: "Malik Montana"
 slug: "malik-montana"
 type: "artists"
-image: "https://i.ytimg.com/vi/Z0qzTlucxuE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VwfO-jcsoK8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

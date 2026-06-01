@@ -2,7 +2,7 @@
 title: "Abyusif I أبيوسف"
 slug: "abyusif-i"
 type: "artists"
-image: "https://i.ytimg.com/vi/pWG9fvtUtuo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PLAjiertAMM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

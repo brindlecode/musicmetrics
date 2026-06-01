@@ -2,7 +2,7 @@
 title: "DoktorSWAG"
 slug: "doktorswag"
 type: "artists"
-image: "https://i.ytimg.com/vi/CIOSIciHl9c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IX98fEmlM9A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

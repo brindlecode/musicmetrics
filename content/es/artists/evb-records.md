@@ -2,7 +2,7 @@
 title: "EvB Records"
 slug: "evb-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/A_Xt8vxiSB0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ERABWON9Qck/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

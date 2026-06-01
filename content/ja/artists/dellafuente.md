@@ -2,7 +2,7 @@
 title: "DELLAFUENTE"
 slug: "dellafuente"
 type: "artists"
-image: "https://i.ytimg.com/vi/Yqr1VJX6O0I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LB85k4zw4Fo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

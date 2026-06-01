@@ -2,7 +2,7 @@
 title: "AMO FUNK"
 slug: "amo-funk"
 type: "artists"
-image: "https://i.ytimg.com/vi/q1DthxOYp_c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IOy0HNhEZNI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

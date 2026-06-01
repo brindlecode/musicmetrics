@@ -2,7 +2,7 @@
 title: "Kolibri"
 slug: "kolibri"
 type: "artists"
-image: "https://i.ytimg.com/vi/HkTiDBcSU48/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iB19IUDzsZg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

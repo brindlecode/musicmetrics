@@ -2,7 +2,7 @@
 title: "iamzackknight"
 slug: "iamzackknight"
 type: "artists"
-image: "https://i.ytimg.com/vi/vgeJTyN4ggs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/O_Tx7aomESs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

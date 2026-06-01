@@ -2,7 +2,7 @@
 title: "DESH"
 slug: "desh"
 type: "artists"
-image: "https://i.ytimg.com/vi/TBpYCZ-COrY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oRDKjfTihjE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

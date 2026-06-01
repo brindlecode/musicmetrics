@@ -2,7 +2,7 @@
 title: "Chu Thúy Quỳnh Live Sessions"
 slug: "chu-thy-qunh-live-sessions"
 type: "artists"
-image: "https://i.ytimg.com/vi/gpD0JmY0HEI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AdDaSopCphg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

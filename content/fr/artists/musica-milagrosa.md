@@ -2,7 +2,7 @@
 title: "Musica Milagrosa"
 slug: "musica-milagrosa"
 type: "artists"
-image: "https://i.ytimg.com/vi/bDFK852m4jU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U9RKtZjD2Xs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

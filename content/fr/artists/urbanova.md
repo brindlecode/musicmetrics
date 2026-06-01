@@ -2,7 +2,7 @@
 title: "Urbanova"
 slug: "urbanova"
 type: "artists"
-image: "https://i.ytimg.com/vi/tRUyP3Yh3OI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WdA37yule60/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

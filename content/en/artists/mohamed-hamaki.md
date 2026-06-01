@@ -2,7 +2,7 @@
 title: "Mohamed Hamaki"
 slug: "mohamed-hamaki"
 type: "artists"
-image: "https://i.ytimg.com/vi/vxfZ6INPx-A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/731D4HRB5fQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Chawo"
 slug: "chawo"
 type: "artists"
-image: "https://i.ytimg.com/vi/2MI-_JMS2AI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BXB5wAPtIyA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

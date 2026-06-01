@@ -2,7 +2,7 @@
 title: "VINI"
 slug: "vini"
 type: "artists"
-image: "https://i.ytimg.com/vi/OqnCR296kpY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TY0deOvJDRw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

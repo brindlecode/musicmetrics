@@ -2,7 +2,7 @@
 title: "Bresh"
 slug: "bresh"
 type: "artists"
-image: "https://i.ytimg.com/vi/XxSIyhr_bFc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-ZwDJaZ2coY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

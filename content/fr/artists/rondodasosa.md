@@ -2,7 +2,7 @@
 title: "Rondodasosa"
 slug: "rondodasosa"
 type: "artists"
-image: "https://i.ytimg.com/vi/o0C2WGCyxFc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eiN8QJOqlRU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

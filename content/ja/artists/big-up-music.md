@@ -2,7 +2,7 @@
 title: "Big UP Music"
 slug: "big-up-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/CJissxsznvY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fD370j42EtI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

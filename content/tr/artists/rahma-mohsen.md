@@ -2,7 +2,7 @@
 title: "Rahma Mohsen - رحمه محسن"
 slug: "rahma-mohsen"
 type: "artists"
-image: "https://i.ytimg.com/vi/KD6mDjgeIEY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MVwAQKYlPhs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

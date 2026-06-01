@@ -1,11 +1,11 @@
 ---
-title: "MGK"
+title: "mgk"
 slug: "mgk"
 type: "artists"
-image: "https://i.ytimg.com/vi/b7cFUJyndz4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/atJwRQ1zdjQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "MGK streaming statistics, chart positions and analytics across youtube"
+description: "mgk streaming statistics, chart positions and analytics across youtube"
 ---

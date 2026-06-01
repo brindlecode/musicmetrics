@@ -2,7 +2,7 @@
 title: "Rap Samurai"
 slug: "rap-samurai"
 type: "artists"
-image: "https://i.ytimg.com/vi/dmhm2ixJcOE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_EjjjErOpH8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

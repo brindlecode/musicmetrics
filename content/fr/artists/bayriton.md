@@ -2,7 +2,7 @@
 title: "Bayriton"
 slug: "bayriton"
 type: "artists"
-image: "https://i.ytimg.com/vi/ji1LjXpOsI8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1sOd63nkhHA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

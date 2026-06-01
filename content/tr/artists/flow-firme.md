@@ -2,7 +2,7 @@
 title: "Flow Firme"
 slug: "flow-firme"
 type: "artists"
-image: "https://i.ytimg.com/vi/HR6j3DO9KZE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GOiHwtjZCfQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

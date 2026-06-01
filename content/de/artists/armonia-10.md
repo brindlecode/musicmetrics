@@ -2,7 +2,7 @@
 title: "Armonia 10"
 slug: "armonia-10"
 type: "artists"
-image: "https://i.ytimg.com/vi/BIADPSdGkTQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UDK379wx82E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

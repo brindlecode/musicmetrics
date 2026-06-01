@@ -2,7 +2,7 @@
 title: "Golden Records"
 slug: "golden-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/EJ4Fa7yU-HY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zYqMD6MYwA8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

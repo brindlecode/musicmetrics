@@ -2,7 +2,7 @@
 title: "SANGITA MUSIC PRO"
 slug: "sangita-music-pro"
 type: "artists"
-image: "https://i.ytimg.com/vi/xHz0HL8ofNY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QLtYr4j1dLA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

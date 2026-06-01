@@ -2,7 +2,7 @@
 title: "SAMCHUK"
 slug: "samchuk"
 type: "artists"
-image: "https://i.ytimg.com/vi/E5FZZMcUBLQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1AruIU31rQ4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

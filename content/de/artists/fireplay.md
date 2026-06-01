@@ -2,7 +2,7 @@
 title: "FirePlay"
 slug: "fireplay"
 type: "artists"
-image: "https://i.ytimg.com/vi/L-5RxDusFx0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mwQzS6RGlR4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

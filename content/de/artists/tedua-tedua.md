@@ -2,7 +2,7 @@
 title: "Tedua Tedua"
 slug: "tedua-tedua"
 type: "artists"
-image: "https://i.ytimg.com/vi/bye15IMj2yI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WRV15WtZf14/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

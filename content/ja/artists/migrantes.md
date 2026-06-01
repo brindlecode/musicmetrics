@@ -2,7 +2,7 @@
 title: "Migrantes"
 slug: "migrantes"
 type: "artists"
-image: "https://i.ytimg.com/vi/1hPaqaUje0Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/og7VTtJmoCU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

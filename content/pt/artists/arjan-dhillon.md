@@ -2,7 +2,7 @@
 title: "Arjan Dhillon"
 slug: "arjan-dhillon"
 type: "artists"
-image: "https://i.ytimg.com/vi/tE6JdwtCZ2o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SJQfPMkH8OY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

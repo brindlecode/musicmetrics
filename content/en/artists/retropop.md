@@ -2,7 +2,7 @@
 title: "Retropop"
 slug: "retropop"
 type: "artists"
-image: "https://i.ytimg.com/vi/wQSKSQJHW4w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/e0nh5BXxYzU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

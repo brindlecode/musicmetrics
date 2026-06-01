@@ -2,7 +2,7 @@
 title: "Nirvair Pannu"
 slug: "nirvair-pannu"
 type: "artists"
-image: "https://i.ytimg.com/vi/n00hcCoOujs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XKeyc6CLkxE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

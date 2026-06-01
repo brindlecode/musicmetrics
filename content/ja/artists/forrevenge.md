@@ -2,7 +2,7 @@
 title: "FORREVENGE"
 slug: "forrevenge"
 type: "artists"
-image: "https://i.ytimg.com/vi/4UKiBR5zrYE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SVNA0nGBiZY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

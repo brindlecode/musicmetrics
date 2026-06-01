@@ -2,7 +2,7 @@
 title: "Secondverse"
 slug: "secondverse"
 type: "artists"
-image: "https://i.ytimg.com/vi/6GIlwd5rhq8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1fQsQPoibZE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

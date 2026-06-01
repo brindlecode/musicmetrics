@@ -2,7 +2,7 @@
 title: "BewhY"
 slug: "bewhy"
 type: "artists"
-image: "https://i.ytimg.com/vi/XkkEM40VwFo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/id2ftC9OF-k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Nucci"
 slug: "nucci"
 type: "artists"
-image: "https://i.ytimg.com/vi/LB_1ICuSVPA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M7bEXzUEoZg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Anitta"
 slug: "anitta"
 type: "artists"
-image: "https://i.ytimg.com/vi/R1WQVeCq0Hs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9kn1ZUUYa9I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "cck73"
 slug: "cck73"
 type: "artists"
-image: "https://i.ytimg.com/vi/Wq9UXN1dc8E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zeD74r2qRio/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sonar Produtora"
 slug: "sonar-produtora"
 type: "artists"
-image: "https://i.ytimg.com/vi/dQOndAVaeHc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gnSisoZ1Rtg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

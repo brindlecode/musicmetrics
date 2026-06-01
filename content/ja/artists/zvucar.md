@@ -2,7 +2,7 @@
 title: "ZVUCAR"
 slug: "zvucar"
 type: "artists"
-image: "https://i.ytimg.com/vi/6dRumUa0Xgg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4F9gfOAugTE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

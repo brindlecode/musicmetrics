@@ -2,7 +2,7 @@
 title: "GeezyDee"
 slug: "geezydee"
 type: "artists"
-image: "https://i.ytimg.com/vi/jZPTRt_RJ10/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xP4UHA5PJBk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
