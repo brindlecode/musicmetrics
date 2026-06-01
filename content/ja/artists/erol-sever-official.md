@@ -2,7 +2,7 @@
 title: "Erol Sever Official"
 slug: "erol-sever-official"
 type: "artists"
-image: "https://i.ytimg.com/vi/Z4vhQwtntGM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P9Z5lZuelP4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
