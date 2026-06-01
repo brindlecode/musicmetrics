@@ -2,7 +2,7 @@
 title: "Young Blood"
 slug: "young-blood"
 type: "artists"
-image: "https://i.ytimg.com/vi/u5zFnCMFhIk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fthwT3ax7hc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

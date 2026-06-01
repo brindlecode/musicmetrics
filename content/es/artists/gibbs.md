@@ -2,7 +2,7 @@
 title: "Gibbs"
 slug: "gibbs"
 type: "artists"
-image: "https://i.ytimg.com/vi/0ZRB1awhtUE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jhQoV4rW260/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

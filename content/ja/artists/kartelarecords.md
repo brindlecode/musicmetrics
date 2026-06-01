@@ -2,7 +2,7 @@
 title: "kartelarecords"
 slug: "kartelarecords"
 type: "artists"
-image: "https://i.ytimg.com/vi/CreONFl4DSE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DxrqGu4x_ys/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

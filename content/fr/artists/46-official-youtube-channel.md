@@ -2,7 +2,7 @@
 title: "櫻坂46 OFFICIAL YouTube CHANNEL"
 slug: "46-official-youtube-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/4HfAH746QJo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ae6N-FcsJmQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
