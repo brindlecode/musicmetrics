@@ -2,7 +2,7 @@
 title: "Official髭男dism"
 slug: "officialdism"
 type: "artists"
-image: "https://i.ytimg.com/vi/O4fFTWQzXVE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h8rZAMiRTTo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
