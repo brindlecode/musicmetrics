@@ -2,7 +2,7 @@
 title: "Tiwa Savage"
 slug: "tiwa-savage"
 type: "artists"
-image: "https://i.ytimg.com/vi/1wOdJnH0bmo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mov93Av3GQE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

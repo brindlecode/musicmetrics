@@ -1,11 +1,11 @@
 ---
-title: "TREASURE"
+title: "TREASURE (트레저)"
 slug: "treasure"
 type: "artists"
-image: "https://i.ytimg.com/vi/K4HRRyg7_IU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QERKD90hG98/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "TREASURE streaming statistics, chart positions and analytics across youtube"
+description: "TREASURE (트레저) streaming statistics, chart positions and analytics across youtube"
 ---

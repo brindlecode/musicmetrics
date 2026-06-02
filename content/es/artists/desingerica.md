@@ -2,7 +2,7 @@
 title: "Desingerica"
 slug: "desingerica"
 type: "artists"
-image: "https://i.ytimg.com/vi/TlYXs1pODCE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EdW_7WzXWAw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

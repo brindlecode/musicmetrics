@@ -2,7 +2,7 @@
 title: "BBCRadio1"
 slug: "bbcradio1"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZZ7tgBj3r3M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2qtfgEnK_28/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
