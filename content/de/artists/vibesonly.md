@@ -2,7 +2,7 @@
 title: "VibesOnly"
 slug: "vibesonly"
 type: "artists"
-image: "https://i.ytimg.com/vi/241y6oNgQNY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YYp0plMSQ70/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
