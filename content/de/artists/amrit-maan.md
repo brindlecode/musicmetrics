@@ -2,7 +2,7 @@
 title: "Amrit Maan"
 slug: "amrit-maan"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ugum6YwKBJA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C3gvQ9MyzeE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "moon tang"
 slug: "moon-tang"
 type: "artists"
-image: "https://i.ytimg.com/vi/qoBCq8AJQjg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OFCMUwqw8Qo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
