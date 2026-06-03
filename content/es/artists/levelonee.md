@@ -2,7 +2,7 @@
 title: "levelonee"
 slug: "levelonee"
 type: "artists"
-image: "https://i.ytimg.com/vi/jFHrYOf46cM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FxTDzus7C_s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

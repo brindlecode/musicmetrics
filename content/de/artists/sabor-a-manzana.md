@@ -2,7 +2,7 @@
 title: "Sabor a Manzana"
 slug: "sabor-a-manzana"
 type: "artists"
-image: "https://i.ytimg.com/vi/czlPEeUo0Bc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eyMitOkFC3c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
