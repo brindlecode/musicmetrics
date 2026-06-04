@@ -2,7 +2,7 @@
 title: "Swing Levado"
 slug: "swing-levado"
 type: "artists"
-image: "https://i.ytimg.com/vi/tekPBGn5gu8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r6gciiARwA0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
