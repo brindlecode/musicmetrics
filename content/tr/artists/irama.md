@@ -2,7 +2,7 @@
 title: "IRAMA"
 slug: "irama"
 type: "artists"
-image: "https://i.ytimg.com/vi/rSJBHsQYeJE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BXpM2nzD7es/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Virgoun"
 slug: "virgoun"
 type: "artists"
-image: "https://i.ytimg.com/vi/v6XHpa0KWeg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WIzWwLYDod8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
