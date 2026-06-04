@@ -2,7 +2,7 @@
 title: "ManuelCarrasco"
 slug: "manuelcarrasco"
 type: "artists"
-image: "https://i.ytimg.com/vi/i_3CpK7hYJI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HmD2i2QBL3A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

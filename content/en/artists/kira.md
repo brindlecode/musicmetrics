@@ -2,7 +2,7 @@
 title: "Kira"
 slug: "kira"
 type: "artists"
-image: "https://i.ytimg.com/vi/vLHH-ACg0o0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UnLcl9fz7rk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

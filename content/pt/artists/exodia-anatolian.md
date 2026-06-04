@@ -2,7 +2,7 @@
 title: "EXODIA ANATOLIAN"
 slug: "exodia-anatolian"
 type: "artists"
-image: "https://i.ytimg.com/vi/zuKjxByJcfo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JWmS-jhiC3o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
