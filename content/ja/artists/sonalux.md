@@ -2,7 +2,7 @@
 title: "Sonalux"
 slug: "sonalux"
 type: "artists"
-image: "https://i.ytimg.com/vi/dZF3VsoNnqo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jiYvM1cKD9U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

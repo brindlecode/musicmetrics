@@ -2,7 +2,7 @@
 title: "ManeleVTM"
 slug: "manelevtm"
 type: "artists"
-image: "https://i.ytimg.com/vi/hE77vOsKOek/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kyCD_AyW6AQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

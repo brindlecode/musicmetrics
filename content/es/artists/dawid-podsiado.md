@@ -2,7 +2,7 @@
 title: "Dawid Podsiadło"
 slug: "dawid-podsiado"
 type: "artists"
-image: "https://i.ytimg.com/vi/jyXHU7PtsmI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MxWXAIWsppY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

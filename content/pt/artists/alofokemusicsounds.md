@@ -2,7 +2,7 @@
 title: "AlofokeMusicSounds"
 slug: "alofokemusicsounds"
 type: "artists"
-image: "https://i.ytimg.com/vi/D_WllqC_kVA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FTy0jOHRZ_c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

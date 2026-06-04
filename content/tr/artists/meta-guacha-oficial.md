@@ -2,7 +2,7 @@
 title: "Meta Guacha Oficial"
 slug: "meta-guacha-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/dQtj0Up0COE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hUzW0SM3YtI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
