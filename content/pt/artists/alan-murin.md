@@ -2,7 +2,7 @@
 title: "Alan Murin"
 slug: "alan-murin"
 type: "artists"
-image: "https://i.ytimg.com/vi/R1iGn2OdMSs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g_ZWdSlmTvk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "BALIXONN"
 slug: "balixonn"
 type: "artists"
-image: "https://i.ytimg.com/vi/lEyUG4C1JzQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/26Nk4dFZySE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
