@@ -2,7 +2,7 @@
 title: "Think Music India"
 slug: "think-music-india"
 type: "artists"
-image: "https://i.ytimg.com/vi/krLTxD-h-S8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_Vp-jCG7gno/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

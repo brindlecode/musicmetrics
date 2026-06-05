@@ -2,7 +2,7 @@
 title: "Pirlo 420"
 slug: "pirlo-420"
 type: "artists"
-image: "https://i.ytimg.com/vi/DEos-lXBH0o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5yomGWdoTrM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

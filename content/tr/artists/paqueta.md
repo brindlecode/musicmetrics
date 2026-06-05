@@ -2,7 +2,7 @@
 title: "Paqueta"
 slug: "paqueta"
 type: "artists"
-image: "https://i.ytimg.com/vi/PK-9QEq578A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yJqHhnulqZA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
