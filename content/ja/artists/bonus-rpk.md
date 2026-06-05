@@ -2,7 +2,7 @@
 title: "Bonus RPK"
 slug: "bonus-rpk"
 type: "artists"
-image: "https://i.ytimg.com/vi/-YpF5iJ1kYM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kbmoRcpvY50/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
