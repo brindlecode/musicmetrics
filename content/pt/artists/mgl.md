@@ -2,7 +2,7 @@
 title: "M.G.L."
 slug: "mgl"
 type: "artists"
-image: "https://i.ytimg.com/vi/yGU825nyU9U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oICkjWs9rDY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

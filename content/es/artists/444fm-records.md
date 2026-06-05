@@ -2,7 +2,7 @@
 title: "44.4FM Records"
 slug: "444fm-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/stEQw6-zkJo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dMWeULzJ-Qw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

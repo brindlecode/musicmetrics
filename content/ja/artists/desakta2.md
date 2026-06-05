@@ -2,7 +2,7 @@
 title: "DesaKTa2 🤟🏼"
 slug: "desakta2"
 type: "artists"
-image: "https://i.ytimg.com/vi/3OzFgQ7c7us/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vTDFWZSoZco/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "El Americano 4KT"
 slug: "el-americano-4kt"
 type: "artists"
-image: "https://i.ytimg.com/vi/aXzpCOZLJ8s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-YlLNYM1f0g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MusicAiRecords"
 slug: "musicairecords"
 type: "artists"
-image: "https://i.ytimg.com/vi/m6E791Wr2b0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GM3rt_Sr9WA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
