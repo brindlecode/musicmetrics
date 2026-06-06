@@ -2,7 +2,7 @@
 title: "Rey Vaqueiro"
 slug: "rey-vaqueiro"
 type: "artists"
-image: "https://i.ytimg.com/vi/DNSjO0YkHZY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uKc8JxyHctc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

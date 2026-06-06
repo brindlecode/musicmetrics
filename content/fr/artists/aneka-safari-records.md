@@ -2,7 +2,7 @@
 title: "Aneka Safari Records"
 slug: "aneka-safari-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/MaTGwRmf5rk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W0-uo0CnIJA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "ODUMODUBLVCK"
 slug: "odumodublvck"
 type: "artists"
-image: "https://i.ytimg.com/vi/F0kvo0xZHTI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UxRuxjXJTiA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

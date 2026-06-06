@@ -2,7 +2,7 @@
 title: "Xolo Music"
 slug: "xolo-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/8TdtOPUvd2Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mlirkWo9pKc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

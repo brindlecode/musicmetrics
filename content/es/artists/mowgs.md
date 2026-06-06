@@ -2,7 +2,7 @@
 title: "Mowgs"
 slug: "mowgs"
 type: "artists"
-image: "https://i.ytimg.com/vi/cT0jhU1iASM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vucdXEwuOhI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

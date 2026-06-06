@@ -2,7 +2,7 @@
 title: "Limão Com Mel"
 slug: "limo-com-mel"
 type: "artists"
-image: "https://i.ytimg.com/vi/QFnamnILjPc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OO7IP-U9eRY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
