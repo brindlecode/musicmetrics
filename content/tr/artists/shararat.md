@@ -2,7 +2,7 @@
 title: "Shararat"
 slug: "shararat"
 type: "artists"
-image: "https://i.ytimg.com/vi/v5jVX0QYwQo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/emCF66u7BHk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

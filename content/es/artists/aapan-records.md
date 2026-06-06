@@ -2,7 +2,7 @@
 title: "Aapan Records"
 slug: "aapan-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/Icn2dOQfPaU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/T65zvwFnhlo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

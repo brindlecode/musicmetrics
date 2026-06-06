@@ -2,7 +2,7 @@
 title: "iPop Superhits"
 slug: "ipop-superhits"
 type: "artists"
-image: "https://i.ytimg.com/vi/aETJ42yw8qw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WWIfHemqSEA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

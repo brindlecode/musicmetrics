@@ -2,7 +2,7 @@
 title: "RegionalOnly"
 slug: "regionalonly"
 type: "artists"
-image: "https://i.ytimg.com/vi/Cq5rwBqeQow/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/N67NuG3B7xs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
