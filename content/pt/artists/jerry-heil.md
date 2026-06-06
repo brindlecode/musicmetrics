@@ -2,7 +2,7 @@
 title: "Jerry Heil"
 slug: "jerry-heil"
 type: "artists"
-image: "https://i.ytimg.com/vi/vyh8pQ-XwRQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xILrgYGa9RA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
