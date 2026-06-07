@@ -2,7 +2,7 @@
 title: "LatinHype"
 slug: "latinhype"
 type: "artists"
-image: "https://i.ytimg.com/vi/6L7Ac702LV8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J8JdTOPkkHM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

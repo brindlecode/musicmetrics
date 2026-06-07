@@ -2,7 +2,7 @@
 title: "BABYMONSTER"
 slug: "babymonster"
 type: "artists"
-image: "https://i.ytimg.com/vi/x3eqqoZPV_E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/naoGk-Zjc1s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

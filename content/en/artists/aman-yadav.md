@@ -2,7 +2,7 @@
 title: "Aman Yadav"
 slug: "aman-yadav"
 type: "artists"
-image: "https://i.ytimg.com/vi/_PkmpNZJqgg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_CzZi0ODE5c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
