@@ -2,7 +2,7 @@
 title: "Magic Wacho"
 slug: "magic-wacho"
 type: "artists"
-image: "https://i.ytimg.com/vi/Jsr9Z65Lwlo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gQCUsh1MwC8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
