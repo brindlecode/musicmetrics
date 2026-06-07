@@ -2,7 +2,7 @@
 title: "Wesley Safadão"
 slug: "wesley-safado"
 type: "artists"
-image: "https://i.ytimg.com/vi/JV_et_kRpLU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ys3kFXbWTNc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
