@@ -2,7 +2,7 @@
 title: "Snow Man"
 slug: "snow-man"
 type: "artists"
-image: "https://i.ytimg.com/vi/R67c47htyDU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YVv3XZFLSOA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

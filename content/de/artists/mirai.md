@@ -2,7 +2,7 @@
 title: "Mirai"
 slug: "mirai"
 type: "artists"
-image: "https://i.ytimg.com/vi/o_tfORifzAg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IkiqTB6RnD0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
