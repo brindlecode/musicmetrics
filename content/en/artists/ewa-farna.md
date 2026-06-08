@@ -2,7 +2,7 @@
 title: "EWA FARNA"
 slug: "ewa-farna"
 type: "artists"
-image: "https://i.ytimg.com/vi/-uB0D0K2rWs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2I7W-1FeXqk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
