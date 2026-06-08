@@ -2,7 +2,7 @@
 title: "Unique Sound"
 slug: "unique-sound"
 type: "artists"
-image: "https://i.ytimg.com/vi/l3QksZ68hYw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/28PZbk66alo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

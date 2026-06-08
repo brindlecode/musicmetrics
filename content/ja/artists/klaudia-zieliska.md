@@ -2,7 +2,7 @@
 title: "KLAUDIA ZIELIŃSKA"
 slug: "klaudia-zieliska"
 type: "artists"
-image: "https://i.ytimg.com/vi/7TPni0XnVqo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/H8Y59bNiG6Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

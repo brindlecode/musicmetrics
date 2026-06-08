@@ -2,7 +2,7 @@
 title: "Quốc Thiên"
 slug: "quc-thin"
 type: "artists"
-image: "https://i.ytimg.com/vi/Eo4MrECSezw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vX2bGdQ1Eo4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
