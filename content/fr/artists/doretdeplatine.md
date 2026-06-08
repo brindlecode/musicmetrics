@@ -2,7 +2,7 @@
 title: "DORETDEPLATINE"
 slug: "doretdeplatine"
 type: "artists"
-image: "https://i.ytimg.com/vi/db-_G90GZ0k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RGtxK8weNuQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

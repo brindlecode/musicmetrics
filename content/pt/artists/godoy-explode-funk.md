@@ -2,7 +2,7 @@
 title: "GODOY EXPLODE FUNK"
 slug: "godoy-explode-funk"
 type: "artists"
-image: "https://i.ytimg.com/vi/eVYd1FdCrSs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/e_dpVD3fZfQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
