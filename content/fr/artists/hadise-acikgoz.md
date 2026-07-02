@@ -2,7 +2,7 @@
 title: "Hadise Acikgoz"
 slug: "hadise-acikgoz"
 type: "artists"
-image: "https://i.ytimg.com/vi/ESsbjdqdGYw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jWh-7JGuxTo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

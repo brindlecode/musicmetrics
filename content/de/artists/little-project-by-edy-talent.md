@@ -2,7 +2,7 @@
 title: "Little Project by Edy Talent"
 slug: "little-project-by-edy-talent"
 type: "artists"
-image: "https://i.ytimg.com/vi/6PaGSsY0tdU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gyCPKvruisI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

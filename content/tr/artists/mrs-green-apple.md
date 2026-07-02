@@ -2,7 +2,7 @@
 title: "Mrs. GREEN APPLE"
 slug: "mrs-green-apple"
 type: "artists"
-image: "https://i.ytimg.com/vi/YC-ioRXqnXY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-F9ZQfU5mKI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

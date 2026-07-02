@@ -2,7 +2,7 @@
 title: "Chilanga Banda"
 slug: "chilanga-banda"
 type: "artists"
-image: "https://i.ytimg.com/vi/oRrL6HiNsiM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j5-T3tSkVFE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

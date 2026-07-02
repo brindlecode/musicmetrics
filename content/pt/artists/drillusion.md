@@ -2,7 +2,7 @@
 title: "drillusion"
 slug: "drillusion"
 type: "artists"
-image: "https://i.ytimg.com/vi/jz5DO-7NhE0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A3XwLtCl8vo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

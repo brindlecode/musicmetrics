@@ -2,7 +2,7 @@
 title: "Derya Uluğ"
 slug: "derya-ulu"
 type: "artists"
-image: "https://i.ytimg.com/vi/aPFeLf3qZ3M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LdJUcKSSyjs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

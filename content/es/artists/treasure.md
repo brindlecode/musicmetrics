@@ -2,7 +2,7 @@
 title: "TREASURE (트레저)"
 slug: "treasure"
 type: "artists"
-image: "https://i.ytimg.com/vi/QERKD90hG98/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GCedXwbwMfQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

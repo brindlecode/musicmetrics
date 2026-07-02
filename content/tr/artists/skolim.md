@@ -2,7 +2,7 @@
 title: "SKOLIM"
 slug: "skolim"
 type: "artists"
-image: "https://i.ytimg.com/vi/uEfiwemf69k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8PVAQlC2IvQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Keisya Levronka Channel"
 slug: "keisya-levronka-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/JJDuU21AQYE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qsyz0So8gu0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

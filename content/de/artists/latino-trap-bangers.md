@@ -2,7 +2,7 @@
 title: "Latino Trap Bangers"
 slug: "latino-trap-bangers"
 type: "artists"
-image: "https://i.ytimg.com/vi/fLPXxykBHhA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ti_fqUeK9wE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

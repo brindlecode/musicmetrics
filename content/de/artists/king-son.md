@@ -2,7 +2,7 @@
 title: "King Son"
 slug: "king-son"
 type: "artists"
-image: "https://i.ytimg.com/vi/vRQMRn6jmCU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IhTUivRFfrE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

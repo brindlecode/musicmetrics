@@ -2,7 +2,7 @@
 title: "عصام صاصا - Essam Saasa"
 slug: "essam-saasa"
 type: "artists"
-image: "https://i.ytimg.com/vi/pcd0ZyFWeDg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3O80r76uZOQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

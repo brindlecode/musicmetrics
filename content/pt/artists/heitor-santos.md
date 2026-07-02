@@ -2,7 +2,7 @@
 title: "Heitor Santos"
 slug: "heitor-santos"
 type: "artists"
-image: "https://i.ytimg.com/vi/qIdc_RSxmao/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JvNq9Y8ZbeQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

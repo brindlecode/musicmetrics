@@ -2,7 +2,7 @@
 title: "Mazza_l20"
 slug: "mazza-l20"
 type: "artists"
-image: "https://i.ytimg.com/vi/sUE7P2B42jM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZPUkPtIlKAE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

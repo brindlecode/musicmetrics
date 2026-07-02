@@ -2,7 +2,7 @@
 title: "IRONBOY"
 slug: "ironboy"
 type: "artists"
-image: "https://i.ytimg.com/vi/AEWzkKMaj-k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Xn_LEDFMdX8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

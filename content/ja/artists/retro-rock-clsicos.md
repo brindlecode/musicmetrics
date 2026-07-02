@@ -2,7 +2,7 @@
 title: "Retro Rock Clásicos"
 slug: "retro-rock-clsicos"
 type: "artists"
-image: "https://i.ytimg.com/vi/lTpsvbk6vGk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DUNJD1cIj4E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

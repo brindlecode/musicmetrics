@@ -2,7 +2,7 @@
 title: "CrackHouse Cartel"
 slug: "crackhouse-cartel"
 type: "artists"
-image: "https://i.ytimg.com/vi/fDbEXrUwwR0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r9Fsdv51MZA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

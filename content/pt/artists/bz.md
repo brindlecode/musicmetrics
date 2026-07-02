@@ -2,7 +2,7 @@
 title: "Bz"
 slug: "bz"
 type: "artists"
-image: "https://i.ytimg.com/vi/mIMPyvED0hI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AMQI7HSZGXI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

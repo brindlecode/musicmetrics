@@ -2,7 +2,7 @@
 title: "MIA BOYKA"
 slug: "mia-boyka"
 type: "artists"
-image: "https://i.ytimg.com/vi/04x3RshrpG8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ipDp8Ishe3s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

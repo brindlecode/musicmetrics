@@ -2,7 +2,7 @@
 title: "Las Estrellas De La Cumbia"
 slug: "las-estrellas-de-la-cumbia"
 type: "artists"
-image: "https://i.ytimg.com/vi/eVw7XgDPDUQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0BfQFrgLqy4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

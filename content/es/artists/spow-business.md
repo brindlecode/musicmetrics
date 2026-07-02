@@ -2,7 +2,7 @@
 title: "Spow Business"
 slug: "spow-business"
 type: "artists"
-image: "https://i.ytimg.com/vi/YCeYcrm51X4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o0v8SKqCFHA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

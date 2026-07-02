@@ -2,7 +2,7 @@
 title: "GracieAbrams"
 slug: "gracieabrams"
 type: "artists"
-image: "https://i.ytimg.com/vi/jFCTQ68gxoY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2YSnCqHXMGY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

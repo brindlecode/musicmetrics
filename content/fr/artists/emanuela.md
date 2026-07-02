@@ -2,7 +2,7 @@
 title: "Emanuela"
 slug: "emanuela"
 type: "artists"
-image: "https://i.ytimg.com/vi/zaUGXByzwkY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FH-ace8PUUo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

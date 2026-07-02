@@ -2,7 +2,7 @@
 title: "Muse"
 slug: "muse"
 type: "artists"
-image: "https://i.ytimg.com/vi/CRqDdVv5XoY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k7Zl9dbdEbY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

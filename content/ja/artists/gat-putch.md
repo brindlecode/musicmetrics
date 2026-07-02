@@ -2,7 +2,7 @@
 title: "Gat Putch"
 slug: "gat-putch"
 type: "artists"
-image: "https://i.ytimg.com/vi/RY9pXH5ewZs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HspsfvidqLo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

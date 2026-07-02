@@ -2,7 +2,7 @@
 title: "Charmonix"
 slug: "charmonix"
 type: "artists"
-image: "https://i.ytimg.com/vi/GrDK4T3iQBQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fl-ZxYBlg0s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Portion Boys"
 slug: "portion-boys"
 type: "artists"
-image: "https://i.ytimg.com/vi/-_BRLgswtWs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ayzAuP7RmSI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

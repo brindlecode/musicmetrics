@@ -2,7 +2,7 @@
 title: "Salastkbron"
 slug: "salastkbron"
 type: "artists"
-image: "https://i.ytimg.com/vi/5Qsf3U46EVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wtghqhIKBDI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

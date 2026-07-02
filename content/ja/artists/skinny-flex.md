@@ -2,7 +2,7 @@
 title: "Skinny Flex"
 slug: "skinny-flex"
 type: "artists"
-image: "https://i.ytimg.com/vi/UrVrCkz4gEk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4N79cq2qLzw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

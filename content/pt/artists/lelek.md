@@ -2,7 +2,7 @@
 title: "LELEK"
 slug: "lelek"
 type: "artists"
-image: "https://i.ytimg.com/vi/oBzhoT8ffKg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Tdvt9J4NRYY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

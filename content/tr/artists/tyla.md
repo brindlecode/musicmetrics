@@ -2,7 +2,7 @@
 title: "Tyla"
 slug: "tyla"
 type: "artists"
-image: "https://i.ytimg.com/vi/vt79czh_IU4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YdrW1SJwiMs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

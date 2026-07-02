@@ -2,7 +2,7 @@
 title: "Davuiside"
 slug: "davuiside"
 type: "artists"
-image: "https://i.ytimg.com/vi/Up8oXqW4XfY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/e3-xsBaDjmc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

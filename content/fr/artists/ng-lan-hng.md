@@ -2,7 +2,7 @@
 title: "Ngô Lan Hương"
 slug: "ng-lan-hng"
 type: "artists"
-image: "https://i.ytimg.com/vi/4yd0OLJcjxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zWZHnfoVV3w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

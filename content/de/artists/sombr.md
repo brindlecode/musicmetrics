@@ -2,7 +2,7 @@
 title: "sombr"
 slug: "sombr"
 type: "artists"
-image: "https://i.ytimg.com/vi/KoBUE6I4R9I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ofywN3NgGqY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

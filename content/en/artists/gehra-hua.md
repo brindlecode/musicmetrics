@@ -2,7 +2,7 @@
 title: "Gehra Hua"
 slug: "gehra-hua"
 type: "artists"
-image: "https://i.ytimg.com/vi/0KYJPoGJcMc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gkSO4JmJ8L4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

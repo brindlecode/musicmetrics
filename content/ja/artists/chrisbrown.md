@@ -2,7 +2,7 @@
 title: "ChrisBrown"
 slug: "chrisbrown"
 type: "artists"
-image: "https://i.ytimg.com/vi/-CepAYN0WyM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jdlCOIaWwTQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

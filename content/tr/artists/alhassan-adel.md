@@ -2,7 +2,7 @@
 title: "Alhassan adel"
 slug: "alhassan-adel"
 type: "artists"
-image: "https://i.ytimg.com/vi/mzXHOLeOEo0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HzONYHQxlOo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

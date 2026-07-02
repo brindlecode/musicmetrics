@@ -2,7 +2,7 @@
 title: "Adam | آدم"
 slug: "adam"
 type: "artists"
-image: "https://i.ytimg.com/vi/6FoLlcB0L4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/edJfP5Bhl3w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

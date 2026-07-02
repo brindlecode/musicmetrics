@@ -2,7 +2,7 @@
 title: "Rush-Awa"
 slug: "rush-awa"
 type: "artists"
-image: "https://i.ytimg.com/vi/vhHwBlZYaGM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dwgT1Jb-6CQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

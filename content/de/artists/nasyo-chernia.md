@@ -2,7 +2,7 @@
 title: "Nasyo Chernia"
 slug: "nasyo-chernia"
 type: "artists"
-image: "https://i.ytimg.com/vi/d1ZSXAv4UpE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NO2MccHUzlY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

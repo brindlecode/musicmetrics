@@ -2,7 +2,7 @@
 title: "mabelmatiz"
 slug: "mabelmatiz"
 type: "artists"
-image: "https://i.ytimg.com/vi/jEVn9SnY0yQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qwfl2M67xCI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

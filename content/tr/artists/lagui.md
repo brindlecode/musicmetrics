@@ -2,7 +2,7 @@
 title: "Lagui"
 slug: "lagui"
 type: "artists"
-image: "https://i.ytimg.com/vi/hC8JjX18LhQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/THWAYx-BkyE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

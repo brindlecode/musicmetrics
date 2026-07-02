@@ -2,7 +2,7 @@
 title: "Tefo"
 slug: "tefo"
 type: "artists"
-image: "https://i.ytimg.com/vi/u77iGLqI5Do/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oHW3iCFE6JU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

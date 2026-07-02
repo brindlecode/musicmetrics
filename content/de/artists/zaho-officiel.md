@@ -2,7 +2,7 @@
 title: "Zaho Officiel"
 slug: "zaho-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/xKye4guiklU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bT27h8YY5Hk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

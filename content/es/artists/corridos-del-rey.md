@@ -1,11 +1,11 @@
 ---
-title: "Corridos del Rey"
+title: "CORRIDOS DEL REY"
 slug: "corridos-del-rey"
 type: "artists"
-image: "https://i.ytimg.com/vi/BzxDV0fxIQw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1g5JiAUprFw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Corridos del Rey streaming statistics, chart positions and analytics across youtube"
+description: "CORRIDOS DEL REY streaming statistics, chart positions and analytics across youtube"
 ---

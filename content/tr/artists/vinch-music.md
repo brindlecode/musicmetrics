@@ -2,7 +2,7 @@
 title: "VincH Music"
 slug: "vinch-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/HAiPFDkJbsw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/u8otfL0Ojt0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

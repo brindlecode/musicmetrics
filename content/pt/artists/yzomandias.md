@@ -2,7 +2,7 @@
 title: "Yzomandias"
 slug: "yzomandias"
 type: "artists"
-image: "https://i.ytimg.com/vi/CRWBJj7dAaw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oGSdfbjjqXU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

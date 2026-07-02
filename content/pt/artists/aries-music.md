@@ -2,7 +2,7 @@
 title: "Aries Music"
 slug: "aries-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/N-e3x7HD88Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PU-T3QeO7x4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

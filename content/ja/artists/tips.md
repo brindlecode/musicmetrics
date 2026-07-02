@@ -2,7 +2,7 @@
 title: "Tips"
 slug: "tips"
 type: "artists"
-image: "https://i.ytimg.com/vi/SzTmJklgIM8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rNXmANj72ps/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

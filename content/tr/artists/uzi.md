@@ -2,7 +2,7 @@
 title: "UZI"
 slug: "uzi"
 type: "artists"
-image: "https://i.ytimg.com/vi/pxwyb28wxFI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2AmFX20dz-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

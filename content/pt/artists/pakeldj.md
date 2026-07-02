@@ -2,7 +2,7 @@
 title: "PakelDj"
 slug: "pakeldj"
 type: "artists"
-image: "https://i.ytimg.com/vi/iraQ8MXZHWg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eeNx69NLIfg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

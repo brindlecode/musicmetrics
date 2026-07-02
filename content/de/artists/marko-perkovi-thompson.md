@@ -2,7 +2,7 @@
 title: "Marko Perković Thompson"
 slug: "marko-perkovi-thompson"
 type: "artists"
-image: "https://i.ytimg.com/vi/lwZl50RKFuA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2y8qfi4OBl4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

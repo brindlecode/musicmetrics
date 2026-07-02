@@ -2,7 +2,7 @@
 title: "Ben Cristovao"
 slug: "ben-cristovao"
 type: "artists"
-image: "https://i.ytimg.com/vi/q1oK3Zm2NkI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rprcLzmWeOA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

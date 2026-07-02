@@ -2,7 +2,7 @@
 title: "KOT MUSÉ"
 slug: "kot-mus"
 type: "artists"
-image: "https://i.ytimg.com/vi/mSbo0_VxYl0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l76-L4Ad8mY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

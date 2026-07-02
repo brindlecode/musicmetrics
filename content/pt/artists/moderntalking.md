@@ -2,7 +2,7 @@
 title: "ModernTalking"
 slug: "moderntalking"
 type: "artists"
-image: "https://i.ytimg.com/vi/c0LtTVKNwNA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dCfYh10G1BA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

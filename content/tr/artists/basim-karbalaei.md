@@ -2,7 +2,7 @@
 title: "Basim Karbalaei / باسم الكربلائي"
 slug: "basim-karbalaei"
 type: "artists"
-image: "https://i.ytimg.com/vi/tg17e-T4rwA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GDsdpmzeLqw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

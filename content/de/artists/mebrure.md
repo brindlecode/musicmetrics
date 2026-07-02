@@ -2,7 +2,7 @@
 title: "Mebrure"
 slug: "mebrure"
 type: "artists"
-image: "https://i.ytimg.com/vi/EQYC-81SwsM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b3WC3LumguU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

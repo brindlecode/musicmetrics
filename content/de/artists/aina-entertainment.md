@@ -2,7 +2,7 @@
 title: "AINA Entertainment"
 slug: "aina-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/sDSJq_1fkq8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z86z-YAhNoY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

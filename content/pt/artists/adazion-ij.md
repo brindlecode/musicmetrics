@@ -2,7 +2,7 @@
 title: "Adazion Ij"
 slug: "adazion-ij"
 type: "artists"
-image: "https://i.ytimg.com/vi/MkwO0CmiHXI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t3JXn4HS-nE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

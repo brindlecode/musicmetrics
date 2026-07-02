@@ -2,7 +2,7 @@
 title: "Alex Studio Production"
 slug: "alex-studio-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/Q7kizK966mg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RvqEIcYKvfM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

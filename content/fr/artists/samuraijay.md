@@ -2,7 +2,7 @@
 title: "SamuraiJay"
 slug: "samuraijay"
 type: "artists"
-image: "https://i.ytimg.com/vi/JHsZZu5MxVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2h5c6f63hs4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

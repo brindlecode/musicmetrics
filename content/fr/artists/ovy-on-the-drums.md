@@ -2,7 +2,7 @@
 title: "Ovy On The Drums"
 slug: "ovy-on-the-drums"
 type: "artists"
-image: "https://i.ytimg.com/vi/rJnRIX9j-T4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J8-Km2eBHpY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Connect-R"
 slug: "connect-r"
 type: "artists"
-image: "https://i.ytimg.com/vi/4M61s4OIWls/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QXJPzNIXMKQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

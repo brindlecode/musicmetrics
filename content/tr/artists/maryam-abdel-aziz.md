@@ -2,7 +2,7 @@
 title: "Maryam Abdel Aziz"
 slug: "maryam-abdel-aziz"
 type: "artists"
-image: "https://i.ytimg.com/vi/mECaGwHYZik/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h7bEPsyYSnc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

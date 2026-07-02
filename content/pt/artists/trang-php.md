@@ -2,7 +2,7 @@
 title: "Trang Pháp"
 slug: "trang-php"
 type: "artists"
-image: "https://i.ytimg.com/vi/I2havOVfGSc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kM4BdkePLQM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

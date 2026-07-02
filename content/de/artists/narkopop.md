@@ -2,7 +2,7 @@
 title: "Narkopop"
 slug: "narkopop"
 type: "artists"
-image: "https://i.ytimg.com/vi/2zWKuXMXqTo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rAHExyRbpkc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

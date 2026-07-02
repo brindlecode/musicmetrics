@@ -2,7 +2,7 @@
 title: "AVD Digital"
 slug: "avd-digital"
 type: "artists"
-image: "https://i.ytimg.com/vi/LEYwUo6qAsU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AjDDgx-wDr0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

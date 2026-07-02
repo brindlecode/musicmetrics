@@ -2,7 +2,7 @@
 title: "BV RECORDS"
 slug: "bv-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/FRXpThhdaX8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hzBRP4misss/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

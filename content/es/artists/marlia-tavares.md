@@ -2,7 +2,7 @@
 title: "Marília Tavares"
 slug: "marlia-tavares"
 type: "artists"
-image: "https://i.ytimg.com/vi/ejW_LLoRcTA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b5PpImQUTlE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

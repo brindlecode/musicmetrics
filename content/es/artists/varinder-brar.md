@@ -2,7 +2,7 @@
 title: "Varinder Brar"
 slug: "varinder-brar"
 type: "artists"
-image: "https://i.ytimg.com/vi/L8wVfOOuMWo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HO9G-AKizy0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Edgars Bukovskis"
 slug: "edgars-bukovskis"
 type: "artists"
-image: "https://i.ytimg.com/vi/wdQ7TOxyV_g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hptD46hXfNo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

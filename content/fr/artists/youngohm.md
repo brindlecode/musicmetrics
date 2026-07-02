@@ -2,7 +2,7 @@
 title: "YOUNGOHM"
 slug: "youngohm"
 type: "artists"
-image: "https://i.ytimg.com/vi/R6Qxsxq4R7o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ck3Fmai4i90/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

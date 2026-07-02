@@ -2,7 +2,7 @@
 title: "Ian 陳卓賢"
 slug: "ian"
 type: "artists"
-image: "https://i.ytimg.com/vi/S1S87csOhbo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wKkX9oqfmnY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Youstina samir يوستينا سمير"
 slug: "youstina-samir"
 type: "artists"
-image: "https://i.ytimg.com/vi/0SgeDsv34KU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/azR3ZDP9AYk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

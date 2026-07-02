@@ -2,7 +2,7 @@
 title: "Rony Parulian"
 slug: "rony-parulian"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ubn1PTpq5NY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VH8FsN-OI0k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

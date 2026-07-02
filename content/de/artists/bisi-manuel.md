@@ -2,7 +2,7 @@
 title: "Bisi Manuel"
 slug: "bisi-manuel"
 type: "artists"
-image: "https://i.ytimg.com/vi/ham0KRbmaSQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nA4kVl-h3t8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

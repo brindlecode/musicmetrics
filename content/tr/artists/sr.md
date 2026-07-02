@@ -2,7 +2,7 @@
 title: "S&R"
 slug: "sr"
 type: "artists"
-image: "https://i.ytimg.com/vi/XLYlpRf1__Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W_eRrsiXg-I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

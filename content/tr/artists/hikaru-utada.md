@@ -2,7 +2,7 @@
 title: "Hikaru Utada"
 slug: "hikaru-utada"
 type: "artists"
-image: "https://i.ytimg.com/vi/UQu8LmCZDx8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R-iuG8oCIpg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

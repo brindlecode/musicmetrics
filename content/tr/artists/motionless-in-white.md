@@ -2,7 +2,7 @@
 title: "Motionless In White"
 slug: "motionless-in-white"
 type: "artists"
-image: "https://i.ytimg.com/vi/L2ZBtkEpGdw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OeRIoWmQA6k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

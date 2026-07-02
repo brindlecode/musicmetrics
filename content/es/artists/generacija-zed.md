@@ -2,7 +2,7 @@
 title: "Generacija Zed"
 slug: "generacija-zed"
 type: "artists"
-image: "https://i.ytimg.com/vi/LVTACMHcomI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-5Nhwbpc25A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Tayc"
 slug: "tayc"
 type: "artists"
-image: "https://i.ytimg.com/vi/p9ARFRpO0ak/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qOrBNgOntnM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

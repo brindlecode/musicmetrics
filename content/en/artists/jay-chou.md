@@ -2,7 +2,7 @@
 title: "周杰倫 Jay Chou"
 slug: "jay-chou"
 type: "artists"
-image: "https://i.ytimg.com/vi/PJyFND4-zR4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aGsrg1NO1cM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Oldilla"
 slug: "oldilla"
 type: "artists"
-image: "https://i.ytimg.com/vi/_CE2dTBjNGU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_qo2W3BcsiA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

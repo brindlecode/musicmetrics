@@ -2,7 +2,7 @@
 title: "PUN"
 slug: "pun"
 type: "artists"
-image: "https://i.ytimg.com/vi/Zhrk4ii0vXQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/99jJP3DgdBQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

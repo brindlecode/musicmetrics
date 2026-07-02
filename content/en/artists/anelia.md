@@ -2,7 +2,7 @@
 title: "Anelia"
 slug: "anelia"
 type: "artists"
-image: "https://i.ytimg.com/vi/_GdPVmnr--o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t-a61SJFZAA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

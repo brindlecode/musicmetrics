@@ -2,7 +2,7 @@
 title: "Dafina Zeqiri"
 slug: "dafina-zeqiri"
 type: "artists"
-image: "https://i.ytimg.com/vi/gmh_VTKcmwI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9J4VZsYwrOs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

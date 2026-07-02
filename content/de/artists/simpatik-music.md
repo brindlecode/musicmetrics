@@ -2,7 +2,7 @@
 title: "SIMPATIK MUSIC"
 slug: "simpatik-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/a4emHFwsZVI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NOiQfCVjAsQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

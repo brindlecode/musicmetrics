@@ -2,7 +2,7 @@
 title: "Rhove"
 slug: "rhove"
 type: "artists"
-image: "https://i.ytimg.com/vi/PkyGXNONjr0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i6cIOEPPMIQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

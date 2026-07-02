@@ -2,7 +2,7 @@
 title: "Hitox"
 slug: "hitox"
 type: "artists"
-image: "https://i.ytimg.com/vi/Mous8Vuxf4c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7q21cBJ6YdE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

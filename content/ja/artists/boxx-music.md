@@ -2,7 +2,7 @@
 title: "BOXX MUSIC"
 slug: "boxx-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/toCf8z8Gau0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/X7Zk8Vl3BRA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

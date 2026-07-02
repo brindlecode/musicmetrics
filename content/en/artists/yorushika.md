@@ -2,7 +2,7 @@
 title: "Yorushika"
 slug: "yorushika"
 type: "artists"
-image: "https://i.ytimg.com/vi/n9GWKPu9Fh8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MP4iEK_btKU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

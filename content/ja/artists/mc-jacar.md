@@ -2,7 +2,7 @@
 title: "MC Jacaré"
 slug: "mc-jacar"
 type: "artists"
-image: "https://i.ytimg.com/vi/L95q7_PvMPQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_XrUr8i18Is/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

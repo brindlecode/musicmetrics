@@ -2,7 +2,7 @@
 title: "ACIOĞLU"
 slug: "aciolu"
 type: "artists"
-image: "https://i.ytimg.com/vi/qsiydXuYI5Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FOASY1lBEY0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

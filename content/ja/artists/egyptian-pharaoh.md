@@ -2,7 +2,7 @@
 title: "Egyptian Pharaoh"
 slug: "egyptian-pharaoh"
 type: "artists"
-image: "https://i.ytimg.com/vi/kSaaBFl0T1o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zHPQCcK60T4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

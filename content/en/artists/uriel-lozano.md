@@ -2,7 +2,7 @@
 title: "Uriel Lozano"
 slug: "uriel-lozano"
 type: "artists"
-image: "https://i.ytimg.com/vi/uPi-tnR8UIY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lbW89Sq2rDo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

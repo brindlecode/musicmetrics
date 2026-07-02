@@ -2,7 +2,7 @@
 title: "Dipinto"
 slug: "dipinto"
 type: "artists"
-image: "https://i.ytimg.com/vi/ml2VXZ-8ICI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6wufZNh2Hx8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

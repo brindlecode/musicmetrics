@@ -2,7 +2,7 @@
 title: "Grupa Magazin"
 slug: "grupa-magazin"
 type: "artists"
-image: "https://i.ytimg.com/vi/vevLUmtdmyg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iehJjJx1WIw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

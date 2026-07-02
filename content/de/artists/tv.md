@@ -2,7 +2,7 @@
 title: "Κωνσταντίνος Αργυρός Tv"
 slug: "tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/osOXLMzXvyE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/saU9Z_dcl28/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
