@@ -2,7 +2,7 @@
 title: "Location PK"
 slug: "location-pk"
 type: "artists"
-image: "https://i.ytimg.com/vi/WAFWktszE4o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lo6c3g_MVkA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

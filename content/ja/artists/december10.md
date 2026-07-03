@@ -2,7 +2,7 @@
 title: "December10"
 slug: "december10"
 type: "artists"
-image: "https://i.ytimg.com/vi/WDxqbhQRNfo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2tEQK1KrkoM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

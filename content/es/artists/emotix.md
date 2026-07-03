@@ -2,7 +2,7 @@
 title: "EmoTix"
 slug: "emotix"
 type: "artists"
-image: "https://i.ytimg.com/vi/UhygLk6J3Io/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yPxKRHclyug/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

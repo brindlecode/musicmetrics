@@ -2,7 +2,7 @@
 title: "Ferhat Güneş"
 slug: "ferhat-gne"
 type: "artists"
-image: "https://i.ytimg.com/vi/C2ENW-2oio0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pWfb2gGgThU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

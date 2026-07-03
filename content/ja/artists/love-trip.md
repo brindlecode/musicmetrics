@@ -2,7 +2,7 @@
 title: "Love Trip"
 slug: "love-trip"
 type: "artists"
-image: "https://i.ytimg.com/vi/-8ZELfeRbhA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZhetU4Cwngs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
