@@ -2,7 +2,7 @@
 title: "Fatt Smaxk"
 slug: "fatt-smaxk"
 type: "artists"
-image: "https://i.ytimg.com/vi/W3fAdzPjv-g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CuqMvxZH9kk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

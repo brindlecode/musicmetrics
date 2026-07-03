@@ -2,7 +2,7 @@
 title: "Urban Paradise"
 slug: "urban-paradise"
 type: "artists"
-image: "https://i.ytimg.com/vi/pOMmnC3phjQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QHJOYTdoBiA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
