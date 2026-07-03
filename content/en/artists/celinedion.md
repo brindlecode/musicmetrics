@@ -2,7 +2,7 @@
 title: "CelineDion"
 slug: "celinedion"
 type: "artists"
-image: "https://i.ytimg.com/vi/FHL5wBjqXCI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BbatcDcn4AU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
