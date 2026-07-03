@@ -2,7 +2,7 @@
 title: "Top Squad"
 slug: "top-squad"
 type: "artists"
-image: "https://i.ytimg.com/vi/pIYT1k6mf-Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1BFEjmTufl8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

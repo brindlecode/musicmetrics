@@ -2,7 +2,7 @@
 title: "Resumo Fluxos by Resumo Produtora"
 slug: "resumo-fluxos-by-resumo-produtora"
 type: "artists"
-image: "https://i.ytimg.com/vi/qxV3R3QmF8A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/by5gYKJc93A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

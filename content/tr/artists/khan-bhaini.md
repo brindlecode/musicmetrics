@@ -2,7 +2,7 @@
 title: "Khan Bhaini"
 slug: "khan-bhaini"
 type: "artists"
-image: "https://i.ytimg.com/vi/WmFm7-lNq9I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/--OFJWkdJOI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

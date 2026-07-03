@@ -2,7 +2,7 @@
 title: "Hallowind Band"
 slug: "hallowind-band"
 type: "artists"
-image: "https://i.ytimg.com/vi/KsVnt9qeKd0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HS59-lSP9AE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

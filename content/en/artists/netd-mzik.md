@@ -2,7 +2,7 @@
 title: "netd müzik"
 slug: "netd-mzik"
 type: "artists"
-image: "https://i.ytimg.com/vi/jlasZTJ4AA0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vLzF3YeBqqk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sequento"
 slug: "sequento"
 type: "artists"
-image: "https://i.ytimg.com/vi/3MxWtNOuL0c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KsVjY8xzxHw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
