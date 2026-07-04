@@ -2,7 +2,7 @@
 title: "K.K.G"
 slug: "kkg"
 type: "artists"
-image: "https://i.ytimg.com/vi/xFdgWkpEXFo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1Y1yU5M3oKo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

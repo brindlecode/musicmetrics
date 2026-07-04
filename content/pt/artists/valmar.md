@@ -2,7 +2,7 @@
 title: "VALMAR"
 slug: "valmar"
 type: "artists"
-image: "https://i.ytimg.com/vi/EgecvO4zPTM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iliQPIJaxmA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

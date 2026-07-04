@@ -2,7 +2,7 @@
 title: "Houda"
 slug: "houda"
 type: "artists"
-image: "https://i.ytimg.com/vi/YypkU_6yZDg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xAX9WMT0cpY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

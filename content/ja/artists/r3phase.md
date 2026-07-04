@@ -2,7 +2,7 @@
 title: "R3phase"
 slug: "r3phase"
 type: "artists"
-image: "https://i.ytimg.com/vi/fcy3RRvx__Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J769tyuOJWE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

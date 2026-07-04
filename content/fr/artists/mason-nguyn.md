@@ -2,7 +2,7 @@
 title: "Mason Nguyễn"
 slug: "mason-nguyn"
 type: "artists"
-image: "https://i.ytimg.com/vi/VEptnVyCHQs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5XFvSfl2UOQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

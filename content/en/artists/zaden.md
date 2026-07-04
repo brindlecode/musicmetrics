@@ -2,7 +2,7 @@
 title: "ZADEN"
 slug: "zaden"
 type: "artists"
-image: "https://i.ytimg.com/vi/nuP4a1Tl5ok/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j6WH3WBL9VA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
