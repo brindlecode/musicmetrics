@@ -2,7 +2,7 @@
 title: "Panda"
 slug: "panda"
 type: "artists"
-image: "https://i.ytimg.com/vi/N-qckEKHxSc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ak7I7C0glI4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

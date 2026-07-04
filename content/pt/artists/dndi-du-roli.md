@@ -2,7 +2,7 @@
 title: "Döndi Duó & Roli"
 slug: "dndi-du-roli"
 type: "artists"
-image: "https://i.ytimg.com/vi/tApwZlpPP3E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vMswQ2LmBNU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

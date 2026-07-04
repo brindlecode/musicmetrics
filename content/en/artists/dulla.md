@@ -2,7 +2,7 @@
 title: "Dulla"
 slug: "dulla"
 type: "artists"
-image: "https://i.ytimg.com/vi/z9fvDDvvm6k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gmlKmjrY9DQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

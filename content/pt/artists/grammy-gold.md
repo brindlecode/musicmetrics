@@ -2,7 +2,7 @@
 title: "GRAMMY GOLD"
 slug: "grammy-gold"
 type: "artists"
-image: "https://i.ytimg.com/vi/0cjPhbnUr1U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KZkCS2xzfTk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

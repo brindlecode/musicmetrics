@@ -2,7 +2,7 @@
 title: "IL GHOST"
 slug: "il-ghost"
 type: "artists"
-image: "https://i.ytimg.com/vi/VKEToqJXkmI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5_MfH553Vxg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
