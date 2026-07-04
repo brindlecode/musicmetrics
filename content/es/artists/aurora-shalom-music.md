@@ -2,7 +2,7 @@
 title: "Aurora Shalom Music"
 slug: "aurora-shalom-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/tzyB1pzVcfA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W_lhnhqeVsk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

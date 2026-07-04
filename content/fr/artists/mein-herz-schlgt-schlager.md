@@ -2,7 +2,7 @@
 title: "Mein Herz schlägt Schlager"
 slug: "mein-herz-schlgt-schlager"
 type: "artists"
-image: "https://i.ytimg.com/vi/IumpNqodVP8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nIWHVedf3ac/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

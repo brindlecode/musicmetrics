@@ -2,7 +2,7 @@
 title: "Biba"
 slug: "biba"
 type: "artists"
-image: "https://i.ytimg.com/vi/JH8Fg8vlmT8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0ppm8PP4hy0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
