@@ -2,7 +2,7 @@
 title: "Noxolo Ngema"
 slug: "noxolo-ngema"
 type: "artists"
-image: "https://i.ytimg.com/vi/ibFJ79d2zuM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xxkUVU78NqE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

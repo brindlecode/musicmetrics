@@ -2,7 +2,7 @@
 title: "Shandesh Music"
 slug: "shandesh-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/yFOZ3MSyigA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wOUORt0zIpw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

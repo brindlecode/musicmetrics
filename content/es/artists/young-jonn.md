@@ -2,7 +2,7 @@
 title: "Young Jonn"
 slug: "young-jonn"
 type: "artists"
-image: "https://i.ytimg.com/vi/GtwDdt6zQHM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h3vLawxCp6c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
