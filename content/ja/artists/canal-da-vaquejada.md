@@ -2,7 +2,7 @@
 title: "Canal da Vaquejada"
 slug: "canal-da-vaquejada"
 type: "artists"
-image: "https://i.ytimg.com/vi/KZojS1KVIjk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6JD8nxe2Dgs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

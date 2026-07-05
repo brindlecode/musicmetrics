@@ -2,7 +2,7 @@
 title: "Sofi Marinova"
 slug: "sofi-marinova"
 type: "artists"
-image: "https://i.ytimg.com/vi/4ugRTZEOgvI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9__EmwMFy4g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

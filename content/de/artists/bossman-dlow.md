@@ -2,7 +2,7 @@
 title: "BossMan Dlow"
 slug: "bossman-dlow"
 type: "artists"
-image: "https://i.ytimg.com/vi/iImWkbMY2n8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jUEyjE92fG4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

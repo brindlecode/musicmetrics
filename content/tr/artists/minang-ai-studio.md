@@ -2,7 +2,7 @@
 title: "Minang AI Studio"
 slug: "minang-ai-studio"
 type: "artists"
-image: "https://i.ytimg.com/vi/ywo9fKrGSrs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wh6tatwvhRQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

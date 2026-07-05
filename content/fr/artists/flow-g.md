@@ -2,7 +2,7 @@
 title: "FLOW G"
 slug: "flow-g"
 type: "artists"
-image: "https://i.ytimg.com/vi/EawYwGeNZjg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1ZTonBBLbPU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
