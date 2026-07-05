@@ -2,7 +2,7 @@
 title: "TVLM"
 slug: "tvlm"
 type: "artists"
-image: "https://i.ytimg.com/vi/nA5WWW5gLXA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B3By0_Ber34/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

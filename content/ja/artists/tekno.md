@@ -2,7 +2,7 @@
 title: "Tekno"
 slug: "tekno"
 type: "artists"
-image: "https://i.ytimg.com/vi/up-y76VTyD8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SORL-DFX6BQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

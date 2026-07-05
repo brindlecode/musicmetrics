@@ -2,7 +2,7 @@
 title: "Willylancien"
 slug: "willylancien"
 type: "artists"
-image: "https://i.ytimg.com/vi/xD5w5UpKB5Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BUB9dP3wjtI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
