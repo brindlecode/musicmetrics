@@ -2,7 +2,7 @@
 title: "Reynmen"
 slug: "reynmen"
 type: "artists"
-image: "https://i.ytimg.com/vi/pBryrISM7jM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QRepbfjny0c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

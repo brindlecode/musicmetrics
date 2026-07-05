@@ -2,7 +2,7 @@
 title: "FELICIA"
 slug: "felicia"
 type: "artists"
-image: "https://i.ytimg.com/vi/hQt-ZCGVVW4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FoRe2edMQJ8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

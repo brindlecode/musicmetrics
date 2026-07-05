@@ -2,7 +2,7 @@
 title: "Gülden"
 slug: "glden"
 type: "artists"
-image: "https://i.ytimg.com/vi/9-20HncevTY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dLqAJoIVkXU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
