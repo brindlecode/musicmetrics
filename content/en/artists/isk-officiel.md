@@ -2,7 +2,7 @@
 title: "ISK Officiel"
 slug: "isk-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/jFBxUMI0Udo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QsRmV1qiI68/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

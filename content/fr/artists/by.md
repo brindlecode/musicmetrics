@@ -2,7 +2,7 @@
 title: "By Индия"
 slug: "by"
 type: "artists"
-image: "https://i.ytimg.com/vi/qoyWfmOwnzk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UhzVxNUvENY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

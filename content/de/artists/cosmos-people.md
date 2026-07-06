@@ -2,7 +2,7 @@
 title: "宇宙人Cosmos People"
 slug: "cosmos-people"
 type: "artists"
-image: "https://i.ytimg.com/vi/omRez5-bIpY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dRSZhZT6r-Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

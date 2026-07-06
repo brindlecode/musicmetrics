@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-07-06",
   "artists": [
     {
       "rank": 1,
@@ -51,7 +51,7 @@
       "name": "Dhanda Nyoliwala",
       "slug": "dhanda-nyoliwala",
       "spotify_streams": "--",
-      "youtube_views": "#6",
+      "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -114,32 +114,32 @@
       "name": "Khan Bhaini",
       "slug": "khan-bhaini",
       "spotify_streams": "--",
-      "youtube_views": "#4",
+      "youtube_views": "#3",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 14,
-      "name": "Prem Dhillon",
-      "slug": "prem-dhillon",
+      "name": "Aarzoo Khaan",
+      "slug": "aarzoo-khaan",
+      "spotify_streams": "--",
+      "youtube_views": "#14",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 15,
+      "name": "Gehra Hua",
+      "slug": "gehra-hua",
       "spotify_streams": "--",
       "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 15,
-      "name": "Aarzoo Khaan",
-      "slug": "aarzoo-khaan",
-      "spotify_streams": "--",
-      "youtube_views": "#15",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
       "rank": 16,
-      "name": "Gehra Hua",
-      "slug": "gehra-hua",
+      "name": "Prem Dhillon",
+      "slug": "prem-dhillon",
       "spotify_streams": "--",
       "youtube_views": "#2",
       "monthly_listeners": "--",
@@ -192,10 +192,10 @@
     },
     {
       "rank": 22,
-      "name": "Sony Music India",
-      "slug": "sony-music-india",
+      "name": "Production - موقع الفهد",
+      "slug": "production",
       "spotify_streams": "--",
-      "youtube_views": "#18",
+      "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -210,17 +210,17 @@
     },
     {
       "rank": 24,
-      "name": "Production - موقع الفهد",
-      "slug": "production",
+      "name": "Sony Music India",
+      "slug": "sony-music-india",
       "spotify_streams": "--",
-      "youtube_views": "#3",
+      "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 25,
-      "name": "Tips",
-      "slug": "tips",
+      "name": "Madhur Sharma",
+      "slug": "madhur-sharma",
       "spotify_streams": "--",
       "youtube_views": "#26",
       "monthly_listeners": "--",
@@ -228,10 +228,10 @@
     },
     {
       "rank": 26,
-      "name": "Madhur Sharma",
-      "slug": "madhur-sharma",
+      "name": "Tips",
+      "slug": "tips",
       "spotify_streams": "--",
-      "youtube_views": "#28",
+      "youtube_views": "#27",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -240,7 +240,7 @@
       "name": "R Nait",
       "slug": "r-nait",
       "spotify_streams": "--",
-      "youtube_views": "#22",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -309,19 +309,19 @@
     },
     {
       "rank": 35,
-      "name": "drillusion",
-      "slug": "drillusion",
+      "name": "Conep",
+      "slug": "conep",
       "spotify_streams": "--",
-      "youtube_views": "#7",
+      "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 36,
-      "name": "Conep",
-      "slug": "conep",
+      "name": "drillusion",
+      "slug": "drillusion",
       "spotify_streams": "--",
-      "youtube_views": "#2",
+      "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -348,7 +348,7 @@
       "name": "Unity Vibe",
       "slug": "unity-vibe",
       "spotify_streams": "--",
-      "youtube_views": "#11",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -375,21 +375,30 @@
       "name": "Salastkbron",
       "slug": "salastkbron",
       "spotify_streams": "--",
-      "youtube_views": "#14",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 43,
-      "name": "Stray Kids",
-      "slug": "stray-kids",
+      "name": "Pushi",
+      "slug": "pushi",
       "spotify_streams": "--",
-      "youtube_views": "#4",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 44,
+      "name": "Stray Kids",
+      "slug": "stray-kids",
+      "spotify_streams": "--",
+      "youtube_views": "#3",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 45,
       "name": "Retro Rock Clásicos",
       "slug": "retro-rock-clsicos",
       "spotify_streams": "--",
@@ -398,18 +407,9 @@
       "change": 0
     },
     {
-      "rank": 45,
+      "rank": 46,
       "name": "HitsDeSiempre",
       "slug": "hitsdesiempre",
-      "spotify_streams": "--",
-      "youtube_views": "#18",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 46,
-      "name": "Jero Moscoloni",
-      "slug": "jero-moscoloni",
       "spotify_streams": "--",
       "youtube_views": "#19",
       "monthly_listeners": "--",
@@ -417,8 +417,8 @@
     },
     {
       "rank": 47,
-      "name": "Pushi",
-      "slug": "pushi",
+      "name": "Jero Moscoloni",
+      "slug": "jero-moscoloni",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
@@ -435,10 +435,10 @@
     },
     {
       "rank": 49,
-      "name": "Keller Lyrics",
-      "slug": "keller-lyrics",
+      "name": "Jackson Que Produce",
+      "slug": "jackson-que-produce",
       "spotify_streams": "--",
-      "youtube_views": "#7",
+      "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -462,51 +462,42 @@
     },
     {
       "rank": 52,
-      "name": "Los Herrera",
-      "slug": "los-herrera",
+      "name": "Keller Lyrics",
+      "slug": "keller-lyrics",
       "spotify_streams": "--",
-      "youtube_views": "#26",
+      "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 53,
-      "name": "Los Piojos",
-      "slug": "los-piojos",
-      "spotify_streams": "--",
-      "youtube_views": "#27",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 54,
-      "name": "MexSun",
-      "slug": "mexsun",
+      "name": "LucianoPereyra",
+      "slug": "lucianopereyra",
       "spotify_streams": "--",
       "youtube_views": "#28",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 55,
-      "name": "LucianoPereyra",
-      "slug": "lucianopereyra",
+      "rank": 54,
+      "name": "Los Piojos",
+      "slug": "los-piojos",
       "spotify_streams": "--",
       "youtube_views": "#29",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 56,
-      "name": "ROSE BEAT",
-      "slug": "rose-beat",
+      "rank": 55,
+      "name": "Los Herrera",
+      "slug": "los-herrera",
       "spotify_streams": "--",
       "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 57,
+      "rank": 56,
       "name": "Samra",
       "slug": "samra",
       "spotify_streams": "--",
@@ -515,7 +506,7 @@
       "change": 0
     },
     {
-      "rank": 58,
+      "rank": 57,
       "name": "JELENA KARLEUŠA",
       "slug": "jelena-karleua",
       "spotify_streams": "--",
@@ -524,7 +515,7 @@
       "change": 0
     },
     {
-      "rank": 59,
+      "rank": 58,
       "name": "Andreas Gabalier",
       "slug": "andreas-gabalier",
       "spotify_streams": "--",
@@ -533,7 +524,7 @@
       "change": 0
     },
     {
-      "rank": 60,
+      "rank": 59,
       "name": "DON XHONI",
       "slug": "don-xhoni",
       "spotify_streams": "--",
@@ -542,7 +533,7 @@
       "change": 0
     },
     {
-      "rank": 61,
+      "rank": 60,
       "name": "Aleksandra Prijovic",
       "slug": "aleksandra-prijovic",
       "spotify_streams": "--",
@@ -551,7 +542,7 @@
       "change": 0
     },
     {
-      "rank": 62,
+      "rank": 61,
       "name": "manifest",
       "slug": "manifest",
       "spotify_streams": "--",
@@ -560,7 +551,7 @@
       "change": 0
     },
     {
-      "rank": 63,
+      "rank": 62,
       "name": "Die WBL",
       "slug": "die-wbl",
       "spotify_streams": "--",
@@ -569,7 +560,7 @@
       "change": 0
     },
     {
-      "rank": 64,
+      "rank": 63,
       "name": "Josh Fawaz",
       "slug": "josh-fawaz",
       "spotify_streams": "--",
@@ -578,7 +569,7 @@
       "change": 0
     },
     {
-      "rank": 65,
+      "rank": 64,
       "name": "Shindy",
       "slug": "shindy",
       "spotify_streams": "--",
@@ -587,7 +578,7 @@
       "change": 0
     },
     {
-      "rank": 66,
+      "rank": 65,
       "name": "Charmonix",
       "slug": "charmonix",
       "spotify_streams": "--",
@@ -596,7 +587,7 @@
       "change": 0
     },
     {
-      "rank": 67,
+      "rank": 66,
       "name": "Pinkove zvezde",
       "slug": "pinkove-zvezde",
       "spotify_streams": "--",
@@ -605,36 +596,45 @@
       "change": 0
     },
     {
-      "rank": 68,
+      "rank": 67,
       "name": "Bassivity Digital",
       "slug": "bassivity-digital",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#14",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 68,
+      "name": "CrhymeTV",
+      "slug": "crhymetv",
+      "spotify_streams": "--",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 69,
-      "name": "CrhymeTV",
-      "slug": "crhymetv",
+      "name": "Hypnotize Entertainment",
+      "slug": "hypnotize-entertainment",
       "spotify_streams": "--",
-      "youtube_views": "#11",
+      "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 70,
-      "name": "Hypnotize Entertainment",
-      "slug": "hypnotize-entertainment",
+      "name": "Uroš Živković",
+      "slug": "uro-ivkovi",
       "spotify_streams": "--",
-      "youtube_views": "#8",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 71,
-      "name": "Uroš Živković",
-      "slug": "uro-ivkovi",
+      "name": "Velvet Sky22",
+      "slug": "velvet-sky22",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
@@ -642,15 +642,6 @@
     },
     {
       "rank": 72,
-      "name": "Velvet Sky22",
-      "slug": "velvet-sky22",
-      "spotify_streams": "--",
-      "youtube_views": "#22",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 73,
       "name": "Hadise Acikgoz",
       "slug": "hadise-acikgoz",
       "spotify_streams": "--",
@@ -659,7 +650,7 @@
       "change": 0
     },
     {
-      "rank": 74,
+      "rank": 73,
       "name": "ZADEN",
       "slug": "zaden",
       "spotify_streams": "--",
@@ -668,25 +659,25 @@
       "change": 0
     },
     {
-      "rank": 75,
+      "rank": 74,
       "name": "RIAN",
       "slug": "rian",
       "spotify_streams": "--",
-      "youtube_views": "#25",
+      "youtube_views": "#24",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 75,
+      "name": "Balkaton Gang",
+      "slug": "balkaton-gang",
+      "spotify_streams": "--",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 76,
-      "name": "Balkaton Gang",
-      "slug": "balkaton-gang",
-      "spotify_streams": "--",
-      "youtube_views": "#23",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 77,
       "name": "Davuiside",
       "slug": "davuiside",
       "spotify_streams": "--",
@@ -695,11 +686,20 @@
       "change": 0
     },
     {
+      "rank": 77,
+      "name": "Mein Herz schlägt Schlager",
+      "slug": "mein-herz-schlgt-schlager",
+      "spotify_streams": "--",
+      "youtube_views": "#30",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
       "rank": 78,
       "name": "TheKERSER",
       "slug": "thekerser",
       "spotify_streams": "--",
-      "youtube_views": "#6",
+      "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -717,7 +717,7 @@
       "name": "KQ ENTERTAINMENT",
       "slug": "kq-entertainment",
       "spotify_streams": "--",
-      "youtube_views": "#5",
+      "youtube_views": "#4",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -726,7 +726,7 @@
       "name": "Benson Boone",
       "slug": "benson-boone",
       "spotify_streams": "--",
-      "youtube_views": "#12",
+      "youtube_views": "#14",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -750,15 +750,6 @@
     },
     {
       "rank": 84,
-      "name": "BMTH",
-      "slug": "bmth",
-      "spotify_streams": "--",
-      "youtube_views": "#11",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 85,
       "name": "Navaan Sandhu",
       "slug": "navaan-sandhu",
       "spotify_streams": "--",
@@ -767,11 +758,20 @@
       "change": 0
     },
     {
+      "rank": 85,
+      "name": "BMTH",
+      "slug": "bmth",
+      "spotify_streams": "--",
+      "youtube_views": "#11",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
       "rank": 86,
       "name": "Yellow Music",
       "slug": "yellow-music",
       "spotify_streams": "--",
-      "youtube_views": "#14",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -789,7 +789,7 @@
       "name": "Beyoncé",
       "slug": "beyonc",
       "spotify_streams": "--",
-      "youtube_views": "#4",
+      "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -798,7 +798,7 @@
       "name": "Gurinder Gill",
       "slug": "gurinder-gill",
       "spotify_streams": "--",
-      "youtube_views": "#5",
+      "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -939,8 +939,8 @@
     },
     {
       "rank": 105,
-      "name": "BV RECORDS",
-      "slug": "bv-records",
+      "name": "kartelarecords",
+      "slug": "kartelarecords",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
@@ -948,10 +948,10 @@
     },
     {
       "rank": 106,
-      "name": "kartelarecords",
-      "slug": "kartelarecords",
+      "name": "BV RECORDS",
+      "slug": "bv-records",
       "spotify_streams": "--",
-      "youtube_views": "#22",
+      "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -960,7 +960,7 @@
       "name": "Afrotrix",
       "slug": "afrotrix",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -969,12 +969,21 @@
       "name": "Blok3",
       "slug": "blok3",
       "spotify_streams": "--",
-      "youtube_views": "#10",
+      "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 109,
+      "name": "Sofi Marinova",
+      "slug": "sofi-marinova",
+      "spotify_streams": "--",
+      "youtube_views": "#25",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 110,
       "name": "Valentinoff",
       "slug": "valentinoff",
       "spotify_streams": "--",
@@ -983,20 +992,11 @@
       "change": 0
     },
     {
-      "rank": 110,
+      "rank": 111,
       "name": "PakelDj",
       "slug": "pakeldj",
       "spotify_streams": "--",
       "youtube_views": "#16",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 111,
-      "name": "Sofi Marinova",
-      "slug": "sofi-marinova",
-      "spotify_streams": "--",
-      "youtube_views": "#28",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -1047,8 +1047,8 @@
     },
     {
       "rank": 117,
-      "name": "FUNK DE DRAK",
-      "slug": "funk-de-drak",
+      "name": "STATUS FUNK",
+      "slug": "status-funk",
       "spotify_streams": "--",
       "youtube_views": "#7",
       "monthly_listeners": "--",
@@ -1065,8 +1065,8 @@
     },
     {
       "rank": 119,
-      "name": "STATUS FUNK",
-      "slug": "status-funk",
+      "name": "Natanzinho Lima Oficial",
+      "slug": "natanzinho-lima-oficial",
       "spotify_streams": "--",
       "youtube_views": "#9",
       "monthly_listeners": "--",
@@ -1074,8 +1074,8 @@
     },
     {
       "rank": 120,
-      "name": "Kysha e Mine",
-      "slug": "kysha-e-mine",
+      "name": "FUNK DE DRAK",
+      "slug": "funk-de-drak",
       "spotify_streams": "--",
       "youtube_views": "#10",
       "monthly_listeners": "--",
@@ -1083,8 +1083,8 @@
     },
     {
       "rank": 121,
-      "name": "Natanzinho Lima Oficial",
-      "slug": "natanzinho-lima-oficial",
+      "name": "Kysha e Mine",
+      "slug": "kysha-e-mine",
       "spotify_streams": "--",
       "youtube_views": "#11",
       "monthly_listeners": "--",
@@ -1101,15 +1101,6 @@
     },
     {
       "rank": 123,
-      "name": "Heitor Santos",
-      "slug": "heitor-santos",
-      "spotify_streams": "--",
-      "youtube_views": "#13",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 124,
       "name": "Guilherme Silva Oficial",
       "slug": "guilherme-silva-oficial",
       "spotify_streams": "--",
@@ -1118,27 +1109,36 @@
       "change": 0
     },
     {
-      "rank": 125,
-      "name": "Aaron Modesto",
-      "slug": "aaron-modesto",
+      "rank": 124,
+      "name": "Heitor Santos",
+      "slug": "heitor-santos",
       "spotify_streams": "--",
-      "youtube_views": "#19",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 126,
-      "name": "Dj Nenê",
-      "slug": "dj-nen",
+      "rank": 125,
+      "name": "Aaron Modesto",
+      "slug": "aaron-modesto",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 127,
+      "rank": 126,
       "name": "CarolTauber",
       "slug": "caroltauber",
+      "spotify_streams": "--",
+      "youtube_views": "#21",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 127,
+      "name": "Dj Nenê",
+      "slug": "dj-nen",
       "spotify_streams": "--",
       "youtube_views": "#22",
       "monthly_listeners": "--",
@@ -1146,17 +1146,17 @@
     },
     {
       "rank": 128,
-      "name": "YANCA VALLEN",
-      "slug": "yanca-vallen",
+      "name": "Canal da Vaquejada",
+      "slug": "canal-da-vaquejada",
       "spotify_streams": "--",
-      "youtube_views": "#24",
+      "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 129,
-      "name": "Nando Moreno Oficial",
-      "slug": "nando-moreno-oficial",
+      "name": "YANCA VALLEN",
+      "slug": "yanca-vallen",
       "spotify_streams": "--",
       "youtube_views": "#25",
       "monthly_listeners": "--",
@@ -1164,8 +1164,8 @@
     },
     {
       "rank": 130,
-      "name": "Canal da Vaquejada",
-      "slug": "canal-da-vaquejada",
+      "name": "Nando Moreno Oficial",
+      "slug": "nando-moreno-oficial",
       "spotify_streams": "--",
       "youtube_views": "#26",
       "monthly_listeners": "--",
@@ -1173,10 +1173,10 @@
     },
     {
       "rank": 131,
-      "name": "Panda",
-      "slug": "panda",
+      "name": "Os Feras do Pizeiro",
+      "slug": "os-feras-do-pizeiro",
       "spotify_streams": "--",
-      "youtube_views": "#28",
+      "youtube_views": "#27",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -1185,12 +1185,21 @@
       "name": "Sonar Produtora",
       "slug": "sonar-produtora",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#28",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 133,
+      "name": "DJ Gu",
+      "slug": "dj-gu",
+      "spotify_streams": "--",
+      "youtube_views": "#30",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 134,
       "name": "Bryan Adams",
       "slug": "bryan-adams",
       "spotify_streams": "--",
@@ -1199,7 +1208,7 @@
       "change": 0
     },
     {
-      "rank": 134,
+      "rank": 135,
       "name": "CelineDion",
       "slug": "celinedion",
       "spotify_streams": "--",
@@ -1208,29 +1217,20 @@
       "change": 0
     },
     {
-      "rank": 135,
+      "rank": 136,
       "name": "HEAVY HITTERS GLOBAL",
       "slug": "heavy-hitters-global",
       "spotify_streams": "--",
-      "youtube_views": "#11",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 136,
-      "name": "Arjan Dhillon",
-      "slug": "arjan-dhillon",
-      "spotify_streams": "--",
-      "youtube_views": "#12",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 137,
-      "name": "Panj-aab Records",
-      "slug": "panj-aab-records",
+      "name": "Arjan Dhillon",
+      "slug": "arjan-dhillon",
       "spotify_streams": "--",
-      "youtube_views": "#11",
+      "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -1239,23 +1239,23 @@
       "name": "Bhalwaan",
       "slug": "bhalwaan",
       "spotify_streams": "--",
-      "youtube_views": "#19",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 139,
-      "name": "Fenix Flexin",
-      "slug": "fenix-flexin",
+      "name": "Panj-aab Records",
+      "slug": "panj-aab-records",
       "spotify_streams": "--",
-      "youtube_views": "#3",
+      "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 140,
-      "name": "Dafina Zeqiri",
-      "slug": "dafina-zeqiri",
+      "name": "Fenix Flexin",
+      "slug": "fenix-flexin",
       "spotify_streams": "--",
       "youtube_views": "#4",
       "monthly_listeners": "--",
@@ -1263,69 +1263,78 @@
     },
     {
       "rank": 141,
+      "name": "Dafina Zeqiri",
+      "slug": "dafina-zeqiri",
+      "spotify_streams": "--",
+      "youtube_views": "#5",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 142,
       "name": "AVD Digital",
       "slug": "avd-digital",
+      "spotify_streams": "--",
+      "youtube_views": "#7",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 143,
+      "name": "MEDA",
+      "slug": "meda",
       "spotify_streams": "--",
       "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 142,
-      "name": "MEDA",
-      "slug": "meda",
-      "spotify_streams": "--",
-      "youtube_views": "#9",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 143,
+      "rank": 144,
       "name": "Melinda Ademi",
       "slug": "melinda-ademi",
       "spotify_streams": "--",
-      "youtube_views": "#12",
+      "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 144,
+      "rank": 145,
       "name": "Durim Malaj",
       "slug": "durim-malaj",
+      "spotify_streams": "--",
+      "youtube_views": "#17",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 146,
+      "name": "BM",
+      "slug": "bm",
       "spotify_streams": "--",
       "youtube_views": "#19",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 145,
-      "name": "BM",
-      "slug": "bm",
-      "spotify_streams": "--",
-      "youtube_views": "#21",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 146,
+      "rank": 147,
       "name": "Motrat Mustafa",
       "slug": "motrat-mustafa",
       "spotify_streams": "--",
-      "youtube_views": "#24",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 147,
-      "name": "Willylancien",
-      "slug": "willylancien",
-      "spotify_streams": "--",
-      "youtube_views": "#6",
+      "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 148,
+      "name": "Willylancien",
+      "slug": "willylancien",
+      "spotify_streams": "--",
+      "youtube_views": "#7",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 149,
       "name": "IShowSpeed",
       "slug": "ishowspeed",
       "spotify_streams": "--",
@@ -1334,7 +1343,16 @@
       "change": 0
     },
     {
-      "rank": 149,
+      "rank": 150,
+      "name": "OfficialArdianBujupi",
+      "slug": "officialardianbujupi",
+      "spotify_streams": "--",
+      "youtube_views": "#30",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 151,
       "name": "Jairo Vera TV",
       "slug": "jairo-vera-tv",
       "spotify_streams": "--",
@@ -1343,7 +1361,7 @@
       "change": 0
     },
     {
-      "rank": 150,
+      "rank": 152,
       "name": "AK4:20",
       "slug": "ak420",
       "spotify_streams": "--",
@@ -1352,7 +1370,7 @@
       "change": 0
     },
     {
-      "rank": 151,
+      "rank": 153,
       "name": "ITHAN NY",
       "slug": "ithan-ny",
       "spotify_streams": "--",
@@ -1361,7 +1379,7 @@
       "change": 0
     },
     {
-      "rank": 152,
+      "rank": 154,
       "name": "Cris MJ",
       "slug": "cris-mj",
       "spotify_streams": "--",
@@ -1370,25 +1388,25 @@
       "change": 0
     },
     {
-      "rank": 153,
-      "name": "PalomaMami",
-      "slug": "palomamami",
+      "rank": 155,
+      "name": "Harry Nach",
+      "slug": "harry-nach",
       "spotify_streams": "--",
-      "youtube_views": "#8",
+      "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 154,
-      "name": "Harry Nach",
-      "slug": "harry-nach",
+      "rank": 156,
+      "name": "PalomaMami",
+      "slug": "palomamami",
       "spotify_streams": "--",
       "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 155,
+      "rank": 157,
       "name": "Jairo Vera",
       "slug": "jairo-vera",
       "spotify_streams": "--",
@@ -1397,34 +1415,43 @@
       "change": 0
     },
     {
-      "rank": 156,
-      "name": "Piero 47 Forty-Seven",
-      "slug": "piero-47-forty-seven",
-      "spotify_streams": "--",
-      "youtube_views": "#13",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 157,
+      "rank": 158,
       "name": "Chilanga Banda",
       "slug": "chilanga-banda",
       "spotify_streams": "--",
-      "youtube_views": "#4",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 158,
-      "name": "StarsMusic Chile",
-      "slug": "starsmusic-chile",
-      "spotify_streams": "--",
-      "youtube_views": "#21",
+      "youtube_views": "#3",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 159,
+      "name": "Piero 47 Forty-Seven",
+      "slug": "piero-47-forty-seven",
+      "spotify_streams": "--",
+      "youtube_views": "#14",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 160,
+      "name": "StarsMusic Chile",
+      "slug": "starsmusic-chile",
+      "spotify_streams": "--",
+      "youtube_views": "#20",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 161,
+      "name": "Manuel Turizo",
+      "slug": "manuel-turizo",
+      "spotify_streams": "--",
+      "youtube_views": "#23",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 162,
       "name": "SIEMPRE BLESSD 💙",
       "slug": "siempre-blessd",
       "spotify_streams": "--",
@@ -1433,16 +1460,7 @@
       "change": 0
     },
     {
-      "rank": 160,
-      "name": "Manuel Turizo",
-      "slug": "manuel-turizo",
-      "spotify_streams": "--",
-      "youtube_views": "#28",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 161,
+      "rank": 163,
       "name": "Alex Bueno",
       "slug": "alex-bueno",
       "spotify_streams": "--",
@@ -1451,7 +1469,7 @@
       "change": 0
     },
     {
-      "rank": 162,
+      "rank": 164,
       "name": "BAYRON FIRE",
       "slug": "bayron-fire",
       "spotify_streams": "--",
@@ -1460,7 +1478,7 @@
       "change": 0
     },
     {
-      "rank": 163,
+      "rank": 165,
       "name": "Juanda Caribe",
       "slug": "juanda-caribe",
       "spotify_streams": "--",
@@ -1469,7 +1487,7 @@
       "change": 0
     },
     {
-      "rank": 164,
+      "rank": 166,
       "name": "Pirlo 420",
       "slug": "pirlo-420",
       "spotify_streams": "--",
@@ -1478,16 +1496,16 @@
       "change": 0
     },
     {
-      "rank": 165,
+      "rank": 167,
       "name": "Leroy La L",
       "slug": "leroy-la-l",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 166,
+      "rank": 168,
       "name": "GeezyDee",
       "slug": "geezydee",
       "spotify_streams": "--",
@@ -1496,7 +1514,7 @@
       "change": 0
     },
     {
-      "rank": 167,
+      "rank": 169,
       "name": "Aquarius Music",
       "slug": "aquarius-music",
       "spotify_streams": "--",
@@ -1505,47 +1523,29 @@
       "change": 0
     },
     {
-      "rank": 168,
-      "name": "Love Trip",
-      "slug": "love-trip",
-      "spotify_streams": "--",
-      "youtube_views": "#14",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 169,
+      "rank": 170,
       "name": "Pizza Music",
       "slug": "pizza-music",
       "spotify_streams": "--",
-      "youtube_views": "#19",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 170,
-      "name": "EVRgreenhits",
-      "slug": "evrgreenhits",
-      "spotify_streams": "--",
-      "youtube_views": "#22",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 171,
-      "name": "Jombriel",
-      "slug": "jombriel",
+      "name": "Love Trip",
+      "slug": "love-trip",
       "spotify_streams": "--",
-      "youtube_views": "#12",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 172,
-      "name": "Ritmo Fest",
-      "slug": "ritmo-fest",
+      "name": "Kris R.",
+      "slug": "kris-r",
       "spotify_streams": "--",
-      "youtube_views": "#21",
+      "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
@@ -1554,12 +1554,39 @@
       "name": "Top Squad",
       "slug": "top-squad",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 174,
+      "name": "EVRgreenhits",
+      "slug": "evrgreenhits",
+      "spotify_streams": "--",
+      "youtube_views": "#21",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 175,
+      "name": "Ritmo Fest",
+      "slug": "ritmo-fest",
+      "spotify_streams": "--",
+      "youtube_views": "#21",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 176,
+      "name": "Jombriel",
+      "slug": "jombriel",
+      "spotify_streams": "--",
+      "youtube_views": "#12",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 177,
       "name": "Hard Rico",
       "slug": "hard-rico",
       "spotify_streams": "--",
@@ -1568,7 +1595,7 @@
       "change": 0
     },
     {
-      "rank": 175,
+      "rank": 178,
       "name": "Vesna",
       "slug": "vesna",
       "spotify_streams": "--",
@@ -1577,7 +1604,7 @@
       "change": 0
     },
     {
-      "rank": 176,
+      "rank": 179,
       "name": "EWA FARNA",
       "slug": "ewa-farna",
       "spotify_streams": "--",
@@ -1586,7 +1613,7 @@
       "change": 0
     },
     {
-      "rank": 177,
+      "rank": 180,
       "name": "Ben Cristovao",
       "slug": "ben-cristovao",
       "spotify_streams": "--",
@@ -1595,7 +1622,7 @@
       "change": 0
     },
     {
-      "rank": 178,
+      "rank": 181,
       "name": "Yzomandias",
       "slug": "yzomandias",
       "spotify_streams": "--",
@@ -1604,7 +1631,7 @@
       "change": 0
     },
     {
-      "rank": 179,
+      "rank": 182,
       "name": "Štístko a Poupěnka",
       "slug": "tstko-a-poupnka",
       "spotify_streams": "--",
@@ -1613,7 +1640,7 @@
       "change": 0
     },
     {
-      "rank": 180,
+      "rank": 183,
       "name": "iced out PTK",
       "slug": "iced-out-ptk",
       "spotify_streams": "--",
@@ -1622,16 +1649,16 @@
       "change": 0
     },
     {
-      "rank": 181,
+      "rank": 184,
       "name": "DMS RECORDS",
       "slug": "dms-records",
       "spotify_streams": "--",
-      "youtube_views": "#3",
+      "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 182,
+      "rank": 185,
       "name": "Slavo Gazi",
       "slug": "slavo-gazi",
       "spotify_streams": "--",
@@ -1640,7 +1667,7 @@
       "change": 0
     },
     {
-      "rank": 183,
+      "rank": 186,
       "name": "Martina Pártlová",
       "slug": "martina-prtlov",
       "spotify_streams": "--",
@@ -1649,25 +1676,25 @@
       "change": 0
     },
     {
-      "rank": 184,
+      "rank": 187,
       "name": "Galgan Music",
       "slug": "galgan-music",
       "spotify_streams": "--",
-      "youtube_views": "#2",
+      "youtube_views": "#3",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 185,
+      "rank": 188,
       "name": "Naty Hrychová",
       "slug": "naty-hrychov",
       "spotify_streams": "--",
-      "youtube_views": "#22",
+      "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 186,
+      "rank": 189,
       "name": "BanditTV",
       "slug": "bandittv",
       "spotify_streams": "--",
@@ -1676,7 +1703,7 @@
       "change": 0
     },
     {
-      "rank": 187,
+      "rank": 190,
       "name": "DYK",
       "slug": "dyk",
       "spotify_streams": "--",
@@ -1685,7 +1712,7 @@
       "change": 0
     },
     {
-      "rank": 188,
+      "rank": 191,
       "name": "BIGGBOSS",
       "slug": "biggboss",
       "spotify_streams": "--",
@@ -1694,7 +1721,7 @@
       "change": 0
     },
     {
-      "rank": 189,
+      "rank": 192,
       "name": "Freez247",
       "slug": "freez247",
       "spotify_streams": "--",
@@ -1703,7 +1730,7 @@
       "change": 0
     },
     {
-      "rank": 190,
+      "rank": 193,
       "name": "Separ",
       "slug": "separ",
       "spotify_streams": "--",
@@ -1712,52 +1739,52 @@
       "change": 0
     },
     {
-      "rank": 191,
+      "rank": 194,
       "name": "muccosyoutube",
       "slug": "muccosyoutube",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#14",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 192,
+      "rank": 195,
       "name": "Azadoffiziell",
       "slug": "azadoffiziell",
+      "spotify_streams": "--",
+      "youtube_views": "#19",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 196,
+      "name": "badmómzjay",
+      "slug": "badmmzjay",
+      "spotify_streams": "--",
+      "youtube_views": "#20",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 197,
+      "name": "ICH FIND SCHLAGER TOLL",
+      "slug": "ich-find-schlager-toll",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 193,
-      "name": "badmómzjay",
-      "slug": "badmmzjay",
-      "spotify_streams": "--",
-      "youtube_views": "#22",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 194,
+      "rank": 198,
       "name": "Bonez MC",
       "slug": "bonez-mc",
       "spotify_streams": "--",
-      "youtube_views": "#25",
+      "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 195,
-      "name": "ICH FIND SCHLAGER TOLL",
-      "slug": "ich-find-schlager-toll",
-      "spotify_streams": "--",
-      "youtube_views": "#27",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 196,
+      "rank": 199,
       "name": "Tzanca Uraganu",
       "slug": "tzanca-uraganu",
       "spotify_streams": "--",
@@ -1766,16 +1793,16 @@
       "change": 0
     },
     {
-      "rank": 197,
-      "name": "jujuvierundvierzig",
-      "slug": "jujuvierundvierzig",
+      "rank": 200,
+      "name": "bausashaus",
+      "slug": "bausashaus",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#26",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 198,
+      "rank": 201,
       "name": "Florinel si Ioana",
       "slug": "florinel-si-ioana",
       "spotify_streams": "--",
@@ -1784,7 +1811,25 @@
       "change": 0
     },
     {
-      "rank": 199,
+      "rank": 202,
+      "name": "jujuvierundvierzig",
+      "slug": "jujuvierundvierzig",
+      "spotify_streams": "--",
+      "youtube_views": "#28",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 203,
+      "name": "Mark Forster",
+      "slug": "mark-forster",
+      "spotify_streams": "--",
+      "youtube_views": "#30",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 204,
       "name": "Popsi og Krelle - børnesange for de mindste",
       "slug": "popsi-og-krelle---brnesange-for-de-mindste",
       "spotify_streams": "--",
@@ -1793,7 +1838,7 @@
       "change": 0
     },
     {
-      "rank": 200,
+      "rank": 205,
       "name": "Lamin",
       "slug": "lamin",
       "spotify_streams": "--",
@@ -1802,7 +1847,16 @@
       "change": 0
     },
     {
-      "rank": 201,
+      "rank": 206,
+      "name": "Aphaca",
+      "slug": "aphaca",
+      "spotify_streams": "--",
+      "youtube_views": "#7",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 207,
       "name": "EVAN",
       "slug": "evan",
       "spotify_streams": "--",
@@ -1811,25 +1865,25 @@
       "change": 0
     },
     {
-      "rank": 202,
+      "rank": 208,
       "name": "OliviaRodrigo",
       "slug": "oliviarodrigo",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 203,
+      "rank": 209,
       "name": "ArianaGrande",
       "slug": "arianagrande",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 204,
+      "rank": 210,
       "name": "Ren",
       "slug": "ren",
       "spotify_streams": "--",
@@ -1838,81 +1892,27 @@
       "change": 0
     },
     {
-      "rank": 205,
+      "rank": 211,
       "name": "Madonna",
       "slug": "madonna",
       "spotify_streams": "--",
-      "youtube_views": "#15",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 206,
-      "name": "BABYMONSTER",
-      "slug": "babymonster",
-      "spotify_streams": "--",
-      "youtube_views": "#8",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 207,
-      "name": "Taylor Swift",
-      "slug": "taylor-swift",
-      "spotify_streams": "--",
-      "youtube_views": "#18",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 208,
-      "name": "Electric Callboy",
-      "slug": "electric-callboy",
-      "spotify_streams": "--",
-      "youtube_views": "#19",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 209,
-      "name": "BANGTANTV",
-      "slug": "bangtantv",
-      "spotify_streams": "--",
-      "youtube_views": "#20",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 210,
-      "name": "BTS",
-      "slug": "bts",
-      "spotify_streams": "--",
-      "youtube_views": "#23",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 211,
-      "name": "Tiwinza",
-      "slug": "tiwinza",
-      "spotify_streams": "--",
-      "youtube_views": "#11",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 212,
-      "name": "Sharon La Hechicera",
-      "slug": "sharon-la-hechicera",
+      "name": "BABYMONSTER",
+      "slug": "babymonster",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 213,
-      "name": "Luis Jams",
-      "slug": "luis-jams",
+      "name": "Taylor Swift",
+      "slug": "taylor-swift",
       "spotify_streams": "--",
       "youtube_views": "#19",
       "monthly_listeners": "--",
@@ -1920,51 +1920,105 @@
     },
     {
       "rank": 214,
-      "name": "HectorYTito",
-      "slug": "hectorytito",
+      "name": "Electric Callboy",
+      "slug": "electric-callboy",
       "spotify_streams": "--",
-      "youtube_views": "#22",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 215,
-      "name": "Mix Sabrosura",
-      "slug": "mix-sabrosura",
+      "name": "BANGTANTV",
+      "slug": "bangtantv",
+      "spotify_streams": "--",
+      "youtube_views": "#21",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 216,
+      "name": "BTS",
+      "slug": "bts",
       "spotify_streams": "--",
       "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 216,
-      "name": "LowDrow",
-      "slug": "lowdrow",
-      "spotify_streams": "--",
-      "youtube_views": "#28",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
       "rank": 217,
-      "name": "Infinite Letters",
-      "slug": "infinite-letters",
+      "name": "TopGunn",
+      "slug": "topgunn",
       "spotify_streams": "--",
-      "youtube_views": "#19",
+      "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 218,
-      "name": "Radio Paradise",
-      "slug": "radio-paradise",
+      "name": "Tiwinza",
+      "slug": "tiwinza",
       "spotify_streams": "--",
-      "youtube_views": "#28",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 219,
+      "name": "Sharon La Hechicera",
+      "slug": "sharon-la-hechicera",
+      "spotify_streams": "--",
+      "youtube_views": "#17",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 220,
+      "name": "Luis Jams",
+      "slug": "luis-jams",
+      "spotify_streams": "--",
+      "youtube_views": "#20",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 221,
+      "name": "New Jerson",
+      "slug": "new-jerson",
+      "spotify_streams": "--",
+      "youtube_views": "#22",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 222,
+      "name": "HectorYTito",
+      "slug": "hectorytito",
+      "spotify_streams": "--",
+      "youtube_views": "#25",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 223,
+      "name": "Infinite Letters",
+      "slug": "infinite-letters",
+      "spotify_streams": "--",
+      "youtube_views": "#18",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 224,
+      "name": "Radio Paradise",
+      "slug": "radio-paradise",
+      "spotify_streams": "--",
+      "youtube_views": "#25",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 225,
       "name": "Alhassan adel",
       "slug": "alhassan-adel",
       "spotify_streams": "--",
@@ -1973,7 +2027,7 @@
       "change": 0
     },
     {
-      "rank": 220,
+      "rank": 226,
       "name": "ZIAD ZAZA",
       "slug": "ziad-zaza",
       "spotify_streams": "--",
@@ -1982,7 +2036,7 @@
       "change": 0
     },
     {
-      "rank": 221,
+      "rank": 227,
       "name": "كيمو الديب - kimo ElDeeb",
       "slug": "kimo-eldeeb",
       "spotify_streams": "--",
@@ -1991,7 +2045,7 @@
       "change": 0
     },
     {
-      "rank": 222,
+      "rank": 228,
       "name": "Ramy Gamal",
       "slug": "ramy-gamal",
       "spotify_streams": "--",
@@ -2000,7 +2054,7 @@
       "change": 0
     },
     {
-      "rank": 223,
+      "rank": 229,
       "name": "Mahmoud El Esseily",
       "slug": "mahmoud-el-esseily",
       "spotify_streams": "--",
@@ -2009,16 +2063,16 @@
       "change": 0
     },
     {
-      "rank": 224,
+      "rank": 230,
       "name": "Aysel Khaled",
       "slug": "aysel-khaled",
       "spotify_streams": "--",
-      "youtube_views": "#8",
+      "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 225,
+      "rank": 231,
       "name": "احمد موزه - Ahmed Moza",
       "slug": "ahmed-moza",
       "spotify_streams": "--",
@@ -2027,7 +2081,7 @@
       "change": 0
     },
     {
-      "rank": 226,
+      "rank": 232,
       "name": "Ramy Sabry",
       "slug": "ramy-sabry",
       "spotify_streams": "--",
@@ -2036,25 +2090,25 @@
       "change": 0
     },
     {
-      "rank": 227,
-      "name": "Mahmoud El Lithy",
-      "slug": "mahmoud-el-lithy",
+      "rank": 233,
+      "name": "Hamo ELMorshdy - حمو المرشدي",
+      "slug": "hamo-elmorshdy",
       "spotify_streams": "--",
       "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 228,
-      "name": "Hamo ELMorshdy - حمو المرشدي",
-      "slug": "hamo-elmorshdy",
+      "rank": 234,
+      "name": "Mahmoud El Lithy",
+      "slug": "mahmoud-el-lithy",
       "spotify_streams": "--",
       "youtube_views": "#17",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 229,
+      "rank": 235,
       "name": "Nabil FM",
       "slug": "nabil-fm",
       "spotify_streams": "--",
@@ -2063,43 +2117,34 @@
       "change": 0
     },
     {
-      "rank": 230,
+      "rank": 236,
       "name": "Houda",
       "slug": "houda",
+      "spotify_streams": "--",
+      "youtube_views": "#22",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 237,
+      "name": "رضا البحراوي لايف - Reda Elbahrawy Live",
+      "slug": "reda-elbahrawy-live",
       "spotify_streams": "--",
       "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 231,
-      "name": "رضا البحراوي لايف - Reda Elbahrawy Live",
-      "slug": "reda-elbahrawy-live",
-      "spotify_streams": "--",
-      "youtube_views": "#24",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 232,
+      "rank": 238,
       "name": "Karizma Production",
       "slug": "karizma-production",
       "spotify_streams": "--",
-      "youtube_views": "#25",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 233,
-      "name": "Bahaa Sultan",
-      "slug": "bahaa-sultan",
-      "spotify_streams": "--",
       "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 234,
+      "rank": 239,
       "name": "Release",
       "slug": "release",
       "spotify_streams": "--",
@@ -2108,7 +2153,16 @@
       "change": 0
     },
     {
-      "rank": 235,
+      "rank": 240,
+      "name": "Bahaa Sultan",
+      "slug": "bahaa-sultan",
+      "spotify_streams": "--",
+      "youtube_views": "#26",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 241,
       "name": "TAG",
       "slug": "tag",
       "spotify_streams": "--",
@@ -2117,7 +2171,7 @@
       "change": 0
     },
     {
-      "rank": 236,
+      "rank": 242,
       "name": "Fronti",
       "slug": "fronti",
       "spotify_streams": "--",
@@ -2126,7 +2180,7 @@
       "change": 0
     },
     {
-      "rank": 237,
+      "rank": 243,
       "name": "PtaZeta",
       "slug": "ptazeta",
       "spotify_streams": "--",
@@ -2135,7 +2189,7 @@
       "change": 0
     },
     {
-      "rank": 238,
+      "rank": 244,
       "name": "AnaMenaMusic",
       "slug": "anamenamusic",
       "spotify_streams": "--",
@@ -2144,7 +2198,7 @@
       "change": 0
     },
     {
-      "rank": 239,
+      "rank": 245,
       "name": "RVFV",
       "slug": "rvfv",
       "spotify_streams": "--",
@@ -2153,25 +2207,25 @@
       "change": 0
     },
     {
-      "rank": 240,
+      "rank": 246,
       "name": "Keyviem",
       "slug": "keyviem",
       "spotify_streams": "--",
-      "youtube_views": "#11",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 241,
+      "rank": 247,
       "name": "Alejandro del Sur",
       "slug": "alejandro-del-sur",
       "spotify_streams": "--",
-      "youtube_views": "#12",
+      "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 242,
+      "rank": 248,
       "name": "Camin",
       "slug": "camin",
       "spotify_streams": "--",
@@ -2180,7 +2234,7 @@
       "change": 0
     },
     {
-      "rank": 243,
+      "rank": 249,
       "name": "Skinny Flex",
       "slug": "skinny-flex",
       "spotify_streams": "--",
@@ -2189,7 +2243,7 @@
       "change": 0
     },
     {
-      "rank": 244,
+      "rank": 250,
       "name": "Chivateando x world",
       "slug": "chivateando-x-world",
       "spotify_streams": "--",
@@ -2198,43 +2252,43 @@
       "change": 0
     },
     {
-      "rank": 245,
-      "name": "Sara de las Chuches",
-      "slug": "sara-de-las-chuches",
+      "rank": 251,
+      "name": "Liderj",
+      "slug": "liderj",
       "spotify_streams": "--",
-      "youtube_views": "#27",
+      "youtube_views": "#26",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 246,
-      "name": "Liderj",
-      "slug": "liderj",
+      "rank": 252,
+      "name": "Sara de las Chuches",
+      "slug": "sara-de-las-chuches",
       "spotify_streams": "--",
       "youtube_views": "#28",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 247,
-      "name": "CRISTISIGHETE",
-      "slug": "cristisighete",
+      "rank": 253,
+      "name": "l0rna",
+      "slug": "l0rna",
       "spotify_streams": "--",
       "youtube_views": "#29",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 248,
-      "name": "Javi Medina",
-      "slug": "javi-medina",
+      "rank": 254,
+      "name": "CRISTISIGHETE",
+      "slug": "cristisighete",
       "spotify_streams": "--",
       "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 249,
+      "rank": 255,
       "name": "Jami Faltin",
       "slug": "jami-faltin",
       "spotify_streams": "--",
@@ -2243,7 +2297,7 @@
       "change": 0
     },
     {
-      "rank": 250,
+      "rank": 256,
       "name": "Portion Boys",
       "slug": "portion-boys",
       "spotify_streams": "--",
@@ -2252,7 +2306,7 @@
       "change": 0
     },
     {
-      "rank": 251,
+      "rank": 257,
       "name": "Pasi ja Anssi Music",
       "slug": "pasi-ja-anssi-music",
       "spotify_streams": "--",
@@ -2261,7 +2315,7 @@
       "change": 0
     },
     {
-      "rank": 252,
+      "rank": 258,
       "name": "KAJ",
       "slug": "kaj",
       "spotify_streams": "--",
@@ -2270,7 +2324,7 @@
       "change": 0
     },
     {
-      "rank": 253,
+      "rank": 259,
       "name": "Isac Elliot",
       "slug": "isac-elliot",
       "spotify_streams": "--",
@@ -2279,16 +2333,16 @@
       "change": 0
     },
     {
-      "rank": 254,
+      "rank": 260,
       "name": "Jokrates",
       "slug": "jokrates",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 255,
+      "rank": 261,
       "name": "ModernTalking",
       "slug": "moderntalking",
       "spotify_streams": "--",
@@ -2297,7 +2351,7 @@
       "change": 0
     },
     {
-      "rank": 256,
+      "rank": 262,
       "name": "Vet Pillows",
       "slug": "vet-pillows",
       "spotify_streams": "--",
@@ -2306,7 +2360,7 @@
       "change": 0
     },
     {
-      "rank": 257,
+      "rank": 263,
       "name": "KERZA",
       "slug": "kerza",
       "spotify_streams": "--",
@@ -2315,7 +2369,16 @@
       "change": 0
     },
     {
-      "rank": 258,
+      "rank": 264,
+      "name": "Tommy Johansson",
+      "slug": "tommy-johansson",
+      "spotify_streams": "--",
+      "youtube_views": "#12",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 265,
       "name": "SMTOWN",
       "slug": "smtown",
       "spotify_streams": "--",
@@ -2324,25 +2387,25 @@
       "change": 0
     },
     {
-      "rank": 259,
+      "rank": 266,
       "name": "i-dle (아이들)",
       "slug": "i-dle",
       "spotify_streams": "--",
-      "youtube_views": "#20",
+      "youtube_views": "#19",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 260,
+      "rank": 267,
       "name": "Motionless In White",
       "slug": "motionless-in-white",
       "spotify_streams": "--",
-      "youtube_views": "#24",
+      "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 261,
+      "rank": 268,
       "name": "PhoebeBridgers",
       "slug": "phoebebridgers",
       "spotify_streams": "--",
@@ -2351,7 +2414,7 @@
       "change": 0
     },
     {
-      "rank": 262,
+      "rank": 269,
       "name": "Tayc",
       "slug": "tayc",
       "spotify_streams": "--",
@@ -2360,7 +2423,7 @@
       "change": 0
     },
     {
-      "rank": 263,
+      "rank": 270,
       "name": "KOFS",
       "slug": "kofs",
       "spotify_streams": "--",
@@ -2369,34 +2432,34 @@
       "change": 0
     },
     {
-      "rank": 264,
-      "name": "Vegedream",
-      "slug": "vegedream",
+      "rank": 271,
+      "name": "Bouss Officiel",
+      "slug": "bouss-officiel",
       "spotify_streams": "--",
       "youtube_views": "#4",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 265,
-      "name": "La Mano 1.9 - Officiel",
-      "slug": "la-mano-19---officiel",
+      "rank": 272,
+      "name": "Vegedream",
+      "slug": "vegedream",
       "spotify_streams": "--",
       "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 266,
-      "name": "Bouss Officiel",
-      "slug": "bouss-officiel",
+      "rank": 273,
+      "name": "La Mano 1.9 - Officiel",
+      "slug": "la-mano-19---officiel",
       "spotify_streams": "--",
-      "youtube_views": "#7",
+      "youtube_views": "#6",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 267,
+      "rank": 274,
       "name": "Djadja & Dinaz",
       "slug": "djadja-dinaz",
       "spotify_streams": "--",
@@ -2405,7 +2468,7 @@
       "change": 0
     },
     {
-      "rank": 268,
+      "rank": 275,
       "name": "Ziak C.C",
       "slug": "ziak-cc",
       "spotify_streams": "--",
@@ -2414,7 +2477,7 @@
       "change": 0
     },
     {
-      "rank": 269,
+      "rank": 276,
       "name": "Zaho Officiel",
       "slug": "zaho-officiel",
       "spotify_streams": "--",
@@ -2423,7 +2486,7 @@
       "change": 0
     },
     {
-      "rank": 270,
+      "rank": 277,
       "name": "Niska Officiel",
       "slug": "niska-officiel",
       "spotify_streams": "--",
@@ -2432,7 +2495,16 @@
       "change": 0
     },
     {
-      "rank": 271,
+      "rank": 278,
+      "name": "Chems Officiel",
+      "slug": "chems-officiel",
+      "spotify_streams": "--",
+      "youtube_views": "#13",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 279,
       "name": "Nèg' Marrons",
       "slug": "ng-marrons",
       "spotify_streams": "--",
@@ -2441,115 +2513,106 @@
       "change": 0
     },
     {
-      "rank": 272,
+      "rank": 280,
       "name": "4.4.2",
       "slug": "442",
-      "spotify_streams": "--",
-      "youtube_views": "#15",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 273,
-      "name": "Stay Retro",
-      "slug": "stay-retro",
       "spotify_streams": "--",
       "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 274,
-      "name": "Chems Officiel",
-      "slug": "chems-officiel",
+      "rank": 281,
+      "name": "Stay Retro",
+      "slug": "stay-retro",
       "spotify_streams": "--",
       "youtube_views": "#17",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 275,
-      "name": "TVLM",
-      "slug": "tvlm",
+      "rank": 282,
+      "name": "Timar",
+      "slug": "timar",
       "spotify_streams": "--",
       "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 276,
-      "name": "Timar",
-      "slug": "timar",
+      "rank": 283,
+      "name": "TVLM",
+      "slug": "tvlm",
       "spotify_streams": "--",
       "youtube_views": "#19",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 277,
-      "name": "Lagui",
-      "slug": "lagui",
+      "rank": 284,
+      "name": "Anas Officiel",
+      "slug": "anas-officiel",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 278,
-      "name": "Anas Officiel",
-      "slug": "anas-officiel",
+      "rank": 285,
+      "name": "B•YAMSON",
+      "slug": "byamson",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 279,
-      "name": "B•YAMSON",
-      "slug": "byamson",
+      "rank": 286,
+      "name": "Lagui",
+      "slug": "lagui",
       "spotify_streams": "--",
       "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 280,
-      "name": "Anyme023",
-      "slug": "anyme023",
+      "rank": 287,
+      "name": "Kader Japonais Officiel",
+      "slug": "kader-japonais-officiel",
       "spotify_streams": "--",
       "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 281,
-      "name": "THEODORA",
-      "slug": "theodora",
+      "rank": 288,
+      "name": "Anyme023",
+      "slug": "anyme023",
       "spotify_streams": "--",
       "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 282,
-      "name": "Kader Japonais Officiel",
-      "slug": "kader-japonais-officiel",
+      "rank": 289,
+      "name": "THEODORA",
+      "slug": "theodora",
       "spotify_streams": "--",
-      "youtube_views": "#26",
+      "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 283,
-      "name": "Lesram",
-      "slug": "lesram",
+      "rank": 290,
+      "name": "ISK Officiel",
+      "slug": "isk-officiel",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#27",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 284,
+      "rank": 291,
       "name": "Doz",
       "slug": "doz",
       "spotify_streams": "--",
@@ -2558,7 +2621,7 @@
       "change": 0
     },
     {
-      "rank": 285,
+      "rank": 292,
       "name": "Catch",
       "slug": "catch",
       "spotify_streams": "--",
@@ -2567,7 +2630,7 @@
       "change": 0
     },
     {
-      "rank": 286,
+      "rank": 293,
       "name": "KayMuni",
       "slug": "kaymuni",
       "spotify_streams": "--",
@@ -2576,7 +2639,7 @@
       "change": 0
     },
     {
-      "rank": 287,
+      "rank": 294,
       "name": "Aitch",
       "slug": "aitch",
       "spotify_streams": "--",
@@ -2585,25 +2648,25 @@
       "change": 0
     },
     {
-      "rank": 288,
+      "rank": 295,
       "name": "Mazza_l20",
       "slug": "mazza-l20",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 289,
+      "rank": 296,
       "name": "Billy Gillies",
       "slug": "billy-gillies",
       "spotify_streams": "--",
-      "youtube_views": "#14",
+      "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 290,
+      "rank": 297,
       "name": "BangersOnly",
       "slug": "bangersonly",
       "spotify_streams": "--",
@@ -2612,16 +2675,16 @@
       "change": 0
     },
     {
-      "rank": 291,
+      "rank": 298,
       "name": "J Hus",
       "slug": "j-hus",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 292,
+      "rank": 299,
       "name": "Jorja Smith",
       "slug": "jorja-smith",
       "spotify_streams": "--",
@@ -2630,7 +2693,7 @@
       "change": 0
     },
     {
-      "rank": 293,
+      "rank": 300,
       "name": "theofficialGloRilla",
       "slug": "theofficialglorilla",
       "spotify_streams": "--",
@@ -2639,25 +2702,25 @@
       "change": 0
     },
     {
-      "rank": 294,
+      "rank": 301,
       "name": "RodWave",
       "slug": "rodwave",
       "spotify_streams": "--",
-      "youtube_views": "#5",
+      "youtube_views": "#6",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 295,
+      "rank": 302,
       "name": "Rylo Rodriguez",
       "slug": "rylo-rodriguez",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 296,
+      "rank": 303,
       "name": "Future",
       "slug": "future",
       "spotify_streams": "--",
@@ -2666,25 +2729,25 @@
       "change": 0
     },
     {
-      "rank": 297,
+      "rank": 304,
       "name": "Tom MacDonald",
       "slug": "tom-macdonald",
+      "spotify_streams": "--",
+      "youtube_views": "#12",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 305,
+      "name": "Never Broke Again",
+      "slug": "never-broke-again",
       "spotify_streams": "--",
       "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 298,
-      "name": "Toby Fox",
-      "slug": "toby-fox",
-      "spotify_streams": "--",
-      "youtube_views": "#14",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 299,
+      "rank": 306,
       "name": "Natanael Cano",
       "slug": "natanael-cano",
       "spotify_streams": "--",
@@ -2693,25 +2756,16 @@
       "change": 0
     },
     {
-      "rank": 300,
-      "name": "Trim",
-      "slug": "trim",
+      "rank": 307,
+      "name": "Toby Fox",
+      "slug": "toby-fox",
       "spotify_streams": "--",
-      "youtube_views": "#17",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 301,
-      "name": "Never Broke Again",
-      "slug": "never-broke-again",
-      "spotify_streams": "--",
-      "youtube_views": "#18",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 302,
+      "rank": 308,
       "name": "Keller MX",
       "slug": "keller-mx",
       "spotify_streams": "--",
@@ -2720,52 +2774,61 @@
       "change": 0
     },
     {
-      "rank": 303,
-      "name": "Topoppgen",
-      "slug": "topoppgen",
+      "rank": 309,
+      "name": "Trim",
+      "slug": "trim",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 304,
-      "name": "Rio Da Yung OG",
-      "slug": "rio-da-yung-og",
-      "spotify_streams": "--",
-      "youtube_views": "#22",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 305,
-      "name": "YoungBoy Never Broke Again",
-      "slug": "youngboy-never-broke-again",
+      "rank": 310,
+      "name": "BossMan Dlow",
+      "slug": "bossman-dlow",
       "spotify_streams": "--",
       "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 306,
-      "name": "BossMan Dlow",
-      "slug": "bossman-dlow",
+      "rank": 311,
+      "name": "Topoppgen",
+      "slug": "topoppgen",
       "spotify_streams": "--",
-      "youtube_views": "#27",
+      "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 307,
-      "name": "Rico Nasty",
-      "slug": "rico-nasty",
+      "rank": 312,
+      "name": "Rio Da Yung OG",
+      "slug": "rio-da-yung-og",
+      "spotify_streams": "--",
+      "youtube_views": "#25",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 313,
+      "name": "YoungBoy Never Broke Again",
+      "slug": "youngboy-never-broke-again",
+      "spotify_streams": "--",
+      "youtube_views": "#26",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 314,
+      "name": "Ken Carson",
+      "slug": "ken-carson",
       "spotify_streams": "--",
       "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 308,
+      "rank": 315,
       "name": "Michael Touratzidis TV",
       "slug": "michael-touratzidis-tv",
       "spotify_streams": "--",
@@ -2774,7 +2837,7 @@
       "change": 0
     },
     {
-      "rank": 309,
+      "rank": 316,
       "name": "Nikos Oikonomopoulos",
       "slug": "nikos-oikonomopoulos",
       "spotify_streams": "--",
@@ -2783,7 +2846,7 @@
       "change": 0
     },
     {
-      "rank": 310,
+      "rank": 317,
       "name": "SNIK",
       "slug": "snik",
       "spotify_streams": "--",
@@ -2792,7 +2855,7 @@
       "change": 0
     },
     {
-      "rank": 311,
+      "rank": 318,
       "name": "PanikRecordsTube",
       "slug": "panikrecordstube",
       "spotify_streams": "--",
@@ -2801,7 +2864,7 @@
       "change": 0
     },
     {
-      "rank": 312,
+      "rank": 319,
       "name": "Light",
       "slug": "light",
       "spotify_streams": "--",
@@ -2810,7 +2873,7 @@
       "change": 0
     },
     {
-      "rank": 313,
+      "rank": 320,
       "name": "Sonar Music Greece",
       "slug": "sonar-music-greece",
       "spotify_streams": "--",
@@ -2819,7 +2882,7 @@
       "change": 0
     },
     {
-      "rank": 314,
+      "rank": 321,
       "name": "Mariglen Hazizaj",
       "slug": "mariglen-hazizaj",
       "spotify_streams": "--",
@@ -2828,7 +2891,7 @@
       "change": 0
     },
     {
-      "rank": 315,
+      "rank": 322,
       "name": "Eduart Dema",
       "slug": "eduart-dema",
       "spotify_streams": "--",
@@ -2837,7 +2900,7 @@
       "change": 0
     },
     {
-      "rank": 316,
+      "rank": 323,
       "name": "PONI",
       "slug": "poni",
       "spotify_streams": "--",
@@ -2846,7 +2909,7 @@
       "change": 0
     },
     {
-      "rank": 317,
+      "rank": 324,
       "name": "Bruno Revolt",
       "slug": "bruno-revolt",
       "spotify_streams": "--",
@@ -2855,7 +2918,7 @@
       "change": 0
     },
     {
-      "rank": 318,
+      "rank": 325,
       "name": "OffBeat Records",
       "slug": "offbeat-records",
       "spotify_streams": "--",
@@ -2864,7 +2927,7 @@
       "change": 0
     },
     {
-      "rank": 319,
+      "rank": 326,
       "name": "YlliBakaMusic",
       "slug": "yllibakamusic",
       "spotify_streams": "--",
@@ -2873,16 +2936,16 @@
       "change": 0
     },
     {
-      "rank": 320,
+      "rank": 327,
       "name": "Κωνσταντίνος Αργυρός Tv",
       "slug": "tv",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 321,
+      "rank": 328,
       "name": "Lena Zevgara",
       "slug": "lena-zevgara",
       "spotify_streams": "--",
@@ -2891,7 +2954,7 @@
       "change": 0
     },
     {
-      "rank": 322,
+      "rank": 329,
       "name": "Ria Ellinidou",
       "slug": "ria-ellinidou",
       "spotify_streams": "--",
@@ -2900,7 +2963,7 @@
       "change": 0
     },
     {
-      "rank": 323,
+      "rank": 330,
       "name": "Maya Alickaj",
       "slug": "maya-alickaj",
       "spotify_streams": "--",
@@ -2909,7 +2972,7 @@
       "change": 0
     },
     {
-      "rank": 324,
+      "rank": 331,
       "name": "林家謙 Terence Lam",
       "slug": "terence-lam",
       "spotify_streams": "--",
@@ -2918,7 +2981,7 @@
       "change": 0
     },
     {
-      "rank": 325,
+      "rank": 332,
       "name": "Gareth.T",
       "slug": "garetht",
       "spotify_streams": "--",
@@ -2927,7 +2990,7 @@
       "change": 0
     },
     {
-      "rank": 326,
+      "rank": 333,
       "name": "Zpecial",
       "slug": "zpecial",
       "spotify_streams": "--",
@@ -2936,25 +2999,25 @@
       "change": 0
     },
     {
-      "rank": 327,
-      "name": "Golden.Jerlau",
-      "slug": "goldenjerlau",
+      "rank": 334,
+      "name": "MC Cheung Tinfu",
+      "slug": "mc-cheung-tinfu",
       "spotify_streams": "--",
       "youtube_views": "#4",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 328,
-      "name": "MC Cheung Tinfu",
-      "slug": "mc-cheung-tinfu",
+      "rank": 335,
+      "name": "Golden.Jerlau",
+      "slug": "goldenjerlau",
       "spotify_streams": "--",
       "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 329,
+      "rank": 336,
       "name": "MIRROR",
       "slug": "mirror",
       "spotify_streams": "--",
@@ -2963,7 +3026,7 @@
       "change": 0
     },
     {
-      "rank": 330,
+      "rank": 337,
       "name": "TVB Music Group",
       "slug": "tvb-music-group",
       "spotify_streams": "--",
@@ -2972,25 +3035,25 @@
       "change": 0
     },
     {
-      "rank": 331,
-      "name": "Ian 陳卓賢",
-      "slug": "ian",
+      "rank": 338,
+      "name": "Kiri T",
+      "slug": "kiri-t",
       "spotify_streams": "--",
       "youtube_views": "#14",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 332,
-      "name": "Kiri T",
-      "slug": "kiri-t",
+      "rank": 339,
+      "name": "Ian 陳卓賢",
+      "slug": "ian",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 333,
+      "rank": 340,
       "name": "CY Chan",
       "slug": "cy-chan",
       "spotify_streams": "--",
@@ -2999,7 +3062,7 @@
       "change": 0
     },
     {
-      "rank": 334,
+      "rank": 341,
       "name": "Kaho Hung",
       "slug": "kaho-hung",
       "spotify_streams": "--",
@@ -3008,7 +3071,7 @@
       "change": 0
     },
     {
-      "rank": 335,
+      "rank": 342,
       "name": "YOASOBI",
       "slug": "yoasobi",
       "spotify_streams": "--",
@@ -3017,7 +3080,7 @@
       "change": 0
     },
     {
-      "rank": 336,
+      "rank": 343,
       "name": "譚詠麟 Alan Tam",
       "slug": "alan-tam",
       "spotify_streams": "--",
@@ -3026,25 +3089,7 @@
       "change": 0
     },
     {
-      "rank": 337,
-      "name": "TAEYEON",
-      "slug": "taeyeon",
-      "spotify_streams": "--",
-      "youtube_views": "#1",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 338,
-      "name": "Gin Lee李幸倪",
-      "slug": "gin-lee",
-      "spotify_streams": "--",
-      "youtube_views": "#26",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 339,
+      "rank": 344,
       "name": "DIOR 大穎",
       "slug": "dior",
       "spotify_streams": "--",
@@ -3053,16 +3098,34 @@
       "change": 0
     },
     {
-      "rank": 340,
-      "name": "Joey Thye",
-      "slug": "joey-thye",
+      "rank": 345,
+      "name": "TAEYEON",
+      "slug": "taeyeon",
       "spotify_streams": "--",
-      "youtube_views": "#29",
+      "youtube_views": "#1",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 341,
+      "rank": 346,
+      "name": "Gin Lee李幸倪",
+      "slug": "gin-lee",
+      "spotify_streams": "--",
+      "youtube_views": "#27",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 347,
+      "name": "Joey Thye",
+      "slug": "joey-thye",
+      "spotify_streams": "--",
+      "youtube_views": "#28",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 348,
       "name": "Jakov Jozinovic",
       "slug": "jakov-jozinovic",
       "spotify_streams": "--",
@@ -3071,7 +3134,7 @@
       "change": 0
     },
     {
-      "rank": 342,
+      "rank": 349,
       "name": "Generacija Zed",
       "slug": "generacija-zed",
       "spotify_streams": "--",
@@ -3080,7 +3143,7 @@
       "change": 0
     },
     {
-      "rank": 343,
+      "rank": 350,
       "name": "BakaPrase",
       "slug": "bakaprase",
       "spotify_streams": "--",
@@ -3089,16 +3152,16 @@
       "change": 0
     },
     {
-      "rank": 344,
+      "rank": 351,
       "name": "devito anonymo",
       "slug": "devito-anonymo",
       "spotify_streams": "--",
-      "youtube_views": "#5",
+      "youtube_views": "#6",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 345,
+      "rank": 352,
       "name": "Jelena Rozga",
       "slug": "jelena-rozga",
       "spotify_streams": "--",
@@ -3107,7 +3170,7 @@
       "change": 0
     },
     {
-      "rank": 346,
+      "rank": 353,
       "name": "Desingerica",
       "slug": "desingerica",
       "spotify_streams": "--",
@@ -3116,7 +3179,7 @@
       "change": 0
     },
     {
-      "rank": 347,
+      "rank": 354,
       "name": "LELEK",
       "slug": "lelek",
       "spotify_streams": "--",
@@ -3125,16 +3188,16 @@
       "change": 0
     },
     {
-      "rank": 348,
+      "rank": 355,
       "name": "Grupa Magazin",
       "slug": "grupa-magazin",
       "spotify_streams": "--",
-      "youtube_views": "#14",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 349,
+      "rank": 356,
       "name": "SevenSky",
       "slug": "sevensky",
       "spotify_streams": "--",
@@ -3143,7 +3206,7 @@
       "change": 0
     },
     {
-      "rank": 350,
+      "rank": 357,
       "name": "AnoNymo",
       "slug": "anonymo",
       "spotify_streams": "--",
@@ -3152,7 +3215,7 @@
       "change": 0
     },
     {
-      "rank": 351,
+      "rank": 358,
       "name": "Eva Illusions",
       "slug": "eva-illusions",
       "spotify_streams": "--",
@@ -3161,16 +3224,16 @@
       "change": 0
     },
     {
-      "rank": 352,
+      "rank": 359,
       "name": "Crni Cerak TV",
       "slug": "crni-cerak-tv",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#17",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 353,
+      "rank": 360,
       "name": "Matija Cvek",
       "slug": "matija-cvek",
       "spotify_streams": "--",
@@ -3179,7 +3242,7 @@
       "change": 0
     },
     {
-      "rank": 354,
+      "rank": 361,
       "name": "Albino",
       "slug": "albino",
       "spotify_streams": "--",
@@ -3188,7 +3251,7 @@
       "change": 0
     },
     {
-      "rank": 355,
+      "rank": 362,
       "name": "Marko Perković Thompson",
       "slug": "marko-perkovi-thompson",
       "spotify_streams": "--",
@@ -3197,7 +3260,7 @@
       "change": 0
     },
     {
-      "rank": 356,
+      "rank": 363,
       "name": "Senorita Music",
       "slug": "senorita-music",
       "spotify_streams": "--",
@@ -3206,7 +3269,7 @@
       "change": 0
     },
     {
-      "rank": 357,
+      "rank": 364,
       "name": "fake DJ",
       "slug": "fake-dj",
       "spotify_streams": "--",
@@ -3215,7 +3278,16 @@
       "change": 0
     },
     {
-      "rank": 358,
+      "rank": 365,
+      "name": "NADIA",
+      "slug": "nadia",
+      "spotify_streams": "--",
+      "youtube_views": "#25",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 366,
       "name": "KKevin",
       "slug": "kkevin",
       "spotify_streams": "--",
@@ -3224,34 +3296,34 @@
       "change": 0
     },
     {
-      "rank": 359,
-      "name": "BSW",
-      "slug": "bsw",
+      "rank": 367,
+      "name": "VALMAR",
+      "slug": "valmar",
       "spotify_streams": "--",
       "youtube_views": "#2",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 360,
-      "name": "Alex Studio Production",
-      "slug": "alex-studio-production",
+      "rank": 368,
+      "name": "BSW",
+      "slug": "bsw",
       "spotify_streams": "--",
       "youtube_views": "#3",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 361,
-      "name": "VALMAR",
-      "slug": "valmar",
+      "rank": 369,
+      "name": "Alex Studio Production",
+      "slug": "alex-studio-production",
       "spotify_streams": "--",
       "youtube_views": "#4",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 362,
+      "rank": 370,
       "name": "Döndi Duó & Roli",
       "slug": "dndi-du-roli",
       "spotify_streams": "--",
@@ -3260,7 +3332,7 @@
       "change": 0
     },
     {
-      "rank": 363,
+      "rank": 371,
       "name": "BÓDI GUSZTI",
       "slug": "bdi-guszti",
       "spotify_streams": "--",
@@ -3269,7 +3341,7 @@
       "change": 0
     },
     {
-      "rank": 364,
+      "rank": 372,
       "name": "T. Danny",
       "slug": "t-danny",
       "spotify_streams": "--",
@@ -3278,7 +3350,7 @@
       "change": 0
     },
     {
-      "rank": 365,
+      "rank": 373,
       "name": "mollywood",
       "slug": "mollywood",
       "spotify_streams": "--",
@@ -3287,7 +3359,7 @@
       "change": 0
     },
     {
-      "rank": 366,
+      "rank": 374,
       "name": "Honeybeast",
       "slug": "honeybeast",
       "spotify_streams": "--",
@@ -3296,7 +3368,7 @@
       "change": 0
     },
     {
-      "rank": 367,
+      "rank": 375,
       "name": "Carson Coma",
       "slug": "carson-coma",
       "spotify_streams": "--",
@@ -3305,7 +3377,7 @@
       "change": 0
     },
     {
-      "rank": 368,
+      "rank": 376,
       "name": "Astro Music",
       "slug": "astro-music",
       "spotify_streams": "--",
@@ -3314,7 +3386,7 @@
       "change": 0
     },
     {
-      "rank": 369,
+      "rank": 377,
       "name": "Mihályfi Luca",
       "slug": "mihlyfi-luca",
       "spotify_streams": "--",
@@ -3323,7 +3395,7 @@
       "change": 0
     },
     {
-      "rank": 370,
+      "rank": 378,
       "name": "Lejla",
       "slug": "lejla",
       "spotify_streams": "--",
@@ -3332,7 +3404,7 @@
       "change": 0
     },
     {
-      "rank": 371,
+      "rank": 379,
       "name": "Fluor Tomi",
       "slug": "fluor-tomi",
       "spotify_streams": "--",
@@ -3341,7 +3413,7 @@
       "change": 0
     },
     {
-      "rank": 372,
+      "rank": 380,
       "name": "Kowalsky Meg a Vega",
       "slug": "kowalsky-meg-a-vega",
       "spotify_streams": "--",
@@ -3350,7 +3422,7 @@
       "change": 0
     },
     {
-      "rank": 373,
+      "rank": 381,
       "name": "ANONYM",
       "slug": "anonym",
       "spotify_streams": "--",
@@ -3359,16 +3431,16 @@
       "change": 0
     },
     {
-      "rank": 374,
+      "rank": 382,
       "name": "Dony",
       "slug": "dony",
       "spotify_streams": "--",
-      "youtube_views": "#17",
+      "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 375,
+      "rank": 383,
       "name": "4TRESS",
       "slug": "4tress",
       "spotify_streams": "--",
@@ -3377,34 +3449,34 @@
       "change": 0
     },
     {
-      "rank": 376,
-      "name": "Desh",
-      "slug": "desh",
+      "rank": 384,
+      "name": "Kharagoz",
+      "slug": "kharagoz",
       "spotify_streams": "--",
       "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 377,
-      "name": "Kharagoz",
-      "slug": "kharagoz",
+      "rank": 385,
+      "name": "Desh",
+      "slug": "desh",
       "spotify_streams": "--",
       "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 378,
+      "rank": 386,
       "name": "STOSLIV",
       "slug": "stosliv",
       "spotify_streams": "--",
-      "youtube_views": "#24",
+      "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 379,
+      "rank": 387,
       "name": "Follow The Flow",
       "slug": "follow-the-flow",
       "spotify_streams": "--",
@@ -3413,16 +3485,16 @@
       "change": 0
     },
     {
-      "rank": 380,
+      "rank": 388,
       "name": "DJ TYNA",
       "slug": "dj-tyna",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#17",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 381,
+      "rank": 389,
       "name": "Tulus",
       "slug": "tulus",
       "spotify_streams": "--",
@@ -3431,7 +3503,7 @@
       "change": 0
     },
     {
-      "rank": 382,
+      "rank": 390,
       "name": "3D Entertainment",
       "slug": "3d-entertainment",
       "spotify_streams": "--",
@@ -3440,7 +3512,7 @@
       "change": 0
     },
     {
-      "rank": 383,
+      "rank": 391,
       "name": "Melodi Junior",
       "slug": "melodi-junior",
       "spotify_streams": "--",
@@ -3449,7 +3521,7 @@
       "change": 0
     },
     {
-      "rank": 384,
+      "rank": 392,
       "name": "SIMPATIK MUSIC",
       "slug": "simpatik-music",
       "spotify_streams": "--",
@@ -3458,7 +3530,7 @@
       "change": 0
     },
     {
-      "rank": 385,
+      "rank": 393,
       "name": "poplover",
       "slug": "poplover",
       "spotify_streams": "--",
@@ -3467,7 +3539,7 @@
       "change": 0
     },
     {
-      "rank": 386,
+      "rank": 394,
       "name": "7clouds",
       "slug": "7clouds",
       "spotify_streams": "--",
@@ -3476,7 +3548,7 @@
       "change": 0
     },
     {
-      "rank": 387,
+      "rank": 395,
       "name": "DC. PRODUCTION",
       "slug": "dc-production",
       "spotify_streams": "--",
@@ -3485,7 +3557,7 @@
       "change": 0
     },
     {
-      "rank": 388,
+      "rank": 396,
       "name": "Beta Creative",
       "slug": "beta-creative",
       "spotify_streams": "--",
@@ -3494,7 +3566,7 @@
       "change": 0
     },
     {
-      "rank": 389,
+      "rank": 397,
       "name": "YURA YUNITA",
       "slug": "yura-yunita",
       "spotify_streams": "--",
@@ -3503,7 +3575,7 @@
       "change": 0
     },
     {
-      "rank": 390,
+      "rank": 398,
       "name": "Awan",
       "slug": "awan",
       "spotify_streams": "--",
@@ -3512,7 +3584,7 @@
       "change": 0
     },
     {
-      "rank": 391,
+      "rank": 399,
       "name": "Berkah Talenta",
       "slug": "berkah-talenta",
       "spotify_streams": "--",
@@ -3521,7 +3593,7 @@
       "change": 0
     },
     {
-      "rank": 392,
+      "rank": 400,
       "name": "Emotion Entertainment",
       "slug": "emotion-entertainment",
       "spotify_streams": "--",
@@ -3530,7 +3602,7 @@
       "change": 0
     },
     {
-      "rank": 393,
+      "rank": 401,
       "name": "Alex Crichton",
       "slug": "alex-crichton",
       "spotify_streams": "--",
@@ -3539,7 +3611,16 @@
       "change": 0
     },
     {
-      "rank": 394,
+      "rank": 402,
+      "name": "Minang AI Studio",
+      "slug": "minang-ai-studio",
+      "spotify_streams": "--",
+      "youtube_views": "#17",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 403,
       "name": "Aura Country",
       "slug": "aura-country",
       "spotify_streams": "--",
@@ -3548,16 +3629,7 @@
       "change": 0
     },
     {
-      "rank": 395,
-      "name": "Vian DTM",
-      "slug": "vian-dtm",
-      "spotify_streams": "--",
-      "youtube_views": "#18",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 396,
+      "rank": 404,
       "name": "SANGITA MUSIC PRO",
       "slug": "sangita-music-pro",
       "spotify_streams": "--",
@@ -3566,34 +3638,34 @@
       "change": 0
     },
     {
-      "rank": 397,
-      "name": "Rony Parulian",
-      "slug": "rony-parulian",
+      "rank": 405,
+      "name": "Vian DTM",
+      "slug": "vian-dtm",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 398,
-      "name": "Minang AI Studio",
-      "slug": "minang-ai-studio",
+      "rank": 406,
+      "name": "ChikaMimiHD",
+      "slug": "chikamimihd",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 399,
-      "name": "ChikaMimiHD",
-      "slug": "chikamimihd",
+      "rank": 407,
+      "name": "Rony Parulian",
+      "slug": "rony-parulian",
       "spotify_streams": "--",
-      "youtube_views": "#24",
+      "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 400,
+      "rank": 408,
       "name": "Keisya Levronka Channel",
       "slug": "keisya-levronka-channel",
       "spotify_streams": "--",
@@ -3602,7 +3674,7 @@
       "change": 0
     },
     {
-      "rank": 401,
+      "rank": 409,
       "name": "RC Music",
       "slug": "rc-music",
       "spotify_streams": "--",
@@ -3611,16 +3683,7 @@
       "change": 0
     },
     {
-      "rank": 402,
-      "name": "Maman Fvndy Rmx",
-      "slug": "maman-fvndy-rmx",
-      "spotify_streams": "--",
-      "youtube_views": "#30",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 403,
+      "rank": 410,
       "name": "Metallica",
       "slug": "metallica",
       "spotify_streams": "--",
@@ -3629,7 +3692,7 @@
       "change": 0
     },
     {
-      "rank": 404,
+      "rank": 411,
       "name": "BBCRadio1",
       "slug": "bbcradio1",
       "spotify_streams": "--",
@@ -3638,7 +3701,7 @@
       "change": 0
     },
     {
-      "rank": 405,
+      "rank": 412,
       "name": "Kingfishr",
       "slug": "kingfishr",
       "spotify_streams": "--",
@@ -3647,7 +3710,7 @@
       "change": 0
     },
     {
-      "rank": 406,
+      "rank": 413,
       "name": "StillDepths",
       "slug": "stilldepths",
       "spotify_streams": "--",
@@ -3656,7 +3719,7 @@
       "change": 0
     },
     {
-      "rank": 407,
+      "rank": 414,
       "name": "KatyPerry",
       "slug": "katyperry",
       "spotify_streams": "--",
@@ -3665,7 +3728,7 @@
       "change": 0
     },
     {
-      "rank": 408,
+      "rank": 415,
       "name": "December10",
       "slug": "december10",
       "spotify_streams": "--",
@@ -3674,88 +3737,88 @@
       "change": 0
     },
     {
-      "rank": 409,
+      "rank": 416,
       "name": "עדן חסון - Eden Hason",
       "slug": "eden-hason",
       "spotify_streams": "--",
-      "youtube_views": "#8",
+      "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 410,
+      "rank": 417,
       "name": "דיקלה - הערוץ הרשמי - Dikla",
       "slug": "dikla",
-      "spotify_streams": "--",
-      "youtube_views": "#11",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 411,
-      "name": "נועם בתן - Noam Bettan",
-      "slug": "noam-bettan",
       "spotify_streams": "--",
       "youtube_views": "#12",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 412,
-      "name": "מושיק עפיה הערוץ הרשמי Moshik Afia",
-      "slug": "moshik-afia",
+      "rank": 418,
+      "name": "נועם בתן - Noam Bettan",
+      "slug": "noam-bettan",
       "spotify_streams": "--",
       "youtube_views": "#13",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 413,
+      "rank": 419,
+      "name": "מושיק עפיה הערוץ הרשמי Moshik Afia",
+      "slug": "moshik-afia",
+      "spotify_streams": "--",
+      "youtube_views": "#14",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 420,
       "name": "Ness Ve Stilla",
       "slug": "ness-ve-stilla",
       "spotify_streams": "--",
-      "youtube_views": "#15",
+      "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 414,
+      "rank": 421,
       "name": "Wael Kfoury | وائل كفوري",
       "slug": "wael-kfoury",
       "spotify_streams": "--",
-      "youtube_views": "#17",
+      "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 415,
+      "rank": 422,
       "name": "Noa Kirel",
       "slug": "noa-kirel",
       "spotify_streams": "--",
-      "youtube_views": "#20",
+      "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 416,
+      "rank": 423,
       "name": "פאר טסי Peer Tasi",
       "slug": "peer-tasi",
-      "spotify_streams": "--",
-      "youtube_views": "#24",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 417,
-      "name": "Odeya",
-      "slug": "odeya",
       "spotify_streams": "--",
       "youtube_views": "#25",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 418,
+      "rank": 424,
+      "name": "Odeya",
+      "slug": "odeya",
+      "spotify_streams": "--",
+      "youtube_views": "#26",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 425,
       "name": "TUL8TE",
       "slug": "tul8te",
       "spotify_streams": "--",
@@ -3764,16 +3827,7 @@
       "change": 0
     },
     {
-      "rank": 419,
-      "name": "Osher Cohen Music",
-      "slug": "osher-cohen-music",
-      "spotify_streams": "--",
-      "youtube_views": "#30",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 420,
+      "rank": 426,
       "name": "IRUMUDI KATTU",
       "slug": "irumudi-kattu",
       "spotify_streams": "--",
@@ -3782,7 +3836,7 @@
       "change": 0
     },
     {
-      "rank": 421,
+      "rank": 427,
       "name": "Maheshwari Films Bhojpuri",
       "slug": "maheshwari-films-bhojpuri",
       "spotify_streams": "--",
@@ -3791,7 +3845,7 @@
       "change": 0
     },
     {
-      "rank": 422,
+      "rank": 428,
       "name": "GMJ - Global Music Junction - Bhojpuri",
       "slug": "gmj---global-music-junction---bhojpuri",
       "spotify_streams": "--",
@@ -3800,52 +3854,52 @@
       "change": 0
     },
     {
-      "rank": 423,
-      "name": "Swastik Records",
-      "slug": "swastik-records",
+      "rank": 429,
+      "name": "FARHAR ENTERTAINMENT",
+      "slug": "farhar-entertainment",
       "spotify_streams": "--",
       "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 424,
-      "name": "FARHAR ENTERTAINMENT",
-      "slug": "farhar-entertainment",
+      "rank": 430,
+      "name": "Swastik Records",
+      "slug": "swastik-records",
       "spotify_streams": "--",
       "youtube_views": "#16",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 425,
+      "rank": 431,
       "name": "Aarvik Entertainment",
       "slug": "aarvik-entertainment",
       "spotify_streams": "--",
-      "youtube_views": "#19",
+      "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 426,
-      "name": "Jaizeey Music",
-      "slug": "jaizeey-music",
+      "rank": 432,
+      "name": "Pop Chartbusters",
+      "slug": "pop-chartbusters",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 427,
-      "name": "Pop Chartbusters",
-      "slug": "pop-chartbusters",
+      "rank": 433,
+      "name": "Jaizeey Music",
+      "slug": "jaizeey-music",
       "spotify_streams": "--",
       "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 428,
+      "rank": 434,
       "name": "Sati Music",
       "slug": "sati-music",
       "spotify_streams": "--",
@@ -3854,7 +3908,7 @@
       "change": 0
     },
     {
-      "rank": 429,
+      "rank": 435,
       "name": "Hit Music Global",
       "slug": "hit-music-global",
       "spotify_streams": "--",
@@ -3863,7 +3917,7 @@
       "change": 0
     },
     {
-      "rank": 430,
+      "rank": 436,
       "name": "Number 1 Records",
       "slug": "number-1-records",
       "spotify_streams": "--",
@@ -3872,7 +3926,7 @@
       "change": 0
     },
     {
-      "rank": 431,
+      "rank": 437,
       "name": "Aashish Yadav Entertainment",
       "slug": "aashish-yadav-entertainment",
       "spotify_streams": "--",
@@ -3881,7 +3935,7 @@
       "change": 0
     },
     {
-      "rank": 432,
+      "rank": 438,
       "name": "Lutt Le Gaya",
       "slug": "lutt-le-gaya",
       "spotify_streams": "--",
@@ -3890,7 +3944,7 @@
       "change": 0
     },
     {
-      "rank": 433,
+      "rank": 439,
       "name": "T-Series Telugu",
       "slug": "t-series-telugu",
       "spotify_streams": "--",
@@ -3899,7 +3953,7 @@
       "change": 0
     },
     {
-      "rank": 434,
+      "rank": 440,
       "name": "Raushan Rohi Entertainment",
       "slug": "raushan-rohi-entertainment",
       "spotify_streams": "--",
@@ -3908,7 +3962,7 @@
       "change": 0
     },
     {
-      "rank": 435,
+      "rank": 441,
       "name": "Dipinto",
       "slug": "dipinto",
       "spotify_streams": "--",
@@ -3917,7 +3971,7 @@
       "change": 0
     },
     {
-      "rank": 436,
+      "rank": 442,
       "name": "IL GHOST",
       "slug": "il-ghost",
       "spotify_streams": "--",
@@ -3926,7 +3980,7 @@
       "change": 0
     },
     {
-      "rank": 437,
+      "rank": 443,
       "name": "Fabio Rovazzi",
       "slug": "fabio-rovazzi",
       "spotify_streams": "--",
@@ -3935,7 +3989,7 @@
       "change": 0
     },
     {
-      "rank": 438,
+      "rank": 444,
       "name": "emma",
       "slug": "emma",
       "spotify_streams": "--",
@@ -3944,16 +3998,16 @@
       "change": 0
     },
     {
-      "rank": 439,
+      "rank": 445,
       "name": "Anna",
       "slug": "anna",
       "spotify_streams": "--",
-      "youtube_views": "#9",
+      "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 440,
+      "rank": 446,
       "name": "Periferic",
       "slug": "periferic",
       "spotify_streams": "--",
@@ -3962,7 +4016,7 @@
       "change": 0
     },
     {
-      "rank": 441,
+      "rank": 447,
       "name": "Ultimo Channel",
       "slug": "ultimo-channel",
       "spotify_streams": "--",
@@ -3971,43 +4025,52 @@
       "change": 0
     },
     {
-      "rank": 442,
+      "rank": 448,
       "name": "Angelina Mango",
       "slug": "angelina-mango",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#15",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 443,
+      "rank": 449,
       "name": "GiannaNannini",
       "slug": "giannanannini",
+      "spotify_streams": "--",
+      "youtube_views": "#19",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 450,
+      "name": "Olsi Bylyku",
+      "slug": "olsi-bylyku",
       "spotify_streams": "--",
       "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 444,
-      "name": "Olsi Bylyku",
-      "slug": "olsi-bylyku",
+      "rank": 451,
+      "name": "Niky Savage",
+      "slug": "niky-savage",
       "spotify_streams": "--",
       "youtube_views": "#23",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 445,
-      "name": "Niky Savage",
-      "slug": "niky-savage",
+      "rank": 452,
+      "name": "Italian Chaos",
+      "slug": "italian-chaos",
       "spotify_streams": "--",
-      "youtube_views": "#24",
+      "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 446,
+      "rank": 453,
       "name": "BE:FIRST",
       "slug": "befirst",
       "spotify_streams": "--",
@@ -4016,7 +4079,7 @@
       "change": 0
     },
     {
-      "rank": 447,
+      "rank": 454,
       "name": "EBiDAN",
       "slug": "ebidan",
       "spotify_streams": "--",
@@ -4025,7 +4088,7 @@
       "change": 0
     },
     {
-      "rank": 448,
+      "rank": 455,
       "name": "M!LK",
       "slug": "mlk",
       "spotify_streams": "--",
@@ -4034,7 +4097,7 @@
       "change": 0
     },
     {
-      "rank": 449,
+      "rank": 456,
       "name": "THE FIRST TAKE",
       "slug": "the-first-take",
       "spotify_streams": "--",
@@ -4043,160 +4106,151 @@
       "change": 0
     },
     {
-      "rank": 450,
-      "name": "timelesz [タイムレス]",
-      "slug": "timelesz",
+      "rank": 457,
+      "name": "MAZZEL",
+      "slug": "mazzel",
       "spotify_streams": "--",
       "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 451,
-      "name": "iLiFE!【あいらいふ】",
-      "slug": "ilife",
+      "rank": 458,
+      "name": "timelesz [タイムレス]",
+      "slug": "timelesz",
       "spotify_streams": "--",
       "youtube_views": "#7",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 452,
-      "name": "Mrs. GREEN APPLE",
-      "slug": "mrs-green-apple",
+      "rank": 459,
+      "name": "NiziU",
+      "slug": "niziu",
       "spotify_streams": "--",
       "youtube_views": "#8",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 453,
-      "name": "HANA",
-      "slug": "hana",
+      "rank": 460,
+      "name": "Snow Man",
+      "slug": "snow-man",
       "spotify_streams": "--",
       "youtube_views": "#9",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 454,
-      "name": "Kenshi Yonezu  米津玄師",
-      "slug": "kenshi-yonezu",
+      "rank": 461,
+      "name": "iLiFE!【あいらいふ】",
+      "slug": "ilife",
       "spotify_streams": "--",
       "youtube_views": "#10",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 455,
-      "name": "MAZZEL",
-      "slug": "mazzel",
+      "rank": 462,
+      "name": "HANA",
+      "slug": "hana",
       "spotify_streams": "--",
       "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 456,
-      "name": "乃木坂46 OFFICIAL YouTube CHANNEL",
-      "slug": "46-official-youtube-channel",
+      "rank": 463,
+      "name": "Mrs. GREEN APPLE",
+      "slug": "mrs-green-apple",
       "spotify_streams": "--",
       "youtube_views": "#12",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 457,
+      "rank": 464,
+      "name": "Kenshi Yonezu  米津玄師",
+      "slug": "kenshi-yonezu",
+      "spotify_streams": "--",
+      "youtube_views": "#13",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 465,
+      "name": "乃木坂46 OFFICIAL YouTube CHANNEL",
+      "slug": "46-official-youtube-channel",
+      "spotify_streams": "--",
+      "youtube_views": "#15",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 466,
       "name": "Yorushika",
       "slug": "yorushika",
       "spotify_streams": "--",
-      "youtube_views": "#17",
+      "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 458,
-      "name": "Hikaru Utada",
-      "slug": "hikaru-utada",
-      "spotify_streams": "--",
-      "youtube_views": "#19",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 459,
+      "rank": 467,
       "name": "EBiDAN Ebisu Gakuen Boys Club",
       "slug": "ebidan-ebisu-gakuen-boys-club",
-      "spotify_streams": "--",
-      "youtube_views": "#20",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 460,
-      "name": "SixTONES",
-      "slug": "sixtones",
       "spotify_streams": "--",
       "youtube_views": "#21",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 461,
-      "name": "緋八マナ / Hibachi Mana【にじさんじ】",
-      "slug": "hibachi-mana",
+      "rank": 468,
+      "name": "Hikaru Utada",
+      "slug": "hikaru-utada",
+      "spotify_streams": "--",
+      "youtube_views": "#22",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 469,
+      "name": "SixTONES",
+      "slug": "sixtones",
       "spotify_streams": "--",
       "youtube_views": "#24",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 462,
-      "name": "Pretty Chuu 公式チャンネル",
-      "slug": "pretty-chuu",
-      "spotify_streams": "--",
-      "youtube_views": "#26",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 463,
-      "name": "Chogakusei",
-      "slug": "chogakusei",
+      "rank": 470,
+      "name": "緋八マナ / Hibachi Mana【にじさんじ】",
+      "slug": "hibachi-mana",
       "spotify_streams": "--",
       "youtube_views": "#27",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 464,
-      "name": "IS:SUE",
-      "slug": "issue",
-      "spotify_streams": "--",
-      "youtube_views": "#28",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 465,
-      "name": "菅田将暉 Official Channel",
-      "slug": "official-channel",
+      "rank": 471,
+      "name": "Pretty Chuu 公式チャンネル",
+      "slug": "pretty-chuu",
       "spotify_streams": "--",
       "youtube_views": "#29",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 466,
-      "name": "AKINA NAKAMORI",
-      "slug": "akina-nakamori",
+      "rank": 472,
+      "name": "Chogakusei",
+      "slug": "chogakusei",
       "spotify_streams": "--",
       "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 467,
+      "rank": 473,
       "name": "Hearts2Hearts",
       "slug": "hearts2hearts",
       "spotify_streams": "--",
@@ -4205,7 +4259,7 @@
       "change": 0
     },
     {
-      "rank": 468,
+      "rank": 474,
       "name": "ATEEZ",
       "slug": "ateez",
       "spotify_streams": "--",
@@ -4214,25 +4268,25 @@
       "change": 0
     },
     {
-      "rank": 469,
-      "name": "DK",
-      "slug": "dk",
+      "rank": 475,
+      "name": "10CM",
+      "slug": "10cm",
       "spotify_streams": "--",
       "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 470,
-      "name": "10CM",
-      "slug": "10cm",
+      "rank": 476,
+      "name": "DK",
+      "slug": "dk",
       "spotify_streams": "--",
       "youtube_views": "#6",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 471,
+      "rank": 477,
       "name": "Ha Yea Song",
       "slug": "ha-yea-song",
       "spotify_streams": "--",
@@ -4241,7 +4295,7 @@
       "change": 0
     },
     {
-      "rank": 472,
+      "rank": 478,
       "name": "KYOE",
       "slug": "kyoe",
       "spotify_streams": "--",
@@ -4250,7 +4304,7 @@
       "change": 0
     },
     {
-      "rank": 473,
+      "rank": 479,
       "name": "Jin Ah Kwon",
       "slug": "jin-ah-kwon",
       "spotify_streams": "--",
@@ -4259,7 +4313,7 @@
       "change": 0
     },
     {
-      "rank": 474,
+      "rank": 480,
       "name": "Chilloop",
       "slug": "chilloop",
       "spotify_streams": "--",
@@ -4268,34 +4322,34 @@
       "change": 0
     },
     {
-      "rank": 475,
-      "name": "Baek A Yeon",
-      "slug": "baek-a-yeon",
+      "rank": 481,
+      "name": "THE 8",
+      "slug": "the-8",
       "spotify_streams": "--",
       "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 476,
-      "name": "THE 8",
-      "slug": "the-8",
+      "rank": 482,
+      "name": "Baek A Yeon",
+      "slug": "baek-a-yeon",
       "spotify_streams": "--",
       "youtube_views": "#12",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 477,
+      "rank": 483,
       "name": "1theK (원더케이)",
       "slug": "1thek",
       "spotify_streams": "--",
-      "youtube_views": "#13",
+      "youtube_views": "#14",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 478,
+      "rank": 484,
       "name": "NCT WISH",
       "slug": "nct-wish",
       "spotify_streams": "--",
@@ -4304,43 +4358,43 @@
       "change": 0
     },
     {
-      "rank": 479,
+      "rank": 485,
       "name": "December",
       "slug": "december",
       "spotify_streams": "--",
-      "youtube_views": "#16",
+      "youtube_views": "#17",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 480,
-      "name": "MUSIC&NEW 뮤직앤뉴",
-      "slug": "musicnew",
+      "rank": 486,
+      "name": "Zia",
+      "slug": "zia",
       "spotify_streams": "--",
       "youtube_views": "#18",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 481,
-      "name": "PATEKO",
-      "slug": "pateko",
+      "rank": 487,
+      "name": "MUSIC&NEW 뮤직앤뉴",
+      "slug": "musicnew",
       "spotify_streams": "--",
       "youtube_views": "#19",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 482,
-      "name": "Zia",
-      "slug": "zia",
+      "rank": 488,
+      "name": "PATEKO",
+      "slug": "pateko",
       "spotify_streams": "--",
       "youtube_views": "#20",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 483,
+      "rank": 489,
       "name": "Silica Gel",
       "slug": "silica-gel",
       "spotify_streams": "--",
@@ -4349,16 +4403,16 @@
       "change": 0
     },
     {
-      "rank": 484,
+      "rank": 490,
       "name": "Seo InGuk",
       "slug": "seo-inguk",
       "spotify_streams": "--",
-      "youtube_views": "#23",
+      "youtube_views": "#22",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 485,
+      "rank": 491,
       "name": "THORNAPPLE",
       "slug": "thornapple",
       "spotify_streams": "--",
@@ -4367,7 +4421,7 @@
       "change": 0
     },
     {
-      "rank": 486,
+      "rank": 492,
       "name": "HYNN",
       "slug": "hynn",
       "spotify_streams": "--",
@@ -4376,43 +4430,52 @@
       "change": 0
     },
     {
-      "rank": 487,
-      "name": "POW",
-      "slug": "pow",
+      "rank": 493,
+      "name": "Layone",
+      "slug": "layone",
       "spotify_streams": "--",
       "youtube_views": "#26",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 488,
-      "name": "Layone",
-      "slug": "layone",
+      "rank": 494,
+      "name": "POW",
+      "slug": "pow",
       "spotify_streams": "--",
       "youtube_views": "#27",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 489,
-      "name": "Shane",
-      "slug": "shane",
+      "rank": 495,
+      "name": "아샤트리 AshaTree",
+      "slug": "ashatree",
       "spotify_streams": "--",
       "youtube_views": "#28",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 490,
-      "name": "아샤트리 AshaTree",
-      "slug": "ashatree",
+      "rank": 496,
+      "name": "Shin Ye Young",
+      "slug": "shin-ye-young",
+      "spotify_streams": "--",
+      "youtube_views": "#29",
+      "monthly_listeners": "--",
+      "change": 0
+    },
+    {
+      "rank": 497,
+      "name": "Shane",
+      "slug": "shane",
       "spotify_streams": "--",
       "youtube_views": "#30",
       "monthly_listeners": "--",
       "change": 0
     },
     {
-      "rank": 491,
+      "rank": 498,
       "name": "Grupo Firme",
       "slug": "grupo-firme",
       "spotify_streams": "--",
@@ -4421,83 +4484,20 @@
       "change": 0
     },
     {
-      "rank": 492,
+      "rank": 499,
       "name": "Yuridia",
       "slug": "yuridia",
       "spotify_streams": "--",
-      "youtube_views": "#6",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 493,
-      "name": "Alligator Lyrics",
-      "slug": "alligator-lyrics",
-      "spotify_streams": "--",
-      "youtube_views": "#11",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 494,
-      "name": "MUSIC VIP",
-      "slug": "music-vip",
-      "spotify_streams": "--",
-      "youtube_views": "#13",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 495,
-      "name": "Calle 24",
-      "slug": "calle-24",
-      "spotify_streams": "--",
-      "youtube_views": "#14",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 496,
-      "name": "Efecto Elegante",
-      "slug": "efecto-elegante",
-      "spotify_streams": "--",
-      "youtube_views": "#15",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 497,
-      "name": "SabroSón",
-      "slug": "sabrosn",
-      "spotify_streams": "--",
-      "youtube_views": "#16",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 498,
-      "name": "JORGE CEA",
-      "slug": "jorge-cea",
-      "spotify_streams": "--",
-      "youtube_views": "#20",
-      "monthly_listeners": "--",
-      "change": 0
-    },
-    {
-      "rank": 499,
-      "name": "ElDeLaTinta",
-      "slug": "eldelatinta",
-      "spotify_streams": "--",
-      "youtube_views": "#25",
+      "youtube_views": "#5",
       "monthly_listeners": "--",
       "change": 0
     },
     {
       "rank": 500,
-      "name": "LosRehenes",
-      "slug": "losrehenes",
+      "name": "Alligator Lyrics",
+      "slug": "alligator-lyrics",
       "spotify_streams": "--",
-      "youtube_views": "#27",
+      "youtube_views": "#11",
       "monthly_listeners": "--",
       "change": 0
     }

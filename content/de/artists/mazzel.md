@@ -2,7 +2,7 @@
 title: "MAZZEL"
 slug: "mazzel"
 type: "artists"
-image: "https://i.ytimg.com/vi/76lNhpUKrEc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B0-OaM9fmOs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

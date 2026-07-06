@@ -2,7 +2,7 @@
 title: "Aphaca"
 slug: "aphaca"
 type: "artists"
-image: "https://i.ytimg.com/vi/lJDyJdSy2L8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HBukBJZ1cD4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

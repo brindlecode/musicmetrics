@@ -2,7 +2,7 @@
 title: "New Jerson"
 slug: "new-jerson"
 type: "artists"
-image: "https://i.ytimg.com/vi/dy_fGUWixSw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HjkTbjxWrm8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
