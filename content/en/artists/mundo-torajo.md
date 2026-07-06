@@ -2,7 +2,7 @@
 title: "Mundo Torajo"
 slug: "mundo-torajo"
 type: "artists"
-image: "https://i.ytimg.com/vi/O9GxqrbSk9M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pUwXO9_3quE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

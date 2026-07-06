@@ -2,7 +2,7 @@
 title: "Euphoric."
 slug: "euphoric"
 type: "artists"
-image: "https://i.ytimg.com/vi/9ze57LRtj0A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/O3vrBCNP6Ac/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

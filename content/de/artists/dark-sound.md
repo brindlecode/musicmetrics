@@ -2,7 +2,7 @@
 title: "DARK-SOUND"
 slug: "dark-sound"
 type: "artists"
-image: "https://i.ytimg.com/vi/HzQchqaPoRM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LV-FEaOpiX4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
