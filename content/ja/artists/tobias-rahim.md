@@ -2,7 +2,7 @@
 title: "Tobias Rahim"
 slug: "tobias-rahim"
 type: "artists"
-image: "https://i.ytimg.com/vi/7gOgF1cV7Pw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TyxbM14o1zk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

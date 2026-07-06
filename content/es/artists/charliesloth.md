@@ -2,7 +2,7 @@
 title: "CharlieSloth"
 slug: "charliesloth"
 type: "artists"
-image: "https://i.ytimg.com/vi/b39EYhJXTe8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pMDVrprUe4s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
