@@ -2,7 +2,7 @@
 title: "R&B Refreshed"
 slug: "rb-refreshed"
 type: "artists"
-image: "https://i.ytimg.com/vi/oBMG70grj1E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wzWgaBT9qcM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

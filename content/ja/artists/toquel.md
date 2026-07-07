@@ -1,11 +1,11 @@
 ---
-title: "Toquel"
+title: "TOQUEL"
 slug: "toquel"
 type: "artists"
-image: "https://i.ytimg.com/vi/wn_-vS_ybdg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SFAbknw7fqY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Toquel streaming statistics, chart positions and analytics across youtube"
+description: "TOQUEL streaming statistics, chart positions and analytics across youtube"
 ---
