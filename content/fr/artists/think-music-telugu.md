@@ -2,7 +2,7 @@
 title: "Think Music Telugu"
 slug: "think-music-telugu"
 type: "artists"
-image: "https://i.ytimg.com/vi/iJ1fXeDSKXY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GIp0pKovoA4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

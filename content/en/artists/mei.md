@@ -2,7 +2,7 @@
 title: "ME:I"
 slug: "mei"
 type: "artists"
-image: "https://i.ytimg.com/vi/4Q3OSgceGvQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ouF70vuL6pg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
