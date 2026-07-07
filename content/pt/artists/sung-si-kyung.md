@@ -1,11 +1,11 @@
 ---
-title: "Sung Si Kyung"
+title: "성시경 SUNG SI KYUNG"
 slug: "sung-si-kyung"
 type: "artists"
-image: "https://i.ytimg.com/vi/y-uTieocI0U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VhmQ1GL66GI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Sung Si Kyung streaming statistics, chart positions and analytics across youtube"
+description: "성시경 SUNG SI KYUNG streaming statistics, chart positions and analytics across youtube"
 ---
