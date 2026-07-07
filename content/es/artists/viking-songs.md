@@ -2,7 +2,7 @@
 title: "Viking Songs"
 slug: "viking-songs"
 type: "artists"
-image: "https://i.ytimg.com/vi/yLdU0Ivocxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QK6kKnqYTXs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

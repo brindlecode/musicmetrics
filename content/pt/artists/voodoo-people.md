@@ -2,7 +2,7 @@
 title: "VOODOO PEOPLE"
 slug: "voodoo-people"
 type: "artists"
-image: "https://i.ytimg.com/vi/DSGUXjHIbAc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Xp3Mkw12sqw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

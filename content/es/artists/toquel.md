@@ -2,7 +2,7 @@
 title: "TOQUEL"
 slug: "toquel"
 type: "artists"
-image: "https://i.ytimg.com/vi/SFAbknw7fqY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dGJsUBE9J60/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
