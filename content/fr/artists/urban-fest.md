@@ -2,7 +2,7 @@
 title: "Urban Fest"
 slug: "urban-fest"
 type: "artists"
-image: "https://i.ytimg.com/vi/WL4oxoOYaDQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bRnFgIooiNI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
