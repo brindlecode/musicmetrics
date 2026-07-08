@@ -2,7 +2,7 @@
 title: "TADA LABELS"
 slug: "tada-labels"
 type: "artists"
-image: "https://i.ytimg.com/vi/_p0OsgBRMdc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/s8hvMaO83E8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

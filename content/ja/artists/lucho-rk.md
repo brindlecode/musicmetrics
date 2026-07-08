@@ -2,7 +2,7 @@
 title: "Lucho RK"
 slug: "lucho-rk"
 type: "artists"
-image: "https://i.ytimg.com/vi/7RaYGxThdb4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oW1AhnZM-t0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

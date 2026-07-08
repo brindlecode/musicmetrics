@@ -2,7 +2,7 @@
 title: "MADE IN BLKN"
 slug: "made-in-blkn"
 type: "artists"
-image: "https://i.ytimg.com/vi/pxuXls1p23M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gs6049akeVM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

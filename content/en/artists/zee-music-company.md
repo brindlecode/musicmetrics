@@ -2,7 +2,7 @@
 title: "Zee Music Company"
 slug: "zee-music-company"
 type: "artists"
-image: "https://i.ytimg.com/vi/6lgtBd8mFEc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h1kihH0l8iQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
