@@ -2,7 +2,7 @@
 title: "Aura Country"
 slug: "aura-country"
 type: "artists"
-image: "https://i.ytimg.com/vi/f5VRS6AjkU8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Dl3VFmJnC4E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "YTB Fatt"
 slug: "ytb-fatt"
 type: "artists"
-image: "https://i.ytimg.com/vi/XSVe1g6SCXw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HbRJ0K69XOw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
