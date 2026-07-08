@@ -2,7 +2,7 @@
 title: "MAGUZINHO"
 slug: "maguzinho"
 type: "artists"
-image: "https://i.ytimg.com/vi/F10ciww_YrM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LvnZmiTtIZs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

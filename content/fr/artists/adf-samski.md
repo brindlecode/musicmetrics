@@ -2,7 +2,7 @@
 title: "ADF Samski"
 slug: "adf-samski"
 type: "artists"
-image: "https://i.ytimg.com/vi/5nU-IhE-8LE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/haovO42oB-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
