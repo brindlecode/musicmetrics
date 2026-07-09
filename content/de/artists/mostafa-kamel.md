@@ -2,7 +2,7 @@
 title: "Mostafa Kamel"
 slug: "mostafa-kamel"
 type: "artists"
-image: "https://i.ytimg.com/vi/6os1D6w9ATA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FPl9GP5Gxs0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

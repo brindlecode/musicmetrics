@@ -2,7 +2,7 @@
 title: "DIDO UZ"
 slug: "dido-uz"
 type: "artists"
-image: "https://i.ytimg.com/vi/4iAKa5PSU_8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Bu_8JmoOWBs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
