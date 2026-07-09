@@ -2,7 +2,7 @@
 title: "LowDrow"
 slug: "lowdrow"
 type: "artists"
-image: "https://i.ytimg.com/vi/JwyF3s0n8k0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JmTniEkZmmQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Die WBL"
 slug: "die-wbl"
 type: "artists"
-image: "https://i.ytimg.com/vi/8kSc7MynDns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ddbiQuG9pXc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "DZSÚDLÓ"
 slug: "dzsdl"
 type: "artists"
-image: "https://i.ytimg.com/vi/FbO611NEU2U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-CghMLtaL5E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

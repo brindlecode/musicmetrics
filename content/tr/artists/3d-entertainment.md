@@ -2,7 +2,7 @@
 title: "3D Entertainment"
 slug: "3d-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/d33wWC0ltcA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/L6HTApN-DoM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
