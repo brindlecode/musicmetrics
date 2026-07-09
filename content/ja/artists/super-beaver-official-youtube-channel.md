@@ -2,7 +2,7 @@
 title: "SUPER BEAVER official YouTube channel"
 slug: "super-beaver-official-youtube-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/HSBpUhff51o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sDt8iZI9sm0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

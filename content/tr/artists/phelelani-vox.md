@@ -2,7 +2,7 @@
 title: "Phelelani Vox"
 slug: "phelelani-vox"
 type: "artists"
-image: "https://i.ytimg.com/vi/biYvtcG7YyM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FXo53_PmKZ0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

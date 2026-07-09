@@ -2,7 +2,7 @@
 title: "Raushan Rohi Entertainment"
 slug: "raushan-rohi-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/LzyAj6Q2b0w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W6ekzrtQBlY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
