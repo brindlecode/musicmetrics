@@ -2,7 +2,7 @@
 title: "BM"
 slug: "bm"
 type: "artists"
-image: "https://i.ytimg.com/vi/zOGbJzpmHnE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/08VeudWYVcc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
