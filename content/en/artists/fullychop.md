@@ -2,7 +2,7 @@
 title: "FullyChop"
 slug: "fullychop"
 type: "artists"
-image: "https://i.ytimg.com/vi/CFmikQCo_h4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FdzPyCJpl_A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

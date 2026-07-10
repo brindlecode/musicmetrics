@@ -2,7 +2,7 @@
 title: "AN ANCIENT ECHO"
 slug: "an-ancient-echo"
 type: "artists"
-image: "https://i.ytimg.com/vi/VvU6ymleZqc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mG5iW6xYkNA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

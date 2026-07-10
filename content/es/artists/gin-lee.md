@@ -2,7 +2,7 @@
 title: "Gin Lee李幸倪"
 slug: "gin-lee"
 type: "artists"
-image: "https://i.ytimg.com/vi/3c7nkOe8r4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6AnCSI1POyI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
