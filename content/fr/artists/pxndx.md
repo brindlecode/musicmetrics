@@ -2,7 +2,7 @@
 title: "PXNDX"
 slug: "pxndx"
 type: "artists"
-image: "https://i.ytimg.com/vi/m772_Atg8FA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R-tw4rMH5d8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

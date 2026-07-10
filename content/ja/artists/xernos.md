@@ -2,7 +2,7 @@
 title: "Xernos"
 slug: "xernos"
 type: "artists"
-image: "https://i.ytimg.com/vi/vLaVHY86Vhc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qp-0D1yLvU4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
