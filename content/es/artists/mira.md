@@ -2,7 +2,7 @@
 title: "MIRA"
 slug: "mira"
 type: "artists"
-image: "https://i.ytimg.com/vi/wG9GUkNRbzU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ulwYwjmU3ZI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

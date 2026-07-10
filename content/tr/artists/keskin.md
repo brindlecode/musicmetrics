@@ -2,7 +2,7 @@
 title: "Keskin"
 slug: "keskin"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ba_5P6G79do/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iEaZ5a3k-M4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

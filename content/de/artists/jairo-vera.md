@@ -2,7 +2,7 @@
 title: "Jairo Vera"
 slug: "jairo-vera"
 type: "artists"
-image: "https://i.ytimg.com/vi/jMElwd2OX-w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UT-_U_tKhqU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Moya Label"
 slug: "moya-label"
 type: "artists"
-image: "https://i.ytimg.com/vi/wZS8yQh2IjA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NTOtnkBy_NM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

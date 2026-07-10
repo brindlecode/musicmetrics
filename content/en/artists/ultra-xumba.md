@@ -2,7 +2,7 @@
 title: "Ultra Xumba"
 slug: "ultra-xumba"
 type: "artists"
-image: "https://i.ytimg.com/vi/-ukEPqQ07KA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/q7kUd9QVIKU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

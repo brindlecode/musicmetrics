@@ -2,7 +2,7 @@
 title: "MOONBOYS ENTERTAINMENT"
 slug: "moonboys-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/JKRJIEO0vNU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/io0RRvzE9m8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

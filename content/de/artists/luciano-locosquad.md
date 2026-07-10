@@ -2,7 +2,7 @@
 title: "Luciano | Locosquad"
 slug: "luciano-locosquad"
 type: "artists"
-image: "https://i.ytimg.com/vi/SO4LJb9wN9s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QnU0gb_Pueo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

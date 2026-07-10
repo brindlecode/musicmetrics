@@ -1,11 +1,11 @@
 ---
-title: "ASAKE"
+title: "Asake"
 slug: "asake"
 type: "artists"
-image: "https://i.ytimg.com/vi/z22zRnTlgMg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TIRkQPe77J0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "ASAKE streaming statistics, chart positions and analytics across youtube"
+description: "Asake streaming statistics, chart positions and analytics across youtube"
 ---
