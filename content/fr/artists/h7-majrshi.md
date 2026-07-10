@@ -2,7 +2,7 @@
 title: "حماده مجرشي | H7 MAJRSHI"
 slug: "h7-majrshi"
 type: "artists"
-image: "https://i.ytimg.com/vi/MYck6-B-8L4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pAVf2-g6zoo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

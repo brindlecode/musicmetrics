@@ -2,7 +2,7 @@
 title: "TJ HyperMusic"
 slug: "tj-hypermusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/uwAzmSvIV-o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6SI7S-mqLsE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
