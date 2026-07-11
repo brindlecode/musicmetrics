@@ -2,7 +2,7 @@
 title: "Saint Levant"
 slug: "saint-levant"
 type: "artists"
-image: "https://i.ytimg.com/vi/cYGhmjzTH0E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vlG2FRfId_I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

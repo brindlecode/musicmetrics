@@ -2,7 +2,7 @@
 title: "MOUH MILANO"
 slug: "mouh-milano"
 type: "artists"
-image: "https://i.ytimg.com/vi/3iP8fNfWwmo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ALw_L4q3Cfg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

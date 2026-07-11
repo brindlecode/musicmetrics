@@ -2,7 +2,7 @@
 title: "Maverick Pablos"
 slug: "maverick-pablos"
 type: "artists"
-image: "https://i.ytimg.com/vi/S3cSmLM0ddQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PGfrg1QE2PA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

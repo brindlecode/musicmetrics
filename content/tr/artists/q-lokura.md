@@ -2,7 +2,7 @@
 title: "Q' Lokura"
 slug: "q-lokura"
 type: "artists"
-image: "https://i.ytimg.com/vi/xjOTSvEpGLo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rQP16NRqfVA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
