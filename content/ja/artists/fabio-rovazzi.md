@@ -2,7 +2,7 @@
 title: "Fabio Rovazzi"
 slug: "fabio-rovazzi"
 type: "artists"
-image: "https://i.ytimg.com/vi/CYCFcqcrBu4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YCE0pAVBtiw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "ERROR"
 slug: "error"
 type: "artists"
-image: "https://i.ytimg.com/vi/s9zzsVyfanI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lQiF_ODCFbw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

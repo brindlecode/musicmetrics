@@ -2,7 +2,7 @@
 title: "THE FIRST TAKE"
 slug: "the-first-take"
 type: "artists"
-image: "https://i.ytimg.com/vi/-WIyGsIMIr0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Lz24PqZkF2s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
