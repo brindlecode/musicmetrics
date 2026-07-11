@@ -2,7 +2,7 @@
 title: "Ria Ellinidou"
 slug: "ria-ellinidou"
 type: "artists"
-image: "https://i.ytimg.com/vi/hf4ydQ5eXa8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8Hl3h_EWrPc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

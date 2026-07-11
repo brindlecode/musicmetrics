@@ -2,7 +2,7 @@
 title: "Zpecial"
 slug: "zpecial"
 type: "artists"
-image: "https://i.ytimg.com/vi/slaXza6boTo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xYs0fiHp-L4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

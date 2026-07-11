@@ -2,7 +2,7 @@
 title: "DJENA"
 slug: "djena"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ev8PYx1QTKQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pZnUUuekevo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

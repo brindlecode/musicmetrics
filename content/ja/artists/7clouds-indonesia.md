@@ -2,7 +2,7 @@
 title: "7clouds Indonesia"
 slug: "7clouds-indonesia"
 type: "artists"
-image: "https://i.ytimg.com/vi/FGlyjWea0BA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/skVRGbQSS1M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

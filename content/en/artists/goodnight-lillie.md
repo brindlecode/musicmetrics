@@ -1,11 +1,11 @@
 ---
-title: "Goodnight, Lillie"
+title: "晚安莉莉 Goodnight Lillie"
 slug: "goodnight-lillie"
 type: "artists"
-image: "https://i.ytimg.com/vi/ke7Xogx4mtI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xBc5drLG-t8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Goodnight, Lillie streaming statistics, chart positions and analytics across youtube"
+description: "晚安莉莉 Goodnight Lillie streaming statistics, chart positions and analytics across youtube"
 ---
