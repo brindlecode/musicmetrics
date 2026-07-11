@@ -2,7 +2,7 @@
 title: "Los Temerarios"
 slug: "los-temerarios"
 type: "artists"
-image: "https://i.ytimg.com/vi/jC8pJl75X38/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GdXlVStmpCY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

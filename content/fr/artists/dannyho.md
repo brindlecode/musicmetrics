@@ -2,7 +2,7 @@
 title: "DannyHO"
 slug: "dannyho"
 type: "artists"
-image: "https://i.ytimg.com/vi/ziRCQByPAdw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/L1PN8BnHBxo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

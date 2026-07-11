@@ -2,7 +2,7 @@
 title: "DJTAO"
 slug: "djtao"
 type: "artists"
-image: "https://i.ytimg.com/vi/rHR0mUoKX5I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-mOX9aKKQE4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

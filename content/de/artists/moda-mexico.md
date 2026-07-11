@@ -2,7 +2,7 @@
 title: "Moda Mexico"
 slug: "moda-mexico"
 type: "artists"
-image: "https://i.ytimg.com/vi/R01JgB03WU0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wr--vwfmfqk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

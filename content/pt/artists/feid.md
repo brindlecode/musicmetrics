@@ -2,7 +2,7 @@
 title: "Feid"
 slug: "feid"
 type: "artists"
-image: "https://i.ytimg.com/vi/VLun05mnma0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OZPus6qekpk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
