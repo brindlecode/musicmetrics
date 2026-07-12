@@ -2,7 +2,7 @@
 title: "Maestro Jose Guacho"
 slug: "maestro-jose-guacho"
 type: "artists"
-image: "https://i.ytimg.com/vi/xsdL8OiJc3Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4n5uzBOVjKA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

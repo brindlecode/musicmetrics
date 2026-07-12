@@ -2,7 +2,7 @@
 title: "Smejko a Tanculienka"
 slug: "smejko-a-tanculienka"
 type: "artists"
-image: "https://i.ytimg.com/vi/vhvqIHecHRA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TZLh3_i2bRs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
