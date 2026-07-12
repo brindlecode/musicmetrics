@@ -2,7 +2,7 @@
 title: "LouvArt"
 slug: "louvart"
 type: "artists"
-image: "https://i.ytimg.com/vi/WkE4kudNH1M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HMw_FqlA6Sc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

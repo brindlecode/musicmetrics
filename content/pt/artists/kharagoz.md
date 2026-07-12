@@ -2,7 +2,7 @@
 title: "Kharagoz"
 slug: "kharagoz"
 type: "artists"
-image: "https://i.ytimg.com/vi/aEJqNdBZ4ew/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n5rp8gCet8c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
