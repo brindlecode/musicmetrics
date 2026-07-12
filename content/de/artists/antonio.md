@@ -2,7 +2,7 @@
 title: "Antonio"
 slug: "antonio"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZxHZKvSFEXo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ap6jLeYMkkE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

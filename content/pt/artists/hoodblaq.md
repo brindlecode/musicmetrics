@@ -2,7 +2,7 @@
 title: "HOODBLAQ"
 slug: "hoodblaq"
 type: "artists"
-image: "https://i.ytimg.com/vi/EhgVwvUUeKE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bEirMZD2QIA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

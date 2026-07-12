@@ -2,7 +2,7 @@
 title: "Latin City"
 slug: "latin-city"
 type: "artists"
-image: "https://i.ytimg.com/vi/t1TuBntVQdg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/D10PmrZYYvU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

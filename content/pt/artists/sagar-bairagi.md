@@ -2,7 +2,7 @@
 title: "Sagar Bairagi"
 slug: "sagar-bairagi"
 type: "artists"
-image: "https://i.ytimg.com/vi/TIWqSPKNFUY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uCN3lhcFu5g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
