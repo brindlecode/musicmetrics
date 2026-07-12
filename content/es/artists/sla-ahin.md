@@ -2,7 +2,7 @@
 title: "Sıla Şahin"
 slug: "sla-ahin"
 type: "artists"
-image: "https://i.ytimg.com/vi/uAkJ3V8p4QI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2vKTldcRS5o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

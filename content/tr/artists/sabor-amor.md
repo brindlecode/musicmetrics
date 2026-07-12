@@ -2,7 +2,7 @@
 title: "Sabor Amor"
 slug: "sabor-amor"
 type: "artists"
-image: "https://i.ytimg.com/vi/kIgKWtewvkE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RmM4WPTYZMQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

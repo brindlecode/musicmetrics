@@ -2,7 +2,7 @@
 title: "Sơn Tùng M-TP"
 slug: "sn-tng-m-tp"
 type: "artists"
-image: "https://i.ytimg.com/vi/SlQR9iu09bQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yuuWdm5tBD0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
