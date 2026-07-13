@@ -2,7 +2,7 @@
 title: "LEE YEJOON"
 slug: "lee-yejoon"
 type: "artists"
-image: "https://i.ytimg.com/vi/YOWODrgIiG8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Q0OzS0cKuwc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
