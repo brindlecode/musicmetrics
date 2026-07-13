@@ -2,7 +2,7 @@
 title: "Michel Blazquez"
 slug: "michel-blazquez"
 type: "artists"
-image: "https://i.ytimg.com/vi/oQ1t_rIWElI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1qo-wPvt7z8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

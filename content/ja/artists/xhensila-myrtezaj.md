@@ -2,7 +2,7 @@
 title: "Xhensila Myrtezaj"
 slug: "xhensila-myrtezaj"
 type: "artists"
-image: "https://i.ytimg.com/vi/CzAkSEY4jgc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P8FaqZVirag/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
