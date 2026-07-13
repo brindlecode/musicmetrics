@@ -2,7 +2,7 @@
 title: "Mix Sabrosura"
 slug: "mix-sabrosura"
 type: "artists"
-image: "https://i.ytimg.com/vi/jBGYMvoqgYk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZqSfwv5WMSA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

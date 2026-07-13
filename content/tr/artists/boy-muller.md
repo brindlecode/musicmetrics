@@ -2,7 +2,7 @@
 title: "Boy Muller"
 slug: "boy-muller"
 type: "artists"
-image: "https://i.ytimg.com/vi/bBTJ_sUerqc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xCZWgzIADVQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
