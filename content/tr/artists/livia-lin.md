@@ -2,7 +2,7 @@
 title: "林知夏 Livia Lin"
 slug: "livia-lin"
 type: "artists"
-image: "https://i.ytimg.com/vi/U4h0MiIcVWY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AOsQoD3NOyE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

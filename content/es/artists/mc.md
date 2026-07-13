@@ -2,7 +2,7 @@
 title: "MC 張天賦"
 slug: "mc"
 type: "artists"
-image: "https://i.ytimg.com/vi/7XrIujq8Bfc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_gjAmtmkbp8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
