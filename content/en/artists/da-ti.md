@@ -2,7 +2,7 @@
 title: "DA TI"
 slug: "da-ti"
 type: "artists"
-image: "https://i.ytimg.com/vi/zgdITJBq6LQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XzORfaKziOY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

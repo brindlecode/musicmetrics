@@ -2,7 +2,7 @@
 title: "Prem Dhillon"
 slug: "prem-dhillon"
 type: "artists"
-image: "https://i.ytimg.com/vi/3abVd78_M7A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9jLQ7O8Ep74/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

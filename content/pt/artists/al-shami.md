@@ -2,7 +2,7 @@
 title: "Al Shami - الشامي"
 slug: "al-shami"
 type: "artists"
-image: "https://i.ytimg.com/vi/tB93gfKocK4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9cJGWOpQp_w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
