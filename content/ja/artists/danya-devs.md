@@ -2,7 +2,7 @@
 title: "Danya Devs"
 slug: "danya-devs"
 type: "artists"
-image: "https://i.ytimg.com/vi/kNDxOPsrlzs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jRamvGe2MC0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

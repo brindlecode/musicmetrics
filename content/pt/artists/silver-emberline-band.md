@@ -2,7 +2,7 @@
 title: "Silver Emberline Band"
 slug: "silver-emberline-band"
 type: "artists"
-image: "https://i.ytimg.com/vi/BDiBnfeV1r0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fMJlSV122xY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
