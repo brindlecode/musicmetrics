@@ -2,7 +2,7 @@
 title: "相信音樂BinMusic"
 slug: "binmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/PEjARMUgcIU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-5jzcegLx4E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
