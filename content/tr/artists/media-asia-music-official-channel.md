@@ -2,7 +2,7 @@
 title: "寰亞音樂 Media Asia Music Official Channel"
 slug: "media-asia-music-official-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/nN84DhmFKcI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6iQjKwCW4UI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

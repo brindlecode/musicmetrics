@@ -2,7 +2,7 @@
 title: "MUXIBOSH"
 slug: "muxibosh"
 type: "artists"
-image: "https://i.ytimg.com/vi/VUVB7fXT294/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zs-_rFZwgQI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

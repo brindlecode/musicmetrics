@@ -2,7 +2,7 @@
 title: "Reels Trending Hindi Songs"
 slug: "reels-trending-hindi-songs"
 type: "artists"
-image: "https://i.ytimg.com/vi/UPTatvpZNpE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G5BnR0lFWRI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
