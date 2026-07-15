@@ -2,7 +2,7 @@
 title: "Ultimo Channel"
 slug: "ultimo-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/7u-evrPTZdA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j_S6CbZVuj4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

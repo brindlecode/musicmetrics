@@ -2,7 +2,7 @@
 title: "Kysha e Mine"
 slug: "kysha-e-mine"
 type: "artists"
-image: "https://i.ytimg.com/vi/NWdDFBbmZaI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7ljc2QImpLQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

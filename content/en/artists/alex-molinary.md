@@ -2,7 +2,7 @@
 title: "Alex Molinary"
 slug: "alex-molinary"
 type: "artists"
-image: "https://i.ytimg.com/vi/FGSHpTmN0Yw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KNI95vUvrHQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

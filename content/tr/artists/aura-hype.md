@@ -2,7 +2,7 @@
 title: "Aura Hype"
 slug: "aura-hype"
 type: "artists"
-image: "https://i.ytimg.com/vi/s8Bpqsh3t5o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/V5wab0itN14/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
