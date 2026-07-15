@@ -2,7 +2,7 @@
 title: "MUSIC VIP"
 slug: "music-vip"
 type: "artists"
-image: "https://i.ytimg.com/vi/rv_1--R69Ws/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_z2lVexmcG8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

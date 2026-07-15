@@ -2,7 +2,7 @@
 title: "VOLTACTION"
 slug: "voltaction"
 type: "artists"
-image: "https://i.ytimg.com/vi/zSj4JuvvmPE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/q1ElIA96W0A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

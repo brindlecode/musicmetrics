@@ -2,7 +2,7 @@
 title: "Maiara e Maraisa"
 slug: "maiara-e-maraisa"
 type: "artists"
-image: "https://i.ytimg.com/vi/SpnGd9agr3k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uF883jAtg6A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
