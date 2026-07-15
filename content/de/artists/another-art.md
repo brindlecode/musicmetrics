@@ -2,7 +2,7 @@
 title: "Another Art."
 slug: "another-art"
 type: "artists"
-image: "https://i.ytimg.com/vi/GjE2bNYg6_I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AP1u8ek4RxM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

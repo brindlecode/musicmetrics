@@ -2,7 +2,7 @@
 title: "Bold Retro"
 slug: "bold-retro"
 type: "artists"
-image: "https://i.ytimg.com/vi/IMZHUWvR9Yw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6E4catka38Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

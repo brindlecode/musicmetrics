@@ -2,7 +2,7 @@
 title: "Aura Serenity"
 slug: "aura-serenity"
 type: "artists"
-image: "https://i.ytimg.com/vi/ixH2W6RL_qQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EhIwYZ1qCIA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

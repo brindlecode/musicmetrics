@@ -2,7 +2,7 @@
 title: "Xabian.j"
 slug: "xabianj"
 type: "artists"
-image: "https://i.ytimg.com/vi/F7VOhR1pV-Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IMAAHHNIGc4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
