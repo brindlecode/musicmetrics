@@ -2,7 +2,7 @@
 title: "Aeon KnoX"
 slug: "aeon-knox"
 type: "artists"
-image: "https://i.ytimg.com/vi/0hhsgXT9MT0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/muEt404qepI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

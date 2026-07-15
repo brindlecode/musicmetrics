@@ -2,7 +2,7 @@
 title: "Jaizeey Music"
 slug: "jaizeey-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/jk71LEuAXtU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SmAWV0UGtA8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
