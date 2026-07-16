@@ -2,7 +2,7 @@
 title: "Get Worship"
 slug: "get-worship"
 type: "artists"
-image: "https://i.ytimg.com/vi/xG7sSQhchJY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CsljfJLmwfg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

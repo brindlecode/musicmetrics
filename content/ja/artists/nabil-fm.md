@@ -2,7 +2,7 @@
 title: "Nabil FM"
 slug: "nabil-fm"
 type: "artists"
-image: "https://i.ytimg.com/vi/2o42tW1UKsg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZublqaW3R8Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
