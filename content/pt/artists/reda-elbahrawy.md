@@ -2,7 +2,7 @@
 title: "رضا البحراوي / Reda Elbahrawy"
 slug: "reda-elbahrawy"
 type: "artists"
-image: "https://i.ytimg.com/vi/uRl2fUEjOo8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o9imoCe66bk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
