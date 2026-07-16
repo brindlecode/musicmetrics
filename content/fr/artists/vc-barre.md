@@ -2,7 +2,7 @@
 title: "VC Barre"
 slug: "vc-barre"
 type: "artists"
-image: "https://i.ytimg.com/vi/250nHVLPRCY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_NJd5cuh2m0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "December"
 slug: "december"
 type: "artists"
-image: "https://i.ytimg.com/vi/lnddnsEbjMM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cHp9dMHz_eA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

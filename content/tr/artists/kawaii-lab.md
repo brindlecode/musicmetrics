@@ -2,7 +2,7 @@
 title: "KAWAII LAB."
 slug: "kawaii-lab"
 type: "artists"
-image: "https://i.ytimg.com/vi/LNivza5zh0Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IQN7mEwkFpQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
