@@ -2,7 +2,7 @@
 title: "MildSet"
 slug: "mildset"
 type: "artists"
-image: "https://i.ytimg.com/vi/-mIcK38V3jA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wu0UEDCw-9Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

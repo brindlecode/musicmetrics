@@ -2,7 +2,7 @@
 title: "Mono"
 slug: "mono"
 type: "artists"
-image: "https://i.ytimg.com/vi/a64cTl1enW8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M-tjGXqs2N8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
