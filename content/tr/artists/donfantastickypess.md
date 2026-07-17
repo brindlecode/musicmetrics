@@ -2,7 +2,7 @@
 title: "DONFANTASTICKYPESS"
 slug: "donfantastickypess"
 type: "artists"
-image: "https://i.ytimg.com/vi/j5Zd-fuKJP8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DmU8W-zr_5U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

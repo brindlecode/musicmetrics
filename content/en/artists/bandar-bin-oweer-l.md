@@ -2,7 +2,7 @@
 title: "بندر بن عوير Bandar Bin Oweer l"
 slug: "bandar-bin-oweer-l"
 type: "artists"
-image: "https://i.ytimg.com/vi/5D1Ury_xMiw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Hsndyo3FCLI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Motrat Mustafa"
 slug: "motrat-mustafa"
 type: "artists"
-image: "https://i.ytimg.com/vi/eEPdW5bLUv0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Hgn9EGpIl88/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
