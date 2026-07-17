@@ -2,7 +2,7 @@
 title: "Tommy Johansson"
 slug: "tommy-johansson"
 type: "artists"
-image: "https://i.ytimg.com/vi/rK_kPp0hSqU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HwHKXgC0Fdc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

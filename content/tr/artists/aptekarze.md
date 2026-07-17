@@ -2,7 +2,7 @@
 title: "APTEKARZE"
 slug: "aptekarze"
 type: "artists"
-image: "https://i.ytimg.com/vi/vh1yWVN36X0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wgq8wQUHvBw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

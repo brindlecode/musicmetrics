@@ -1,11 +1,11 @@
 ---
-title: "MARWAN PABLO"
+title: "Marwan Pablo"
 slug: "marwan-pablo"
 type: "artists"
-image: "https://i.ytimg.com/vi/ClTvx4fFtZ8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Zlp2XZyStw4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "MARWAN PABLO streaming statistics, chart positions and analytics across youtube"
+description: "Marwan Pablo streaming statistics, chart positions and analytics across youtube"
 ---

@@ -2,7 +2,7 @@
 title: "TOTON CARIBO"
 slug: "toton-caribo"
 type: "artists"
-image: "https://i.ytimg.com/vi/tAbHxboRGoU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/erp1hKcMF1o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
