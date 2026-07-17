@@ -2,7 +2,7 @@
 title: "Caguama"
 slug: "caguama"
 type: "artists"
-image: "https://i.ytimg.com/vi/HTA4bZVdUU0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/D2BOC_bIaXc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

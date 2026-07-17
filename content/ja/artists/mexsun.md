@@ -2,7 +2,7 @@
 title: "MexSun"
 slug: "mexsun"
 type: "artists"
-image: "https://i.ytimg.com/vi/hQiHQYuFnVE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pOhjm0SvLFw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Swastik Records"
 slug: "swastik-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/Mb8xN_DsenA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qhoczFmqo6I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

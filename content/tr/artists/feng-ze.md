@@ -1,11 +1,11 @@
 ---
-title: "邱鋒澤 Feng Ze"
+title: "Feng Ze邱鋒澤"
 slug: "feng-ze"
 type: "artists"
-image: "https://i.ytimg.com/vi/U7P5HttUSDw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5WuL9o29khg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "邱鋒澤 Feng Ze streaming statistics, chart positions and analytics across youtube"
+description: "Feng Ze邱鋒澤 streaming statistics, chart positions and analytics across youtube"
 ---
