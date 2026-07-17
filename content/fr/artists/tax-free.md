@@ -2,7 +2,7 @@
 title: "Tax Free"
 slug: "tax-free"
 type: "artists"
-image: "https://i.ytimg.com/vi/ijvIwuYvKYE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PlWoqSkxEfk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

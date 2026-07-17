@@ -2,7 +2,7 @@
 title: "BNXN"
 slug: "bnxn"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vc-a34TmhFQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bVtmoS5Dcck/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

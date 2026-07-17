@@ -2,7 +2,7 @@
 title: "IRENA"
 slug: "irena"
 type: "artists"
-image: "https://i.ytimg.com/vi/PJHrWW12w14/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QSYHgeBjcIo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "OxyNa"
 slug: "oxyna"
 type: "artists"
-image: "https://i.ytimg.com/vi/xiBytHC8xZs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nHyhwJ4TVpc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

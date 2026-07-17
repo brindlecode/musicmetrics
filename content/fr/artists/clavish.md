@@ -2,7 +2,7 @@
 title: "Clavish"
 slug: "clavish"
 type: "artists"
-image: "https://i.ytimg.com/vi/20DZ8evei4A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Tj99Oc7lOLo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

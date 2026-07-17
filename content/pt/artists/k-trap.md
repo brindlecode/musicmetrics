@@ -2,7 +2,7 @@
 title: "K-TRAP"
 slug: "k-trap"
 type: "artists"
-image: "https://i.ytimg.com/vi/VVV8WOjESSE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Rdxh0yPc7IY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

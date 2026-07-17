@@ -1,11 +1,11 @@
 ---
-title: "นิว พงศกร CHANNEL"
+title: "ジュニアCHANNEL"
 slug: "channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/ue48hK7f9cs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/L7ri_UYNljo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "นิว พงศกร CHANNEL streaming statistics, chart positions and analytics across youtube"
+description: "ジュニアCHANNEL streaming statistics, chart positions and analytics across youtube"
 ---
