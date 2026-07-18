@@ -2,7 +2,7 @@
 title: "SENJA NADA"
 slug: "senja-nada"
 type: "artists"
-image: "https://i.ytimg.com/vi/Pd4H-Zha_mg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Jrxua7Qq6YM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

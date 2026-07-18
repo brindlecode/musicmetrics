@@ -2,7 +2,7 @@
 title: "Wac Toja"
 slug: "wac-toja"
 type: "artists"
-image: "https://i.ytimg.com/vi/u9huNsBIeLQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4M3NcGYd1Bk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

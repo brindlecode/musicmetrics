@@ -2,7 +2,7 @@
 title: "ROSE BEAT"
 slug: "rose-beat"
 type: "artists"
-image: "https://i.ytimg.com/vi/uyD4v0ZNqIM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VA9cwfuBRAk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "天赐的声音 The Treasured Voice Official Channel"
 slug: "the-treasured-voice-official-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/NVbhA9glLi4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/y_sILJY8wus/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

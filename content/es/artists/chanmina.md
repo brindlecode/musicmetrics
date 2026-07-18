@@ -2,7 +2,7 @@
 title: "ちゃんみな [CHANMINA]"
 slug: "chanmina"
 type: "artists"
-image: "https://i.ytimg.com/vi/9ItaFyoar9M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KAsyesGWik4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
