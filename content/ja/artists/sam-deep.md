@@ -2,7 +2,7 @@
 title: "Sam Deep"
 slug: "sam-deep"
 type: "artists"
-image: "https://i.ytimg.com/vi/lZhc6BniJAQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Lv8v2x8qmaM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

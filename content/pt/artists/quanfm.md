@@ -2,7 +2,7 @@
 title: "QuanFM"
 slug: "quanfm"
 type: "artists"
-image: "https://i.ytimg.com/vi/4ZWCNtO2aDQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aF1ZATArnzk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
