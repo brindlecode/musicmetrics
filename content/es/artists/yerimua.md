@@ -2,7 +2,7 @@
 title: "YeriMua"
 slug: "yerimua"
 type: "artists"
-image: "https://i.ytimg.com/vi/_J4omUiyyvc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8mDuNoH935w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

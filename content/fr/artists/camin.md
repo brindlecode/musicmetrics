@@ -2,7 +2,7 @@
 title: "Camin"
 slug: "camin"
 type: "artists"
-image: "https://i.ytimg.com/vi/kX2t6Qr4qyc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F-c80U0-nZg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

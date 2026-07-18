@@ -2,7 +2,7 @@
 title: "JINTARA CHANNEL"
 slug: "jintara-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/nbisaRfegA0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/goIXF4DKEh8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

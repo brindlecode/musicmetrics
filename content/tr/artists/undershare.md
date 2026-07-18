@@ -2,7 +2,7 @@
 title: "undershare"
 slug: "undershare"
 type: "artists"
-image: "https://i.ytimg.com/vi/sbepnSdRbLs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jE-1uYO80_Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

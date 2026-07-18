@@ -2,7 +2,7 @@
 title: "Kuldeep Rasila"
 slug: "kuldeep-rasila"
 type: "artists"
-image: "https://i.ytimg.com/vi/IVmfV-_s1zk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b7bLJkTvosc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

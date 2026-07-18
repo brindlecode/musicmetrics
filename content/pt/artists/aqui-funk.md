@@ -2,7 +2,7 @@
 title: "AQUI É FUNK"
 slug: "aqui-funk"
 type: "artists"
-image: "https://i.ytimg.com/vi/_ROZhlAo_yQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/veNgAWNqIK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
