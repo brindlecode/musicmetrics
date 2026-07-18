@@ -2,7 +2,7 @@
 title: "Último Bailongo"
 slug: "ltimo-bailongo"
 type: "artists"
-image: "https://i.ytimg.com/vi/hH81NB8m8FY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BhO2WV8u0Gg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

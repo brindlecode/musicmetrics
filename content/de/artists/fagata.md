@@ -2,7 +2,7 @@
 title: "Fagata"
 slug: "fagata"
 type: "artists"
-image: "https://i.ytimg.com/vi/z5HVhFbEvrs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MMu1_Y2YvBc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "B20baOfficiel"
 slug: "b20baofficiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/YeKct6QYsww/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U-tVyCFv7Qg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

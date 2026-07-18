@@ -2,7 +2,7 @@
 title: "Eugenia Quevedo"
 slug: "eugenia-quevedo"
 type: "artists"
-image: "https://i.ytimg.com/vi/y6UMyXWl9Iw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gNcQws7IRiA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

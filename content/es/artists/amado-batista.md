@@ -2,7 +2,7 @@
 title: "Amado Batista"
 slug: "amado-batista"
 type: "artists"
-image: "https://i.ytimg.com/vi/mxM-XqFD9_U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-FD-m4ODpzs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
