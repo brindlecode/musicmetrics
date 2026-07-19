@@ -2,7 +2,7 @@
 title: "Djordan"
 slug: "djordan"
 type: "artists"
-image: "https://i.ytimg.com/vi/fpT0FJo4J0o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CL1FzWTJotQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

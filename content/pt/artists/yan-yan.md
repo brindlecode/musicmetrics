@@ -2,7 +2,7 @@
 title: "Yan Yan"
 slug: "yan-yan"
 type: "artists"
-image: "https://i.ytimg.com/vi/T9zDluEyXlc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4YLNG8LUqts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

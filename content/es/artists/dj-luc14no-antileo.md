@@ -2,7 +2,7 @@
 title: "DJ Luc14no Antileo"
 slug: "dj-luc14no-antileo"
 type: "artists"
-image: "https://i.ytimg.com/vi/f3aa9lkzCeg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FM5NVnbcyaI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
