@@ -2,7 +2,7 @@
 title: "Lian Noor"
 slug: "lian-noor"
 type: "artists"
-image: "https://i.ytimg.com/vi/JZ0Rbj_FX7Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kJdr_EuTyIo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
