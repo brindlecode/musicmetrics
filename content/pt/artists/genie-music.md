@@ -2,7 +2,7 @@
 title: "GENIE MUSIC"
 slug: "genie-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/4Yp5pFMixeI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uV-PoNLiFCI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

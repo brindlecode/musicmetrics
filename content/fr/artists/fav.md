@@ -2,7 +2,7 @@
 title: "Favé"
 slug: "fav"
 type: "artists"
-image: "https://i.ytimg.com/vi/mBRHmffezZ4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KojW8Lp3dpI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

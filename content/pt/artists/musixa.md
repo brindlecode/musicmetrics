@@ -2,7 +2,7 @@
 title: "Musixa"
 slug: "musixa"
 type: "artists"
-image: "https://i.ytimg.com/vi/SpkjaC-Pguw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pK2CUMHzgr0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Camela"
 slug: "camela"
 type: "artists"
-image: "https://i.ytimg.com/vi/n0cK8DyxnFI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5DWoshGoKAg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

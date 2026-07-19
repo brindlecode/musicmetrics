@@ -2,7 +2,7 @@
 title: "AngelaLeiva"
 slug: "angelaleiva"
 type: "artists"
-image: "https://i.ytimg.com/vi/evu2YeRr6qo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EapYPnUIZA0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

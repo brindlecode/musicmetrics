@@ -2,7 +2,7 @@
 title: "Parmish Verma"
 slug: "parmish-verma"
 type: "artists"
-image: "https://i.ytimg.com/vi/K7zPAPQcp0o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HHMmEBg4MKo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
