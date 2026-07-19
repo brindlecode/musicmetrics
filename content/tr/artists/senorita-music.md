@@ -2,7 +2,7 @@
 title: "Senorita Music"
 slug: "senorita-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/axhVhbFWMtU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pIiu-J2u8wo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
