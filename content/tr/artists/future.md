@@ -2,7 +2,7 @@
 title: "Future"
 slug: "future"
 type: "artists"
-image: "https://i.ytimg.com/vi/ESORouDblNg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/f6ZDmAhaH_Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Yasin Şimşek"
 slug: "yasin-imek"
 type: "artists"
-image: "https://i.ytimg.com/vi/GwSZ-nryOZE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0cun0FkqDA0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
