@@ -2,7 +2,7 @@
 title: "Audio Music"
 slug: "audio-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/4KVJpn9oE3s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8xE37l1o_GE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

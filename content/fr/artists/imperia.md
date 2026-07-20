@@ -2,7 +2,7 @@
 title: "IMPERIA"
 slug: "imperia"
 type: "artists"
-image: "https://i.ytimg.com/vi/1YXeVgAUKbc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_2_feRPAwpY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

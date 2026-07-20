@@ -2,7 +2,7 @@
 title: "علي رضا الكاظمي - Aliridha Alkazemi"
 slug: "aliridha-alkazemi"
 type: "artists"
-image: "https://i.ytimg.com/vi/hNqzeznhiF4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JmSJfVjkaxk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

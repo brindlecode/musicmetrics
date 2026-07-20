@@ -2,7 +2,7 @@
 title: "Hx Indo"
 slug: "hx-indo"
 type: "artists"
-image: "https://i.ytimg.com/vi/z13U0MeQZbs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5ngA7mSFOrU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

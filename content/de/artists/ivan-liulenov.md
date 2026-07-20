@@ -2,7 +2,7 @@
 title: "IVAN LIULENOV"
 slug: "ivan-liulenov"
 type: "artists"
-image: "https://i.ytimg.com/vi/nuGt8HG3Q_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uehSCbET4qk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
