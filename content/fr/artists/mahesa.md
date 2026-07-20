@@ -2,7 +2,7 @@
 title: "MAHESA"
 slug: "mahesa"
 type: "artists"
-image: "https://i.ytimg.com/vi/w4HZPw3J5HQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/X_5QDMiHRdA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

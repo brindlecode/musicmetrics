@@ -2,7 +2,7 @@
 title: "Pulse Pop"
 slug: "pulse-pop"
 type: "artists"
-image: "https://i.ytimg.com/vi/axZdWSSTfSM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SsbA70cCdEw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
