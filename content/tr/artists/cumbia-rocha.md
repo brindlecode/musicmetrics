@@ -2,7 +2,7 @@
 title: "Cumbia Rocha"
 slug: "cumbia-rocha"
 type: "artists"
-image: "https://i.ytimg.com/vi/9hUH9x9Ai0Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GU_RT6ci_eA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
