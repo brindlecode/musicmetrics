@@ -2,7 +2,7 @@
 title: "Blockstar"
 slug: "blockstar"
 type: "artists"
-image: "https://i.ytimg.com/vi/__JsrSNIIuY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xfFaMSWmNtE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

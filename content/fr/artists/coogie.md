@@ -2,7 +2,7 @@
 title: "Coogie"
 slug: "coogie"
 type: "artists"
-image: "https://i.ytimg.com/vi/yAHHXCKYW90/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tdvHArMcx2w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

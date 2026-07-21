@@ -2,7 +2,7 @@
 title: "G Herbo"
 slug: "g-herbo"
 type: "artists"
-image: "https://i.ytimg.com/vi/yYiOKWX9Q1w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hWgOZQMqcvg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
