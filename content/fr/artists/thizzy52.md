@@ -2,7 +2,7 @@
 title: "THIZZY52"
 slug: "thizzy52"
 type: "artists"
-image: "https://i.ytimg.com/vi/o4X1vqcUobw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-l6yICFJqBQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

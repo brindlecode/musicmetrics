@@ -2,7 +2,7 @@
 title: "DiMusicUa"
 slug: "dimusicua"
 type: "artists"
-image: "https://i.ytimg.com/vi/Nct8CF5TWyA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_JUurft-pdE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

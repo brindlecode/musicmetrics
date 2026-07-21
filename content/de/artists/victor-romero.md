@@ -2,7 +2,7 @@
 title: "Victor Romero"
 slug: "victor-romero"
 type: "artists"
-image: "https://i.ytimg.com/vi/n2TdP2DDk_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gF3sp6T5ZS4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Rusa Music"
 slug: "rusa-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/RmGPp3bsE0g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zjxO40VrMZA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

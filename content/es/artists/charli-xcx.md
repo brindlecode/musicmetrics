@@ -2,7 +2,7 @@
 title: "Charli xcx"
 slug: "charli-xcx"
 type: "artists"
-image: "https://i.ytimg.com/vi/twLhSqabby0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eO3zsYsDnbI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
