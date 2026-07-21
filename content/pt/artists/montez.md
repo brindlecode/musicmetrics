@@ -2,7 +2,7 @@
 title: "MONTEZ"
 slug: "montez"
 type: "artists"
-image: "https://i.ytimg.com/vi/zPW_Q4UcJp4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/49vQ7VCmu_o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
