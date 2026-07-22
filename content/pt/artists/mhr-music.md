@@ -2,7 +2,7 @@
 title: "MHR MUSIC"
 slug: "mhr-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/R9ruhJq455w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eCCoGebYRgA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

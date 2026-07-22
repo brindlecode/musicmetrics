@@ -1,11 +1,11 @@
 ---
-title: "GRUPO AMOR REBELDE"
+title: "Grupo Amor Rebelde"
 slug: "grupo-amor-rebelde"
 type: "artists"
-image: "https://i.ytimg.com/vi/6_RmDJ6grns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RiKRV_o_rgI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "GRUPO AMOR REBELDE streaming statistics, chart positions and analytics across youtube"
+description: "Grupo Amor Rebelde streaming statistics, chart positions and analytics across youtube"
 ---
