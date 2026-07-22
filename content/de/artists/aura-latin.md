@@ -2,7 +2,7 @@
 title: "Aura Latin"
 slug: "aura-latin"
 type: "artists"
-image: "https://i.ytimg.com/vi/tKd_lEBxY1Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3dvMl-6Ke3s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

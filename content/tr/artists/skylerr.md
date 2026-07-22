@@ -2,7 +2,7 @@
 title: "SKYLERR"
 slug: "skylerr"
 type: "artists"
-image: "https://i.ytimg.com/vi/PY-CercMFY0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_GVVkuun_-c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

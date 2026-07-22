@@ -2,7 +2,7 @@
 title: "Matlane"
 slug: "matlane"
 type: "artists"
-image: "https://i.ytimg.com/vi/lw1MLOz5aZE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U4tD6FHgB00/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Anatolia Sound"
 slug: "anatolia-sound"
 type: "artists"
-image: "https://i.ytimg.com/vi/z5JJCUiZGU8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_HLJeuyagoo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

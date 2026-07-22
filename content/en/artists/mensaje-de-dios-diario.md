@@ -2,7 +2,7 @@
 title: "Mensaje de Dios Diario"
 slug: "mensaje-de-dios-diario"
 type: "artists"
-image: "https://i.ytimg.com/vi/TsC6VypPmfw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HPxTb5dFVP8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

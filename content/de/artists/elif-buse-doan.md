@@ -2,7 +2,7 @@
 title: "Elif Buse Doğan"
 slug: "elif-buse-doan"
 type: "artists"
-image: "https://i.ytimg.com/vi/WgoVgSOuReY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WjjdC_mmyDI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

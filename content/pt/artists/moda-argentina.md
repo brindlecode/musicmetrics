@@ -2,7 +2,7 @@
 title: "Moda Argentina"
 slug: "moda-argentina"
 type: "artists"
-image: "https://i.ytimg.com/vi/RJbofW0zI_g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jSXHXAKs4dM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

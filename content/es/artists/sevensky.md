@@ -2,7 +2,7 @@
 title: "SevenSky"
 slug: "sevensky"
 type: "artists"
-image: "https://i.ytimg.com/vi/yR9pXrwktos/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Yh-gt_eiWrc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
