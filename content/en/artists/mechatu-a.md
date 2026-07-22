@@ -2,7 +2,7 @@
 title: "MECHATU-A"
 slug: "mechatu-a"
 type: "artists"
-image: "https://i.ytimg.com/vi/fDZXiBNkETM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TeQ1simwkjU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

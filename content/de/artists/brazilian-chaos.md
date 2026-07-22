@@ -2,7 +2,7 @@
 title: "Brazilian Chaos"
 slug: "brazilian-chaos"
 type: "artists"
-image: "https://i.ytimg.com/vi/CET0k5yx-7w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cRm24U5vdJE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
