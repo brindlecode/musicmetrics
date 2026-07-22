@@ -2,7 +2,7 @@
 title: "Light"
 slug: "light"
 type: "artists"
-image: "https://i.ytimg.com/vi/ad1yZSgFbv0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YAs5Nhp5y1U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

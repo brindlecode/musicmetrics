@@ -2,7 +2,7 @@
 title: "LilBaby"
 slug: "lilbaby"
 type: "artists"
-image: "https://i.ytimg.com/vi/mdJaqO5_J1M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PXxbEfhtDiM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

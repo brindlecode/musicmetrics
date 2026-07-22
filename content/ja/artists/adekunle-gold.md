@@ -2,7 +2,7 @@
 title: "Adekunle Gold"
 slug: "adekunle-gold"
 type: "artists"
-image: "https://i.ytimg.com/vi/cLkk7Qn3QS0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kndB9Jbb7Os/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

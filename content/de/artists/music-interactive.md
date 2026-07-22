@@ -2,7 +2,7 @@
 title: "Music Interactive"
 slug: "music-interactive"
 type: "artists"
-image: "https://i.ytimg.com/vi/sNbZKdKh2IA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1WeCPL58Ijg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

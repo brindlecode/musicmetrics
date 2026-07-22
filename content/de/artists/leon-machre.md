@@ -2,7 +2,7 @@
 title: "Leon Machère"
 slug: "leon-machre"
 type: "artists"
-image: "https://i.ytimg.com/vi/iEmZfOUK6Fk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/77gXnyBdy3U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

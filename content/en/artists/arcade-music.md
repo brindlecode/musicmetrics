@@ -2,7 +2,7 @@
 title: "Arcade Music"
 slug: "arcade-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/F0N7aNy-9tg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8JqS2chuQwk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
