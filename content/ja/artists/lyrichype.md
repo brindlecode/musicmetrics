@@ -2,7 +2,7 @@
 title: "LyricHype"
 slug: "lyrichype"
 type: "artists"
-image: "https://i.ytimg.com/vi/v-r2ovARMiU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ob_yTrWC9UE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

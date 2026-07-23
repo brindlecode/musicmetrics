@@ -2,7 +2,7 @@
 title: "Marília Mendonça"
 slug: "marlia-mendona"
 type: "artists"
-image: "https://i.ytimg.com/vi/0n3V4JO1Dp8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xvyFqVnT47I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

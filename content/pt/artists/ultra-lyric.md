@@ -2,7 +2,7 @@
 title: "Ultra Lyric"
 slug: "ultra-lyric"
 type: "artists"
-image: "https://i.ytimg.com/vi/Bp7gsAyT5bs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/khf3tv8xU1A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

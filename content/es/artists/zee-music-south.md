@@ -2,7 +2,7 @@
 title: "Zee Music South"
 slug: "zee-music-south"
 type: "artists"
-image: "https://i.ytimg.com/vi/B08hVmMTmNc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w_AaXtKU4jo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
