@@ -2,7 +2,7 @@
 title: "Ayo Maff"
 slug: "ayo-maff"
 type: "artists"
-image: "https://i.ytimg.com/vi/NjuyxkhZhZc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/50k5BsdfDho/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

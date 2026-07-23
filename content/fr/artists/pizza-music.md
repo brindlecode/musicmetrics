@@ -2,7 +2,7 @@
 title: "Pizza Music"
 slug: "pizza-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/yL3vwBFvEHo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xSzBhQ9jmRk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
