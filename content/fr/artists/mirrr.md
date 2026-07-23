@@ -2,7 +2,7 @@
 title: "Mirrr"
 slug: "mirrr"
 type: "artists"
-image: "https://i.ytimg.com/vi/JMztb3E36Is/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r1Eb1qnqLzA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

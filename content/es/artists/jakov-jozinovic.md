@@ -2,7 +2,7 @@
 title: "Jakov Jozinovic"
 slug: "jakov-jozinovic"
 type: "artists"
-image: "https://i.ytimg.com/vi/zA0Ezbpkzrc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ajG_f4vND6Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

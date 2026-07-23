@@ -2,7 +2,7 @@
 title: "Billkin Entertainment"
 slug: "billkin-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/bs0QdQNLHkA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MInvZyjoN-Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

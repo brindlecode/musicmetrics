@@ -2,7 +2,7 @@
 title: "Hoàng K"
 slug: "hong-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/OmHCXrkS2iQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/c8DIvNr5nSI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "CLEO"
 slug: "cleo"
 type: "artists"
-image: "https://i.ytimg.com/vi/3mkjFfY2BMI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bFG1vZl5Ie4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
