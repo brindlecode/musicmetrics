@@ -2,7 +2,7 @@
 title: "Queen"
 slug: "queen"
 type: "artists"
-image: "https://i.ytimg.com/vi/b72gdhV_rXM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ipDEXJHEfTI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
