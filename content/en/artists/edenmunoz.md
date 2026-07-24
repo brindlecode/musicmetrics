@@ -2,7 +2,7 @@
 title: "edenmunoz"
 slug: "edenmunoz"
 type: "artists"
-image: "https://i.ytimg.com/vi/Fb_QpEPPuG0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B1lP7H3hmZg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

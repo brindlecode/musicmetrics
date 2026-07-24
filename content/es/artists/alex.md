@@ -2,7 +2,7 @@
 title: "Alex-听听音乐"
 slug: "alex"
 type: "artists"
-image: "https://i.ytimg.com/vi/KyvvobfDWmg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qd4AGjlGg2U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

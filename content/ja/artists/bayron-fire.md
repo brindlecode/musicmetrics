@@ -2,7 +2,7 @@
 title: "BAYRON FIRE"
 slug: "bayron-fire"
 type: "artists"
-image: "https://i.ytimg.com/vi/Bzk-ARBCCM4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0S6Ii7T9lpA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

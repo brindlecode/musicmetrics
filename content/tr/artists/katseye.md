@@ -2,7 +2,7 @@
 title: "KATSEYE"
 slug: "katseye"
 type: "artists"
-image: "https://i.ytimg.com/vi/k3VwwLeorsU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vOfyxPRunFM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
