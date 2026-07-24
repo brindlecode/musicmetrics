@@ -1,11 +1,11 @@
 ---
-title: "Cumbia Rocha"
+title: "cumbia rocha"
 slug: "cumbia-rocha"
 type: "artists"
-image: "https://i.ytimg.com/vi/GU_RT6ci_eA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8Gqal1M5WWw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Cumbia Rocha streaming statistics, chart positions and analytics across youtube"
+description: "cumbia rocha streaming statistics, chart positions and analytics across youtube"
 ---

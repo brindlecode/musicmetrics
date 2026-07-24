@@ -2,7 +2,7 @@
 title: "Timal"
 slug: "timal"
 type: "artists"
-image: "https://i.ytimg.com/vi/NrRXOQQjg-A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/v6TfDP8VQYo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
