@@ -2,7 +2,7 @@
 title: "muccosyoutube"
 slug: "muccosyoutube"
 type: "artists"
-image: "https://i.ytimg.com/vi/WeOyQX2FQjs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QYipCwppOJo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

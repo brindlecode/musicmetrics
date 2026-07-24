@@ -2,7 +2,7 @@
 title: "ARIA VEGA"
 slug: "aria-vega"
 type: "artists"
-image: "https://i.ytimg.com/vi/sMHsnOtPg38/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K43oW5uRuMQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

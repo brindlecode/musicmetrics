@@ -2,7 +2,7 @@
 title: "MCK // Nger"
 slug: "mck-nger"
 type: "artists"
-image: "https://i.ytimg.com/vi/NSkimwwZBRs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Xk9kczrs8I0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

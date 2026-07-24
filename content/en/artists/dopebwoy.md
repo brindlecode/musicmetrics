@@ -2,7 +2,7 @@
 title: "Dopebwoy"
 slug: "dopebwoy"
 type: "artists"
-image: "https://i.ytimg.com/vi/j8U9PsvZDKs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fcs1ASh-dE4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

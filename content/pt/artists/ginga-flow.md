@@ -2,7 +2,7 @@
 title: "Ginga Flow"
 slug: "ginga-flow"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ewuv9rL6TL0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mlWWS2_F_-Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
