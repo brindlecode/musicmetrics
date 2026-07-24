@@ -2,7 +2,7 @@
 title: "Number 1 Records"
 slug: "number-1-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/fMcFO3Zalpw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TB4cRZODayI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

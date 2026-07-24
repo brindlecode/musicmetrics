@@ -2,7 +2,7 @@
 title: "GR!NGOD"
 slug: "grngod"
 type: "artists"
-image: "https://i.ytimg.com/vi/2sA9Fs8LJf4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S29n7P5viS4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

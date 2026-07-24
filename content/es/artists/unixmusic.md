@@ -2,7 +2,7 @@
 title: "UnixMusic"
 slug: "unixmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/n_C8TgsGVEA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3YA7yQpG4q4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

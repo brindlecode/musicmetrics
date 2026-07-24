@@ -2,7 +2,7 @@
 title: "GRIND GANG MUSIC"
 slug: "grind-gang-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/JsWGk_H8QO0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/22GzMo4epWE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Elbobodelas3000"
 slug: "elbobodelas3000"
 type: "artists"
-image: "https://i.ytimg.com/vi/LICLRhP7w6U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/97pHt2tcepw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
