@@ -2,7 +2,7 @@
 title: "Maviler"
 slug: "maviler"
 type: "artists"
-image: "https://i.ytimg.com/vi/zTxqqqOoch0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-18VASzVTuE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

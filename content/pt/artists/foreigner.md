@@ -2,7 +2,7 @@
 title: "Foreigner"
 slug: "foreigner"
 type: "artists"
-image: "https://i.ytimg.com/vi/E_4u0CZ2vok/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oe-bhvLJNjc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

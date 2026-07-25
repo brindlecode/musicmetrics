@@ -2,7 +2,7 @@
 title: "Teni"
 slug: "teni"
 type: "artists"
-image: "https://i.ytimg.com/vi/w-Bbuvgeb20/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AnEbBCyYq2M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
