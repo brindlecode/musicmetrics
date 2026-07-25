@@ -2,7 +2,7 @@
 title: "Harmony Lyrics"
 slug: "harmony-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/-34NuLsGEnQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2RtO4csoJQs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

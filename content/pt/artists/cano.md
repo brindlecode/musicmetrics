@@ -2,7 +2,7 @@
 title: "Cano"
 slug: "cano"
 type: "artists"
-image: "https://i.ytimg.com/vi/d8p5rhid8R8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mQL9WVd9qNc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

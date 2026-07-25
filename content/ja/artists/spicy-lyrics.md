@@ -2,7 +2,7 @@
 title: "Spicy Lyrics"
 slug: "spicy-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/aBA7QMC5XCw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ktd7r0m63Aw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

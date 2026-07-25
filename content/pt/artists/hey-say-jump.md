@@ -2,7 +2,7 @@
 title: "Hey! Say! JUMP"
 slug: "hey-say-jump"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ljs6_vRkYVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wuGmYXkbASk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
