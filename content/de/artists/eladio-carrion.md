@@ -2,7 +2,7 @@
 title: "Eladio Carrion"
 slug: "eladio-carrion"
 type: "artists"
-image: "https://i.ytimg.com/vi/wMR80j9QHRY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YslNTjOiVbo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

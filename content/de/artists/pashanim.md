@@ -2,7 +2,7 @@
 title: "Pashanim"
 slug: "pashanim"
 type: "artists"
-image: "https://i.ytimg.com/vi/jwuB-kgHxo0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IrdzQON_V1o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
