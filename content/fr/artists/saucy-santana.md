@@ -2,7 +2,7 @@
 title: "Saucy Santana"
 slug: "saucy-santana"
 type: "artists"
-image: "https://i.ytimg.com/vi/r0w5GCfFsTU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MKl7uciEUE4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

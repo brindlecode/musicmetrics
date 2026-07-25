@@ -2,7 +2,7 @@
 title: "Maestro Barsik"
 slug: "maestro-barsik"
 type: "artists"
-image: "https://i.ytimg.com/vi/spRJoxgd4JI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UspB1dbTFo8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

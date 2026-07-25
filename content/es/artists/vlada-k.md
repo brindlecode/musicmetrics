@@ -2,7 +2,7 @@
 title: "VLADA K"
 slug: "vlada-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/v8qCf0CcdXE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zT9UPot9uaE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "D Block Europe TV"
 slug: "d-block-europe-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/BKkEcSa5iHk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mecy6K90C0s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "NAZA"
 slug: "naza"
 type: "artists"
-image: "https://i.ytimg.com/vi/18bsOSJ06uY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t1EPbAqKGjM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

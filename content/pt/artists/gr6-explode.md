@@ -2,7 +2,7 @@
 title: "GR6 EXPLODE"
 slug: "gr6-explode"
 type: "artists"
-image: "https://i.ytimg.com/vi/hCuuW8NG-1w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wqvKWPtDRTw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Greatman Takit"
 slug: "greatman-takit"
 type: "artists"
-image: "https://i.ytimg.com/vi/u7TH4RT26jU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MXM-si6fBvs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

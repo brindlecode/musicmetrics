@@ -2,7 +2,7 @@
 title: "CenLis"
 slug: "cenlis"
 type: "artists"
-image: "https://i.ytimg.com/vi/WsR6m5FLwrM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bRGd182ye0M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Big Star"
 slug: "big-star"
 type: "artists"
-image: "https://i.ytimg.com/vi/K8rJ3Qp84fA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ua1NL9CU7xI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "سلطان الشن - Sultan Elshan"
 slug: "sultan-elshan"
 type: "artists"
-image: "https://i.ytimg.com/vi/LV_MGbo_ezI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4_QNNRfid74/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

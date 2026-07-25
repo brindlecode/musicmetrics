@@ -2,7 +2,7 @@
 title: "Xeulitzy"
 slug: "xeulitzy"
 type: "artists"
-image: "https://i.ytimg.com/vi/xuMzAWwCg_o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oFPbQMOb5P4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
