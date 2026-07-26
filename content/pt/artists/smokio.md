@@ -2,7 +2,7 @@
 title: "Smokio"
 slug: "smokio"
 type: "artists"
-image: "https://i.ytimg.com/vi/VSk0SYvRCGU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P4jcBiXIvOo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
