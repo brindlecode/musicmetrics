@@ -2,7 +2,7 @@
 title: "FUNK DE DRAK"
 slug: "funk-de-drak"
 type: "artists"
-image: "https://i.ytimg.com/vi/8p1oHscM824/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7xvdH_f_x6k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

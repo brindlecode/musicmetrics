@@ -2,7 +2,7 @@
 title: "Fäascht Bänkler"
 slug: "fascht-bnkler"
 type: "artists"
-image: "https://i.ytimg.com/vi/u2eNTaaqcwk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nEzUNqu2hYU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

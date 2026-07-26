@@ -2,7 +2,7 @@
 title: "Meryl 270"
 slug: "meryl-270"
 type: "artists"
-image: "https://i.ytimg.com/vi/rELzBj1tDlk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6uvq5kGz1EM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

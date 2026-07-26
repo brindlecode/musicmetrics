@@ -2,7 +2,7 @@
 title: "BANGTANTV"
 slug: "bangtantv"
 type: "artists"
-image: "https://i.ytimg.com/vi/Hb06Iem3FWg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NySBAMooqOc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
