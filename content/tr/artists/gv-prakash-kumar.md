@@ -2,7 +2,7 @@
 title: "G.V. Prakash Kumar"
 slug: "gv-prakash-kumar"
 type: "artists"
-image: "https://i.ytimg.com/vi/ntf3KM24nrc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SmPcTv7uBaM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

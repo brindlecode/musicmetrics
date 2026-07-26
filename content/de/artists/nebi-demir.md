@@ -2,7 +2,7 @@
 title: "Nebi Demir"
 slug: "nebi-demir"
 type: "artists"
-image: "https://i.ytimg.com/vi/K3M3kDNkaIg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/V7N6I-W2dVU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

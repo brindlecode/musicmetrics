@@ -2,7 +2,7 @@
 title: "Glim"
 slug: "glim"
 type: "artists"
-image: "https://i.ytimg.com/vi/JowviCVicQY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/URH682gcpH0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

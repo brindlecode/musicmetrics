@@ -2,7 +2,7 @@
 title: "SabroSón"
 slug: "sabrosn"
 type: "artists"
-image: "https://i.ytimg.com/vi/i0SE21d3B98/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dw-Ad1D9vFc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
