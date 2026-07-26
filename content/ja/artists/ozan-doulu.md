@@ -2,7 +2,7 @@
 title: "Ozan Doğulu"
 slug: "ozan-doulu"
 type: "artists"
-image: "https://i.ytimg.com/vi/a-UwWd10nhQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/71hkUtUHWOI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

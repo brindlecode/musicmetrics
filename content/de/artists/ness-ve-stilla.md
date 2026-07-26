@@ -2,7 +2,7 @@
 title: "Ness Ve Stilla"
 slug: "ness-ve-stilla"
 type: "artists"
-image: "https://i.ytimg.com/vi/yUr_PlWs0RA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0N9zLnvyQD0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

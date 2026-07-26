@@ -2,7 +2,7 @@
 title: "manifest"
 slug: "manifest"
 type: "artists"
-image: "https://i.ytimg.com/vi/EQQNb4iJVIk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0pg0raFMNIU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
