@@ -2,7 +2,7 @@
 title: "Rocketfuel Network"
 slug: "rocketfuel-network"
 type: "artists"
-image: "https://i.ytimg.com/vi/BHwcpWwnEls/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7f6_OWxNhlo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Fat Papi"
 slug: "fat-papi"
 type: "artists"
-image: "https://i.ytimg.com/vi/kFeYV_QO2oo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Q6978DnF8C4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

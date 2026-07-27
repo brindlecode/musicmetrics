@@ -2,7 +2,7 @@
 title: "Asco"
 slug: "asco"
 type: "artists"
-image: "https://i.ytimg.com/vi/RCTuQ2O9i7U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/33FNKeQEcg4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

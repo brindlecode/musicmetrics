@@ -2,7 +2,7 @@
 title: "Alessio Official TV"
 slug: "alessio-official-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/2lZR_Tf6L0w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I9Tv1uxxWkE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
