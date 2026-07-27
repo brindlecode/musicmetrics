@@ -2,7 +2,7 @@
 title: "Tiwinza"
 slug: "tiwinza"
 type: "artists"
-image: "https://i.ytimg.com/vi/tmVrrnfirmw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h_7O4oqJNqQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
