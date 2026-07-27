@@ -2,7 +2,7 @@
 title: "Deti Iuga"
 slug: "deti-iuga"
 type: "artists"
-image: "https://i.ytimg.com/vi/vr9xwsBFo1U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xip338SFgRM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

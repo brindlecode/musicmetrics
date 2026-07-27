@@ -2,7 +2,7 @@
 title: "BakaPrase"
 slug: "bakaprase"
 type: "artists"
-image: "https://i.ytimg.com/vi/pSzx0zRjBxU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LSbycb41dLk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
