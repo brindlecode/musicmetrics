@@ -2,7 +2,7 @@
 title: "Orquesta SON DEL DUKE"
 slug: "orquesta-son-del-duke"
 type: "artists"
-image: "https://i.ytimg.com/vi/BOXtsyQm7U0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/d-dQ7MRljdg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
