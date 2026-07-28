@@ -2,7 +2,7 @@
 title: "Slam"
 slug: "slam"
 type: "artists"
-image: "https://i.ytimg.com/vi/gnTpE9tR-_g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g902_8jZDtA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
