@@ -2,7 +2,7 @@
 title: "Freez247"
 slug: "freez247"
 type: "artists"
-image: "https://i.ytimg.com/vi/itTrBo2pssk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WjiA2SgRVEw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

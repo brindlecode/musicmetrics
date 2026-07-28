@@ -2,7 +2,7 @@
 title: "KKevin"
 slug: "kkevin"
 type: "artists"
-image: "https://i.ytimg.com/vi/3y-DklE1ink/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/79nY7g8O3SY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

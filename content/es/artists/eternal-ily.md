@@ -2,7 +2,7 @@
 title: "Eternal ILY"
 slug: "eternal-ily"
 type: "artists"
-image: "https://i.ytimg.com/vi/PKos5T7aL-Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vn6OdXitFBo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
