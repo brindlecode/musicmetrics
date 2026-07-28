@@ -2,7 +2,7 @@
 title: "Milion Plus"
 slug: "milion-plus"
 type: "artists"
-image: "https://i.ytimg.com/vi/P5WnRw_zrFs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RULP9oYMQEI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

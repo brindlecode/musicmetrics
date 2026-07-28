@@ -2,7 +2,7 @@
 title: "ROMA DJ"
 slug: "roma-dj"
 type: "artists"
-image: "https://i.ytimg.com/vi/m4IAU7sq5Uo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7Q2AUA7Jyek/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

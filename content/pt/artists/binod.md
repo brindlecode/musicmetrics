@@ -2,7 +2,7 @@
 title: "Binod"
 slug: "binod"
 type: "artists"
-image: "https://i.ytimg.com/vi/lZPHTfLI9pI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mry9tOVn_fI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
