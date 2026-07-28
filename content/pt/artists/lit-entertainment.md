@@ -2,7 +2,7 @@
 title: "LIT Entertainment"
 slug: "lit-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/3f-4H24dJ-E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OsKIZbOomec/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

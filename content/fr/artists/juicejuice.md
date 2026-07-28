@@ -2,7 +2,7 @@
 title: "Juice=Juice"
 slug: "juicejuice"
 type: "artists"
-image: "https://i.ytimg.com/vi/66T4PgpJDn8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nrGLxAWIUJo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

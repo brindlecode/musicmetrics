@@ -2,7 +2,7 @@
 title: "LACIKADOBOZI"
 slug: "lacikadobozi"
 type: "artists"
-image: "https://i.ytimg.com/vi/MVd95fjglyo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8qQmv6abG10/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

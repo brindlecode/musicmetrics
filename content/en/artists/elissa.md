@@ -2,7 +2,7 @@
 title: "Elissa"
 slug: "elissa"
 type: "artists"
-image: "https://i.ytimg.com/vi/sWG1aH5vex0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M5Z8UMrXDIg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

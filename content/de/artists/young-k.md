@@ -2,7 +2,7 @@
 title: "Young K"
 slug: "young-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/W9SBhNLTDVw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gw9dm2tHf9k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
