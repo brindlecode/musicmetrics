@@ -2,7 +2,7 @@
 title: "Mariglen Hazizaj"
 slug: "mariglen-hazizaj"
 type: "artists"
-image: "https://i.ytimg.com/vi/TLrqsYkXiWk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3t8m1FgzaOM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

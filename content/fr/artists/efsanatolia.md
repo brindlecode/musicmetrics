@@ -2,7 +2,7 @@
 title: "EfsAnatolia"
 slug: "efsanatolia"
 type: "artists"
-image: "https://i.ytimg.com/vi/dXvBhLLudJw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3zVnxIqoOjA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

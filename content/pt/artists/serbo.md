@@ -2,7 +2,7 @@
 title: "SERBO"
 slug: "serbo"
 type: "artists"
-image: "https://i.ytimg.com/vi/VHABcZErTdQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C4sbSSi80Nc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

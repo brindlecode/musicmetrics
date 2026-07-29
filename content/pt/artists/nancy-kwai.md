@@ -1,11 +1,11 @@
 ---
-title: "Nancy Kwai 歸綽嶢"
+title: "Nancy Kwai"
 slug: "nancy-kwai"
 type: "artists"
-image: "https://i.ytimg.com/vi/KM7tp0mVpho/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R0jfC2gsKC8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Nancy Kwai 歸綽嶢 streaming statistics, chart positions and analytics across youtube"
+description: "Nancy Kwai streaming statistics, chart positions and analytics across youtube"
 ---

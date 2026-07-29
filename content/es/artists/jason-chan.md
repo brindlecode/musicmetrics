@@ -2,7 +2,7 @@
 title: "陳柏宇 Jason Chan"
 slug: "jason-chan"
 type: "artists"
-image: "https://i.ytimg.com/vi/GQ8jmsS68T0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7g7GsSCEWQE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
