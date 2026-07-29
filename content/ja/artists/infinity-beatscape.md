@@ -2,7 +2,7 @@
 title: "Infinity Beatscape"
 slug: "infinity-beatscape"
 type: "artists"
-image: "https://i.ytimg.com/vi/PbYBdJ7tPzo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OcF4e0T2GlQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
