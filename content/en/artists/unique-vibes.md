@@ -2,7 +2,7 @@
 title: "Unique Vibes"
 slug: "unique-vibes"
 type: "artists"
-image: "https://i.ytimg.com/vi/9oB-romSko0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UKMLprkoG_Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

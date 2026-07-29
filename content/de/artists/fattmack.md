@@ -2,7 +2,7 @@
 title: "FattMack"
 slug: "fattmack"
 type: "artists"
-image: "https://i.ytimg.com/vi/oZJIUYWFrNg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mNkJt3tMoUU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Virtuau"
 slug: "virtuau"
 type: "artists"
-image: "https://i.ytimg.com/vi/YpdvGBwWWpY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xtWHM56EoqE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

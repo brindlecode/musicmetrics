@@ -2,7 +2,7 @@
 title: "Manele Caviar"
 slug: "manele-caviar"
 type: "artists"
-image: "https://i.ytimg.com/vi/fpKzHTHq5JM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qRXmnZiCK8k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
