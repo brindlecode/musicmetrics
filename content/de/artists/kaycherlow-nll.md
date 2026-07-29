@@ -2,7 +2,7 @@
 title: "KayCherlow NLL"
 slug: "kaycherlow-nll"
 type: "artists"
-image: "https://i.ytimg.com/vi/FN2Bz8S5nyc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8GZWfAcF8kQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

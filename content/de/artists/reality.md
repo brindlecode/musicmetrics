@@ -2,7 +2,7 @@
 title: "Reality"
 slug: "reality"
 type: "artists"
-image: "https://i.ytimg.com/vi/yU9kyp6PK8k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UX7e4FT2vRc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

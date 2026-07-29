@@ -2,7 +2,7 @@
 title: "Tamer Ashour"
 slug: "tamer-ashour"
 type: "artists"
-image: "https://i.ytimg.com/vi/vDNqR_fefWc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gfYIeQAnYn8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

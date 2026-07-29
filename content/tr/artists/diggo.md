@@ -2,7 +2,7 @@
 title: "Diggo"
 slug: "diggo"
 type: "artists"
-image: "https://i.ytimg.com/vi/5QFK6CwRoFc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MqooNmc2MDs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
