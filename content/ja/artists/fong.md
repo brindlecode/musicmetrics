@@ -2,7 +2,7 @@
 title: "Fong-花"
 slug: "fong"
 type: "artists"
-image: "https://i.ytimg.com/vi/g-sYBCaxcOA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r-UW6_WnKdw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
