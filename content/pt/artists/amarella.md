@@ -2,7 +2,7 @@
 title: "AmarElla"
 slug: "amarella"
 type: "artists"
-image: "https://i.ytimg.com/vi/BIXP-1Agy94/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iWBdxxs9iKw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

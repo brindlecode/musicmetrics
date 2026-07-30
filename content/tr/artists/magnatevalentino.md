@@ -2,7 +2,7 @@
 title: "MagnateValentino"
 slug: "magnatevalentino"
 type: "artists"
-image: "https://i.ytimg.com/vi/E26zKNatD7E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CZGa0ySdzKg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

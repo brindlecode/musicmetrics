@@ -2,7 +2,7 @@
 title: "Tips Punjabi"
 slug: "tips-punjabi"
 type: "artists"
-image: "https://i.ytimg.com/vi/mlb5yBGTTRI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C6f4JDGtfG0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

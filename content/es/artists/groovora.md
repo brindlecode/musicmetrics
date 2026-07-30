@@ -2,7 +2,7 @@
 title: "Groovora"
 slug: "groovora"
 type: "artists"
-image: "https://i.ytimg.com/vi/lOprp9UDdzU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2fJN18HYPKc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
