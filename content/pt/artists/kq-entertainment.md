@@ -2,7 +2,7 @@
 title: "KQ ENTERTAINMENT"
 slug: "kq-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/p67W66bny94/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-q_S27LbNKU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

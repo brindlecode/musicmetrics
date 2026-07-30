@@ -2,7 +2,7 @@
 title: "Luda G"
 slug: "luda-g"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZuTfykA1T_I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JMFFPc8fp-w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

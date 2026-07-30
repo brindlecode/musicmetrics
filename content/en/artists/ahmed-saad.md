@@ -2,7 +2,7 @@
 title: "Ahmed Saad"
 slug: "ahmed-saad"
 type: "artists"
-image: "https://i.ytimg.com/vi/dw8VIqTrnhs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9oU_Xm4-rdw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
