@@ -2,7 +2,7 @@
 title: "JELENA KARLEUŠA"
 slug: "jelena-karleua"
 type: "artists"
-image: "https://i.ytimg.com/vi/Z_vk6lLjWKA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nFyDeVxLRn4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

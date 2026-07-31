@@ -2,7 +2,7 @@
 title: "Angham"
 slug: "angham"
 type: "artists"
-image: "https://i.ytimg.com/vi/tg0OpfYK0fE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5-ZGM1K2NyQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

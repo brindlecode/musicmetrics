@@ -2,7 +2,7 @@
 title: "Bandata Na Ruba"
 slug: "bandata-na-ruba"
 type: "artists"
-image: "https://i.ytimg.com/vi/Zg-LTRJklvw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/X7TD8sfEzDw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
