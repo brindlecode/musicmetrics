@@ -2,7 +2,7 @@
 title: "Arte Elegante oficial"
 slug: "arte-elegante-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/cRbayvin2j0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EUVEP0-UlPg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

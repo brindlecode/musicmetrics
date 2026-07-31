@@ -2,7 +2,7 @@
 title: "Eliã Oliveira"
 slug: "eli-oliveira"
 type: "artists"
-image: "https://i.ytimg.com/vi/PIK-FRItuR8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zQM18yEz42Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

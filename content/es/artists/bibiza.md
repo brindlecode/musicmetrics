@@ -2,7 +2,7 @@
 title: "BIBIZA"
 slug: "bibiza"
 type: "artists"
-image: "https://i.ytimg.com/vi/7I-WtSe7iYE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/X0yvLQ69Wic/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

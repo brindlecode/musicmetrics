@@ -2,7 +2,7 @@
 title: "Cllevio Masoni 44"
 slug: "cllevio-masoni-44"
 type: "artists"
-image: "https://i.ytimg.com/vi/2PdscDj3BtU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1XQlkJPcL14/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

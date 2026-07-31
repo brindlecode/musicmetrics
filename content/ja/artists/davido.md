@@ -2,7 +2,7 @@
 title: "Davido"
 slug: "davido"
 type: "artists"
-image: "https://i.ytimg.com/vi/AdAB6oyq_II/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mkwzDRN6Yxk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

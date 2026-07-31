@@ -2,7 +2,7 @@
 title: "DICARI MUSIC"
 slug: "dicari-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/0gavGcBg6yU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OfYwS6cnlCk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

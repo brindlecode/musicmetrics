@@ -2,7 +2,7 @@
 title: "CAKAL"
 slug: "cakal"
 type: "artists"
-image: "https://i.ytimg.com/vi/l4IY99Si10k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C9yJGqx6j6M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
