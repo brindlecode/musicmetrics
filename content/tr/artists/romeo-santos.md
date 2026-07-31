@@ -2,7 +2,7 @@
 title: "Romeo Santos"
 slug: "romeo-santos"
 type: "artists"
-image: "https://i.ytimg.com/vi/-uvNvVtUidc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F15wM9u0s4Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
