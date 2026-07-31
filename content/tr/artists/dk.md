@@ -2,7 +2,7 @@
 title: "DK"
 slug: "dk"
 type: "artists"
-image: "https://i.ytimg.com/vi/jgjd9Ph0VhM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Nm755ll3-co/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
