@@ -2,7 +2,7 @@
 title: "Echo Lyrics"
 slug: "echo-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/L-C3ewL-2NU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uWVj1tzEN1s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

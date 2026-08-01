@@ -2,7 +2,7 @@
 title: "Periferic"
 slug: "periferic"
 type: "artists"
-image: "https://i.ytimg.com/vi/NhZvr_Yoq_w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yXg7FFU6V28/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

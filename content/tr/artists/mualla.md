@@ -1,11 +1,11 @@
 ---
-title: "mualla"
+title: "Mualla"
 slug: "mualla"
 type: "artists"
-image: "https://i.ytimg.com/vi/2TUHYC5jTVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LO6pLwREFDU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "mualla streaming statistics, chart positions and analytics across youtube"
+description: "Mualla streaming statistics, chart positions and analytics across youtube"
 ---

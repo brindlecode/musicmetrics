@@ -2,7 +2,7 @@
 title: "Mario"
 slug: "mario"
 type: "artists"
-image: "https://i.ytimg.com/vi/niNDQO-Ie4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iKvMIKFHWMs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

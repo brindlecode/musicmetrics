@@ -2,7 +2,7 @@
 title: "Nico Mattioli"
 slug: "nico-mattioli"
 type: "artists"
-image: "https://i.ytimg.com/vi/UEL36lKZhMw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Elt6Dv0WWl0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

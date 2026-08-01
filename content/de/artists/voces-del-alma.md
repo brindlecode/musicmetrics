@@ -2,7 +2,7 @@
 title: "Voces del Alma"
 slug: "voces-del-alma"
 type: "artists"
-image: "https://i.ytimg.com/vi/FLlTYlia7Uw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HTq-4CF8P_0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

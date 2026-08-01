@@ -2,7 +2,7 @@
 title: "ArianaGrande"
 slug: "arianagrande"
 type: "artists"
-image: "https://i.ytimg.com/vi/Tc-gXkHAri8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/afSgBNwmZrQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "IguinhoCt"
 slug: "iguinhoct"
 type: "artists"
-image: "https://i.ytimg.com/vi/0pganviN2Kk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qVFHWuItGh0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

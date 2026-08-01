@@ -2,7 +2,7 @@
 title: "NEARLY EQUAL JOY ニアリーイコールジョイ 公式チャンネル"
 slug: "nearly-equal-joy"
 type: "artists"
-image: "https://i.ytimg.com/vi/wO2z79qqB1Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RUEnyZLCtW4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

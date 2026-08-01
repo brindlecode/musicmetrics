@@ -2,7 +2,7 @@
 title: "אביגיל ויסמן - AVIGAIL"
 slug: "avigail"
 type: "artists"
-image: "https://i.ytimg.com/vi/Jo2YZgxBQQ4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ODKz3XYphR4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

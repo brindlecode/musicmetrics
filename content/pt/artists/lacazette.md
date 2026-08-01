@@ -2,7 +2,7 @@
 title: "LACAZETTE"
 slug: "lacazette"
 type: "artists"
-image: "https://i.ytimg.com/vi/YER2eynE7Ho/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bqBmCGp1-eY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

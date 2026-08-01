@@ -2,7 +2,7 @@
 title: "Don Alee"
 slug: "don-alee"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vb2VNa___nA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cOs9tMVl9oU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
