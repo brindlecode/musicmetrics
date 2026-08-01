@@ -2,7 +2,7 @@
 title: "Rim'k"
 slug: "rimk"
 type: "artists"
-image: "https://i.ytimg.com/vi/JcSKghq-sTs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/a_0Ewg-WQro/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
