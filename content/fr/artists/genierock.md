@@ -2,7 +2,7 @@
 title: "Genierock"
 slug: "genierock"
 type: "artists"
-image: "https://i.ytimg.com/vi/5UqInlWu6Zg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vjCO0DDGFio/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
