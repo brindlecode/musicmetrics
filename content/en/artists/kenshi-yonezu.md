@@ -2,7 +2,7 @@
 title: "Kenshi Yonezu  米津玄師"
 slug: "kenshi-yonezu"
 type: "artists"
-image: "https://i.ytimg.com/vi/l2jvIuTp534/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qdawWNhgzRo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

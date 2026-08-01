@@ -2,7 +2,7 @@
 title: "The Strokes"
 slug: "the-strokes"
 type: "artists"
-image: "https://i.ytimg.com/vi/d5NnDC716wg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sal78l1W6fE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

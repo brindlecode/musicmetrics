@@ -2,7 +2,7 @@
 title: "2FithyRicky"
 slug: "2fithyricky"
 type: "artists"
-image: "https://i.ytimg.com/vi/ONI0beSVcKI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RIi9uULatdA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

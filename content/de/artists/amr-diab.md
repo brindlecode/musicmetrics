@@ -2,7 +2,7 @@
 title: "Amr Diab"
 slug: "amr-diab"
 type: "artists"
-image: "https://i.ytimg.com/vi/04qaw2nx5qY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/u_G1NCwQZ4E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
