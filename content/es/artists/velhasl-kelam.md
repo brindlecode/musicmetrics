@@ -2,7 +2,7 @@
 title: "Velhasıl Kelam"
 slug: "velhasl-kelam"
 type: "artists"
-image: "https://i.ytimg.com/vi/7nxAV8DVfj8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gbg6foRa2k8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

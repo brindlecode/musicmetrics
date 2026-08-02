@@ -2,7 +2,7 @@
 title: "Max Barskih"
 slug: "max-barskih"
 type: "artists"
-image: "https://i.ytimg.com/vi/GWx2JgImBIU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k-5RD0XIEcY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

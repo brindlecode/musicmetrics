@@ -2,7 +2,7 @@
 title: "Like Mike"
 slug: "like-mike"
 type: "artists"
-image: "https://i.ytimg.com/vi/qLalJpil7y0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bopWEN0v9Y8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
