@@ -2,7 +2,7 @@
 title: "Chily"
 slug: "chily"
 type: "artists"
-image: "https://i.ytimg.com/vi/7aY_hJxPMiA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wimqx7e4adI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sony Music China索尼音樂中國"
 slug: "sony-music-china"
 type: "artists"
-image: "https://i.ytimg.com/vi/xdB6gJPguAQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YacpC7sUXMM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

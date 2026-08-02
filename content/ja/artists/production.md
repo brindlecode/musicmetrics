@@ -2,7 +2,7 @@
 title: "Production - موقع الفهد"
 slug: "production"
 type: "artists"
-image: "https://i.ytimg.com/vi/sKPWV3kj9DM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QSnQ-lzxQI0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

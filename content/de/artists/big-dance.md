@@ -2,7 +2,7 @@
 title: "Big Dance"
 slug: "big-dance"
 type: "artists"
-image: "https://i.ytimg.com/vi/V4yKpummptY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3r4qHSOOzxI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

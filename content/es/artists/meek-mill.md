@@ -2,7 +2,7 @@
 title: "Meek Mill"
 slug: "meek-mill"
 type: "artists"
-image: "https://i.ytimg.com/vi/TfWt5AxUA18/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qLC_B2cQrcE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
