@@ -2,7 +2,7 @@
 title: "Unheilig"
 slug: "unheilig"
 type: "artists"
-image: "https://i.ytimg.com/vi/wMMoJGQY7uY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fMUIZk2Fc1o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
