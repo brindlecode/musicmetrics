@@ -2,7 +2,7 @@
 title: "beats and beats"
 slug: "beats-and-beats"
 type: "artists"
-image: "https://i.ytimg.com/vi/yFtpbcZFebU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DGTzwidZRNk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

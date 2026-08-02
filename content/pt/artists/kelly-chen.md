@@ -2,7 +2,7 @@
 title: "Kelly Chen 陳慧琳"
 slug: "kelly-chen"
 type: "artists"
-image: "https://i.ytimg.com/vi/QgI7xvXSgP0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gHFT2aHC5ME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
