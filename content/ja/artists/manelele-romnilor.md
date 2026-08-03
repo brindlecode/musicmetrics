@@ -2,7 +2,7 @@
 title: "Manelele Românilor"
 slug: "manelele-romnilor"
 type: "artists"
-image: "https://i.ytimg.com/vi/Oguc1MklwqI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/f3sSYKMyiw0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

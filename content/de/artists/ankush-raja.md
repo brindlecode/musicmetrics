@@ -2,7 +2,7 @@
 title: "Ankush Raja"
 slug: "ankush-raja"
 type: "artists"
-image: "https://i.ytimg.com/vi/F-9KBvT3OgY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tUERPrTO0ME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

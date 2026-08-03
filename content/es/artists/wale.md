@@ -2,7 +2,7 @@
 title: "Wale"
 slug: "wale"
 type: "artists"
-image: "https://i.ytimg.com/vi/60uWfDC5_h8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3J4sU2uU7-w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
