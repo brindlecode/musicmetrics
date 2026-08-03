@@ -2,7 +2,7 @@
 title: "Awantika Music Bhojpuri"
 slug: "awantika-music-bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/YQ-tsE77SeE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G2NkGGggn_E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

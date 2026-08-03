@@ -2,7 +2,7 @@
 title: "PRESLAVA"
 slug: "preslava"
 type: "artists"
-image: "https://i.ytimg.com/vi/a_6PQJEeNy8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S6B_vtMbZqY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
