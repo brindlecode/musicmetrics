@@ -2,7 +2,7 @@
 title: "Denis Spaniolu'"
 slug: "denis-spaniolu"
 type: "artists"
-image: "https://i.ytimg.com/vi/g9eRVZDnX6c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l-bWi6jlknE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

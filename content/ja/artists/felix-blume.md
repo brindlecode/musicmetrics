@@ -2,7 +2,7 @@
 title: "Felix Blume"
 slug: "felix-blume"
 type: "artists"
-image: "https://i.ytimg.com/vi/eNt-Ubkpv4s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2XWA2LqWS4M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

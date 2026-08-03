@@ -1,11 +1,11 @@
 ---
-title: "Heuss L’enfoiré"
+title: "Heuss L'Enfoiré"
 slug: "heuss-lenfoir"
 type: "artists"
-image: "https://i.ytimg.com/vi/iOBakUf3Hmc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uqGR7m0X9mk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Heuss L’enfoiré streaming statistics, chart positions and analytics across youtube"
+description: "Heuss L'Enfoiré streaming statistics, chart positions and analytics across youtube"
 ---

@@ -2,7 +2,7 @@
 title: "Dea Hysenaj"
 slug: "dea-hysenaj"
 type: "artists"
-image: "https://i.ytimg.com/vi/ba26n4izDu8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z2beNF66qKI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

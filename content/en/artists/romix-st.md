@@ -2,7 +2,7 @@
 title: "ROMIX ST"
 slug: "romix-st"
 type: "artists"
-image: "https://i.ytimg.com/vi/3uA0foAm3nQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jeKrZaamz1M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
