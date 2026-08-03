@@ -1,11 +1,11 @@
 ---
-title: "Feanna Wong"
+title: "黃淑蔓 Feanna Wong"
 slug: "feanna-wong"
 type: "artists"
-image: "https://i.ytimg.com/vi/0186TbA7eoY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rDCt90uJXRg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Feanna Wong streaming statistics, chart positions and analytics across youtube"
+description: "黃淑蔓 Feanna Wong streaming statistics, chart positions and analytics across youtube"
 ---
