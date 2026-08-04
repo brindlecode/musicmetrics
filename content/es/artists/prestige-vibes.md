@@ -2,7 +2,7 @@
 title: "Prestige Vibes"
 slug: "prestige-vibes"
 type: "artists"
-image: "https://i.ytimg.com/vi/YsixJJAOIQE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oh_bHCQcPOw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

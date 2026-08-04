@@ -2,7 +2,7 @@
 title: "Sasan Kanklai"
 slug: "sasan-kanklai"
 type: "artists"
-image: "https://i.ytimg.com/vi/6U9m5AKM2h4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Un8zbiOI-Hk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

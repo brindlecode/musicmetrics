@@ -2,7 +2,7 @@
 title: "RYU MIN HEE"
 slug: "ryu-min-hee"
 type: "artists"
-image: "https://i.ytimg.com/vi/kfG1-PhgXJc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pjvG81FjfA4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

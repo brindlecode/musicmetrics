@@ -2,7 +2,7 @@
 title: "Balqees | بلقيس"
 slug: "balqees"
 type: "artists"
-image: "https://i.ytimg.com/vi/ubt6zWnPl7Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GY9wtU6zoIM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
