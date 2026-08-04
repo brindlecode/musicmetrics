@@ -2,7 +2,7 @@
 title: "ChikaMimiHD"
 slug: "chikamimihd"
 type: "artists"
-image: "https://i.ytimg.com/vi/tj2MOjVx9Sc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MrfAT3DUX_Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

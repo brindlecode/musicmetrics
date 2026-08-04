@@ -2,7 +2,7 @@
 title: "Red Velvet"
 slug: "red-velvet"
 type: "artists"
-image: "https://i.ytimg.com/vi/sUjhPLauVE4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/obP2P15pO5w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
