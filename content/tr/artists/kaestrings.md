@@ -2,7 +2,7 @@
 title: "Kaestrings"
 slug: "kaestrings"
 type: "artists"
-image: "https://i.ytimg.com/vi/mvd8GpkyW2o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MsdCUqObd78/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

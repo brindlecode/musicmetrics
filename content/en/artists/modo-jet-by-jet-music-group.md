@@ -2,7 +2,7 @@
 title: "Modo Jet By Jet Music Group"
 slug: "modo-jet-by-jet-music-group"
 type: "artists"
-image: "https://i.ytimg.com/vi/sPLS1wmQvfE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nSc6M-zDcZ0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Allê No Beat"
 slug: "all-no-beat"
 type: "artists"
-image: "https://i.ytimg.com/vi/Yu6-qSdG7DQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/f82gE9GBZ3c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Đen Vâu"
 slug: "en-vu"
 type: "artists"
-image: "https://i.ytimg.com/vi/sMJb5uMofAE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QI_90Dnhokc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

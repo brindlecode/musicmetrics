@@ -2,7 +2,7 @@
 title: "Lufenix"
 slug: "lufenix"
 type: "artists"
-image: "https://i.ytimg.com/vi/C6q64YUMrMY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DKgqkKpKQ-A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

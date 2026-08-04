@@ -2,7 +2,7 @@
 title: "Ivan Zak Službeni kanal"
 slug: "ivan-zak-slubeni-kanal"
 type: "artists"
-image: "https://i.ytimg.com/vi/lHcDkV5Tvns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xpb11X8JPy4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
