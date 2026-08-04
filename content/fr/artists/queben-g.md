@@ -2,7 +2,7 @@
 title: "Queben G"
 slug: "queben-g"
 type: "artists"
-image: "https://i.ytimg.com/vi/vJuYZKuP5b0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZRkkeUtTAFc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

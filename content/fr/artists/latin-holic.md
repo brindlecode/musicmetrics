@@ -2,7 +2,7 @@
 title: "Latin Holic"
 slug: "latin-holic"
 type: "artists"
-image: "https://i.ytimg.com/vi/sy5PTRlQRSI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yUD8aP9Ti24/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

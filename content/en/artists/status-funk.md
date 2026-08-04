@@ -2,7 +2,7 @@
 title: "STATUS FUNK"
 slug: "status-funk"
 type: "artists"
-image: "https://i.ytimg.com/vi/_2sBMaODnS0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KY4zzzgyWhQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

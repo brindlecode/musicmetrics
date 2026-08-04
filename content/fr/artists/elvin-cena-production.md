@@ -2,7 +2,7 @@
 title: "Elvin Cena Production🎵"
 slug: "elvin-cena-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/vJLS4KxRKSo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C4ZbSbzBLz8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Populer Musik"
 slug: "populer-musik"
 type: "artists"
-image: "https://i.ytimg.com/vi/oabUfT5Skjs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2FkVh1Zp0Tc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
