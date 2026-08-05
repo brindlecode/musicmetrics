@@ -2,7 +2,7 @@
 title: "King Savagge"
 slug: "king-savagge"
 type: "artists"
-image: "https://i.ytimg.com/vi/ATc3Y_axqHM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_O_G4PneGDs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

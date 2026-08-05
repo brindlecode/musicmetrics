@@ -2,7 +2,7 @@
 title: "Adrian Norocel"
 slug: "adrian-norocel"
 type: "artists"
-image: "https://i.ytimg.com/vi/Y8IJFjxhMMo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8YsYvjaZELA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
