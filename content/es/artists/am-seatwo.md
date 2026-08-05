@@ -2,7 +2,7 @@
 title: "Am Seatwo"
 slug: "am-seatwo"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZcJhqIBW3xM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/X6EZNyChcpU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
