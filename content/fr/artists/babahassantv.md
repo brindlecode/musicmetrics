@@ -2,7 +2,7 @@
 title: "BabaHassanTV"
 slug: "babahassantv"
 type: "artists"
-image: "https://i.ytimg.com/vi/gmT6S2c_X7I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/t3XFV-D7aj4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

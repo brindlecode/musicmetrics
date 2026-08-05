@@ -2,7 +2,7 @@
 title: "Release"
 slug: "release"
 type: "artists"
-image: "https://i.ytimg.com/vi/9jVa-pQFvxU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2BwbpqThqqA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

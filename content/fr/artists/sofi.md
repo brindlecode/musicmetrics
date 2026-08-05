@@ -2,7 +2,7 @@
 title: "SOFI"
 slug: "sofi"
 type: "artists"
-image: "https://i.ytimg.com/vi/vV3XrF7DIZg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5zRiF_KkIhU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
