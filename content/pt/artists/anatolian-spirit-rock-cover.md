@@ -2,7 +2,7 @@
 title: "Anatolian spirit rock cover"
 slug: "anatolian-spirit-rock-cover"
 type: "artists"
-image: "https://i.ytimg.com/vi/f_xYUzIvO70/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AU9xxiKFwys/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

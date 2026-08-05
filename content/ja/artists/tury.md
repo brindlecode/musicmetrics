@@ -2,7 +2,7 @@
 title: "Tury"
 slug: "tury"
 type: "artists"
-image: "https://i.ytimg.com/vi/nci2zPyxAXs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7fqO7WGn9pE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

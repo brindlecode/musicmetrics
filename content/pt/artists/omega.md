@@ -2,7 +2,7 @@
 title: "Omega"
 slug: "omega"
 type: "artists"
-image: "https://i.ytimg.com/vi/oklIBl6aCXw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fopYLNRU_EU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
