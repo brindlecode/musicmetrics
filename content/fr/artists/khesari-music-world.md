@@ -2,7 +2,7 @@
 title: "Khesari Music World"
 slug: "khesari-music-world"
 type: "artists"
-image: "https://i.ytimg.com/vi/XzkL149gYvA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zILNk65G74o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
