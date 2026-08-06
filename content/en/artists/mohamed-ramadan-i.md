@@ -2,7 +2,7 @@
 title: "Mohamed Ramadan I محمد رمضان"
 slug: "mohamed-ramadan-i"
 type: "artists"
-image: "https://i.ytimg.com/vi/IVDBHDFQYLM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2G93KzLoNaw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

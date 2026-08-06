@@ -2,7 +2,7 @@
 title: "Stay High"
 slug: "stay-high"
 type: "artists"
-image: "https://i.ytimg.com/vi/I4Of0PvM7cw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Bm43p9dFQAs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

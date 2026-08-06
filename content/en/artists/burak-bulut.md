@@ -2,7 +2,7 @@
 title: "Burak Bulut"
 slug: "burak-bulut"
 type: "artists"
-image: "https://i.ytimg.com/vi/qiWerY8vq68/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KF6SfC6Q-ZA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

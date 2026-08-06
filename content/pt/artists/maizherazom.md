@@ -2,7 +2,7 @@
 title: "MaizheRazom"
 slug: "maizherazom"
 type: "artists"
-image: "https://i.ytimg.com/vi/-sejHIh8gEQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mRM-xGicjHI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
