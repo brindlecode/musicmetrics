@@ -2,7 +2,7 @@
 title: "DAYOUNG"
 slug: "dayoung"
 type: "artists"
-image: "https://i.ytimg.com/vi/NM3tJNIOZRc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VD6mGCUSXlE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

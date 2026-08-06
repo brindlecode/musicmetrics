@@ -2,7 +2,7 @@
 title: "Radio Paradise"
 slug: "radio-paradise"
 type: "artists"
-image: "https://i.ytimg.com/vi/2b7QuagzuPI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TKHnkeKGUMw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

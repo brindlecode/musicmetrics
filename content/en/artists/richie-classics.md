@@ -2,7 +2,7 @@
 title: "Richie Classics"
 slug: "richie-classics"
 type: "artists"
-image: "https://i.ytimg.com/vi/oM-03AsbwYE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x9tLMceMhME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
