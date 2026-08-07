@@ -2,7 +2,7 @@
 title: "CARABIN3 Oficial"
 slug: "carabin3-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/hiORLvLW7iY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/osXH6aLzEsY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
