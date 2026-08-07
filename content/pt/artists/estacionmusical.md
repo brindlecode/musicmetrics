@@ -2,7 +2,7 @@
 title: "EstacionMusical"
 slug: "estacionmusical"
 type: "artists"
-image: "https://i.ytimg.com/vi/cP9-dTlSfA4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-3NrwAhUmlo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

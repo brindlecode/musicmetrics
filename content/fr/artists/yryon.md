@@ -2,7 +2,7 @@
 title: "yryon"
 slug: "yryon"
 type: "artists"
-image: "https://i.ytimg.com/vi/15JooSuKfC8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CTlMVAs35Fk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
