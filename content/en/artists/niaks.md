@@ -2,7 +2,7 @@
 title: "Niaks"
 slug: "niaks"
 type: "artists"
-image: "https://i.ytimg.com/vi/BojqVuLqylU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Rf_Yr37ZRhg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Stray Kids"
 slug: "stray-kids"
 type: "artists"
-image: "https://i.ytimg.com/vi/3FJRYHVQVDE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BZ4UzthYTss/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

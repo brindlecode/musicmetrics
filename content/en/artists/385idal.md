@@ -2,7 +2,7 @@
 title: "385idéal"
 slug: "385idal"
 type: "artists"
-image: "https://i.ytimg.com/vi/uYbhVr0OfcU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BS31JCdwUQo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

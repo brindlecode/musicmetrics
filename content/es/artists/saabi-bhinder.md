@@ -2,7 +2,7 @@
 title: "Saabi Bhinder"
 slug: "saabi-bhinder"
 type: "artists"
-image: "https://i.ytimg.com/vi/DMb03N1wRFo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HaSuADL62l0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

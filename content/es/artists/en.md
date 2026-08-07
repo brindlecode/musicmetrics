@@ -2,7 +2,7 @@
 title: "en"
 slug: "en"
 type: "artists"
-image: "https://i.ytimg.com/vi/MIWr-xYCP4Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xBjh_vakuBI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
