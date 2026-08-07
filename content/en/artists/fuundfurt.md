@@ -2,7 +2,7 @@
 title: "FUundFURT"
 slug: "fuundfurt"
 type: "artists"
-image: "https://i.ytimg.com/vi/NVJi7QQ4WyE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UHyKsfFpil8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

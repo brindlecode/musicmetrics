@@ -2,7 +2,7 @@
 title: "AK AUSSERKONTROLLE"
 slug: "ak-ausserkontrolle"
 type: "artists"
-image: "https://i.ytimg.com/vi/eMZ9IHyvwJM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IqfkifBuby8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

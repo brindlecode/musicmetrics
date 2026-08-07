@@ -2,7 +2,7 @@
 title: "GENZIE"
 slug: "genzie"
 type: "artists"
-image: "https://i.ytimg.com/vi/MNcu5J1jbcI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NsNZARqrRS4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

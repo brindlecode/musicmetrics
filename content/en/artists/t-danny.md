@@ -2,7 +2,7 @@
 title: "T. Danny"
 slug: "t-danny"
 type: "artists"
-image: "https://i.ytimg.com/vi/vbshGyyxMuE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qflpOu5SyEk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

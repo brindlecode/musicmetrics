@@ -2,7 +2,7 @@
 title: "tynikdy"
 slug: "tynikdy"
 type: "artists"
-image: "https://i.ytimg.com/vi/4vyMm_ATHxA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mppHRgSxKFM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

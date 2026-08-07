@@ -2,7 +2,7 @@
 title: "Manelele Viitorului"
 slug: "manelele-viitorului"
 type: "artists"
-image: "https://i.ytimg.com/vi/swdK9oOdqGg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Fko4yWWBt2A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

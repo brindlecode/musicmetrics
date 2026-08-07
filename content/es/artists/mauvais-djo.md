@@ -2,7 +2,7 @@
 title: "Mauvais Djo"
 slug: "mauvais-djo"
 type: "artists"
-image: "https://i.ytimg.com/vi/w1-iaK49zBg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LpM78XjX2kI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

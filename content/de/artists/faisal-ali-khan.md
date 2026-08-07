@@ -2,7 +2,7 @@
 title: "Faisal Ali Khan"
 slug: "faisal-ali-khan"
 type: "artists"
-image: "https://i.ytimg.com/vi/56N8jd-mDeM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Il2RCGm4KS0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

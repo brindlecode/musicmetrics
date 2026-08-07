@@ -2,7 +2,7 @@
 title: "HYBE LABELS"
 slug: "hybe-labels"
 type: "artists"
-image: "https://i.ytimg.com/vi/ofI7CPSvk60/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pHciG9_2xXM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

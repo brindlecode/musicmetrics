@@ -2,7 +2,7 @@
 title: "wave to earth"
 slug: "wave-to-earth"
 type: "artists"
-image: "https://i.ytimg.com/vi/vMHpQH7pbjg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pIaOtqgSZzo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
