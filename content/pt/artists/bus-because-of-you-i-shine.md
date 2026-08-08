@@ -2,7 +2,7 @@
 title: "BUS because of you i shine"
 slug: "bus-because-of-you-i-shine"
 type: "artists"
-image: "https://i.ytimg.com/vi/1Boz3bMe32M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/py5JXKfeQO8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

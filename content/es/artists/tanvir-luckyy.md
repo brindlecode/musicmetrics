@@ -2,7 +2,7 @@
 title: "Tanvir LUCKYY"
 slug: "tanvir-luckyy"
 type: "artists"
-image: "https://i.ytimg.com/vi/k37j8BkWLrA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pnArnPlFAiU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

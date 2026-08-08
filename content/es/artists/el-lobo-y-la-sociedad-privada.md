@@ -2,7 +2,7 @@
 title: "El Lobo Y La Sociedad Privada"
 slug: "el-lobo-y-la-sociedad-privada"
 type: "artists"
-image: "https://i.ytimg.com/vi/ECXm7CPEln4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ncVvKQUw-ms/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

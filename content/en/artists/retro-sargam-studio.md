@@ -2,7 +2,7 @@
 title: "Retro Sargam Studio"
 slug: "retro-sargam-studio"
 type: "artists"
-image: "https://i.ytimg.com/vi/3VkYfR1tfBc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nzc_miJOKSg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

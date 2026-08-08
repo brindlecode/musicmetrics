@@ -2,7 +2,7 @@
 title: "Soolking Officiel"
 slug: "soolking-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/rdhqlSvijsI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_VghL2YPaos/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
