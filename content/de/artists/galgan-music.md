@@ -2,7 +2,7 @@
 title: "Galgan Music"
 slug: "galgan-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/lVjlHiPRORw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bS9fJG0bMLM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

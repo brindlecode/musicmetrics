@@ -2,7 +2,7 @@
 title: "BangersOnly"
 slug: "bangersonly"
 type: "artists"
-image: "https://i.ytimg.com/vi/IEujEQB6rT4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CxXUj7X9fQM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

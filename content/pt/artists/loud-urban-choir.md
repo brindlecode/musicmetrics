@@ -2,7 +2,7 @@
 title: "Loud Urban Choir"
 slug: "loud-urban-choir"
 type: "artists"
-image: "https://i.ytimg.com/vi/-e7fjBY0S2g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zcxyT8vctpo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

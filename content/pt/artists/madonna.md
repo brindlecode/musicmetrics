@@ -2,7 +2,7 @@
 title: "Madonna"
 slug: "madonna"
 type: "artists"
-image: "https://i.ytimg.com/vi/EHrt-gFgvXo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uBsN0dc1UYk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "DOROFEEVA"
 slug: "dorofeeva"
 type: "artists"
-image: "https://i.ytimg.com/vi/j6FAo_CuA10/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/O_JPxJmPpH4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

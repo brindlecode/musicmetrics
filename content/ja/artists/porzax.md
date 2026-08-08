@@ -2,7 +2,7 @@
 title: "PORZAX"
 slug: "porzax"
 type: "artists"
-image: "https://i.ytimg.com/vi/IpXrFirxYho/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wcvuL6-lGhI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
