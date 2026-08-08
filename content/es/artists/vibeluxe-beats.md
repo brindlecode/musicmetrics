@@ -2,7 +2,7 @@
 title: "VibeLuxe Beats"
 slug: "vibeluxe-beats"
 type: "artists"
-image: "https://i.ytimg.com/vi/rJGBPBmPg50/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CtHZwgPU7qE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

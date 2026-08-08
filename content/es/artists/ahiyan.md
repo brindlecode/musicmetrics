@@ -2,7 +2,7 @@
 title: "Ahiyan"
 slug: "ahiyan"
 type: "artists"
-image: "https://i.ytimg.com/vi/sNZW_GxwSu0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bnnZMrvLvRA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

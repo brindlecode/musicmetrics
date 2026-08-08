@@ -2,7 +2,7 @@
 title: "Milujeme Párno"
 slug: "milujeme-prno"
 type: "artists"
-image: "https://i.ytimg.com/vi/VCDx7qst5OQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TLhc2XeXdEY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

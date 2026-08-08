@@ -2,7 +2,7 @@
 title: "Lazy Ed"
 slug: "lazy-ed"
 type: "artists"
-image: "https://i.ytimg.com/vi/gMHcKVm6aT4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DZN23AaW9ig/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
