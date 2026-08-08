@@ -2,7 +2,7 @@
 title: "Danilo e Davi"
 slug: "danilo-e-davi"
 type: "artists"
-image: "https://i.ytimg.com/vi/rP9pG6Wuf-g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z74kdH98jj0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "성시경 SUNG SI KYUNG"
 slug: "sung-si-kyung"
 type: "artists"
-image: "https://i.ytimg.com/vi/eQbduoUG4uo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Tp4GDTcN2iI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

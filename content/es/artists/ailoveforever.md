@@ -2,7 +2,7 @@
 title: "AiLoveForever"
 slug: "ailoveforever"
 type: "artists"
-image: "https://i.ytimg.com/vi/l2KA7LKCx2U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Cau3WgA468E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
