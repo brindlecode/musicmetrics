@@ -2,7 +2,7 @@
 title: "Celesty"
 slug: "celesty"
 type: "artists"
-image: "https://i.ytimg.com/vi/p5VqhQCoMRI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/p_U7zKIzOHE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

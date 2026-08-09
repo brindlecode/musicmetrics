@@ -2,7 +2,7 @@
 title: "Clarity"
 slug: "clarity"
 type: "artists"
-image: "https://i.ytimg.com/vi/9WkMmadsBww/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RdKaVjRd2qM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

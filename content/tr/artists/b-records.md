@@ -2,7 +2,7 @@
 title: "B RECORDS"
 slug: "b-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/qC8j2VNr120/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yEU-G5upZcI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

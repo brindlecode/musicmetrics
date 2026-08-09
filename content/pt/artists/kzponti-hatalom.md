@@ -2,7 +2,7 @@
 title: "Központi Hatalom"
 slug: "kzponti-hatalom"
 type: "artists"
-image: "https://i.ytimg.com/vi/OpP-K0Qdc2M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ay4_jhTKtaw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
