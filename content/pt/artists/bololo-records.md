@@ -2,7 +2,7 @@
 title: "Bololo Records"
 slug: "bololo-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/LrW5LZQe9Us/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SDRv2OWDly4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
