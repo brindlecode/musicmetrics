@@ -2,7 +2,7 @@
 title: "King Gnu official YouTube channel"
 slug: "king-gnu-official-youtube-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/mcsB7sG43GE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PmkN1iH4Ci4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

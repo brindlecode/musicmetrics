@@ -2,7 +2,7 @@
 title: "Echo LyraZ"
 slug: "echo-lyraz"
 type: "artists"
-image: "https://i.ytimg.com/vi/RK67E-Lo9fM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_r4KV5GAKC0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

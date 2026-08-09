@@ -2,7 +2,7 @@
 title: "Axtipitos Mc"
 slug: "axtipitos-mc"
 type: "artists"
-image: "https://i.ytimg.com/vi/H5j2foCw7Uw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/f3_XKO6mTUQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

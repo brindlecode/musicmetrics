@@ -2,7 +2,7 @@
 title: "aespa"
 slug: "aespa"
 type: "artists"
-image: "https://i.ytimg.com/vi/QhdzD2exioM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R30DHQSos8I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

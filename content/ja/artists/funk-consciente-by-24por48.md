@@ -2,7 +2,7 @@
 title: "FUNK CONSCIENTE by 24por48"
 slug: "funk-consciente-by-24por48"
 type: "artists"
-image: "https://i.ytimg.com/vi/RA_WdQytvlE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/v2oUHyIYfxU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

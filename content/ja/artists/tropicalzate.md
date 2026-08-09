@@ -2,7 +2,7 @@
 title: "Tropicalízate"
 slug: "tropicalzate"
 type: "artists"
-image: "https://i.ytimg.com/vi/xef4RGIFnZM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/30Fd89Eqx10/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
