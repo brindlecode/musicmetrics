@@ -2,7 +2,7 @@
 title: "Rahim Maarof"
 slug: "rahim-maarof"
 type: "artists"
-image: "https://i.ytimg.com/vi/RLTg-PLbmxo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gq7zFVIxcpo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
