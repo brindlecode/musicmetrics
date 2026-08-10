@@ -2,7 +2,7 @@
 title: "JayWheeler"
 slug: "jaywheeler"
 type: "artists"
-image: "https://i.ytimg.com/vi/xCkf2L7gFnI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8jiN7pQOpHw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

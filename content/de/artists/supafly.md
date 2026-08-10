@@ -2,7 +2,7 @@
 title: "SUPAFLY"
 slug: "supafly"
 type: "artists"
-image: "https://i.ytimg.com/vi/dXW7XBsQ92s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j-_aBP6CwSs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

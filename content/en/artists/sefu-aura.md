@@ -2,7 +2,7 @@
 title: "Sefu Aura"
 slug: "sefu-aura"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ztt5gugmZbU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I1hGTE4IpVE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Moodify"
 slug: "moodify"
 type: "artists"
-image: "https://i.ytimg.com/vi/G5nxkCQCxH0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VzGLPVaMpw0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

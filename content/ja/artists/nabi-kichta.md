@@ -2,7 +2,7 @@
 title: "NABI KICHTA"
 slug: "nabi-kichta"
 type: "artists"
-image: "https://i.ytimg.com/vi/cPykUOIGisA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KlfUaYah6oc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "NÉFOS."
 slug: "nfos"
 type: "artists"
-image: "https://i.ytimg.com/vi/zbOxaX-Nmxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w_N74U8ckiM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "TUL8TE"
 slug: "tul8te"
 type: "artists"
-image: "https://i.ytimg.com/vi/7kzUzOLHPew/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WTwuzVXrwOs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

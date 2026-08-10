@@ -2,7 +2,7 @@
 title: "INHON"
 slug: "inhon"
 type: "artists"
-image: "https://i.ytimg.com/vi/mnmjYN3ZBDk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g_XiPpxuMy4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
