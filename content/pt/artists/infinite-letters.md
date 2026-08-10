@@ -2,7 +2,7 @@
 title: "Infinite Letters"
 slug: "infinite-letters"
 type: "artists"
-image: "https://i.ytimg.com/vi/MDo2e8wRlBE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TBhBdywH_-8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

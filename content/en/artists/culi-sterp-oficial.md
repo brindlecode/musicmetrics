@@ -2,7 +2,7 @@
 title: "Culiță Sterp Oficial"
 slug: "culi-sterp-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/J6FQshPtdZY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2fDK1_bDZTE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
