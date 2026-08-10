@@ -2,7 +2,7 @@
 title: "Taz Network"
 slug: "taz-network"
 type: "artists"
-image: "https://i.ytimg.com/vi/XlaaKQfwyjY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pGjh6aW2Xfc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "STARSHIP"
 slug: "starship"
 type: "artists"
-image: "https://i.ytimg.com/vi/M0v-AeoIsTU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UsbRoaH6y-Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

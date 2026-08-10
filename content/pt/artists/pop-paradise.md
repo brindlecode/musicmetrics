@@ -2,7 +2,7 @@
 title: "Pop Paradise"
 slug: "pop-paradise"
 type: "artists"
-image: "https://i.ytimg.com/vi/2vjzlTTviFQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MGLFCuM2MDc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

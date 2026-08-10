@@ -2,7 +2,7 @@
 title: "Gambino"
 slug: "gambino"
 type: "artists"
-image: "https://i.ytimg.com/vi/2WG-_BzCizc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z4_TH2Lu7u0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
