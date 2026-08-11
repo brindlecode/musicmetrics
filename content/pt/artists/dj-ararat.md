@@ -2,7 +2,7 @@
 title: "DJ ARARAT"
 slug: "dj-ararat"
 type: "artists"
-image: "https://i.ytimg.com/vi/VfCzzDSZ0Hw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pdVpPZ_WDOg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "COLLAR"
 slug: "collar"
 type: "artists"
-image: "https://i.ytimg.com/vi/eqta6JT_Vfc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2MoVxJNllVo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "SMTOWN"
 slug: "smtown"
 type: "artists"
-image: "https://i.ytimg.com/vi/xcFbyuzd9S8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NZP153MUpHY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

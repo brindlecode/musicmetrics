@@ -2,7 +2,7 @@
 title: "TDRK"
 slug: "tdrk"
 type: "artists"
-image: "https://i.ytimg.com/vi/nxQJ3AjWZ6w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IfFuHqBpybw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

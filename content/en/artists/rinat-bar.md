@@ -2,7 +2,7 @@
 title: "רינת בר - Rinat Bar"
 slug: "rinat-bar"
 type: "artists"
-image: "https://i.ytimg.com/vi/GjT8IkK9cDY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jz85smIjVqI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
