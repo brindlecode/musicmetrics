@@ -2,7 +2,7 @@
 title: "Ulf Hansen"
 slug: "ulf-hansen"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vt6N6cRyv6A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ND66f-m9t5Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

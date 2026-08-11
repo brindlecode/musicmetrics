@@ -2,7 +2,7 @@
 title: "Hearts2Hearts"
 slug: "hearts2hearts"
 type: "artists"
-image: "https://i.ytimg.com/vi/BEPSc8q6Bd8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A9EpZWrQ3dM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

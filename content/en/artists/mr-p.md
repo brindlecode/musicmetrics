@@ -2,7 +2,7 @@
 title: "Mr. P"
 slug: "mr-p"
 type: "artists"
-image: "https://i.ytimg.com/vi/eoBu1itvxY4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Pjj56cOKAR8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
