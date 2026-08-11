@@ -2,7 +2,7 @@
 title: "Bang Brokey"
 slug: "bang-brokey"
 type: "artists"
-image: "https://i.ytimg.com/vi/9j2YH2n8AGU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I1uJ4vJpuOc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
