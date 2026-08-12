@@ -2,7 +2,7 @@
 title: "ChriSync"
 slug: "chrisync"
 type: "artists"
-image: "https://i.ytimg.com/vi/1sWFMISNy_A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hufb9C2F8ME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

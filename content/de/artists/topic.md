@@ -2,7 +2,7 @@
 title: " - Topic"
 slug: "topic"
 type: "artists"
-image: "https://i.ytimg.com/vi/wcwkNevkhJo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FgUtOcBJoVI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

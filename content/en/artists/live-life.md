@@ -2,7 +2,7 @@
 title: "LIVE у твій LIFE"
 slug: "live-life"
 type: "artists"
-image: "https://i.ytimg.com/vi/g61S7bgyHOo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GywRdpOSkgg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

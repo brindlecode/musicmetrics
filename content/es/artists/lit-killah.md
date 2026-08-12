@@ -2,7 +2,7 @@
 title: "LIT killah"
 slug: "lit-killah"
 type: "artists"
-image: "https://i.ytimg.com/vi/q7WzUxGdBco/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_WEtqtRxtg4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

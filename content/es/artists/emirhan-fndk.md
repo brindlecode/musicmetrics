@@ -2,7 +2,7 @@
 title: "Emirhan Fındık"
 slug: "emirhan-fndk"
 type: "artists"
-image: "https://i.ytimg.com/vi/b8QEwlUOLNk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qixXg_ASLlE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "fellowfellowband"
 slug: "fellowfellowband"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZVPENtaBJso/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P6sqbp6LpKY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
