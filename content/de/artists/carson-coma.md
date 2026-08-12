@@ -2,7 +2,7 @@
 title: "Carson Coma"
 slug: "carson-coma"
 type: "artists"
-image: "https://i.ytimg.com/vi/NdIFaZWbn5A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4d4JheUEG9k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

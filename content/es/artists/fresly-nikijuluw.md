@@ -2,7 +2,7 @@
 title: "Fresly Nikijuluw"
 slug: "fresly-nikijuluw"
 type: "artists"
-image: "https://i.ytimg.com/vi/Zl-oP-VduJo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P44FdpFcdF4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

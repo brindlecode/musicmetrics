@@ -2,7 +2,7 @@
 title: "Scribella"
 slug: "scribella"
 type: "artists"
-image: "https://i.ytimg.com/vi/l6gDwcQ9HdY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P7xPWJOYGsc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

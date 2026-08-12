@@ -2,7 +2,7 @@
 title: "Anirudh Ravichander"
 slug: "anirudh-ravichander"
 type: "artists"
-image: "https://i.ytimg.com/vi/NmGQuqTJhyc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VCfrL292Gmk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

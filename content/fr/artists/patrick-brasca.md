@@ -1,11 +1,11 @@
 ---
-title: "派偉俊 Patrick Brasca"
+title: "Patrick Brasca"
 slug: "patrick-brasca"
 type: "artists"
-image: "https://i.ytimg.com/vi/gN7RBHyXNFk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NrV1tOHb36k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "派偉俊 Patrick Brasca streaming statistics, chart positions and analytics across youtube"
+description: "Patrick Brasca streaming statistics, chart positions and analytics across youtube"
 ---
