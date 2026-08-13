@@ -2,7 +2,7 @@
 title: "戦極MCBATTLE"
 slug: "mcbattle"
 type: "artists"
-image: "https://i.ytimg.com/vi/P3X_Ww7Kil0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rKqcvvut8pw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -1,11 +1,11 @@
 ---
-title: "MAVO"
+title: "Mavo"
 slug: "mavo"
 type: "artists"
-image: "https://i.ytimg.com/vi/HOus43CXWjw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xhCp97lfcq0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "MAVO streaming statistics, chart positions and analytics across youtube"
+description: "Mavo streaming statistics, chart positions and analytics across youtube"
 ---

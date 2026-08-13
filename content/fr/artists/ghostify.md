@@ -2,7 +2,7 @@
 title: "GHOSTIFY"
 slug: "ghostify"
 type: "artists"
-image: "https://i.ytimg.com/vi/rCSOvOl_DPw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PRZ1VUeRItk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

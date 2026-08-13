@@ -2,7 +2,7 @@
 title: "ZIAD ZAZA"
 slug: "ziad-zaza"
 type: "artists"
-image: "https://i.ytimg.com/vi/VZ6lMsARKuU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n-Vr8Hcsmpc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

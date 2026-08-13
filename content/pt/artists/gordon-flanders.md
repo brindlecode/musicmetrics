@@ -2,7 +2,7 @@
 title: "Gordon Flanders"
 slug: "gordon-flanders"
 type: "artists"
-image: "https://i.ytimg.com/vi/kG9XL4HVmtI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FQlk_QqRo1M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
