@@ -2,7 +2,7 @@
 title: "MENZI MUSIC"
 slug: "menzi-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/gQlv4NY_0a8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZnA90rbkPuA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
