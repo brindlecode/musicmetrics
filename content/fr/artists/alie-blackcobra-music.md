@@ -2,7 +2,7 @@
 title: "ALIE BLACKCOBRA MUSIC"
 slug: "alie-blackcobra-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/_5jy4MBfho0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DjXNbirVH9Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

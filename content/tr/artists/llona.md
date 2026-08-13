@@ -2,7 +2,7 @@
 title: "Llona"
 slug: "llona"
 type: "artists"
-image: "https://i.ytimg.com/vi/97Zg3gvcPRk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xhHSW8uh6BY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
