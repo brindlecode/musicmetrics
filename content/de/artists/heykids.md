@@ -2,7 +2,7 @@
 title: "HeyKids - Детски Песни"
 slug: "heykids"
 type: "artists"
-image: "https://i.ytimg.com/vi/GZMZC7_kXQE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-aKqREKCo0o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

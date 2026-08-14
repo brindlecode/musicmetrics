@@ -2,7 +2,7 @@
 title: "Jakes Bejoy"
 slug: "jakes-bejoy"
 type: "artists"
-image: "https://i.ytimg.com/vi/3igIAOJlJ2s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hwIBqwsypbY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

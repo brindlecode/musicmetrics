@@ -2,7 +2,7 @@
 title: "TK"
 slug: "tk"
 type: "artists"
-image: "https://i.ytimg.com/vi/V_dGygptGDM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9M33pZk3JhE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

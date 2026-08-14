@@ -2,7 +2,7 @@
 title: "Afroto - عفروتو"
 slug: "afroto"
 type: "artists"
-image: "https://i.ytimg.com/vi/gIOEsfvSo0A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b6LZlKr05js/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
