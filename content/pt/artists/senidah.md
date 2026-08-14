@@ -2,7 +2,7 @@
 title: "Senidah"
 slug: "senidah"
 type: "artists"
-image: "https://i.ytimg.com/vi/Nx9932BjWcI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J7bqnc18bt0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

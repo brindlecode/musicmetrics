@@ -2,7 +2,7 @@
 title: "SixTONES"
 slug: "sixtones"
 type: "artists"
-image: "https://i.ytimg.com/vi/3lOsboT-IWU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G7wRXibXE7s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

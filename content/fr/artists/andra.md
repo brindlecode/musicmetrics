@@ -2,7 +2,7 @@
 title: "Andra"
 slug: "andra"
 type: "artists"
-image: "https://i.ytimg.com/vi/fmdN50rpZeM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ouOI1XkSQog/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

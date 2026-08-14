@@ -2,7 +2,7 @@
 title: "GOD LYRICS"
 slug: "god-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/tRwp5_ZXBPs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hSm3DMqy1-c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Landy"
 slug: "landy"
 type: "artists"
-image: "https://i.ytimg.com/vi/C5_4sY8Z-rA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tUcvlzwoJ8E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
