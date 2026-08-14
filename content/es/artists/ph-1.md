@@ -2,7 +2,7 @@
 title: "pH-1"
 slug: "ph-1"
 type: "artists"
-image: "https://i.ytimg.com/vi/eQtMa9xjCo8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wlUvFCbMXms/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

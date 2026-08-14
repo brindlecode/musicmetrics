@@ -2,7 +2,7 @@
 title: "Trueno"
 slug: "trueno"
 type: "artists"
-image: "https://i.ytimg.com/vi/22ioK_sehGo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ymV9JKx7KKc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
