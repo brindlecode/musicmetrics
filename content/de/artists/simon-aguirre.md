@@ -2,7 +2,7 @@
 title: "SIMON AGUIRRE"
 slug: "simon-aguirre"
 type: "artists"
-image: "https://i.ytimg.com/vi/lDbav_35bWY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oFwFrR2SvY0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Kristi Lamaj"
 slug: "kristi-lamaj"
 type: "artists"
-image: "https://i.ytimg.com/vi/E2HY8AV3-LQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ol1dwG-F1eQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

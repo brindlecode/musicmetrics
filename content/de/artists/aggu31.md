@@ -2,7 +2,7 @@
 title: "aggu31"
 slug: "aggu31"
 type: "artists"
-image: "https://i.ytimg.com/vi/fSr2P2T7E4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9WgpVcT1u4Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

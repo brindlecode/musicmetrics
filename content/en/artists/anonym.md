@@ -2,7 +2,7 @@
 title: "ANONYM"
 slug: "anonym"
 type: "artists"
-image: "https://i.ytimg.com/vi/BX-6BabPuuk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/p7NYWikD8dE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
