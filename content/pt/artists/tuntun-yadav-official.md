@@ -2,7 +2,7 @@
 title: "TUNTUN YADAV OFFICIAL"
 slug: "tuntun-yadav-official"
 type: "artists"
-image: "https://i.ytimg.com/vi/i23PU4_U_dc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1iBDh00xMQw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

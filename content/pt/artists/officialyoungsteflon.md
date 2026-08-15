@@ -2,7 +2,7 @@
 title: "OfficialYoungsTeflon"
 slug: "officialyoungsteflon"
 type: "artists"
-image: "https://i.ytimg.com/vi/VQwodmOVOIQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wub50U_wuys/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

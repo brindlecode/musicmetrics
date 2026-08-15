@@ -2,7 +2,7 @@
 title: "La Unica Tropical"
 slug: "la-unica-tropical"
 type: "artists"
-image: "https://i.ytimg.com/vi/F3i847uvnYk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bgMuyJ5ZJt0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

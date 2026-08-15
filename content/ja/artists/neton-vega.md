@@ -2,7 +2,7 @@
 title: "Neton Vega"
 slug: "neton-vega"
 type: "artists"
-image: "https://i.ytimg.com/vi/tPaSYnNKMas/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jy5bgmQJ9Bc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

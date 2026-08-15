@@ -2,7 +2,7 @@
 title: "Grupo Firme"
 slug: "grupo-firme"
 type: "artists"
-image: "https://i.ytimg.com/vi/i2Lvt93BPpM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2ol8F6eqP5k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

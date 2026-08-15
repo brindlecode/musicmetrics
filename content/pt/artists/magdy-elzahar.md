@@ -2,7 +2,7 @@
 title: "مجدي الزهار - Magdy ElZahar"
 slug: "magdy-elzahar"
 type: "artists"
-image: "https://i.ytimg.com/vi/6VkyLtp5jkM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nqXQqPA4RP8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

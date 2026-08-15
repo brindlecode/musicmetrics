@@ -2,7 +2,7 @@
 title: "RIXELUS"
 slug: "rixelus"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vi_USIG3ZS4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4Cedj7medEM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Thanh Huyy Music"
 slug: "thanh-huyy-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/HSmOkm59XOc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zFYhwqtT2Y0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

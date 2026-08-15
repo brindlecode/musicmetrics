@@ -2,7 +2,7 @@
 title: "thisisnoizy"
 slug: "thisisnoizy"
 type: "artists"
-image: "https://i.ytimg.com/vi/WCmIg0b4plo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j0HINQ3bef0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

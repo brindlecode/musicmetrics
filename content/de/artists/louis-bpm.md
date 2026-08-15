@@ -2,7 +2,7 @@
 title: "Louis BPM"
 slug: "louis-bpm"
 type: "artists"
-image: "https://i.ytimg.com/vi/soXytqAoSJA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/u3PQtiNvTqo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

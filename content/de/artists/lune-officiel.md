@@ -2,7 +2,7 @@
 title: "Lune Officiel"
 slug: "lune-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/JhtvUSv_bLM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wMCCPGx_8Vk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

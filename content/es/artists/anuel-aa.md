@@ -2,7 +2,7 @@
 title: "Anuel AA"
 slug: "anuel-aa"
 type: "artists"
-image: "https://i.ytimg.com/vi/vutbVGewIcg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uRgJGnwHofM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Big Sound"
 slug: "big-sound"
 type: "artists"
-image: "https://i.ytimg.com/vi/larqbC3X0mc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Gq6V5puYrYg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

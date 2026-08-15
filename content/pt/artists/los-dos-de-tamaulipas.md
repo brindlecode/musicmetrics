@@ -1,11 +1,11 @@
 ---
-title: "Los Dos De Tamaulipas"
+title: "LOS DOS DE TAMAULIPAS"
 slug: "los-dos-de-tamaulipas"
 type: "artists"
-image: "https://i.ytimg.com/vi/_8orpiUp1MA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UOD3K2JV9-o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Los Dos De Tamaulipas streaming statistics, chart positions and analytics across youtube"
+description: "LOS DOS DE TAMAULIPAS streaming statistics, chart positions and analytics across youtube"
 ---

@@ -2,7 +2,7 @@
 title: "BAZSI"
 slug: "bazsi"
 type: "artists"
-image: "https://i.ytimg.com/vi/fbUS_-WJRi8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XjVZ-Tvn_CA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

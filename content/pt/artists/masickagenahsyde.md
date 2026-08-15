@@ -2,7 +2,7 @@
 title: "Masickagenahsyde"
 slug: "masickagenahsyde"
 type: "artists"
-image: "https://i.ytimg.com/vi/FQRi3LWM0t4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_zZaC5hcHRo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
