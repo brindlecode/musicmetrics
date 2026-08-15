@@ -2,7 +2,7 @@
 title: "Eko Fresh"
 slug: "eko-fresh"
 type: "artists"
-image: "https://i.ytimg.com/vi/r2MhxIy0QXI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xe_EWRnRnnA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

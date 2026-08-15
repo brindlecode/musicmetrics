@@ -2,7 +2,7 @@
 title: "Varga Imi"
 slug: "varga-imi"
 type: "artists"
-image: "https://i.ytimg.com/vi/0qqLBmooHPo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zu7DKBxu6XM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

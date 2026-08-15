@@ -2,7 +2,7 @@
 title: "REINE MUSIC"
 slug: "reine-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/sABa5fpHXkE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZPpmRwv6Zuk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

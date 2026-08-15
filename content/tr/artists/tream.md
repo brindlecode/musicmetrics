@@ -2,7 +2,7 @@
 title: "Tream"
 slug: "tream"
 type: "artists"
-image: "https://i.ytimg.com/vi/p8puJwhbJUs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/H03wnVWyL4I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

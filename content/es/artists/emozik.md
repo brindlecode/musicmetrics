@@ -2,7 +2,7 @@
 title: "Emozik"
 slug: "emozik"
 type: "artists"
-image: "https://i.ytimg.com/vi/tvKDUPgLvsc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xuPkWDhTATQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

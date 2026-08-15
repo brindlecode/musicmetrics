@@ -2,7 +2,7 @@
 title: "Severina"
 slug: "severina"
 type: "artists"
-image: "https://i.ytimg.com/vi/UHZjsn0mvX8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/s8T-VoFpKnA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

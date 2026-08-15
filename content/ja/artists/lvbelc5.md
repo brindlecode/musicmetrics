@@ -2,7 +2,7 @@
 title: "LVBELC5"
 slug: "lvbelc5"
 type: "artists"
-image: "https://i.ytimg.com/vi/xRtIpdqUO8E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wNkQ1dZHPIE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

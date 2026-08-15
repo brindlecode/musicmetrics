@@ -2,7 +2,7 @@
 title: "bambi"
 slug: "bambi"
 type: "artists"
-image: "https://i.ytimg.com/vi/ceu_oIi3oO4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/97VW70k9mjg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

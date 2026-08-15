@@ -2,7 +2,7 @@
 title: "Felipe Rodrigues"
 slug: "felipe-rodrigues"
 type: "artists"
-image: "https://i.ytimg.com/vi/9ptYUXNP-xQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zIWiM5CucWw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "LYKN"
 slug: "lykn"
 type: "artists"
-image: "https://i.ytimg.com/vi/Kq5ZmWrtnW8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K-3g5bljjNg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
