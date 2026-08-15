@@ -2,7 +2,7 @@
 title: "SPÓŁKA ZOO"
 slug: "spka-zoo"
 type: "artists"
-image: "https://i.ytimg.com/vi/Yu_ZcFkx0gs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KXj4ZHMWSkk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

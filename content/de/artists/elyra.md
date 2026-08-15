@@ -2,7 +2,7 @@
 title: "Elyra"
 slug: "elyra"
 type: "artists"
-image: "https://i.ytimg.com/vi/ANLeGhZWB-w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vrF3mxntLz4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

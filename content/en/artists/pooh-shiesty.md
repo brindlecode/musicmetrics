@@ -2,7 +2,7 @@
 title: "Pooh Shiesty"
 slug: "pooh-shiesty"
 type: "artists"
-image: "https://i.ytimg.com/vi/pRdY_JzMf5k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o4OEg34SslQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

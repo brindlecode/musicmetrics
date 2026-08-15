@@ -2,7 +2,7 @@
 title: "Olsi Bylyku"
 slug: "olsi-bylyku"
 type: "artists"
-image: "https://i.ytimg.com/vi/Mzu1XjxjzUU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ngSa98hAR7A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
