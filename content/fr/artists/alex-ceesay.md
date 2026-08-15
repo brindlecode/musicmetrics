@@ -2,7 +2,7 @@
 title: "Alex Ceesay"
 slug: "alex-ceesay"
 type: "artists"
-image: "https://i.ytimg.com/vi/Rd-iyxqlM6Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vOG4tuSaNp4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

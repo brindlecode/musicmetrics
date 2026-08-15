@@ -2,7 +2,7 @@
 title: "Fred e Fabrício"
 slug: "fred-e-fabrcio"
 type: "artists"
-image: "https://i.ytimg.com/vi/AGFfoEzm1IY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wkeHQx870qU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

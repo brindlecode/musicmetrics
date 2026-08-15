@@ -2,7 +2,7 @@
 title: "ENY'S PRODUCTION"
 slug: "enys-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/KDhFRkf3HJU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aeb6ahk2saA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

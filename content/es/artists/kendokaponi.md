@@ -2,7 +2,7 @@
 title: "KendoKaponi"
 slug: "kendokaponi"
 type: "artists"
-image: "https://i.ytimg.com/vi/2b8Rlrm5iY0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Gdi4pAsl5VA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Maha Ftouni"
 slug: "maha-ftouni"
 type: "artists"
-image: "https://i.ytimg.com/vi/AWizIRTnxi0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ee4TyvFalvo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
