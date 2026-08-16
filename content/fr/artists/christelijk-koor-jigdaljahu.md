@@ -2,7 +2,7 @@
 title: "Christelijk Koor Jigdaljahu"
 slug: "christelijk-koor-jigdaljahu"
 type: "artists"
-image: "https://i.ytimg.com/vi/hLzk35DaOvg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/57CPrnvnF_Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

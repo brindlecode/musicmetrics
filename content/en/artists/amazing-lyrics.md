@@ -2,7 +2,7 @@
 title: "Amazing Lyrics"
 slug: "amazing-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/3Av1ijfxlu4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/65m3Qhi0LSM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
