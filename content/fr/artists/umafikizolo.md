@@ -2,7 +2,7 @@
 title: "Umafikizolo"
 slug: "umafikizolo"
 type: "artists"
-image: "https://i.ytimg.com/vi/GjURTQj8gzk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MFiRvdjtlt8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

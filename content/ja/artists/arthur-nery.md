@@ -2,7 +2,7 @@
 title: "Arthur Nery"
 slug: "arthur-nery"
 type: "artists"
-image: "https://i.ytimg.com/vi/j4QXsKSFIdw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZbtZGoS4tHg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
