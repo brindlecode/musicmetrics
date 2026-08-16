@@ -2,7 +2,7 @@
 title: "Alex Crichton"
 slug: "alex-crichton"
 type: "artists"
-image: "https://i.ytimg.com/vi/F2PsSZKweTc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hEFAeAPLbfk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

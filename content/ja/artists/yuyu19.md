@@ -2,7 +2,7 @@
 title: "Yuyu19"
 slug: "yuyu19"
 type: "artists"
-image: "https://i.ytimg.com/vi/Co4YiyYxuDw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qoQO_lCtKqU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

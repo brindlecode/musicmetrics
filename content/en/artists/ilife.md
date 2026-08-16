@@ -2,7 +2,7 @@
 title: "iLiFE!【あいらいふ】"
 slug: "ilife"
 type: "artists"
-image: "https://i.ytimg.com/vi/rIlafJkuStk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nRsTHcp3EwI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

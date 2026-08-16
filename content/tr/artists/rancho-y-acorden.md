@@ -2,7 +2,7 @@
 title: "Rancho y Acordeón"
 slug: "rancho-y-acorden"
 type: "artists"
-image: "https://i.ytimg.com/vi/r2TctOeSeSs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/O7YCIjaTN1Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Balkan Music"
 slug: "balkan-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/hRWHxUDAQwQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cCmxCtKzxMc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

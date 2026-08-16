@@ -2,7 +2,7 @@
 title: "Netto Brito"
 slug: "netto-brito"
 type: "artists"
-image: "https://i.ytimg.com/vi/MtDvKJHfLiw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6pKo5taEsR8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

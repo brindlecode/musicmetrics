@@ -2,7 +2,7 @@
 title: "Amore Lyrics"
 slug: "amore-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/y7RMhZoLNJk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TWp0_rtFK_Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

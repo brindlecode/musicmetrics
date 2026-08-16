@@ -2,7 +2,7 @@
 title: "firstrowamaverse"
 slug: "firstrowamaverse"
 type: "artists"
-image: "https://i.ytimg.com/vi/0scTaeCeki0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/anDeUpXV_Bw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

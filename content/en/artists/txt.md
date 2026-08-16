@@ -2,7 +2,7 @@
 title: "TXT"
 slug: "txt"
 type: "artists"
-image: "https://i.ytimg.com/vi/jOnLqqDRfY4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Tg076GY2a-Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
