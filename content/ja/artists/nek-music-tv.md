@@ -2,7 +2,7 @@
 title: "Nek Music Tv"
 slug: "nek-music-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/i-psL8S3Aao/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fWWIndWFkX8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

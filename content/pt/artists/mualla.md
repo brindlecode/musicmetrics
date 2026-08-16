@@ -2,7 +2,7 @@
 title: "Mualla"
 slug: "mualla"
 type: "artists"
-image: "https://i.ytimg.com/vi/LO6pLwREFDU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yN1_pe2EydU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
