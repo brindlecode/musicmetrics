@@ -2,7 +2,7 @@
 title: "Yeni Inka Channel"
 slug: "yeni-inka-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/IqaQjRGt8i0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VaCvBKDUmv8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

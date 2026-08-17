@@ -2,7 +2,7 @@
 title: "Melodi Junior"
 slug: "melodi-junior"
 type: "artists"
-image: "https://i.ytimg.com/vi/fion4_gEVzc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ir3Psgm5WfI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

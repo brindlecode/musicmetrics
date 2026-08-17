@@ -2,7 +2,7 @@
 title: "Egethefinest"
 slug: "egethefinest"
 type: "artists"
-image: "https://i.ytimg.com/vi/UbWUi0k31ps/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vLCF5J2RDFE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
