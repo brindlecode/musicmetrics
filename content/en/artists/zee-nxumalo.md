@@ -2,7 +2,7 @@
 title: "Zee Nxumalo"
 slug: "zee-nxumalo"
 type: "artists"
-image: "https://i.ytimg.com/vi/M3gpgxx72Nw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kHIj5ujO0og/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "WOJTULA"
 slug: "wojtula"
 type: "artists"
-image: "https://i.ytimg.com/vi/fjehAvdEwEA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FRXiGubVY0M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

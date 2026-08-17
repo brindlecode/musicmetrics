@@ -2,7 +2,7 @@
 title: "Dhanda Nyoliwala"
 slug: "dhanda-nyoliwala"
 type: "artists"
-image: "https://i.ytimg.com/vi/D3gcPo0y4fc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZYIWPnkXz5o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

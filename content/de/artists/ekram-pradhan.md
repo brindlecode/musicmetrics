@@ -2,7 +2,7 @@
 title: "Ekram Pradhan"
 slug: "ekram-pradhan"
 type: "artists"
-image: "https://i.ytimg.com/vi/9jvdcS1E2KE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Btg-ynQL7mU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

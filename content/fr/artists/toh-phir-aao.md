@@ -2,7 +2,7 @@
 title: "Toh Phir Aao"
 slug: "toh-phir-aao"
 type: "artists"
-image: "https://i.ytimg.com/vi/n_VrRuNkbrE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rkV7--wYUJ8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
