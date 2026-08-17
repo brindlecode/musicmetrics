@@ -1,11 +1,11 @@
 ---
-title: "Galin"
+title: "GALIN"
 slug: "galin"
 type: "artists"
-image: "https://i.ytimg.com/vi/gmFAqi3hDyE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nOFDmqxkiPE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Galin streaming statistics, chart positions and analytics across youtube"
+description: "GALIN streaming statistics, chart positions and analytics across youtube"
 ---

@@ -2,7 +2,7 @@
 title: "Never Too Oldie"
 slug: "never-too-oldie"
 type: "artists"
-image: "https://i.ytimg.com/vi/csN0afXeU_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rR85vpIFTIQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Tuyền Chế"
 slug: "tuyn-ch"
 type: "artists"
-image: "https://i.ytimg.com/vi/u3lfwpUtmZg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k7YJHCR9JBE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
