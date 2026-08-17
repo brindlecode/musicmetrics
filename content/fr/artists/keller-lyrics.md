@@ -2,7 +2,7 @@
 title: "Keller Lyrics"
 slug: "keller-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/-7J_LJxWCZM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aSFnw7EdeKs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Gaspari"
 slug: "gaspari"
 type: "artists"
-image: "https://i.ytimg.com/vi/glp3FcH4ijk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yEQUfOluIkM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

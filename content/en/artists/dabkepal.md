@@ -2,7 +2,7 @@
 title: "موقع دبكة - Dabkepal"
 slug: "dabkepal"
 type: "artists"
-image: "https://i.ytimg.com/vi/lBA6den4HTo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vKXpgt2yi6c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

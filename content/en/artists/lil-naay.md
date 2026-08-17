@@ -2,7 +2,7 @@
 title: "Lil Naay"
 slug: "lil-naay"
 type: "artists"
-image: "https://i.ytimg.com/vi/RAxqUFIDlYw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_NlOIjOByUg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
