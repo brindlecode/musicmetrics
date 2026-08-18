@@ -2,7 +2,7 @@
 title: "Agua Marina Oficial"
 slug: "agua-marina-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/o09qo0K6xMA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JxmuJFX5s6U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Harkirat Sangha"
 slug: "harkirat-sangha"
 type: "artists"
-image: "https://i.ytimg.com/vi/7jCDrdFFmBQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ydWVI-j4qi4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

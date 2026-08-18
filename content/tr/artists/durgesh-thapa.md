@@ -2,7 +2,7 @@
 title: "Durgesh Thapa"
 slug: "durgesh-thapa"
 type: "artists"
-image: "https://i.ytimg.com/vi/leEfApehoXs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F6R8UQb4bwk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

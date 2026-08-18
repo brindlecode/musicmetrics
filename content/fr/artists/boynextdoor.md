@@ -2,7 +2,7 @@
 title: "BOYNEXTDOOR"
 slug: "boynextdoor"
 type: "artists"
-image: "https://i.ytimg.com/vi/zGsj0fDHB_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ntLoF0LnAwY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
