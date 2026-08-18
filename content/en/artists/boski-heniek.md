@@ -2,7 +2,7 @@
 title: "Boski Heniek"
 slug: "boski-heniek"
 type: "artists"
-image: "https://i.ytimg.com/vi/R4Xozo5j2zQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lWMO1W7y82s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

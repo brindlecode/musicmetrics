@@ -2,7 +2,7 @@
 title: "Maganga Thishela"
 slug: "maganga-thishela"
 type: "artists"
-image: "https://i.ytimg.com/vi/wcwkNevkhJo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FUpB_jc83Q8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
