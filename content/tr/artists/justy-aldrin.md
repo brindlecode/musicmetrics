@@ -2,7 +2,7 @@
 title: "JUSTY ALDRIN"
 slug: "justy-aldrin"
 type: "artists"
-image: "https://i.ytimg.com/vi/_9tWjuk-hVo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bYooiR5hC_g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

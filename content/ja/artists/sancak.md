@@ -2,7 +2,7 @@
 title: "Sancak"
 slug: "sancak"
 type: "artists"
-image: "https://i.ytimg.com/vi/sJJ2G-8Z2WM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZzzulVAfohI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

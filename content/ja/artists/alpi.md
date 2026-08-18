@@ -2,7 +2,7 @@
 title: "Alpi"
 slug: "alpi"
 type: "artists"
-image: "https://i.ytimg.com/vi/CPqgno0H8uY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-DnAQKfGhkk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

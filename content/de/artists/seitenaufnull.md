@@ -2,7 +2,7 @@
 title: "SEITENAUFNULL"
 slug: "seitenaufnull"
 type: "artists"
-image: "https://i.ytimg.com/vi/NV-QNeMIBtY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/awuYhaikoLo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

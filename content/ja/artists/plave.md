@@ -2,7 +2,7 @@
 title: "PLAVE 플레이브"
 slug: "plave"
 type: "artists"
-image: "https://i.ytimg.com/vi/kH_wiFwqpXA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4p3nTwTboK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
