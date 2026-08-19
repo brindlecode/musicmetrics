@@ -2,7 +2,7 @@
 title: "Gökhan Namlı"
 slug: "gkhan-naml"
 type: "artists"
-image: "https://i.ytimg.com/vi/OJ4IGr4xM2Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4j6qJjUgVgw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

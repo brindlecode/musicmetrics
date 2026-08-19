@@ -2,7 +2,7 @@
 title: "Hindi Hit Songs"
 slug: "hindi-hit-songs"
 type: "artists"
-image: "https://i.ytimg.com/vi/DhRNNDcuzgw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2JSC0UfgjoI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

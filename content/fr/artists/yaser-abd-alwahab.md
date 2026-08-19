@@ -2,7 +2,7 @@
 title: "Yaser Abd Alwahab | ياسر عبد الوهاب"
 slug: "yaser-abd-alwahab"
 type: "artists"
-image: "https://i.ytimg.com/vi/ndVoMqkzR_A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aXBO2c2l3Lk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

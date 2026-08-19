@@ -2,7 +2,7 @@
 title: "Luis Mateus"
 slug: "luis-mateus"
 type: "artists"
-image: "https://i.ytimg.com/vi/0NtTw8X1n8A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9KX0OhVW4-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

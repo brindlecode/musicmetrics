@@ -2,7 +2,7 @@
 title: "Abdulaziz ELmuanna I عبدالعزيز المعنّى"
 slug: "abdulaziz-elmuanna-i"
 type: "artists"
-image: "https://i.ytimg.com/vi/lqH7kojXXeU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gSak1jkIayc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
