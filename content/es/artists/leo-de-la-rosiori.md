@@ -2,7 +2,7 @@
 title: "Leo de la Rosiori"
 slug: "leo-de-la-rosiori"
 type: "artists"
-image: "https://i.ytimg.com/vi/OHgVvF_185w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kPghWNKNhY8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

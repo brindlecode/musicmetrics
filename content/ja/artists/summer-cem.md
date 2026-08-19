@@ -2,7 +2,7 @@
 title: "Summer Cem"
 slug: "summer-cem"
 type: "artists"
-image: "https://i.ytimg.com/vi/kA3UrPLlF8k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W7g5_0q3k-w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

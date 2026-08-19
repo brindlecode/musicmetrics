@@ -2,7 +2,7 @@
 title: "SiGuntur"
 slug: "siguntur"
 type: "artists"
-image: "https://i.ytimg.com/vi/7cWxt2t8taA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NsIn6EsbfCA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

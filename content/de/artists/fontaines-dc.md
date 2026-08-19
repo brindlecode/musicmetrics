@@ -1,11 +1,11 @@
 ---
-title: "Fontaines DC"
+title: "Fontaines D.C."
 slug: "fontaines-dc"
 type: "artists"
-image: "https://i.ytimg.com/vi/lWNxWy012Ro/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ikKBcZg9jUc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Fontaines DC streaming statistics, chart positions and analytics across youtube"
+description: "Fontaines D.C. streaming statistics, chart positions and analytics across youtube"
 ---

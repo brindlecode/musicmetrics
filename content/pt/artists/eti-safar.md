@@ -2,7 +2,7 @@
 title: "Eti Safar"
 slug: "eti-safar"
 type: "artists"
-image: "https://i.ytimg.com/vi/_dKawcAsmBY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nBAmC3KR9Jg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
