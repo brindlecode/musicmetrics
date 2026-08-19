@@ -2,7 +2,7 @@
 title: "Kanye West"
 slug: "kanye-west"
 type: "artists"
-image: "https://i.ytimg.com/vi/HBMy-y2wb4I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kSx7OL5-w2E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Brulux"
 slug: "brulux"
 type: "artists"
-image: "https://i.ytimg.com/vi/-jK59JFl0ic/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TbVhD3XlXnA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

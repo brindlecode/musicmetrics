@@ -2,7 +2,7 @@
 title: "Duelo"
 slug: "duelo"
 type: "artists"
-image: "https://i.ytimg.com/vi/BjeHhm5eeSw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lUlRzwT5AwM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
