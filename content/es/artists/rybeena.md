@@ -2,7 +2,7 @@
 title: "Rybeena"
 slug: "rybeena"
 type: "artists"
-image: "https://i.ytimg.com/vi/9I6xX2TL_Qw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2N34h1R-aqw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

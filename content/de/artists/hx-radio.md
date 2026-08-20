@@ -2,7 +2,7 @@
 title: "HX Radio"
 slug: "hx-radio"
 type: "artists"
-image: "https://i.ytimg.com/vi/SOY5kWcvWcY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QNeKLUrpBpI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
