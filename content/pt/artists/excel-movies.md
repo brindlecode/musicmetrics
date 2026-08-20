@@ -2,7 +2,7 @@
 title: "Excel Movies"
 slug: "excel-movies"
 type: "artists"
-image: "https://i.ytimg.com/vi/kWh6fgcreyw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SQ4jZ-EAL88/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
