@@ -2,7 +2,7 @@
 title: "Rops1"
 slug: "rops1"
 type: "artists"
-image: "https://i.ytimg.com/vi/R8akcrncArU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mtQ8NzogwZc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

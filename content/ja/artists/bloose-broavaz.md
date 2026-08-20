@@ -2,7 +2,7 @@
 title: "Bloose Broavaz"
 slug: "bloose-broavaz"
 type: "artists"
-image: "https://i.ytimg.com/vi/x_vEh3Vgols/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lSmhowFFux0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

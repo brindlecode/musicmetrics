@@ -2,7 +2,7 @@
 title: "Krisko"
 slug: "krisko"
 type: "artists"
-image: "https://i.ytimg.com/vi/WifHOM0uxik/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fd70Qb5fVQY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

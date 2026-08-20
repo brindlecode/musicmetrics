@@ -2,7 +2,7 @@
 title: "Magneoton"
 slug: "magneoton"
 type: "artists"
-image: "https://i.ytimg.com/vi/YNRAX6xqCtU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/77OsOtFYzmo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
