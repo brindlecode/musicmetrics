@@ -2,7 +2,7 @@
 title: "Moda Brasil"
 slug: "moda-brasil"
 type: "artists"
-image: "https://i.ytimg.com/vi/pMtk_JyZtxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/efxeH9JRI2w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

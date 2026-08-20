@@ -2,7 +2,7 @@
 title: "Vikash Yadhuvanshi"
 slug: "vikash-yadhuvanshi"
 type: "artists"
-image: "https://i.ytimg.com/vi/LK6GavkJCig/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FH6qSG8JefI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

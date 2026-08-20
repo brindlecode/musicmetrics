@@ -2,7 +2,7 @@
 title: "Fally Ipupa"
 slug: "fally-ipupa"
 type: "artists"
-image: "https://i.ytimg.com/vi/-LgR6TxHLzU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VJbsHnGGUPo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

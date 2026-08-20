@@ -2,7 +2,7 @@
 title: "YOVNGCHIMI"
 slug: "yovngchimi"
 type: "artists"
-image: "https://i.ytimg.com/vi/hTFwDSqEUkU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Kofsrt13oso/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

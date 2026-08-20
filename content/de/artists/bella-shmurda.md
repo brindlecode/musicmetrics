@@ -2,7 +2,7 @@
 title: "Bella Shmurda"
 slug: "bella-shmurda"
 type: "artists"
-image: "https://i.ytimg.com/vi/JriGKmLtIc0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-o-oiqviQ70/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

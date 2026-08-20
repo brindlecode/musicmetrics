@@ -2,7 +2,7 @@
 title: "LEE SUHYUN"
 slug: "lee-suhyun"
 type: "artists"
-image: "https://i.ytimg.com/vi/Yv0O33oqfwU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LlFB4Tk49kI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

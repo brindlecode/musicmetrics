@@ -2,7 +2,7 @@
 title: "Bollywood Music Masala"
 slug: "bollywood-music-masala"
 type: "artists"
-image: "https://i.ytimg.com/vi/CGkMCEf_Dzg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LxtmRwUX0rs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

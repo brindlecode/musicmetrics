@@ -2,7 +2,7 @@
 title: "HYUKOH"
 slug: "hyukoh"
 type: "artists"
-image: "https://i.ytimg.com/vi/-czMu2ADVu4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JgdrtpK3PeQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

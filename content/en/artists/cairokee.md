@@ -2,7 +2,7 @@
 title: "Cairokee"
 slug: "cairokee"
 type: "artists"
-image: "https://i.ytimg.com/vi/G7W-wsx4Mec/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eJpTFp0dbqk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

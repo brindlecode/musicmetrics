@@ -2,7 +2,7 @@
 title: "XOXO ENTERTAINMENT"
 slug: "xoxo-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/iYrlGGYFefA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HSJzqueYOxw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
