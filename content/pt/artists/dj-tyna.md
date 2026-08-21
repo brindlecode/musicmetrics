@@ -2,7 +2,7 @@
 title: "DJ TYNA ‎"
 slug: "dj-tyna"
 type: "artists"
-image: "https://i.ytimg.com/vi/Za1DcSx9IeA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Y2GM8ZiyVck/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

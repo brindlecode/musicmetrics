@@ -2,7 +2,7 @@
 title: "Love Funk"
 slug: "love-funk"
 type: "artists"
-image: "https://i.ytimg.com/vi/LVrcgaE_B10/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w0lUwHqF6G0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

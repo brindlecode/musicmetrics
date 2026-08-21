@@ -2,7 +2,7 @@
 title: "Rema"
 slug: "rema"
 type: "artists"
-image: "https://i.ytimg.com/vi/aM69Ur67d_I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6OzP09nC79o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

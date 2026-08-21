@@ -2,7 +2,7 @@
 title: "Evren Budak"
 slug: "evren-budak"
 type: "artists"
-image: "https://i.ytimg.com/vi/-XJOemPuaGc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gldPTydTKQQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

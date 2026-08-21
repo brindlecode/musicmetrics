@@ -2,7 +2,7 @@
 title: "GMMTV RECORDS"
 slug: "gmmtv-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/uI5NWSN0wMA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kUWvsCBEPBE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

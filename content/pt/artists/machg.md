@@ -2,7 +2,7 @@
 title: "MACHg"
 slug: "machg"
 type: "artists"
-image: "https://i.ytimg.com/vi/34wnf8276O4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_x-Q6OBCh9o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

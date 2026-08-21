@@ -2,7 +2,7 @@
 title: "Korelon"
 slug: "korelon"
 type: "artists"
-image: "https://i.ytimg.com/vi/0jjj17JIQp8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SV4KWHj9-Ms/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

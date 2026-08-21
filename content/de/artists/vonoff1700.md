@@ -2,7 +2,7 @@
 title: "VonOff1700"
 slug: "vonoff1700"
 type: "artists"
-image: "https://i.ytimg.com/vi/G6VHDpCtvLU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fMjSto456sg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

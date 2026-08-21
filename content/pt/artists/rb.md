@@ -2,7 +2,7 @@
 title: "大头针R&B"
 slug: "rb"
 type: "artists"
-image: "https://i.ytimg.com/vi/q2fnnOUnpIk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/E2lIqUZ9zAc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

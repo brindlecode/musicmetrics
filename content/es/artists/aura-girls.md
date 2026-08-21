@@ -2,7 +2,7 @@
 title: "AURA GIRLS"
 slug: "aura-girls"
 type: "artists"
-image: "https://i.ytimg.com/vi/tHlee_GqjpE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6Aw9-Y7KScE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

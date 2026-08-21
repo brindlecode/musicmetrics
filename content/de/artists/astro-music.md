@@ -2,7 +2,7 @@
 title: "Astro Music"
 slug: "astro-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/wfY3eJTtHbk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0p2UD1daZiY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Raina"
 slug: "raina"
 type: "artists"
-image: "https://i.ytimg.com/vi/cssAjas-GeY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qo-d1UELXPE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Credo V Daniels"
 slug: "credo-v-daniels"
 type: "artists"
-image: "https://i.ytimg.com/vi/KKlZ8S_LvPM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dkZ5TVt8bSI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

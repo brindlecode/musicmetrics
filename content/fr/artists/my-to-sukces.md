@@ -2,7 +2,7 @@
 title: "MY TO SUKCES"
 slug: "my-to-sukces"
 type: "artists"
-image: "https://i.ytimg.com/vi/nIuPqn6tHRA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7z8FmZM0GKQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

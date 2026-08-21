@@ -1,11 +1,11 @@
 ---
-title: "Desh"
+title: "DESH"
 slug: "desh"
 type: "artists"
-image: "https://i.ytimg.com/vi/qVtZLYmalVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A1GnaBOXj7Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Desh streaming statistics, chart positions and analytics across youtube"
+description: "DESH streaming statistics, chart positions and analytics across youtube"
 ---
