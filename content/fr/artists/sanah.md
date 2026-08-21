@@ -2,7 +2,7 @@
 title: "sanah"
 slug: "sanah"
 type: "artists"
-image: "https://i.ytimg.com/vi/6ZkmrhLKmso/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kqccmH8FTb8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

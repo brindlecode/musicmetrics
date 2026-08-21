@@ -2,7 +2,7 @@
 title: "PIZZALI"
 slug: "pizzali"
 type: "artists"
-image: "https://i.ytimg.com/vi/vz0G2xepJws/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OtPApd6Qb8g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

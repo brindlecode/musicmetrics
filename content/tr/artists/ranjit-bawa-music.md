@@ -2,7 +2,7 @@
 title: "Ranjit Bawa Music"
 slug: "ranjit-bawa-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/FmS0RtZWjYM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hhSiDn9DLPw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

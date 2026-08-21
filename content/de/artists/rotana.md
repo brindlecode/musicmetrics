@@ -2,7 +2,7 @@
 title: "Rotana"
 slug: "rotana"
 type: "artists"
-image: "https://i.ytimg.com/vi/98-0TJv_ndY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J63FQjymWMQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

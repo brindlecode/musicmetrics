@@ -2,7 +2,7 @@
 title: "Two Souls Retro"
 slug: "two-souls-retro"
 type: "artists"
-image: "https://i.ytimg.com/vi/rrZ_cfYWAYA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EZUCcnnx2fE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

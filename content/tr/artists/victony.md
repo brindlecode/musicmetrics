@@ -2,7 +2,7 @@
 title: "Victony"
 slug: "victony"
 type: "artists"
-image: "https://i.ytimg.com/vi/umvk5RESWpg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QL8zVYSTbgg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

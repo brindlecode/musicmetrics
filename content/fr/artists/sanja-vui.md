@@ -2,7 +2,7 @@
 title: "Sanja Vučić"
 slug: "sanja-vui"
 type: "artists"
-image: "https://i.ytimg.com/vi/QWewhexN214/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iWaAgfON-hI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

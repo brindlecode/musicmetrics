@@ -2,7 +2,7 @@
 title: "Simeamelody"
 slug: "simeamelody"
 type: "artists"
-image: "https://i.ytimg.com/vi/7BXcIPEJXBI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rbduk9nu7Ic/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

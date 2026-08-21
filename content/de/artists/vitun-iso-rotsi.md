@@ -2,7 +2,7 @@
 title: "VITUN ISO ROTSI"
 slug: "vitun-iso-rotsi"
 type: "artists"
-image: "https://i.ytimg.com/vi/dq4dxCZPovk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5vt_8tfwCS4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
