@@ -2,7 +2,7 @@
 title: "Inkabi Records"
 slug: "inkabi-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/y4h7YEGo5-I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dlWE0-VFyZU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

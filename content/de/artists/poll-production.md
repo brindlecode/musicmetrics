@@ -2,7 +2,7 @@
 title: "Poll Production"
 slug: "poll-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/yN7CiMRBazs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/N7OvCa6Qh9o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
