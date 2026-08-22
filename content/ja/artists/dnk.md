@@ -2,7 +2,7 @@
 title: "DNK"
 slug: "dnk"
 type: "artists"
-image: "https://i.ytimg.com/vi/JKFhMjW5P6I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ypMvNA4wwCA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

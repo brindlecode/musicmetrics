@@ -2,7 +2,7 @@
 title: "Kidd Carder"
 slug: "kidd-carder"
 type: "artists"
-image: "https://i.ytimg.com/vi/hPCMaPlbr-Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BwZdNT9hi9c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

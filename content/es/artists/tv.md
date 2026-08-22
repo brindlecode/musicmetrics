@@ -2,7 +2,7 @@
 title: "황영웅 Tv"
 slug: "tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/BPjkepatFRI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OdFKpPV4VlE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

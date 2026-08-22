@@ -2,7 +2,7 @@
 title: "Hopko TV"
 slug: "hopko-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/shG00y9zMsM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ku_ULaV-3bg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

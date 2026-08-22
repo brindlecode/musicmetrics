@@ -2,7 +2,7 @@
 title: "ريشا كوستا و سماره - Resha wi SamaRa"
 slug: "resha-wi-samara"
 type: "artists"
-image: "https://i.ytimg.com/vi/4L0pshzQucU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l-8JoX0GRvg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

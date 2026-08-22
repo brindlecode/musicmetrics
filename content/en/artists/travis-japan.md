@@ -2,7 +2,7 @@
 title: "Travis Japan"
 slug: "travis-japan"
 type: "artists"
-image: "https://i.ytimg.com/vi/pCoVdp-_iMI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uPXWMbG33UE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

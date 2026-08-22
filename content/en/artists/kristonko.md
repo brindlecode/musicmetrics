@@ -2,7 +2,7 @@
 title: "Kristonko"
 slug: "kristonko"
 type: "artists"
-image: "https://i.ytimg.com/vi/Qt8JYce8dlg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mvF6pJZN82I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "eXy"
 slug: "exy"
 type: "artists"
-image: "https://i.ytimg.com/vi/H5ptgvNwSxw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EBNIRX66msE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
