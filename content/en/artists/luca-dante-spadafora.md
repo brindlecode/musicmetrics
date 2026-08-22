@@ -2,7 +2,7 @@
 title: "Luca-Dante Spadafora"
 slug: "luca-dante-spadafora"
 type: "artists"
-image: "https://i.ytimg.com/vi/CeXId2qAKPo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xJrPFBsTXEo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

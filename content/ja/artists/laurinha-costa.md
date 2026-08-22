@@ -2,7 +2,7 @@
 title: "Laurinha Costa"
 slug: "laurinha-costa"
 type: "artists"
-image: "https://i.ytimg.com/vi/AfJm4CtlcWA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qacBneOS-Ts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

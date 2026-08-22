@@ -2,7 +2,7 @@
 title: "Lyon la f"
 slug: "lyon-la-f"
 type: "artists"
-image: "https://i.ytimg.com/vi/WOqoj9vpkxc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w28MtHKUAhY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

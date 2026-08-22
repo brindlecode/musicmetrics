@@ -2,7 +2,7 @@
 title: "Virgin Music Group SA"
 slug: "virgin-music-group-sa"
 type: "artists"
-image: "https://i.ytimg.com/vi/EZ0k3DQruDQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BrXallgBBVA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

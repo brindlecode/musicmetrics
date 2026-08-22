@@ -2,7 +2,7 @@
 title: "francis"
 slug: "francis"
 type: "artists"
-image: "https://i.ytimg.com/vi/oxP9aW9jg7Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wf9oAfcOqRU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Mi Trocona Lyrics"
 slug: "mi-trocona-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/pq8yAs4cHZY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZPKtgjmEIyY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

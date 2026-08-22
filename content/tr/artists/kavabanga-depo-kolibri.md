@@ -2,7 +2,7 @@
 title: "kavabanga Depo kolibri"
 slug: "kavabanga-depo-kolibri"
 type: "artists"
-image: "https://i.ytimg.com/vi/MIpJqWIHRRc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iIvH_TNAlrM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

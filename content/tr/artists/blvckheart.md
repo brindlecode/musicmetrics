@@ -2,7 +2,7 @@
 title: "BLVCKHEART"
 slug: "blvckheart"
 type: "artists"
-image: "https://i.ytimg.com/vi/i_kATCL2Ggs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CEkx56iXCso/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "RK Music"
 slug: "rk-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/TklIECs0lZ4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Yw8c9SQT89k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
