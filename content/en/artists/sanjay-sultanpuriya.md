@@ -2,7 +2,7 @@
 title: "Sanjay Sultanpuriya"
 slug: "sanjay-sultanpuriya"
 type: "artists"
-image: "https://i.ytimg.com/vi/pgM_5MX2msg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ajbZlebglTc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

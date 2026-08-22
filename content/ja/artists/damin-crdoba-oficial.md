@@ -2,7 +2,7 @@
 title: "Damián Córdoba (Oficial)"
 slug: "damin-crdoba-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/QXttUQc_4gY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/__fymsqIBTo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
