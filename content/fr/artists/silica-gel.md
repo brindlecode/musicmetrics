@@ -2,7 +2,7 @@
 title: "Silica Gel"
 slug: "silica-gel"
 type: "artists"
-image: "https://i.ytimg.com/vi/lN0iWI69bR8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MNAfJ2AJ5AQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

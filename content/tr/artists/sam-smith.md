@@ -2,7 +2,7 @@
 title: "SAM SMITH"
 slug: "sam-smith"
 type: "artists"
-image: "https://i.ytimg.com/vi/Tlampt9Db70/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Mdi8Pty_-OU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
