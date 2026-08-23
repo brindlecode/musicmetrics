@@ -2,7 +2,7 @@
 title: "DJ FART"
 slug: "dj-fart"
 type: "artists"
-image: "https://i.ytimg.com/vi/8tKpbQhkKn0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MECwDGe2c6k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

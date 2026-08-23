@@ -2,7 +2,7 @@
 title: "Steven Beat"
 slug: "steven-beat"
 type: "artists"
-image: "https://i.ytimg.com/vi/bc-5OzmbLsY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iamE1DAhGT0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

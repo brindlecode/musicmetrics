@@ -2,7 +2,7 @@
 title: "Bello&Dallas"
 slug: "bellodallas"
 type: "artists"
-image: "https://i.ytimg.com/vi/zUAQ_EQY4Ik/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lvbJman4VzA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

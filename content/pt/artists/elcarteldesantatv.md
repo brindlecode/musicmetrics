@@ -2,7 +2,7 @@
 title: "elcarteldesantatv"
 slug: "elcarteldesantatv"
 type: "artists"
-image: "https://i.ytimg.com/vi/S58gKtKfrKM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w07awRbJl1o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

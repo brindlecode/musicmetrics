@@ -2,7 +2,7 @@
 title: "Songify Music Studio"
 slug: "songify-music-studio"
 type: "artists"
-image: "https://i.ytimg.com/vi/4G7p8zSa4lM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QlkOrlfJqIM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
