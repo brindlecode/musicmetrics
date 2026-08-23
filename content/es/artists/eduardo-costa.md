@@ -2,7 +2,7 @@
 title: "Eduardo Costa"
 slug: "eduardo-costa"
 type: "artists"
-image: "https://i.ytimg.com/vi/JJDH8tD_snc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aCXuTZ_jeEE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

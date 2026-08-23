@@ -2,7 +2,7 @@
 title: "Santiago Cañete"
 slug: "santiago-caete"
 type: "artists"
-image: "https://i.ytimg.com/vi/wLovTPvwSJ8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dzpSnHzOEkI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

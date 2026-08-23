@@ -2,7 +2,7 @@
 title: "Mithoon"
 slug: "mithoon"
 type: "artists"
-image: "https://i.ytimg.com/vi/dkdrMG-uXdQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Vjt_vnzuoJQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

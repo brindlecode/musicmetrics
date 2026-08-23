@@ -2,7 +2,7 @@
 title: "Todo Maná"
 slug: "todo-man"
 type: "artists"
-image: "https://i.ytimg.com/vi/j2FTLFvg_0k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8srPNLlCgx0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
