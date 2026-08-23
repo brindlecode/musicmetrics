@@ -2,7 +2,7 @@
 title: "afrovibez"
 slug: "afrovibez"
 type: "artists"
-image: "https://i.ytimg.com/vi/zm-7yD60x6E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wv8IxWtLWTE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

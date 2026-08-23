@@ -2,7 +2,7 @@
 title: "SAVANNA"
 slug: "savanna"
 type: "artists"
-image: "https://i.ytimg.com/vi/2UnJhrbFAyY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LfSWxWkf1hg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

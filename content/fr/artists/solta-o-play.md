@@ -2,7 +2,7 @@
 title: "SOLTA O PLAY"
 slug: "solta-o-play"
 type: "artists"
-image: "https://i.ytimg.com/vi/dt3iztVX6Co/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nP88Ipxjdok/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
