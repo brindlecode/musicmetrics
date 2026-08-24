@@ -2,7 +2,7 @@
 title: "Yungeen Ace"
 slug: "yungeen-ace"
 type: "artists"
-image: "https://i.ytimg.com/vi/GCt1MqHqVaA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KInnbmQuuy8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
