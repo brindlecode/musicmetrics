@@ -2,7 +2,7 @@
 title: "IDJVideos.TV"
 slug: "idjvideostv"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vzpx2UsXcZ0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LsYc-7ohfxc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

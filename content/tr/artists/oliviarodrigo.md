@@ -2,7 +2,7 @@
 title: "OliviaRodrigo"
 slug: "oliviarodrigo"
 type: "artists"
-image: "https://i.ytimg.com/vi/Rt9tW3cMLhI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NI0rodDL-U8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

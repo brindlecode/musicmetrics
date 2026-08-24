@@ -2,7 +2,7 @@
 title: "Taj Tracks"
 slug: "taj-tracks"
 type: "artists"
-image: "https://i.ytimg.com/vi/TDs-RUuMTHc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g8W34x4SNlQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

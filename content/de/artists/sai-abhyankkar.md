@@ -2,7 +2,7 @@
 title: "Sai Abhyankkar"
 slug: "sai-abhyankkar"
 type: "artists"
-image: "https://i.ytimg.com/vi/IW6ct9S4MYc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BmRX2g6-iQI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

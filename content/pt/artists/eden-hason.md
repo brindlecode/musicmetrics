@@ -2,7 +2,7 @@
 title: "עדן חסון - Eden Hason"
 slug: "eden-hason"
 type: "artists"
-image: "https://i.ytimg.com/vi/c_5XL5SRF9g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vUGaFBX4ctg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

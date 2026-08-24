@@ -2,7 +2,7 @@
 title: "Maman Fvndy Rmx"
 slug: "maman-fvndy-rmx"
 type: "artists"
-image: "https://i.ytimg.com/vi/VANls_LF2_0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0Q-DcR-y-os/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

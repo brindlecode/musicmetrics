@@ -2,7 +2,7 @@
 title: "GMJ - Global Music Junction - Bhojpuri"
 slug: "gmj---global-music-junction---bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/CLbmH6SJGLQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R-4cvbrDbv8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

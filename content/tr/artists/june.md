@@ -2,7 +2,7 @@
 title: "JUNE"
 slug: "june"
 type: "artists"
-image: "https://i.ytimg.com/vi/D1Yb0Y8ver4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i5DfRfEf7s4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
