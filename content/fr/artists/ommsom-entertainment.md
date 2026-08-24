@@ -2,7 +2,7 @@
 title: "Ommsom Entertainment"
 slug: "ommsom-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/YIIiUrT3gZk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KlvCzs2yC5c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

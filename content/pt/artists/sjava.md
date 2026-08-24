@@ -2,7 +2,7 @@
 title: "Sjava"
 slug: "sjava"
 type: "artists"
-image: "https://i.ytimg.com/vi/6KAQP9C79Bs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z0vflBsXbBY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

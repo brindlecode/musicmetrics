@@ -2,7 +2,7 @@
 title: "Jxggi"
 slug: "jxggi"
 type: "artists"
-image: "https://i.ytimg.com/vi/JdqKBtc5bLo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rXLcHtVbtJE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
