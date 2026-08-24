@@ -2,7 +2,7 @@
 title: "Nash Blackwood"
 slug: "nash-blackwood"
 type: "artists"
-image: "https://i.ytimg.com/vi/cMwPof7GM80/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RWDb8NBBrj8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

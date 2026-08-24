@@ -2,7 +2,7 @@
 title: "EL GRAN CHORRILLANO"
 slug: "el-gran-chorrillano"
 type: "artists"
-image: "https://i.ytimg.com/vi/AZeXo8M5ZdE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rgNOEsvcOsk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

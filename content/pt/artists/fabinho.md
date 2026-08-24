@@ -2,7 +2,7 @@
 title: "Fabinho"
 slug: "fabinho"
 type: "artists"
-image: "https://i.ytimg.com/vi/6oQmZ6q89LM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bPffmW-BIwg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

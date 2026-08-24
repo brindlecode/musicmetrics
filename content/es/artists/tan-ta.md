@@ -2,7 +2,7 @@
 title: "Tan Taşçı"
 slug: "tan-ta"
 type: "artists"
-image: "https://i.ytimg.com/vi/AsKO1BWrk7w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NAxMN5i03u0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

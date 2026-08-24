@@ -2,7 +2,7 @@
 title: "DopeMusic"
 slug: "dopemusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/b1LWSvdBvQk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/siAqNc7cuS0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

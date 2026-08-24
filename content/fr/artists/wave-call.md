@@ -2,7 +2,7 @@
 title: "WAVE CALL"
 slug: "wave-call"
 type: "artists"
-image: "https://i.ytimg.com/vi/yAvnjSemp9w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/d2b9OwP4PFU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
