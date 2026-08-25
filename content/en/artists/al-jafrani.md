@@ -2,7 +2,7 @@
 title: "الجفراني - جابر بن هضبان | Al Jafrani"
 slug: "al-jafrani"
 type: "artists"
-image: "https://i.ytimg.com/vi/dXuTTQyezW8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ug82avU5PHg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
