@@ -2,7 +2,7 @@
 title: "Starry Melodies"
 slug: "starry-melodies"
 type: "artists"
-image: "https://i.ytimg.com/vi/AtPkUCqkbUM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5oukcZorKWU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
