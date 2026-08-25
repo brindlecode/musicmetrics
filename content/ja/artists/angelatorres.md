@@ -2,7 +2,7 @@
 title: "AngelaTorres"
 slug: "angelatorres"
 type: "artists"
-image: "https://i.ytimg.com/vi/SRkG8DUrAdc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/T093_jJcF3c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

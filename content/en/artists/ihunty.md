@@ -2,7 +2,7 @@
 title: "iHunty"
 slug: "ihunty"
 type: "artists"
-image: "https://i.ytimg.com/vi/KzOmN1z047k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2iscuZzofvM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

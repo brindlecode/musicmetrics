@@ -2,7 +2,7 @@
 title: "KarolG"
 slug: "karolg"
 type: "artists"
-image: "https://i.ytimg.com/vi/_oTx6K_F-D4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fRIhCiUVaKs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
