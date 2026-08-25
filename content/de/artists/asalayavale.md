@@ -2,7 +2,7 @@
 title: "Asalayavale"
 slug: "asalayavale"
 type: "artists"
-image: "https://i.ytimg.com/vi/9iGjes4n1iA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/msjA3KVNH7g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

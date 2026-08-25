@@ -2,7 +2,7 @@
 title: "ourmemoriestonight"
 slug: "ourmemoriestonight"
 type: "artists"
-image: "https://i.ytimg.com/vi/-clya7UPRew/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G3rAXkES0Qg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

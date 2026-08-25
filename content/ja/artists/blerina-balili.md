@@ -2,7 +2,7 @@
 title: "Blerina Balili"
 slug: "blerina-balili"
 type: "artists"
-image: "https://i.ytimg.com/vi/ERsw-4N8WCM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/E-zqoWOpcMI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

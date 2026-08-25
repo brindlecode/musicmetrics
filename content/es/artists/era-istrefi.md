@@ -2,7 +2,7 @@
 title: "Era Istrefi"
 slug: "era-istrefi"
 type: "artists"
-image: "https://i.ytimg.com/vi/__USg_UHuzk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7lqIwrrSTiY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

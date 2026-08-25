@@ -2,7 +2,7 @@
 title: "BarTzabary"
 slug: "bartzabary"
 type: "artists"
-image: "https://i.ytimg.com/vi/34fwCZT0xOo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pwRdS5_CKL4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

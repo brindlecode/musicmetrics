@@ -2,7 +2,7 @@
 title: "Y2K Bollywood Hits"
 slug: "y2k-bollywood-hits"
 type: "artists"
-image: "https://i.ytimg.com/vi/maB5AmGynzc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/spUnbNaxqzY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

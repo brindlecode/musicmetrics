@@ -2,7 +2,7 @@
 title: "Chiva Retro"
 slug: "chiva-retro"
 type: "artists"
-image: "https://i.ytimg.com/vi/BNr90beB4IU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_bVzRFHal1I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
