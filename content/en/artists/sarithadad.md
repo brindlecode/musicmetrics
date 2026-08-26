@@ -2,7 +2,7 @@
 title: "SaritHadad"
 slug: "sarithadad"
 type: "artists"
-image: "https://i.ytimg.com/vi/f9CC4NLvTHc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/N-5WoHujq4A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

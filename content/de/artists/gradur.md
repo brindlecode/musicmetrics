@@ -2,7 +2,7 @@
 title: "Gradur"
 slug: "gradur"
 type: "artists"
-image: "https://i.ytimg.com/vi/rpGsTCCy8Gc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Dvt5lQZSKGY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

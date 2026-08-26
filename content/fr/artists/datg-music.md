@@ -2,7 +2,7 @@
 title: "DatG Music"
 slug: "datg-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/xJ1uMrL9Rwo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9eL4Scy4-Ys/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
