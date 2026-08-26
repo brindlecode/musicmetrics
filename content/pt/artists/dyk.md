@@ -2,7 +2,7 @@
 title: "DYK"
 slug: "dyk"
 type: "artists"
-image: "https://i.ytimg.com/vi/1y2Y-rqOyE8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8lxXff6bf4U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Velada"
 slug: "velada"
 type: "artists"
-image: "https://i.ytimg.com/vi/EacOnTJbn7g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1QkHZptB9Fo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Stay Retro"
 slug: "stay-retro"
 type: "artists"
-image: "https://i.ytimg.com/vi/rSYMTDQOgus/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BkXGWNNrt40/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

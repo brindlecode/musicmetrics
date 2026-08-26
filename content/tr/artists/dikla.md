@@ -2,7 +2,7 @@
 title: "דיקלה - הערוץ הרשמי - Dikla"
 slug: "dikla"
 type: "artists"
-image: "https://i.ytimg.com/vi/oamLG4SigV8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4ZlG9KKZIFw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
