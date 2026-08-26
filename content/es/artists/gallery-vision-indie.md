@@ -2,7 +2,7 @@
 title: "Gallery Vision Indie"
 slug: "gallery-vision-indie"
 type: "artists"
-image: "https://i.ytimg.com/vi/riWV6DQhhjY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BYzAbNCohHc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

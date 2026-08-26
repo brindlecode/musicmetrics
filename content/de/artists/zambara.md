@@ -2,7 +2,7 @@
 title: "ZAMBARA"
 slug: "zambara"
 type: "artists"
-image: "https://i.ytimg.com/vi/C-l5WPxNZvE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NMglkggy1QM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

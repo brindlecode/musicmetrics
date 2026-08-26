@@ -2,7 +2,7 @@
 title: "MODELKI"
 slug: "modelki"
 type: "artists"
-image: "https://i.ytimg.com/vi/JpSbOxB0to8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QJATsrUdvs8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
