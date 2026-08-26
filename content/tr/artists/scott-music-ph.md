@@ -2,7 +2,7 @@
 title: "Scott Music Ph"
 slug: "scott-music-ph"
 type: "artists"
-image: "https://i.ytimg.com/vi/f854ZOJSEZE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZCUIpqz_CQM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MODA Colombia"
 slug: "moda-colombia"
 type: "artists"
-image: "https://i.ytimg.com/vi/159rC8YIS9g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tyseEbalgiE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

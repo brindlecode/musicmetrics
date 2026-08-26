@@ -2,7 +2,7 @@
 title: "TAKARA"
 slug: "takara"
 type: "artists"
-image: "https://i.ytimg.com/vi/NOuDYw_84XQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/inBvmy-fTY4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

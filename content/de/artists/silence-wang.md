@@ -2,7 +2,7 @@
 title: "汪苏泷Silence Wang"
 slug: "silence-wang"
 type: "artists"
-image: "https://i.ytimg.com/vi/1xUxnbPx3Cg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0Vri50xDo7U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
