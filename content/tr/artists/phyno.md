@@ -2,7 +2,7 @@
 title: "Phyno"
 slug: "phyno"
 type: "artists"
-image: "https://i.ytimg.com/vi/jmv9tvefRGs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kGzTNlErY5g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

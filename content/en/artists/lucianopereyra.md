@@ -2,7 +2,7 @@
 title: "LucianoPereyra"
 slug: "lucianopereyra"
 type: "artists"
-image: "https://i.ytimg.com/vi/w8gPo32WlPE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1WxksreBA1g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

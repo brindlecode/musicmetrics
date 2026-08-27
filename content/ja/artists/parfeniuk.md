@@ -2,7 +2,7 @@
 title: "Parfeniuk"
 slug: "parfeniuk"
 type: "artists"
-image: "https://i.ytimg.com/vi/t3w3MPqlNYg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BGSUG0fQqDM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

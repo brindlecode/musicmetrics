@@ -2,7 +2,7 @@
 title: "LKN"
 slug: "lkn"
 type: "artists"
-image: "https://i.ytimg.com/vi/GSFZidxWFCc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jgtF7ke3CFY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

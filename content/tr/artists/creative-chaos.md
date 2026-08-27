@@ -2,7 +2,7 @@
 title: "Creative Chaos"
 slug: "creative-chaos"
 type: "artists"
-image: "https://i.ytimg.com/vi/Pl7V4KfX0sY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_CiXsBYzLzU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

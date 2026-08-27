@@ -2,7 +2,7 @@
 title: "Turmion Kätilöt"
 slug: "turmion-ktilt"
 type: "artists"
-image: "https://i.ytimg.com/vi/X3QbgXa1igY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BswPdb-5fxs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

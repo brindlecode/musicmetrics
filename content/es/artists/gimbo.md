@@ -2,7 +2,7 @@
 title: "Gimbo"
 slug: "gimbo"
 type: "artists"
-image: "https://i.ytimg.com/vi/LBsQ9IhaloQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G60oCRhork0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

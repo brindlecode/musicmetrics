@@ -2,7 +2,7 @@
 title: "Dvrksim"
 slug: "dvrksim"
 type: "artists"
-image: "https://i.ytimg.com/vi/UycLg27fKHY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GMgaN0Us3Ag/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

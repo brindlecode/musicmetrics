@@ -2,7 +2,7 @@
 title: "Aysel Khaled"
 slug: "aysel-khaled"
 type: "artists"
-image: "https://i.ytimg.com/vi/uPssxOferK0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3xezU7Y37KM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

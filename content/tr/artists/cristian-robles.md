@@ -2,7 +2,7 @@
 title: "Cristian Robles"
 slug: "cristian-robles"
 type: "artists"
-image: "https://i.ytimg.com/vi/ukPEirE_Krw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xdMglZPBzuA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
