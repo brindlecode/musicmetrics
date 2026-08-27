@@ -2,7 +2,7 @@
 title: "Alexia Nicole Alb"
 slug: "alexia-nicole-alb"
 type: "artists"
-image: "https://i.ytimg.com/vi/I3W5eLJA1zg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bTScKoicZsg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Destripando la Historia"
 slug: "destripando-la-historia"
 type: "artists"
-image: "https://i.ytimg.com/vi/Et0r4vWkDHc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-Nxtpgskr6w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

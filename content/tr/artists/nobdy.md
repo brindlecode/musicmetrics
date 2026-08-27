@@ -2,7 +2,7 @@
 title: "Nobdy"
 slug: "nobdy"
 type: "artists"
-image: "https://i.ytimg.com/vi/-5BW34sEks8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x3VaHm6yJB4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

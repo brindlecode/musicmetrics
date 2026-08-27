@@ -2,7 +2,7 @@
 title: "T-Series Telugu"
 slug: "t-series-telugu"
 type: "artists"
-image: "https://i.ytimg.com/vi/kbX2wO9k96E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/D57Bum-y_Bk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

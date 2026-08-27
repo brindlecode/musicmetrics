@@ -2,7 +2,7 @@
 title: "RC Music"
 slug: "rc-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/A5E1oEWjEHs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/24ESSt8sRm0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
