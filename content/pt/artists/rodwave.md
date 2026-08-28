@@ -2,7 +2,7 @@
 title: "RodWave"
 slug: "rodwave"
 type: "artists"
-image: "https://i.ytimg.com/vi/9d6cbYircbQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Qe6T4dSnWhI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

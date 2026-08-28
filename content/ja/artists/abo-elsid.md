@@ -2,7 +2,7 @@
 title: "ABO ELSID - ابو السيد"
 slug: "abo-elsid"
 type: "artists"
-image: "https://i.ytimg.com/vi/pekOBOzb3ns/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/INTCLCVvXf8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "HITS Records"
 slug: "hits-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/mtg5bVwgvKU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iZ-KyjX5dj8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Bollywood Love Junction 24x7"
 slug: "bollywood-love-junction-24x7"
 type: "artists"
-image: "https://i.ytimg.com/vi/v9Sys0GvKzc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YZrsnNHrJXE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
