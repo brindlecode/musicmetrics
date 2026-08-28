@@ -2,7 +2,7 @@
 title: "Costi"
 slug: "costi"
 type: "artists"
-image: "https://i.ytimg.com/vi/Jrg1N6fYy2c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Gi-FtDhrY-w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

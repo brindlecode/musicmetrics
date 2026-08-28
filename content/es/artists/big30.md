@@ -2,7 +2,7 @@
 title: "BIG30"
 slug: "big30"
 type: "artists"
-image: "https://i.ytimg.com/vi/IaWghpK46E0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EqNPLPQ8530/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

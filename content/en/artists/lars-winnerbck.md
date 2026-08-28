@@ -2,7 +2,7 @@
 title: "Lars Winnerbäck"
 slug: "lars-winnerbck"
 type: "artists"
-image: "https://i.ytimg.com/vi/R07a4Vuo25Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VbOKx8YzgH4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

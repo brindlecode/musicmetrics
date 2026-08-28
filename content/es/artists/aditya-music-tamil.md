@@ -2,7 +2,7 @@
 title: "Aditya Music Tamil"
 slug: "aditya-music-tamil"
 type: "artists"
-image: "https://i.ytimg.com/vi/Bm9lLpmPM0A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C1LN4cWjMl0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

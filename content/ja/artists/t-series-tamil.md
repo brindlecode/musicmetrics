@@ -2,7 +2,7 @@
 title: "T-Series Tamil"
 slug: "t-series-tamil"
 type: "artists"
-image: "https://i.ytimg.com/vi/JHaYlVeNxjs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pfHccUkuPEM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "NGEE"
 slug: "ngee"
 type: "artists"
-image: "https://i.ytimg.com/vi/EKF-OONR8z4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8zQSvQBKnXA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

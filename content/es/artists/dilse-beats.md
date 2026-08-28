@@ -2,7 +2,7 @@
 title: "DilSe Beats"
 slug: "dilse-beats"
 type: "artists"
-image: "https://i.ytimg.com/vi/J6Q8LEsgqQY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o-Kkn8TxUsg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

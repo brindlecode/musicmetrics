@@ -2,7 +2,7 @@
 title: "abelpintos"
 slug: "abelpintos"
 type: "artists"
-image: "https://i.ytimg.com/vi/q3uIinaqs78/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bCSTVPxz1fE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

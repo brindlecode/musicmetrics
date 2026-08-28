@@ -2,7 +2,7 @@
 title: "Mata"
 slug: "mata"
 type: "artists"
-image: "https://i.ytimg.com/vi/LbCe8M7WrcY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DkL6pnllq9I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

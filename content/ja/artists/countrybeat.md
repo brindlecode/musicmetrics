@@ -2,7 +2,7 @@
 title: "CountryBeat"
 slug: "countrybeat"
 type: "artists"
-image: "https://i.ytimg.com/vi/ok6LYl38Ku0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/N3xw5G9Mdbs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
