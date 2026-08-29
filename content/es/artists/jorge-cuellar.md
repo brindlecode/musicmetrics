@@ -2,7 +2,7 @@
 title: "Jorge Cuellar"
 slug: "jorge-cuellar"
 type: "artists"
-image: "https://i.ytimg.com/vi/d0zFDNy2fik/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AgfEHawGCjU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

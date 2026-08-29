@@ -2,7 +2,7 @@
 title: "Anatolian Rock Wise"
 slug: "anatolian-rock-wise"
 type: "artists"
-image: "https://i.ytimg.com/vi/GwVHg6iIYZc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EMNug6C_AFw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

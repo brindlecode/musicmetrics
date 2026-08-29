@@ -2,7 +2,7 @@
 title: "Timar"
 slug: "timar"
 type: "artists"
-image: "https://i.ytimg.com/vi/waExOwHFyOQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fQYj-spcbXg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

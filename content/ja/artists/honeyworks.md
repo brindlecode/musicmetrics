@@ -2,7 +2,7 @@
 title: "HoneyWorks"
 slug: "honeyworks"
 type: "artists"
-image: "https://i.ytimg.com/vi/Uzvv-y2_0iY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k7h-bGKWOeY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

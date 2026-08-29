@@ -2,7 +2,7 @@
 title: "👑Jasna Jukić👑(Luda Bosanka)"
 slug: "jasna-jukiluda-bosanka"
 type: "artists"
-image: "https://i.ytimg.com/vi/MsMMpPf8IEQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jr8iwkFDyVY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Pinoy Reggae Republic"
 slug: "pinoy-reggae-republic"
 type: "artists"
-image: "https://i.ytimg.com/vi/_m2N9HPj4dc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mhSU9-h0n1o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

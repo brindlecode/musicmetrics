@@ -2,7 +2,7 @@
 title: "Clarent"
 slug: "clarent"
 type: "artists"
-image: "https://i.ytimg.com/vi/LRYgaU4-V4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eGUAqH7XJEg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "So Soo Bin"
 slug: "so-soo-bin"
 type: "artists"
-image: "https://i.ytimg.com/vi/6yFx1gpIYYM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/muQOh2SlVe0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

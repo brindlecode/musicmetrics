@@ -2,7 +2,7 @@
 title: "SARASWATI"
 slug: "saraswati"
 type: "artists"
-image: "https://i.ytimg.com/vi/NhytJO1Ej_E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-5bXFJCsu-k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
