@@ -2,7 +2,7 @@
 title: "＝LOVE（イコールラブ）公式チャンネル"
 slug: "love"
 type: "artists"
-image: "https://i.ytimg.com/vi/ikFaEAlO5N0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RjHjQlEjs_E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

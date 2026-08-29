@@ -2,7 +2,7 @@
 title: "ItalianHype"
 slug: "italianhype"
 type: "artists"
-image: "https://i.ytimg.com/vi/5gqXHAtupIk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U4MMMKOvrvY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

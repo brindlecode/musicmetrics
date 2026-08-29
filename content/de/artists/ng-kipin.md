@@ -2,7 +2,7 @@
 title: "黃奇斌 Ng KiPin"
 slug: "ng-kipin"
 type: "artists"
-image: "https://i.ytimg.com/vi/sQDBYHhCvps/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PTaXHjz6okQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
