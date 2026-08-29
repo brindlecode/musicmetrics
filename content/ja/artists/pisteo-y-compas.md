@@ -2,7 +2,7 @@
 title: "Pisteo y Compas"
 slug: "pisteo-y-compas"
 type: "artists"
-image: "https://i.ytimg.com/vi/VIa0Gtde-00/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RXVU-P0RccY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

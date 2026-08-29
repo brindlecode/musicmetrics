@@ -2,7 +2,7 @@
 title: "La Cueva Fiestera"
 slug: "la-cueva-fiestera"
 type: "artists"
-image: "https://i.ytimg.com/vi/_YgdX-EVlTo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x4mB7gmvF2g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

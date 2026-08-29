@@ -2,7 +2,7 @@
 title: "GiannaNannini"
 slug: "giannanannini"
 type: "artists"
-image: "https://i.ytimg.com/vi/uV8a_xulj2g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cSkANHlW97g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
