@@ -1,11 +1,11 @@
 ---
-title: "王宇宙Leto"
+title: "Leto"
 slug: "leto"
 type: "artists"
-image: "https://i.ytimg.com/vi/VsPFtalJ_-E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HwkfFyZA7ek/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "王宇宙Leto streaming statistics, chart positions and analytics across youtube"
+description: "Leto streaming statistics, chart positions and analytics across youtube"
 ---

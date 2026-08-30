@@ -2,7 +2,7 @@
 title: "Mrozu"
 slug: "mrozu"
 type: "artists"
-image: "https://i.ytimg.com/vi/EBN3by4XaBk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3tdwaMRGOZ8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
