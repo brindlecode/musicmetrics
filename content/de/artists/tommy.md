@@ -2,7 +2,7 @@
 title: "TOMMY"
 slug: "tommy"
 type: "artists"
-image: "https://i.ytimg.com/vi/bCHKja2SupA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7vPD_3Ht9H0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

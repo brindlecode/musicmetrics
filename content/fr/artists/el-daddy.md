@@ -2,7 +2,7 @@
 title: "El Daddy"
 slug: "el-daddy"
 type: "artists"
-image: "https://i.ytimg.com/vi/C8MScsQ09gU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mmIWGqpPFeg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

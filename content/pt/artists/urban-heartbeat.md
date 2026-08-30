@@ -2,7 +2,7 @@
 title: "Urban Heartbeat"
 slug: "urban-heartbeat"
 type: "artists"
-image: "https://i.ytimg.com/vi/9RSzCmqLeFE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o0ZNz0HeZ0I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

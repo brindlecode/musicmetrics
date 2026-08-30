@@ -2,7 +2,7 @@
 title: "Vanesa Horakova"
 slug: "vanesa-horakova"
 type: "artists"
-image: "https://i.ytimg.com/vi/EvTZFJCUwRw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZUVgZ6tuvjs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

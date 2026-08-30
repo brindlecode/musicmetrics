@@ -2,7 +2,7 @@
 title: "Marquinhos Navais"
 slug: "marquinhos-navais"
 type: "artists"
-image: "https://i.ytimg.com/vi/VrDly3qwhEI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NqKczE0T6wE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
