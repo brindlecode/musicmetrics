@@ -2,7 +2,7 @@
 title: "NZ_PHOTO_UA"
 slug: "nz-photo-ua"
 type: "artists"
-image: "https://i.ytimg.com/vi/9mX8Uv_3Ack/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jVmQHSxWL-A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

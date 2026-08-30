@@ -2,7 +2,7 @@
 title: "Highasakiteband"
 slug: "highasakiteband"
 type: "artists"
-image: "https://i.ytimg.com/vi/7pMsKW38NvI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/x1hI4HbIEJc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

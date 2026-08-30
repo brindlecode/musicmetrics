@@ -2,7 +2,7 @@
 title: "Refew"
 slug: "refew"
 type: "artists"
-image: "https://i.ytimg.com/vi/oqcsBMyhs30/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/m4-IaVdnV-g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

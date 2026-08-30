@@ -2,7 +2,7 @@
 title: "HOOD Famous"
 slug: "hood-famous"
 type: "artists"
-image: "https://i.ytimg.com/vi/pma1fkS-ig0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Y8SQGbrw6xo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
