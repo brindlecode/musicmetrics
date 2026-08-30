@@ -2,7 +2,7 @@
 title: "EL GRAN SAICO Y SU NUEVA GENERACION"
 slug: "el-gran-saico-y-su-nueva-generacion"
 type: "artists"
-image: "https://i.ytimg.com/vi/lk942P6ZjPg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MijvXi6aZEY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

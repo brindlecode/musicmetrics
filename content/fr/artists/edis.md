@@ -2,7 +2,7 @@
 title: "Edis"
 slug: "edis"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ljl_sGNNW6U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B1wUScvoCrA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

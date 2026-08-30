@@ -2,7 +2,7 @@
 title: "LatinNow"
 slug: "latinnow"
 type: "artists"
-image: "https://i.ytimg.com/vi/iG-RtK7lX7E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iDsCUEegBfU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

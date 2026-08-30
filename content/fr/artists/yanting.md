@@ -2,7 +2,7 @@
 title: "YANTING"
 slug: "yanting"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZXjnnP2AUME/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oq79zP9Y8M8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
