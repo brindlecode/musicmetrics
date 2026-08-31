@@ -2,7 +2,7 @@
 title: "Душа поёт MUSIC"
 slug: "music"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZV8XL6bOPzM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NS4lDphtk-M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

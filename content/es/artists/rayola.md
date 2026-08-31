@@ -2,7 +2,7 @@
 title: "Rayola"
 slug: "rayola"
 type: "artists"
-image: "https://i.ytimg.com/vi/cHplDOLfSTc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aeBWozVfP7M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

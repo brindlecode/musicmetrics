@@ -2,7 +2,7 @@
 title: "ArdeBogota"
 slug: "ardebogota"
 type: "artists"
-image: "https://i.ytimg.com/vi/g0-Pb10uBQg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/M0uQa7siY5M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

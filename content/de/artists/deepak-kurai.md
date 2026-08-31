@@ -2,7 +2,7 @@
 title: "Deepak Kurai"
 slug: "deepak-kurai"
 type: "artists"
-image: "https://i.ytimg.com/vi/jRtY7OlI8vw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0yt9D8WuLf0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
