@@ -2,7 +2,7 @@
 title: "Petros Iakovidis"
 slug: "petros-iakovidis"
 type: "artists"
-image: "https://i.ytimg.com/vi/7XiFoxFL1XI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Cja0xrDjILM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

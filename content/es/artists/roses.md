@@ -2,7 +2,7 @@
 title: "ROSES"
 slug: "roses"
 type: "artists"
-image: "https://i.ytimg.com/vi/qlTEyrtljOk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Too3XygnMdE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

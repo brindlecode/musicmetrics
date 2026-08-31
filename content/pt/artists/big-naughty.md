@@ -2,7 +2,7 @@
 title: "BIG Naughty"
 slug: "big-naughty"
 type: "artists"
-image: "https://i.ytimg.com/vi/9WMdaEKRsmQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/T_N_bbH6sPQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

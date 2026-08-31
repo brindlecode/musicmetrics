@@ -2,7 +2,7 @@
 title: "Nadin Amizah"
 slug: "nadin-amizah"
 type: "artists"
-image: "https://i.ytimg.com/vi/E57DB8hByTk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zgJbCLf17kU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

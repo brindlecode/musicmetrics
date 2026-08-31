@@ -2,7 +2,7 @@
 title: "MILA PAZIK"
 slug: "mila-pazik"
 type: "artists"
-image: "https://i.ytimg.com/vi/Kd5SZZZU8MU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WrliMsqlFSg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

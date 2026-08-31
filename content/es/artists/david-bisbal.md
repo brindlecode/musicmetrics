@@ -2,7 +2,7 @@
 title: "David Bisbal"
 slug: "david-bisbal"
 type: "artists"
-image: "https://i.ytimg.com/vi/9DLGYJssf4o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xRKbX0Q0cGA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

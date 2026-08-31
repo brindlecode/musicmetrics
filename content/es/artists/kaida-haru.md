@@ -2,7 +2,7 @@
 title: "甲斐田 晴 / Kaida Haru【にじさんじ】"
 slug: "kaida-haru"
 type: "artists"
-image: "https://i.ytimg.com/vi/3H6h5roLnBA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nPpMou3jno4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

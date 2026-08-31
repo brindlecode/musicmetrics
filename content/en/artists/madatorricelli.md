@@ -2,7 +2,7 @@
 title: "Madatorricelli"
 slug: "madatorricelli"
 type: "artists"
-image: "https://i.ytimg.com/vi/UZl-wS9hHCc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GryshR7glAE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

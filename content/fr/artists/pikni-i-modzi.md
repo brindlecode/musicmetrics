@@ -2,7 +2,7 @@
 title: "Piękni i Młodzi"
 slug: "pikni-i-modzi"
 type: "artists"
-image: "https://i.ytimg.com/vi/SNbEaCQRM9s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fp9F1f7WvRc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

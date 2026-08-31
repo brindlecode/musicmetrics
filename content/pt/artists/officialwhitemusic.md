@@ -2,7 +2,7 @@
 title: "OfficialWhiteMusic"
 slug: "officialwhitemusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/rPZIiRQNXjk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/moVmgaj4k8c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
