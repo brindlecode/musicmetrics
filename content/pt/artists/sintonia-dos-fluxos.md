@@ -2,7 +2,7 @@
 title: "Sintonia Dos Fluxos"
 slug: "sintonia-dos-fluxos"
 type: "artists"
-image: "https://i.ytimg.com/vi/C3juRzzfvjc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GgMTh3ooGBw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

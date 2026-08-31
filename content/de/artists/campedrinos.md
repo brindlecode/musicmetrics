@@ -2,7 +2,7 @@
 title: "Campedrinos"
 slug: "campedrinos"
 type: "artists"
-image: "https://i.ytimg.com/vi/OTf3bT7V8RA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tRQODBACpsA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

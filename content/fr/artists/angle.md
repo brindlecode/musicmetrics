@@ -2,7 +2,7 @@
 title: "Angèle"
 slug: "angle"
 type: "artists"
-image: "https://i.ytimg.com/vi/EzQaxoevE-Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3yv8C_QgdZY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "La Mano 1.9 - Officiel"
 slug: "la-mano-19---officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/zYPbOZUE8cs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hilCW8b-hCc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Ivy"
 slug: "ivy"
 type: "artists"
-image: "https://i.ytimg.com/vi/CzGUP_rQARo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BsrFLHoenFA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
