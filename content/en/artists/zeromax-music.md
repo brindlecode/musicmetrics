@@ -2,7 +2,7 @@
 title: "ZEROMAX MUSIC"
 slug: "zeromax-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/oYhlRXfsT_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P1MwgxCyOfw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
