@@ -2,7 +2,7 @@
 title: "MacheteMusic"
 slug: "machetemusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/4ubjZcyxzBY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7w_L0O6HyQ8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

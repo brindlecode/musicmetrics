@@ -2,7 +2,7 @@
 title: "Auta Mg boy"
 slug: "auta-mg-boy"
 type: "artists"
-image: "https://i.ytimg.com/vi/-vMeIm-O5zo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qnVr4F7pmK0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

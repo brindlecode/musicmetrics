@@ -2,7 +2,7 @@
 title: "JENNIE"
 slug: "jennie"
 type: "artists"
-image: "https://i.ytimg.com/vi/UpY5grXVZbg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cOARkf5ZmtI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
