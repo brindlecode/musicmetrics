@@ -2,7 +2,7 @@
 title: "Angelina Mango"
 slug: "angelina-mango"
 type: "artists"
-image: "https://i.ytimg.com/vi/hCGvbfETceE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xnZZYAie-LE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

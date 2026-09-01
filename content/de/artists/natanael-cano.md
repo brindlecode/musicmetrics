@@ -2,7 +2,7 @@
 title: "Natanael Cano"
 slug: "natanael-cano"
 type: "artists"
-image: "https://i.ytimg.com/vi/u8vLc0JlK9s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4qdBojzaKsk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

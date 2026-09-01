@@ -2,7 +2,7 @@
 title: "T-Series"
 slug: "t-series"
 type: "artists"
-image: "https://i.ytimg.com/vi/EEZ8fbzhEfQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7w7LUaLpM4E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Chrono"
 slug: "chrono"
 type: "artists"
-image: "https://i.ytimg.com/vi/su_rK0JevYU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0y0B9kRJBgM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
