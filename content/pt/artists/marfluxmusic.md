@@ -2,7 +2,7 @@
 title: "MarFluxMusic"
 slug: "marfluxmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/8YuQrdZn4gk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ugycROxVzMs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

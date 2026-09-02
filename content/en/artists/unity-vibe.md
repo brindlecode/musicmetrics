@@ -2,7 +2,7 @@
 title: "Unity Vibe"
 slug: "unity-vibe"
 type: "artists"
-image: "https://i.ytimg.com/vi/cW6VH8s7I0E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Q660vH85B_o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
