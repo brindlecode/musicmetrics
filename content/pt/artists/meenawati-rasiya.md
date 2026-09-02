@@ -2,7 +2,7 @@
 title: "Meenawati Rasiya"
 slug: "meenawati-rasiya"
 type: "artists"
-image: "https://i.ytimg.com/vi/6eg-pUzhsho/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GQ9zP94jeCY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

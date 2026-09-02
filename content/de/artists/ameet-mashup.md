@@ -2,7 +2,7 @@
 title: "AMEET Mashup"
 slug: "ameet-mashup"
 type: "artists"
-image: "https://i.ytimg.com/vi/d4-2l0Kmc7A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6_y8tBCzjVs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

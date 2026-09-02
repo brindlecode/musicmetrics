@@ -2,7 +2,7 @@
 title: "izna (이즈나)"
 slug: "izna"
 type: "artists"
-image: "https://i.ytimg.com/vi/NQRGAh7ukh8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_kxr2D8-tq8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

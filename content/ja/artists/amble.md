@@ -2,7 +2,7 @@
 title: "Amble"
 slug: "amble"
 type: "artists"
-image: "https://i.ytimg.com/vi/CTUcPQ58vrI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J5yyE2CtDCo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

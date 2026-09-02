@@ -2,7 +2,7 @@
 title: "FREDOPG"
 slug: "fredopg"
 type: "artists"
-image: "https://i.ytimg.com/vi/Wm6ekcn9z7M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1g9p1BCSUnU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
