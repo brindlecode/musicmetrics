@@ -2,7 +2,7 @@
 title: "Malaver Lyrics"
 slug: "malaver-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/Na3cLhCPkHA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UEAwPCCVTNI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

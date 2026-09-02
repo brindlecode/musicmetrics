@@ -1,11 +1,11 @@
 ---
-title: "SEA."
+title: "sea."
 slug: "sea"
 type: "artists"
-image: "https://i.ytimg.com/vi/tfFOiv2jzk8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TvFBrkkSVJg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "SEA. streaming statistics, chart positions and analytics across youtube"
+description: "sea. streaming statistics, chart positions and analytics across youtube"
 ---

@@ -1,11 +1,11 @@
 ---
-title: "CHUNG HA 청하"
+title: "CHUNG HA"
 slug: "chung-ha"
 type: "artists"
-image: "https://i.ytimg.com/vi/ts7-qWkpKYA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RJnbg2w8dVc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "CHUNG HA 청하 streaming statistics, chart positions and analytics across youtube"
+description: "CHUNG HA streaming statistics, chart positions and analytics across youtube"
 ---

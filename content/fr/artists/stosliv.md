@@ -2,7 +2,7 @@
 title: "STOSLIV"
 slug: "stosliv"
 type: "artists"
-image: "https://i.ytimg.com/vi/oY4qlsP2FxY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GFiJDp5mlrw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

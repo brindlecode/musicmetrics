@@ -2,7 +2,7 @@
 title: "TED Retro"
 slug: "ted-retro"
 type: "artists"
-image: "https://i.ytimg.com/vi/mKapxVRkOoQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jxZv8LokJ7k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Mellow Uploads"
 slug: "mellow-uploads"
 type: "artists"
-image: "https://i.ytimg.com/vi/vK7vNY4ZNp4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LyhwDcKTW58/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
