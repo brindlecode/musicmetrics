@@ -2,7 +2,7 @@
 title: "Romantic Music"
 slug: "romantic-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/TbOT30CqaW0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6itdoHgoiD0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

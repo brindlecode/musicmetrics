@@ -2,7 +2,7 @@
 title: "Emir Can İğrek"
 slug: "emir-can-irek"
 type: "artists"
-image: "https://i.ytimg.com/vi/VbcmFLKNBt8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eE4si34nmSE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

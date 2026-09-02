@@ -2,7 +2,7 @@
 title: "Avi Aburomi"
 slug: "avi-aburomi"
 type: "artists"
-image: "https://i.ytimg.com/vi/f684z2LKW2A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G1NMapP5hV8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

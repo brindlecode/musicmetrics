@@ -2,7 +2,7 @@
 title: "BE:FIRST"
 slug: "befirst"
 type: "artists"
-image: "https://i.ytimg.com/vi/xz3uRtZEv1k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rXB_AC4KwWo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

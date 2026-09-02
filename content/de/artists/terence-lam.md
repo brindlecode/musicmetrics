@@ -2,7 +2,7 @@
 title: "林家謙 Terence Lam"
 slug: "terence-lam"
 type: "artists"
-image: "https://i.ytimg.com/vi/hcsr3RtF3Uk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4rfVqkjA1Zc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

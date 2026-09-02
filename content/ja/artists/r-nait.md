@@ -2,7 +2,7 @@
 title: "R Nait"
 slug: "r-nait"
 type: "artists"
-image: "https://i.ytimg.com/vi/PewuMCRwLRM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3a9pHxpEMa8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

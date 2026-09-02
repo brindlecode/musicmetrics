@@ -2,7 +2,7 @@
 title: "Shilpi Raj Hits"
 slug: "shilpi-raj-hits"
 type: "artists"
-image: "https://i.ytimg.com/vi/aGKDEs0_ZwA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/MGch2C5PCkQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

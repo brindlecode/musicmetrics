@@ -2,7 +2,7 @@
 title: "Željko Joksimović"
 slug: "eljko-joksimovi"
 type: "artists"
-image: "https://i.ytimg.com/vi/HXhqFJt-IGM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/c3ZV_eLTWYM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

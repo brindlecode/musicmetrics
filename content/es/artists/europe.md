@@ -2,7 +2,7 @@
 title: "Europe"
 slug: "europe"
 type: "artists"
-image: "https://i.ytimg.com/vi/p-IOsjOJpnA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9ap4QXClL3A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
