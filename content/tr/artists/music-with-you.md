@@ -2,7 +2,7 @@
 title: "Music with You"
 slug: "music-with-you"
 type: "artists"
-image: "https://i.ytimg.com/vi/bJ7BlckfPLc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Idh7uyQBSiE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
