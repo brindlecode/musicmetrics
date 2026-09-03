@@ -2,7 +2,7 @@
 title: "ElenaRo"
 slug: "elenaro"
 type: "artists"
-image: "https://i.ytimg.com/vi/byW7qJvCjIo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r6AopZ-VXaE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

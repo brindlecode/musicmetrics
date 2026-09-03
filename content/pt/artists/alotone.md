@@ -2,7 +2,7 @@
 title: "ALOtone"
 slug: "alotone"
 type: "artists"
-image: "https://i.ytimg.com/vi/jz8TJRSR9k8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5qXt3Dzsa8I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

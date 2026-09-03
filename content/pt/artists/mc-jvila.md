@@ -2,7 +2,7 @@
 title: "MC JVILA"
 slug: "mc-jvila"
 type: "artists"
-image: "https://i.ytimg.com/vi/xu6a8VqwVsw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F5TRbqPTBLQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
