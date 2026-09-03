@@ -2,7 +2,7 @@
 title: "Mirko El Fresh"
 slug: "mirko-el-fresh"
 type: "artists"
-image: "https://i.ytimg.com/vi/fsWnMUSgMlk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/L2Wy5Sc-Cxc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

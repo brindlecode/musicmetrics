@@ -2,7 +2,7 @@
 title: "CasperTNG"
 slug: "caspertng"
 type: "artists"
-image: "https://i.ytimg.com/vi/XLa_pNSU50I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Rat8bo0N5ao/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

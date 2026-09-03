@@ -2,7 +2,7 @@
 title: "Kintsugi Sonar"
 slug: "kintsugi-sonar"
 type: "artists"
-image: "https://i.ytimg.com/vi/T9-XcCl5Opw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9Cx079K0cNg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

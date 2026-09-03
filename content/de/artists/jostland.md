@@ -2,7 +2,7 @@
 title: "jostland."
 slug: "jostland"
 type: "artists"
-image: "https://i.ytimg.com/vi/ncmZs7xNhaU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7jTqWQxhEkI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
