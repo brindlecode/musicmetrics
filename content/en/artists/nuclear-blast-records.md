@@ -2,7 +2,7 @@
 title: "Nuclear Blast Records"
 slug: "nuclear-blast-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/551y9o4NEiE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ccFLXsHQ83s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
