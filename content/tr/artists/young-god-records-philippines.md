@@ -2,7 +2,7 @@
 title: "YOUNG GOD RECORDS (Philippines)"
 slug: "young-god-records-philippines"
 type: "artists"
-image: "https://i.ytimg.com/vi/cx69jSbClf8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/w6gx3-2_jJY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

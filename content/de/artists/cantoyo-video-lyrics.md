@@ -2,7 +2,7 @@
 title: "CantoYo Video Lyrics"
 slug: "cantoyo-video-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/tQovSckFQLc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eMpA3WZGgkM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

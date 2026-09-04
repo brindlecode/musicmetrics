@@ -2,7 +2,7 @@
 title: "BrandonLake"
 slug: "brandonlake"
 type: "artists"
-image: "https://i.ytimg.com/vi/zU4RqJ8jfBc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HZNeoCBLOLw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

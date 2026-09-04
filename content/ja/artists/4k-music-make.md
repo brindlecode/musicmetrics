@@ -2,7 +2,7 @@
 title: "4K Music Make"
 slug: "4k-music-make"
 type: "artists"
-image: "https://i.ytimg.com/vi/lHjqIe9XMCE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FjbmLEwVfn4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

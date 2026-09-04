@@ -2,7 +2,7 @@
 title: "Cereluv"
 slug: "cereluv"
 type: "artists"
-image: "https://i.ytimg.com/vi/rWUapYEmLSQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IQ2mT7X7gFI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

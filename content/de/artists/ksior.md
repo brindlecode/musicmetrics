@@ -2,7 +2,7 @@
 title: "KSIOR"
 slug: "ksior"
 type: "artists"
-image: "https://i.ytimg.com/vi/wQ8YqXgMw4I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rcQvfqP76ZQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

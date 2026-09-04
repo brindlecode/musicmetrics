@@ -1,11 +1,11 @@
 ---
-title: "Young Buta | יאנג בוטה"
+title: "young buta"
 slug: "young-buta"
 type: "artists"
-image: "https://i.ytimg.com/vi/vOfBgMK87aw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rj3Wv9S9-_g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Young Buta | יאנג בוטה streaming statistics, chart positions and analytics across youtube"
+description: "young buta streaming statistics, chart positions and analytics across youtube"
 ---
