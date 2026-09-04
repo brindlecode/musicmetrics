@@ -2,7 +2,7 @@
 title: "Khaly"
 slug: "khaly"
 type: "artists"
-image: "https://i.ytimg.com/vi/or2W7kw3eKw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PmY0tvEpE_I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

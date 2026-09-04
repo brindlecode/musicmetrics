@@ -2,7 +2,7 @@
 title: "MAIYARAP"
 slug: "maiyarap"
 type: "artists"
-image: "https://i.ytimg.com/vi/UEFCC4u_Wgs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K17s_M2JWvk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

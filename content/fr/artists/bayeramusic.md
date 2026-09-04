@@ -2,7 +2,7 @@
 title: "BayeraMUSIC"
 slug: "bayeramusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/h-iSPKDu8v0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l2IcpYAJT4M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

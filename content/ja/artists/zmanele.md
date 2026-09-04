@@ -2,7 +2,7 @@
 title: "Zmanele"
 slug: "zmanele"
 type: "artists"
-image: "https://i.ytimg.com/vi/f7qZc_4oHT8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HY5WMZ8CSYw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

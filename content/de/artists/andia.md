@@ -2,7 +2,7 @@
 title: "ANDIA"
 slug: "andia"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ng-Z6B_xqh4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S0ivBkRZc2E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MIG"
 slug: "mig"
 type: "artists"
-image: "https://i.ytimg.com/vi/IO-3piAISW4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/41Laqj_3KXY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

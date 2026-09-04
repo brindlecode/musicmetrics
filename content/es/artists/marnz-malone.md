@@ -2,7 +2,7 @@
 title: "Marnz Malone"
 slug: "marnz-malone"
 type: "artists"
-image: "https://i.ytimg.com/vi/9kkrPEJ901I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kX0k404DyzM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

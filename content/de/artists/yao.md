@@ -2,7 +2,7 @@
 title: "YAO"
 slug: "yao"
 type: "artists"
-image: "https://i.ytimg.com/vi/OJoZX6W77qI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UF2rHapYjK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

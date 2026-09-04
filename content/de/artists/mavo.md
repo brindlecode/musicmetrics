@@ -2,7 +2,7 @@
 title: "Mavo"
 slug: "mavo"
 type: "artists"
-image: "https://i.ytimg.com/vi/xhCp97lfcq0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qHw0ULHVwt4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

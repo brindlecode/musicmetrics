@@ -2,7 +2,7 @@
 title: "Jess Lee"
 slug: "jess-lee"
 type: "artists"
-image: "https://i.ytimg.com/vi/YhiQDARUJ7Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cjTdZMOWrVI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
