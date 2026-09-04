@@ -2,7 +2,7 @@
 title: "l0rna"
 slug: "l0rna"
 type: "artists"
-image: "https://i.ytimg.com/vi/h3o2pDhXibs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YYj85Cm3w70/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

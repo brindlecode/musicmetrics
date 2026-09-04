@@ -2,7 +2,7 @@
 title: "imferse -"
 slug: "imferse"
 type: "artists"
-image: "https://i.ytimg.com/vi/xCzq0Uj6Q7k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/f366UhqB-PM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

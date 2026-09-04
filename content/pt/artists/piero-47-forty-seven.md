@@ -2,7 +2,7 @@
 title: "Piero 47 Forty-Seven"
 slug: "piero-47-forty-seven"
 type: "artists"
-image: "https://i.ytimg.com/vi/nxdjM9dvfj4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KJpq-VwIrF8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

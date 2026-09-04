@@ -2,7 +2,7 @@
 title: "Camelia Dumitrache"
 slug: "camelia-dumitrache"
 type: "artists"
-image: "https://i.ytimg.com/vi/eVTUYgYxsaA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RZw-Ppa3lbA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

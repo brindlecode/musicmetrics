@@ -2,7 +2,7 @@
 title: "Sik-K"
 slug: "sik-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/C1cfxLAOmHc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b6_eL4vuFzU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

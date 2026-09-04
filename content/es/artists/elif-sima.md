@@ -2,7 +2,7 @@
 title: "Elif Sima"
 slug: "elif-sima"
 type: "artists"
-image: "https://i.ytimg.com/vi/1qE1V8R6C0E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/c8E24Kr5YCU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "KeniaOS"
 slug: "keniaos"
 type: "artists"
-image: "https://i.ytimg.com/vi/1wzNqTCRDAs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AKRXQL68BrE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

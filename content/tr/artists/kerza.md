@@ -2,7 +2,7 @@
 title: "KERZA"
 slug: "kerza"
 type: "artists"
-image: "https://i.ytimg.com/vi/xZaS6wHQGB0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/l2U6VTVpnYM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

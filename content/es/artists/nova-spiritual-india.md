@@ -2,7 +2,7 @@
 title: "Nova Spiritual India"
 slug: "nova-spiritual-india"
 type: "artists"
-image: "https://i.ytimg.com/vi/DsShPh5g-3k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dQ3e0XXzNCM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
