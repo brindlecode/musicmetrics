@@ -2,7 +2,7 @@
 title: "S3XSK1"
 slug: "s3xsk1"
 type: "artists"
-image: "https://i.ytimg.com/vi/qF8uWlNFnHg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vXXFrdvO4ss/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

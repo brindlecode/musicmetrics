@@ -2,7 +2,7 @@
 title: "REBOLL333 👹"
 slug: "reboll333"
 type: "artists"
-image: "https://i.ytimg.com/vi/4P3JOEhFExU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ufPyKCENHYY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

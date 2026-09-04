@@ -2,7 +2,7 @@
 title: "Michał Wiśniewski"
 slug: "micha-winiewski"
 type: "artists"
-image: "https://i.ytimg.com/vi/QEaa7s0u--I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/c5Awno0gLkw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

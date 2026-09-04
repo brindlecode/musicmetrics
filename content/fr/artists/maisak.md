@@ -2,7 +2,7 @@
 title: "Maisak"
 slug: "maisak"
 type: "artists"
-image: "https://i.ytimg.com/vi/XLGKH6L93F0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bg4cRJ86j_4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
