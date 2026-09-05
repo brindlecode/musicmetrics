@@ -2,7 +2,7 @@
 title: "ANMI"
 slug: "anmi"
 type: "artists"
-image: "https://i.ytimg.com/vi/vVMsU3VQAJ0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eqCfHTF11F4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

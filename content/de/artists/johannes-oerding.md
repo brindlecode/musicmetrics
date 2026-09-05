@@ -2,7 +2,7 @@
 title: "Johannes Oerding"
 slug: "johannes-oerding"
 type: "artists"
-image: "https://i.ytimg.com/vi/Q9eAMMeiLC0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EZuI_u2v4To/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

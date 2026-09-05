@@ -2,7 +2,7 @@
 title: "La Konga"
 slug: "la-konga"
 type: "artists"
-image: "https://i.ytimg.com/vi/woe1t_Ruyfs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OT6i1nVaSG0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

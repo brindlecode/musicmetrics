@@ -2,7 +2,7 @@
 title: "DJ TELOOR"
 slug: "dj-teloor"
 type: "artists"
-image: "https://i.ytimg.com/vi/v-yaSwVbbIQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6AMU4Ryp4T8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
