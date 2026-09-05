@@ -2,7 +2,7 @@
 title: "Dangdut Everywhere"
 slug: "dangdut-everywhere"
 type: "artists"
-image: "https://i.ytimg.com/vi/-_oDTTtWKt4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/N7-oPpP7Dg0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

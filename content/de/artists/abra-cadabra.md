@@ -2,7 +2,7 @@
 title: "Abra Cadabra"
 slug: "abra-cadabra"
 type: "artists"
-image: "https://i.ytimg.com/vi/KT_YDl7UIgM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K5i3zMdw2Dc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

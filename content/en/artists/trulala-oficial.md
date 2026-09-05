@@ -2,7 +2,7 @@
 title: "Trulala Oficial"
 slug: "trulala-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/4rhGNmmHNFU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HCVcB1HZoaI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

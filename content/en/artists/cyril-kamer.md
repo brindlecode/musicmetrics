@@ -2,7 +2,7 @@
 title: "Cyril Kamer"
 slug: "cyril-kamer"
 type: "artists"
-image: "https://i.ytimg.com/vi/j5QOY_gm63Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yNOaS8lmSqs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

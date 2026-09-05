@@ -2,7 +2,7 @@
 title: "Times Music"
 slug: "times-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/3CDOd4GdcUQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rjfxLq3OQ0w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

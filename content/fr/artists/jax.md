@@ -2,7 +2,7 @@
 title: "JAX"
 slug: "jax"
 type: "artists"
-image: "https://i.ytimg.com/vi/9ywUcOvqVP4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NLTT2t9SP6s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

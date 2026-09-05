@@ -2,7 +2,7 @@
 title: "Murda"
 slug: "murda"
 type: "artists"
-image: "https://i.ytimg.com/vi/9HHRowEyy_4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FrIBZl8syac/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "AEIOU Music"
 slug: "aeiou-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/cY1uZ_vX0sg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OtbLCLsK4LI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

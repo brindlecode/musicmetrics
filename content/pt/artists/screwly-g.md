@@ -2,7 +2,7 @@
 title: "Screwly G"
 slug: "screwly-g"
 type: "artists"
-image: "https://i.ytimg.com/vi/ykVpDClBL6U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EoE_0qonIKI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
