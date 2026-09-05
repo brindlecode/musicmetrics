@@ -2,7 +2,7 @@
 title: "Hatsune Miku"
 slug: "hatsune-miku"
 type: "artists"
-image: "https://i.ytimg.com/vi/A7KbelltKEM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cOr-TUxo8Kw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

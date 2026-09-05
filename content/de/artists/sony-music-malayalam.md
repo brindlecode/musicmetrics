@@ -2,7 +2,7 @@
 title: "Sony Music Malayalam"
 slug: "sony-music-malayalam"
 type: "artists"
-image: "https://i.ytimg.com/vi/q7br9sl3Qow/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K1EMbrmsKVY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

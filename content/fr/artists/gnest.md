@@ -2,7 +2,7 @@
 title: "gnest_"
 slug: "gnest"
 type: "artists"
-image: "https://i.ytimg.com/vi/tIGNjVfvKtI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uzofjpRpu6Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

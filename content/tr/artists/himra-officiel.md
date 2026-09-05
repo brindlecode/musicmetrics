@@ -2,7 +2,7 @@
 title: "Himra officiel"
 slug: "himra-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/DBQONV9RATY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SWQ-B1gmnpQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

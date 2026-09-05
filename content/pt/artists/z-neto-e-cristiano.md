@@ -2,7 +2,7 @@
 title: "Zé Neto e Cristiano"
 slug: "z-neto-e-cristiano"
 type: "artists"
-image: "https://i.ytimg.com/vi/J_2EgtODGt4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nVfkHyglwS4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Pressplay Media"
 slug: "pressplay-media"
 type: "artists"
-image: "https://i.ytimg.com/vi/KNDdjhOd9bg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XU5EEkYXZqc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
