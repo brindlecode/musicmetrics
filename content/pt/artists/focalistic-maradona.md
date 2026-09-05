@@ -2,7 +2,7 @@
 title: "FOCALISTIC MARADONA"
 slug: "focalistic-maradona"
 type: "artists"
-image: "https://i.ytimg.com/vi/cBIZrSynC3Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lA6Gpk8f3F8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

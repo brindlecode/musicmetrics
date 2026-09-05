@@ -2,7 +2,7 @@
 title: "AMOR REBELDE"
 slug: "amor-rebelde"
 type: "artists"
-image: "https://i.ytimg.com/vi/CuoeIkIxw9E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FKaEqu0lJjU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

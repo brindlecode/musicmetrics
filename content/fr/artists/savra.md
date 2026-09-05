@@ -2,7 +2,7 @@
 title: "Savra"
 slug: "savra"
 type: "artists"
-image: "https://i.ytimg.com/vi/VgInSM3ZmaI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5n0EMvAGYuQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
