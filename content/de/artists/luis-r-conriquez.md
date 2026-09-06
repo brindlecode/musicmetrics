@@ -2,7 +2,7 @@
 title: "Luis R Conriquez"
 slug: "luis-r-conriquez"
 type: "artists"
-image: "https://i.ytimg.com/vi/4ruYkTcvF44/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XSh_od7oYQk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

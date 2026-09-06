@@ -2,7 +2,7 @@
 title: "Broo Style"
 slug: "broo-style"
 type: "artists"
-image: "https://i.ytimg.com/vi/PbD0bnzXL4Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GGa90fD0nl8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

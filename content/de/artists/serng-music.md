@@ -2,7 +2,7 @@
 title: "SERNG MUSiC"
 slug: "serng-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/zMciAtU4miE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QYteqERA--s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

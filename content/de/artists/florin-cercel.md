@@ -2,7 +2,7 @@
 title: "FLORIN CERCEL"
 slug: "florin-cercel"
 type: "artists"
-image: "https://i.ytimg.com/vi/8EqW8_WfKig/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xD3Q0Y00Tts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Josas Officiel"
 slug: "josas-officiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/qUe0y3aG-yQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8e2lwIgpWG4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

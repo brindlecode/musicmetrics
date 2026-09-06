@@ -2,7 +2,7 @@
 title: "Sami G"
 slug: "sami-g"
 type: "artists"
-image: "https://i.ytimg.com/vi/r3cEJhnreT8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GJoV5Wxs98I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
