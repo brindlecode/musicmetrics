@@ -2,7 +2,7 @@
 title: "Folapondis"
 slug: "folapondis"
 type: "artists"
-image: "https://i.ytimg.com/vi/JsS7DPlED7g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Wk0OU6zAdPU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

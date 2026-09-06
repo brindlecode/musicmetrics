@@ -2,7 +2,7 @@
 title: "Nathaniel Bassey Main"
 slug: "nathaniel-bassey-main"
 type: "artists"
-image: "https://i.ytimg.com/vi/smSZJmrHx_w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/TL-UkMcPQ10/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "The Offspring"
 slug: "the-offspring"
 type: "artists"
-image: "https://i.ytimg.com/vi/lXL0LkS-oYg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_B6Z20gdJEc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

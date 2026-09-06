@@ -2,7 +2,7 @@
 title: "DJ Naczalnik Boss"
 slug: "dj-naczalnik-boss"
 type: "artists"
-image: "https://i.ytimg.com/vi/FSeTK4vzst0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BaPs5r2Vo0g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

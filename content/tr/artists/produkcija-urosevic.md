@@ -2,7 +2,7 @@
 title: "Produkcija Urosevic"
 slug: "produkcija-urosevic"
 type: "artists"
-image: "https://i.ytimg.com/vi/nMEnrDqZNVg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wrWI-91ggUs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

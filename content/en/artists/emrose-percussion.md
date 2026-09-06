@@ -2,7 +2,7 @@
 title: "Emrose Percussion"
 slug: "emrose-percussion"
 type: "artists"
-image: "https://i.ytimg.com/vi/dKcuySjS9Y4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hWrp6hNIbNY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "KOLLÁROVCI"
 slug: "kollrovci"
 type: "artists"
-image: "https://i.ytimg.com/vi/lUBC8E5esKg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/p2Wshsqpchg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

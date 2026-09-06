@@ -2,7 +2,7 @@
 title: "Air Music"
 slug: "air-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/JK-zwKlXqD4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xy_014pRKv4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

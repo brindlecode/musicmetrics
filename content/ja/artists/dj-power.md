@@ -2,7 +2,7 @@
 title: "DJ Power"
 slug: "dj-power"
 type: "artists"
-image: "https://i.ytimg.com/vi/Z1JijZINYs8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qwa8e1IGCAc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
