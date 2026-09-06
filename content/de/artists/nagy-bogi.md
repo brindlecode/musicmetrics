@@ -2,7 +2,7 @@
 title: "Nagy Bogi"
 slug: "nagy-bogi"
 type: "artists"
-image: "https://i.ytimg.com/vi/CYfsZ1yZOeo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AguZRtyMwI0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

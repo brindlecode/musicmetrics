@@ -2,7 +2,7 @@
 title: "Vrata Hosek"
 slug: "vrata-hosek"
 type: "artists"
-image: "https://i.ytimg.com/vi/qmkjctgkrKo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yh32ztjZa0o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

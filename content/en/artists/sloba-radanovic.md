@@ -2,7 +2,7 @@
 title: "Sloba Radanovic"
 slug: "sloba-radanovic"
 type: "artists"
-image: "https://i.ytimg.com/vi/ALAvWFUozi8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0P_q4g4v1TI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

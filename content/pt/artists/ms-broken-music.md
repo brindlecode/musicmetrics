@@ -2,7 +2,7 @@
 title: "MS BROKEN MUSIC"
 slug: "ms-broken-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/qcDljKBZ3CQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KU_oPGqQSfg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
