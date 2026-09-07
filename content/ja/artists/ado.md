@@ -2,7 +2,7 @@
 title: "Ado"
 slug: "ado"
 type: "artists"
-image: "https://i.ytimg.com/vi/4IKHox-DKrM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nxf9yHZgWqc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Zhou Shen"
 slug: "zhou-shen"
 type: "artists"
-image: "https://i.ytimg.com/vi/eq98mX9s2mI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ezy0WMuqWwo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

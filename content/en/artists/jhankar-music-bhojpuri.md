@@ -2,7 +2,7 @@
 title: "Jhankar Music Bhojpuri"
 slug: "jhankar-music-bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZfeyVmtcMYg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1ha4R0x_qDo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
