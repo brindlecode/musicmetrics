@@ -1,11 +1,11 @@
 ---
-title: "MC Fr da Norte"
+title: "Mc Fr da Norte"
 slug: "mc-fr-da-norte"
 type: "artists"
-image: "https://i.ytimg.com/vi/4KIK4X0ACFQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CNi1mK4L-V0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "MC Fr da Norte streaming statistics, chart positions and analytics across youtube"
+description: "Mc Fr da Norte streaming statistics, chart positions and analytics across youtube"
 ---

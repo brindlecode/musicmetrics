@@ -2,7 +2,7 @@
 title: "Hamo Bika - حمو بيكا"
 slug: "hamo-bika"
 type: "artists"
-image: "https://i.ytimg.com/vi/bPJn6db7HuE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gEeLfUQrZs8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

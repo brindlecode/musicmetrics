@@ -2,7 +2,7 @@
 title: "c r x s ;"
 slug: "c-r-x-s"
 type: "artists"
-image: "https://i.ytimg.com/vi/SJSML8LguBk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qmox9iOyMOI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

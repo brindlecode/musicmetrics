@@ -2,7 +2,7 @@
 title: "QueQualityPL"
 slug: "quequalitypl"
 type: "artists"
-image: "https://i.ytimg.com/vi/sGQc6q1Lero/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3mT3ebV8pJo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

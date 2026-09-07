@@ -2,7 +2,7 @@
 title: "SD PMR"
 slug: "sd-pmr"
 type: "artists"
-image: "https://i.ytimg.com/vi/-MLv19NCp9E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CkG0dH3PLuc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Göksel İpekçi"
 slug: "gksel-ipeki"
 type: "artists"
-image: "https://i.ytimg.com/vi/_7ukVWPVjRo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/epPlXh5oLQQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

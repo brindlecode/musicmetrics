@@ -2,7 +2,7 @@
 title: "James Marriott"
 slug: "james-marriott"
 type: "artists"
-image: "https://i.ytimg.com/vi/G1qwu755leE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZX3aYdxsT50/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

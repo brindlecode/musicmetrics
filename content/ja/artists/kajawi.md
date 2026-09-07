@@ -2,7 +2,7 @@
 title: "KAJAWI"
 slug: "kajawi"
 type: "artists"
-image: "https://i.ytimg.com/vi/eMxRoxwtg5M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fcY8YudZe1c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

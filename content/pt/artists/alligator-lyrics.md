@@ -2,7 +2,7 @@
 title: "Alligator Lyrics"
 slug: "alligator-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/kQ0fbjYoN1I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oa71DG-36rc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

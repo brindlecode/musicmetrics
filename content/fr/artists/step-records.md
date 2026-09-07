@@ -2,7 +2,7 @@
 title: "Step Records"
 slug: "step-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/WzaJMdKtWjk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1DgjD29AQdU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

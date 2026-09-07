@@ -2,7 +2,7 @@
 title: "Victoria Niro"
 slug: "victoria-niro"
 type: "artists"
-image: "https://i.ytimg.com/vi/QCkNGMU2cvY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vVkjMDByyPU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

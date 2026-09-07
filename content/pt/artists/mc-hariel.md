@@ -2,7 +2,7 @@
 title: "MC Hariel"
 slug: "mc-hariel"
 type: "artists"
-image: "https://i.ytimg.com/vi/9p1gm81Oe8E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vef6eeUsWiQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
