@@ -2,7 +2,7 @@
 title: "EVAN"
 slug: "evan"
 type: "artists"
-image: "https://i.ytimg.com/vi/CsGENgLpyaw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iNMvUYjaieA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "H2O Remix"
 slug: "h2o-remix"
 type: "artists"
-image: "https://i.ytimg.com/vi/JGZOEBIWUWQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qZrQKf1Qjqk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

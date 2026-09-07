@@ -2,7 +2,7 @@
 title: "Headie One"
 slug: "headie-one"
 type: "artists"
-image: "https://i.ytimg.com/vi/1Z21czo5rPU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RdvENKJT8X8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

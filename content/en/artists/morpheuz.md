@@ -2,7 +2,7 @@
 title: "MORPHEUZ"
 slug: "morpheuz"
 type: "artists"
-image: "https://i.ytimg.com/vi/y185FKAxMGI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ymYMhRZW8Rk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

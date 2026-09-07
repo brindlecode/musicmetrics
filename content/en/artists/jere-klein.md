@@ -2,7 +2,7 @@
 title: "Jere Klein"
 slug: "jere-klein"
 type: "artists"
-image: "https://i.ytimg.com/vi/pwkKafdy70s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vqpfSctDN-k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

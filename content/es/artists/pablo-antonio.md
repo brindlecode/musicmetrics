@@ -2,7 +2,7 @@
 title: "Pablo Antonio"
 slug: "pablo-antonio"
 type: "artists"
-image: "https://i.ytimg.com/vi/VMSktL2hCqo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dFIKToIH6YM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

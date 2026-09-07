@@ -2,7 +2,7 @@
 title: "Hatsuboshi Gakuen"
 slug: "hatsuboshi-gakuen"
 type: "artists"
-image: "https://i.ytimg.com/vi/ucVPQ2KiKKw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VwBPRFADFx4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

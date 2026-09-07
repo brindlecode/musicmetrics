@@ -2,7 +2,7 @@
 title: "Anatolian Arabesk Lab"
 slug: "anatolian-arabesk-lab"
 type: "artists"
-image: "https://i.ytimg.com/vi/g3CQ-J35ucg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eNeQMEC_qQE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
