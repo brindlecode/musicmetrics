@@ -2,7 +2,7 @@
 title: "Fred De Palma"
 slug: "fred-de-palma"
 type: "artists"
-image: "https://i.ytimg.com/vi/S3mM2QYOaFc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Uuf4WwECoKs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

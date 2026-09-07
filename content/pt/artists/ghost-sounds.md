@@ -2,7 +2,7 @@
 title: "Ghost Sounds"
 slug: "ghost-sounds"
 type: "artists"
-image: "https://i.ytimg.com/vi/M1cl6B2hZjM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jE6UgsgfvD4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

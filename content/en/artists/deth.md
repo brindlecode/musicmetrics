@@ -2,7 +2,7 @@
 title: "deth"
 slug: "deth"
 type: "artists"
-image: "https://i.ytimg.com/vi/9CQST-oAoHk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/p3Syn4y3mlk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

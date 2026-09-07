@@ -2,7 +2,7 @@
 title: "Zamdane"
 slug: "zamdane"
 type: "artists"
-image: "https://i.ytimg.com/vi/_rqyCV0O7PQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CGZjgouEii8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Drop-抖音Music"
 slug: "drop-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/0cCj_AZB5gs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nP54wh51rco/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

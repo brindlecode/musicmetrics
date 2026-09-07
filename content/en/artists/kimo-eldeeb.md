@@ -2,7 +2,7 @@
 title: "كيمو الديب - kimo ElDeeb"
 slug: "kimo-eldeeb"
 type: "artists"
-image: "https://i.ytimg.com/vi/dTM24CgbCAg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fBt2BNnblmA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
