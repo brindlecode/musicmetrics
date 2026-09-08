@@ -2,7 +2,7 @@
 title: "Prakash Jojawar"
 slug: "prakash-jojawar"
 type: "artists"
-image: "https://i.ytimg.com/vi/5V3c4nbneRg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YvR_YetJ8Vc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
