@@ -2,7 +2,7 @@
 title: "el rancherito leodan"
 slug: "el-rancherito-leodan"
 type: "artists"
-image: "https://i.ytimg.com/vi/fWRKAXlkc3w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SR_zQfQ0YKM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

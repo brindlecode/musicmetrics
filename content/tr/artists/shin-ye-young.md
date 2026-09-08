@@ -2,7 +2,7 @@
 title: "Shin Ye Young"
 slug: "shin-ye-young"
 type: "artists"
-image: "https://i.ytimg.com/vi/mnCKtu-cvjc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0EwRAjF7aRg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

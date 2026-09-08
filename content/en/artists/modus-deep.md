@@ -2,7 +2,7 @@
 title: "MODUS DEEP"
 slug: "modus-deep"
 type: "artists"
-image: "https://i.ytimg.com/vi/e9z5w9pY2H0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vWsCkFYTK08/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

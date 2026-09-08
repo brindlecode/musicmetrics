@@ -2,7 +2,7 @@
 title: "Eslam Kabonga"
 slug: "eslam-kabonga"
 type: "artists"
-image: "https://i.ytimg.com/vi/N0dkYCuxm8A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GhNdocYWx5k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

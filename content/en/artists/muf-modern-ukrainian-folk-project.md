@@ -2,7 +2,7 @@
 title: "MUF Modern Ukrainian Folk Project"
 slug: "muf-modern-ukrainian-folk-project"
 type: "artists"
-image: "https://i.ytimg.com/vi/DmD8XztOa-Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/US3UDrsz5RA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
