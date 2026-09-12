@@ -2,7 +2,7 @@
 title: "SMALLROOM"
 slug: "smallroom"
 type: "artists"
-image: "https://i.ytimg.com/vi/GjMEEaiXLEw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VTIqFKUc0kQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

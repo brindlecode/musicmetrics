@@ -2,7 +2,7 @@
 title: "&TEAM"
 slug: "team"
 type: "artists"
-image: "https://i.ytimg.com/vi/DgICfgTeCCI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F-NcvXY8_vU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "JO1"
 slug: "jo1"
 type: "artists"
-image: "https://i.ytimg.com/vi/eN2NlzPdcrs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YCJAAaWj8Wk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

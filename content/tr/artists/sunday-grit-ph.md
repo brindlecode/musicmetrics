@@ -2,7 +2,7 @@
 title: "SUNDAY GRIT PH"
 slug: "sunday-grit-ph"
 type: "artists"
-image: "https://i.ytimg.com/vi/l1VtYkjX7Sc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BJNO4GyTifQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

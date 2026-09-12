@@ -2,7 +2,7 @@
 title: "Ligabue"
 slug: "ligabue"
 type: "artists"
-image: "https://i.ytimg.com/vi/JoBeJgp4RFk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CkSIKidImEs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

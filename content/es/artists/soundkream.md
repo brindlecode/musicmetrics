@@ -2,7 +2,7 @@
 title: "SoundKream"
 slug: "soundkream"
 type: "artists"
-image: "https://i.ytimg.com/vi/7piDV0v1v-c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2vBHkkIx0_o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

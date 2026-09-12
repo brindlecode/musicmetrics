@@ -2,7 +2,7 @@
 title: "PPlin 林芃逸"
 slug: "pplin"
 type: "artists"
-image: "https://i.ytimg.com/vi/KUQDP_SDmAM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6NR0jt0WxzQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

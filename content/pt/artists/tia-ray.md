@@ -2,7 +2,7 @@
 title: "袁娅维TIA RAY"
 slug: "tia-ray"
 type: "artists"
-image: "https://i.ytimg.com/vi/OzgJgKwbZOg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1lyv4qZRlcY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

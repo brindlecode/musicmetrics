@@ -2,7 +2,7 @@
 title: "Shubhadip Dey"
 slug: "shubhadip-dey"
 type: "artists"
-image: "https://i.ytimg.com/vi/YMY7go52yIY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RD7Er42DMBk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

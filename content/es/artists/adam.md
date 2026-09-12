@@ -1,11 +1,11 @@
 ---
-title: "ADAM"
+title: "Adam | آدم"
 slug: "adam"
 type: "artists"
-image: "https://i.ytimg.com/vi/WxdCZHd3iT0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lb-msCNgqLs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "ADAM streaming statistics, chart positions and analytics across youtube"
+description: "Adam | آدم streaming statistics, chart positions and analytics across youtube"
 ---

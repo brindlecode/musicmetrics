@@ -2,7 +2,7 @@
 title: "Masoom Sharma"
 slug: "masoom-sharma"
 type: "artists"
-image: "https://i.ytimg.com/vi/VwTBkTuzBGw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xeBxduHmQ-s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "DA HOOD"
 slug: "da-hood"
 type: "artists"
-image: "https://i.ytimg.com/vi/bIhCcuIWIQk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XusM-IIvADo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Ebru Yaşar"
 slug: "ebru-yaar"
 type: "artists"
-image: "https://i.ytimg.com/vi/V5he3SSW_sI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4nvH_zMSUX4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

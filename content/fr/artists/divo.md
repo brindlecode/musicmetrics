@@ -2,7 +2,7 @@
 title: "Divo"
 slug: "divo"
 type: "artists"
-image: "https://i.ytimg.com/vi/NoMBnmRb0Jk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kUnOaNqvREs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "日向坂46 OFFICIAL YouTube CHANNEL"
 slug: "46-official-youtube-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/mgFUz_c4ToM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QzNd53mcPLU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

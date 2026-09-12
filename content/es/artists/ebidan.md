@@ -2,7 +2,7 @@
 title: "EBiDAN"
 slug: "ebidan"
 type: "artists"
-image: "https://i.ytimg.com/vi/GlsmJsqXfcI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kD9whzsWBqU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "emrcl1k"
 slug: "emrcl1k"
 type: "artists"
-image: "https://i.ytimg.com/vi/zyazBC0FgKI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8JwXgvmUJL4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

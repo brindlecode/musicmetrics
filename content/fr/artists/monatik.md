@@ -2,7 +2,7 @@
 title: "MONATIK"
 slug: "monatik"
 type: "artists"
-image: "https://i.ytimg.com/vi/DV1xQJmHJOU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/J31TlhvfD3A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

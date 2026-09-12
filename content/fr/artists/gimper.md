@@ -2,7 +2,7 @@
 title: "Gimper"
 slug: "gimper"
 type: "artists"
-image: "https://i.ytimg.com/vi/na74wcpJZM4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/12UWqh8rgTY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

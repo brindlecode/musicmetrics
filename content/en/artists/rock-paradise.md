@@ -2,7 +2,7 @@
 title: "Rock Paradise"
 slug: "rock-paradise"
 type: "artists"
-image: "https://i.ytimg.com/vi/bH6h3NUDo0s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AoQB9-LeQc0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

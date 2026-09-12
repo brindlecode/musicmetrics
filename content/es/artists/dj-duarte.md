@@ -2,7 +2,7 @@
 title: "DJ DUARTE"
 slug: "dj-duarte"
 type: "artists"
-image: "https://i.ytimg.com/vi/uWQe0sVCosE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b0nqZKhjLrM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

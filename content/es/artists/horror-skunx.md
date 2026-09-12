@@ -2,7 +2,7 @@
 title: "Horror Skunx"
 slug: "horror-skunx"
 type: "artists"
-image: "https://i.ytimg.com/vi/anhQ3fC1_hY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lhCPiauHI-g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

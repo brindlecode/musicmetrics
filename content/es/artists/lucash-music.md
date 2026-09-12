@@ -2,7 +2,7 @@
 title: "LuCash Music"
 slug: "lucash-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/-tLJzFEQvS4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1OQ5Xyre76s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

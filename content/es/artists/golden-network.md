@@ -2,7 +2,7 @@
 title: "Golden Network"
 slug: "golden-network"
 type: "artists"
-image: "https://i.ytimg.com/vi/3btQZqLAl8Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eRpR2o1dc7M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

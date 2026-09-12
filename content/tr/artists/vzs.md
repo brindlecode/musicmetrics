@@ -2,7 +2,7 @@
 title: "VZS"
 slug: "vzs"
 type: "artists"
-image: "https://i.ytimg.com/vi/sUefYV2puIo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VbQd2rnzCsg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

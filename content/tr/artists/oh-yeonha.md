@@ -2,7 +2,7 @@
 title: "Oh yeonha"
 slug: "oh-yeonha"
 type: "artists"
-image: "https://i.ytimg.com/vi/nhp_jQ6wQmo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8_hW-GGWGJw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

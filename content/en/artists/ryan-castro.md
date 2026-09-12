@@ -2,7 +2,7 @@
 title: "Ryan Castro"
 slug: "ryan-castro"
 type: "artists"
-image: "https://i.ytimg.com/vi/_klBsWm9Uq4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gCCp5d9-wO4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

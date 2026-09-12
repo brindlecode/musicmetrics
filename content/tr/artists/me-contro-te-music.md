@@ -2,7 +2,7 @@
 title: "Me contro Te Music"
 slug: "me-contro-te-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/y_t9_fR__ys/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6IN-UPxquuA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

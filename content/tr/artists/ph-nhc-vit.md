@@ -2,7 +2,7 @@
 title: "PHỐ NHẠC VIỆT"
 slug: "ph-nhc-vit"
 type: "artists"
-image: "https://i.ytimg.com/vi/pAnTNJaVhcs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/H9XU2zlHA50/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

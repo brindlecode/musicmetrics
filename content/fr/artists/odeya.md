@@ -2,7 +2,7 @@
 title: "Odeya"
 slug: "odeya"
 type: "artists"
-image: "https://i.ytimg.com/vi/HnLXEEvyAI8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VeQtL3nYB-g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

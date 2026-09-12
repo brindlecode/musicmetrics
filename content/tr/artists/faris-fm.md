@@ -2,7 +2,7 @@
 title: "FARIS FM"
 slug: "faris-fm"
 type: "artists"
-image: "https://i.ytimg.com/vi/Ar5yumS-Epk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SP6TBZfmRWk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

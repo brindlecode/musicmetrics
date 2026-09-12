@@ -2,7 +2,7 @@
 title: "FOLA"
 slug: "fola"
 type: "artists"
-image: "https://i.ytimg.com/vi/vjgBehSMmy8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lhz78Xqvrl8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

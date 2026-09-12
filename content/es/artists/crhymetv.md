@@ -2,7 +2,7 @@
 title: "CrhymeTV"
 slug: "crhymetv"
 type: "artists"
-image: "https://i.ytimg.com/vi/UNa7YhMQSwk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2hV7kte90BA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

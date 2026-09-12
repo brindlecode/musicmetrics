@@ -2,7 +2,7 @@
 title: "Khadija Amr"
 slug: "khadija-amr"
 type: "artists"
-image: "https://i.ytimg.com/vi/7Z2y4epgQWA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_OGKUfU9w9s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

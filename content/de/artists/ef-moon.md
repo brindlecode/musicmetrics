@@ -2,7 +2,7 @@
 title: "EF Moon"
 slug: "ef-moon"
 type: "artists"
-image: "https://i.ytimg.com/vi/Gf4MPsvXhX8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sc6W1z1Ra1Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

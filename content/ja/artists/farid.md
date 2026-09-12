@@ -2,7 +2,7 @@
 title: "Farid - فريد"
 slug: "farid"
 type: "artists"
-image: "https://i.ytimg.com/vi/5CElWLm2JIk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lBpS7uCYd-Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

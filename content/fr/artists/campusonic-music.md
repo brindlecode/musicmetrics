@@ -2,7 +2,7 @@
 title: "Campusonic Music"
 slug: "campusonic-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/rLcQO7hSlOw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SlyoFOKC5Y4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

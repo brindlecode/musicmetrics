@@ -2,7 +2,7 @@
 title: "magnificent"
 slug: "magnificent"
 type: "artists"
-image: "https://i.ytimg.com/vi/EqQIBLvkLds/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XOmo4P1AxXc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

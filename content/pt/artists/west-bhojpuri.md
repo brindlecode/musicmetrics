@@ -2,7 +2,7 @@
 title: "West Bhojpuri"
 slug: "west-bhojpuri"
 type: "artists"
-image: "https://i.ytimg.com/vi/Nwyl48gFZQk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bH50-RplL1U/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

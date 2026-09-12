@@ -2,7 +2,7 @@
 title: "Linet"
 slug: "linet"
 type: "artists"
-image: "https://i.ytimg.com/vi/e53Dbaf46Yk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/dMD9rBGP8Kg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

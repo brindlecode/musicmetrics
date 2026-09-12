@@ -2,7 +2,7 @@
 title: "Quang Hùng MasterD"
 slug: "quang-hng-masterd"
 type: "artists"
-image: "https://i.ytimg.com/vi/XwshmJV-DHg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/K6rrVCFGAE8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

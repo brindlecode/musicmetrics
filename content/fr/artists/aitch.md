@@ -2,7 +2,7 @@
 title: "Aitch"
 slug: "aitch"
 type: "artists"
-image: "https://i.ytimg.com/vi/3uUHZlEBQ6A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sPB_Qpu4-vg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

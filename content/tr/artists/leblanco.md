@@ -2,7 +2,7 @@
 title: "Leblanco"
 slug: "leblanco"
 type: "artists"
-image: "https://i.ytimg.com/vi/zB46_7BNuMI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cN-kkBytfQ0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

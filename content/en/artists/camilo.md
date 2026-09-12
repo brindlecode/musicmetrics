@@ -2,7 +2,7 @@
 title: "Camilo"
 slug: "camilo"
 type: "artists"
-image: "https://i.ytimg.com/vi/TIc1EnW0l-c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tEsAuXQ79AA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

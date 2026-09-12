@@ -2,7 +2,7 @@
 title: "LaTylaM"
 slug: "latylam"
 type: "artists"
-image: "https://i.ytimg.com/vi/60WSYIzvmHI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bblBI3C_kVQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

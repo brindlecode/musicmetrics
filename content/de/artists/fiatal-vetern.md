@@ -2,7 +2,7 @@
 title: "Fiatal Veterán"
 slug: "fiatal-vetern"
 type: "artists"
-image: "https://i.ytimg.com/vi/maQuu0_f5Uc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zreJ452xOcc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Jazeek"
 slug: "jazeek"
 type: "artists"
-image: "https://i.ytimg.com/vi/IkVNrUAuPqo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/haEmu7ZsBGE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

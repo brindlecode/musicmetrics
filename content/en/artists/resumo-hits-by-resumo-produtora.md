@@ -2,7 +2,7 @@
 title: "Resumo Hits by Resumo Produtora"
 slug: "resumo-hits-by-resumo-produtora"
 type: "artists"
-image: "https://i.ytimg.com/vi/kL6oGV0uE_s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HZZL3qrKDB4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

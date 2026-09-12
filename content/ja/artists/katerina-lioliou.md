@@ -2,7 +2,7 @@
 title: "Katerina Lioliou"
 slug: "katerina-lioliou"
 type: "artists"
-image: "https://i.ytimg.com/vi/urSyxJ4eIRc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PsykHFIhEYk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

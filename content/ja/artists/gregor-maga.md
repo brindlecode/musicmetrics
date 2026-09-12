@@ -2,7 +2,7 @@
 title: "Gregor Magaš"
 slug: "gregor-maga"
 type: "artists"
-image: "https://i.ytimg.com/vi/JTYXw3D2I0k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VWlJkoJ7teo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

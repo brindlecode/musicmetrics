@@ -2,7 +2,7 @@
 title: "Beast In Black"
 slug: "beast-in-black"
 type: "artists"
-image: "https://i.ytimg.com/vi/bLQxe2_GtXU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/I1QXTBvMrt8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

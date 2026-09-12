@@ -2,7 +2,7 @@
 title: "Ramy Sabry"
 slug: "ramy-sabry"
 type: "artists"
-image: "https://i.ytimg.com/vi/BKktVSAblNE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_IHvv9zw9bM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

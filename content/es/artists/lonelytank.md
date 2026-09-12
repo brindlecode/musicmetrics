@@ -2,7 +2,7 @@
 title: "lonelytank"
 slug: "lonelytank"
 type: "artists"
-image: "https://i.ytimg.com/vi/2QyhwhdYotI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Cov7mm4KQRY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

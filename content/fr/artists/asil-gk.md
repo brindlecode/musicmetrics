@@ -2,7 +2,7 @@
 title: "Asil Gök"
 slug: "asil-gk"
 type: "artists"
-image: "https://i.ytimg.com/vi/PlVsigQtKiM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kKZkZJvcMmI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

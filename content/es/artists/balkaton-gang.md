@@ -2,7 +2,7 @@
 title: "Balkaton Gang"
 slug: "balkaton-gang"
 type: "artists"
-image: "https://i.ytimg.com/vi/jZ1Ng7QgLyQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IL95Xh3w7tk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

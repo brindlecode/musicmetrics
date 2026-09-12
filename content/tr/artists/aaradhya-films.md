@@ -2,7 +2,7 @@
 title: "Aaradhya Films"
 slug: "aaradhya-films"
 type: "artists"
-image: "https://i.ytimg.com/vi/JUhcNNwha7w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6GB4ECrAiUE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "HANA"
 slug: "hana"
 type: "artists"
-image: "https://i.ytimg.com/vi/llGkuk4IV1g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/y1obzZVKw_o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

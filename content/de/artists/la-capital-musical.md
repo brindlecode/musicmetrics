@@ -2,7 +2,7 @@
 title: "La Capital Musical"
 slug: "la-capital-musical"
 type: "artists"
-image: "https://i.ytimg.com/vi/h4BozN5E00w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gf4bhhcyLBU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

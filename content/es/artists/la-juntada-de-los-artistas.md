@@ -2,7 +2,7 @@
 title: "La Juntada De Los Artistas"
 slug: "la-juntada-de-los-artistas"
 type: "artists"
-image: "https://i.ytimg.com/vi/5UYJE9SpDrA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ptsTHdXPIBw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

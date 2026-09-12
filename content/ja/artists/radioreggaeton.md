@@ -2,7 +2,7 @@
 title: "RadioReggaeton"
 slug: "radioreggaeton"
 type: "artists"
-image: "https://i.ytimg.com/vi/zKT4pxkPRgE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eAw6f6eV7r4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

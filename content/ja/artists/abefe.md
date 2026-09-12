@@ -2,7 +2,7 @@
 title: "Abefe"
 slug: "abefe"
 type: "artists"
-image: "https://i.ytimg.com/vi/ellxfk-x_84/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/z7z50pgyvAY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

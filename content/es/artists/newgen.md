@@ -2,7 +2,7 @@
 title: "NEWGEN"
 slug: "newgen"
 type: "artists"
-image: "https://i.ytimg.com/vi/WjdYk62JeUg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sJOYizzdK6Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
