@@ -2,7 +2,7 @@
 title: "nightlife"
 slug: "nightlife"
 type: "artists"
-image: "https://i.ytimg.com/vi/XhTJ7bzuuAc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mKlTdX06yg0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

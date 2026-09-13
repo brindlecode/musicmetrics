@@ -2,7 +2,7 @@
 title: "Girls' Generation-HRS"
 slug: "girls-generation-hrs"
 type: "artists"
-image: "https://i.ytimg.com/vi/QhGLKkgDJKQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qxxOgqxosds/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
