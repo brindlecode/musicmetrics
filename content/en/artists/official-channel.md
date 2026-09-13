@@ -1,11 +1,11 @@
 ---
-title: "菅田将暉 Official Channel"
+title: "แน๊ท ราเชนทร์ OFFICIAL CHANNEL"
 slug: "official-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/_5XTZAsXK60/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8mzR7oz44qs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "菅田将暉 Official Channel streaming statistics, chart positions and analytics across youtube"
+description: "แน๊ท ราเชนทร์ OFFICIAL CHANNEL streaming statistics, chart positions and analytics across youtube"
 ---

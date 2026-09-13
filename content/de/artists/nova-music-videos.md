@@ -2,7 +2,7 @@
 title: "Nova Music Videos"
 slug: "nova-music-videos"
 type: "artists"
-image: "https://i.ytimg.com/vi/6vRuV-gR9jI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0-bG6Os3dJc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

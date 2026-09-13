@@ -2,7 +2,7 @@
 title: "菲道尔 Firdhaus"
 slug: "firdhaus"
 type: "artists"
-image: "https://i.ytimg.com/vi/sj_ihME1l2E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RCn80lhvbQg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
