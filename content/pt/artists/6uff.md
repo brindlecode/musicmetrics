@@ -2,7 +2,7 @@
 title: "6uff"
 slug: "6uff"
 type: "artists"
-image: "https://i.ytimg.com/vi/mQFlJAd2kRw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fL8jTxYrVk0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

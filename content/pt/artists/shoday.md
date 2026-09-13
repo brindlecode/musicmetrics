@@ -2,7 +2,7 @@
 title: "Shoday"
 slug: "shoday"
 type: "artists"
-image: "https://i.ytimg.com/vi/g37A6WZZF-4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EZgm5RBdbvg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

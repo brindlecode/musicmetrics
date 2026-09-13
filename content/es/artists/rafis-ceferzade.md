@@ -2,7 +2,7 @@
 title: "Rafis Ceferzade"
 slug: "rafis-ceferzade"
 type: "artists"
-image: "https://i.ytimg.com/vi/bLrs5pnpjrk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fGwCuFyieL8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

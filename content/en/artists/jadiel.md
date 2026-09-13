@@ -2,7 +2,7 @@
 title: "Jadiel"
 slug: "jadiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/CRhDttUhGLU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fR9FbV8We_I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
