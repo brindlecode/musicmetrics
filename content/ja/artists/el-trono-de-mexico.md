@@ -2,7 +2,7 @@
 title: "El Trono De Mexico"
 slug: "el-trono-de-mexico"
 type: "artists"
-image: "https://i.ytimg.com/vi/vZFmPK9CY8k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/de7ealKVRls/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

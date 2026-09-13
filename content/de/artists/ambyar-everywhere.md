@@ -2,7 +2,7 @@
 title: "AMBYAR EVERYWHERE"
 slug: "ambyar-everywhere"
 type: "artists"
-image: "https://i.ytimg.com/vi/rCJwHEf6UjY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3Mk0shfP1Qw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Mabes Balker Music"
 slug: "mabes-balker-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/aO_XyWPNNHM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/icvw7xbdbb0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

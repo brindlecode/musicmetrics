@@ -2,7 +2,7 @@
 title: "Luis Jams"
 slug: "luis-jams"
 type: "artists"
-image: "https://i.ytimg.com/vi/bwd73mzf3JU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/7OO_ETn2yO4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

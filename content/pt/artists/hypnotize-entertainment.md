@@ -2,7 +2,7 @@
 title: "Hypnotize Entertainment"
 slug: "hypnotize-entertainment"
 type: "artists"
-image: "https://i.ytimg.com/vi/cG8thOSLmTY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pigr1An0AfM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

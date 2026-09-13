@@ -1,11 +1,11 @@
 ---
-title: "Rvfv"
+title: "RVFV"
 slug: "rvfv"
 type: "artists"
-image: "https://i.ytimg.com/vi/sVmpo46Bu9E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lTbaQR6nkwM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Rvfv streaming statistics, chart positions and analytics across youtube"
+description: "RVFV streaming statistics, chart positions and analytics across youtube"
 ---

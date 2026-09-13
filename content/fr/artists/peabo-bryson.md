@@ -2,7 +2,7 @@
 title: "Peabo Bryson"
 slug: "peabo-bryson"
 type: "artists"
-image: "https://i.ytimg.com/vi/03PU_GFGGoU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/s9NB3yorlZI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
