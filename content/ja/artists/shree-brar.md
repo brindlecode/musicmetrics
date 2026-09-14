@@ -2,7 +2,7 @@
 title: "Shree Brar"
 slug: "shree-brar"
 type: "artists"
-image: "https://i.ytimg.com/vi/gmeoiKhOV_M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uQmwhdxgy30/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

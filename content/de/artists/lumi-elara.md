@@ -2,7 +2,7 @@
 title: "LUMI ELARA"
 slug: "lumi-elara"
 type: "artists"
-image: "https://i.ytimg.com/vi/ALvGnIXzGMM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CjZcTqXZLAg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

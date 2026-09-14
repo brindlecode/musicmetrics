@@ -1,11 +1,11 @@
 ---
-title: "BAYRON FIRE"
+title: "Bayron Fire"
 slug: "bayron-fire"
 type: "artists"
-image: "https://i.ytimg.com/vi/ewHuLzEOtqs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tC8tWonw7bE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "BAYRON FIRE streaming statistics, chart positions and analytics across youtube"
+description: "Bayron Fire streaming statistics, chart positions and analytics across youtube"
 ---

@@ -2,7 +2,7 @@
 title: "Mark Lee"
 slug: "mark-lee"
 type: "artists"
-image: "https://i.ytimg.com/vi/mZcr-ALcRmQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mw0gC7ML-UA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

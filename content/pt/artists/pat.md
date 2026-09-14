@@ -2,7 +2,7 @@
 title: "P.A.T."
 slug: "pat"
 type: "artists"
-image: "https://i.ytimg.com/vi/A0SvZpeZ1Gc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hxThfRyqUts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

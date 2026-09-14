@@ -2,7 +2,7 @@
 title: "Małach"
 slug: "maach"
 type: "artists"
-image: "https://i.ytimg.com/vi/xqMr5MkePkE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_aHHvuJsIu0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

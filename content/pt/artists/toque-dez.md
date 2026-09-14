@@ -2,7 +2,7 @@
 title: "Toque Dez"
 slug: "toque-dez"
 type: "artists"
-image: "https://i.ytimg.com/vi/HEfcLu9XPyA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AYnsuCvwiZc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

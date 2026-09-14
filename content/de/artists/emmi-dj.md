@@ -2,7 +2,7 @@
 title: "Emmi Dj"
 slug: "emmi-dj"
 type: "artists"
-image: "https://i.ytimg.com/vi/vwnqTwWCfOw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tasz5bZtRK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
