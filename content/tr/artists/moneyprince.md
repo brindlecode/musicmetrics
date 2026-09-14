@@ -2,7 +2,7 @@
 title: "moneyprince"
 slug: "moneyprince"
 type: "artists"
-image: "https://i.ytimg.com/vi/Sd2vqKzPnQc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PNZ_Gb3y3rA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

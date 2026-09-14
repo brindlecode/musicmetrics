@@ -2,7 +2,7 @@
 title: "RISER MUSIC"
 slug: "riser-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/TNbvfhxCBtQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AUPbHx7J8iQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Melike Şahin"
 slug: "melike-ahin"
 type: "artists"
-image: "https://i.ytimg.com/vi/DIQv6H8p5jo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NFd3Sl3Cbwc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Inkosi Yamagcokama"
 slug: "inkosi-yamagcokama"
 type: "artists"
-image: "https://i.ytimg.com/vi/3Z5ntJemAiM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mEDO5uAkRRI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

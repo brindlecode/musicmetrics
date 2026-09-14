@@ -2,7 +2,7 @@
 title: "SUROV"
 slug: "surov"
 type: "artists"
-image: "https://i.ytimg.com/vi/l3uHXB_R7bE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aX2wo1FtuBg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

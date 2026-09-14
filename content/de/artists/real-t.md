@@ -2,7 +2,7 @@
 title: "REAL-T"
 slug: "real-t"
 type: "artists"
-image: "https://i.ytimg.com/vi/4PHkIkKjI14/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Sqb5eMBnJPY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
