@@ -2,7 +2,7 @@
 title: "SyrebralVibes"
 slug: "syrebralvibes"
 type: "artists"
-image: "https://i.ytimg.com/vi/tX3emHYlbVs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IL-gyfXP8K4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

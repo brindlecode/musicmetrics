@@ -2,7 +2,7 @@
 title: "Nonoy Peña"
 slug: "nonoy-pea"
 type: "artists"
-image: "https://i.ytimg.com/vi/rfBU8hdWWi0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LbCFw3qotGI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

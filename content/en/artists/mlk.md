@@ -2,7 +2,7 @@
 title: "M!LK"
 slug: "mlk"
 type: "artists"
-image: "https://i.ytimg.com/vi/bQBiZ5N-juo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/JpIw7rSLRqc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

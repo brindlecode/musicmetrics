@@ -2,7 +2,7 @@
 title: "Theo Rose"
 slug: "theo-rose"
 type: "artists"
-image: "https://i.ytimg.com/vi/s287UgGYugM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VA2f7ZriwJw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MaxMillor"
 slug: "maxmillor"
 type: "artists"
-image: "https://i.ytimg.com/vi/OJxnyWlVx40/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fJSMEnfsS3w/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

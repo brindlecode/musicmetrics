@@ -2,7 +2,7 @@
 title: "YEAH1 MUSIC"
 slug: "yeah1-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/qaqpHO0BfhI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KyZHbM_zC0I/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

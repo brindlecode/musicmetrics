@@ -2,7 +2,7 @@
 title: "Bhajan India"
 slug: "bhajan-india"
 type: "artists"
-image: "https://i.ytimg.com/vi/lsVkObGx8-U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xin1AQolbiE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

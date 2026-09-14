@@ -2,7 +2,7 @@
 title: "Nyno Vargas Oficial"
 slug: "nyno-vargas-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/yx33C3jJNcY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/y9Jq17RNWmI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

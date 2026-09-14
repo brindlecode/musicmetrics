@@ -2,7 +2,7 @@
 title: "AniRap"
 slug: "anirap"
 type: "artists"
-image: "https://i.ytimg.com/vi/OyBDMLcyquM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0FXFiFfDuXg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

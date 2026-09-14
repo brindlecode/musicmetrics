@@ -2,7 +2,7 @@
 title: "Gero Channel"
 slug: "gero-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/lrDiqd2fTpk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UcJqa2vIPwY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

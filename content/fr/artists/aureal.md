@@ -2,7 +2,7 @@
 title: "Aureal"
 slug: "aureal"
 type: "artists"
-image: "https://i.ytimg.com/vi/hEEG8zdB7ls/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R1xqyEMsuKY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
