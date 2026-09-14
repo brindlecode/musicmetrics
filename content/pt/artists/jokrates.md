@@ -2,7 +2,7 @@
 title: "Jokrates"
 slug: "jokrates"
 type: "artists"
-image: "https://i.ytimg.com/vi/Qxu0JHJK1NE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/30QAzDCNhDw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

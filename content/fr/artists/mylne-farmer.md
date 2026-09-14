@@ -2,7 +2,7 @@
 title: "Mylène Farmer"
 slug: "mylne-farmer"
 type: "artists"
-image: "https://i.ytimg.com/vi/yj4u0CXQB0o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/rNSohl3J59o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

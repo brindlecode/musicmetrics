@@ -2,7 +2,7 @@
 title: "IL NENE DE ORO"
 slug: "il-nene-de-oro"
 type: "artists"
-image: "https://i.ytimg.com/vi/XtAvKPbErkc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/U7NMpoSKAtI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

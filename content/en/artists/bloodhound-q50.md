@@ -2,7 +2,7 @@
 title: "Bloodhound Q50"
 slug: "bloodhound-q50"
 type: "artists"
-image: "https://i.ytimg.com/vi/xjZOQR9uqdA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cExgrHIfHUA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

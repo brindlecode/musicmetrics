@@ -2,7 +2,7 @@
 title: "HAMO ELGALAD"
 slug: "hamo-elgalad"
 type: "artists"
-image: "https://i.ytimg.com/vi/QCpyUeArfGY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VnoWS8oHBzw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

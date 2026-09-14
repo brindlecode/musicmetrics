@@ -2,7 +2,7 @@
 title: "Costi Channel"
 slug: "costi-channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/vP1T7XVNG1E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EHVWbP4Ys_4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
