@@ -2,7 +2,7 @@
 title: "Naniwa Danshi"
 slug: "naniwa-danshi"
 type: "artists"
-image: "https://i.ytimg.com/vi/oWQ7eUHfXGI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xOBpzWbKXK4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

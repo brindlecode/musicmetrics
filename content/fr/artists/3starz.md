@@ -2,7 +2,7 @@
 title: "3starz"
 slug: "3starz"
 type: "artists"
-image: "https://i.ytimg.com/vi/EmsfQaIrfa8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/h9dbw3zAqOA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

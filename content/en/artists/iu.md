@@ -2,7 +2,7 @@
 title: "IU"
 slug: "iu"
 type: "artists"
-image: "https://i.ytimg.com/vi/KHqDMwHpdy8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IHIt9S2DWcQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

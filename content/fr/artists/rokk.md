@@ -2,7 +2,7 @@
 title: "Rokkó"
 slug: "rokk"
 type: "artists"
-image: "https://i.ytimg.com/vi/S8PhnAIYovs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_tEnpl_ji2g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "YFG Fatso"
 slug: "yfg-fatso"
 type: "artists"
-image: "https://i.ytimg.com/vi/b9Ap0FANMYo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/g4h_MHkBpts/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

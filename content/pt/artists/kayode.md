@@ -2,7 +2,7 @@
 title: "Kayode"
 slug: "kayode"
 type: "artists"
-image: "https://i.ytimg.com/vi/P85egH3rgj0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pElo5InSdog/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

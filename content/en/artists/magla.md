@@ -2,7 +2,7 @@
 title: "MAGLA"
 slug: "magla"
 type: "artists"
-image: "https://i.ytimg.com/vi/_toF3TpIEdM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mP62uBRAjnk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
