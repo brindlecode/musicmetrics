@@ -2,7 +2,7 @@
 title: "Pop Culture"
 slug: "pop-culture"
 type: "artists"
-image: "https://i.ytimg.com/vi/xGS8Sjp0o2w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nKtriipwEGs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

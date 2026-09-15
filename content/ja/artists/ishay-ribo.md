@@ -2,7 +2,7 @@
 title: "ישי ריבו | Ishay Ribo"
 slug: "ishay-ribo"
 type: "artists"
-image: "https://i.ytimg.com/vi/8Be-_tkVljQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W5zhEum4eRU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
