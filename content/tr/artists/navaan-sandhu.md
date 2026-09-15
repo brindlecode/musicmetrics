@@ -2,7 +2,7 @@
 title: "Navaan Sandhu"
 slug: "navaan-sandhu"
 type: "artists"
-image: "https://i.ytimg.com/vi/p4s7iPXlGlI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/m8wmgqRIEpE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

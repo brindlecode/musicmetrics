@@ -2,7 +2,7 @@
 title: "ATEEZ"
 slug: "ateez"
 type: "artists"
-image: "https://i.ytimg.com/vi/3F9jlnANW08/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XAomU4u1BxE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

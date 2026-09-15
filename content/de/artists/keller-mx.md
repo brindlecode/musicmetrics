@@ -2,7 +2,7 @@
 title: "Keller MX"
 slug: "keller-mx"
 type: "artists"
-image: "https://i.ytimg.com/vi/Fu4UOo7Zvjo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CAbt13cDz40/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
