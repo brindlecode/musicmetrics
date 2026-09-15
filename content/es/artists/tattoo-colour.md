@@ -2,7 +2,7 @@
 title: "Tattoo Colour"
 slug: "tattoo-colour"
 type: "artists"
-image: "https://i.ytimg.com/vi/fY3KMHPQC6Y/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pt-0LgCVcUI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

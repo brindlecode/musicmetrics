@@ -2,7 +2,7 @@
 title: "Binomio De Oro"
 slug: "binomio-de-oro"
 type: "artists"
-image: "https://i.ytimg.com/vi/pzUztzaORIs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qgmcFFkQd38/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

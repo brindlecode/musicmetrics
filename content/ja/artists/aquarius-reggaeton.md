@@ -2,7 +2,7 @@
 title: "Aquarius Reggaeton"
 slug: "aquarius-reggaeton"
 type: "artists"
-image: "https://i.ytimg.com/vi/CffWWesA03o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KC4pLnBhgM0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

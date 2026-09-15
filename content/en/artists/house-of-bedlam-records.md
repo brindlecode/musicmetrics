@@ -2,7 +2,7 @@
 title: "House of Bedlam Records"
 slug: "house-of-bedlam-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/oZ7Ihjfzb1M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qrCoUwf70bU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
