@@ -2,7 +2,7 @@
 title: "Bluellow"
 slug: "bluellow"
 type: "artists"
-image: "https://i.ytimg.com/vi/hR2yVlnYNKI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_FpjQv7vlaA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

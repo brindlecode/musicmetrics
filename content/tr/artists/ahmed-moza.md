@@ -2,7 +2,7 @@
 title: "احمد موزه - Ahmed Moza"
 slug: "ahmed-moza"
 type: "artists"
-image: "https://i.ytimg.com/vi/wysTVL08jQs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/05YQFaVJg5M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

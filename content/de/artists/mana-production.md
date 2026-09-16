@@ -2,7 +2,7 @@
 title: "Mana production"
 slug: "mana-production"
 type: "artists"
-image: "https://i.ytimg.com/vi/wKOP-sBxL4g/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/NJYvx3zFQKE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

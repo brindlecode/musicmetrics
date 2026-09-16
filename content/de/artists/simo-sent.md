@@ -2,7 +2,7 @@
 title: "Simo Sent"
 slug: "simo-sent"
 type: "artists"
-image: "https://i.ytimg.com/vi/-mHcvKW43ME/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WPgaEjyMYt4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

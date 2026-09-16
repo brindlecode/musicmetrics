@@ -2,7 +2,7 @@
 title: "MCLeleJP"
 slug: "mclelejp"
 type: "artists"
-image: "https://i.ytimg.com/vi/G9fJvxm1fkA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jaMM5wn_SiY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

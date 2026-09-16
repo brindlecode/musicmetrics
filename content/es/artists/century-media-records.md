@@ -2,7 +2,7 @@
 title: "Century Media Records"
 slug: "century-media-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/61RjgbXhsLc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3sYZPOSPlBM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
