@@ -2,7 +2,7 @@
 title: "ALBOS"
 slug: "albos"
 type: "artists"
-image: "https://i.ytimg.com/vi/Pw3xf-BkWFY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ttSO1-xQkQs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

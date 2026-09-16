@@ -2,7 +2,7 @@
 title: "Ulises Bueno"
 slug: "ulises-bueno"
 type: "artists"
-image: "https://i.ytimg.com/vi/pFjEG3Ib0gw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uETLTatPM2Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

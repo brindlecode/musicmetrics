@@ -2,7 +2,7 @@
 title: "Jão"
 slug: "jo"
 type: "artists"
-image: "https://i.ytimg.com/vi/UsvG7s5wS24/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eKXKe7tFFHY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

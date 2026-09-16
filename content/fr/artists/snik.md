@@ -2,7 +2,7 @@
 title: "SNIK"
 slug: "snik"
 type: "artists"
-image: "https://i.ytimg.com/vi/pwf7RwJkkbs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cUMSJBnPy_g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Royal Tunes"
 slug: "royal-tunes"
 type: "artists"
-image: "https://i.ytimg.com/vi/cS3hd-eEels/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2rBkQLsN_0k/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

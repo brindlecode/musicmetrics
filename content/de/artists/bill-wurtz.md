@@ -2,7 +2,7 @@
 title: "bill wurtz"
 slug: "bill-wurtz"
 type: "artists"
-image: "https://i.ytimg.com/vi/FH_CUSu7M1Q/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lFqjTnss4JE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
