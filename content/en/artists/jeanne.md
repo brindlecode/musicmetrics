@@ -2,7 +2,7 @@
 title: "Jeanne"
 slug: "jeanne"
 type: "artists"
-image: "https://i.ytimg.com/vi/0bGs3BO12J8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Bif9xLdDvuo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

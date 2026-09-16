@@ -2,7 +2,7 @@
 title: "Audio Vibes Alliance"
 slug: "audio-vibes-alliance"
 type: "artists"
-image: "https://i.ytimg.com/vi/MV_TGug6rCQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hEUIjEPwjFg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

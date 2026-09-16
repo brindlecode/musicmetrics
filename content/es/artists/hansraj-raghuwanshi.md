@@ -2,7 +2,7 @@
 title: "Hansraj Raghuwanshi"
 slug: "hansraj-raghuwanshi"
 type: "artists"
-image: "https://i.ytimg.com/vi/0duXPhS37SY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z4R8ysUk2bw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
