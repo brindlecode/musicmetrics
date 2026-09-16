@@ -2,7 +2,7 @@
 title: "Kizz Daniel"
 slug: "kizz-daniel"
 type: "artists"
-image: "https://i.ytimg.com/vi/LEJ6D7LMV1s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/oObngv_N7b8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

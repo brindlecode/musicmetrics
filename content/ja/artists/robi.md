@@ -2,7 +2,7 @@
 title: "Robi"
 slug: "robi"
 type: "artists"
-image: "https://i.ytimg.com/vi/Us-SNc8ewus/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/R4ONujypcvw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
