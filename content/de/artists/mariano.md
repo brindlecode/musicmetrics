@@ -2,7 +2,7 @@
 title: "Mariano"
 slug: "mariano"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZsKA9dWW6DE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j97BibGxNhU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

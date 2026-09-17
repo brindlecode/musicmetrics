@@ -2,7 +2,7 @@
 title: "Ameen Khattab - امين خطاب"
 slug: "ameen-khattab"
 type: "artists"
-image: "https://i.ytimg.com/vi/omqRF_Vum94/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eh4RyeNmRf8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
