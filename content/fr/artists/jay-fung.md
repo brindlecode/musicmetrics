@@ -2,7 +2,7 @@
 title: "Jay Fung 馮允謙"
 slug: "jay-fung"
 type: "artists"
-image: "https://i.ytimg.com/vi/47uNgzKLrmw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1vsXsNGhTYk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

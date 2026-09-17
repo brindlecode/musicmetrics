@@ -2,7 +2,7 @@
 title: "Juke Dock"
 slug: "juke-dock"
 type: "artists"
-image: "https://i.ytimg.com/vi/rThs80jODmo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n6DPPqUKQhA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

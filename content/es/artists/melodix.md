@@ -2,7 +2,7 @@
 title: "Melodix"
 slug: "melodix"
 type: "artists"
-image: "https://i.ytimg.com/vi/MGLRywcuk_k/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UPHv5C1vlXA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

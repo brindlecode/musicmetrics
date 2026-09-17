@@ -2,7 +2,7 @@
 title: "Berkah Talenta"
 slug: "berkah-talenta"
 type: "artists"
-image: "https://i.ytimg.com/vi/6bVbyoVhDlE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sqlhVSuqSyM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Cris MJ"
 slug: "cris-mj"
 type: "artists"
-image: "https://i.ytimg.com/vi/J2lPF0ChMWY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xrwnF3JQWGY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

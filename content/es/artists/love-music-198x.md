@@ -2,7 +2,7 @@
 title: "LOVE MUSIC 198x"
 slug: "love-music-198x"
 type: "artists"
-image: "https://i.ytimg.com/vi/FlXSWdCbciE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kTGOpiRQlVg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

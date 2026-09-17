@@ -2,7 +2,7 @@
 title: "Bestards"
 slug: "bestards"
 type: "artists"
-image: "https://i.ytimg.com/vi/dGy0nQ3nXz8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/y7acIF8FSe4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
