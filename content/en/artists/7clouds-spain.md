@@ -2,7 +2,7 @@
 title: "7clouds Spain"
 slug: "7clouds-spain"
 type: "artists"
-image: "https://i.ytimg.com/vi/BmpCjE70xi0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/80ruZ3uTRjU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

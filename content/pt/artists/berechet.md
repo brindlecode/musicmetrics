@@ -2,7 +2,7 @@
 title: "Berechet"
 slug: "berechet"
 type: "artists"
-image: "https://i.ytimg.com/vi/JxYv29XLO8o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ARNW_yZUNb4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

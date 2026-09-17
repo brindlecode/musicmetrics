@@ -2,7 +2,7 @@
 title: "Ozone"
 slug: "ozone"
 type: "artists"
-image: "https://i.ytimg.com/vi/22HyWe8IPZg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/aDwXKAaEZGA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
