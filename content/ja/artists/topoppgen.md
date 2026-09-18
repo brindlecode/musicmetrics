@@ -2,7 +2,7 @@
 title: "Topoppgen"
 slug: "topoppgen"
 type: "artists"
-image: "https://i.ytimg.com/vi/DIzuIkGeJk8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SsMyUEZI68s/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

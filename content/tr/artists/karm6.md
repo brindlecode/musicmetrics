@@ -2,7 +2,7 @@
 title: "KARM6"
 slug: "karm6"
 type: "artists"
-image: "https://i.ytimg.com/vi/OcU_zcf-Gss/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ITsFJn8wuos/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

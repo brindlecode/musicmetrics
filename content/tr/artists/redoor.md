@@ -2,7 +2,7 @@
 title: "Redoor"
 slug: "redoor"
 type: "artists"
-image: "https://i.ytimg.com/vi/TLqgvD9_TR8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yWImR54sC54/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

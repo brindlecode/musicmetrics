@@ -2,7 +2,7 @@
 title: "이지금 [IU Official]"
 slug: "iu-official"
 type: "artists"
-image: "https://i.ytimg.com/vi/nP1xjFX86Po/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RdUV9Ms5GM4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

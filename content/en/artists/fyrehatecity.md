@@ -2,7 +2,7 @@
 title: "FyreHateCity"
 slug: "fyrehatecity"
 type: "artists"
-image: "https://i.ytimg.com/vi/yGG-UEiVj1U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OXtc7OFp9dw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

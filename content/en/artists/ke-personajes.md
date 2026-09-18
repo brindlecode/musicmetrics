@@ -2,7 +2,7 @@
 title: "Ke Personajes"
 slug: "ke-personajes"
 type: "artists"
-image: "https://i.ytimg.com/vi/1wRUyCEvbw0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YkEvte6FCkg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

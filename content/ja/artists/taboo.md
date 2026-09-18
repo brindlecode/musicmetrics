@@ -2,7 +2,7 @@
 title: "TABOO"
 slug: "taboo"
 type: "artists"
-image: "https://i.ytimg.com/vi/ZrE-5GDnNjk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kNggpfzQ-So/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

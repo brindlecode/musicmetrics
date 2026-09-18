@@ -2,7 +2,7 @@
 title: "Liu Yu Ning"
 slug: "liu-yu-ning"
 type: "artists"
-image: "https://i.ytimg.com/vi/yP6rJHo1UYg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mBsFE_zjHac/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

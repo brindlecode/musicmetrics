@@ -2,7 +2,7 @@
 title: "Sliki"
 slug: "sliki"
 type: "artists"
-image: "https://i.ytimg.com/vi/ti8SvEVPQjU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lHFh4XpHUD8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

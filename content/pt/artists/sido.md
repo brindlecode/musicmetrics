@@ -2,7 +2,7 @@
 title: "Sido"
 slug: "sido"
 type: "artists"
-image: "https://i.ytimg.com/vi/NBZ30B8VYqo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8Gj-lTSlPOg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Cha ga eul"
 slug: "cha-ga-eul"
 type: "artists"
-image: "https://i.ytimg.com/vi/d40YQAsL_cU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Skywxm6bQKw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

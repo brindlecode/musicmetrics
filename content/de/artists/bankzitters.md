@@ -2,7 +2,7 @@
 title: "Bankzitters"
 slug: "bankzitters"
 type: "artists"
-image: "https://i.ytimg.com/vi/sVypLsMiGRo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kk1FLweGY70/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "TropikAll"
 slug: "tropikall"
 type: "artists"
-image: "https://i.ytimg.com/vi/M2h6CIsFGfY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uZm21knIutA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

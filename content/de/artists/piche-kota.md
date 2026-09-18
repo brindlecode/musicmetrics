@@ -2,7 +2,7 @@
 title: "Piche Kota"
 slug: "piche-kota"
 type: "artists"
-image: "https://i.ytimg.com/vi/6_5SMFPHdmc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/tSA-rz_bsSg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Ceren Sagu"
 slug: "ceren-sagu"
 type: "artists"
-image: "https://i.ytimg.com/vi/hTFdqDVPq9E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/E17VX3kJFLQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

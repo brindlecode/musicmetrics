@@ -2,7 +2,7 @@
 title: "Nancy Kwai 歸綽嶢"
 slug: "nancy-kwai"
 type: "artists"
-image: "https://i.ytimg.com/vi/uY69HlDnkic/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-EYkhM4Eq8Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

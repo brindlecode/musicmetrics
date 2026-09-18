@@ -2,7 +2,7 @@
 title: "MurdaBoyz"
 slug: "murdaboyz"
 type: "artists"
-image: "https://i.ytimg.com/vi/rXbPztgwNoU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DSdrLvlqSy0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Kevin"
 slug: "kevin"
 type: "artists"
-image: "https://i.ytimg.com/vi/H2vPDYFUf2M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kNv8yREG4Hg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
