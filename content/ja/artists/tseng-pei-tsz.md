@@ -2,7 +2,7 @@
 title: "Tseng Pei Tsz"
 slug: "tseng-pei-tsz"
 type: "artists"
-image: "https://i.ytimg.com/vi/D6yo7CZNVJA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uub_qJXT3tI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

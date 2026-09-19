@@ -2,7 +2,7 @@
 title: "Sie Halues"
 slug: "sie-halues"
 type: "artists"
-image: "https://i.ytimg.com/vi/WllMaZ8j904/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jQB3vTAHnuA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

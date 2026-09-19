@@ -2,7 +2,7 @@
 title: "Leaf Records"
 slug: "leaf-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/yrFoTUpogdc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/P9X39CPVO14/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

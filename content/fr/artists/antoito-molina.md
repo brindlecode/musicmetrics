@@ -2,7 +2,7 @@
 title: "ANTOÑITO MOLINA"
 slug: "antoito-molina"
 type: "artists"
-image: "https://i.ytimg.com/vi/HKVKSqGWMlU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1U8gYn1xuWc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
