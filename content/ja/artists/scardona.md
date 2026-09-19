@@ -2,7 +2,7 @@
 title: "Scardona"
 slug: "scardona"
 type: "artists"
-image: "https://i.ytimg.com/vi/VDXh4TX8y9A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/B8b7NKgOOE0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "حمو الطيخا - Hamo Eltekha"
 slug: "hamo-eltekha"
 type: "artists"
-image: "https://i.ytimg.com/vi/tInEk0Jy-JY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/XzxFqmzTu3g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

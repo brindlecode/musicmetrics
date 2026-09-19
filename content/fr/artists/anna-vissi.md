@@ -2,7 +2,7 @@
 title: "Anna Vissi"
 slug: "anna-vissi"
 type: "artists"
-image: "https://i.ytimg.com/vi/n1c-f71mkys/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DLnfKFgF6AE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

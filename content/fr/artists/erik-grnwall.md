@@ -2,7 +2,7 @@
 title: "Erik Grönwall"
 slug: "erik-grnwall"
 type: "artists"
-image: "https://i.ytimg.com/vi/JKQ9wnfqdVk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vU7fTirRNBs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

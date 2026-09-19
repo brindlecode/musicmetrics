@@ -2,7 +2,7 @@
 title: "GIMS"
 slug: "gims"
 type: "artists"
-image: "https://i.ytimg.com/vi/5W8rXXe7Orc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/9yY10g8P_fA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

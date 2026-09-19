@@ -2,7 +2,7 @@
 title: "Ecos Rockeros"
 slug: "ecos-rockeros"
 type: "artists"
-image: "https://i.ytimg.com/vi/y15eYqNggPQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/L3n7k-xNeeA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

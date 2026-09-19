@@ -2,7 +2,7 @@
 title: "Juho"
 slug: "juho"
 type: "artists"
-image: "https://i.ytimg.com/vi/B-zN_Y8w7Us/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YAFxgKFgMCk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

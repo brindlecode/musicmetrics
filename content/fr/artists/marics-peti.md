@@ -2,7 +2,7 @@
 title: "Marics Peti"
 slug: "marics-peti"
 type: "artists"
-image: "https://i.ytimg.com/vi/fuJpzMr-djc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HAhc46jwMX4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

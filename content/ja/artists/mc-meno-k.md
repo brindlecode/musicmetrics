@@ -2,7 +2,7 @@
 title: "MC MENO K"
 slug: "mc-meno-k"
 type: "artists"
-image: "https://i.ytimg.com/vi/Un-zqOuYXT0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mhVXlUl2-ME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

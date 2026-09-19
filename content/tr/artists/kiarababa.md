@@ -2,7 +2,7 @@
 title: "KIARABABA"
 slug: "kiarababa"
 type: "artists"
-image: "https://i.ytimg.com/vi/4OKJFi5TQEs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/k6TOWtrJcps/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

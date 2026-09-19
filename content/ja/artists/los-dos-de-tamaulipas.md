@@ -2,7 +2,7 @@
 title: "LOS DOS DE TAMAULIPAS"
 slug: "los-dos-de-tamaulipas"
 type: "artists"
-image: "https://i.ytimg.com/vi/UOD3K2JV9-o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZJXLJLMSc00/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

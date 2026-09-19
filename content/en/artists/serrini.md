@@ -2,7 +2,7 @@
 title: "Serrini"
 slug: "serrini"
 type: "artists"
-image: "https://i.ytimg.com/vi/l_LYMYqcia8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/RiTkyMx0V5o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

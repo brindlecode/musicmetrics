@@ -2,7 +2,7 @@
 title: "Fireboy DML"
 slug: "fireboy-dml"
 type: "artists"
-image: "https://i.ytimg.com/vi/OGdxsO8jbhA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/j7GIvTDMqrs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

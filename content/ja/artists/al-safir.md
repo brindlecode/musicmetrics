@@ -2,7 +2,7 @@
 title: "Al Safir"
 slug: "al-safir"
 type: "artists"
-image: "https://i.ytimg.com/vi/k1-Gh7qZDlc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/6FJDs_I4yRg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

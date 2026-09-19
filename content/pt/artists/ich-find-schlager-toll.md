@@ -2,7 +2,7 @@
 title: "ICH FIND SCHLAGER TOLL"
 slug: "ich-find-schlager-toll"
 type: "artists"
-image: "https://i.ytimg.com/vi/p7bWuqnq2AY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/H28Rlc3Ohz8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

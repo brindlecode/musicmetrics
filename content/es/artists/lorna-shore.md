@@ -2,7 +2,7 @@
 title: "Lorna Shore"
 slug: "lorna-shore"
 type: "artists"
-image: "https://i.ytimg.com/vi/VyS8EESMILM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hC8rQ9NGQ08/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

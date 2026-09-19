@@ -2,7 +2,7 @@
 title: "Martina Pártlová"
 slug: "martina-prtlov"
 type: "artists"
-image: "https://i.ytimg.com/vi/UG2l8juhRO8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/o-IxNPeEL-c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Corazón Serrano"
 slug: "corazn-serrano"
 type: "artists"
-image: "https://i.ytimg.com/vi/BC5nu3ccBTg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1rhMi8sOCf8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

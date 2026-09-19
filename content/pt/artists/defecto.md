@@ -2,7 +2,7 @@
 title: "Defecto"
 slug: "defecto"
 type: "artists"
-image: "https://i.ytimg.com/vi/1a3-8Z5gnzc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iFSxd3gLno4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

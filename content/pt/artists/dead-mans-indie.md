@@ -2,7 +2,7 @@
 title: "Dead Man’s Indie"
 slug: "dead-mans-indie"
 type: "artists"
-image: "https://i.ytimg.com/vi/jOGw40aaVKQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bzW8c9towZU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

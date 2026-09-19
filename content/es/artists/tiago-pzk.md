@@ -2,7 +2,7 @@
 title: "Tiago PZK"
 slug: "tiago-pzk"
 type: "artists"
-image: "https://i.ytimg.com/vi/3W8qMHmucgw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vUccR1XQeKM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

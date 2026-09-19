@@ -2,7 +2,7 @@
 title: "CAZZU"
 slug: "cazzu"
 type: "artists"
-image: "https://i.ytimg.com/vi/VHtm7bxLaF0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lzklN17GxoA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
