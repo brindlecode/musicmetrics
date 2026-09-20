@@ -1,11 +1,11 @@
 ---
-title: "Beton.Hofi"
+title: "BETON.HOFI"
 slug: "betonhofi"
 type: "artists"
-image: "https://i.ytimg.com/vi/hv5cx-kj-jk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/O2v_xg4qsuw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Beton.Hofi streaming statistics, chart positions and analytics across youtube"
+description: "BETON.HOFI streaming statistics, chart positions and analytics across youtube"
 ---

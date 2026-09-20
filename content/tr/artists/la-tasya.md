@@ -2,7 +2,7 @@
 title: "La Tasya"
 slug: "la-tasya"
 type: "artists"
-image: "https://i.ytimg.com/vi/d-aa-dZZmF8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/a9hJjdQKJfg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

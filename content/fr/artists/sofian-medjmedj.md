@@ -2,7 +2,7 @@
 title: "Sofian Medjmedj"
 slug: "sofian-medjmedj"
 type: "artists"
-image: "https://i.ytimg.com/vi/irlIw59_vs0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/5zB_RT6Hfi0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
