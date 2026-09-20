@@ -2,7 +2,7 @@
 title: "Jenni Rivera"
 slug: "jenni-rivera"
 type: "artists"
-image: "https://i.ytimg.com/vi/LrSmEjGgAI4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/eyxS1dn8WZQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

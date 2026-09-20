@@ -1,11 +1,11 @@
 ---
-title: "Cris MJ"
+title: "Cris Mj"
 slug: "cris-mj"
 type: "artists"
-image: "https://i.ytimg.com/vi/xrwnF3JQWGY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/01dxdz5RHQQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Cris MJ streaming statistics, chart positions and analytics across youtube"
+description: "Cris Mj streaming statistics, chart positions and analytics across youtube"
 ---

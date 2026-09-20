@@ -2,7 +2,7 @@
 title: "Osher Cohen Music"
 slug: "osher-cohen-music"
 type: "artists"
-image: "https://i.ytimg.com/vi/wyFfiEwpgtI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YTVHF2BmClM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
