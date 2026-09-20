@@ -2,7 +2,7 @@
 title: "CG5"
 slug: "cg5"
 type: "artists"
-image: "https://i.ytimg.com/vi/Kr8xlhBkj3E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kErWhzq5gTc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

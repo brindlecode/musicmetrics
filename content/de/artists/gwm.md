@@ -2,7 +2,7 @@
 title: "G.w.M"
 slug: "gwm"
 type: "artists"
-image: "https://i.ytimg.com/vi/qKBuqwYACew/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IvEfDC2sanM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

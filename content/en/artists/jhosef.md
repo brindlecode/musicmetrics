@@ -2,7 +2,7 @@
 title: "Jhosef"
 slug: "jhosef"
 type: "artists"
-image: "https://i.ytimg.com/vi/92Bv-Vx08e4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/CugWyeJGUGY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

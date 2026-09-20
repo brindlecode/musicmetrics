@@ -2,7 +2,7 @@
 title: "Otsochodzi"
 slug: "otsochodzi"
 type: "artists"
-image: "https://i.ytimg.com/vi/I2VmpkwDXnQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/94SRf0JMKAI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "TeddyBear"
 slug: "teddybear"
 type: "artists"
-image: "https://i.ytimg.com/vi/xYSXKiBMVEM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/b_RRRKUtu20/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
