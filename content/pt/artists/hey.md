@@ -2,7 +2,7 @@
 title: "Hey!"
 slug: "hey"
 type: "artists"
-image: "https://i.ytimg.com/vi/o8jE2NLBgzc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hkrP7O7Frro/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

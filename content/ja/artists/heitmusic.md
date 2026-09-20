@@ -2,7 +2,7 @@
 title: "HeitMusic"
 slug: "heitmusic"
 type: "artists"
-image: "https://i.ytimg.com/vi/p746MsnmCfU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QeQN86flddQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MyFabolousLife"
 slug: "myfabolouslife"
 type: "artists"
-image: "https://i.ytimg.com/vi/QNtYuY1DA3w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IyDiWjWKLIM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

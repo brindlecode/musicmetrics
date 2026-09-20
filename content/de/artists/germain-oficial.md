@@ -2,7 +2,7 @@
 title: "Germain Oficial"
 slug: "germain-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/bdBzZRGAWso/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/n93FKyDXkrc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

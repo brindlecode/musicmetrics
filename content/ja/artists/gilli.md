@@ -2,7 +2,7 @@
 title: "Gilli"
 slug: "gilli"
 type: "artists"
-image: "https://i.ytimg.com/vi/z1z5lryP9cs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WfeB3-SUNu8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "INI"
 slug: "ini"
 type: "artists"
-image: "https://i.ytimg.com/vi/HWZwkF2gYQs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ky3mIUfBb5c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Toque Dez Oficial"
 slug: "toque-dez-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/I3ICnebtRwM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/yHJhuiz3L_0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

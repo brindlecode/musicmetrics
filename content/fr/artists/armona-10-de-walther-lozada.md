@@ -2,7 +2,7 @@
 title: "Armonía 10 de Walther Lozada"
 slug: "armona-10-de-walther-lozada"
 type: "artists"
-image: "https://i.ytimg.com/vi/G14Zjq9A6HY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Kp8Au60hkIE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
