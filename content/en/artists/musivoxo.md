@@ -2,7 +2,7 @@
 title: "MUSIVOXO"
 slug: "musivoxo"
 type: "artists"
-image: "https://i.ytimg.com/vi/AXCisOzgrVI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/kkMdmP3t5Hs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Drake"
 slug: "drake"
 type: "artists"
-image: "https://i.ytimg.com/vi/elFnIw3RoaU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/y56D2WIeKxg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

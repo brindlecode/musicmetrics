@@ -2,7 +2,7 @@
 title: "Gustavo Mioto"
 slug: "gustavo-mioto"
 type: "artists"
-image: "https://i.ytimg.com/vi/4zxXm_VVPbU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/xeqy4fnga1c/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -1,11 +1,11 @@
 ---
-title: "Bestards"
+title: "理想混蛋 Bestards"
 slug: "bestards"
 type: "artists"
-image: "https://i.ytimg.com/vi/y7acIF8FSe4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2rVheesBCv8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "Bestards streaming statistics, chart positions and analytics across youtube"
+description: "理想混蛋 Bestards streaming statistics, chart positions and analytics across youtube"
 ---
