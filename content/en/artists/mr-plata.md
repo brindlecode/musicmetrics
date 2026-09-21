@@ -2,7 +2,7 @@
 title: "Mr Plata"
 slug: "mr-plata"
 type: "artists"
-image: "https://i.ytimg.com/vi/N0YOdotjHwo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/HtXnymBqec8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

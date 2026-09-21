@@ -2,7 +2,7 @@
 title: "SUPRAPHON"
 slug: "supraphon"
 type: "artists"
-image: "https://i.ytimg.com/vi/LE47nJXEVsg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Z_8x5EafFUM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

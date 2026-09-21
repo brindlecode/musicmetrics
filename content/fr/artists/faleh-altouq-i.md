@@ -2,7 +2,7 @@
 title: "فالح الطوق Faleh Altouq I"
 slug: "faleh-altouq-i"
 type: "artists"
-image: "https://i.ytimg.com/vi/CgmB69dRF0E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VpQJY4L84Qk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

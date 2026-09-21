@@ -2,7 +2,7 @@
 title: "Morbeat Records"
 slug: "morbeat-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/hC6Lkm1Xojw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/myG9aWvgPpI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
