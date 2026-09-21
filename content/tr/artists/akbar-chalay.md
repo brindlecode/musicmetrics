@@ -2,7 +2,7 @@
 title: "Akbar Chalay"
 slug: "akbar-chalay"
 type: "artists"
-image: "https://i.ytimg.com/vi/fLdVq8n-KQg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_7xBKNb4uAQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

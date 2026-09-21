@@ -2,7 +2,7 @@
 title: "Sosa La M"
 slug: "sosa-la-m"
 type: "artists"
-image: "https://i.ytimg.com/vi/gMxIyqIm0IY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/SzsCijRBw9o/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

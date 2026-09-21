@@ -2,7 +2,7 @@
 title: "aessy"
 slug: "aessy"
 type: "artists"
-image: "https://i.ytimg.com/vi/scXNrVQJ4NQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IwDJpaoE0Ek/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

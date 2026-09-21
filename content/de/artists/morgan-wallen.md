@@ -2,7 +2,7 @@
 title: "Morgan Wallen"
 slug: "morgan-wallen"
 type: "artists"
-image: "https://i.ytimg.com/vi/9leAwpph-xs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/v7yYmRGQaRk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

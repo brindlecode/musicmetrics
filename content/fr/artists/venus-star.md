@@ -2,7 +2,7 @@
 title: "Venus Star"
 slug: "venus-star"
 type: "artists"
-image: "https://i.ytimg.com/vi/m3GpiFxki1I/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/2ascwfjUzME/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "IVY Bhojpuri Dhamaka"
 slug: "ivy-bhojpuri-dhamaka"
 type: "artists"
-image: "https://i.ytimg.com/vi/oXbwVuLYHvI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/hSoAIObc_Vk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

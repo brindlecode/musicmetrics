@@ -2,7 +2,7 @@
 title: "Rashed AlMajid | راشد الماجد"
 slug: "rashed-almajid"
 type: "artists"
-image: "https://i.ytimg.com/vi/o9Wk_ySiq8o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zpzJXg_QmPc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
