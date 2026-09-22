@@ -2,7 +2,7 @@
 title: "Josh Fawaz"
 slug: "josh-fawaz"
 type: "artists"
-image: "https://i.ytimg.com/vi/QRsChLV2QAE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bVRABYmxkbo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

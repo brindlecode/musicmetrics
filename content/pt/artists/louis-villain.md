@@ -2,7 +2,7 @@
 title: "Louis Villain"
 slug: "louis-villain"
 type: "artists"
-image: "https://i.ytimg.com/vi/UC78w70fGak/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/psOPwS7s5oA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

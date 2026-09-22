@@ -2,7 +2,7 @@
 title: "Tereza Mašková"
 slug: "tereza-makov"
 type: "artists"
-image: "https://i.ytimg.com/vi/VR0ZRGRmK-c/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bMj1LZVXeeA/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

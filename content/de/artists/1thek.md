@@ -2,7 +2,7 @@
 title: "1theK (원더케이)"
 slug: "1thek"
 type: "artists"
-image: "https://i.ytimg.com/vi/c7J516-Da2o/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/LzW15vQNwPQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

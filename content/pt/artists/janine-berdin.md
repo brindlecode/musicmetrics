@@ -2,7 +2,7 @@
 title: "janine berdin"
 slug: "janine-berdin"
 type: "artists"
-image: "https://i.ytimg.com/vi/eu7f55zCoS4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3ku3TxWAo1A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

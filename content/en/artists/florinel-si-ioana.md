@@ -2,7 +2,7 @@
 title: "Florinel si Ioana"
 slug: "florinel-si-ioana"
 type: "artists"
-image: "https://i.ytimg.com/vi/prG-8h_TUlU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WhbS0KHd9V0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
