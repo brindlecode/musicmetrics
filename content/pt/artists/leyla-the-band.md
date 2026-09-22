@@ -2,7 +2,7 @@
 title: "Leyla The Band"
 slug: "leyla-the-band"
 type: "artists"
-image: "https://i.ytimg.com/vi/YPpUmN57Ml4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gh9qTbxFsXQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Tsebebe Moroke"
 slug: "tsebebe-moroke"
 type: "artists"
-image: "https://i.ytimg.com/vi/V3sa8ztLPXE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/1ez8gYdLVeM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

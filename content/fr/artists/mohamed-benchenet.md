@@ -2,7 +2,7 @@
 title: "Mohamed Benchenet"
 slug: "mohamed-benchenet"
 type: "artists"
-image: "https://i.ytimg.com/vi/TECdbRo__wE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UWTCK2JY2jY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

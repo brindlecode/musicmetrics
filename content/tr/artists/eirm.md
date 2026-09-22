@@ -2,7 +2,7 @@
 title: "Eir.M"
 slug: "eirm"
 type: "artists"
-image: "https://i.ytimg.com/vi/PD9h10xxNhg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cOkYZ6ZRiBs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
