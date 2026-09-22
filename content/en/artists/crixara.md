@@ -2,7 +2,7 @@
 title: "Crixara"
 slug: "crixara"
 type: "artists"
-image: "https://i.ytimg.com/vi/-c8uRnnXVSg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fnlLGub1Jz4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Sfera Ebbasta"
 slug: "sfera-ebbasta"
 type: "artists"
-image: "https://i.ytimg.com/vi/f6pubmf_En0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PshqcQwshdU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

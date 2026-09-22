@@ -2,7 +2,7 @@
 title: "Number_i"
 slug: "number-i"
 type: "artists"
-image: "https://i.ytimg.com/vi/PB6IEPdzBOw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cz9wgp-DU0A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
