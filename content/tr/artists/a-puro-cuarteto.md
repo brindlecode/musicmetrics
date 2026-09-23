@@ -2,7 +2,7 @@
 title: "A Puro Cuarteto"
 slug: "a-puro-cuarteto"
 type: "artists"
-image: "https://i.ytimg.com/vi/hutIkOiLXzo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Iq433TjaNjg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

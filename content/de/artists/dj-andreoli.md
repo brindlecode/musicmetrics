@@ -2,7 +2,7 @@
 title: "dj andreoli"
 slug: "dj-andreoli"
 type: "artists"
-image: "https://i.ytimg.com/vi/HXBlJqhb3cs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S3grjjowFZU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

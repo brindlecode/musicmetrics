@@ -2,7 +2,7 @@
 title: "Julianno Sosa"
 slug: "julianno-sosa"
 type: "artists"
-image: "https://i.ytimg.com/vi/OMOfnmig1ws/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fGr379d8Mvw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
