@@ -2,7 +2,7 @@
 title: "STARGLOW"
 slug: "starglow"
 type: "artists"
-image: "https://i.ytimg.com/vi/zbSQaKFjyXI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/3gsVVVndUKM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

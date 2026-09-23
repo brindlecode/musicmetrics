@@ -2,7 +2,7 @@
 title: "Vacra"
 slug: "vacra"
 type: "artists"
-image: "https://i.ytimg.com/vi/IO_GLvVB5Vc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/PhfdpyI6h1Y/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

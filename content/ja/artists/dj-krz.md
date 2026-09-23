@@ -2,7 +2,7 @@
 title: "Dj KRZ"
 slug: "dj-krz"
 type: "artists"
-image: "https://i.ytimg.com/vi/8HuJ6rn6m0M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-BZrWjt7Wno/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
