@@ -2,7 +2,7 @@
 title: "Asoniq"
 slug: "asoniq"
 type: "artists"
-image: "https://i.ytimg.com/vi/1_9ut0YfipM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8gTFDYwZ6jU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

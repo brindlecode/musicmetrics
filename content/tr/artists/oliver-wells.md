@@ -2,7 +2,7 @@
 title: "Oliver Wells"
 slug: "oliver-wells"
 type: "artists"
-image: "https://i.ytimg.com/vi/7ARyExOTfW0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GsUg2N5_Eb8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "فهد بن فصلا Fahad Bin Fasla l"
 slug: "fahad-bin-fasla-l"
 type: "artists"
-image: "https://i.ytimg.com/vi/qN3y0sHCBME/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VchIbojKvg0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

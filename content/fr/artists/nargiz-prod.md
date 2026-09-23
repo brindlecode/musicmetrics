@@ -2,7 +2,7 @@
 title: "Nargiz Prod"
 slug: "nargiz-prod"
 type: "artists"
-image: "https://i.ytimg.com/vi/95XL2raYF3s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/S8OGKzoT0SI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Maulana Ardiansyah"
 slug: "maulana-ardiansyah"
 type: "artists"
-image: "https://i.ytimg.com/vi/Fi3hlmiYosE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/pbwDz6RHhcc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
