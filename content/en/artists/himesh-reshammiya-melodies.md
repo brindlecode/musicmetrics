@@ -2,7 +2,7 @@
 title: "Himesh Reshammiya Melodies"
 slug: "himesh-reshammiya-melodies"
 type: "artists"
-image: "https://i.ytimg.com/vi/sPEcx5UBh6M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/u9MpnqWC6Xg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

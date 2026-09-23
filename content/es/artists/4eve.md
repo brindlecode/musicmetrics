@@ -2,7 +2,7 @@
 title: "4EVE"
 slug: "4eve"
 type: "artists"
-image: "https://i.ytimg.com/vi/HL84H3PADp0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ggbjnPE7m24/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

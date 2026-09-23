@@ -2,7 +2,7 @@
 title: "Sagopa Kajmer"
 slug: "sagopa-kajmer"
 type: "artists"
-image: "https://i.ytimg.com/vi/On3TP54BYnE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/W1qtr66R0Lk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
