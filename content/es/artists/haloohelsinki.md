@@ -2,7 +2,7 @@
 title: "HalooHelsinki"
 slug: "haloohelsinki"
 type: "artists"
-image: "https://i.ytimg.com/vi/VLQRN4ITlxg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/wVZQXmKLdrY/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

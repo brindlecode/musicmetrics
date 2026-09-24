@@ -2,7 +2,7 @@
 title: "Detské pesničky ČeskoSlovenska"
 slug: "detsk-pesniky-eskoslovenska"
 type: "artists"
-image: "https://i.ytimg.com/vi/obDs493Yw5U/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_-TXAEpnx58/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
