@@ -2,7 +2,7 @@
 title: "PATEKO"
 slug: "pateko"
 type: "artists"
-image: "https://i.ytimg.com/vi/v7aBko2tWEE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ra9rIXtlt6M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

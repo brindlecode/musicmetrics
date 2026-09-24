@@ -2,7 +2,7 @@
 title: "UNIS"
 slug: "unis"
 type: "artists"
-image: "https://i.ytimg.com/vi/luTz3QoowrU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/OBIXeXfd3Oc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

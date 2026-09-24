@@ -2,7 +2,7 @@
 title: "BagOnly"
 slug: "bagonly"
 type: "artists"
-image: "https://i.ytimg.com/vi/9EqR0pwDCds/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/0rdvK_J_wkM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

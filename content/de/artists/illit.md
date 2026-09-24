@@ -2,7 +2,7 @@
 title: "ILLIT"
 slug: "illit"
 type: "artists"
-image: "https://i.ytimg.com/vi/6Xr3nCSxs_A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/m8wbH22ZEus/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
