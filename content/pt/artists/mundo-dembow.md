@@ -2,7 +2,7 @@
 title: "Mundo Dembow"
 slug: "mundo-dembow"
 type: "artists"
-image: "https://i.ytimg.com/vi/SvxAb7ti1AU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mgKj-ySTkLg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

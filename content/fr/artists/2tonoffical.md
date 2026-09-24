@@ -2,7 +2,7 @@
 title: "2TONoffical"
 slug: "2tonoffical"
 type: "artists"
-image: "https://i.ytimg.com/vi/HpCVgJGL7B4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/syvr5pSSvTg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

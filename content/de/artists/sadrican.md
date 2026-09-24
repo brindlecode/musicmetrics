@@ -2,7 +2,7 @@
 title: "Sadrican"
 slug: "sadrican"
 type: "artists"
-image: "https://i.ytimg.com/vi/s5IIWKZr_2w/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/DU6x68EjyS8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

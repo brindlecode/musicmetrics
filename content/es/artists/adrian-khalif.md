@@ -2,7 +2,7 @@
 title: "Adrian Khalif"
 slug: "adrian-khalif"
 type: "artists"
-image: "https://i.ytimg.com/vi/0nLrGYnJPyM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AiD7Uo9ZK4Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Vojsava Alia"
 slug: "vojsava-alia"
 type: "artists"
-image: "https://i.ytimg.com/vi/0LZi15AEFAA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/C1XICXKTrOw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

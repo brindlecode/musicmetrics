@@ -2,7 +2,7 @@
 title: "Luxury KSA"
 slug: "luxury-ksa"
 type: "artists"
-image: "https://i.ytimg.com/vi/Vf1t7Vy3cog/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Onrrd9V8I70/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Oscar Manuel y su historia romántica"
 slug: "oscar-manuel-y-su-historia-romntica"
 type: "artists"
-image: "https://i.ytimg.com/vi/lqivczUppEY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QFkAYNchBF4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

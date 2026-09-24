@@ -2,7 +2,7 @@
 title: "DIE TOTEN HOSEN"
 slug: "die-toten-hosen"
 type: "artists"
-image: "https://i.ytimg.com/vi/RSKSzVrp6E0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Ay0GYyCc7HQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

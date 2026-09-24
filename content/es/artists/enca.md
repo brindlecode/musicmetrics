@@ -2,7 +2,7 @@
 title: "Enca"
 slug: "enca"
 type: "artists"
-image: "https://i.ytimg.com/vi/iYRkD5y_eaw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/iMq3_hzUHVQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

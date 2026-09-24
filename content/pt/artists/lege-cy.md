@@ -2,7 +2,7 @@
 title: "Lege-Cy"
 slug: "lege-cy"
 type: "artists"
-image: "https://i.ytimg.com/vi/H38-fCMuwSY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-yLYlQ4TMp8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

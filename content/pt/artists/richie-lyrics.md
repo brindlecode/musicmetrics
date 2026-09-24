@@ -2,7 +2,7 @@
 title: "Richie Lyrics"
 slug: "richie-lyrics"
 type: "artists"
-image: "https://i.ytimg.com/vi/Fu0w8u4zq38/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/e2XU1Dc59Co/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
