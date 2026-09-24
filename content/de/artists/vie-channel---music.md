@@ -2,7 +2,7 @@
 title: "Vie Channel - MUSIC"
 slug: "vie-channel---music"
 type: "artists"
-image: "https://i.ytimg.com/vi/XqLsUne19Gs/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/bAHLmRaNxOs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

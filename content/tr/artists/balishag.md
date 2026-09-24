@@ -2,7 +2,7 @@
 title: "Balishag"
 slug: "balishag"
 type: "artists"
-image: "https://i.ytimg.com/vi/n_S-00oUXzU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/lZfwLl2d0HU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

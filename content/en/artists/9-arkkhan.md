@@ -2,7 +2,7 @@
 title: "9 Arkkhan"
 slug: "9-arkkhan"
 type: "artists"
-image: "https://i.ytimg.com/vi/b6xDUm509VI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/-LlQxU8d9L8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

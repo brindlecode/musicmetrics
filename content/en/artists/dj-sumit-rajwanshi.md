@@ -2,7 +2,7 @@
 title: "DJ Sumit Rajwanshi"
 slug: "dj-sumit-rajwanshi"
 type: "artists"
-image: "https://i.ytimg.com/vi/TxmJuPl-G_E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/agV5zcvfcW8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "MIRROR"
 slug: "mirror"
 type: "artists"
-image: "https://i.ytimg.com/vi/b-3b0TU3224/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/sc98koE5jlE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

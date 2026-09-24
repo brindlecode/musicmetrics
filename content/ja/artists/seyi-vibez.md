@@ -2,7 +2,7 @@
 title: "Seyi Vibez"
 slug: "seyi-vibez"
 type: "artists"
-image: "https://i.ytimg.com/vi/ilfN_PWELkY/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/8P-z0n3nUnU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "El Bogueto"
 slug: "el-bogueto"
 type: "artists"
-image: "https://i.ytimg.com/vi/mkGpOrpuivk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/UZ6i0uexras/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
