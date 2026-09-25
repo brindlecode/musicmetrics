@@ -2,7 +2,7 @@
 title: "🎶 MaS FloW"
 slug: "mas-flow"
 type: "artists"
-image: "https://i.ytimg.com/vi/JAgRdV0rO4M/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/BMPC8RSOFgc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

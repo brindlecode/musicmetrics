@@ -2,7 +2,7 @@
 title: "spastorutti"
 slug: "spastorutti"
 type: "artists"
-image: "https://i.ytimg.com/vi/x6Iqm1KIa10/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/regEsI6eWM4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

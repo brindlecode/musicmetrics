@@ -2,7 +2,7 @@
 title: "MILEY"
 slug: "miley"
 type: "artists"
-image: "https://i.ytimg.com/vi/aWpw-Ynl0Yc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/qwaVhOZkAek/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

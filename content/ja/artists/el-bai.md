@@ -2,7 +2,7 @@
 title: "El Bai"
 slug: "el-bai"
 type: "artists"
-image: "https://i.ytimg.com/vi/MuGBph7xFow/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EFcSFFzP-h8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

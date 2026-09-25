@@ -2,7 +2,7 @@
 title: "Berq"
 slug: "berq"
 type: "artists"
-image: "https://i.ytimg.com/vi/HyHXJvNe_Uo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/G42BJsCs_VE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

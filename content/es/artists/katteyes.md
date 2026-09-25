@@ -2,7 +2,7 @@
 title: "Katteyes"
 slug: "katteyes"
 type: "artists"
-image: "https://i.ytimg.com/vi/4WGysmKMIK4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fpct0IyBA8E/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "Eldorado"
 slug: "eldorado"
 type: "artists"
-image: "https://i.ytimg.com/vi/oofGP-96QoI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/cZxWt74vVM0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
