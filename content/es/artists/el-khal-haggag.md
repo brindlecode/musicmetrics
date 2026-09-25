@@ -2,7 +2,7 @@
 title: "EL KHAL HAGGAG | الخال حجاج"
 slug: "el-khal-haggag"
 type: "artists"
-image: "https://i.ytimg.com/vi/uHxTQY23EpI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/uSONK1OfIm0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

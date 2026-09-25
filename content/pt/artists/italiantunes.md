@@ -2,7 +2,7 @@
 title: "ItalianTunes"
 slug: "italiantunes"
 type: "artists"
-image: "https://i.ytimg.com/vi/rEGXaCrj3mo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/F3VYTJ_s_vk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

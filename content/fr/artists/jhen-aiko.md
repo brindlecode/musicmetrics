@@ -2,7 +2,7 @@
 title: "Jhené Aiko"
 slug: "jhen-aiko"
 type: "artists"
-image: "https://i.ytimg.com/vi/0YMt6raThNE/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/QArBw68H-_Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

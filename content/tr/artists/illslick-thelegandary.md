@@ -2,7 +2,7 @@
 title: "Illslick thelegandary"
 slug: "illslick-thelegandary"
 type: "artists"
-image: "https://i.ytimg.com/vi/a_RvHGNPdro/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A5rQSncfU3M/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

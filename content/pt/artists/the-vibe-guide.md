@@ -2,7 +2,7 @@
 title: "The Vibe Guide"
 slug: "the-vibe-guide"
 type: "artists"
-image: "https://i.ytimg.com/vi/HFFcW2Gusi4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/_hCrHvqRF4Q/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
