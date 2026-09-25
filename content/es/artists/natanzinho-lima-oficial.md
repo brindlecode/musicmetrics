@@ -2,7 +2,7 @@
 title: "Natanzinho Lima Oficial"
 slug: "natanzinho-lima-oficial"
 type: "artists"
-image: "https://i.ytimg.com/vi/ocCHKUds3ig/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/4w20cdb58-8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

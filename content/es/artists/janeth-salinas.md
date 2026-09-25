@@ -2,7 +2,7 @@
 title: "Janeth Salinas"
 slug: "janeth-salinas"
 type: "artists"
-image: "https://i.ytimg.com/vi/dc771buIYwc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/mRXhgfpZgAg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

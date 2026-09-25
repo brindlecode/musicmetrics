@@ -2,7 +2,7 @@
 title: "Polo Vibes"
 slug: "polo-vibes"
 type: "artists"
-image: "https://i.ytimg.com/vi/Izy1slUyhfM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/i7L896AO8Sk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

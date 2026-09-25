@@ -2,7 +2,7 @@
 title: "annalisaufficiale"
 slug: "annalisaufficiale"
 type: "artists"
-image: "https://i.ytimg.com/vi/lGuAu7V08u0/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/ZMGVohozslo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

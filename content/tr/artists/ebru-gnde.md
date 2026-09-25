@@ -2,7 +2,7 @@
 title: "Ebru Gündeş"
 slug: "ebru-gnde"
 type: "artists"
-image: "https://i.ytimg.com/vi/FhTRdfUu0Yc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Vmv745FE6N4/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

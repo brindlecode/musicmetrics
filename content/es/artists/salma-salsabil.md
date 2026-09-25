@@ -2,7 +2,7 @@
 title: "Salma Salsabil"
 slug: "salma-salsabil"
 type: "artists"
-image: "https://i.ytimg.com/vi/W1lvPw3ejuA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/GgpMwVJYkcM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

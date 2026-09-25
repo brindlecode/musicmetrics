@@ -2,7 +2,7 @@
 title: "Channel PBP"
 slug: "channel-pbp"
 type: "artists"
-image: "https://i.ytimg.com/vi/KD8fS9XUh2E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/AwOzmCsAvLc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
