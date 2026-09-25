@@ -2,7 +2,7 @@
 title: "Mirella"
 slug: "mirella"
 type: "artists"
-image: "https://i.ytimg.com/vi/iHnWiISxrqI/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/jLiFuM_RcdQ/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

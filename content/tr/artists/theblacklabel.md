@@ -2,7 +2,7 @@
 title: "THEBLACKLABEL"
 slug: "theblacklabel"
 type: "artists"
-image: "https://i.ytimg.com/vi/1Qx6ktR3CEk/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/KQM9hYlMXsI/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

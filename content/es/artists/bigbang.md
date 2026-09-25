@@ -2,7 +2,7 @@
 title: "BIGBANG"
 slug: "bigbang"
 type: "artists"
-image: "https://i.ytimg.com/vi/L8ZnXgbyUuc/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/YA1IK2HzmGw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

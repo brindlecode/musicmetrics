@@ -2,7 +2,7 @@
 title: "Taylor Swift"
 slug: "taylor-swift"
 type: "artists"
-image: "https://i.ytimg.com/vi/_9jaJtmraXA/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/V-uIp-WuD60/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

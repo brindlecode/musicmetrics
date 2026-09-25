@@ -1,11 +1,11 @@
 ---
-title: "DJ ZINHLE"
+title: "DJ Zinhle"
 slug: "dj-zinhle"
 type: "artists"
-image: "https://i.ytimg.com/vi/bvl39nmaOYU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/r2L2IoUPx8A/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
 monthly_listeners: "--"
-description: "DJ ZINHLE streaming statistics, chart positions and analytics across youtube"
+description: "DJ Zinhle streaming statistics, chart positions and analytics across youtube"
 ---

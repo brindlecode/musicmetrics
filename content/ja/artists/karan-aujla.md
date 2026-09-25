@@ -2,7 +2,7 @@
 title: "Karan Aujla"
 slug: "karan-aujla"
 type: "artists"
-image: "https://i.ytimg.com/vi/3j7bhOvW6jw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Pd1yGW_g2T8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
