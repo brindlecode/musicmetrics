@@ -1,0 +1,12 @@
+<dialog id="search-dialog" class="search-dialog" aria-label="{{ i18n "search" }}">
+  <form method="get" action="{{ "/search/" | relLangURL }}" role="search">
+    {{ partialCached "icons.html" (dict "n" "search") "search" 20 }}
+    <input type="search" name="q" placeholder="{{ i18n "search_placeholder" }}" autocomplete="off" aria-label="{{ i18n "search" }}">
+    <button type="button" class="icon-btn" onclick="this.closest('dialog').close()" aria-label="{{ i18n "close" }}">{{ partialCached "icons.html" (dict "n" "close") "close" 20 }}</button>
+  </form>
+  <ul class="search-results" role="listbox"></ul>
+</dialog>
+<dialog id="video-dialog" class="video-dialog" aria-label="YouTube">
+  <button type="button" class="icon-btn video-dialog__close" onclick="this.closest('dialog').close()" aria-label="{{ i18n "close" }}">{{ partialCached "icons.html" (dict "n" "close" "s" 28) "close" 28 }}</button>
+  <div class="video-dialog__frame"></div>
+</dialog>

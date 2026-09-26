@@ -1,0 +1,6 @@
+<div id="lang-suggest" class="wrap" hidden>
+  <p class="note" style="display:flex;gap:10px;align-items:center;justify-content:center;margin:10px 0 0">
+    {{- range .AllTranslations }}{{ if ne .Language.Lang site.Language.Lang }}<a hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" href="{{ .RelPermalink }}" class="btn btn--sm btn--ghost">{{ .Language.LanguageName }} →</a>{{ end }}{{ end }}
+    <button type="button" class="icon-btn" aria-label="{{ i18n "close" }}">{{ partialCached "icons.html" (dict "n" "close" "s" 16) "close" 16 }}</button>
+  </p>
+</div>

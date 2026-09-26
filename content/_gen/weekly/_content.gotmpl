@@ -1,0 +1,4 @@
+{{- range $id, $w := site.Data.weekly -}}
+  {{- $d := time.AsTime $w.start -}}
+  {{- $.AddPage (dict "path" $id "title" (printf "Week %d, %d" (int $w.week) (int $w.year)) "kind" "page" "type" "weekly" "params" (dict "week" $id) "dates" (dict "date" $d "lastmod" (time.AsTime $w.updated))) -}}
+{{- end -}}

@@ -1,0 +1,69 @@
+{{- $p := . -}}
+{{- $e := dict -}}
+{{- $org := dict "@type" "Organization" "name" "MusicMetrics" "url" site.BaseURL -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+{{- if eq $p.Type "chart" -}}
+  {{- $c := index site.Data.charts $p.Params.chart -}}
+  {{- $ci := partialCached "func/chart-info.html" $p.Params.chart $p.Params.chart -}}
+  {{- $name := partialCached "func/chart-title.html" $p.Params.chart $p.Params.chart site.Language.Lang -}}
+  {{- $els := slice -}}
+  {{- range first 50 $c.items -}}
+    {{- $by := slice -}}
+    {{- range .artists }}{{ $by = $by | append (dict "@type" "MusicGroup" "name" .n) }}{{ end -}}
+    {{- $url := .url -}}
+    {{- with .song }}{{ $url = printf "%s%s" $base (printf "/songs/%s/" . | relLangURL) }}{{ end -}}
+    {{- $type := cond $ci.albums "MusicAlbum" "MusicRecording" -}}
+    {{- $item := dict "@type" $type "name" .title "byArtist" $by -}}
+    {{- with $url }}{{ $item = merge $item (dict "url" .) }}{{ end -}}
+    {{- with .image }}{{ $item = merge $item (dict "image" .) }}{{ end -}}
+    {{- $els = $els | append (dict "@type" "ListItem" "position" .rank "item" $item) -}}
+  {{- end -}}
+  {{- $e = dict "@type" "ItemList" "name" $name "numberOfItems" $c.total "itemListOrder" "https://schema.org/ItemListOrderAscending" "itemListElement" $els -}}
+  {{- $ds := dict "@type" "Dataset" "name" $name "description" (i18n (printf "seo_desc_%s" $ci.platform) (dict "Country" (partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang) "Title" (index $c.items 0).title "Artist" (index $c.items 0).artist "Count" $c.total "Date" "")) "url" $p.Permalink "creator" $org "isAccessibleForFree" true "dateModified" $c.updated "keywords" (slice "music charts" $ci.pname (partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang)) -}}
+  {{- if ne $ci.cc "global" }}{{ $ds = merge $ds (dict "spatialCoverage" (dict "@type" "Place" "name" (index (index site.Data.countries $ci.cc).names "en"))) }}{{ end -}}
+  {{- $e = slice $e $ds -}}
+{{- else if eq $p.Type "artist" -}}
+  {{- $a := index site.Data.artists $p.Params.artist -}}
+  {{- $same := slice -}}
+  {{- range $k, $v := $a.links }}{{ with $v }}{{ $same = $same | append . }}{{ end }}{{ end -}}
+  {{- $tracks := slice -}}
+  {{- range first 10 $a.songs -}}
+    {{- $t := dict "@type" "MusicRecording" "name" .t -}}
+    {{- if .page }}{{ $t = merge $t (dict "url" (printf "%s%s" $base (printf "/songs/%s/" (replace .k "--" "-") | relLangURL))) }}{{ end -}}
+    {{- $tracks = $tracks | append $t -}}
+  {{- end -}}
+  {{- $e = dict "@type" "MusicGroup" "name" $a.name "url" $p.Permalink "track" $tracks -}}
+  {{- with $a.image_large | default $a.image }}{{ $e = merge $e (dict "image" .) }}{{ end -}}
+  {{- with $same }}{{ $e = merge $e (dict "sameAs" .) }}{{ end -}}
+{{- else if eq $p.Type "song" -}}
+  {{- $s := index site.Data.songs $p.Params.song -}}
+  {{- $by := slice -}}
+  {{- range $s.artists -}}
+    {{- $g := dict "@type" "MusicGroup" "name" .n -}}
+    {{- if .page }}{{ $g = merge $g (dict "url" (printf "%s%s" $base (printf "/artists/%s/" .s | relLangURL))) }}{{ end -}}
+    {{- $by = $by | append $g -}}
+  {{- end -}}
+  {{- $same := slice -}}
+  {{- range $k, $v := $s.links }}{{ with $v }}{{ $same = $same | append . }}{{ end }}{{ end -}}
+  {{- $e = dict "@type" "MusicRecording" "name" $s.title "byArtist" $by "url" $p.Permalink -}}
+  {{- with $s.image_large | default $s.image }}{{ $e = merge $e (dict "image" .) }}{{ end -}}
+  {{- with $same }}{{ $e = merge $e (dict "sameAs" .) }}{{ end -}}
+  {{- with $s.genre }}{{ $e = merge $e (dict "genre" .) }}{{ end -}}
+  {{- with $s.release }}{{ $e = merge $e (dict "datePublished" .) }}{{ end -}}
+  {{- with $s.album }}{{ $e = merge $e (dict "inAlbum" (dict "@type" "MusicAlbum" "name" .)) }}{{ end -}}
+{{- else if eq $p.Type "weekly" -}}
+  {{- if $p.IsPage -}}
+    {{- $w := index site.Data.weekly $p.Params.week -}}
+    {{- $e = dict "@type" "Article" "headline" (i18n "seo_title_week" (dict "Week" $w.week "Year" $w.year)) "datePublished" $w.start "dateModified" $w.updated "author" $org "publisher" (merge $org (dict "logo" (dict "@type" "ImageObject" "url" ("/icon-512.png" | absURL)))) "mainEntityOfPage" $p.Permalink -}}
+    {{- with (index $w.top 0).img }}{{ $e = merge $e (dict "image" .) }}{{ end -}}
+  {{- end -}}
+{{- else if eq $p.Type "most-viewed" -}}
+  {{- $els := slice -}}
+  {{- range first 50 site.Data.youtube_most_viewed -}}
+    {{- $els = $els | append (dict "@type" "ListItem" "position" .rank "item" (dict "@type" "MusicRecording" "name" .title "byArtist" (dict "@type" "MusicGroup" "name" .artist) "url" (printf "https://www.youtube.com/watch?v=%s" .video_id))) -}}
+  {{- end -}}
+  {{- $e = dict "@type" "ItemList" "name" (i18n "seo_title_most_viewed") "itemListElement" $els -}}
+{{- else if and $p.IsPage (eq $p.Type "page") -}}
+  {{- $e = dict "@type" (cond (eq $p.Params.schemaType "") "WebPage" ($p.Params.schemaType | default "WebPage")) "name" $p.Title "url" $p.Permalink "dateModified" ($p.Lastmod.Format "2006-01-02") "publisher" $org -}}
+{{- end -}}
+{{- return $e -}}

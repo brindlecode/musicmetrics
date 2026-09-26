@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{- $list := site.Data.youtube_most_viewed -}}
+{{- $bill := where $list "views" "ge" 1000000000 -}}
+{{- $top := index $list 0 -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow"><span class="pmark pmark--youtube"></span>YouTube · {{ i18n "records" }}</span>
+      <h1>{{ i18n "h1_most_viewed" }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_most_viewed" (dict "Count" (len $bill)) }}</p>
+      <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "updated" }} <time data-rel datetime="{{ site.Data.meta.updated }}">{{ (time.AsTime site.Data.meta.updated).Format "2006-01-02 15:04" }} UTC</time></span><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>
+    </header>
+    <p class="answer">{{ i18n "faq_mv_a1" (dict "Title" $top.title "Artist" $top.artist "Views" (lang.FormatNumberCustom 0 $top.views) "Date" "") | safeHTML }}</p>
+    <div class="stats" style="margin-bottom:24px">
+      <div class="stat"><span class="stat__v">{{ len $bill }}</span><span class="stat__l">{{ i18n "billion_club" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ partial "func/num.html" $top.views }}</span><span class="stat__l">{{ i18n "record_views" }}</span></div>
+      {{- $hot := first 1 (sort (where $list "views_day" "ne" nil) "views_day" "desc") }}{{ with index $hot 0 }}
+      <div class="stat"><span class="stat__v">+{{ partial "func/num.html" .views_day }}</span><span class="stat__l">{{ i18n "fastest_24h" }}</span></div>
+      <div class="stat"><span class="stat__v" style="font-size:1.1rem;font-stretch:80%">{{ .title | truncate 34 }}</span><span class="stat__l">{{ .artist }}</span></div>
+      {{- end }}
+    </div>
+    <div class="toolbar" data-filter-for="mv-list"><input class="input grow" type="search" placeholder="{{ i18n "filter_chart" }}" aria-label="{{ i18n "filter_chart" }}"></div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th class="r">#</th><th>{{ i18n "video" }}</th><th class="r">{{ i18n "views" }}</th><th class="r hide-m">{{ i18n "per_day" }}</th><th class="r hide-m">{{ i18n "year" }}</th><th></th></tr></thead>
+        <tbody id="mv-list">
+        {{- range $list }}
+          <tr>
+            <td class="r big">{{ .rank }}</td>
+            <td><div class="cell-song"><img src="https://i.ytimg.com/vi/{{ .video_id }}/default.jpg" alt="" width="53" height="40" style="width:53px" loading="lazy"><span><strong>{{ .title }}</strong><br><span class="muted small">{{ .artist }}</span></span></div></td>
+            <td class="r"><strong>{{ lang.FormatNumberCustom 0 .views }}</strong></td>
+            <td class="r hide-m">{{ with .views_day }}+{{ partial "func/num.html" . }}{{ else }}–{{ end }}</td>
+            <td class="r hide-m">{{ with .published }}{{ substr . 0 4 }}{{ end }}</td>
+            <td class="r"><button class="play" type="button" data-yt="{{ .video_id }}" aria-label="{{ i18n "play_video" }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button></td>
+          </tr>
+        {{- end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">{{ i18n "most_viewed_note" }}</p>
+    {{ partial "faq.html" . }}
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

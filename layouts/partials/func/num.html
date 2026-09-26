@@ -1,0 +1,9 @@
+{{- /* Compact number: 1234567 -> 1.2M */ -}}
+{{- $n := float (. | default 0) -}}
+{{- $out := "" -}}
+{{- if ge $n 1e9 }}{{ $out = printf "%.2fB" (div $n 1e9) }}
+{{- else if ge $n 1e6 }}{{ $out = printf "%.1fM" (div $n 1e6) }}
+{{- else if ge $n 1e3 }}{{ $out = printf "%.1fK" (div $n 1e3) }}
+{{- else }}{{ $out = printf "%.0f" $n }}{{ end -}}
+{{- $out = replaceRE `\.0+([KMB])$` "$1" $out -}}
+{{- return $out -}}

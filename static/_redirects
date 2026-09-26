@@ -1,0 +1,29 @@
+# Old URL structure (English used to live under /en/)
+/en              /                           301!
+/en/*            /:splat                     301!
+
+# Legacy sections
+/spotify         /charts/                    301
+/spotify/*       /charts/                    301
+/:lang/spotify   /:lang/charts/              301
+/:lang/spotify/* /:lang/charts/              301
+/youtube         /charts/youtube/            301
+/youtube/trending/:cc   /charts/youtube/:cc/ 301
+/youtube/*       /charts/youtube/            301
+/:lang/youtube   /:lang/charts/youtube/      301
+/:lang/youtube/trending/:cc /:lang/charts/youtube/:cc/ 301
+/:lang/youtube/* /:lang/charts/youtube/      301
+/trending        /charts/youtube/            301
+/trending/*      /charts/youtube/            301
+/:lang/trending  /:lang/charts/youtube/      301
+/:lang/trending/* /:lang/charts/youtube/     301
+/charts/spotify/:cc  /countries/:cc/         301
+/:lang/charts/spotify/:cc /:lang/countries/:cc/ 301
+
+# Language 404 pages
+/tr/*  /tr/404.html  404
+/es/*  /es/404.html  404
+/pt/*  /pt/404.html  404
+/de/*  /de/404.html  404
+/fr/*  /fr/404.html  404
+/ja/*  /ja/404.html  404

@@ -1,91 +1,72 @@
-<!DOCTYPE html>
-<html lang="{{ .Lang }}" dir="ltr">
+<!doctype html>
+{{- $seo := partial "seo.html" . }}
+<html lang="{{ site.Language.LanguageCode }}" data-prefix="{{ relLangURL "/" }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-
-  {{/* SEO Meta */}}
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <link rel="canonical" href="{{ .Permalink }}">
-
-  {{/* hreflang for multilingual SEO */}}
-  {{ if .IsTranslated }}
-    {{ range .Translations }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-    {{ end }}
-    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-  {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ replace .Permalink (printf "/%s/" .Lang) "/en/" }}">
-
-  {{/* Open Graph */}}
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:site_name" content="{{ site.Title }}">
-  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-  <meta property="og:locale" content="{{ site.Language.Params.locale | default "en_US" }}">
-
-  {{/* Twitter Card */}}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ .Title }}">
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-
-  {{/* Favicon */}}
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-
-  {{/* Preconnect */}}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  {{/* Main CSS */}}
-  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-
-  {{/* Schema.org structured data */}}
-  {{ block "schema" . }}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MusicMetrics",
-    "url": "{{ site.BaseURL }}",
-    "description": "{{ site.Params.description }}",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{{ site.BaseURL }}{{ .Lang }}/search/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  {{ end }}
-
-  {{/* AdSense - uncomment when approved */}}
-  {{/* {{ with site.Params.adsenseId }}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>{{ end }} */}}
-
-  {{ block "head" . }}{{ end }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ $seo.title }}</title>
+<meta name="description" content="{{ $seo.description }}">
+{{- if $seo.noindex }}
+<meta name="robots" content="noindex, follow">
+{{- else }}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{- end }}
+<link rel="canonical" href="{{ $seo.canonical }}">
+{{- if not $seo.noindex }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{- end }}
+{{- range where .AllTranslations "Language.Lang" "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
+{{- end }}
+<script>(function(){try{var t=localStorage.getItem('mm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f0f0d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:site_name" content="MusicMetrics">
+<meta property="og:type" content="{{ $seo.ogType }}">
+<meta property="og:title" content="{{ $seo.ogTitle }}">
+<meta property="og:description" content="{{ $seo.description }}">
+<meta property="og:url" content="{{ $seo.canonical }}">
+<meta property="og:image" content="{{ $seo.image }}">
+<meta property="og:locale" content="{{ site.Language.Params.locale }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ .Language.Params.locale }}">
+{{- end }}
+<meta name="twitter:card" content="{{ if $seo.bigImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:site" content="@{{ site.Params.social.twitter }}">
+<meta name="twitter:title" content="{{ $seo.ogTitle }}">
+<meta name="twitter:description" content="{{ $seo.description }}">
+<meta name="twitter:image" content="{{ $seo.image }}">
+{{- with site.Params.verify.google }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+{{- with site.Params.verify.bing }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
+{{- with site.Params.verify.yandex }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
+<link rel="alternate" type="application/rss+xml" title="MusicMetrics Weekly" href="{{ "/weekly/index.xml" | relLangURL }}">
+{{- partial "schema/base.html" . }}
+{{- partial "schema/page.html" (dict "page" . "seo" $seo) }}
+{{- partial "tracking-head.html" . }}
 </head>
 <body>
-  {{/* Skip to content for accessibility */}}
-  <a href="#main-content" class="skip-link">Skip to content</a>
-
-  {{ partial "header.html" . }}
-
-  <main id="main-content">
-    {{ block "main" . }}{{ end }}
-  </main>
-
-  {{ partial "footer.html" . }}
-
-  {{/* Chart.js from CDN */}}
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-
-  {{/* Theme toggle + main JS */}}
-  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
-  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-
-  {{ block "scripts" . }}{{ end }}
+<a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
+{{ partial "header.html" . }}
+{{ partialCached "ticker.html" . site.Language.Lang }}
+{{ partial "lang-suggest.html" . }}
+<main id="main">
+{{ block "main" . }}{{ end }}
+</main>
+{{ partialCached "footer.html" . site.Language.Lang }}
+{{ partialCached "bottom-nav.html" . site.Language.Lang .Section .IsHome }}
+{{ partialCached "dialogs.html" . site.Language.Lang }}
+<script>window.MM_I18N={{ dict "copied" (i18n "link_copied") "noResults" (i18n "no_results") "searchHint" (i18n "search_hint") "kinds" (dict "a" (i18n "kind_artist") "s" (i18n "kind_song") "c" (i18n "kind_country") "p" (i18n "kind_chart")) | jsonify | safeJS }};</script>
+{{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- partial "tracking-body.html" . }}
 </body>
 </html>

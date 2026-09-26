@@ -1,170 +1,339 @@
-[site_title]
-other = "MusicMetrics - Global Music Charts & Streaming Stats"
+# ---------------------------------------------------------------- general
+skip_to_content = "Skip to content"
+main_navigation = "Main navigation"
+breadcrumb = "Breadcrumb"
+language = "Language"
+toggle_theme = "Toggle dark mode"
+close = "Close"
+search = "Search"
+search_placeholder = "Search artists, songs, countries…"
+search_hint = "Search artists, songs and countries"
+no_results = "No results"
+link_copied = "Link copied"
+kind_artist = "Artist"
+kind_song = "Song"
+kind_country = "Country"
+kind_chart = "Chart"
+share = "Share"
+view = "View"
+view_all = "View all"
+more = "More"
+and = "and"
+advertisement = "Advertisement"
+updated = "Updated"
+last_update = "Last update"
+last_reviewed = "Last reviewed"
+archive = "Archive"
+faq = "Frequently asked questions"
+records = "Records"
+year = "Year"
+video = "Video"
 
-[tagline]
-other = "All your music data needs in one place"
+# ------------------------------------------------------------------ nav
+nav_home = "Home"
+nav_charts = "Charts"
+nav_artists = "Artists"
+nav_countries = "Countries"
+nav_songs = "Songs"
+nav_weekly = "Weekly"
+nav_youtube_records = "YouTube Records"
+about = "About"
+methodology = "Methodology"
+contact = "Contact"
+privacy_policy = "Privacy Policy"
+terms_of_service = "Terms of Use"
 
-[nav_home]
-other = "Home"
+# --------------------------------------------------------------- footer
+footer_about = "Independent music charts from YouTube, Apple Music, Deezer and more — for every country, updated every 6 hours."
+footer_explore = "Explore"
+footer_top_countries = "Top countries"
+footer_disclaimer = "Not affiliated with YouTube, Apple, Deezer or Spotify. Data from public sources."
 
-[nav_spotify]
-other = "Spotify"
+# ------------------------------------------------------------ chart terms
+song = "Song"
+songs = "Songs"
+artist = "Artist"
+album = "Album"
+genre = "Genre"
+chart = "Chart"
+charts = "Charts"
+country = "Country"
+countries = "Countries"
+countries_lower = "countries"
+position = "Position"
+points = "Points"
+views = "Views"
+views_lower = "views"
+listeners = "Listeners"
+peak_short = "Peak"
+days_short = "Days"
+day_short = "day"
+per_day = "Per day"
+new = "NEW"
+re_entry = "Re-entry"
+no_change = "No change"
+up_positions = "Up {{ .N }}"
+down_positions = "Down {{ .N }}"
 
-[nav_youtube]
-other = "YouTube"
 
-[nav_charts]
-other = "Charts"
 
-[nav_artists]
-other = "Artists"
 
-[nav_countries]
-other = "Countries"
 
-[nav_trending]
-other = "Trending"
+worldwide = "Worldwide"
+worldwide_lower = "worldwide"
+global_200 = "Global 200"
+global_rank = "Global rank"
+best_position = "Best position"
+top_song = "Top song"
+top_artists = "Top artists"
+top_albums = "Top albums"
+yt_views = "YouTube views"
+yt_subscribers = "YouTube subscribers"
+deezer_fans = "Deezer fans"
+released = "Released"
+cross_platform = "Cross-platform"
+cross_country = "All countries"
+full_chart = "Full chart ({{ .N }})"
+all_charts = "All charts"
+more_charts = "More charts"
+other_charts = "Other charts"
+all_charts_in = "All charts in {{ .Country }}"
+charts_in = "Charts in {{ .Country }}"
+select_country = "Select country"
+filter_chart = "Filter by song or artist…"
+filter_countries = "Filter countries…"
+filter_artists = "Filter artists…"
+new_entries_only = "New only"
+how_calculated = "How it's calculated"
+play_video = "Play video"
+play_top_song = "Play top song"
+chart_legend = "▲▼ movement vs. previous day · NEW first appearance · RE re-entry · Peak and days since tracking began."
+data_note = "Chart data is collected automatically from public sources every 6 hours. Spotted a mistake? Let us know via the contact page."
 
-[search_placeholder]
-other = "Search artists, songs, albums..."
+# chart titles ({{ .Country }} is localized)
+chart_title_youtube = "YouTube Trending Music · {{ .Country }}"
+chart_title_apple = "Apple Music Top 100 · {{ .Country }}"
+chart_title_apple-albums = "Apple Music Top Albums · {{ .Country }}"
+chart_title_deezer = "Deezer Top 100 · {{ .Country }}"
+chart_title_lastfm = "Last.fm Top Tracks · {{ .Country }}"
+chart_title_musicmetrics = "Global 200 · Most Popular Songs in the World"
 
-[daily_chart]
-other = "Daily Chart"
+chip_youtube = "YouTube"
+chip_apple = "Apple Music"
+chip_apple-albums = "Apple Albums"
+chip_deezer = "Deezer"
+chip_lastfm = "Last.fm"
+chip_musicmetrics = "Global 200"
 
-[weekly_chart]
-other = "Weekly Chart"
+hub_youtube = "YouTube Music Charts"
+hub_apple = "Apple Music Charts"
+hub_apple-albums = "Apple Music Album Charts"
+hub_deezer = "Deezer Charts"
+hub_lastfm = "Last.fm Charts"
+hub_desc_youtube = "Trending music videos in every country, with total and daily views."
+hub_desc_apple = "The 100 most played songs on Apple Music in each country."
+hub_desc_apple-albums = "The 100 most played albums on Apple Music in each country."
+hub_desc_deezer = "Official Deezer Top 100 charts, worldwide and by country."
+hub_desc_lastfm = "The most listened-to tracks on Last.fm, by number of listeners."
 
-[top_songs]
-other = "Top Songs"
+lede_youtube = "The music videos trending on YouTube in {{ .Country }} right now, with total views and views in the last 24 hours."
+lede_apple = "The {{ .Count }} most played songs on Apple Music in {{ .Country }} today, with daily movement, peak and days on chart."
+lede_apple-albums = "The {{ .Count }} most played albums on Apple Music in {{ .Country }} today."
+lede_deezer = "The official Deezer Top {{ .Count }} for {{ .Country }}, updated several times a day."
+lede_lastfm = "The most listened-to tracks on Last.fm in {{ .Country }}, ranked by number of listeners."
+lede_musicmetrics = "The {{ .Count }} most popular songs in the world right now, combining YouTube, Apple Music, Deezer and more across every country we track."
 
-[top_albums]
-other = "Top Albums"
+source_youtube = "Source: YouTube Data API (trending, music category)."
+source_apple = "Source: Apple Music most-played charts."
+source_apple-albums = "Source: Apple Music most-played album charts."
+source_deezer = "Source: Deezer Charts."
+source_lastfm = "Source: Last.fm API."
+source_musicmetrics = "Calculated by MusicMetrics from every chart we track."
 
-[top_artists]
-other = "Top Artists"
+answer_chart = "The number one on <strong>{{ .Platform }}</strong> in {{ .Country }} right now is <strong>“{{ .Title }}” by {{ .Artist }}</strong> (peak #{{ .Peak }}, days on chart: {{ .Days }})."
+answer_chart_album = "The number one album on <strong>{{ .Platform }}</strong> in {{ .Country }} right now is <strong>“{{ .Title }}” by {{ .Artist }}</strong>."
+answer_country = "The number one song in {{ .Country }} right now is <strong>“{{ .Title }}” by {{ .Artist }}</strong> (on {{ .Platform }})."
+answer_artist = "{{ .Name }}’s biggest song right now is <strong>“{{ .Song }}”</strong>. {{ .Name }} is charting in {{ .Countries }} countries, with a best current position of <strong>#{{ .Best }}</strong> ({{ .BestChart }})."
+answer_song = "<strong>“{{ .Title }}” by {{ .Artist }}</strong> is on {{ .Charts }} charts in {{ .Countries }} countries. Its best current position is <strong>#{{ .Best }}</strong> ({{ .BestChart }})."
 
-[streams]
-other = "Streams"
+# ------------------------------------------------------------------ home
+home_title = "MusicMetrics — Music Charts & Streaming Stats for Every Country"
+home_description = "What the world is listening to right now: #1 is “{{ .Title }}” by {{ .Artist }}. Live music charts from YouTube, Apple Music and Deezer for 90+ countries, updated every 6 hours."
+home_description_generic = "Live music charts and streaming statistics from YouTube, Apple Music and Deezer for every country."
+most_popular_song_world = "The most popular song in the world right now"
+lead_stats = "Charting in {{ .Countries }} countries · on {{ .Charts }} charts · days in the Global 200: {{ .Days }}"
+see_global_200 = "See the Global 200"
+global_top_10 = "Global top 10"
+global_top_50 = "Global top 50"
+key_numbers = "Key numbers"
+charts_tracked = "Charts tracked"
+songs_tracked = "Songs tracked"
+number_one_around_world = "No. 1 around the world"
+number_one_now = "No. 1 now"
+all_countries_n = "All {{ .N }} countries"
+biggest_climbers = "Biggest climbers"
+hot_new_entries = "Hot new entries"
+movers_tomorrow = "Movement arrows appear after the second day of tracking."
+no_new_entries = "No new entries today."
+top_artists_now = "Top artists right now"
+artist_ranking = "Artist ranking"
+most_watched_24h = "Most watched on YouTube in the last 24 hours"
+browse_by_platform = "Browse by platform"
+about_home_h = "Music charts for every country, in one place"
+about_home_p1 = "MusicMetrics collects the official charts of YouTube, Apple Music and Deezer in dozens of countries every six hours and keeps the full history: daily movement, peak positions, days on chart and YouTube daily views. The Global 200 combines all of them into one ranking of the most popular songs in the world."
+about_home_p2 = "Every number is calculated automatically from public data. Read exactly how in our"
 
-[views]
-other = "Views"
+# ----------------------------------------------------------------- pages
+h1_charts = "Music charts"
+h1_country = "{{ .Country }} music charts today"
+h1_countries = "Music charts in {{ .Count }} countries"
+h1_artists = "Top artists in the world"
+h1_most_viewed = "Most viewed music videos on YouTube"
+h1_week = "{{ .Title }} by {{ .Artist }} leads the week"
+lede_country = "Today's top songs in {{ .Country }} on {{ .Count }} charts — YouTube, Apple Music, Deezer and more — updated every 6 hours."
+lede_countries = "Pick a country to see its YouTube, Apple Music and Deezer charts. {{ .Count }} countries, updated every 6 hours."
+lede_artists = "The artists with the most chart power worldwide right now, ranked by their songs' positions across every chart we track."
+lede_most_viewed = "The all-time most viewed music videos on YouTube, with live view counts and daily views. {{ .Count }} videos have passed one billion views."
+lede_week = "The Global 200 for week {{ .Week }} of {{ .Year }}: “{{ .Title }}” by {{ .Artist }} was the most popular song in the world."
+country_charts = "Country charts"
+top_artists_in = "Most charted artists in {{ .Country }}"
+chart_matrix = "Every chart by country"
+number_ones_by_country = "Number ones by country"
+albums_desc = "The most popular albums across Apple Music album charts in every country."
+most_viewed_desc = "All-time most viewed music videos and the Billion Views Club."
+most_viewed_videos = "Most viewed music videos"
+most_viewed_note = "View counts are refreshed every 6 hours via the YouTube Data API. Daily views are measured over the last ~24 hours."
+billion_club = "Billion Views Club"
+record_views = "Most views ever"
+fastest_24h = "Most views in 24h"
+week_label = "Week {{ .Week }}, {{ .Year }}"
+top_artists_week = "Top artists of the week"
+not_found_title = "This page isn't on the chart"
+not_found_text = "The page may have dropped out of the charts or moved. Try searching for an artist, song or country."
 
-[rank]
-other = "Rank"
+artist_lede = "{{ .Name }} has {{ .Songs }} songs on {{ .Charts }} charts in {{ .Countries }} countries right now."
+artist_rank = "Artist rank"
+charting_songs = "Charting songs"
+songs_on_charts = "{{ .Name }} songs on the charts"
+charting_in = "Where {{ .Name }} is charting"
+listen_to = "Listen to {{ .Name }}"
+listen_and_buy = "Listen & buy"
+fans_also_follow = "Fans also follow"
+more_by = "More by {{ .Name }}"
+view_artist = "Artist page"
+chart_positions = "Chart positions"
+official_video = "Official video"
 
-[artist]
-other = "Artist"
+listen = "Listen"
+watch = "Watch"
+listen_free_trial = "Listen · free trial"
+stream_or_buy = "Stream or buy"
+vinyl_cds = "Vinyl & CDs"
+shop_on = "Shop on"
+concert_tickets = "Concert tickets"
+affiliate_disclosure = "Some links are affiliate links: we may earn a commission at no extra cost to you. It never affects the charts."
 
-[song]
-other = "Song"
+# ------------------------------------------------------------------- SEO
+seo_title_youtube = "Trending Music Videos in {{ .Country }} Today — YouTube Chart"
+seo_title_apple = "Apple Music Top 100 {{ .Country }} Today — Most Played Songs"
+seo_title_apple-albums = "Apple Music Top Albums {{ .Country }} Today"
+seo_title_deezer = "Deezer Top 100 {{ .Country }} Today — Chart"
+seo_title_lastfm = "Last.fm Top Tracks {{ .Country }} — Most Listened Songs"
+seo_title_musicmetrics = "Global 200: The Most Popular Songs in the World Today"
+seo_desc_youtube = "#1 on YouTube in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Top {{ .Count }} trending music videos with views and daily views. {{ .Date }}."
+seo_desc_apple = "#1 on Apple Music in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Full Top {{ .Count }} with movement, peak and days on chart. {{ .Date }}."
+seo_desc_apple-albums = "#1 album on Apple Music in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Full Top {{ .Count }} albums. {{ .Date }}."
+seo_desc_deezer = "#1 on Deezer in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Full Top {{ .Count }} with daily movement and peaks. {{ .Date }}."
+seo_desc_lastfm = "#1 on Last.fm in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Top {{ .Count }} tracks by listeners. {{ .Date }}."
+seo_desc_musicmetrics = "#1 in the world right now: “{{ .Title }}” by {{ .Artist }}. The Global 200 combines YouTube, Apple Music and Deezer charts in 90+ countries. {{ .Date }}."
+seo_title_hub_youtube = "YouTube Music Charts by Country — Trending Music Videos"
+seo_title_hub_apple = "Apple Music Charts by Country — Top 100 Songs"
+seo_title_hub_apple-albums = "Apple Music Album Charts by Country — Top 100 Albums"
+seo_title_hub_deezer = "Deezer Charts by Country — Top 100"
+seo_title_hub_lastfm = "Last.fm Charts by Country"
+seo_desc_hub = "{{ .Platform }} charts for every country in one place: see the #1 song in each country and the full top 100, updated every 6 hours."
+seo_title_charts = "Music Charts: YouTube, Apple Music & Deezer by Country"
+seo_desc_charts = "{{ .Count }} live music charts in {{ .Countries }} countries — YouTube, Apple Music, Deezer — plus the cross-platform Global 200. Updated every 6 hours."
+seo_title_albums = "Top Albums in the World Today — Global Album Chart"
+seo_desc_albums = "The most popular albums across every country right now. #1: “{{ .Title }}” by {{ .Artist }}."
+seo_title_most_viewed = "Most Viewed Music Videos on YouTube (All Time) — Live Views"
+seo_desc_most_viewed = "The most viewed music video on YouTube is “{{ .Title }}” by {{ .Artist }} with {{ .Views }} views. Live ranking with daily views and the Billion Views Club."
+seo_title_artist = "{{ .Name }}: Charts, Top Songs & Streaming Stats"
+seo_desc_artist = "{{ .Name }} is #{{ .Rank }} worldwide on MusicMetrics. Biggest song: “{{ .Song }}”. Chart positions in {{ .Countries }} countries across {{ .Charts }} charts."
+seo_title_song = "{{ .Title }} — {{ .Artist }}: Chart Positions & Stats"
+seo_desc_song = "“{{ .Title }}” by {{ .Artist }} is on {{ .Charts }} charts in {{ .Countries }} countries. Best position: #{{ .Best }} ({{ .BestChart }}). YouTube views and daily stats."
+seo_title_songs = "Top Songs in the World Right Now"
+seo_title_country = "{{ .Country }} Music Charts Today — Top Songs on YouTube, Apple Music & Deezer"
+seo_desc_country = "The #1 song in {{ .Country }} right now: “{{ .Title }}” by {{ .Artist }}. All top songs charts for {{ .Country }} in one place. {{ .Date }}."
+seo_title_countries = "Music Charts by Country ({{ .Count }} Countries)"
+seo_desc_countries = "Top songs in {{ .Count }} countries on YouTube, Apple Music and Deezer. Find the #1 song in any country, updated every 6 hours."
+seo_title_artists = "Top Artists in the World Right Now — Global Artist Ranking"
+seo_desc_artists = "The most popular artists in the world right now, ranked by their chart positions across YouTube, Apple Music and Deezer in 90+ countries."
+seo_title_week = "Week {{ .Week }}, {{ .Year }}: The Biggest Songs in the World"
+seo_desc_week = "The Global 200 for week {{ .Week }} of {{ .Year }}. #1: “{{ .Title }}” by {{ .Artist }}. Number ones in every country and the top artists of the week."
+seo_title_weekly = "Weekly Music Chart Recaps"
+seo_desc_weekly = "A weekly archive of the biggest songs and artists in the world, and the number ones in every country."
 
-[album]
-other = "Album"
+# ------------------------------------------------------------------- FAQ
+faq_home_q1 = "What is the most popular song in the world right now?"
+faq_home_a1 = "According to the MusicMetrics Global 200 ({{ .Date }}), the most popular song in the world right now is “{{ .Title }}” by {{ .Artist }}. It is charting in {{ .Countries }} countries on {{ .Charts }} charts across YouTube, Apple Music and Deezer."
+faq_home_q2 = "How are the MusicMetrics charts calculated?"
+faq_home_a2 = "We collect official public charts from YouTube, Apple Music and Deezer. Every position earns points weighted by platform and market size; the Global 200 ranks songs by their total points. The full formula is on the Methodology page."
+faq_home_q3 = "How often are the charts updated?"
+faq_home_a3 = "Every 6 hours. Movement arrows compare with the previous day, and we keep the history of every position to show peaks and days on chart."
+faq_home_q4 = "Which countries and platforms are covered?"
+faq_home_a4 = "{{ .Charts }} charts in {{ .Countries }} countries: YouTube trending music, Apple Music Top 100 songs and albums, Deezer Top 100 and, where available, Last.fm."
+faq_chart_q1 = "What is the number one song on {{ .Platform }} in {{ .Country }} today?"
+faq_chart_q1_album = "What is the number one album on {{ .Platform }} in {{ .Country }} today?"
+faq_chart_a1 = "As of {{ .Date }}, “{{ .Title }}” by {{ .Artist }} is number one on {{ .Platform }} in {{ .Country }}. Days on chart: {{ .Days }}; peak position: #{{ .Peak }}."
+faq_chart_q2 = "What is the biggest new entry on {{ .Platform }} in {{ .Country }}?"
+faq_chart_a2 = "The highest new entry is “{{ .Title }}” by {{ .Artist }} at #{{ .Rank }}. There are {{ .Count }} new entries on today's chart."
+faq_chart_q3 = "How often is this chart updated?"
+faq_chart_a3_youtube = "Every 6 hours, using YouTube's official trending list for the music category. View counts and daily views are refreshed at the same time."
+faq_chart_a3_apple = "Every 6 hours from Apple Music's official most-played chart. Movement is compared with the previous day."
+faq_chart_a3_apple-albums = "Every 6 hours from Apple Music's official most-played album chart."
+faq_chart_a3_deezer = "Every 6 hours from the official Deezer Charts playlist."
+faq_chart_a3_lastfm = "Every 6 hours from the Last.fm API."
+faq_chart_a3_musicmetrics = "Every 6 hours. The Global 200 is recalculated from every chart we track each time new data arrives."
+faq_artist_q1 = "What is {{ .Name }}'s most popular song right now?"
+faq_artist_a1 = "{{ .Name }}'s most popular song right now is “{{ .Song }}”, which is on {{ .Charts }} charts with a best position of #{{ .Best }}."
+faq_artist_q2 = "In which countries is {{ .Name }} charting?"
+faq_artist_a2 = "{{ .Name }} is currently charting in {{ .Count }} countries, including {{ .List }}, across {{ .Charts }} charts."
+faq_artist_q3 = "How popular is {{ .Name }} worldwide?"
+faq_artist_a3 = "{{ .Name }} is ranked #{{ .Rank }} among artists worldwide on MusicMetrics, with {{ .Songs }} songs currently on the charts."
+faq_song_q1 = "Who sings “{{ .Title }}”?"
+faq_song_a1 = "“{{ .Title }}” is performed by {{ .Artists }}."
+faq_song_q2 = "Where is “{{ .Title }}” charting?"
+faq_song_a2 = "“{{ .Title }}” is on {{ .Charts }} charts in {{ .Countries }} countries. Its best current position is #{{ .Best }} ({{ .BestChart }}), and it is #{{ .Rank }} in the MusicMetrics global ranking."
+faq_song_q3 = "How many views does “{{ .Title }}” have on YouTube?"
+faq_song_a3 = "As of {{ .Date }}, the official video of “{{ .Title }}” has {{ .Views }} views on YouTube, gaining about {{ .Daily }} views per day."
+faq_country_q1 = "What is the number one song in {{ .Country }} right now?"
+faq_country_a1 = "As of {{ .Date }}, the number one song in {{ .Country }} is “{{ .Title }}” by {{ .Artist }} on {{ .Platform }}."
+faq_country_q2 = "Who are the most popular artists in {{ .Country }} right now?"
+faq_country_a2 = "The artists with the most songs on the {{ .Country }} charts right now are {{ .List }}."
+faq_country_q3 = "Which music charts are available for {{ .Country }}?"
+faq_country_a3 = "MusicMetrics tracks {{ .Count }} charts for {{ .Country }}, including YouTube trending music, Apple Music and Deezer where available, updated every 6 hours."
+faq_mv_q1 = "What is the most viewed music video on YouTube?"
+faq_mv_a1 = "The most viewed music video on YouTube is “{{ .Title }}” by {{ .Artist }}, with {{ .Views }} views."
+faq_mv_q2 = "How many music videos have more than one billion views?"
+faq_mv_a2 = "{{ .Count }} of the music videos we track have passed one billion views on YouTube."
 
-[change]
-other = "Change"
+[days_count]
+one = "{{ .Count }} day"
+other = "{{ .Count }} days"
 
-[country]
-other = "Country"
+[entries_count]
+one = "{{ .Count }} entry"
+other = "{{ .Count }} entries"
 
-[global]
-other = "Global"
+[charts_count]
+one = "{{ .Count }} chart"
+other = "{{ .Count }} charts"
 
-[daily]
-other = "Daily"
+[songs_count]
+one = "{{ .Count }} song"
+other = "{{ .Count }} songs"
 
-[weekly]
-other = "Weekly"
-
-[all_time]
-other = "All Time"
-
-[most_streamed]
-other = "Most Streamed"
-
-[most_viewed]
-other = "Most Viewed"
-
-[monthly_listeners]
-other = "Monthly Listeners"
-
-[peak_position]
-other = "Peak Position"
-
-[current_position]
-other = "Current Position"
-
-[days_on_chart]
-other = "Days on Chart"
-
-[last_updated]
-other = "Last Updated"
-
-[view_all]
-other = "View All"
-
-[compare_artists]
-other = "Compare Artists"
-
-[share]
-other = "Share"
-
-[chart_history]
-other = "Chart History"
-
-[worldwide]
-other = "Worldwide"
-
-[footer_about]
-other = "MusicMetrics provides real-time music charts, streaming statistics, and analytics from all major platforms. Free, open, and updated daily."
-
-[footer_platforms]
-other = "Platforms"
-
-[footer_resources]
-other = "Resources"
-
-[footer_legal]
-other = "Legal"
-
-[privacy_policy]
-other = "Privacy Policy"
-
-[terms_of_service]
-other = "Terms of Service"
-
-[contact]
-other = "Contact"
-
-[about]
-other = "About"
-
-[no_data]
-other = "No data available"
-
-[loading]
-other = "Loading..."
-
-[error_loading]
-other = "Error loading data"
-
-[select_country]
-other = "Select Country"
-
-[all_countries]
-other = "All Countries"
-
-[radio]
-other = "Radio"
-
-[dark_mode]
-other = "Dark Mode"
-
-[light_mode]
-other = "Light Mode"
-
-[listen_on]
-other = "Listen on"
-
-[buy_on_amazon]
-other = "Buy on Amazon"
+[in_countries]
+one = "{{ .Count }} country"
+other = "{{ .Count }} countries"

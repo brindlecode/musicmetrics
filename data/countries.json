@@ -1,322 +1,54 @@
-[
-  {
-    "code": "us",
-    "name": "United States",
-    "flag": "🇺🇸",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "gb",
-    "name": "United Kingdom",
-    "flag": "🇬🇧",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "br",
-    "name": "Brazil",
-    "flag": "🇧🇷",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "de",
-    "name": "Germany",
-    "flag": "🇩🇪",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "fr",
-    "name": "France",
-    "flag": "🇫🇷",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "jp",
-    "name": "Japan",
-    "flag": "🇯🇵",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "mx",
-    "name": "Mexico",
-    "flag": "🇲🇽",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "tr",
-    "name": "Turkey",
-    "flag": "🇹🇷",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "es",
-    "name": "Spain",
-    "flag": "🇪🇸",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "in",
-    "name": "India",
-    "flag": "🇮🇳",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "it",
-    "name": "Italy",
-    "flag": "🇮🇹",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "kr",
-    "name": "South Korea",
-    "flag": "🇰🇷",
-    "featured": true,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "au",
-    "name": "Australia",
-    "flag": "🇦🇺",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ca",
-    "name": "Canada",
-    "flag": "🇨🇦",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ar",
-    "name": "Argentina",
-    "flag": "🇦🇷",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "co",
-    "name": "Colombia",
-    "flag": "🇨🇴",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "cl",
-    "name": "Chile",
-    "flag": "🇨🇱",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "nl",
-    "name": "Netherlands",
-    "flag": "🇳🇱",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "se",
-    "name": "Sweden",
-    "flag": "🇸🇪",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "no",
-    "name": "Norway",
-    "flag": "🇳🇴",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "pl",
-    "name": "Poland",
-    "flag": "🇵🇱",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "pt",
-    "name": "Portugal",
-    "flag": "🇵🇹",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "id",
-    "name": "Indonesia",
-    "flag": "🇮🇩",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ph",
-    "name": "Philippines",
-    "flag": "🇵🇭",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "th",
-    "name": "Thailand",
-    "flag": "🇹🇭",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ng",
-    "name": "Nigeria",
-    "flag": "🇳🇬",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "za",
-    "name": "South Africa",
-    "flag": "🇿🇦",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "eg",
-    "name": "Egypt",
-    "flag": "🇪🇬",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "sa",
-    "name": "Saudi Arabia",
-    "flag": "🇸🇦",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ae",
-    "name": "UAE",
-    "flag": "🇦🇪",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "at",
-    "name": "Austria",
-    "flag": "🇦🇹",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "be",
-    "name": "Belgium",
-    "flag": "🇧🇪",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ch",
-    "name": "Switzerland",
-    "flag": "🇨🇭",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "dk",
-    "name": "Denmark",
-    "flag": "🇩🇰",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "fi",
-    "name": "Finland",
-    "flag": "🇫🇮",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ie",
-    "name": "Ireland",
-    "flag": "🇮🇪",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "nz",
-    "name": "New Zealand",
-    "flag": "🇳🇿",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "ro",
-    "name": "Romania",
-    "flag": "🇷🇴",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "gr",
-    "name": "Greece",
-    "flag": "🇬🇷",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  },
-  {
-    "code": "il",
-    "name": "Israel",
-    "flag": "🇮🇱",
-    "featured": false,
-    "has_spotify": true,
-    "has_youtube": true
-  }
-]
+{
+"ae": {"code":"ae","flag":"🇦🇪","names":{"en":"United Arab Emirates","tr":"Birleşik Arap Emirlikleri","es":"Emiratos Árabes Unidos","pt":"Emirados Árabes Unidos","de":"Vereinigte Arabische Emirate","fr":"Émirats arabes unis","ja":"アラブ首長国連邦"},"charts":["youtube_ae"],"featured":false,"weight":1,"top":{"title":"Casa Tupka Anthemo","artist":"Yo Yo Honey Singh","song":"yo-yo-honey-singh-casa-tupka-anthemo","image":"https://i.ytimg.com/vi/vRjaGgDsWSo/mqdefault.jpg","chart":"youtube_ae"}},
+"ar": {"code":"ar","flag":"🇦🇷","names":{"en":"Argentina","tr":"Arjantin","es":"Argentina","pt":"Argentina","de":"Argentinien","fr":"Argentine","ja":"アルゼンチン"},"charts":["youtube_ar"],"featured":false,"weight":1,"top":{"title":"RENZO ED X LA JOAQUI X SALASTKBRON X ELAGGUME","artist":"COLOCARTELO REMIX","song":"colocartelo-remix-renzo-ed-x-la-joaqui-x-salastkbron-x-elaggume","image":"https://i.ytimg.com/vi/h-iStaRoxwE/mqdefault.jpg","chart":"youtube_ar"}},
+"at": {"code":"at","flag":"🇦🇹","names":{"en":"Austria","tr":"Avusturya","es":"Austria","pt":"Áustria","de":"Österreich","fr":"Autriche","ja":"オーストリア"},"charts":["youtube_at"],"featured":false,"weight":1,"top":{"title":"KRIVE DRINE (Album KRIVE DRINE 2026)","artist":"MAGLA","song":"magla-krive-drine","image":"https://i.ytimg.com/vi/mP62uBRAjnk/mqdefault.jpg","chart":"youtube_at"}},
+"au": {"code":"au","flag":"🇦🇺","names":{"en":"Australia","tr":"Avustralya","es":"Australia","pt":"Austrália","de":"Australien","fr":"Australie","ja":"オーストラリア"},"charts":["youtube_au"],"featured":true,"weight":2,"top":{"title":"GHOSTFACE KILLAH","artist":"Sidhu Moose Wala","song":"sidhu-moose-wala-ghostface-killah","image":"https://i.ytimg.com/vi/Pq7UxbWeRU0/mqdefault.jpg","chart":"youtube_au"}},
+"bg": {"code":"bg","flag":"🇧🇬","names":{"en":"Bulgaria","tr":"Bulgaristan","es":"Bulgaria","pt":"Bulgária","de":"Bulgarien","fr":"Bulgarie","ja":"ブルガリア"},"charts":["youtube_bg"],"featured":false,"weight":1,"top":{"title":"OSTAVI ME NA MIRA","artist":"ANTONIO x SOFI MARINOVA ft. AZIS","song":"antonio-ostavi-me-na-mira","image":"https://i.ytimg.com/vi/I88CohDEvDI/mqdefault.jpg","chart":"youtube_bg"}},
+"br": {"code":"br","flag":"🇧🇷","names":{"en":"Brazil","tr":"Brezilya","es":"Brasil","pt":"Brasil","de":"Brasilien","fr":"Brésil","ja":"ブラジル"},"charts":["youtube_br"],"featured":true,"weight":2,"top":{"title":"Netto Brito, Luan Pereira","artist":"MEGA HAIR","song":"mega-hair-netto-brito-luan-pereira","image":"https://i.ytimg.com/vi/q1nA6EYUcwg/mqdefault.jpg","chart":"youtube_br"}},
+"ca": {"code":"ca","flag":"🇨🇦","names":{"en":"Canada","tr":"Kanada","es":"Canadá","pt":"Canadá","de":"Kanada","fr":"Canada","ja":"カナダ"},"charts":["youtube_ca"],"featured":true,"weight":2,"top":{"title":"Ashke Karan Aujla","artist":"Karan Aujla","song":"karan-aujla-ashke-karan-aujla","image":"https://i.ytimg.com/vi/Pd1yGW_g2T8/mqdefault.jpg","chart":"youtube_ca"}},
+"ch": {"code":"ch","flag":"🇨🇭","names":{"en":"Switzerland","tr":"İsviçre","es":"Suiza","pt":"Suíça","de":"Schweiz","fr":"Suisse","ja":"スイス"},"charts":["youtube_ch"],"featured":false,"weight":1,"top":{"title":"Nje Dance","artist":"Dafina Zeqiri x Matolale","song":"dafina-zeqiri-nje-dance","image":"https://i.ytimg.com/vi/6gPb-GTy6Q8/mqdefault.jpg","chart":"youtube_ch"}},
+"cl": {"code":"cl","flag":"🇨🇱","names":{"en":"Chile","tr":"Şili","es":"Chile","pt":"Chile","de":"Chile","fr":"Chili","ja":"チリ"},"charts":["youtube_cl"],"featured":false,"weight":1,"top":{"title":"No Me Suman","artist":"Cris MJ","song":"cris-mj-no-me-suman","image":"https://i.ytimg.com/vi/xrwnF3JQWGY/mqdefault.jpg","chart":"youtube_cl"}},
+"co": {"code":"co","flag":"🇨🇴","names":{"en":"Colombia","tr":"Kolombiya","es":"Colombia","pt":"Colômbia","de":"Kolumbien","fr":"Colombie","ja":"コロンビア"},"charts":["youtube_co"],"featured":false,"weight":1,"top":{"title":"COMPA COLETO (uy_como)","artist":"ARIA VEGA","song":"aria-vega-compa-coleto","image":"https://i.ytimg.com/vi/_RZQcpPViMA/mqdefault.jpg","chart":"youtube_co"}},
+"cz": {"code":"cz","flag":"🇨🇿","names":{"en":"Czechia","tr":"Çekya","es":"Chequia","pt":"Tchéquia","de":"Tschechien","fr":"Tchéquie","ja":"チェコ"},"charts":["youtube_cz"],"featured":false,"weight":1,"top":{"title":"SuperStar (feat. Dollar Prync)","artist":"Calin","song":"calin-superstar","image":"https://i.ytimg.com/vi/RNtu5fN6dS4/mqdefault.jpg","chart":"youtube_cz"}},
+"de": {"code":"de","flag":"🇩🇪","names":{"en":"Germany","tr":"Almanya","es":"Alemania","pt":"Alemanha","de":"Deutschland","fr":"Allemagne","ja":"ドイツ"},"charts":["youtube_de"],"featured":true,"weight":2.5,"top":{"title":"WOKE","artist":"Sido","song":"sido-woke","image":"https://i.ytimg.com/vi/8Gj-lTSlPOg/mqdefault.jpg","chart":"youtube_de"}},
+"dk": {"code":"dk","flag":"🇩🇰","names":{"en":"Denmark","tr":"Danimarka","es":"Dinamarca","pt":"Dinamarca","de":"Dänemark","fr":"Danemark","ja":"デンマーク"},"charts":["youtube_dk"],"featured":false,"weight":1,"top":{"title":"10/5 ft. Benny Jamz","artist":"Gilli","song":"gilli-10-5","image":"https://i.ytimg.com/vi/WfeB3-SUNu8/mqdefault.jpg","chart":"youtube_dk"}},
+"ec": {"code":"ec","flag":"🇪🇨","names":{"en":"Ecuador","tr":"Ekvador","es":"Ecuador","pt":"Equador","de":"Ecuador","fr":"Équateur","ja":"エクアドル"},"charts":["youtube_ec"],"featured":false,"weight":1,"top":{"title":"Koddy G","artist":"Peli De Terror","song":"peli-de-terror-koddy-g","image":"https://i.ytimg.com/vi/X8gidbVqflw/mqdefault.jpg","chart":"youtube_ec"}},
+"eg": {"code":"eg","flag":"🇪🇬","names":{"en":"Egypt","tr":"Mısır","es":"Egipto","pt":"Egito","de":"Ägypten","fr":"Égypte","ja":"エジプト"},"charts":["youtube_eg"],"featured":false,"weight":1,"top":{"title":"مش لاقي حاجه ف الوجود ) - حمو المرشدي - توزيع: وزه منتصر","artist":"طب ب بحبك ( العيون الحلوه دي","song":"طب-ب-بحبك-العيون-الحلوه-دي-مش-لاقي-حاجه-ف-الوجود-حمو-المرشدي-توزيع-وزه-منتصر","image":"https://i.ytimg.com/vi/BiUGXFnDnXc/mqdefault.jpg","chart":"youtube_eg"}},
+"es": {"code":"es","flag":"🇪🇸","names":{"en":"Spain","tr":"İspanya","es":"España","pt":"Espanha","de":"Spanien","fr":"Espagne","ja":"スペイン"},"charts":["youtube_es"],"featured":true,"weight":1.6,"top":{"title":"AGUA","artist":"Maluma, Shakira","song":"maluma-agua","image":"https://i.ytimg.com/vi/2-NkuLjtGNY/mqdefault.jpg","chart":"youtube_es"}},
+"fi": {"code":"fi","flag":"🇫🇮","names":{"en":"Finland","tr":"Finlandiya","es":"Finlandia","pt":"Finlândia","de":"Finnland","fr":"Finlande","ja":"フィンランド"},"charts":["youtube_fi"],"featured":false,"weight":1,"top":{"title":"Kaikki Kunnos","artist":"Sliki x Korelon","song":"sliki-kaikki-kunnos","image":"https://i.ytimg.com/vi/lHFh4XpHUD8/mqdefault.jpg","chart":"youtube_fi"}},
+"fr": {"code":"fr","flag":"🇫🇷","names":{"en":"France","tr":"Fransa","es":"Francia","pt":"França","de":"Frankreich","fr":"France","ja":"フランス"},"charts":["youtube_fr"],"featured":true,"weight":2,"top":{"title":"Fille à Papa ft. La Rvfleuze","artist":"Vacra","song":"vacra-fille-a-papa","image":"https://i.ytimg.com/vi/PhfdpyI6h1Y/mqdefault.jpg","chart":"youtube_fr"}},
+"gb": {"code":"gb","flag":"🇬🇧","names":{"en":"United Kingdom","tr":"Birleşik Krallık","es":"Reino Unido","pt":"Reino Unido","de":"Vereinigtes Königreich","fr":"Royaume-Uni","ja":"イギリス"},"charts":["youtube_gb"],"featured":true,"weight":2.5,"top":{"title":"Patient Zero","artist":"Taylor Swift","song":"taylor-swift-patient-zero","image":"https://i.ytimg.com/vi/V-uIp-WuD60/mqdefault.jpg","chart":"youtube_gb"}},
+"gr": {"code":"gr","flag":"🇬🇷","names":{"en":"Greece","tr":"Yunanistan","es":"Grecia","pt":"Grécia","de":"Griechenland","fr":"Grèce","ja":"ギリシャ"},"charts":["youtube_gr"],"featured":false,"weight":1,"top":{"title":"Παγκόσμια Μέρα Του Ψεύτη","artist":"Κατερίνα Λιόλιου","song":"κατερινα-λιολιου-παγκοσμια-μερα-του-ψευτη","image":"https://i.ytimg.com/vi/PsykHFIhEYk/mqdefault.jpg","chart":"youtube_gr"}},
+"hk": {"code":"hk","flag":"🇭🇰","names":{"en":"Hong Kong SAR China","tr":"Çin Hong Kong ÖİB","es":"RAE de Hong Kong (China)","pt":"Hong Kong, RAE da China","de":"Sonderverwaltungsregion Hongkong","fr":"R.A.S. chinoise de Hong Kong","ja":"中華人民共和国香港特別行政区"},"charts":["youtube_hk"],"featured":false,"weight":1,"top":{"title":"new trick","artist":"ROSÉ","song":"rose-new-trick","image":"https://i.ytimg.com/vi/Lufa9QAFFeY/mqdefault.jpg","chart":"youtube_hk"}},
+"hr": {"code":"hr","flag":"🇭🇷","names":{"en":"Croatia","tr":"Hırvatistan","es":"Croacia","pt":"Croácia","de":"Kroatien","fr":"Croatie","ja":"クロアチア"},"charts":["youtube_hr"],"featured":false,"weight":1,"top":{"title":"KRIVE DRINE (Album KRIVE DRINE 2026)","artist":"MAGLA","song":"magla-krive-drine","image":"https://i.ytimg.com/vi/mP62uBRAjnk/mqdefault.jpg","chart":"youtube_hr"}},
+"hu": {"code":"hu","flag":"🇭🇺","names":{"en":"Hungary","tr":"Macaristan","es":"Hungría","pt":"Hungria","de":"Ungarn","fr":"Hongrie","ja":"ハンガリー"},"charts":["youtube_hu"],"featured":false,"weight":1,"top":{"title":"NEXT N GO","artist":"VINI X NAGY BOGI","song":"vini-next-n-go","image":"https://i.ytimg.com/vi/NLhi0he4_iI/mqdefault.jpg","chart":"youtube_hu"}},
+"id": {"code":"id","flag":"🇮🇩","names":{"en":"Indonesia","tr":"Endonezya","es":"Indonesia","pt":"Indonésia","de":"Indonesien","fr":"Indonésie","ja":"インドネシア"},"charts":["youtube_id"],"featured":true,"weight":1.4,"top":{"title":"2001x","artist":"adriAND 42: Adrian Khalif & Salma Salsabil","song":"adriand-42-adrian-khalif-2001x","image":"https://i.ytimg.com/vi/AiD7Uo9ZK4Q/mqdefault.jpg","chart":"youtube_id"}},
+"ie": {"code":"ie","flag":"🇮🇪","names":{"en":"Ireland","tr":"İrlanda","es":"Irlanda","pt":"Irlanda","de":"Irland","fr":"Irlande","ja":"アイルランド"},"charts":["youtube_ie"],"featured":false,"weight":1,"top":{"title":"My Body Isn't Ready","artist":"sombr","song":"sombr-my-body-isn-t-ready","image":"https://i.ytimg.com/vi/mhttBMJO2Tg/mqdefault.jpg","chart":"youtube_ie"}},
+"il": {"code":"il","flag":"🇮🇱","names":{"en":"Israel","tr":"İsrail","es":"Israel","pt":"Israel","de":"Israel","fr":"Israël","ja":"イスラエル"},"charts":["youtube_il"],"featured":false,"weight":1,"top":{"title":"נתתי לך בית","artist":"אופק אדנק","song":"אופק-אדנק-נתתי-לך-בית","image":"https://i.ytimg.com/vi/xjsrJa3oNFY/mqdefault.jpg","chart":"youtube_il"}},
+"in": {"code":"in","flag":"🇮🇳","names":{"en":"India","tr":"Hindistan","es":"India","pt":"Índia","de":"Indien","fr":"Inde","ja":"インド"},"charts":["youtube_in"],"featured":true,"weight":1.6,"top":{"title":"Casa Tupka Anthemo","artist":"Yo Yo Honey Singh","song":"yo-yo-honey-singh-casa-tupka-anthemo","image":"https://i.ytimg.com/vi/vRjaGgDsWSo/mqdefault.jpg","chart":"youtube_in"}},
+"it": {"code":"it","flag":"🇮🇹","names":{"en":"Italy","tr":"İtalya","es":"Italia","pt":"Itália","de":"Italien","fr":"Italie","ja":"イタリア"},"charts":["youtube_it"],"featured":true,"weight":1.6,"top":{"title":"Lontano","artist":"Sfera Ebbasta","song":"sfera-ebbasta-lontano","image":"https://i.ytimg.com/vi/PshqcQwshdU/mqdefault.jpg","chart":"youtube_it"}},
+"jp": {"code":"jp","flag":"🇯🇵","names":{"en":"Japan","tr":"Japonya","es":"Japón","pt":"Japão","de":"Japan","fr":"Japon","ja":"日本"},"charts":["youtube_jp"],"featured":true,"weight":2.5,"top":{"title":"時空超えてユニバース","artist":"M!LK","song":"m-lk-時空超えてユニハ-ース","image":"https://i.ytimg.com/vi/JpIw7rSLRqc/mqdefault.jpg","chart":"youtube_jp"}},
+"kr": {"code":"kr","flag":"🇰🇷","names":{"en":"South Korea","tr":"Güney Kore","es":"Corea del Sur","pt":"Coreia do Sul","de":"Südkorea","fr":"Corée du Sud","ja":"韓国"},"charts":["youtube_kr"],"featured":true,"weight":2,"top":{"title":"Toy","artist":"PATEKO","song":"pateko-toy","image":"https://i.ytimg.com/vi/Ra9rIXtlt6M/mqdefault.jpg","chart":"youtube_kr"}},
+"mx": {"code":"mx","flag":"🇲🇽","names":{"en":"Mexico","tr":"Meksika","es":"México","pt":"México","de":"Mexiko","fr":"Mexique","ja":"メキシコ"},"charts":["youtube_mx"],"featured":true,"weight":1.6,"top":{"title":"OLIVIA LA FLAKA","artist":"Natanael Cano x Tito Double P x Victor Mendivil x Ovi","song":"natanael-cano-olivia-la-flaka","image":"https://i.ytimg.com/vi/MYFFA242azM/mqdefault.jpg","chart":"youtube_mx"}},
+"my": {"code":"my","flag":"🇲🇾","names":{"en":"Malaysia","tr":"Malezya","es":"Malasia","pt":"Malásia","de":"Malaysia","fr":"Malaisie","ja":"マレーシア"},"charts":["youtube_my"],"featured":false,"weight":1,"top":{"title":"SaWaDiKa","artist":"LISA","song":"lisa-sawadika","image":"https://i.ytimg.com/vi/FyS5dAywkEo/mqdefault.jpg","chart":"youtube_my"}},
+"ng": {"code":"ng","flag":"🇳🇬","names":{"en":"Nigeria","tr":"Nijerya","es":"Nigeria","pt":"Nigéria","de":"Nigeria","fr":"Nigeria","ja":"ナイジェリア"},"charts":["youtube_ng"],"featured":false,"weight":1,"top":{"title":"Ilome","artist":"Seyi Vibez","song":"seyi-vibez-ilome","image":"https://i.ytimg.com/vi/8P-z0n3nUnU/mqdefault.jpg","chart":"youtube_ng"}},
+"nl": {"code":"nl","flag":"🇳🇱","names":{"en":"Netherlands","tr":"Hollanda","es":"Países Bajos","pt":"Países Baixos","de":"Niederlande","fr":"Pays-Bas","ja":"オランダ"},"charts":["youtube_nl"],"featured":false,"weight":1.5,"top":{"title":"Kinderen voor Kinderen","artist":"🎵 Spot aan!","song":"spot-aan-kinderen-voor-kinderen","image":"https://i.ytimg.com/vi/UkZZ5BU7GxU/mqdefault.jpg","chart":"youtube_nl"}},
+"no": {"code":"no","flag":"🇳🇴","names":{"en":"Norway","tr":"Norveç","es":"Noruega","pt":"Noruega","de":"Norwegen","fr":"Norvège","ja":"ノルウェー"},"charts":["youtube_no"],"featured":false,"weight":1,"top":{"title":"SaWaDiKa","artist":"LISA","song":"lisa-sawadika","image":"https://i.ytimg.com/vi/FyS5dAywkEo/mqdefault.jpg","chart":"youtube_no"}},
+"nz": {"code":"nz","flag":"🇳🇿","names":{"en":"New Zealand","tr":"Yeni Zelanda","es":"Nueva Zelanda","pt":"Nova Zelândia","de":"Neuseeland","fr":"Nouvelle-Zélande","ja":"ニュージーランド"},"charts":["youtube_nz"],"featured":false,"weight":1,"top":{"title":"GHOSTFACE KILLAH","artist":"Sidhu Moose Wala","song":"sidhu-moose-wala-ghostface-killah","image":"https://i.ytimg.com/vi/Pq7UxbWeRU0/mqdefault.jpg","chart":"youtube_nz"}},
+"pe": {"code":"pe","flag":"🇵🇪","names":{"en":"Peru","tr":"Peru","es":"Perú","pt":"Peru","de":"Peru","fr":"Pérou","ja":"ペルー"},"charts":["youtube_pe"],"featured":false,"weight":1,"top":{"title":"No vuelvo amar","artist":"Corazón Serrano ft. Lucho Paz","song":"corazon-serrano-no-vuelvo-amar","image":"https://i.ytimg.com/vi/1rhMi8sOCf8/mqdefault.jpg","chart":"youtube_pe"}},
+"ph": {"code":"ph","flag":"🇵🇭","names":{"en":"Philippines","tr":"Filipinler","es":"Filipinas","pt":"Filipinas","de":"Philippinen","fr":"Philippines","ja":"フィリピン"},"charts":["youtube_ph"],"featured":true,"weight":1.3,"top":{"title":"WENG-WENG (feat. Gaspari)","artist":"Uncle Dags","song":"uncle-dags-weng-weng","image":"https://i.ytimg.com/vi/98dhvMKF9Ug/mqdefault.jpg","chart":"youtube_ph"}},
+"pl": {"code":"pl","flag":"🇵🇱","names":{"en":"Poland","tr":"Polonya","es":"Polonia","pt":"Polônia","de":"Polen","fr":"Pologne","ja":"ポーランド"},"charts":["youtube_pl"],"featured":false,"weight":1.3,"top":{"title":"Nie wiedziałem, że tak będzie (Freestyle)","artist":"Białas","song":"bialas-nie-wiedzialem-ze-tak-bedzie","image":"https://i.ytimg.com/vi/4aaC4cjfuqM/mqdefault.jpg","chart":"youtube_pl"}},
+"ro": {"code":"ro","flag":"🇷🇴","names":{"en":"Romania","tr":"Romanya","es":"Rumanía","pt":"Romênia","de":"Rumänien","fr":"Roumanie","ja":"ルーマニア"},"charts":["youtube_ro"],"featured":false,"weight":1,"top":{"title":"Eu plec cu ea","artist":"Ursaru x Tzanca Uraganu","song":"ursaru-eu-plec-cu-ea","image":"https://i.ytimg.com/vi/HPIpoFE1jbA/mqdefault.jpg","chart":"youtube_ro"}},
+"rs": {"code":"rs","flag":"🇷🇸","names":{"en":"Serbia","tr":"Sırbistan","es":"Serbia","pt":"Sérvia","de":"Serbien","fr":"Serbie","ja":"セルビア"},"charts":["youtube_rs"],"featured":false,"weight":1,"top":{"title":"KRIVE DRINE (Album KRIVE DRINE 2026)","artist":"MAGLA","song":"magla-krive-drine","image":"https://i.ytimg.com/vi/mP62uBRAjnk/mqdefault.jpg","chart":"youtube_rs"}},
+"sa": {"code":"sa","flag":"🇸🇦","names":{"en":"Saudi Arabia","tr":"Suudi Arabistan","es":"Arabia Saudí","pt":"Arábia Saudita","de":"Saudi-Arabien","fr":"Arabie saoudite","ja":"サウジアラビア"},"charts":["youtube_sa"],"featured":false,"weight":1,"top":{"title":"اليوم الوطني ٩٦","artist":"ساطع شبيه سهيل | دحوم الطلاسي","song":"ساطع-شبيه-سهيل-دحوم-الطلاسي-اليوم-الوطني-٩٦","image":"https://i.ytimg.com/vi/vz063ltVhvc/mqdefault.jpg","chart":"youtube_sa"}},
+"se": {"code":"se","flag":"🇸🇪","names":{"en":"Sweden","tr":"İsveç","es":"Suecia","pt":"Suécia","de":"Schweden","fr":"Suède","ja":"スウェーデン"},"charts":["youtube_se"],"featured":false,"weight":1.4,"top":{"title":"Joseph (feat. Corey Taylor and Serj Tankian)","artist":"Falling In Reverse","song":"falling-in-reverse-joseph","image":"https://i.ytimg.com/vi/Tk9TM7-eTmw/mqdefault.jpg","chart":"youtube_se"}},
+"sg": {"code":"sg","flag":"🇸🇬","names":{"en":"Singapore","tr":"Singapur","es":"Singapur","pt":"Singapura","de":"Singapur","fr":"Singapour","ja":"シンガポール"},"charts":["youtube_sg"],"featured":false,"weight":1,"top":{"title":"SaWaDiKa","artist":"LISA","song":"lisa-sawadika","image":"https://i.ytimg.com/vi/FyS5dAywkEo/mqdefault.jpg","chart":"youtube_sg"}},
+"sk": {"code":"sk","flag":"🇸🇰","names":{"en":"Slovakia","tr":"Slovakya","es":"Eslovaquia","pt":"Eslováquia","de":"Slowakei","fr":"Slovaquie","ja":"スロバキア"},"charts":["youtube_sk"],"featured":false,"weight":1,"top":{"title":"SVETLUŠKA","artist":"Miro Jaroš & Sima Magušinová","song":"miro-jaros-svetluska","image":"https://i.ytimg.com/vi/KvJvX3AHXFM/mqdefault.jpg","chart":"youtube_sk"}},
+"th": {"code":"th","flag":"🇹🇭","names":{"en":"Thailand","tr":"Tayland","es":"Tailandia","pt":"Tailândia","de":"Thailand","fr":"Thaïlande","ja":"タイ"},"charts":["youtube_th"],"featured":false,"weight":1,"top":{"title":"ไม่ได้เลวขนาดนั้น","artist":"PORZAX","song":"porzax-ไม-ได-เลวขนาดน-น","image":"https://i.ytimg.com/vi/pTQiOMm_53Y/mqdefault.jpg","chart":"youtube_th"}},
+"tr": {"code":"tr","flag":"🇹🇷","names":{"en":"Türkiye","tr":"Türkiye","es":"Turquía","pt":"Turquia","de":"Türkei","fr":"Turquie","ja":"トルコ"},"charts":["youtube_tr"],"featured":true,"weight":1.4,"top":{"title":"BENİM OLSANA","artist":"CRUSH","song":"crush-benim-olsana","image":"https://i.ytimg.com/vi/ZVVylrAkmfg/mqdefault.jpg","chart":"youtube_tr"}},
+"tw": {"code":"tw","flag":"🇹🇼","names":{"en":"Taiwan","tr":"Tayvan","es":"Taiwán","pt":"Taiwan","de":"Taiwan","fr":"Taïwan","ja":"台湾"},"charts":["youtube_tw"],"featured":false,"weight":1,"top":{"title":"new trick","artist":"ROSÉ","song":"rose-new-trick","image":"https://i.ytimg.com/vi/Lufa9QAFFeY/mqdefault.jpg","chart":"youtube_tw"}},
+"ua": {"code":"ua","flag":"🇺🇦","names":{"en":"Ukraine","tr":"Ukrayna","es":"Ucrania","pt":"Ucrânia","de":"Ukraine","fr":"Ukraine","ja":"ウクライナ"},"charts":["youtube_ua"],"featured":false,"weight":1,"top":{"title":"Німесил","artist":"Шугар","song":"шугар-німесил","image":"https://i.ytimg.com/vi/f2-MU-G9QaM/mqdefault.jpg","chart":"youtube_ua"}},
+"us": {"code":"us","flag":"🇺🇸","names":{"en":"United States","tr":"Amerika Birleşik Devletleri","es":"Estados Unidos","pt":"Estados Unidos","de":"Vereinigte Staaten","fr":"États-Unis","ja":"アメリカ合衆国"},"charts":["youtube_us"],"featured":true,"weight":3,"top":{"title":"Patient Zero","artist":"Taylor Swift","song":"taylor-swift-patient-zero","image":"https://i.ytimg.com/vi/V-uIp-WuD60/mqdefault.jpg","chart":"youtube_us"}},
+"vn": {"code":"vn","flag":"🇻🇳","names":{"en":"Vietnam","tr":"Vietnam","es":"Vietnam","pt":"Vietnã","de":"Vietnam","fr":"Viêt Nam","ja":"ベトナム"},"charts":["youtube_vn"],"featured":false,"weight":1,"top":{"title":"Dương Domic, CAPTAIN BOY, Jaysonlei, CODY NAM VÕ ft. LYHAN","artist":"SAU HÌNH BÓNG ẤY","song":"sau-hinh-bong-ay-duong-domic-captain-boy-jaysonlei-cody-nam-vo","image":"https://i.ytimg.com/vi/bAHLmRaNxOs/mqdefault.jpg","chart":"youtube_vn"}},
+"za": {"code":"za","flag":"🇿🇦","names":{"en":"South Africa","tr":"Güney Afrika","es":"Sudáfrica","pt":"África do Sul","de":"Südafrika","fr":"Afrique du Sud","ja":"南アフリカ"},"charts":["youtube_za"],"featured":false,"weight":1,"top":{"title":"Nayvee's Prayer","artist":"DJ Zinhle","song":"dj-zinhle-nayvee-s-prayer","image":"https://i.ytimg.com/vi/r2L2IoUPx8A/mqdefault.jpg","chart":"youtube_za"}}
+}

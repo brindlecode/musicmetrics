@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ i18n "nav_weekly" }}</span>
+      <h1>{{ i18n "seo_title_weekly" }}</h1>
+      <p class="page-head__lede">{{ i18n "seo_desc_weekly" }}</p>
+    </header>
+    <div class="grid grid--2">
+      {{- range .Pages.ByDate.Reverse }}{{ $w := index site.Data.weekly .Params.week }}{{ $t := index $w.top 0 }}
+      <article class="panel" style="position:relative;display:grid;grid-template-columns:88px 1fr;gap:14px;align-items:center">
+        {{ with $t.img }}<img src="{{ . }}" alt="" width="88" height="88" style="width:88px;height:88px;object-fit:cover" loading="lazy">{{ else }}<div class="ph" style="width:88px;height:88px">♪</div>{{ end }}
+        <div>
+          <span class="eyebrow">{{ i18n "week_label" (dict "Week" $w.week "Year" $w.year) }}</span>
+          <h2 style="font-size:1.35rem;margin:4px 0"><a href="{{ .RelPermalink }}" style="text-decoration:none">{{ i18n "h1_week" (dict "Title" $t.t "Artist" $t.a) }}</a></h2>
+          <span class="muted small">{{ (time.AsTime $w.start) | time.Format ":date_medium" }} – {{ (time.AsTime $w.end) | time.Format ":date_medium" }}</span>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

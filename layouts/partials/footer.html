@@ -1,58 +1,57 @@
-<footer class="footer">
-  <div class="container">
-    {{/* Ad slot - footer */}}
-    <div class="ad-slot ad-slot--footer" data-ad-slot="footer">
-      {{/* AdSense will be inserted here */}}
-    </div>
-
-    <div class="footer__grid">
-      {{/* About */}}
-      <div class="footer__col">
-        <a href="{{ relLangURL "/" }}" class="footer__logo">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
-            <path d="M10 24V10l14-2v14" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="10" cy="24" r="3" fill="#fff"/>
-            <circle cx="24" cy="22" r="3" fill="#fff"/>
-          </svg>
-          Music<strong>Metrics</strong>
-        </a>
-        <p class="footer__about">{{ i18n "footer_about" }}</p>
+<footer class="site-footer">
+  <div class="wrap">
+    {{ partial "ad.html" (dict "slot" site.Params.ads.slotFooter "kind" "inline") }}
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="{{ "/" | relLangURL }}">{{ partial "logo.html" . }}<span class="logo__word">Music<b>Metrics</b></span></a>
+        <p>{{ i18n "footer_about" }}</p>
       </div>
-
-      {{/* Platforms */}}
-      <div class="footer__col">
-        <h3 class="footer__heading">{{ i18n "footer_platforms" }}</h3>
-        <ul class="footer__links">
-          <li><a href="{{ relLangURL "/spotify/" }}">Spotify {{ i18n "nav_charts" }}</a></li>
-          <li><a href="{{ relLangURL "/youtube/" }}">YouTube {{ i18n "nav_charts" }}</a></li>
+      <div>
+        <h2>{{ i18n "nav_charts" }}</h2>
+        <ul>
+          <li><a href="{{ "/charts/global/" | relLangURL }}">{{ i18n "global_200" }}</a></li>
+          {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "deezer" "deezer" }}
+          {{- with site.GetPage (printf "/charts/%s" $slug) }}<li><a href="{{ .RelPermalink }}">{{ i18n (printf "hub_%s" $p) }}</a></li>{{ end }}
+          {{- end }}
+          {{- with site.GetPage "/charts/lastfm" }}<li><a href="{{ .RelPermalink }}">{{ i18n "hub_lastfm" }}</a></li>{{ end }}
+          {{- with site.GetPage "/charts/albums" }}<li><a href="{{ .RelPermalink }}">{{ i18n "top_albums" }}</a></li>{{ end }}
+          <li><a href="{{ "/charts/youtube/most-viewed/" | relLangURL }}">{{ i18n "most_viewed_videos" }}</a></li>
         </ul>
       </div>
-
-      {{/* Resources */}}
-      <div class="footer__col">
-        <h3 class="footer__heading">{{ i18n "footer_resources" }}</h3>
-        <ul class="footer__links">
-          <li><a href="{{ relLangURL "/artists/" }}">{{ i18n "top_artists" }}</a></li>
-          <li><a href="{{ relLangURL "/countries/" }}">{{ i18n "all_countries" }}</a></li>
-          <li><a href="{{ relLangURL "/trending/" }}">{{ i18n "nav_trending" }}</a></li>
-          <li><a href="{{ relLangURL "/about/" }}">{{ i18n "about" }}</a></li>
-          <li><a href="{{ relLangURL "/contact/" }}">{{ i18n "contact" }}</a></li>
+      <div>
+        <h2>{{ i18n "footer_explore" }}</h2>
+        <ul>
+          <li><a href="{{ "/artists/" | relLangURL }}">{{ i18n "top_artists" }}</a></li>
+          <li><a href="{{ "/countries/" | relLangURL }}">{{ i18n "nav_countries" }}</a></li>
+          <li><a href="{{ "/weekly/" | relLangURL }}">{{ i18n "nav_weekly" }}</a></li>
+          <li><a href="{{ "/search/" | relLangURL }}">{{ i18n "search" }}</a></li>
         </ul>
       </div>
-
-      {{/* Legal */}}
-      <div class="footer__col">
-        <h3 class="footer__heading">{{ i18n "footer_legal" }}</h3>
-        <ul class="footer__links">
-          <li><a href="{{ relLangURL "/privacy/" }}">{{ i18n "privacy_policy" }}</a></li>
-          <li><a href="{{ relLangURL "/terms/" }}">{{ i18n "terms_of_service" }}</a></li>
+      <div>
+        <h2>{{ i18n "footer_top_countries" }}</h2>
+        <ul>
+          {{- $list := slice }}{{ range $cc, $c := site.Data.countries }}{{ $list = $list | append $c }}{{ end }}
+          {{- range first 8 (sort $list "weight" "desc") }}
+          <li><a href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ .flag }} {{ index .names site.Language.Lang }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div>
+        <h2>MusicMetrics</h2>
+        <ul>
+          <li><a href="{{ "/about/" | relLangURL }}">{{ i18n "about" }}</a></li>
+          <li><a href="{{ "/methodology/" | relLangURL }}">{{ i18n "methodology" }}</a></li>
+          <li><a href="{{ "/contact/" | relLangURL }}">{{ i18n "contact" }}</a></li>
+          <li><a href="{{ "/privacy/" | relLangURL }}">{{ i18n "privacy_policy" }}</a></li>
+          <li><a href="{{ "/terms/" | relLangURL }}">{{ i18n "terms_of_service" }}</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="footer__bottom">
-      <p>&copy; {{ now.Year }} MusicMetrics. All data sourced from publicly available platforms.</p>
+    <div class="footer-bottom">
+      <span>© {{ now.Year }} MusicMetrics · {{ i18n "footer_disclaimer" }}</span>
+      <span class="footer-langs">
+        {{- range site.Languages }}{{ $l := .Lang }}<a href="{{ cond (eq $l "en") "/" (printf "/%s/" $l) }}" hreflang="{{ $l }}" lang="{{ $l }}">{{ .LanguageName }}</a>{{ end }}
+      </span>
     </div>
   </div>
 </footer>

@@ -1,170 +1,339 @@
-[site_title]
-other = "MusicMetrics - グローバル音楽チャートとストリーミング統計"
+# ---------------------------------------------------------------- general
+skip_to_content = "本文へスキップ"
+main_navigation = "メインナビゲーション"
+breadcrumb = "パンくずリスト"
+language = "言語"
+toggle_theme = "ダークモード切替"
+close = "閉じる"
+search = "検索"
+search_placeholder = "アーティスト、曲、国を検索…"
+search_hint = "アーティスト・曲・国を検索"
+no_results = "該当なし"
+link_copied = "リンクをコピーしました"
+kind_artist = "アーティスト"
+kind_song = "曲"
+kind_country = "国"
+kind_chart = "チャート"
+share = "共有"
+view = "見る"
+view_all = "すべて見る"
+more = "もっと見る"
+and = "と"
+advertisement = "広告"
+updated = "更新"
+last_update = "最終更新"
+last_reviewed = "最終確認"
+archive = "アーカイブ"
+faq = "よくある質問"
+records = "記録"
+year = "年"
+video = "動画"
 
-[tagline]
-other = "すべての音楽データを一か所で"
+# ------------------------------------------------------------------ nav
+nav_home = "ホーム"
+nav_charts = "チャート"
+nav_artists = "アーティスト"
+nav_countries = "国別"
+nav_songs = "曲"
+nav_weekly = "週間"
+nav_youtube_records = "YouTube記録"
+about = "概要"
+methodology = "算出方法"
+contact = "お問い合わせ"
+privacy_policy = "プライバシーポリシー"
+terms_of_service = "利用規約"
 
-[nav_home]
-other = "ホーム"
+# --------------------------------------------------------------- footer
+footer_about = "YouTube、Apple Music、Deezerなどの独立系音楽チャート。全世界の国別に、6時間ごとに更新。"
+footer_explore = "探す"
+footer_top_countries = "人気の国"
+footer_disclaimer = "YouTube、Apple、Deezer、Spotifyとは提携していません。データは公開情報に基づきます。"
 
-[nav_spotify]
-other = "Spotify"
+# ------------------------------------------------------------ chart terms
+song = "曲"
+songs = "曲"
+artist = "アーティスト"
+album = "アルバム"
+genre = "ジャンル"
+chart = "チャート"
+charts = "チャート"
+country = "国"
+countries = "国"
+countries_lower = "か国"
+position = "順位"
+points = "ポイント"
+views = "再生回数"
+views_lower = "回再生"
+listeners = "リスナー"
+peak_short = "最高"
+days_short = "日数"
+day_short = "日"
+per_day = "1日あたり"
+new = "NEW"
+re_entry = "再エントリー"
+no_change = "変動なし"
+up_positions = "{{ .N }}位上昇"
+down_positions = "{{ .N }}位下降"
 
-[nav_youtube]
-other = "YouTube"
 
-[nav_charts]
-other = "チャート"
 
-[nav_artists]
-other = "アーティスト"
 
-[nav_countries]
-other = "国別"
 
-[nav_trending]
-other = "トレンド"
+worldwide = "世界"
+worldwide_lower = "世界"
+global_200 = "Global 200"
+global_rank = "世界順位"
+best_position = "最高順位"
+top_song = "トップ曲"
+top_artists = "人気アーティスト"
+top_albums = "人気アルバム"
+yt_views = "YouTube再生回数"
+yt_subscribers = "YouTube登録者数"
+deezer_fans = "Deezerファン数"
+released = "リリース"
+cross_platform = "総合"
+cross_country = "全ての国"
+full_chart = "全チャート（{{ .N }}）"
+all_charts = "全チャート"
+more_charts = "その他のチャート"
+other_charts = "他のチャート"
+all_charts_in = "{{ .Country }}の全チャート"
+charts_in = "{{ .Country }}のチャート"
+select_country = "国を選択"
+filter_chart = "曲名・アーティストで絞り込み…"
+filter_countries = "国を絞り込み…"
+filter_artists = "アーティストを絞り込み…"
+new_entries_only = "新曲のみ"
+how_calculated = "算出方法"
+play_video = "動画を再生"
+play_top_song = "1位の曲を再生"
+chart_legend = "▲▼ 前日比 · NEW 初登場 · RE 再エントリー · 最高順位と日数は集計開始以降。"
+data_note = "チャートデータは公開情報から6時間ごとに自動取得しています。誤りを見つけたらお問い合わせページからお知らせください。"
 
-[search_placeholder]
-other = "アーティスト、曲、アルバムを検索..."
+# chart titles ({{ .Country }} is localized)
+chart_title_youtube = "YouTube 急上昇音楽 · {{ .Country }}"
+chart_title_apple = "Apple Music Top 100 · {{ .Country }}"
+chart_title_apple-albums = "Apple Music トップアルバム · {{ .Country }}"
+chart_title_deezer = "Deezer Top 100 · {{ .Country }}"
+chart_title_lastfm = "Last.fm トップトラック · {{ .Country }}"
+chart_title_musicmetrics = "Global 200 · 世界で最も人気の曲"
 
-[daily_chart]
-other = "デイリーチャート"
+chip_youtube = "YouTube"
+chip_apple = "Apple Music"
+chip_apple-albums = "Apple アルバム"
+chip_deezer = "Deezer"
+chip_lastfm = "Last.fm"
+chip_musicmetrics = "Global 200"
 
-[weekly_chart]
-other = "ウィークリーチャート"
+hub_youtube = "YouTube 音楽チャート"
+hub_apple = "Apple Music チャート"
+hub_apple-albums = "Apple Music アルバムチャート"
+hub_deezer = "Deezer チャート"
+hub_lastfm = "Last.fm チャート"
+hub_desc_youtube = "各国の急上昇ミュージックビデオを、総再生回数・1日の再生回数とともに。"
+hub_desc_apple = "各国のApple Musicで最も再生されている100曲。"
+hub_desc_apple-albums = "各国のApple Musicで最も再生されている100アルバム。"
+hub_desc_deezer = "Deezer公式Top 100（世界・国別）。"
+hub_desc_lastfm = "Last.fmで最も聴かれている曲（リスナー数順）。"
 
-[top_songs]
-other = "トップソング"
+lede_youtube = "{{ .Country }}のYouTubeで今急上昇中のミュージックビデオ。総再生回数と直近24時間の再生回数を掲載。"
+lede_apple = "今日の{{ .Country }}のApple Musicで最も再生されている{{ .Count }}曲。前日比・最高順位・ランクイン日数付き。"
+lede_apple-albums = "今日の{{ .Country }}のApple Musicで最も再生されている{{ .Count }}アルバム。"
+lede_deezer = "{{ .Country }}のDeezer公式Top {{ .Count }}。1日に複数回更新。"
+lede_lastfm = "{{ .Country }}のLast.fmで最も聴かれている曲（リスナー数順）。"
+lede_musicmetrics = "今、世界で最も人気の{{ .Count }}曲。YouTube、Apple Music、Deezerなど、集計対象の全ての国のチャートを総合。"
 
-[top_albums]
-other = "トップアルバム"
+source_youtube = "出典：YouTube Data API（急上昇・音楽カテゴリ）。"
+source_apple = "出典：Apple Music 最多再生チャート。"
+source_apple-albums = "出典：Apple Music 最多再生アルバムチャート。"
+source_deezer = "出典：Deezer Charts。"
+source_lastfm = "出典：Last.fm API。"
+source_musicmetrics = "MusicMetricsが集計対象の全チャートから算出。"
 
-[top_artists]
-other = "トップアーティスト"
+answer_chart = "現在、{{ .Country }}の<strong>{{ .Platform }}</strong>で1位は<strong>{{ .Artist }}の「{{ .Title }}」</strong>。ランクイン{{ .Days }}日、最高{{ .Peak }}位。"
+answer_chart_album = "現在、{{ .Country }}の<strong>{{ .Platform }}</strong>で1位のアルバムは<strong>{{ .Artist }}の「{{ .Title }}」</strong>。"
+answer_country = "現在、{{ .Country }}で1位の曲は<strong>{{ .Artist }}の「{{ .Title }}」</strong>（{{ .Platform }}）。"
+answer_artist = "{{ .Name }}の現在最大のヒット曲は<strong>「{{ .Song }}」</strong>。{{ .Name }}は{{ .Countries }}か国でチャートインしており、現在の最高順位は<strong>{{ .Best }}位</strong>（{{ .BestChart }}）。"
+answer_song = "<strong>{{ .Artist }}の「{{ .Title }}」</strong>は{{ .Countries }}か国の{{ .Charts }}チャートにランクイン。現在の最高順位は<strong>{{ .Best }}位</strong>（{{ .BestChart }}）。"
 
-[streams]
-other = "再生回数"
+# ------------------------------------------------------------------ home
+home_title = "MusicMetrics — 世界各国の音楽チャート・人気曲ランキング"
+home_description = "今、世界で聴かれている曲は？1位は{{ .Artist }}の「{{ .Title }}」。90か国以上のYouTube・Apple Music・Deezer音楽チャートを6時間ごとに更新。"
+home_description_generic = "YouTube・Apple Music・Deezerの世界各国の音楽チャートとストリーミング統計をリアルタイムで。"
+most_popular_song_world = "今、世界で最も人気の曲"
+lead_stats = "{{ .Countries }}か国でチャートイン · {{ .Charts }}チャート · Global 200に{{ .Days }}日"
+see_global_200 = "Global 200を見る"
+global_top_10 = "世界トップ10"
+global_top_50 = "世界トップ50"
+key_numbers = "主要データ"
+charts_tracked = "集計チャート数"
+songs_tracked = "集計曲数"
+number_one_around_world = "世界各国の1位"
+number_one_now = "現在の1位"
+all_countries_n = "全{{ .N }}か国"
+biggest_climbers = "急上昇"
+hot_new_entries = "注目の初登場"
+movers_tomorrow = "順位変動の矢印は集計2日目から表示されます。"
+no_new_entries = "今日の初登場はありません。"
+top_artists_now = "今人気のアーティスト"
+artist_ranking = "アーティストランキング"
+most_watched_24h = "直近24時間でYouTubeで最も再生された動画"
+browse_by_platform = "プラットフォーム別に見る"
+about_home_h = "世界各国の音楽チャートをひとつの場所に"
+about_home_p1 = "MusicMetricsは数十か国のYouTube、Apple Music、Deezerの公式チャートを6時間ごとに収集し、前日比、最高順位、ランクイン日数、YouTubeの1日の再生回数など、すべての履歴を保存しています。Global 200はそれらを統合した、世界で最も人気の曲のランキングです。"
+about_home_p2 = "すべての数値は公開データから自動算出しています。詳しくは"
 
-[views]
-other = "視聴回数"
+# ----------------------------------------------------------------- pages
+h1_charts = "音楽チャート"
+h1_country = "今日の{{ .Country }}音楽チャート"
+h1_countries = "{{ .Count }}か国の音楽チャート"
+h1_artists = "世界の人気アーティスト"
+h1_most_viewed = "YouTube再生回数ランキング（ミュージックビデオ）"
+h1_week = "今週の1位は{{ .Artist }}の「{{ .Title }}」"
+lede_country = "{{ .Country }}の今日の人気曲を{{ .Count }}チャートで。YouTube、Apple Music、Deezerなど、6時間ごとに更新。"
+lede_countries = "国を選んでYouTube、Apple Music、Deezerのチャートをチェック。{{ .Count }}か国、6時間ごとに更新。"
+lede_artists = "今、世界で最もチャートに強いアーティスト。集計対象の全チャートにおける楽曲の順位をもとにランキング。"
+lede_most_viewed = "YouTubeで歴代最も再生されたミュージックビデオ。リアルタイムの再生回数と1日の再生回数を掲載。{{ .Count }}本の動画が10億回再生を突破。"
+lede_week = "{{ .Year }}年第{{ .Week }}週のGlobal 200：世界で最も人気だった曲は{{ .Artist }}の「{{ .Title }}」。"
+country_charts = "国別チャート"
+top_artists_in = "{{ .Country }}でチャートイン数の多いアーティスト"
+chart_matrix = "国別の全チャート"
+number_ones_by_country = "国別の1位"
+albums_desc = "各国のApple Musicアルバムチャートで最も人気のアルバム。"
+most_viewed_desc = "歴代最も再生されたミュージックビデオとBillion Views Club。"
+most_viewed_videos = "再生回数の多いミュージックビデオ"
+most_viewed_note = "再生回数はYouTube Data APIで6時間ごとに更新。1日の再生回数は直近約24時間で計測。"
+billion_club = "Billion Views Club"
+record_views = "歴代最多再生"
+fastest_24h = "24時間の最多再生"
+week_label = "{{ .Year }}年第{{ .Week }}週"
+top_artists_week = "今週の人気アーティスト"
+not_found_title = "このページはチャート圏外です"
+not_found_text = "ページはチャートから外れたか、移動した可能性があります。アーティスト、曲、国を検索してみてください。"
 
-[rank]
-other = "順位"
+artist_lede = "{{ .Name }}は現在、{{ .Countries }}か国の{{ .Charts }}チャートに{{ .Songs }}曲がランクインしています。"
+artist_rank = "アーティスト順位"
+charting_songs = "チャートイン中の曲"
+songs_on_charts = "チャートイン中の{{ .Name }}の曲"
+charting_in = "{{ .Name }}がチャートインしている国"
+listen_to = "{{ .Name }}を聴く"
+listen_and_buy = "聴く・買う"
+fans_also_follow = "ファンはこちらもフォロー"
+more_by = "{{ .Name }}のその他の曲"
+view_artist = "アーティストページ"
+chart_positions = "チャート順位"
+official_video = "公式ビデオ"
 
-[artist]
-other = "アーティスト"
+listen = "聴く"
+watch = "観る"
+listen_free_trial = "聴く · 無料体験"
+stream_or_buy = "ストリーミング・購入"
+vinyl_cds = "レコード・CD"
+shop_on = "購入先"
+concert_tickets = "コンサートチケット"
+affiliate_disclosure = "一部のリンクはアフィリエイトリンクです。追加費用なしで当サイトに紹介料が入る場合がありますが、チャートには一切影響しません。"
 
-[song]
-other = "曲"
+# ------------------------------------------------------------------- SEO
+seo_title_youtube = "今日の{{ .Country }} YouTube急上昇音楽チャート"
+seo_title_apple = "今日の{{ .Country }} Apple Music Top 100 人気曲ランキング"
+seo_title_apple-albums = "今日の{{ .Country }} Apple Music トップアルバム"
+seo_title_deezer = "今日の{{ .Country }} Deezer Top 100チャート"
+seo_title_lastfm = "{{ .Country }} Last.fm トップトラック"
+seo_title_musicmetrics = "Global 200：今日の世界の人気曲ランキング"
+seo_desc_youtube = "{{ .Country }}のYouTube 1位は{{ .Artist }}の「{{ .Title }}」。急上昇ミュージックビデオTop {{ .Count }}を再生回数付きで。{{ .Date }}。"
+seo_desc_apple = "{{ .Country }}のApple Music 1位は{{ .Artist }}の「{{ .Title }}」。Top {{ .Count }}を前日比・最高順位付きで。{{ .Date }}。"
+seo_desc_apple-albums = "{{ .Country }}のApple Musicアルバム1位は{{ .Artist }}の「{{ .Title }}」。Top {{ .Count }}アルバム全掲載。{{ .Date }}。"
+seo_desc_deezer = "{{ .Country }}のDeezer 1位は{{ .Artist }}の「{{ .Title }}」。Top {{ .Count }}を前日比・最高順位付きで。{{ .Date }}。"
+seo_desc_lastfm = "{{ .Country }}のLast.fm 1位は{{ .Artist }}の「{{ .Title }}」。リスナー数順Top {{ .Count }}。{{ .Date }}。"
+seo_desc_musicmetrics = "今、世界1位は{{ .Artist }}の「{{ .Title }}」。90か国以上のYouTube・Apple Music・Deezerを総合。{{ .Date }}。"
+seo_title_hub_youtube = "国別YouTube音楽チャート｜急上昇MV"
+seo_title_hub_apple = "国別Apple Musicチャート｜Top 100"
+seo_title_hub_apple-albums = "国別Apple Musicアルバムチャート｜Top 100"
+seo_title_hub_deezer = "国別Deezerチャート｜Top 100"
+seo_title_hub_lastfm = "国別Last.fmチャート"
+seo_desc_hub = "各国の{{ .Platform }}チャートをまとめてチェック。各国の1位とTop 100を6時間ごとに更新。"
+seo_title_charts = "音楽チャート：国別YouTube・Apple Music・Deezer"
+seo_desc_charts = "{{ .Countries }}か国・{{ .Count }}の音楽チャートをリアルタイムで。YouTube・Apple Music・Deezerと総合Global 200。6時間ごとに更新。"
+seo_title_albums = "今日の世界のアルバムランキング"
+seo_desc_albums = "今、世界で最も人気のアルバム。1位は{{ .Artist }}の「{{ .Title }}」。"
+seo_title_most_viewed = "YouTube再生回数ランキング歴代（MV）"
+seo_desc_most_viewed = "YouTubeで最も再生されたMVは{{ .Artist }}の「{{ .Title }}」（{{ .Views }}回）。1日の再生回数とBillion Views Clubも。"
+seo_title_artist = "{{ .Name }}：チャート・人気曲・再生回数"
+seo_desc_artist = "{{ .Name }}はMusicMetrics世界{{ .Rank }}位。代表曲「{{ .Song }}」。{{ .Countries }}か国・{{ .Charts }}チャートの順位を掲載。"
+seo_title_song = "{{ .Title }} - {{ .Artist }}：チャート順位・再生回数"
+seo_desc_song = "{{ .Artist }}の「{{ .Title }}」は{{ .Countries }}か国の{{ .Charts }}チャートにランクイン。最高{{ .Best }}位（{{ .BestChart }}）。YouTube再生回数も。"
+seo_title_songs = "今、世界の人気曲ランキング"
+seo_title_country = "今日の{{ .Country }}音楽チャート｜人気曲ランキング"
+seo_desc_country = "今、{{ .Country }}の1位は{{ .Artist }}の「{{ .Title }}」。{{ .Country }}の人気曲チャートをまとめてチェック。{{ .Date }}。"
+seo_title_countries = "国別音楽チャート（{{ .Count }}か国）"
+seo_desc_countries = "{{ .Count }}か国のYouTube・Apple Music・Deezer人気曲。各国の1位を6時間ごとに更新。"
+seo_title_artists = "世界の人気アーティストランキング"
+seo_desc_artists = "今、世界で最も人気のアーティスト。90か国以上のYouTube・Apple Music・Deezerチャートの順位でランキング。"
+seo_title_week = "{{ .Year }}年第{{ .Week }}週：世界のヒット曲"
+seo_desc_week = "{{ .Year }}年第{{ .Week }}週のGlobal 200。1位は{{ .Artist }}の「{{ .Title }}」。各国の1位と今週の人気アーティスト。"
+seo_title_weekly = "週間音楽チャートまとめ"
+seo_desc_weekly = "世界のヒット曲・人気アーティストと各国の1位を週ごとにアーカイブ。"
 
-[album]
-other = "アルバム"
+# ------------------------------------------------------------------- FAQ
+faq_home_q1 = "今、世界で最も人気の曲は？"
+faq_home_a1 = "MusicMetrics Global 200（{{ .Date }}）によると、今、世界で最も人気の曲は{{ .Artist }}の「{{ .Title }}」です。YouTube、Apple Music、Deezerの{{ .Charts }}チャート、{{ .Countries }}か国でランクインしています。"
+faq_home_q2 = "MusicMetricsのチャートはどのように算出されていますか？"
+faq_home_a2 = "YouTube、Apple Music、Deezerの公式な公開チャートを収集しています。各順位にはプラットフォームと市場規模で重み付けしたポイントが与えられ、Global 200は合計ポイントで曲を順位付けします。計算式の詳細は算出方法のページをご覧ください。"
+faq_home_q3 = "チャートはどのくらいの頻度で更新されますか？"
+faq_home_a3 = "6時間ごとです。順位変動の矢印は前日と比較しており、各順位の履歴を保存して最高順位とランクイン日数を表示しています。"
+faq_home_q4 = "どの国とプラットフォームに対応していますか？"
+faq_home_a4 = "{{ .Countries }}か国・{{ .Charts }}チャート：YouTube急上昇音楽、Apple Music Top 100（曲・アルバム）、Deezer Top 100、利用可能な場合はLast.fm。"
+faq_chart_q1 = "今日の{{ .Country }}の{{ .Platform }}で1位の曲は？"
+faq_chart_q1_album = "今日の{{ .Country }}の{{ .Platform }}で1位のアルバムは？"
+faq_chart_a1 = "{{ .Date }}時点で、{{ .Country }}の{{ .Platform }}で1位は{{ .Artist }}の「{{ .Title }}」です。ランクイン{{ .Days }}日、最高{{ .Peak }}位です。"
+faq_chart_q2 = "{{ .Country }}の{{ .Platform }}で最高位の初登場曲は？"
+faq_chart_a2 = "最高位の初登場は{{ .Artist }}の「{{ .Title }}」で{{ .Rank }}位です。今日のチャートには{{ .Count }}曲が初登場しています。"
+faq_chart_q3 = "このチャートはどのくらいの頻度で更新されますか？"
+faq_chart_a3_youtube = "6時間ごとに、YouTube公式の音楽カテゴリ急上昇リストをもとに更新します。再生回数と1日の再生回数も同時に更新されます。"
+faq_chart_a3_apple = "6時間ごとに、Apple Music公式の最多再生チャートから更新します。順位変動は前日と比較しています。"
+faq_chart_a3_apple-albums = "6時間ごとに、Apple Music公式の最多再生アルバムチャートから更新します。"
+faq_chart_a3_deezer = "6時間ごとに、Deezer Charts公式プレイリストから更新します。"
+faq_chart_a3_lastfm = "6時間ごとに、Last.fm APIから更新します。"
+faq_chart_a3_musicmetrics = "6時間ごとです。新しいデータが届くたびに、集計対象の全チャートからGlobal 200を再計算します。"
+faq_artist_q1 = "{{ .Name }}の今一番人気の曲は？"
+faq_artist_a1 = "{{ .Name }}の今一番人気の曲は「{{ .Song }}」で、{{ .Charts }}チャートにランクインし、最高順位は{{ .Best }}位です。"
+faq_artist_q2 = "{{ .Name }}はどの国でチャートインしていますか？"
+faq_artist_a2 = "{{ .Name }}は現在、{{ .List }}など{{ .Count }}か国の{{ .Charts }}チャートでランクインしています。"
+faq_artist_q3 = "{{ .Name }}の世界での人気は？"
+faq_artist_a3 = "{{ .Name }}はMusicMetricsの世界アーティストランキングで{{ .Rank }}位、現在{{ .Songs }}曲がチャートインしています。"
+faq_song_q1 = "「{{ .Title }}」を歌っているのは誰？"
+faq_song_a1 = "「{{ .Title }}」を歌っているのは{{ .Artists }}です。"
+faq_song_q2 = "「{{ .Title }}」はどこでチャートインしていますか？"
+faq_song_a2 = "「{{ .Title }}」は{{ .Countries }}か国の{{ .Charts }}チャートにランクインしています。現在の最高順位は{{ .Best }}位（{{ .BestChart }}）、MusicMetrics世界ランキングでは{{ .Rank }}位です。"
+faq_song_q3 = "「{{ .Title }}」のYouTube再生回数は？"
+faq_song_a3 = "{{ .Date }}時点で、「{{ .Title }}」の公式ビデオのYouTube再生回数は{{ .Views }}回で、1日あたり約{{ .Daily }}回増えています。"
+faq_country_q1 = "今、{{ .Country }}で1位の曲は？"
+faq_country_a1 = "{{ .Date }}時点で、{{ .Country }}の1位は{{ .Platform }}の{{ .Artist }}「{{ .Title }}」です。"
+faq_country_q2 = "今、{{ .Country }}で人気のアーティストは？"
+faq_country_a2 = "現在、{{ .Country }}のチャートで最も多くの曲がランクインしているアーティストは{{ .List }}です。"
+faq_country_q3 = "{{ .Country }}ではどの音楽チャートが見られますか？"
+faq_country_a3 = "MusicMetricsは{{ .Country }}の{{ .Count }}チャートを集計しています。YouTube急上昇音楽のほか、利用可能な場合はApple MusicとDeezerも含み、6時間ごとに更新します。"
+faq_mv_q1 = "YouTubeで最も再生されたミュージックビデオは？"
+faq_mv_a1 = "YouTubeで最も再生されたミュージックビデオは{{ .Artist }}の「{{ .Title }}」で、再生回数は{{ .Views }}回です。"
+faq_mv_q2 = "10億回再生を超えたミュージックビデオはいくつありますか？"
+faq_mv_a2 = "当サイトで集計しているミュージックビデオのうち、{{ .Count }}本がYouTubeで10億回再生を突破しています。"
 
-[change]
-other = "変動"
+[days_count]
+one = "{{ .Count }}日"
+other = "{{ .Count }}日"
 
-[country]
-other = "国"
+[entries_count]
+one = "{{ .Count }}件"
+other = "{{ .Count }}件"
 
-[global]
-other = "グローバル"
+[charts_count]
+one = "{{ .Count }}チャート"
+other = "{{ .Count }}チャート"
 
-[daily]
-other = "日間"
+[songs_count]
+one = "{{ .Count }}曲"
+other = "{{ .Count }}曲"
 
-[weekly]
-other = "週間"
-
-[all_time]
-other = "歴代"
-
-[most_streamed]
-other = "最も再生された"
-
-[most_viewed]
-other = "最も視聴された"
-
-[monthly_listeners]
-other = "月間リスナー"
-
-[peak_position]
-other = "最高順位"
-
-[current_position]
-other = "現在の順位"
-
-[days_on_chart]
-other = "チャートイン日数"
-
-[last_updated]
-other = "最終更新"
-
-[view_all]
-other = "すべて見る"
-
-[compare_artists]
-other = "アーティストを比較"
-
-[share]
-other = "共有"
-
-[chart_history]
-other = "チャート履歴"
-
-[worldwide]
-other = "世界"
-
-[footer_about]
-other = "MusicMetricsは、すべての主要プラットフォームからリアルタイムの音楽チャート、ストリーミング統計、分析を提供します。無料、オープン、毎日更新。"
-
-[footer_platforms]
-other = "プラットフォーム"
-
-[footer_resources]
-other = "リソース"
-
-[footer_legal]
-other = "法的情報"
-
-[privacy_policy]
-other = "プライバシーポリシー"
-
-[terms_of_service]
-other = "利用規約"
-
-[contact]
-other = "お問い合わせ"
-
-[about]
-other = "について"
-
-[no_data]
-other = "データがありません"
-
-[loading]
-other = "読み込み中..."
-
-[error_loading]
-other = "データの読み込みエラー"
-
-[select_country]
-other = "国を選択"
-
-[all_countries]
-other = "すべての国"
-
-[radio]
-other = "ラジオ"
-
-[dark_mode]
-other = "ダークモード"
-
-[light_mode]
-other = "ライトモード"
-
-[listen_on]
-other = "で聴く"
-
-[buy_on_amazon]
-other = "Amazonで購入"
+[in_countries]
+one = "{{ .Count }}か国"
+other = "{{ .Count }}か国"

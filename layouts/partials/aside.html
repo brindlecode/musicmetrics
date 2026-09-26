@@ -1,0 +1,17 @@
+<aside class="aside" aria-label="{{ i18n "more" }}">
+  <div class="aside__sticky">
+    {{ partial "ad.html" (dict "slot" site.Params.ads.slotSidebar "kind" "sidebar") }}
+    {{- with site.Data.charts.global }}
+    <div class="panel">
+      <div class="panel__head"><h3><span class="pmark pmark--musicmetrics"></span>{{ i18n "global_200" }}</h3><a href="{{ "/charts/global/" | relLangURL }}">{{ i18n "view_all" }}</a></div>
+      {{ partialCached "mini-list.html" (dict "chart" . "n" 5) .id 5 site.Language.Lang }}
+    </div>
+    {{- end }}
+    <div class="panel">
+      <div class="panel__head"><h3>{{ i18n "nav_countries" }}</h3><a href="{{ "/countries/" | relLangURL }}">{{ i18n "view_all" }}</a></div>
+      <div class="pills">
+        {{- range $cc, $c := site.Data.countries }}{{ if $c.featured }}<a class="pill" href="{{ printf "/countries/%s/" $cc | relLangURL }}">{{ $c.flag }} {{ index $c.names site.Language.Lang }}</a>{{ end }}{{ end }}
+      </div>
+    </div>
+  </div>
+</aside>

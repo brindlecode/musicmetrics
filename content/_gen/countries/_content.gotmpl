@@ -1,0 +1,4 @@
+{{- $lm := time.AsTime site.Data.meta.updated -}}
+{{- range $cc, $c := site.Data.countries -}}
+  {{- $.AddPage (dict "path" $cc "title" $c.names.en "kind" "page" "type" "country" "params" (dict "cc" $cc) "dates" (dict "lastmod" $lm)) -}}
+{{- end -}}

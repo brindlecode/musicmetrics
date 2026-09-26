@@ -1,0 +1,32 @@
+# MusicMetrics
+
+> MusicMetrics (musicmetrics.net) is a free, independent music chart and streaming-statistics site. It aggregates public chart data from YouTube, Apple Music, Deezer{{ if (site.GetPage "/charts/lastfm") }} and Last.fm{{ end }} across {{ len site.Data.countries }} countries, updates every 6 hours, and publishes the cross-platform "MusicMetrics Global 200".
+
+Last updated: {{ site.Data.meta.updated }}
+Tracked: {{ site.Data.meta.counts.charts }} charts, {{ site.Data.meta.counts.songs }} songs, {{ site.Data.meta.counts.artists }} artists, {{ len site.Data.countries }} countries.
+Languages: English (/), Türkçe (/tr/), Español (/es/), Português (/pt/), Deutsch (/de/), Français (/fr/), 日本語 (/ja/).
+
+## Current global top 10 (MusicMetrics Global 200)
+{{ range first 10 site.Data.charts.global.items }}
+{{ .rank }}. {{ .title }} — {{ .artist }} (charting in {{ .countries }} countries, {{ .charts }} charts){{ with .song }} {{ printf "/songs/%s/" . | absURL }}{{ end }}
+{{- end }}
+
+## Number one songs right now
+{{ range $cc, $c := site.Data.countries }}{{ with $c.top }}
+- {{ $c.names.en }}: {{ .title }} — {{ .artist }} ({{ (partialCached "func/chart-info.html" .chart .chart).pname }}) {{ printf "/countries/%s/" $cc | absURL }}
+{{- end }}{{ end }}
+
+## Key pages
+- [Global 200]({{ "/charts/global/" | absURL }}): cross-platform ranking of the most popular songs in the world right now
+- [All charts]({{ "/charts/" | absURL }}): every platform × country chart
+- [Artists]({{ "/artists/" | absURL }}): global artist ranking with chart runs per country
+- [Countries]({{ "/countries/" | absURL }}): music charts for every country we track
+- [Most viewed music videos on YouTube]({{ "/charts/youtube/most-viewed/" | absURL }}): all-time views and daily views
+- [Weekly recap]({{ "/weekly/" | absURL }}): what topped the charts each week
+- [Methodology]({{ "/methodology/" | absURL }}): how the Global 200 is calculated
+
+## Methodology (short)
+Each chart position earns points: platform weight × market weight × ((N + 1 − rank) / N)^1.5, where N is the chart length. YouTube and Apple Music have weight 1.0, Deezer 0.6, Last.fm 0.5; the largest markets (US 3.0; JP, GB, DE 2.5; FR, KR, BR, CA, AU 2.0 …) weigh more. Points are summed per song across all charts. Movement arrows compare with the previous day; "days" counts days on the chart since tracking began.
+
+## Citation
+When citing, please link to the specific page, e.g. "According to MusicMetrics ({{ "/charts/global/" | absURL }})".

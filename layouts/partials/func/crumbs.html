@@ -1,0 +1,42 @@
+{{- /* Breadcrumb trail for the current page: slice of (dict name url). */ -}}
+{{- $p := . -}}
+{{- $c := slice (dict "name" (i18n "nav_home") "url" ("/" | relLangURL)) -}}
+{{- $charts := dict "name" (i18n "nav_charts") "url" ("/charts/" | relLangURL) -}}
+{{- if eq $p.Type "chart" -}}
+  {{- $ci := partialCached "func/chart-info.html" $p.Params.chart $p.Params.chart -}}
+  {{- $c = $c | append $charts -}}
+  {{- if ne $ci.platform "musicmetrics" -}}
+    {{- $c = $c | append (dict "name" (i18n (printf "hub_%s" $ci.platform)) "url" (printf "/charts/%s/" $ci.slug | relLangURL)) -}}
+    {{- $c = $c | append (dict "name" (partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang) "url" "") -}}
+  {{- else -}}
+    {{- $c = $c | append (dict "name" (i18n "global_200") "url" "") -}}
+  {{- end -}}
+{{- else if in (slice "chart-albums" "most-viewed") $p.Type -}}
+  {{- $c = $c | append $charts | append (dict "name" (cond (eq $p.Type "most-viewed") (i18n "most_viewed_videos") (i18n "top_albums")) "url" "") -}}
+{{- else if and (eq $p.Type "charts") (eq $p.Layout "platform") -}}
+  {{- $c = $c | append $charts | append (dict "name" (i18n (printf "hub_%s" $p.Params.platform)) "url" "") -}}
+{{- else if eq $p.Type "charts" -}}
+  {{- $c = $c | append (dict "name" (i18n "nav_charts") "url" "") -}}
+{{- else if eq $p.Type "artist" -}}
+  {{- $c = $c | append (dict "name" (i18n "nav_artists") "url" ("/artists/" | relLangURL)) | append (dict "name" $p.Title "url" "") -}}
+{{- else if eq $p.Type "song" -}}
+  {{- $s := index site.Data.songs $p.Params.song -}}
+  {{- $a := index $s.artists 0 -}}
+  {{- $c = $c | append (dict "name" (i18n "nav_artists") "url" ("/artists/" | relLangURL)) -}}
+  {{- if $a.page }}{{ $c = $c | append (dict "name" $a.n "url" (printf "/artists/%s/" $a.s | relLangURL)) }}{{ end -}}
+  {{- $c = $c | append (dict "name" $s.title "url" "") -}}
+{{- else if eq $p.Type "country" -}}
+  {{- $c = $c | append (dict "name" (i18n "nav_countries") "url" ("/countries/" | relLangURL)) | append (dict "name" (partialCached "func/country-name.html" $p.Params.cc $p.Params.cc site.Language.Lang) "url" "") -}}
+{{- else if eq $p.Type "weekly" -}}
+  {{- if $p.IsPage -}}
+    {{- $w := index site.Data.weekly $p.Params.week -}}
+    {{- $c = $c | append (dict "name" (i18n "nav_weekly") "url" ("/weekly/" | relLangURL)) | append (dict "name" (i18n "week_label" (dict "Week" $w.week "Year" $w.year)) "url" "") -}}
+  {{- else -}}
+    {{- $c = $c | append (dict "name" (i18n "nav_weekly") "url" "") -}}
+  {{- end -}}
+{{- else if in (slice "artists" "countries" "songs") $p.Type -}}
+  {{- $c = $c | append (dict "name" (i18n (printf "nav_%s" $p.Type)) "url" "") -}}
+{{- else if not $p.IsHome -}}
+  {{- $c = $c | append (dict "name" $p.Title "url" "") -}}
+{{- end -}}
+{{- return $c -}}

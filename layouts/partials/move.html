@@ -1,0 +1,9 @@
+{{- $c := . -}}
+{{- $s := printf "%v" $c -}}
+{{- if eq $s "new" -}}<span class="move move--new">{{ i18n "new" }}</span>
+{{- else if eq $s "re" -}}<span class="move move--re" title="{{ i18n "re_entry" }}">RE</span>
+{{- else if eq $s "<nil>" -}}<span class="move move--same">–</span>
+{{- else if gt (int $c) 0 -}}<span class="move move--up" title="{{ i18n "up_positions" (dict "N" $c) }}">▲{{ $c }}</span>
+{{- else if lt (int $c) 0 -}}<span class="move move--down" title="{{ i18n "down_positions" (dict "N" (mul -1 (int $c))) }}">▼{{ mul -1 (int $c) }}</span>
+{{- else -}}<span class="move move--same" title="{{ i18n "no_change" }}">=</span>
+{{- end -}}

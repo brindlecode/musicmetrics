@@ -1,0 +1,8 @@
+{{- $sec := .Section -}}
+<nav class="bottom-nav" aria-label="{{ i18n "main_navigation" }}">
+  <a href="{{ "/" | relLangURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>{{ partialCached "icons.html" (dict "n" "home" "s" 22) "home" 22 }}{{ i18n "nav_home" }}</a>
+  <a href="{{ "/charts/" | relLangURL }}"{{ if eq $sec "charts" }} class="is-active"{{ end }}>{{ partialCached "icons.html" (dict "n" "chart" "s" 22) "chart" 22 }}{{ i18n "nav_charts" }}</a>
+  <button type="button" data-open-search>{{ partialCached "icons.html" (dict "n" "search" "s" 22) "search" 22 }}{{ i18n "search" }}</button>
+  <a href="{{ "/artists/" | relLangURL }}"{{ if in (slice "artists" "songs") $sec }} class="is-active"{{ end }}>{{ partialCached "icons.html" (dict "n" "user" "s" 22) "user" 22 }}{{ i18n "nav_artists" }}</a>
+  <a href="{{ "/countries/" | relLangURL }}"{{ if eq $sec "countries" }} class="is-active"{{ end }}>{{ partialCached "icons.html" (dict "n" "globe" "s" 22) "globe" 22 }}{{ i18n "nav_countries" }}</a>
+</nav>

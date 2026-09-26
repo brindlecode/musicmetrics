@@ -1,0 +1,12 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">{{ dict
+  "@context" "https://schema.org"
+  "@graph" (slice
+    (dict "@type" "Organization" "@id" (printf "%s#org" site.BaseURL) "name" "MusicMetrics" "url" site.BaseURL
+      "logo" (dict "@type" "ImageObject" "url" ("/icon-512.png" | absURL) "width" 512 "height" 512)
+      "sameAs" (slice (printf "https://x.com/%s" site.Params.social.twitter) "https://github.com/ilkukaya/musicmetrics"))
+    (dict "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) "name" "MusicMetrics" "alternateName" "Music Metrics" "url" ("/" | absLangURL)
+      "inLanguage" site.Language.LanguageCode "publisher" (dict "@id" (printf "%s#org" site.BaseURL))
+      "potentialAction" (dict "@type" "SearchAction" "target" (dict "@type" "EntryPoint" "urlTemplate" (printf "%s?q={search_term_string}" ("/search/" | absLangURL))) "query-input" "required name=search_term_string"))
+  ) | jsonify | safeJS }}</script>
+{{- end -}}

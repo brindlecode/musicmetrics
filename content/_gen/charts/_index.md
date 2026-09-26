@@ -1,0 +1,4 @@
+---
+title: "Charts"
+type: "charts"
+---

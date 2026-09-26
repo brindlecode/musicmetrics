@@ -1,0 +1,103 @@
+{{- /* Computes title / description / image for every page type (localized). */ -}}
+{{- $t := "" -}}
+{{- $d := "" -}}
+{{- $img := "" -}}
+{{- $big := false -}}
+{{- $noindex := false -}}
+{{- $canonical := .Permalink -}}
+{{- $ogType := "website" -}}
+{{- $brand := " | MusicMetrics" -}}
+{{- $date := time.AsTime site.Data.meta.updated | time.Format ":date_medium" -}}
+
+{{- if .IsHome -}}
+  {{- $t = i18n "home_title" -}}
+  {{- $top := index site.Data.charts.global.items 0 -}}
+  {{- $d = i18n "home_description" (dict "Title" $top.title "Artist" $top.artist) -}}
+  {{- $brand = "" -}}
+{{- else if eq .Type "chart" -}}
+  {{- $c := index site.Data.charts .Params.chart -}}
+  {{- $ci := partialCached "func/chart-info.html" .Params.chart .Params.chart -}}
+  {{- $cn := partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang -}}
+  {{- $t = i18n (printf "seo_title_%s" $ci.platform) (dict "Country" $cn "Count" $c.total) -}}
+  {{- $top := index $c.items 0 -}}
+  {{- $d = i18n (printf "seo_desc_%s" $ci.platform) (dict "Country" $cn "Title" $top.title "Artist" $top.artist "Count" $c.total "Date" $date) -}}
+  {{- with $top.image }}{{ $img = . }}{{ end -}}
+{{- else if eq .Type "chart-albums" -}}
+  {{- $t = i18n "seo_title_albums" -}}
+  {{- $top := index site.Data.albums 0 -}}
+  {{- $d = i18n "seo_desc_albums" (dict "Title" $top.title "Artist" $top.artist) -}}
+  {{- $img = $top.image -}}
+{{- else if eq .Type "most-viewed" -}}
+  {{- $t = i18n "seo_title_most_viewed" -}}
+  {{- $top := index site.Data.youtube_most_viewed 0 -}}
+  {{- $d = i18n "seo_desc_most_viewed" (dict "Title" $top.title "Artist" $top.artist "Views" (partial "func/num.html" $top.views)) -}}
+  {{- $img = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $top.video_id -}}
+  {{- $big = true -}}
+{{- else if eq .Type "charts" -}}
+  {{- if eq .Layout "platform" -}}
+    {{- $pn := index (dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "deezer" "Deezer" "lastfm" "Last.fm") .Params.platform -}}
+    {{- $t = i18n (printf "seo_title_hub_%s" .Params.platform) (dict "Platform" $pn) -}}
+    {{- $d = i18n "seo_desc_hub" (dict "Platform" $pn) -}}
+  {{- else -}}
+    {{- $t = i18n "seo_title_charts" -}}
+    {{- $d = i18n "seo_desc_charts" (dict "Count" (len site.Data.charts) "Countries" (len site.Data.countries)) -}}
+  {{- end -}}
+{{- else if eq .Type "artist" -}}
+  {{- $a := index site.Data.artists .Params.artist -}}
+  {{- $t = i18n "seo_title_artist" (dict "Name" $a.name) -}}
+  {{- $s := index $a.songs 0 -}}
+  {{- $d = i18n "seo_desc_artist" (dict "Name" $a.name "Rank" $a.rank "Song" $s.t "Countries" (len $a.countries) "Charts" $a.charts) -}}
+  {{- $img = $a.image_large | default $a.image -}}
+  {{- $ogType = "profile" -}}
+{{- else if eq .Type "song" -}}
+  {{- $s := index site.Data.songs .Params.song -}}
+  {{- $t = i18n "seo_title_song" (dict "Title" $s.title "Artist" $s.artist) -}}
+  {{- $best := index $s.positions 0 -}}
+  {{- $bci := partialCached "func/chart-info.html" $best.c $best.c -}}
+  {{- $d = i18n "seo_desc_song" (dict "Title" $s.title "Artist" $s.artist "Rank" $s.grank "Charts" (len $s.positions) "Countries" $s.countries "Best" $best.r "BestChart" (partialCached "func/chart-title.html" $best.c $best.c site.Language.Lang)) -}}
+  {{- $img = $s.image_large | default $s.image -}}
+  {{- $ogType = "music.song" -}}
+{{- else if eq .Type "songs" -}}
+  {{- $t = i18n "seo_title_songs" -}}
+  {{- $d = i18n "seo_desc_charts" (dict "Count" (len site.Data.charts) "Countries" (len site.Data.countries)) -}}
+  {{- $canonical = (site.GetPage "/charts/global").Permalink -}}
+{{- else if eq .Type "country" -}}
+  {{- $c := index site.Data.countries .Params.cc -}}
+  {{- $cn := partialCached "func/country-name.html" .Params.cc .Params.cc site.Language.Lang -}}
+  {{- $t = i18n "seo_title_country" (dict "Country" $cn) -}}
+  {{- $top := $c.top | default dict -}}
+  {{- $d = i18n "seo_desc_country" (dict "Country" $cn "Title" $top.title "Artist" $top.artist "Date" $date) -}}
+  {{- with $top.image }}{{ $img = . }}{{ end -}}
+{{- else if eq .Type "countries" -}}
+  {{- $t = i18n "seo_title_countries" (dict "Count" (len site.Data.countries)) -}}
+  {{- $d = i18n "seo_desc_countries" (dict "Count" (len site.Data.countries)) -}}
+{{- else if eq .Type "artists" -}}
+  {{- $t = i18n "seo_title_artists" -}}
+  {{- $d = i18n "seo_desc_artists" -}}
+{{- else if eq .Type "weekly" -}}
+  {{- if .IsPage -}}
+    {{- $w := index site.Data.weekly .Params.week -}}
+    {{- $top := index $w.top 0 -}}
+    {{- $t = i18n "seo_title_week" (dict "Week" $w.week "Year" $w.year) -}}
+    {{- $d = i18n "seo_desc_week" (dict "Week" $w.week "Year" $w.year "Title" $top.t "Artist" $top.a) -}}
+    {{- $img = $top.img -}}
+    {{- $ogType = "article" -}}
+  {{- else -}}
+    {{- $t = i18n "seo_title_weekly" -}}
+    {{- $d = i18n "seo_desc_weekly" -}}
+  {{- end -}}
+{{- else -}}
+  {{- $t = .Title -}}
+  {{- $d = .Description | default .Summary | default (i18n "home_description_generic") -}}
+  {{- if .Params.noindex }}{{ $noindex = true }}{{ end -}}
+{{- end -}}
+
+{{- if not $img -}}
+  {{- $img = "/og-default.png" | absURL -}}
+  {{- $big = true -}}
+{{- end -}}
+{{- if and (strings.HasPrefix $img "https://i.ytimg.com") (not $big) }}{{ $big = true }}{{ end -}}
+{{- $d = $d | plainify | replaceRE `\s+` " " | strings.TrimSpace -}}
+{{- if gt (len $d) 170 }}{{ $d = printf "%s…" (substr $d 0 167) }}{{ end -}}
+{{- $full := printf "%s%s" $t $brand -}}
+{{- return (dict "title" $full "ogTitle" $t "description" $d "image" $img "bigImage" $big "noindex" $noindex "canonical" $canonical "ogType" $ogType) -}}

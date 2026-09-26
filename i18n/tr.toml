@@ -1,170 +1,319 @@
-[site_title]
-other = "MusicMetrics - Küresel Müzik Listeleri ve Yayın İstatistikleri"
+# ---------------------------------------------------------------- general
+skip_to_content = "İçeriğe geç"
+main_navigation = "Ana menü"
+breadcrumb = "Sayfa yolu"
+language = "Dil"
+toggle_theme = "Karanlık modu aç/kapat"
+close = "Kapat"
+search = "Ara"
+search_placeholder = "Sanatçı, şarkı, ülke ara…"
+search_hint = "Sanatçı, şarkı ve ülke arayın"
+no_results = "Sonuç bulunamadı"
+link_copied = "Bağlantı kopyalandı"
+kind_artist = "Sanatçı"
+kind_song = "Şarkı"
+kind_country = "Ülke"
+kind_chart = "Liste"
+share = "Paylaş"
+view = "Görüntüle"
+view_all = "Tümünü gör"
+more = "Daha fazla"
+and = "ve"
+advertisement = "Reklam"
+updated = "Güncellendi"
+last_update = "Son güncelleme"
+last_reviewed = "Son inceleme"
+archive = "Arşiv"
+faq = "Sıkça sorulan sorular"
+records = "Rekorlar"
+year = "Yıl"
+video = "Video"
 
-[tagline]
-other = "Tüm müzik verileriniz tek bir yerde"
+# ------------------------------------------------------------------ nav
+nav_home = "Ana sayfa"
+nav_charts = "Listeler"
+nav_artists = "Sanatçılar"
+nav_countries = "Ülkeler"
+nav_songs = "Şarkılar"
+nav_weekly = "Haftalık"
+nav_youtube_records = "YouTube Rekorları"
+about = "Hakkımızda"
+methodology = "Yöntem"
+contact = "İletişim"
+privacy_policy = "Gizlilik Politikası"
+terms_of_service = "Kullanım Koşulları"
 
-[nav_home]
-other = "Ana Sayfa"
+# --------------------------------------------------------------- footer
+footer_about = "YouTube, Apple Music, Deezer ve daha fazlasından bağımsız müzik listeleri — her ülke için, 6 saatte bir güncellenir."
+footer_explore = "Keşfet"
+footer_top_countries = "Öne çıkan ülkeler"
+footer_disclaimer = "YouTube, Apple, Deezer veya Spotify ile bağlantılı değildir. Veriler herkese açık kaynaklardan alınır."
 
-[nav_spotify]
-other = "Spotify"
+# ------------------------------------------------------------ chart terms
+song = "Şarkı"
+songs = "Şarkılar"
+artist = "Sanatçı"
+album = "Albüm"
+genre = "Tür"
+chart = "Liste"
+charts = "Listeler"
+country = "Ülke"
+countries = "Ülkeler"
+countries_lower = "ülke"
+position = "Sıra"
+points = "Puan"
+views = "İzlenme"
+views_lower = "izlenme"
+listeners = "Dinleyici"
+peak_short = "Zirve"
+days_short = "Gün"
+day_short = "gün"
+per_day = "Günlük"
+new = "YENİ"
+re_entry = "Yeniden giriş"
+no_change = "Değişiklik yok"
+up_positions = "{{ .N }} sıra yükseldi"
+down_positions = "{{ .N }} sıra düştü"
+days_count = "{{ .Count }} gün"
+entries_count = "{{ .Count }} giriş"
+charts_count = "{{ .Count }} liste"
+songs_count = "{{ .Count }} şarkı"
+in_countries = "{{ .Count }} ülke"
+worldwide = "Dünya geneli"
+worldwide_lower = "dünya geneli"
+global_200 = "Global 200"
+global_rank = "Dünya sıralaması"
+best_position = "En iyi sıra"
+top_song = "Zirvedeki şarkı"
+top_artists = "Öne çıkan sanatçılar"
+top_albums = "En popüler albümler"
+yt_views = "YouTube izlenmesi"
+yt_subscribers = "YouTube abonesi"
+deezer_fans = "Deezer hayranı"
+released = "Yayın tarihi"
+cross_platform = "Platformlar arası"
+cross_country = "Tüm ülkeler"
+full_chart = "Listenin tamamı ({{ .N }})"
+all_charts = "Tüm listeler"
+more_charts = "Diğer listeler"
+other_charts = "Başka listeler"
+all_charts_in = "{{ .Country }} için tüm listeler"
+charts_in = "{{ .Country }} listeleri"
+select_country = "Ülke seçin"
+filter_chart = "Şarkı veya sanatçıya göre filtrele…"
+filter_countries = "Ülkeleri filtrele…"
+filter_artists = "Sanatçıları filtrele…"
+new_entries_only = "Sadece yeniler"
+how_calculated = "Nasıl hesaplanır?"
+play_video = "Videoyu oynat"
+play_top_song = "Bir numarayı dinle"
+chart_legend = "▲▼ önceki güne göre değişim · YENİ ilk kez listede · RE yeniden giriş · Zirve ve gün sayısı takibin başladığı tarihten itibaren."
+data_note = "Liste verileri 6 saatte bir herkese açık kaynaklardan otomatik olarak toplanır. Bir hata mı gördünüz? İletişim sayfasından bize bildirin."
 
-[nav_youtube]
-other = "YouTube"
+# chart titles ({{ .Country }} is localized)
+chart_title_youtube = "YouTube Trend Müzikler · {{ .Country }}"
+chart_title_apple = "Apple Music Top 100 · {{ .Country }}"
+chart_title_apple-albums = "Apple Music En İyi Albümler · {{ .Country }}"
+chart_title_deezer = "Deezer Top 100 · {{ .Country }}"
+chart_title_lastfm = "Last.fm En Çok Dinlenenler · {{ .Country }}"
+chart_title_musicmetrics = "Global 200 · Dünyanın En Popüler Şarkıları"
 
-[nav_charts]
-other = "Listeler"
+chip_youtube = "YouTube"
+chip_apple = "Apple Music"
+chip_apple-albums = "Apple Albümler"
+chip_deezer = "Deezer"
+chip_lastfm = "Last.fm"
+chip_musicmetrics = "Global 200"
 
-[nav_artists]
-other = "Sanatçılar"
+hub_youtube = "YouTube Müzik Listeleri"
+hub_apple = "Apple Music Listeleri"
+hub_apple-albums = "Apple Music Albüm Listeleri"
+hub_deezer = "Deezer Listeleri"
+hub_lastfm = "Last.fm Listeleri"
+hub_desc_youtube = "Her ülkede trend olan müzik videoları, toplam ve günlük izlenmeleriyle."
+hub_desc_apple = "Her ülkede Apple Music'te en çok dinlenen 100 şarkı."
+hub_desc_apple-albums = "Her ülkede Apple Music'te en çok dinlenen 100 albüm."
+hub_desc_deezer = "Resmi Deezer Top 100 listeleri, dünya geneli ve ülke bazında."
+hub_desc_lastfm = "Last.fm'de dinleyici sayısına göre en çok dinlenen şarkılar."
 
-[nav_countries]
-other = "Ülkeler"
+lede_youtube = "Şu anda YouTube'da trend olan müzik videoları ({{ .Country }}), toplam izlenme ve son 24 saatteki izlenmeleriyle."
+lede_apple = "Bugün Apple Music'te en çok dinlenen {{ .Count }} şarkı ({{ .Country }}); günlük değişim, zirve ve listede kalınan gün sayısıyla."
+lede_apple-albums = "Bugün Apple Music'te en çok dinlenen {{ .Count }} albüm ({{ .Country }})."
+lede_deezer = "{{ .Country }} için resmi Deezer Top {{ .Count }} listesi, gün içinde birkaç kez güncellenir."
+lede_lastfm = "Last.fm'de en çok dinlenen şarkılar ({{ .Country }}), dinleyici sayısına göre sıralı."
+lede_musicmetrics = "Şu anda dünyanın en popüler {{ .Count }} şarkısı: takip ettiğimiz tüm ülkelerdeki YouTube, Apple Music, Deezer ve diğer listelerin birleşimi."
 
-[nav_trending]
-other = "Trendler"
+source_youtube = "Kaynak: YouTube Data API (trendler, müzik kategorisi)."
+source_apple = "Kaynak: Apple Music en çok dinlenenler listeleri."
+source_apple-albums = "Kaynak: Apple Music en çok dinlenen albümler listeleri."
+source_deezer = "Kaynak: Deezer Charts."
+source_lastfm = "Kaynak: Last.fm API."
+source_musicmetrics = "MusicMetrics tarafından takip edilen tüm listelerden hesaplanır."
 
-[search_placeholder]
-other = "Sanatçı, şarkı, albüm ara..."
+answer_chart = "Şu anda {{ .Country }} <strong>{{ .Platform }}</strong> listesinin bir numarası <strong>{{ .Artist }} – “{{ .Title }}”</strong>: listede {{ .Days }} gün, zirve #{{ .Peak }}."
+answer_chart_album = "Şu anda {{ .Country }} <strong>{{ .Platform }}</strong> listesinin bir numaralı albümü <strong>{{ .Artist }} – “{{ .Title }}”</strong>."
+answer_country = "Şu anda {{ .Country }} listelerinin bir numarası <strong>{{ .Artist }} – “{{ .Title }}”</strong> ({{ .Platform }})."
+answer_artist = "{{ .Name }} adlı sanatçının şu anki en büyük hiti <strong>“{{ .Song }}”</strong>. {{ .Name }} şu anda {{ .Countries }} ülkede listelerde; güncel en iyi sırası <strong>#{{ .Best }}</strong> ({{ .BestChart }})."
+answer_song = "<strong>{{ .Artist }} – “{{ .Title }}”</strong> {{ .Countries }} ülkede {{ .Charts }} listede yer alıyor. Güncel en iyi sırası <strong>#{{ .Best }}</strong> ({{ .BestChart }})."
 
-[daily_chart]
-other = "Günlük Liste"
+# ------------------------------------------------------------------ home
+home_title = "MusicMetrics — Müzik Listeleri ve En Çok Dinlenen Şarkılar"
+home_description = "Dünya şu anda ne dinliyor? Bir numara: {{ .Artist }} – “{{ .Title }}”. 90'dan fazla ülke için YouTube, Apple Music ve Deezer müzik listeleri, 6 saatte bir güncellenir."
+home_description_generic = "Her ülke için YouTube, Apple Music ve Deezer'dan canlı müzik listeleri ve dinlenme istatistikleri."
+most_popular_song_world = "Şu anda dünyanın en popüler şarkısı"
+lead_stats = "{{ .Countries }} ülkede listede · {{ .Charts }} liste · Global 200'de {{ .Days }} gün"
+see_global_200 = "Global 200'e göz at"
+global_top_10 = "Dünya top 10"
+global_top_50 = "Dünya top 50"
+key_numbers = "Öne çıkan rakamlar"
+charts_tracked = "Takip edilen liste"
+songs_tracked = "Takip edilen şarkı"
+number_one_around_world = "Dünyada bir numaralar"
+number_one_now = "Şu an 1 numara"
+all_countries_n = "{{ .N }} ülkenin tümü"
+biggest_climbers = "En çok yükselenler"
+hot_new_entries = "Yeni girenler"
+movers_tomorrow = "Değişim okları takibin ikinci gününden itibaren görünür."
+no_new_entries = "Bugün yeni giriş yok."
+top_artists_now = "Şu anın en popüler sanatçıları"
+artist_ranking = "Sanatçı sıralaması"
+most_watched_24h = "Son 24 saatte YouTube'da en çok izlenenler"
+browse_by_platform = "Platforma göre göz at"
+about_home_h = "Her ülkenin müzik listeleri tek bir yerde"
+about_home_p1 = "MusicMetrics, onlarca ülkedeki resmi YouTube, Apple Music ve Deezer listelerini altı saatte bir toplar ve tüm geçmişi saklar: günlük değişim, zirve sıraları, listede kalınan gün sayısı ve YouTube günlük izlenmeleri. Global 200 ise hepsini dünyanın en popüler şarkılarından oluşan tek bir sıralamada birleştirir."
+about_home_p2 = "Tüm rakamlar herkese açık verilerden otomatik olarak hesaplanır. Tam olarak nasıl yapıldığını şurada okuyabilirsiniz:"
 
-[weekly_chart]
-other = "Haftalık Liste"
+# ----------------------------------------------------------------- pages
+h1_charts = "Müzik listeleri"
+h1_country = "{{ .Country }} müzik listeleri bugün"
+h1_countries = "{{ .Count }} ülkenin müzik listeleri"
+h1_artists = "Dünyanın en popüler sanatçıları"
+h1_most_viewed = "YouTube'da en çok izlenen müzik videoları"
+h1_week = "Haftanın bir numarası: {{ .Artist }} – {{ .Title }}"
+lede_country = "{{ .Country }} için bugünün en çok dinlenen şarkıları, {{ .Count }} listede — YouTube, Apple Music, Deezer ve daha fazlası — 6 saatte bir güncellenir."
+lede_countries = "YouTube, Apple Music ve Deezer listelerini görmek için bir ülke seçin. {{ .Count }} ülke, 6 saatte bir güncellenir."
+lede_artists = "Şu anda dünya genelinde listelerde en güçlü sanatçılar; takip ettiğimiz tüm listelerdeki şarkı sıralarına göre."
+lede_most_viewed = "YouTube'da tüm zamanların en çok izlenen müzik videoları, canlı izlenme sayıları ve günlük izlenmelerle. {{ .Count }} video bir milyar izlenmeyi aştı."
+lede_week = "{{ .Year }} yılının {{ .Week }}. haftası Global 200 listesi: dünyanın en popüler şarkısı {{ .Artist }} – “{{ .Title }}” oldu."
+country_charts = "Ülke listeleri"
+top_artists_in = "{{ .Country }} listelerinde en çok yer alan sanatçılar"
+chart_matrix = "Ülkelere göre tüm listeler"
+number_ones_by_country = "Ülkelere göre bir numaralar"
+albums_desc = "Her ülkedeki Apple Music albüm listelerinde en popüler albümler."
+most_viewed_desc = "Tüm zamanların en çok izlenen müzik videoları ve Billion Views Club (Milyar İzlenme Kulübü)."
+most_viewed_videos = "En çok izlenen müzik videoları"
+most_viewed_note = "İzlenme sayıları YouTube Data API ile 6 saatte bir yenilenir. Günlük izlenmeler son ~24 saat üzerinden ölçülür."
+billion_club = "Billion Views Club"
+record_views = "Tüm zamanların rekoru"
+fastest_24h = "24 saatte en çok izlenme"
+week_label = "{{ .Year }}, {{ .Week }}. hafta"
+top_artists_week = "Haftanın en popüler sanatçıları"
+not_found_title = "Bu sayfa listede yok"
+not_found_text = "Sayfa listelerden düşmüş ya da taşınmış olabilir. Bir sanatçı, şarkı veya ülke aramayı deneyin."
 
-[top_songs]
-other = "En İyi Şarkılar"
+artist_lede = "{{ .Name }} şu anda {{ .Countries }} ülkede, {{ .Charts }} listede {{ .Songs }} şarkıyla yer alıyor."
+artist_rank = "Sanatçı sırası"
+charting_songs = "Listedeki şarkılar"
+songs_on_charts = "Listelerdeki {{ .Name }} şarkıları"
+charting_in = "{{ .Name }} hangi ülkelerde listede?"
+listen_to = "{{ .Name }} dinle"
+listen_and_buy = "Dinle ve satın al"
+fans_also_follow = "Hayranları bunları da takip ediyor"
+more_by = "{{ .Name }}: diğer şarkılar"
+view_artist = "Sanatçı sayfası"
+chart_positions = "Liste sıraları"
+official_video = "Resmi video"
 
-[top_albums]
-other = "En İyi Albümler"
+listen = "Dinle"
+watch = "İzle"
+listen_free_trial = "Dinle · ücretsiz deneme"
+stream_or_buy = "Dinle veya satın al"
+vinyl_cds = "Plak ve CD"
+shop_on = "Satın al:"
+concert_tickets = "Konser biletleri"
+affiliate_disclosure = "Bazı bağlantılar satış ortaklığı bağlantılarıdır: size ek bir maliyeti olmadan komisyon kazanabiliriz. Bu, listeleri asla etkilemez."
 
-[top_artists]
-other = "En İyi Sanatçılar"
+# ------------------------------------------------------------------- SEO
+seo_title_youtube = "{{ .Country }} YouTube Trend Müzikler Bugün — Müzik Listesi"
+seo_title_apple = "Apple Music Top 100 {{ .Country }} Bugün — En Çok Dinlenenler"
+seo_title_apple-albums = "Apple Music En İyi Albümler {{ .Country }} Bugün"
+seo_title_deezer = "Deezer Top 100 {{ .Country }} Bugün — Müzik Listesi"
+seo_title_lastfm = "Last.fm {{ .Country }} — En Çok Dinlenen Şarkılar"
+seo_title_musicmetrics = "Global 200: Dünyada Bugün En Çok Dinlenen Şarkılar"
+seo_desc_youtube = "{{ .Country }} YouTube 1 numarası: {{ .Artist }} – “{{ .Title }}”. İzlenme ve günlük izlenmeleriyle trend olan top {{ .Count }} müzik videosu. {{ .Date }}."
+seo_desc_apple = "{{ .Country }} Apple Music 1 numarası: {{ .Artist }} – “{{ .Title }}”. Değişim, zirve ve gün sayısıyla Top {{ .Count }} listesinin tamamı. {{ .Date }}."
+seo_desc_apple-albums = "{{ .Country }} Apple Music 1 numaralı albüm: {{ .Artist }} – “{{ .Title }}”. Top {{ .Count }} albüm listesinin tamamı. {{ .Date }}."
+seo_desc_deezer = "{{ .Country }} Deezer 1 numarası: {{ .Artist }} – “{{ .Title }}”. Günlük değişim ve zirvelerle Top {{ .Count }} listesinin tamamı. {{ .Date }}."
+seo_desc_lastfm = "{{ .Country }} Last.fm 1 numarası: {{ .Artist }} – “{{ .Title }}”. Dinleyici sayısına göre top {{ .Count }} şarkı. {{ .Date }}."
+seo_desc_musicmetrics = "Şu anda dünyanın 1 numarası: {{ .Artist }} – “{{ .Title }}”. Global 200, 90'dan fazla ülkedeki YouTube, Apple Music ve Deezer listelerini birleştirir. {{ .Date }}."
+seo_title_hub_youtube = "Ülkelere Göre YouTube Müzik Listeleri — Trend Müzik Videoları"
+seo_title_hub_apple = "Ülkelere Göre Apple Music Listeleri — Top 100 Şarkı"
+seo_title_hub_apple-albums = "Ülkelere Göre Apple Music Albüm Listeleri — Top 100 Albüm"
+seo_title_hub_deezer = "Ülkelere Göre Deezer Listeleri — Top 100"
+seo_title_hub_lastfm = "Ülkelere Göre Last.fm Listeleri"
+seo_desc_hub = "Her ülkenin {{ .Platform }} listeleri tek bir yerde: her ülkenin 1 numaralı şarkısı ve top 100 listesinin tamamı, 6 saatte bir güncellenir."
+seo_title_charts = "Müzik Listeleri: Ülkelere Göre YouTube, Apple Music ve Deezer"
+seo_desc_charts = "{{ .Countries }} ülkede {{ .Count }} canlı müzik listesi — YouTube, Apple Music, Deezer — ve platformlar arası Global 200. 6 saatte bir güncellenir."
+seo_title_albums = "Dünyada Bugün En Popüler Albümler — Global Albüm Listesi"
+seo_desc_albums = "Şu anda tüm ülkelerde en popüler albümler. 1 numara: {{ .Artist }} – “{{ .Title }}”."
+seo_title_most_viewed = "YouTube'da En Çok İzlenen Müzik Videoları (Tüm Zamanlar)"
+seo_desc_most_viewed = "YouTube'da en çok izlenen müzik videosu {{ .Views }} izlenmeyle {{ .Artist }} – “{{ .Title }}”. Günlük izlenmeler ve Billion Views Club ile canlı sıralama."
+seo_title_artist = "{{ .Name }}: Listeler, En Popüler Şarkılar ve İstatistikler"
+seo_desc_artist = "{{ .Name }}, MusicMetrics'te dünya sıralamasında #{{ .Rank }}. En büyük hit: “{{ .Song }}”. {{ .Countries }} ülkede, {{ .Charts }} listedeki sıraları."
+seo_title_song = "{{ .Title }} — {{ .Artist }}: Liste Sıraları ve İstatistikler"
+seo_desc_song = "{{ .Artist }} – “{{ .Title }}” {{ .Countries }} ülkede {{ .Charts }} listede. En iyi sıra: #{{ .Best }} ({{ .BestChart }}). YouTube izlenmeleri ve günlük istatistikler."
+seo_title_songs = "Şu Anda Dünyada En Çok Dinlenen Şarkılar"
+seo_title_country = "{{ .Country }} Top 100 Müzik Listesi Bugün — En Çok Dinlenen Şarkılar"
+seo_desc_country = "Şu anda {{ .Country }} listelerinin 1 numarası: {{ .Artist }} – “{{ .Title }}”. {{ .Country }} için tüm müzik listeleri tek bir yerde. {{ .Date }}."
+seo_title_countries = "Ülkelere Göre Müzik Listeleri ({{ .Count }} Ülke)"
+seo_desc_countries = "{{ .Count }} ülkede YouTube, Apple Music ve Deezer'da en çok dinlenen şarkılar. Her ülkenin 1 numaralı şarkısını bulun, 6 saatte bir güncellenir."
+seo_title_artists = "Dünyanın En Popüler Sanatçıları — Global Sanatçı Sıralaması"
+seo_desc_artists = "Şu anda dünyanın en popüler sanatçıları; 90'dan fazla ülkede YouTube, Apple Music ve Deezer listelerindeki sıralarına göre."
+seo_title_week = "{{ .Year }}, {{ .Week }}. Hafta: Dünyanın En Büyük Hitleri"
+seo_desc_week = "{{ .Year }} yılının {{ .Week }}. haftası Global 200 listesi. 1 numara: {{ .Artist }} – “{{ .Title }}”. Her ülkenin 1 numaraları ve haftanın sanatçıları."
+seo_title_weekly = "Haftalık Müzik Listesi Özetleri"
+seo_desc_weekly = "Dünyanın en büyük şarkı ve sanatçılarının ve her ülkenin bir numaralarının haftalık arşivi."
 
-[streams]
-other = "Dinlenme"
-
-[views]
-other = "İzlenme"
-
-[rank]
-other = "Sıra"
-
-[artist]
-other = "Sanatçı"
-
-[song]
-other = "Şarkı"
-
-[album]
-other = "Albüm"
-
-[change]
-other = "Değişim"
-
-[country]
-other = "Ülke"
-
-[global]
-other = "Küresel"
-
-[daily]
-other = "Günlük"
-
-[weekly]
-other = "Haftalık"
-
-[all_time]
-other = "Tüm Zamanlar"
-
-[most_streamed]
-other = "En Çok Dinlenen"
-
-[most_viewed]
-other = "En Çok İzlenen"
-
-[monthly_listeners]
-other = "Aylık Dinleyici"
-
-[peak_position]
-other = "En Yüksek Sıra"
-
-[current_position]
-other = "Mevcut Sıra"
-
-[days_on_chart]
-other = "Listede Kalma Süresi"
-
-[last_updated]
-other = "Son Güncelleme"
-
-[view_all]
-other = "Tümünü Gör"
-
-[compare_artists]
-other = "Sanatçıları Karşılaştır"
-
-[share]
-other = "Paylaş"
-
-[chart_history]
-other = "Liste Geçmişi"
-
-[worldwide]
-other = "Dünya Geneli"
-
-[footer_about]
-other = "MusicMetrics, tüm büyük platformlardan gerçek zamanlı müzik listeleri, yayın istatistikleri ve analizler sunar. Ücretsiz, açık ve günlük güncellenir."
-
-[footer_platforms]
-other = "Platformlar"
-
-[footer_resources]
-other = "Kaynaklar"
-
-[footer_legal]
-other = "Yasal"
-
-[privacy_policy]
-other = "Gizlilik Politikası"
-
-[terms_of_service]
-other = "Kullanım Şartları"
-
-[contact]
-other = "İletişim"
-
-[about]
-other = "Hakkında"
-
-[no_data]
-other = "Veri bulunamadı"
-
-[loading]
-other = "Yükleniyor..."
-
-[error_loading]
-other = "Veri yükleme hatası"
-
-[select_country]
-other = "Ülke Seçin"
-
-[all_countries]
-other = "Tüm Ülkeler"
-
-[radio]
-other = "Radyo"
-
-[dark_mode]
-other = "Karanlık Mod"
-
-[light_mode]
-other = "Aydınlık Mod"
-
-[listen_on]
-other = "Dinle"
-
-[buy_on_amazon]
-other = "Amazon'dan Satın Al"
+# ------------------------------------------------------------------- FAQ
+faq_home_q1 = "Şu anda dünyanın en popüler şarkısı hangisi?"
+faq_home_a1 = "MusicMetrics Global 200'e göre ({{ .Date }}) şu anda dünyanın en popüler şarkısı {{ .Artist }} – “{{ .Title }}”. Şarkı; YouTube, Apple Music ve Deezer'da {{ .Countries }} ülkede, {{ .Charts }} listede yer alıyor."
+faq_home_q2 = "MusicMetrics listeleri nasıl hesaplanıyor?"
+faq_home_a2 = "YouTube, Apple Music ve Deezer'ın herkese açık resmi listelerini topluyoruz. Her sıra, platforma ve pazar büyüklüğüne göre ağırlıklandırılmış puan kazanır; Global 200 şarkıları toplam puanlarına göre sıralar. Formülün tamamı Yöntem sayfasında."
+faq_home_q3 = "Listeler ne sıklıkla güncelleniyor?"
+faq_home_a3 = "6 saatte bir. Değişim okları bir önceki günle karşılaştırır; zirveleri ve listede kalınan gün sayısını göstermek için her sıranın geçmişini saklarız."
+faq_home_q4 = "Hangi ülkeler ve platformlar kapsanıyor?"
+faq_home_a4 = "{{ .Countries }} ülkede {{ .Charts }} liste: YouTube trend müzikler, Apple Music Top 100 şarkı ve albüm listeleri, Deezer Top 100 ve mevcut olduğu yerlerde Last.fm."
+faq_chart_q1 = "Bugün {{ .Country }} {{ .Platform }} listesinin bir numarası hangi şarkı?"
+faq_chart_q1_album = "Bugün {{ .Country }} {{ .Platform }} listesinin bir numaralı albümü hangisi?"
+faq_chart_a1 = "{{ .Date }} itibarıyla {{ .Country }} {{ .Platform }} listesinin bir numarası {{ .Artist }} – “{{ .Title }}”. Listede {{ .Days }} gündür yer alıyor ve zirvesi #{{ .Peak }}."
+faq_chart_q2 = "{{ .Country }} {{ .Platform }} listesine en yüksekten giren yeni şarkı hangisi?"
+faq_chart_a2 = "En yüksek yeni giriş #{{ .Rank }} ile {{ .Artist }} – “{{ .Title }}”. Bugünkü listede {{ .Count }} yeni giriş var."
+faq_chart_q3 = "Bu liste ne sıklıkla güncelleniyor?"
+faq_chart_a3_youtube = "6 saatte bir, YouTube'un müzik kategorisindeki resmi trend listesi kullanılarak. İzlenme sayıları ve günlük izlenmeler de aynı anda yenilenir."
+faq_chart_a3_apple = "Apple Music'in resmi en çok dinlenenler listesinden 6 saatte bir. Değişim, bir önceki günle karşılaştırılır."
+faq_chart_a3_apple-albums = "Apple Music'in resmi en çok dinlenen albümler listesinden 6 saatte bir."
+faq_chart_a3_deezer = "Resmi Deezer Charts çalma listesinden 6 saatte bir."
+faq_chart_a3_lastfm = "Last.fm API'sinden 6 saatte bir."
+faq_chart_a3_musicmetrics = "6 saatte bir. Global 200, her yeni veri geldiğinde takip ettiğimiz tüm listelerden yeniden hesaplanır."
+faq_artist_q1 = "{{ .Name }} adlı sanatçının şu anki en popüler şarkısı hangisi?"
+faq_artist_a1 = "{{ .Name }} adlı sanatçının şu anki en popüler şarkısı “{{ .Song }}”; {{ .Charts }} listede yer alıyor ve en iyi sırası #{{ .Best }}."
+faq_artist_q2 = "{{ .Name }} hangi ülkelerde listede?"
+faq_artist_a2 = "{{ .Name }} şu anda {{ .List }} dahil {{ .Count }} ülkede, {{ .Charts }} listede yer alıyor."
+faq_artist_q3 = "{{ .Name }} dünya genelinde ne kadar popüler?"
+faq_artist_a3 = "{{ .Name }}, MusicMetrics'te dünya genelindeki sanatçılar arasında #{{ .Rank }} sırada ve şu anda listelerde {{ .Songs }} şarkısı bulunuyor."
+faq_song_q1 = "“{{ .Title }}” şarkısını kim söylüyor?"
+faq_song_a1 = "“{{ .Title }}” şarkısının yorumcusu: {{ .Artists }}."
+faq_song_q2 = "“{{ .Title }}” hangi listelerde?"
+faq_song_a2 = "“{{ .Title }}” {{ .Countries }} ülkede {{ .Charts }} listede yer alıyor. Güncel en iyi sırası #{{ .Best }} ({{ .BestChart }}); MusicMetrics dünya sıralamasında ise #{{ .Rank }}."
+faq_song_q3 = "“{{ .Title }}” YouTube'da kaç kez izlendi?"
+faq_song_a3 = "{{ .Date }} itibarıyla “{{ .Title }}” resmi videosu YouTube'da {{ .Views }} izlenmeye ulaştı ve günde yaklaşık {{ .Daily }} izlenme kazanıyor."
+faq_country_q1 = "Şu anda {{ .Country }} listelerinin bir numarası hangi şarkı?"
+faq_country_a1 = "{{ .Date }} itibarıyla {{ .Country }} listelerinin bir numarası {{ .Platform }} listesinde {{ .Artist }} – “{{ .Title }}”."
+faq_country_q2 = "Şu anda {{ .Country }} listelerinde en popüler sanatçılar kimler?"
+faq_country_a2 = "Şu anda {{ .Country }} listelerinde en çok şarkısı bulunan sanatçılar: {{ .List }}."
+faq_country_q3 = "{{ .Country }} için hangi müzik listeleri var?"
+faq_country_a3 = "MusicMetrics, {{ .Country }} için YouTube trend müzikler ile mevcut olduğu yerlerde Apple Music ve Deezer dahil {{ .Count }} listeyi takip eder; listeler 6 saatte bir güncellenir."
+faq_mv_q1 = "YouTube'da en çok izlenen müzik videosu hangisi?"
+faq_mv_a1 = "YouTube'da en çok izlenen müzik videosu {{ .Views }} izlenmeyle {{ .Artist }} – “{{ .Title }}”."
+faq_mv_q2 = "Kaç müzik videosu bir milyardan fazla izlendi?"
+faq_mv_a2 = "Takip ettiğimiz müzik videolarından {{ .Count }} tanesi YouTube'da bir milyar izlenmeyi aştı."
