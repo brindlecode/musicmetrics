@@ -2,7 +2,7 @@
 title: "DeeMula OfficialPage"
 slug: "deemula-officialpage"
 type: "artists"
-image: "https://i.ytimg.com/vi/-By9y8FBMr8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IaoU2Pc9Jc0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

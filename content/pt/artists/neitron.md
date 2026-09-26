@@ -2,7 +2,7 @@
 title: "Neitron"
 slug: "neitron"
 type: "artists"
-image: "https://i.ytimg.com/vi/5f-2_AGTK6A/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/nGedEM9lxQ0/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

@@ -2,7 +2,7 @@
 title: "ジュニアCHANNEL"
 slug: "channel"
 type: "artists"
-image: "https://i.ytimg.com/vi/_tsGqSV1hy8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/EAM2y0ZYryM/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
