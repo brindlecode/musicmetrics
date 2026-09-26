@@ -1,87 +1,12 @@
+# Deploys normally come from GitHub Actions (prebuilt ./public, see
+# .github/workflows/fetch-data.yml). These settings are only used if the
+# site is ever linked to the repository for Netlify-side builds.
+# Headers and redirects live in static/_headers and static/_redirects so
+# they apply to both deploy methods.
 [build]
   publish = "public"
-  command = "hugo --minify"
+  command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.142.0"
-  HUGO_ENV = "production"
-
-# Redirect root to default language
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
-  conditions = {Language = ["en"]}
-
-[[redirects]]
-  from = "/"
-  to = "/tr/"
-  status = 302
-  conditions = {Language = ["tr"]}
-
-[[redirects]]
-  from = "/"
-  to = "/es/"
-  status = 302
-  conditions = {Language = ["es"]}
-
-[[redirects]]
-  from = "/"
-  to = "/pt/"
-  status = 302
-  conditions = {Language = ["pt"]}
-
-[[redirects]]
-  from = "/"
-  to = "/de/"
-  status = 302
-  conditions = {Language = ["de"]}
-
-[[redirects]]
-  from = "/"
-  to = "/fr/"
-  status = 302
-  conditions = {Language = ["fr"]}
-
-[[redirects]]
-  from = "/"
-  to = "/ja/"
-  status = 302
-  conditions = {Language = ["ja"]}
-
-# Default fallback
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
-
-# Headers for performance & security
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-
-[[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
-
-[[headers]]
-  for = "/*.json"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-    Access-Control-Allow-Origin = "*"
+  NODE_VERSION = "22"

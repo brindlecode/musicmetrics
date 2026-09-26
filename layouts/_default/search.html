@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrap layout">
+  <div id="search-page" style="max-width:760px">
+    {{ partial "crumbs.html" . }}
+    <header class="page-head"><h1>{{ i18n "search" }}</h1><p class="page-head__lede">{{ i18n "search_hint" }}</p></header>
+    <form method="get" role="search" onsubmit="return false"><input class="input" style="height:52px;font-size:1.125rem" type="search" name="q" placeholder="{{ i18n "search_placeholder" }}" aria-label="{{ i18n "search" }}" autofocus></form>
+    <ul class="search-results" style="max-height:none;padding:12px 0"></ul>
+  </div>
+</div>
+{{ end }}

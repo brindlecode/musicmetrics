@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ i18n "nav_songs" }}</span>
+      <h1>{{ i18n "seo_title_songs" }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_musicmetrics" (dict "Count" 200 "Country" "") }}</p>
+    </header>
+    {{ partial "chart-list.html" (dict "chart" site.Data.charts.global "id" "chart-list") }}
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

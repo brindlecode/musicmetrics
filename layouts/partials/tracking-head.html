@@ -1,0 +1,16 @@
+{{- $a := site.Params.analytics -}}
+{{- $ads := site.Params.ads.adsenseClient -}}
+{{- if or $a.ga4 $ads -}}
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
+gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+</script>
+{{- end -}}
+{{- with $a.ga4 }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>gtag('js',new Date());gtag('config','{{ . }}');</script>
+{{- end }}
+{{- with $ads }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end }}

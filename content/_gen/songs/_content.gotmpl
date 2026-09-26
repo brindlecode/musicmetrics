@@ -1,0 +1,4 @@
+{{- $lm := time.AsTime site.Data.meta.updated -}}
+{{- range $key, $s := site.Data.songs -}}
+  {{- $.AddPage (dict "path" $s.slug "title" $s.title "kind" "page" "type" "song" "params" (dict "song" $key) "dates" (dict "lastmod" $lm)) -}}
+{{- end -}}

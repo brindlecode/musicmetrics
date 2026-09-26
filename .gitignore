@@ -1,16 +1,17 @@
 # Hugo build output
 public/
 resources/_gen/
+.hugo_build.lock
 
-# OS files
+# Raw API responses (regenerated every run)
+store/raw/
+
+# OS / IDE
 .DS_Store
 Thumbs.db
-
-# IDE
 .vscode/
 .idea/
 *.swp
-*.swo
 
 # Node
 node_modules/
@@ -18,4 +19,3 @@ node_modules/
 # Environment
 .env
 .env.local
-.hugo_build.lock

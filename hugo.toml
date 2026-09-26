@@ -1,110 +1,205 @@
 baseURL = "https://musicmetrics.net/"
 title = "MusicMetrics"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
-enableGitInfo = true
+disableKinds = ["taxonomy", "term"]
+timeZone = "UTC"
+summaryLength = 30
 
 [pagination]
   pagerSize = 100
 
-[taxonomies]
-  artist = "artists"
-  country = "countries"
-  platform = "platforms"
+[minify]
+  [minify.tdewolff.html]
+    keepQuotes = true
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [sitemap]
-  changefreq = "daily"
+  changeFreq = "daily"
   priority = 0.5
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "JSON"]
-  page = ["HTML", "JSON"]
-
-[mediaTypes]
-  [mediaTypes."application/json"]
-    suffixes = ["json"]
+[mediaTypes."text/plain"]
+  suffixes = ["txt"]
 
 [outputFormats]
-  [outputFormats.JSON]
+  [outputFormats.SearchIndex]
     mediaType = "application/json"
-    baseName = "index"
+    baseName = "search-index"
     isPlainText = true
+    notAlternative = true
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.ADS]
+    mediaType = "text/plain"
+    baseName = "ads"
+    isPlainText = true
+    notAlternative = true
 
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+# ---------------------------------------------------------------- content --
+# Every language has its own hand-written pages (content/<lang>) plus the
+# shared, data-driven pages (content/_gen) generated from data/*.json via
+# Hugo content adapters. Nothing in content/_gen needs translating.
+[module]
+  [[module.mounts]]
+    source = "content/en"
+    target = "content"
+    lang = "en"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "en"
+  [[module.mounts]]
+    source = "content/tr"
+    target = "content"
+    lang = "tr"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "tr"
+  [[module.mounts]]
+    source = "content/es"
+    target = "content"
+    lang = "es"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "es"
+  [[module.mounts]]
+    source = "content/pt"
+    target = "content"
+    lang = "pt"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "pt"
+  [[module.mounts]]
+    source = "content/de"
+    target = "content"
+    lang = "de"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "de"
+  [[module.mounts]]
+    source = "content/fr"
+    target = "content"
+    lang = "fr"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "fr"
+  [[module.mounts]]
+    source = "content/ja"
+    target = "content"
+    lang = "ja"
+  [[module.mounts]]
+    source = "content/_gen"
+    target = "content"
+    lang = "ja"
+
+# -------------------------------------------------------------- languages --
 [languages]
   [languages.en]
     languageName = "English"
+    languageCode = "en"
     weight = 1
-    contentDir = "content/en"
     [languages.en.params]
-      description = "Real-time music charts, streaming stats & analytics from Spotify and YouTube. Track your favorite artists worldwide."
+      homeCountry = "us"
       locale = "en_US"
-
+      amazonDomain = "amazon.com"
   [languages.tr]
     languageName = "Türkçe"
+    languageCode = "tr"
     weight = 2
-    contentDir = "content/tr"
     [languages.tr.params]
-      description = "Spotify ve YouTube'dan gerçek zamanlı müzik listeleri, yayın istatistikleri ve analizler."
+      homeCountry = "tr"
       locale = "tr_TR"
-
+      amazonDomain = "amazon.com.tr"
   [languages.es]
     languageName = "Español"
+    languageCode = "es"
     weight = 3
-    contentDir = "content/es"
     [languages.es.params]
-      description = "Listas de música en tiempo real, estadísticas de streaming y análisis de Spotify y YouTube."
+      homeCountry = "es"
       locale = "es_ES"
-
+      amazonDomain = "amazon.es"
   [languages.pt]
     languageName = "Português"
+    languageCode = "pt"
     weight = 4
-    contentDir = "content/pt"
     [languages.pt.params]
-      description = "Paradas de música em tempo real, estatísticas de streaming e análises do Spotify e YouTube."
+      homeCountry = "br"
       locale = "pt_BR"
-
+      amazonDomain = "amazon.com.br"
   [languages.de]
     languageName = "Deutsch"
+    languageCode = "de"
     weight = 5
-    contentDir = "content/de"
     [languages.de.params]
-      description = "Echtzeit-Musikcharts, Streaming-Statistiken und Analysen von Spotify und YouTube."
+      homeCountry = "de"
       locale = "de_DE"
-
+      amazonDomain = "amazon.de"
   [languages.fr]
     languageName = "Français"
+    languageCode = "fr"
     weight = 6
-    contentDir = "content/fr"
     [languages.fr.params]
-      description = "Classements musicaux en temps réel, statistiques de streaming et analyses de Spotify et YouTube."
+      homeCountry = "fr"
       locale = "fr_FR"
-
+      amazonDomain = "amazon.fr"
   [languages.ja]
     languageName = "日本語"
+    languageCode = "ja"
     weight = 7
-    contentDir = "content/ja"
     [languages.ja.params]
-      description = "SpotifyとYouTubeのリアルタイム音楽チャート、ストリーミング統計、分析。"
+      homeCountry = "jp"
       locale = "ja_JP"
+      amazonDomain = "amazon.co.jp"
 
+# ----------------------------------------------------------------- params --
 [params]
   siteName = "MusicMetrics"
-  tagline = "All your music data needs in one place"
-  logo = "/images/logo.svg"
-  themeColor = "#6366f1"
-  adsenseId = ""
-  amazonAffiliateTag = ""
+  themeColor = "#141412"
+  contactEmail = "hello@musicmetrics.net"
+  # Generated once; the key file lives at /static/<key>.txt (IndexNow: Bing, Yandex, Seznam, Naver).
+  indexNowKey = "7c1f3a9e5b2d4e8f9a6c0b1d2e3f4a5b"
 
   [params.social]
     twitter = "musicmetricsnet"
 
-  [params.seo]
-    googleVerification = ""
-    bingVerification = ""
+  # Search engine verification codes (paste the "content" value only).
+  [params.verify]
+    google = ""
+    bing = ""
+    yandex = ""
+
+  # Free analytics. Leave empty to disable.
+  [params.analytics]
+    ga4 = ""          # e.g. "G-XXXXXXXXXX"
+    clarity = ""      # Microsoft Clarity project id
+    cloudflare = ""   # Cloudflare Web Analytics token
+
+  # Google AdSense. Set client to "ca-pub-XXXXXXXXXXXXXXXX" once approved.
+  # With only the client set, Auto ads are used; add slot ids for manual units.
+  [params.ads]
+    adsenseClient = ""
+    slotInline = ""
+    slotSidebar = ""
+    slotFooter = ""
+
+  # Affiliate programs. Every value is optional; links still work without them.
+  [params.affiliate]
+    appleToken = ""       # Apple Services Performance Partners "at" token
+    amazonTag = ""        # Amazon Associates tag, e.g. "musicmetrics-20"
+    ticketsUrl = ""       # Ticket affiliate deep link; "{q}" is replaced by the artist name

@@ -1,0 +1,22 @@
+{{- /* Page-level JSON-LD: breadcrumbs + main entity + FAQ. */ -}}
+{{- $p := .page -}}
+{{- $graph := slice -}}
+{{- if not $p.IsHome -}}
+  {{- $items := slice -}}
+  {{- range $i, $c := partial "func/crumbs.html" $p -}}
+    {{- $url := cond (ne $c.url "") (printf "%s%s" (strings.TrimSuffix "/" site.BaseURL) $c.url) $p.Permalink -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" $c.name "item" $url) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $items) -}}
+{{- end -}}
+{{- $entity := partial "schema/entity.html" $p -}}
+{{- with $entity }}{{ $graph = $graph | append . }}{{ end -}}
+{{- $faq := partialCached "func/faq.html" $p $p.RelPermalink -}}
+{{- if $faq -}}
+  {{- $qs := slice -}}
+  {{- range $faq }}{{ $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" (.a | plainify))) }}{{ end -}}
+  {{- $graph = $graph | append (dict "@type" "FAQPage" "mainEntity" $qs) -}}
+{{- end -}}
+{{- if $graph -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- end -}}

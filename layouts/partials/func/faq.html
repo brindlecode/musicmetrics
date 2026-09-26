@@ -1,0 +1,60 @@
+{{- /* FAQ entries for a page: slice of (dict q a). Answers may contain simple HTML. */ -}}
+{{- $p := . -}}
+{{- $f := slice -}}
+{{- $date := time.AsTime site.Data.meta.updated | time.Format ":date_long" -}}
+{{- if $p.IsHome -}}
+  {{- $g := index site.Data.charts.global.items 0 -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_home_q1") "a" (i18n "faq_home_a1" (dict "Title" $g.title "Artist" $g.artist "Countries" $g.countries "Charts" $g.charts "Date" $date))) -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_home_q2") "a" (i18n "faq_home_a2")) -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_home_q3") "a" (i18n "faq_home_a3")) -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_home_q4") "a" (i18n "faq_home_a4" (dict "Countries" (len site.Data.countries) "Charts" (len site.Data.charts)))) -}}
+{{- else if eq $p.Type "chart" -}}
+  {{- $c := index site.Data.charts $p.Params.chart -}}
+  {{- $ci := partialCached "func/chart-info.html" $p.Params.chart $p.Params.chart -}}
+  {{- $cn := partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang -}}
+  {{- $top := index $c.items 0 -}}
+  {{- $f = $f | append (dict "q" (i18n (cond $ci.albums "faq_chart_q1_album" "faq_chart_q1") (dict "Country" $cn "Platform" $ci.pname)) "a" (i18n "faq_chart_a1" (dict "Title" $top.title "Artist" $top.artist "Country" $cn "Platform" $ci.pname "Days" $top.days "Peak" $top.peak "Date" $date))) -}}
+  {{- $new := where $c.items "change" "new" -}}
+  {{- with index $new 0 -}}
+    {{- $f = $f | append (dict "q" (i18n "faq_chart_q2" (dict "Country" $cn "Platform" $ci.pname)) "a" (i18n "faq_chart_a2" (dict "Title" .title "Artist" .artist "Rank" .rank "Count" (len $new)))) -}}
+  {{- end -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_chart_q3") "a" (i18n (printf "faq_chart_a3_%s" $ci.platform))) -}}
+{{- else if eq $p.Type "artist" -}}
+  {{- $a := index site.Data.artists $p.Params.artist -}}
+  {{- $s := index $a.songs 0 -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_artist_q1" (dict "Name" $a.name)) "a" (i18n "faq_artist_a1" (dict "Name" $a.name "Song" $s.t "Best" $s.best "Charts" $s.n))) -}}
+  {{- $names := slice -}}
+  {{- range first 8 $a.countries }}{{ $names = $names | append (partialCached "func/country-name.html" . . site.Language.Lang) }}{{ end -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_artist_q2" (dict "Name" $a.name)) "a" (i18n "faq_artist_a2" (dict "Name" $a.name "Count" (len $a.countries) "List" (delimit $names ", ") "Charts" $a.charts))) -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_artist_q3" (dict "Name" $a.name)) "a" (i18n "faq_artist_a3" (dict "Name" $a.name "Rank" $a.rank "Songs" (len $a.songs)))) -}}
+{{- else if eq $p.Type "song" -}}
+  {{- $s := index site.Data.songs $p.Params.song -}}
+  {{- $names := slice -}}
+  {{- range $s.artists }}{{ $names = $names | append .n }}{{ end -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_song_q1" (dict "Title" $s.title)) "a" (i18n "faq_song_a1" (dict "Title" $s.title "Artists" (delimit $names ", " (printf " %s " (i18n "and")))))) -}}
+  {{- $best := index $s.positions 0 -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_song_q2" (dict "Title" $s.title)) "a" (i18n "faq_song_a2" (dict "Title" $s.title "Charts" (len $s.positions) "Countries" $s.countries "Best" $best.r "BestChart" (partialCached "func/chart-title.html" $best.c $best.c site.Language.Lang) "Rank" $s.grank))) -}}
+  {{- with $s.views -}}
+    {{- $f = $f | append (dict "q" (i18n "faq_song_q3" (dict "Title" $s.title)) "a" (i18n "faq_song_a3" (dict "Title" $s.title "Views" (lang.FormatNumberCustom 0 .) "Daily" (partial "func/num.html" ($s.views_day | default 0)) "Date" $date))) -}}
+  {{- end -}}
+{{- else if eq $p.Type "country" -}}
+  {{- $c := index site.Data.countries $p.Params.cc -}}
+  {{- $cn := partialCached "func/country-name.html" $p.Params.cc $p.Params.cc site.Language.Lang -}}
+  {{- with $c.top -}}
+    {{- $ci := partialCached "func/chart-info.html" .chart .chart -}}
+    {{- $f = $f | append (dict "q" (i18n "faq_country_q1" (dict "Country" $cn)) "a" (i18n "faq_country_a1" (dict "Country" $cn "Title" .title "Artist" .artist "Platform" $ci.pname "Date" $date))) -}}
+  {{- end -}}
+  {{- $ta := partialCached "func/country-artists.html" $p.Params.cc $p.Params.cc -}}
+  {{- $names := slice -}}
+  {{- range first 5 $ta }}{{ $names = $names | append .name }}{{ end -}}
+  {{- with $names -}}
+    {{- $f = $f | append (dict "q" (i18n "faq_country_q2" (dict "Country" $cn)) "a" (i18n "faq_country_a2" (dict "Country" $cn "List" (delimit . ", ")))) -}}
+  {{- end -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_country_q3" (dict "Country" $cn)) "a" (i18n "faq_country_a3" (dict "Country" $cn "Count" (len $c.charts)))) -}}
+{{- else if eq $p.Type "most-viewed" -}}
+  {{- $top := index site.Data.youtube_most_viewed 0 -}}
+  {{- $bill := where site.Data.youtube_most_viewed "views" "ge" 1000000000 -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_mv_q1") "a" (i18n "faq_mv_a1" (dict "Title" $top.title "Artist" $top.artist "Views" (lang.FormatNumberCustom 0 $top.views) "Date" $date))) -}}
+  {{- $f = $f | append (dict "q" (i18n "faq_mv_q2") "a" (i18n "faq_mv_a2" (dict "Count" (len $bill)))) -}}
+{{- end -}}
+{{- return $f -}}

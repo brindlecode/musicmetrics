@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $list := site.Data.albums -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow"><span class="pmark pmark--apple-albums"></span>{{ i18n "cross_country" }}</span>
+      <h1>{{ i18n "seo_title_albums" }}</h1>
+      <p class="page-head__lede">{{ i18n "albums_desc" }}</p>
+    </header>
+    <div class="toolbar" data-filter-for="album-list"><input class="input grow" type="search" placeholder="{{ i18n "filter_chart" }}" aria-label="{{ i18n "filter_chart" }}"></div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th class="r">#</th><th>{{ i18n "album" }}</th><th class="r">{{ i18n "charts" }}</th><th class="r hide-m">{{ i18n "best_position" }}</th><th></th></tr></thead>
+        <tbody id="album-list">
+        {{- range $list }}
+          <tr>
+            <td class="r big">{{ .rank }}</td>
+            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span><strong>{{ .title }}</strong><br><span class="muted small">{{ range $j, $a := .artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</span></span></div></td>
+            <td class="r">{{ .charts }}</td>
+            <td class="r hide-m">#{{ .best }}</td>
+            <td class="r">{{ with .url }}{{ $u := . }}{{ with site.Params.affiliate.appleToken }}{{ $u = printf "%s%sat=%s&ct=musicmetrics" $u (cond (in $u "?") "&" "?") . }}{{ end }}<a class="btn btn--ghost btn--sm" href="{{ $u }}" target="_blank" rel="sponsored noopener">Apple Music</a>{{ end }}</td>
+          </tr>
+        {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

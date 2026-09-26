@@ -1,0 +1,55 @@
+{{ define "main" }}
+{{- $cc := .Params.cc -}}
+{{- $c := index site.Data.countries $cc -}}
+{{- $cn := partialCached "func/country-name.html" $cc $cc site.Language.Lang -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ $c.flag }} {{ i18n "country_charts" }}</span>
+      <h1>{{ i18n "h1_country" (dict "Country" $cn) }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_country" (dict "Country" $cn "Count" (len $c.charts)) }}</p>
+      <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "updated" }} <time data-rel datetime="{{ site.Data.meta.updated }}">{{ (time.AsTime site.Data.meta.updated).Format "2006-01-02 15:04" }} UTC</time></span><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>
+    </header>
+    {{- with $c.top }}{{ $ci := partialCached "func/chart-info.html" .chart .chart }}
+    <p class="answer">{{ i18n "answer_country" (dict "Country" $cn "Title" .title "Artist" .artist "Platform" $ci.pname) | safeHTML }}</p>
+    {{- end }}
+
+    <nav class="chips" aria-label="{{ i18n "other_charts" }}">
+      {{- range $c.charts }}{{ $oi := partialCached "func/chart-info.html" . . }}<a class="chip" href="{{ $oi.url | relLangURL }}"><span class="pmark pmark--{{ $oi.platform }}"></span>{{ i18n (printf "chip_%s" $oi.platform) }}</a>{{ end }}
+    </nav>
+
+    <div class="cols-2">
+      {{- range $c.charts }}{{ $ch := index site.Data.charts . }}{{ $oi := partialCached "func/chart-info.html" . . }}
+      <section class="panel">
+        <div class="panel__head"><h3><span class="pmark pmark--{{ $oi.platform }}"></span>{{ partialCached "func/chart-title.html" . . site.Language.Lang }}</h3></div>
+        {{ partialCached "mini-list.html" (dict "chart" $ch "n" 10) $ch.id 10 site.Language.Lang }}
+        <p style="margin:12px 0 0"><a class="btn btn--ghost btn--sm" href="{{ $oi.url | relLangURL }}">{{ i18n "full_chart" (dict "N" $ch.total) }} →</a></p>
+      </section>
+      {{- end }}
+    </div>
+
+    {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+
+    {{- $ta := partialCached "func/country-artists.html" $cc $cc -}}
+    {{- with $ta }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "top_artists_in" (dict "Country" $cn) }}</h2></div>
+      <div class="grid grid--artists">
+        {{- range $i, $x := first 12 . }}{{ $a := index site.Data.artists $x.slug }}
+        <div class="acard">
+          {{ with $a }}{{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr $x.name 0 1 }}</div>{{ end }}{{ else }}<div class="ph">{{ substr $x.name 0 1 }}</div>{{ end }}
+          <span class="acard__rank">{{ add $i 1 }}</span>
+          {{ if $a }}<a class="acard__name" href="{{ printf "/artists/%s/" $x.slug | relLangURL }}">{{ $x.name }}</a>{{ else }}<span class="acard__name">{{ $x.name }}</span>{{ end }}
+          <span class="acard__meta">{{ i18n "entries_count" (dict "Count" (int $x.count)) }}</span>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{ partial "faq.html" . }}
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

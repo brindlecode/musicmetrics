@@ -1,137 +1,170 @@
-{{ define "title" }}{{ i18n "site_title" }}{{ end }}
-
-{{ define "schema" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "MusicMetrics",
-  "alternateName": "Music Metrics",
-  "url": "{{ site.BaseURL }}",
-  "description": "{{ site.Params.description }}",
-  "inLanguage": "{{ .Lang }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ site.BaseURL }}{{ .Lang }}/search/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-{{ end }}
-
 {{ define "main" }}
-<div class="container">
-  {{/* Hero Section */}}
-  <section class="hero">
-    <div class="hero__content">
-      <h1 class="hero__title">{{ i18n "tagline" }}</h1>
-      <p class="hero__subtitle">{{ T "site_title" }}</p>
-    </div>
-  </section>
+{{- $g := site.Data.charts.global -}}
+{{- $one := index $g.items 0 -}}
+{{- $hc := site.Language.Params.homeCountry | default "us" -}}
+{{- $hcn := partialCached "func/country-name.html" $hc $hc site.Language.Lang -}}
+{{- $meta := site.Data.meta -}}
+<div class="wrap" style="padding-top:24px;padding-bottom:56px">
 
-  {{/* Ad Slot - Top */}}
-  <div class="ad-slot ad-slot--header" data-ad-slot="home-top"></div>
-
-  {{/* Platform Quick Stats */}}
-  <section class="mb-8">
-    <div class="grid grid--2">
-      <div class="stat-card" style="border-left: 3px solid var(--color-spotify)">
-        <span class="stat-card__label">Spotify {{ i18n "top_songs" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.spotify_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
-        <span class="stat-card__change stat-card__change--up">{{ i18n "daily_chart" }}</span>
+  {{- /* ---------- Front page: global No.1 + top 10 ---------- */}}
+  <section class="front" aria-labelledby="lead-title">
+    <div class="lead-story">
+      <div class="lead-story__art">
+        {{- with $one.image }}<img src="{{ replace . "200x200bb" "600x600bb" }}" alt="{{ $one.title }} — {{ $one.artist }}" width="600" height="600" fetchpriority="high">{{ end }}
+        <span class="lead-story__badge">№1</span>
       </div>
-      <div class="stat-card" style="border-left: 3px solid var(--color-youtube)">
-        <span class="stat-card__label">YouTube {{ i18n "most_viewed" }}</span>
-        <span class="stat-card__value">{{ with site.Data.charts.youtube_global }}{{ if gt .total 0 }}{{ .total }}{{ else }}--{{ end }}{{ else }}--{{ end }}</span>
-        <span class="stat-card__change stat-card__change--up">{{ i18n "daily" }} {{ i18n "views" }}</span>
-      </div>
-    </div>
-  </section>
-
-  {{/* Spotify Global Daily Chart */}}
-  <section class="mb-8">
-    <div class="section-header">
-      <h2 class="section-header__title">
-        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M8 15c2.5-1 5-1 7.5 0M7.5 12.5c3-1.5 6-1.5 9 0M7 10c3.5-2 7-2 10.5 0" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
-        Spotify {{ i18n "global" }} {{ i18n "daily_chart" }}
-      </h2>
-      <a href="{{ relLangURL "/spotify/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
-    </div>
-
-    <div class="last-updated">
-      <span class="last-updated__dot"></span>
-      {{ i18n "last_updated" }}: <time id="spotifyUpdated">--</time>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" "spotify" "id" "spotifyChart" "lang" .Lang) }}
-  </section>
-
-  {{/* YouTube Global Trending */}}
-  <section class="mb-8">
-    <div class="section-header">
-      <h2 class="section-header__title">
-        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
-        YouTube {{ i18n "global" }} {{ i18n "most_viewed" }}
-      </h2>
-      <a href="{{ relLangURL "/youtube/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" "youtube" "id" "youtubeChart" "lang" .Lang) }}
-  </section>
-
-  {{/* Ad Slot - Mid */}}
-  <div class="ad-slot ad-slot--in-content" data-ad-slot="home-mid"></div>
-
-  {{/* Countries Grid */}}
-  <section class="mb-8">
-    <div class="section-header">
-      <h2 class="section-header__title">{{ i18n "nav_charts" }} {{ i18n "all_countries" }}</h2>
-      <a href="{{ relLangURL "/countries/" }}" class="section-header__link">{{ i18n "view_all" }} &rarr;</a>
-    </div>
-
-    <div class="grid grid--4">
-      {{ range site.Data.countries }}
-      {{ if .featured }}
-      <a href="{{ relLangURL (printf "/countries/%s/" .code) }}" class="card" style="padding: var(--space-4)">
-        <div class="flex items-center gap-4">
-          <span style="font-size: 2rem">{{ .flag }}</span>
-          <div>
-            <strong>{{ .name }}</strong>
-            <span class="text-muted" style="display: block; font-size: 0.8rem;">Spotify &middot; YouTube</span>
-          </div>
+      <div>
+        <span class="kicker">{{ i18n "most_popular_song_world" }}</span>
+        {{- $feat := findRE `\s*[\(\[](feat\.?|ft\.?|with|featuring)\s[^\)\]]*[\)\]]` $one.title 1 }}
+        {{- $main := $one.title }}{{ with $feat }}{{ $main = replace $one.title (index . 0) "" }}{{ end }}
+        <h1 id="lead-title">{{ if $one.song }}<a href="{{ printf "/songs/%s/" $one.song | relLangURL }}" style="text-decoration:none">{{ $main }}</a>{{ else }}{{ $main }}{{ end }}{{ with $feat }}<small>{{ strings.TrimSpace (index . 0) }}</small>{{ end }}</h1>
+        <p class="lead-story__by">{{ range $j, $a := $one.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</p>
+        <p class="muted" style="margin-bottom:14px">{{ i18n "lead_stats" (dict "Countries" $one.countries "Charts" $one.charts "Days" $one.days) }}</p>
+        <div class="profile__actions" style="margin-top:0">
+          {{- with $one.video_id }}<button class="btn" type="button" data-yt="{{ . }}">{{ partialCached "icons.html" (dict "n" "play" "s" 16) "play" 16 }}{{ i18n "play_video" }}</button>{{ end }}
+          <a class="btn btn--ghost" href="{{ "/charts/global/" | relLangURL }}">{{ i18n "see_global_200" }}</a>
         </div>
-      </a>
-      {{ end }}
-      {{ end }}
+      </div>
+    </div>
+    <div>
+      <div class="section-head" style="margin-bottom:4px"><h2>{{ i18n "global_top_10" }}</h2><a href="{{ "/charts/global/" | relLangURL }}">{{ i18n "view_all" }} →</a></div>
+      <ol class="mini">
+        {{- range after 1 (first 10 $g.items) }}
+        <li>
+          <span class="mini__rank">{{ .rank }}</span>
+          {{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}
+          <span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span>
+          <span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span>
+        </li>
+        {{- end }}
+      </ol>
     </div>
   </section>
 
-  {{/* Ad Slot - Bottom */}}
-  <div class="ad-slot ad-slot--footer" data-ad-slot="home-bottom"></div>
-</div>
+  {{- /* ---------- Key numbers ---------- */}}
+  <section class="section" aria-label="{{ i18n "key_numbers" }}">
+    <div class="stats">
+      <div class="stat"><span class="stat__v">{{ $meta.counts.charts }}</span><span class="stat__l">{{ i18n "charts_tracked" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ $meta.counts.countries }}</span><span class="stat__l">{{ i18n "countries" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ lang.FormatNumberCustom 0 $meta.counts.songs }}</span><span class="stat__l">{{ i18n "songs_tracked" }}</span></div>
+      <div class="stat"><span class="stat__v"><time data-rel datetime="{{ $meta.updated }}">{{ (time.AsTime $meta.updated).Format "15:04" }} UTC</time></span><span class="stat__l"><span class="live-dot"></span>{{ i18n "last_update" }}</span></div>
+    </div>
+  </section>
 
-<style>
-  .hero {
-    text-align: center;
-    padding: var(--space-10) 0;
-  }
-  .hero__title {
-    font-size: var(--font-size-4xl);
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-spotify), var(--color-youtube));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: var(--space-3);
-  }
-  .hero__subtitle {
-    font-size: var(--font-size-lg);
-    color: var(--color-text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  @media (max-width: 768px) {
-    .hero__title { font-size: var(--font-size-2xl); }
-  }
-</style>
+  {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+
+  {{- /* ---------- Local charts for the visitor's language ---------- */}}
+  {{- with index site.Data.countries $hc }}
+  <section class="section">
+    <div class="section-head"><h2>{{ .flag }} {{ i18n "charts_in" (dict "Country" $hcn) }}</h2><a href="{{ printf "/countries/%s/" $hc | relLangURL }}">{{ i18n "all_charts_in" (dict "Country" $hcn) }} →</a></div>
+    <div class="cols-3">
+      {{- range first 3 .charts }}{{ $ch := index site.Data.charts . }}{{ $ci := partialCached "func/chart-info.html" . . }}
+      <div class="panel">
+        <div class="panel__head"><h3><span class="pmark pmark--{{ $ci.platform }}"></span>{{ i18n (printf "chip_%s" $ci.platform) }}</h3><a href="{{ $ci.url | relLangURL }}">{{ i18n "view_all" }}</a></div>
+        {{ partialCached "mini-list.html" (dict "chart" $ch "n" 10) $ch.id 10 site.Language.Lang }}
+      </div>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- /* ---------- No.1 around the world ---------- */}}
+  <section class="section">
+    <div class="section-head"><h2>{{ i18n "number_one_around_world" }}</h2><a href="{{ "/countries/" | relLangURL }}">{{ i18n "all_countries_n" (dict "N" (len site.Data.countries)) }} →</a></div>
+    <div class="grid grid--4">
+      {{- $fl := slice }}{{ range $cc, $c := site.Data.countries }}{{ if $c.featured }}{{ $fl = $fl | append $c }}{{ end }}{{ end }}
+      {{- range sort $fl "weight" "desc" }}
+      <div class="ccard">
+        <span class="ccard__flag">{{ .flag }}</span>
+        <span style="min-width:0"><a class="ccard__name" href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ index .names site.Language.Lang }}</a>
+        <span class="ccard__top">{{ with .top }}<b>{{ .title }}</b> — {{ .artist }}{{ end }}</span></span>
+      </div>
+      {{- end }}
+    </div>
+  </section>
+
+  {{- /* ---------- Movers ---------- */}}
+  {{- $climbers := first 8 (sort (where (where $g.items "change" "ne" "new") "change" "ne" "re") "change" "desc") }}
+  {{- $new := first 8 (where $g.items "change" "new") }}
+  <section class="section">
+    <div class="cols-2">
+      <div>
+        <div class="section-head"><h2>{{ i18n "biggest_climbers" }}</h2></div>
+        {{- $real := where $climbers "change" "gt" 0 }}
+        {{- if $real }}<ol class="mini">{{ range $real }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
+        {{- else }}<p class="empty">{{ i18n "movers_tomorrow" }}</p>{{ end }}
+      </div>
+      <div>
+        <div class="section-head"><h2>{{ i18n "hot_new_entries" }}</h2></div>
+        {{- if $new }}<ol class="mini">{{ range $new }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
+        {{- else }}<p class="empty">{{ i18n "no_new_entries" }}</p>{{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{- /* ---------- Top artists ---------- */}}
+  <section class="section">
+    <div class="section-head"><h2>{{ i18n "top_artists_now" }}</h2><a href="{{ "/artists/" | relLangURL }}">{{ i18n "artist_ranking" }} →</a></div>
+    {{- $al := slice }}{{ range $s, $a := site.Data.artists }}{{ if le $a.rank 12 }}{{ $al = $al | append $a }}{{ end }}{{ end }}
+    <div class="grid grid--artists">
+      {{- range sort $al "rank" }}
+      <div class="acard">
+        {{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}
+        <span class="acard__rank">{{ .rank }}</span>
+        <a class="acard__name" href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a>
+        <span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }} · {{ i18n "in_countries" (dict "Count" (int (len .countries))) }}</span>
+      </div>
+      {{- end }}
+    </div>
+  </section>
+
+  {{- /* ---------- YouTube ---------- */}}
+  {{- $mv := site.Data.youtube_most_viewed }}
+  {{- $hot := first 6 (sort (where $mv "views_day" "ne" nil) "views_day" "desc") }}
+  {{- with $hot }}
+  <section class="section">
+    <div class="section-head"><h2>{{ i18n "most_watched_24h" }}</h2><a href="{{ "/charts/youtube/most-viewed/" | relLangURL }}">{{ i18n "most_viewed_videos" }} →</a></div>
+    <div class="grid grid--3">
+      {{- range . }}
+      <div style="position:relative">
+        <div class="embed" data-yt="{{ .video_id }}" style="background-image:url(https://i.ytimg.com/vi/{{ .video_id }}/mqdefault.jpg)" role="button" tabindex="0" aria-label="{{ i18n "play_video" }}: {{ .title }}"><span class="play" style="width:48px;height:48px">{{ partialCached "icons.html" (dict "n" "play" "s" 20) "play" 20 }}</span></div>
+        <strong style="display:block;margin-top:8px;line-height:1.25">{{ .title }}</strong>
+        <span class="muted small">{{ .artist }} · +{{ partial "func/num.html" .views_day }} / 24h · {{ partial "func/num.html" .views }} {{ i18n "views_lower" }}</span>
+      </div>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- /* ---------- Weekly ---------- */}}
+  {{- with (site.GetPage "/weekly").Pages.ByDate.Reverse }}{{ with index . 0 }}{{ $w := index site.Data.weekly .Params.week }}{{ $t := index $w.top 0 }}
+  <section class="section">
+    <div class="section-head"><h2>{{ i18n "nav_weekly" }}</h2><a href="{{ "/weekly/" | relLangURL }}">{{ i18n "archive" }} →</a></div>
+    <a class="panel panel--ink" href="{{ .RelPermalink }}" style="display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;text-decoration:none">
+      {{ with $t.img }}<img src="{{ . }}" alt="" width="96" height="96" style="width:96px;height:96px;object-fit:cover" loading="lazy">{{ end }}
+      <span><span class="eyebrow eyebrow--accent">{{ i18n "week_label" (dict "Week" $w.week "Year" $w.year) }}</span><strong style="display:block;font-size:1.5rem;font-stretch:72%;line-height:1.1;margin-top:4px">{{ i18n "h1_week" (dict "Title" $t.t "Artist" $t.a) }}</strong></span>
+    </a>
+  </section>
+  {{- end }}{{ end }}
+
+  {{- /* ---------- Platforms ---------- */}}
+  <section class="section">
+    <div class="section-head"><h2>{{ i18n "browse_by_platform" }}</h2><a href="{{ "/charts/" | relLangURL }}">{{ i18n "all_charts" }} →</a></div>
+    <div class="grid grid--4">
+      {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "deezer" "deezer" "lastfm" "lastfm" }}
+      {{- with site.GetPage (printf "/charts/%s" $slug) }}
+      <a class="panel" href="{{ .RelPermalink }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--{{ $p }}"></span>{{ len .Pages }} {{ i18n "countries_lower" }}</span><h3 style="font-size:1.4rem;margin-top:6px">{{ i18n (printf "hub_%s" $p) }}</h3></a>
+      {{- end }}
+      {{- end }}
+    </div>
+  </section>
+
+  <div class="wrap" style="padding:0">{{ partial "faq.html" . }}</div>
+
+  <section class="section prose">
+    <h2>{{ i18n "about_home_h" }}</h2>
+    <p>{{ i18n "about_home_p1" }}</p>
+    <p>{{ i18n "about_home_p2" }} <a href="{{ "/methodology/" | relLangURL }}">{{ i18n "methodology" }}</a>.</p>
+  </section>
+</div>
 {{ end }}

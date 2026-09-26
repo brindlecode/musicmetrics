@@ -1,92 +1,24 @@
-{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
-
 {{ define "main" }}
-{{ $countryCode := .Params.country_code | default "" }}
-
-{{ if $countryCode }}
-  {{/* === COUNTRY DETAIL PAGE === */}}
-  {{ $countryName := .Params.country_name | default .Title }}
-  <div class="container">
-    <div class="page-header">
-      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-        <span>/</span>
-        <a href="{{ relLangURL "/countries/" }}">{{ i18n "nav_countries" }}</a>
-        <span>/</span>
-        <span>{{ $countryName }}</span>
-      </nav>
-      <h1 class="page-header__title">{{ $countryName }} Music {{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
-    </div>
-
-    <div class="ad-slot ad-slot--header" data-ad-slot="country-top"></div>
-
-    {{/* Platform quick links */}}
-    <div class="platform-tabs mb-8">
-      <a href="{{ relLangURL (printf "/spotify/country/%s/" $countryCode) }}" class="platform-tab platform-tab--spotify">Spotify {{ i18n "nav_charts" }}</a>
-      <a href="{{ relLangURL (printf "/youtube/trending/%s/" $countryCode) }}" class="platform-tab platform-tab--youtube">YouTube</a>
-    </div>
-
-    {{/* Spotify Chart for this country */}}
-    <section class="mb-8">
-      <div class="section-header">
-        <h2 class="section-header__title">
-          <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><circle cx="12" cy="12" r="10" fill="#1DB954"/><path d="M8 15c2.5-1 5-1 7.5 0M7.5 12.5c3-1.5 6-1.5 9 0M7 10c3.5-2 7-2 10.5 0" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
-          Spotify {{ i18n "top_songs" }} - {{ $countryName }}
-        </h2>
+{{- $list := slice }}{{ range $cc, $c := site.Data.countries }}{{ $list = $list | append (merge $c (dict "name" (index $c.names site.Language.Lang))) }}{{ end }}
+<div class="wrap layout">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ i18n "nav_countries" }}</span>
+      <h1>{{ i18n "h1_countries" (dict "Count" (len $list)) }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_countries" (dict "Count" (len $list)) }}</p>
+    </header>
+    <div class="toolbar" data-filter-for="country-grid"><input class="input grow" type="search" placeholder="{{ i18n "filter_countries" }}" aria-label="{{ i18n "filter_countries" }}"></div>
+    <div class="grid grid--3" id="country-grid">
+      {{- range sort $list "name" }}
+      <div class="ccard">
+        <span class="ccard__flag">{{ .flag }}</span>
+        <span style="min-width:0"><a class="ccard__name" href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ .name }}</a>
+        <span class="ccard__top">{{ with .top }}№1 {{ .title }} — {{ .artist }}{{ end }}</span>
+        <span class="ccard__top">{{ range $i, $id := .charts }}{{ if $i }} · {{ end }}{{ i18n (printf "chip_%s" (index (split $id "_") 0)) }}{{ end }}</span></span>
       </div>
-      {{ partial "chart-table.html" (dict "platform" (printf "spotify_%s" $countryCode) "id" "spotifyCountryChart" "lang" .Lang) }}
-    </section>
-
-    <div class="ad-slot ad-slot--in-content" data-ad-slot="country-mid"></div>
-
-    {{/* YouTube Trending for this country */}}
-    <section class="mb-8">
-      <div class="section-header">
-        <h2 class="section-header__title">
-          <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" style="vertical-align: middle"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FF0000"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
-          YouTube {{ i18n "most_viewed" }} - {{ $countryName }}
-        </h2>
-      </div>
-      {{ partial "chart-table.html" (dict "platform" (printf "youtube_%s" $countryCode) "id" "youtubeCountryChart" "lang" .Lang) }}
-    </section>
-
-    <div class="ad-slot ad-slot--footer" data-ad-slot="country-bottom"></div>
-  </div>
-
-{{ else }}
-  {{/* === COUNTRIES INDEX PAGE === */}}
-  <div class="container">
-    <div class="page-header">
-      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-        <span>/</span>
-        <span>{{ i18n "nav_countries" }}</span>
-      </nav>
-      <h1 class="page-header__title">{{ i18n "all_countries" }} - Music {{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
+      {{- end }}
     </div>
-
-    <div class="ad-slot ad-slot--header" data-ad-slot="countries-top"></div>
-
-    <div class="grid grid--4">
-      {{ range site.Data.countries }}
-      <a href="{{ relLangURL (printf "/countries/%s/" .code) }}" class="card" style="padding: var(--space-4)">
-        <div class="flex items-center gap-4">
-          <span style="font-size: 2.5rem">{{ .flag }}</span>
-          <div>
-            <strong style="display: block">{{ .name }}</strong>
-            <span class="text-muted" style="font-size: var(--font-size-xs)">
-              {{ if .has_spotify }}Spotify{{ end }}
-              {{ if .has_youtube }}&middot; YouTube{{ end }}
-            </span>
-          </div>
-        </div>
-      </a>
-      {{ end }}
-    </div>
-
-    <div class="ad-slot ad-slot--footer" data-ad-slot="countries-bottom"></div>
   </div>
-{{ end }}
+</div>
 {{ end }}

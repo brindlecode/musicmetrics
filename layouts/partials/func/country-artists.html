@@ -1,0 +1,20 @@
+{{- /* Most-charted artists in a country (across its charts). Returns slice of dict name slug page count. */ -}}
+{{- $cc := . -}}
+{{- $c := index site.Data.countries $cc -}}
+{{- $counts := dict -}}
+{{- $meta := dict -}}
+{{- range $c.charts -}}
+  {{- $ch := index site.Data.charts . -}}
+  {{- range $ch.items -}}
+    {{- with index .artists 0 -}}
+      {{- $counts = merge $counts (dict .s (add (index $counts .s | default 0) 1)) -}}
+      {{- $meta = merge $meta (dict .s .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $list := slice -}}
+{{- range $s, $n := $counts -}}
+  {{- $m := index $meta $s -}}
+  {{- $list = $list | append (dict "name" $m.n "slug" $s "page" $m.page "count" $n) -}}
+{{- end -}}
+{{- return first 12 (sort $list "count" "desc") -}}

@@ -1,0 +1,12 @@
+{{- $sec := .Section -}}
+{{- $isGlobal := and (eq .Type "chart") (eq .Params.chart "global") -}}
+    <nav class="primary-nav" aria-label="{{ i18n "main_navigation" }}">
+      <ul>
+        <li><a href="{{ "/charts/global/" | relLangURL }}"{{ if $isGlobal }} aria-current="page"{{ end }}>{{ i18n "global_200" }}</a></li>
+        <li><a href="{{ "/charts/" | relLangURL }}"{{ if and (eq $sec "charts") (not $isGlobal) }} class="is-active"{{ end }}>{{ i18n "nav_charts" }}</a></li>
+        <li><a href="{{ "/artists/" | relLangURL }}"{{ if in (slice "artists" "songs") $sec }} class="is-active"{{ end }}>{{ i18n "nav_artists" }}</a></li>
+        <li><a href="{{ "/countries/" | relLangURL }}"{{ if eq $sec "countries" }} class="is-active"{{ end }}>{{ i18n "nav_countries" }}</a></li>
+        <li><a href="{{ "/charts/youtube/most-viewed/" | relLangURL }}"{{ if eq .Type "most-viewed" }} aria-current="page"{{ end }}>{{ i18n "nav_youtube_records" }}</a></li>
+        <li><a href="{{ "/weekly/" | relLangURL }}"{{ if eq $sec "weekly" }} class="is-active"{{ end }}>{{ i18n "nav_weekly" }}</a></li>
+      </ul>
+    </nav>

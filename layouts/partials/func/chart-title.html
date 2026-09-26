@@ -1,0 +1,5 @@
+{{- /* Localized chart title, e.g. "Türkiye · Apple Music Top 100". Input: chart id */ -}}
+{{- $ci := partialCached "func/chart-info.html" . . -}}
+{{- $cn := partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang -}}
+{{- $key := printf "chart_title_%s" $ci.platform -}}
+{{- return (i18n $key (dict "Country" $cn)) -}}

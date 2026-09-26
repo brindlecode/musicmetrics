@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{- $a := index site.Data.artists .Params.artist -}}
+{{- $s0 := index $a.songs 0 -}}
+{{- $best := $a.best | default dict -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="profile">
+      {{- with $a.image_large | default $a.image }}<img class="profile__img" src="{{ . }}" alt="{{ $a.name }}" width="220" height="220">{{ else }}<div class="profile__img ph">{{ substr $a.name 0 1 }}</div>{{ end }}
+      <div>
+        <span class="eyebrow eyebrow--accent">{{ i18n "artist" }} · #{{ $a.rank }} {{ i18n "worldwide_lower" }} {{ with $a.change }}{{ partialCached "move.html" . (printf "%v" .) site.Language.Lang }}{{ end }}</span>
+        <h1>{{ $a.name }}</h1>
+        <p class="page-head__lede">{{ i18n "artist_lede" (dict "Name" $a.name "Songs" (len $a.songs) "Countries" (len $a.countries) "Charts" $a.charts) }}</p>
+        <div class="profile__actions">
+          {{- with $s0.vid }}<button class="btn" type="button" data-yt="{{ . }}">{{ partialCached "icons.html" (dict "n" "play" "s" 16) "play" 16 }}{{ i18n "play_top_song" }}</button>{{ end }}
+          <a class="btn btn--ghost" href="#listen">{{ i18n "listen_and_buy" }}</a>
+          <button class="btn btn--ghost" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 16) "share" 16 }}{{ i18n "share" }}</button>
+        </div>
+      </div>
+    </header>
+
+    <p class="answer">{{ i18n "answer_artist" (dict "Name" $a.name "Song" $s0.t "Best" $best.rank "BestChart" (cond (isset $best "chart") (partialCached "func/chart-title.html" $best.chart $best.chart site.Language.Lang) "") "Countries" (len $a.countries)) | safeHTML }}</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__v">#{{ $a.rank }}</span><span class="stat__l">{{ i18n "artist_rank" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ len $a.songs }}</span><span class="stat__l">{{ i18n "charting_songs" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ len $a.countries }}</span><span class="stat__l">{{ i18n "countries" }}</span></div>
+      {{- if $a.fans }}<div class="stat"><span class="stat__v">{{ partial "func/num.html" $a.fans }}</span><span class="stat__l">{{ i18n "deezer_fans" }}</span></div>
+      {{- else if $a.subscribers }}<div class="stat"><span class="stat__v">{{ partial "func/num.html" $a.subscribers }}</span><span class="stat__l">{{ i18n "yt_subscribers" }}</span></div>
+      {{- else }}<div class="stat"><span class="stat__v">#{{ $best.rank }}</span><span class="stat__l">{{ i18n "best_position" }}</span></div>{{ end }}
+    </div>
+
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "songs_on_charts" (dict "Name" $a.name) }}</h2></div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>{{ i18n "song" }}</th><th class="r">{{ i18n "best_position" }}</th><th class="r">{{ i18n "charts" }}</th><th class="r hide-m">{{ i18n "global_rank" }}</th><th class="r hide-m">{{ i18n "yt_views" }}</th><th></th></tr></thead>
+          <tbody>
+          {{- range $a.songs }}
+            <tr>
+              <td><div class="cell-song">{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span>{{ if .page }}<a href="{{ printf "/songs/%s/" (replace .k "--" "-") | relLangURL }}">{{ .t }}</a>{{ else }}{{ .t }}{{ end }}{{ if ne .a $a.name }}<br><span class="muted small">{{ .a }}</span>{{ end }}</span></div></td>
+              <td class="r big">#{{ .best }}</td>
+              <td class="r">{{ .n }}</td>
+              <td class="r hide-m">{{ if le .g 200 }}#{{ .g }}{{ else }}–{{ end }}</td>
+              <td class="r hide-m">{{ with .v }}{{ partial "func/num.html" . }}{{ else }}–{{ end }}</td>
+              <td class="r">{{ with .vid }}<button class="play" type="button" data-yt="{{ . }}" aria-label="{{ i18n "play_video" }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button>{{ end }}</td>
+            </tr>
+          {{- end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+
+    {{- with $a.countries }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "charting_in" (dict "Name" $a.name) }}</h2></div>
+      <div class="pills">
+        {{- range . }}<a class="pill" href="{{ printf "/countries/%s/" . | relLangURL }}">{{ partialCached "func/flag.html" . . }} {{ partialCached "func/country-name.html" . . site.Language.Lang }}</a>{{ end }}
+      </div>
+    </section>
+    {{- end }}
+
+    <section class="section" id="listen">
+      <div class="section-head"><h2>{{ i18n "listen_to" (dict "Name" $a.name) }}</h2></div>
+      {{ partial "listen.html" (dict "artist" $a.name "links" (dict "apple" $a.links.apple "deezer" $a.links.deezer) "video_id" "") }}
+    </section>
+
+    {{ partial "faq.html" . }}
+
+    {{- with $a.related }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "fans_also_follow" }}</h2></div>
+      <div class="grid grid--artists">
+        {{- range . }}{{ with index site.Data.artists . }}
+        <div class="acard">
+          {{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}
+          <span class="acard__rank">#{{ .rank }}</span>
+          <a class="acard__name" href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a>
+          <span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }}</span>
+        </div>
+        {{- end }}{{ end }}
+      </div>
+    </section>
+    {{- end }}
+    <p class="note" style="margin-top:24px">{{ i18n "data_note" }}</p>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

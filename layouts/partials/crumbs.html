@@ -1,0 +1,7 @@
+{{- $list := partial "func/crumbs.html" . -}}
+<nav class="crumbs" aria-label="{{ i18n "breadcrumb" }}">
+{{- range $i, $c := $list -}}
+  {{- if $i }}<span aria-hidden="true">/</span>{{ end -}}
+  {{- if $c.url }}<a href="{{ $c.url }}">{{ $c.name }}</a>{{ else }}<span aria-current="page">{{ $c.name }}</span>{{ end -}}
+{{- end -}}
+</nav>

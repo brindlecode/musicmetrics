@@ -1,0 +1,49 @@
+{{- /* Renders a chart as an ordered list.
+  Params: chart (data), id (DOM id), limit (int, 0 = all), ads (bool) */ -}}
+{{- $c := .chart -}}
+{{- $ci := partialCached "func/chart-info.html" $c.id $c.id -}}
+{{- $p := $ci.platform -}}
+{{- $items := $c.items -}}
+{{- if .limit }}{{ $items = first .limit $items }}{{ end -}}
+{{- $metric := "" -}}
+{{- if eq $p "youtube" }}{{ $metric = i18n "views" }}{{ else if eq $p "musicmetrics" }}{{ $metric = i18n "points" }}{{ else if eq $p "lastfm" }}{{ $metric = i18n "listeners" }}{{ else if in (slice "apple" "apple-albums") $p }}{{ $metric = i18n "genre" }}{{ else if eq $p "deezer" }}{{ $metric = i18n "album" }}{{ end -}}
+{{- $showAds := and .ads site.Params.ads.adsenseClient site.Params.ads.slotInline -}}
+<div class="chart__head" aria-hidden="true">
+  <span class="c-rank" style="text-align:center">#</span><span class="c-move hide-m" style="text-align:center">±</span><span class="c-art"></span>
+  <span>{{ if $ci.albums }}{{ i18n "album" }}{{ else }}{{ i18n "song" }}{{ end }} / {{ i18n "artist" }}</span>
+  <span style="text-align:right">{{ $metric }}</span><span class="c-peak">{{ i18n "peak_short" }}</span><span class="c-days">{{ i18n "days_short" }}</span><span class="c-act"></span>
+</div>
+<ol class="chart" id="{{ .id | default "chart" }}">
+{{- range $i, $r := $items }}
+  {{- $mv := printf "%v" $r.change }}
+  <li class="row{{ if eq $r.rank 1 }} row--1{{ end }}" data-move="{{ $mv }}">
+    <div class="row__pos"><span class="row__rank">{{ $r.rank }}</span>{{ partialCached "move.html" $r.change (printf "%v" $r.change) site.Language.Lang }}</div>
+    {{- if $r.image }}
+    <img class="row__art{{ if eq $p "youtube" }} row__art--video{{ end }}" src="{{ $r.image }}" alt="" width="56" height="56" loading="{{ if lt $i 8 }}eager{{ else }}lazy{{ end }}" decoding="async">
+    {{- else }}<span class="row__art ph" aria-hidden="true">♪</span>{{ end }}
+    <div class="row__main">
+      {{- if $r.song }}<a class="row__title" href="{{ printf "/songs/%s/" $r.song | relLangURL }}">{{ $r.title }}</a>
+      {{- else if $r.url }}<a class="row__title" href="{{ $r.url }}" rel="nofollow noopener" target="_blank">{{ $r.title }}</a>
+      {{- else }}<span class="row__title">{{ $r.title }}</span>{{ end }}
+      {{- if $r.explicit }}<span class="explicit" title="Explicit">E</span>{{ end }}
+      <span class="row__artist">
+        {{- if $r.artists }}{{ range $j, $a := $r.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}{{ else }}{{ $r.artist }}{{ end -}}
+      </span>
+      <span class="row__sub row__sub--m">{{ i18n "peak_short" }} {{ $r.peak }} · {{ i18n "days_count" (dict "Count" (int $r.days)) }}{{ if eq $p "musicmetrics" }} · {{ i18n "in_countries" (dict "Count" (int $r.countries)) }}{{ end }}</span>
+    </div>
+    <div class="row__metric">
+      {{- if eq $p "youtube" }}{{ partial "func/num.html" $r.views }}{{ with $r.views_day }}<small>+{{ partial "func/num.html" . }}/{{ i18n "day_short" }}</small>{{ end }}
+      {{- else if eq $p "musicmetrics" }}{{ $r.points }}<small>{{ i18n "charts_count" (dict "Count" (int $r.charts)) }}</small>
+      {{- else if eq $p "lastfm" }}{{ partial "func/num.html" $r.listeners }}
+      {{- else if in (slice "apple" "apple-albums") $p }}<small>{{ $r.genre }}</small>
+      {{- else if eq $p "deezer" }}<small style="max-width:120px;overflow:hidden;text-overflow:ellipsis">{{ $r.album | truncate 18 }}</small>{{ end -}}
+    </div>
+    <div class="row__peak">{{ $r.peak }}</div>
+    <div class="row__days">{{ $r.days }}</div>
+    <div class="row__act">{{ with $r.video_id }}<button class="play" type="button" data-yt="{{ . }}" aria-label="{{ i18n "play_video" }}: {{ $r.title }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button>{{ end }}</div>
+  </li>
+  {{- if and $showAds (in (slice 10 40 80) (add $i 1)) }}
+  <li class="row-ad">{{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}</li>
+  {{- end }}
+{{- end }}
+</ol>

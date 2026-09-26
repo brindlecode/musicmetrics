@@ -1,0 +1,11 @@
+{{- /* Localized country name. Input: country code ("global" allowed). */ -}}
+{{- $cc := . -}}
+{{- $name := upper $cc -}}
+{{- if eq $cc "global" -}}
+  {{- $name = i18n "worldwide" -}}
+{{- else -}}
+  {{- with index site.Data.countries $cc -}}
+    {{- $name = index .names site.Language.Lang | default (index .names "en") -}}
+  {{- end -}}
+{{- end -}}
+{{- return $name -}}

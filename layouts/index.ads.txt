@@ -1,0 +1,2 @@
+{{- with site.Params.ads.adsenseClient }}google.com, {{ replace . "ca-" "" }}, DIRECT, f08c47fec0942fa0
+{{ end -}}

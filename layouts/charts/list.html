@@ -1,132 +1,51 @@
-{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
-
 {{ define "main" }}
-{{ $platform := .Params.platform | default "" }}
-{{ $countryCode := .Params.country_code | default "" }}
+{{- $platforms := slice "youtube" "apple" "apple-albums" "deezer" "lastfm" -}}
+{{- $active := slice }}{{ range $platforms }}{{ $p := . }}{{ $n := 0 }}{{ range $id, $x := site.Data.charts }}{{ if strings.HasPrefix $id (printf "%s_" $p) }}{{ $n = add $n 1 }}{{ end }}{{ end }}{{ if $n }}{{ $active = $active | append (dict "p" $p "n" $n) }}{{ end }}{{ end -}}
+<div class="wrap layout">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ i18n "nav_charts" }}</span>
+      <h1>{{ i18n "h1_charts" }}</h1>
+      <p class="page-head__lede">{{ i18n "seo_desc_charts" (dict "Count" (len site.Data.charts) "Countries" (len site.Data.countries)) }}</p>
+    </header>
 
-{{ if and $platform $countryCode }}
-  {{/* === PLATFORM + COUNTRY DETAIL === */}}
-  <div class="container">
-    <div class="page-header">
-      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-        <span>/</span>
-        <a href="{{ relLangURL "/charts/" }}">{{ i18n "nav_charts" }}</a>
-        <span>/</span>
-        <a href="{{ relLangURL (printf "/charts/%s/" $platform) }}">{{ $platform | title }}</a>
-        <span>/</span>
-        <span>{{ .Title }}</span>
-      </nav>
-      <h1 class="page-header__title">{{ .Title }}</h1>
-      {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
+    <div class="grid grid--3">
+      <a class="panel panel--ink" href="{{ "/charts/global/" | relLangURL }}" style="text-decoration:none">
+        <span class="eyebrow eyebrow--accent"><span class="pmark pmark--musicmetrics"></span>{{ i18n "cross_platform" }}</span>
+        <h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "global_200" }}</h2>
+        <p class="muted small" style="margin:0">{{ i18n "lede_musicmetrics" (dict "Count" 200 "Country" "") }}</p>
+      </a>
+      {{- range $active }}{{ $slug := (partial "func/chart-info.html" (printf "%s_x" .p)).slug }}
+      <a class="panel" href="{{ printf "/charts/%s/" $slug | relLangURL }}" style="text-decoration:none">
+        <span class="eyebrow"><span class="pmark pmark--{{ .p }}"></span>{{ i18n "charts_count" (dict "Count" (int .n)) }}</span>
+        <h2 style="font-size:1.8rem;margin:6px 0">{{ i18n (printf "hub_%s" .p) }}</h2>
+        <p class="muted small" style="margin:0">{{ i18n (printf "hub_desc_%s" .p) }}</p>
+      </a>
+      {{- end }}
+      {{- if site.Data.albums }}<a class="panel" href="{{ "/charts/albums/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--apple-albums"></span>{{ i18n "cross_country" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "top_albums" }}</h2><p class="muted small" style="margin:0">{{ i18n "albums_desc" }}</p></a>{{ end }}
+      <a class="panel" href="{{ "/charts/youtube/most-viewed/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--youtube"></span>{{ i18n "records" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "most_viewed_videos" }}</h2><p class="muted small" style="margin:0">{{ i18n "most_viewed_desc" }}</p></a>
     </div>
 
-    <div class="ad-slot ad-slot--header" data-ad-slot="chart-top"></div>
-
-    <div class="country-selector">
-      <label for="chartCountry">{{ i18n "select_country" }}:</label>
-      <select id="chartCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
-        <option value="{{ relLangURL (printf "/charts/%s/" $platform) }}">{{ i18n "worldwide" }}</option>
-        {{ range site.Data.countries }}
-        <option value="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}" {{ if eq .code $countryCode }}selected{{ end }}>{{ .flag }} {{ .name }}</option>
-        {{ end }}
-      </select>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" (printf "%s_%s" $platform $countryCode) "id" "platformChart" "lang" .Lang) }}
-
-    <div class="ad-slot ad-slot--footer" data-ad-slot="chart-bottom"></div>
-  </div>
-
-{{ else if $platform }}
-  {{/* === PLATFORM INDEX === */}}
-  <div class="container">
-    <div class="page-header">
-      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-        <span>/</span>
-        <a href="{{ relLangURL "/charts/" }}">{{ i18n "nav_charts" }}</a>
-        <span>/</span>
-        <span>{{ $platform | title }}</span>
-      </nav>
-      <h1 class="page-header__title">{{ .Title }}</h1>
-      {{ with .Description }}<p class="page-header__subtitle">{{ . }}</p>{{ end }}
-    </div>
-
-    <div class="ad-slot ad-slot--header" data-ad-slot="chart-top"></div>
-
-    <div class="country-selector">
-      <label for="chartCountry">{{ i18n "select_country" }}:</label>
-      <select id="chartCountry" class="country-selector__select" onchange="if(this.value)window.location.href=this.value">
-        <option value="" selected>{{ i18n "select_country" }}</option>
-        {{ range site.Data.countries }}
-        <option value="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}">{{ .flag }} {{ .name }}</option>
-        {{ end }}
-      </select>
-    </div>
-
-    {{ partial "chart-table.html" (dict "platform" $platform "id" "platformGlobalChart" "lang" .Lang) }}
-
-    {{/* Country grid */}}
-    <section class="mt-8">
-      <h2 class="section-header__title mb-4">{{ i18n "all_countries" }}</h2>
-      <div class="grid grid--4">
-        {{ range site.Data.countries }}
-        <a href="{{ relLangURL (printf "/charts/%s/%s/" $platform .code) }}" class="card" style="padding: var(--space-4)">
-          <div class="flex items-center gap-4">
-            <span style="font-size: 1.5rem">{{ .flag }}</span>
-            <strong>{{ .name }}</strong>
-          </div>
-        </a>
-        {{ end }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "chart_matrix" }}</h2></div>
+      <div class="toolbar" data-filter-for="matrix"><input class="input grow" type="search" placeholder="{{ i18n "filter_countries" }}" aria-label="{{ i18n "filter_countries" }}"></div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>{{ i18n "country" }}</th>{{ range $active }}<th>{{ i18n (printf "chip_%s" .p) }}</th>{{ end }}<th class="hide-m">№1</th></tr></thead>
+          <tbody id="matrix">
+            {{- $rows := slice }}{{ range $cc, $c := site.Data.countries }}{{ $rows = $rows | append (merge $c (dict "name" (index $c.names site.Language.Lang))) }}{{ end }}
+            {{- range sort $rows "name" }}{{ $c := . }}
+            <tr>
+              <td><a href="{{ printf "/countries/%s/" $c.code | relLangURL }}">{{ $c.flag }} {{ $c.name }}</a></td>
+              {{- range $active }}{{ $id := printf "%s_%s" .p $c.code }}<td>{{ if in $c.charts $id }}<a href="{{ (partialCached "func/chart-info.html" $id $id).url | relLangURL }}">{{ i18n "view" }}</a>{{ else }}<span class="muted">–</span>{{ end }}</td>{{ end }}
+              <td class="hide-m muted small">{{ with $c.top }}{{ .title }} — {{ .artist }}{{ end }}</td>
+            </tr>
+            {{- end }}
+          </tbody>
+        </table>
       </div>
     </section>
-
-    <div class="ad-slot ad-slot--footer" data-ad-slot="chart-bottom"></div>
   </div>
-
-{{ else }}
-  {{/* === MAIN CHARTS HUB === */}}
-  <div class="container">
-    <div class="page-header">
-      <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
-        <a href="{{ relLangURL "/" }}">{{ i18n "nav_home" }}</a>
-        <span>/</span>
-        <span>{{ i18n "nav_charts" }}</span>
-      </nav>
-      <h1 class="page-header__title">{{ i18n "nav_charts" }}</h1>
-      <p class="page-header__subtitle">Spotify &middot; YouTube</p>
-    </div>
-
-    <div class="ad-slot ad-slot--header" data-ad-slot="charts-top"></div>
-
-    <div class="grid grid--3 mb-8">
-      <a href="{{ relLangURL "/spotify/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">Spotify {{ i18n "nav_charts" }}</h3>
-          <span class="card__badge card__badge--spotify">Spotify</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "daily_chart" }} &middot; {{ i18n "weekly_chart" }} &middot; {{ i18n "top_artists" }}</p>
-      </a>
-
-      <a href="{{ relLangURL "/youtube/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">YouTube {{ i18n "nav_charts" }}</h3>
-          <span class="card__badge card__badge--youtube">YouTube</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">{{ i18n "most_viewed" }} &middot; {{ i18n "nav_trending" }} &middot; Milestones</p>
-      </a>
-
-      <a href="{{ relLangURL "/charts/global/" }}" class="card">
-        <div class="card__header">
-          <h3 class="card__title">{{ i18n "global" }} Combined</h3>
-          <span class="card__badge" style="background: var(--color-primary-light); color: var(--color-primary)">All</span>
-        </div>
-        <p class="text-muted" style="font-size: var(--font-size-sm)">Cross-platform combined rankings</p>
-      </a>
-    </div>
-
-    <div class="ad-slot ad-slot--footer" data-ad-slot="charts-bottom"></div>
-  </div>
-{{ end }}
+</div>
 {{ end }}

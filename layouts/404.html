@@ -1,17 +1,10 @@
-{{ define "title" }}404 - Page Not Found | {{ site.Title }}{{ end }}
-
 {{ define "main" }}
-<div class="container" style="text-align: center; padding: var(--space-16) 0;">
-  <h1 style="font-size: 6rem; font-weight: 800; color: var(--color-primary); margin-bottom: var(--space-4);">404</h1>
-  <h2 style="font-size: var(--font-size-2xl); margin-bottom: var(--space-4);">Page Not Found</h2>
-  <p class="text-muted" style="max-width: 500px; margin: 0 auto var(--space-8);">
-    The page you're looking for doesn't exist or has been moved.
-  </p>
-  <div class="flex justify-between gap-4" style="justify-content: center;">
-    <a href="{{ relLangURL "/" }}" class="platform-tab platform-tab--active" style="text-decoration: none;">{{ i18n "nav_home" }}</a>
-    <a href="{{ relLangURL "/spotify/" }}" class="platform-tab platform-tab--spotify">Spotify</a>
-    <a href="{{ relLangURL "/youtube/" }}" class="platform-tab platform-tab--youtube">YouTube</a>
-    <a href="{{ relLangURL "/charts/" }}" class="platform-tab">{{ i18n "nav_charts" }}</a>
+<div class="wrap layout">
+  <div style="max-width:720px">
+    <p class="kicker" style="margin-top:24px">404</p>
+    <h1 style="font-size:clamp(2.4rem,7vw,4.5rem);margin:8px 0 12px">{{ i18n "not_found_title" }}</h1>
+    <p class="page-head__lede">{{ i18n "not_found_text" }}</p>
+    <div class="profile__actions"><button class="btn" type="button" data-open-search>{{ partialCached "icons.html" (dict "n" "search" "s" 16) "search" 16 }}{{ i18n "search" }}</button><a class="btn btn--ghost" href="{{ "/charts/global/" | relLangURL }}">{{ i18n "global_200" }}</a><a class="btn btn--ghost" href="{{ "/" | relLangURL }}">{{ i18n "nav_home" }}</a></div>
   </div>
 </div>
 {{ end }}

@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $p := .Params.platform -}}
+{{- $ids := slice }}{{ range $id, $x := site.Data.charts }}{{ if strings.HasPrefix $id (printf "%s_" $p) }}{{ $ids = $ids | append $id }}{{ end }}{{ end -}}
+{{- $rows := slice }}{{ range $ids }}{{ $ci := partialCached "func/chart-info.html" . . }}{{ $rows = $rows | append (dict "id" . "cc" $ci.cc "name" (partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang) "w" (cond (eq $ci.cc "global") 99 ((index site.Data.countries $ci.cc).weight | default 1)) "url" $ci.url) }}{{ end -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow"><span class="pmark pmark--{{ $p }}"></span>{{ i18n "charts_count" (dict "Count" (int (len $ids))) }}</span>
+      <h1>{{ i18n (printf "hub_%s" $p) }}</h1>
+      <p class="page-head__lede">{{ i18n (printf "hub_desc_%s" $p) }}</p>
+    </header>
+    {{- with index (sort $rows "w" "desc") 0 }}{{ $ch := index site.Data.charts .id }}
+    <section class="section">
+      <div class="section-head"><h2>{{ partialCached "func/chart-title.html" .id .id site.Language.Lang }}</h2><a href="{{ .url | relLangURL }}">{{ i18n "full_chart" (dict "N" $ch.total) }} →</a></div>
+      {{ partial "chart-list.html" (dict "chart" $ch "id" "hub-top" "limit" 10) }}
+    </section>
+    {{- end }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "number_ones_by_country" }}</h2></div>
+      <div class="toolbar" data-filter-for="hub-table"><input class="input grow" type="search" placeholder="{{ i18n "filter_countries" }}" aria-label="{{ i18n "filter_countries" }}"></div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>{{ i18n "country" }}</th><th>№1</th><th class="hide-m">{{ i18n "artist" }}</th><th class="r hide-m">{{ i18n "days_short" }}</th></tr></thead>
+          <tbody id="hub-table">
+          {{- range sort $rows "name" }}{{ $ch := index site.Data.charts .id }}{{ $t := index $ch.items 0 }}
+            <tr>
+              <td><a href="{{ .url | relLangURL }}">{{ partialCached "func/flag.html" .cc .cc }} {{ .name }}</a></td>
+              <td><div class="cell-song">{{ with $t.image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span>{{ if $t.song }}<a href="{{ printf "/songs/%s/" $t.song | relLangURL }}">{{ $t.title }}</a>{{ else }}{{ $t.title }}{{ end }}<span class="hide-d muted small"><br>{{ $t.artist }}</span></span></div></td>
+              <td class="hide-m">{{ $t.artist }}</td>
+              <td class="r hide-m">{{ $t.days }}</td>
+            </tr>
+          {{- end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

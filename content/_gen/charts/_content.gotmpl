@@ -1,0 +1,22 @@
+{{- /* One page per chart in data/charts + a hub per platform. */ -}}
+{{- $updated := time.AsTime site.Data.meta.updated -}}
+{{- $hubs := dict -}}
+{{- range $id, $c := site.Data.charts -}}
+  {{- $ci := partialCached "func/chart-info.html" $id $id -}}
+  {{- $lm := time.AsTime ($c.updated | default site.Data.meta.updated) -}}
+  {{- if eq $id "global" -}}
+    {{- $.AddPage (dict "path" "global" "title" "Global 200" "kind" "page" "type" "chart" "params" (dict "chart" $id) "dates" (dict "lastmod" $lm "date" $lm)) -}}
+  {{- else -}}
+    {{- $.AddPage (dict "path" (printf "%s/%s" $ci.slug $ci.cc) "title" (printf "%s %s" $ci.pname $ci.cc) "kind" "page" "type" "chart" "params" (dict "chart" $id) "dates" (dict "lastmod" $lm "date" $lm)) -}}
+    {{- $hubs = merge $hubs (dict $ci.slug $ci.platform) -}}
+  {{- end -}}
+{{- end -}}
+{{- range $slug, $p := $hubs -}}
+  {{- $.AddPage (dict "path" $slug "title" $slug "kind" "section" "type" "charts" "layout" "platform" "params" (dict "platform" $p) "dates" (dict "lastmod" $updated)) -}}
+{{- end -}}
+{{- if site.Data.albums -}}
+  {{- $.AddPage (dict "path" "albums" "title" "Top Albums" "kind" "page" "type" "chart-albums" "dates" (dict "lastmod" $updated)) -}}
+{{- end -}}
+{{- if site.Data.youtube_most_viewed -}}
+  {{- $.AddPage (dict "path" "youtube/most-viewed" "title" "Most viewed" "kind" "page" "type" "most-viewed" "dates" (dict "lastmod" $updated)) -}}
+{{- end -}}

@@ -1,0 +1,9 @@
+{{- /* Manual AdSense unit. Renders nothing until adsenseClient AND a slot id are configured. */ -}}
+{{- $client := site.Params.ads.adsenseClient -}}
+{{- if and $client .slot -}}
+<div class="ad ad--{{ .kind | default "inline" }}">
+  <span class="ad__label">{{ i18n "advertisement" }}</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="{{ $client }}" data-ad-slot="{{ .slot }}" data-ad-format="{{ if eq .kind "sidebar" }}vertical{{ else }}auto{{ end }}" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+{{- end -}}
