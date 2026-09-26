@@ -30,6 +30,12 @@ function parseArtistAndTitle(rawTitle, channel) {
   if (dash && !topic) {
     let [, a, s] = dash;
     a = a.replace(/\s*[\(\[].*?[\)\]]\s*/g, ' ').trim();
+    // "Song - Artist" (common in Brazil/LatAm): swap when only the right side names the channel.
+    const cs = slugOf(chan);
+    const right = cleanTitle(s).replace(/\s*[\(\[].*?[\)\]]\s*/g, ' ').trim();
+    if (cs.length > 2 && slugOf(right).includes(cs) && !slugOf(a).includes(cs) && right.length < 70) {
+      return { artist: canonical(right, chan), title: cleanTitle(a) };
+    }
     if (a.length > 0 && a.length < 70) return { artist: canonical(a, chan), title: cleanTitle(s) };
   }
   if (pipe && !topic && isLabel) {
