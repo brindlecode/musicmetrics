@@ -2,7 +2,7 @@
 title: "Orquesta Zaperoko La Resistencia Salsera del Callao"
 slug: "orquesta-zaperoko-la-resistencia-salsera-del-callao"
 type: "artists"
-image: "https://i.ytimg.com/vi/tXkjw4gTcdo/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gyVH-fvTCCw/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

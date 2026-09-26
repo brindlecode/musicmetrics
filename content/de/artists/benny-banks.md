@@ -2,7 +2,7 @@
 title: "Benny Banks"
 slug: "benny-banks"
 type: "artists"
-image: "https://i.ytimg.com/vi/AYKztOcIDbU/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/FnYBgYqbSAo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

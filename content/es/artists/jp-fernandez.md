@@ -2,7 +2,7 @@
 title: "JP Fernandez"
 slug: "jp-fernandez"
 type: "artists"
-image: "https://i.ytimg.com/vi/swF0UgDl_Dg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Fku_u8EBtAc/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

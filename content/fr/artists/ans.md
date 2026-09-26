@@ -2,7 +2,7 @@
 title: "ANS"
 slug: "ans"
 type: "artists"
-image: "https://i.ytimg.com/vi/NpLwmAuwN3s/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/WGwbGMFpfXU/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

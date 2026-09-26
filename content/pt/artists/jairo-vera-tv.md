@@ -2,7 +2,7 @@
 title: "Jairo Vera TV"
 slug: "jairo-vera-tv"
 type: "artists"
-image: "https://i.ytimg.com/vi/NeieP_JRgn4/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zt7-yE4Ow0g/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
