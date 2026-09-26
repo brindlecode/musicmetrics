@@ -4,9 +4,16 @@
   {{- $items = $items | append (dict "flag" "🌐" "t" .title "a" .artist "u" ("/charts/global/" | relLangURL)) -}}
 {{- end -}}
 {{- range $cc, $c := site.Data.countries -}}
-  {{- if and $c.featured $c.top -}}
-    {{- $ci := partialCached "func/chart-info.html" $c.top.chart $c.top.chart -}}
-    {{- $items = $items | append (dict "flag" $c.flag "t" $c.top.title "a" $c.top.artist "u" ($ci.url | relLangURL)) -}}
+  {{- if $c.featured -}}
+    {{- /* YouTube #1 gives more local variety; fall back to the country's main chart. */ -}}
+    {{- $yt := index site.Data.charts (printf "youtube_%s" $cc) -}}
+    {{- if $yt -}}
+      {{- $t := index $yt.items 0 -}}
+      {{- $items = $items | append (dict "flag" $c.flag "t" $t.title "a" $t.artist "u" (printf "/charts/youtube/%s/" $cc | relLangURL)) -}}
+    {{- else if $c.top -}}
+      {{- $ci := partialCached "func/chart-info.html" $c.top.chart $c.top.chart -}}
+      {{- $items = $items | append (dict "flag" $c.flag "t" $c.top.title "a" $c.top.artist "u" ($ci.url | relLangURL)) -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- if gt (len $items) 1 -}}

@@ -15,7 +15,7 @@ const {
   fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, today, now,
 } = require('./lib/common');
 const C = require('./lib/countries');
-const { LABEL_RE } = require('./lib/youtube-parse');
+const { LABEL_RE, parseArtistAndTitle } = require('./lib/youtube-parse');
 
 const OFFLINE = process.argv.includes('--offline');
 const NOW = now();
@@ -157,16 +157,17 @@ async function enrichArtists(artists) {
   const cache = readJSON(file, {});
   if (OFFLINE) return cache;
   const todo = artists
-    .filter((a) => !cache[a.slug] || daysBetween(cache[a.slug].ts, TODAY) > 14)
+    .filter((a) => !cache[a.slug] || !cache[a.slug].v2 || daysBetween(cache[a.slug].ts, TODAY) > 14)
     .slice(0, 300);
   let n = 0;
   for (const a of todo) {
     try {
-      const d = await fetchJSON(`https://api.deezer.com/search/artist?q=${encodeURIComponent(a.name)}&limit=5`, { retries: 1, label: 'deezer artist' });
-      const hit = ((d && d.data) || []).find((x) => slugify(x.name) === a.slug);
+      const d = await fetchJSON(`https://api.deezer.com/search/artist?q=${encodeURIComponent(a.name)}&limit=10`, { retries: 1, label: 'deezer artist' });
+      // Many fake profiles share famous names: take the exact-name match with the most fans.
+      const hit = ((d && d.data) || []).filter((x) => slugify(x.name) === a.slug).sort((x, y) => (y.nb_fan || 0) - (x.nb_fan || 0))[0];
       cache[a.slug] = hit
-        ? { ts: TODAY, id: hit.id, img: hit.picture_medium, img_l: hit.picture_xl, fans: hit.nb_fan, albums: hit.nb_album, url: hit.link }
-        : { ts: TODAY };
+        ? { ts: TODAY, v2: 1, id: hit.id, img: hit.picture_medium, img_l: hit.picture_xl, fans: hit.nb_fan, albums: hit.nb_album, url: hit.link }
+        : { ts: TODAY, v2: 1 };
       n++;
     } catch (e) { console.warn('  ', e.message.slice(0, 100)); }
     await sleep(120);
@@ -411,7 +412,10 @@ async function main() {
     .filter(([, h]) => h.v >= 1e8 && (h.cat === '10' || h.v >= 1e9))
     .sort((a, b) => b[1].v - a[1].v)
     .slice(0, 250)
-    .map(([id, h], i) => ({ rank: i + 1, video_id: id, title: h.tt || h.t, artist: h.a || (h.c || '').replace(/ - Topic$|VEVO$/g, ''), channel: h.c, views: h.v, views_day: yt.daily[id] || null, published: h.pub || '' }));
+    .map(([id, h], i) => {
+      const parsed = h.tt ? { title: h.tt, artist: h.a } : parseArtistAndTitle(h.t || '', h.c || '');
+      return { rank: i + 1, video_id: id, title: parsed.title, artist: parsed.artist, channel: h.c, views: h.v, views_day: yt.daily[id] || null, published: h.pub || '' };
+    });
 
   // ---- albums (top 200)
   const albumList = Object.values(albums).sort((a, b) => b.score - a.score).slice(0, 200)
