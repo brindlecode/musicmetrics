@@ -2,7 +2,7 @@
 title: "Roxie Węgiel"
 slug: "roxie-wgiel"
 type: "artists"
-image: "https://i.ytimg.com/vi/dQlRlPF6en8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/zIv3GlIEEBg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

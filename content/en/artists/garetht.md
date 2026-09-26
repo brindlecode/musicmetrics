@@ -2,7 +2,7 @@
 title: "Gareth.T"
 slug: "garetht"
 type: "artists"
-image: "https://i.ytimg.com/vi/O7yiZjR8bj8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/VPoZ-18w9oo/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

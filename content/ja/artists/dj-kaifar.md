@@ -2,7 +2,7 @@
 title: "DJ KAIFAR"
 slug: "dj-kaifar"
 type: "artists"
-image: "https://i.ytimg.com/vi/2_VzYIJLPtQ/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/A-GPV4BqVFs/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

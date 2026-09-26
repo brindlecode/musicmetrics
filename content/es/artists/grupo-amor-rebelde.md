@@ -2,7 +2,7 @@
 title: "Grupo Amor Rebelde"
 slug: "grupo-amor-rebelde"
 type: "artists"
-image: "https://i.ytimg.com/vi/16w5riJ87ag/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/IFoA7-G7zlg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

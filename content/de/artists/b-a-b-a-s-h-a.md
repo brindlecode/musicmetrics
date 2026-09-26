@@ -2,7 +2,7 @@
 title: "B A B A S H A"
 slug: "b-a-b-a-s-h-a"
 type: "artists"
-image: "https://i.ytimg.com/vi/lBsMZnaQTJM/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/fEntaLoEpIg/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

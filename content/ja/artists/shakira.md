@@ -2,7 +2,7 @@
 title: "Shakira"
 slug: "shakira"
 type: "artists"
-image: "https://i.ytimg.com/vi/mapfegnAXOg/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/Bwvmi-0SRQ8/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

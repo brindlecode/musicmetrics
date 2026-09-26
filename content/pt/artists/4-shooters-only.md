@@ -2,7 +2,7 @@
 title: "4 Shooters Only™"
 slug: "4-shooters-only"
 type: "artists"
-image: "https://i.ytimg.com/vi/PH9_dmcGM3E/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/za06CCJ8tyE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"

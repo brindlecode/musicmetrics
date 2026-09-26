@@ -2,7 +2,7 @@
 title: "Florin Peste Records"
 slug: "florin-peste-records"
 type: "artists"
-image: "https://i.ytimg.com/vi/8Ipd85wE0lw/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/vIKnS1yMkoE/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
