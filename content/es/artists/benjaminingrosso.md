@@ -2,7 +2,7 @@
 title: "BenjaminIngrosso"
 slug: "benjaminingrosso"
 type: "artists"
-image: "https://i.ytimg.com/vi/S2XKCxyHpu8/mqdefault.jpg"
+image: "https://i.ytimg.com/vi/gvWEkekanBk/mqdefault.jpg"
 platforms: ["youtube"]
 spotify_streams: "--"
 youtube_views: "Charting"
