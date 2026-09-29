@@ -58,8 +58,11 @@ function weight(cc) {
 const EN_NAME_TO_CC = (() => {
   const map = {};
   const dn = new Intl.DisplayNames(['en'], { type: 'region' });
+  // Deprecated / pseudo codes that Intl still names (e.g. DD = East Germany would shadow DE).
+  const skip = new Set(['AN', 'BU', 'CS', 'DD', 'EU', 'EZ', 'FX', 'NT', 'QO', 'SU', 'TP', 'UN', 'XA', 'XB', 'YU', 'ZR', 'ZZ', 'UK']);
   for (let a = 65; a <= 90; a++) for (let b = 65; b <= 90; b++) {
     const code = String.fromCharCode(a, b);
+    if (skip.has(code)) continue;
     try {
       const n = dn.of(code);
       if (n && n !== code && !map[n.toLowerCase()]) map[n.toLowerCase()] = code.toLowerCase();

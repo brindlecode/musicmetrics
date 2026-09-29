@@ -2,7 +2,7 @@
 {{- $out := slice -}}
 {{- range $cc, $c := site.Data.countries -}}
   {{- $alt := slice }}{{ range $l, $n := $c.names }}{{ $alt = $alt | append $n }}{{ end -}}
-  {{- $out = $out | append (dict "k" "c" "n" $c.names.en "l" $c.names "alt" (delimit $alt " ") "f" $c.flag "u" (printf "countries/%s/" $cc) "w" 3) -}}
+  {{- $out = $out | append (dict "k" "c" "n" $c.names.en "l" $c.names "alt" (delimit $alt " ") "i" (printf "/flags/%s.png" $cc) "fl" 1 "u" (printf "countries/%s/" $cc) "w" 3) -}}
 {{- end -}}
 {{- range $s, $a := site.Data.artists -}}
   {{- $w := 0 }}{{ if le $a.rank 100 }}{{ $w = 4 }}{{ else if le $a.rank 500 }}{{ $w = 2 }}{{ end -}}
@@ -16,6 +16,6 @@
   {{- with $s.image }}{{ $x = merge $x (dict "i" .) }}{{ end -}}
   {{- $out = $out | append $x -}}
 {{- end -}}
-{{- $out = $out | append (dict "k" "p" "n" "Global 200" "a" "MusicMetrics" "u" "charts/global/" "w" 5 "f" "🌐") -}}
+{{- $out = $out | append (dict "k" "p" "n" "Global 200" "a" "MusicMetrics" "u" "charts/global/" "w" 5 "i" "/flags/global.svg" "fl" 1) -}}
 {{- $out = $out | append (dict "k" "p" "n" "YouTube most viewed music videos" "a" "Billion Views Club" "u" "charts/youtube/most-viewed/" "w" 3 "f" "▶") -}}
 {{- $out | jsonify -}}

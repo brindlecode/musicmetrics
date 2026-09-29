@@ -57,7 +57,7 @@
     <section class="section">
       <div class="section-head"><h2>{{ i18n "charting_in" (dict "Name" $a.name) }}</h2></div>
       <div class="pills">
-        {{- range . }}<a class="pill" href="{{ printf "/countries/%s/" . | relLangURL }}">{{ partialCached "func/flag.html" . . }} {{ partialCached "func/country-name.html" . . site.Language.Lang }}</a>{{ end }}
+        {{- range . }}<a class="pill" href="{{ printf "/countries/%s/" . | relLangURL }}">{{ partialCached "flag.html" . . }} {{ partialCached "func/country-name.html" . . site.Language.Lang }}</a>{{ end }}
       </div>
     </section>
     {{- end }}

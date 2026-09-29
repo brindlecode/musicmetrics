@@ -12,7 +12,7 @@
     <div class="grid grid--3" id="country-grid">
       {{- range sort $list "name" }}
       <div class="ccard">
-        <span class="ccard__flag">{{ .flag }}</span>
+        <span class="ccard__flag">{{ partialCached "flag.html" .code .code }}</span>
         <span style="min-width:0"><a class="ccard__name" href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ .name }}</a>
         <span class="ccard__top">{{ with .top }}№1 {{ .title }} — {{ .artist }}{{ end }}</span>
         <span class="ccard__top">{{ range $i, $id := .charts }}{{ if $i }} · {{ end }}{{ i18n (printf "chip_%s" (index (split $id "_") 0)) }}{{ end }}</span></span>

@@ -6,7 +6,7 @@
   <div>
     {{ partial "crumbs.html" . }}
     <header class="page-head">
-      <span class="eyebrow">{{ $c.flag }} {{ i18n "country_charts" }}</span>
+      <span class="eyebrow">{{ partialCached "flag.html" $cc $cc }} {{ i18n "country_charts" }}</span>
       <h1>{{ i18n "h1_country" (dict "Country" $cn) }}</h1>
       <p class="page-head__lede">{{ i18n "lede_country" (dict "Country" $cn "Count" (len $c.charts)) }}</p>
       <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "updated" }} <time data-rel datetime="{{ site.Data.meta.updated }}">{{ (time.AsTime site.Data.meta.updated).Format "2006-01-02 15:04" }} UTC</time></span><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>

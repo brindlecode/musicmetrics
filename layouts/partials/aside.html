@@ -10,7 +10,7 @@
     <div class="panel">
       <div class="panel__head"><h3>{{ i18n "nav_countries" }}</h3><a href="{{ "/countries/" | relLangURL }}">{{ i18n "view_all" }}</a></div>
       <div class="pills">
-        {{- range $cc, $c := site.Data.countries }}{{ if $c.featured }}<a class="pill" href="{{ printf "/countries/%s/" $cc | relLangURL }}">{{ $c.flag }} {{ index $c.names site.Language.Lang }}</a>{{ end }}{{ end }}
+        {{- range $cc, $c := site.Data.countries }}{{ if $c.featured }}<a class="pill" href="{{ printf "/countries/%s/" $cc | relLangURL }}">{{ partialCached "flag.html" $cc $cc }} {{ index $c.names site.Language.Lang }}</a>{{ end }}{{ end }}
       </div>
     </div>
   </div>

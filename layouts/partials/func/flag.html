@@ -1,4 +1,0 @@
-{{- $cc := . -}}
-{{- $f := "🌐" -}}
-{{- with index site.Data.countries $cc }}{{ $f = .flag }}{{ end -}}
-{{- return $f -}}

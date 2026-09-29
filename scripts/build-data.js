@@ -220,7 +220,8 @@ async function main() {
 
     const norm = uniq.map((i) => {
       const st = stats ? stats[i.key] : { change: i.change, peak: i.peak, days: i.days, first: i.first };
-      const credits = (i.artists && i.artists.length ? i.artists : splitArtists(i.artist)).slice(0, 6);
+      // Raw rows carry artist names; reused (previous) rows carry {n, s} objects.
+      const credits = (i.artists && i.artists.length ? i.artists : splitArtists(i.artist)).slice(0, 6).map((x) => (typeof x === 'string' ? x : x.n));
       const row = {
         rank: i.rank, title: i.title, artist: i.artist, key: i.key,
         artists: credits.map((n) => ({ n, s: slugify(n) })).filter((x) => x.s),

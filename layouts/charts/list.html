@@ -37,7 +37,7 @@
             {{- $rows := slice }}{{ range $cc, $c := site.Data.countries }}{{ $rows = $rows | append (merge $c (dict "name" (index $c.names site.Language.Lang))) }}{{ end }}
             {{- range sort $rows "name" }}{{ $c := . }}
             <tr>
-              <td><a href="{{ printf "/countries/%s/" $c.code | relLangURL }}">{{ $c.flag }} {{ $c.name }}</a></td>
+              <td><a href="{{ printf "/countries/%s/" $c.code | relLangURL }}">{{ partialCached "flag.html" $c.code $c.code }} {{ $c.name }}</a></td>
               {{- range $active }}{{ $id := printf "%s_%s" .p $c.code }}<td>{{ if in $c.charts $id }}<a href="{{ (partialCached "func/chart-info.html" $id $id).url | relLangURL }}">{{ i18n "view" }}</a>{{ else }}<span class="muted">–</span>{{ end }}</td>{{ end }}
               <td class="hide-m muted small">{{ with $c.top }}{{ .title }} — {{ .artist }}{{ end }}</td>
             </tr>

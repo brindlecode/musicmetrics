@@ -24,7 +24,7 @@
         <thead><tr><th>{{ i18n "chart" }}</th><th>№1</th></tr></thead>
         <tbody>
         {{- range $id, $x := $w.number_ones }}{{ $ci := partialCached "func/chart-info.html" $id $id }}{{ if not $ci.albums }}
-          <tr><td><span class="pmark pmark--{{ $ci.platform }}"></span> {{ partialCached "func/flag.html" $ci.cc $ci.cc }} {{ partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang }} <span class="muted small">{{ $ci.pname }}</span></td><td>{{ if $x.s }}<a href="{{ printf "/songs/%s/" $x.s | relLangURL }}">{{ $x.t }}</a>{{ else }}{{ $x.t }}{{ end }} <span class="muted">— {{ $x.a }}</span></td></tr>
+          <tr><td><span class="pmark pmark--{{ $ci.platform }}"></span> {{ partialCached "flag.html" $ci.cc $ci.cc }} {{ partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang }} <span class="muted small">{{ $ci.pname }}</span></td><td>{{ if $x.s }}<a href="{{ printf "/songs/%s/" $x.s | relLangURL }}">{{ $x.t }}</a>{{ else }}{{ $x.t }}{{ end }} <span class="muted">— {{ $x.a }}</span></td></tr>
         {{- end }}{{ end }}
         </tbody>
       </table></div>

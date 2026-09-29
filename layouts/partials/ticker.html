@@ -1,7 +1,7 @@
 {{- /* "No.1 now" ticker across featured countries. */ -}}
 {{- $items := slice -}}
 {{- with index site.Data.charts.global.items 0 -}}
-  {{- $items = $items | append (dict "flag" "🌐" "t" .title "a" .artist "u" ("/charts/global/" | relLangURL)) -}}
+  {{- $items = $items | append (dict "cc" "global" "t" .title "a" .artist "u" ("/charts/global/" | relLangURL)) -}}
 {{- end -}}
 {{- range $cc, $c := site.Data.countries -}}
   {{- if $c.featured -}}
@@ -9,10 +9,10 @@
     {{- $yt := index site.Data.charts (printf "youtube_%s" $cc) -}}
     {{- if $yt -}}
       {{- $t := index $yt.items 0 -}}
-      {{- $items = $items | append (dict "flag" $c.flag "t" $t.title "a" $t.artist "u" (printf "/charts/youtube/%s/" $cc | relLangURL)) -}}
+      {{- $items = $items | append (dict "cc" $cc "t" $t.title "a" $t.artist "u" (printf "/charts/youtube/%s/" $cc | relLangURL)) -}}
     {{- else if $c.top -}}
       {{- $ci := partialCached "func/chart-info.html" $c.top.chart $c.top.chart -}}
-      {{- $items = $items | append (dict "flag" $c.flag "t" $c.top.title "a" $c.top.artist "u" ($ci.url | relLangURL)) -}}
+      {{- $items = $items | append (dict "cc" $cc "t" $c.top.title "a" $c.top.artist "u" ($ci.url | relLangURL)) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -22,7 +22,7 @@
     <span class="ticker__label">{{ i18n "number_one_now" }}</span>
     <div class="ticker__track">
       {{- range seq 2 -}}{{ $dup := . }}
-      {{- range $items }}<a href="{{ .u }}"{{ if eq $dup 2 }} tabindex="-1" aria-hidden="true"{{ end }}><span class="flag">{{ .flag }}</span> <b>{{ .t }}</b> — {{ .a }}</a>{{ end -}}
+      {{- range $items }}<a href="{{ .u }}"{{ if eq $dup 2 }} tabindex="-1" aria-hidden="true"{{ end }}>{{ partialCached "flag.html" .cc .cc }} <b>{{ .t }}</b> — {{ .a }}</a>{{ end -}}
       {{- end -}}
     </div>
   </div>
