@@ -89,7 +89,7 @@ jobs:
             echo "::error::NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID secrets are missing. See README → Deployment."
             exit 1
           fi
-          npx -y netlify-cli deploy --prod --dir=public --timeout=5400 --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" \
+          npx -y netlify-cli deploy --prod --no-build --dir=public --timeout=5400 --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" \
             --message "Charts update $(date -u +'%Y-%m-%d %H:%M') UTC" || {
             echo "::error::Netlify deploy failed. If the log says Unauthorized, create a new Personal Access Token at https://app.netlify.com/user/applications and update the NETLIFY_AUTH_TOKEN repository secret."
             exit 1
