@@ -4,7 +4,7 @@
   <div>
     {{ partial "crumbs.html" . }}
     <header class="page-head">
-      <span class="eyebrow"><span class="pmark pmark--apple-albums"></span>{{ i18n "cross_country" }}</span>
+      <span class="eyebrow">{{ partialCached "plogo.html" "apple-albums" "apple-albums" }}{{ i18n "cross_country" }}</span>
       <h1>{{ i18n "seo_title_albums" }}</h1>
       <p class="page-head__lede">{{ i18n "albums_desc" }}</p>
     </header>

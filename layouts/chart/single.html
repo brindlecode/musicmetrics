@@ -8,7 +8,7 @@
   <div>
     {{ partial "crumbs.html" . }}
     <header class="page-head">
-      <span class="eyebrow"><span class="pmark pmark--{{ $ci.platform }}"></span>{{ if $isGlobal }}{{ i18n "cross_platform" }}{{ else }}{{ $ci.pname }} · {{ partialCached "flag.html" $ci.cc $ci.cc }} {{ $cn }}{{ end }}</span>
+      <span class="eyebrow">{{ partialCached "plogo.html" $ci.platform $ci.platform }}{{ if $isGlobal }}{{ i18n "cross_platform" }}{{ else }}<span lang="en" translate="no">{{ $ci.pname }}</span> · {{ partialCached "flag.html" $ci.cc $ci.cc }} {{ $cn }}{{ end }}</span>
       <h1>{{ partialCached "func/chart-title.html" $c.id $c.id site.Language.Lang }}</h1>
       <p class="page-head__lede">{{ i18n (printf "lede_%s" $ci.platform) (dict "Country" $cn "Count" $c.total) }}</p>
       <div class="page-head__meta">
@@ -28,7 +28,7 @@
     {{- else }}{{ with index site.Data.countries $ci.cc }}{{ $others = .charts }}{{ end }}{{ end }}
     <nav class="chips" aria-label="{{ i18n "other_charts" }}">
       {{- range $others }}{{ $oi := partialCached "func/chart-info.html" . . }}
-      <a class="chip" href="{{ $oi.url | relLangURL }}"{{ if eq . $c.id }} aria-current="page"{{ end }}><span class="pmark pmark--{{ $oi.platform }}"></span>{{ i18n (printf "chip_%s" $oi.platform) }}</a>
+      <a class="chip" href="{{ $oi.url | relLangURL }}"{{ if eq . $c.id }} aria-current="page"{{ end }}>{{ partialCached "plogo.html" $oi.platform $oi.platform }}{{ i18n (printf "chip_%s" $oi.platform) }}</a>
       {{- end }}
       {{- if ne $ci.cc "global" }}<a class="chip" href="{{ printf "/countries/%s/" $ci.cc | relLangURL }}">{{ partialCached "flag.html" $ci.cc $ci.cc }} {{ i18n "all_charts_in" (dict "Country" $cn) }}</a>{{ end }}
     </nav>

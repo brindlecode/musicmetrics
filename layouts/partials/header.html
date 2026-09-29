@@ -3,7 +3,7 @@
 <header class="site-header">
   <div class="wrap site-header__inner">
     <a class="logo" href="{{ "/" | relLangURL }}" aria-label="MusicMetrics — {{ i18n "nav_home" }}">
-      {{ partial "logo.html" . }}<span class="logo__word">Music<b>Metrics</b></span>
+      {{ partial "logo.html" . }}<span class="logo__word" lang="en" translate="no">Music<b>Metrics</b></span>
     </a>
     {{- partialCached "header-nav.html" . site.Language.Lang .Section .Type $isGlobal }}
     <div class="header-tools">

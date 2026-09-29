@@ -6,7 +6,7 @@
   <div>
     {{ partial "crumbs.html" . }}
     <header class="page-head">
-      <span class="eyebrow"><span class="pmark pmark--{{ $p }}"></span>{{ i18n "charts_count" (dict "Count" (int (len $ids))) }}</span>
+      <span class="eyebrow">{{ partialCached "plogo.html" $p $p }}{{ i18n "charts_count" (dict "Count" (int (len $ids))) }}</span>
       <h1>{{ i18n (printf "hub_%s" $p) }}</h1>
       <p class="page-head__lede">{{ i18n (printf "hub_desc_%s" $p) }}</p>
     </header>
