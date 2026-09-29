@@ -104,9 +104,10 @@ const seconds = (iso) => {
 
 async function fetchVideoStats(ids) {
   const out = {};
-  for (let i = 0; i < ids.length; i += 50) {
-    if (units >= UNIT_BUDGET) break;
-    const batch = ids.slice(i, i + 50);
+  const batches = [];
+  for (let i = 0; i < ids.length; i += 50) batches.push(ids.slice(i, i + 50));
+  await mapLimit(batches, 8, async (batch) => {
+    if (units >= UNIT_BUDGET) return;
     try {
       const d = await yt(`${API}/videos?part=snippet,statistics,contentDetails&id=${batch.join(',')}&key=${KEY}`, 'youtube videos');
       for (const v of (d && d.items) || []) {
@@ -121,7 +122,7 @@ async function fetchVideoStats(ids) {
         };
       }
     } catch (e) { console.warn('  ', e.message.slice(0, 160)); }
-  }
+  });
   return out;
 }
 
@@ -148,37 +149,41 @@ async function discover(known) {
   });
   const found = new Map(); // videoId -> artist slug
   let pages = 0;
-  for (let round = 0; round < 5; round++) {
-    let progressed = false;
-    for (const { slug, ch } of due) {
-      if (units >= UNIT_BUDGET - RESERVE - Math.ceil(found.size / 50) - 1) break;
-      const st = scan[ch] || (scan[ch] = { a: slug, pages: 0, done: false });
-      if (st.last === day && st.done) continue;
-      if (st.done && round > 0) continue; // fully scanned: first page only
-      if (!st.done && st.pages >= MAX_PAGES_PER_CHANNEL) { st.done = true; st.next = null; continue; }
-      const token = st.done ? '' : (st.next || '');
-      const uploads = 'UU' + ch.slice(2);
-      try {
-        const d = await yt(`${API}/playlistItems?part=contentDetails&maxResults=50&playlistId=${uploads}${token ? `&pageToken=${token}` : ''}&key=${KEY}`, 'youtube uploads');
-        pages++;
-        progressed = true;
-        for (const it of (d && d.items) || []) {
-          const id = it.contentDetails && it.contentDetails.videoId;
-          if (id && !known.has(id)) found.set(id, slug);
-        }
-        st.a = slug;
-        if (!st.done) {
-          st.pages++;
-          st.next = (d && d.nextPageToken) || null;
-          if (!st.next) st.done = true;
-        }
-        if (st.done) st.last = day;
-      } catch (e) {
-        // Playlist missing (channel deleted / no uploads): don't retry every day.
-        st.done = true; st.last = day; st.next = null;
+  const pageOf = async ({ slug, ch }) => {
+    const st = scan[ch] || (scan[ch] = { a: slug, pages: 0, done: false });
+    if (st.last === day && st.done) return false;
+    if (!st.done && st.pages >= MAX_PAGES_PER_CHANNEL) { st.done = true; st.next = null; return false; }
+    if (units >= UNIT_BUDGET - RESERVE - Math.ceil(found.size / 50) - 1) return false;
+    const token = st.done ? '' : (st.next || '');
+    const uploads = 'UU' + ch.slice(2);
+    try {
+      const d = await yt(`${API}/playlistItems?part=contentDetails&maxResults=50&playlistId=${uploads}${token ? `&pageToken=${token}` : ''}&key=${KEY}`, 'youtube uploads');
+      pages++;
+      for (const it of (d && d.items) || []) {
+        const id = it.contentDetails && it.contentDetails.videoId;
+        if (id && !known.has(id)) found.set(id, slug);
       }
+      st.a = slug;
+      if (!st.done) {
+        st.pages++;
+        st.next = (d && d.nextPageToken) || null;
+        if (!st.next) st.done = true;
+      }
+      if (st.done) st.last = day;
+      return true;
+    } catch (e) {
+      // Playlist missing (channel deleted / no uploads): don't retry every day.
+      st.done = true; st.last = day; st.next = null;
+      return false;
     }
-    if (!progressed) break;
+  };
+  // Round 0: one page for every due channel (fully scanned ones only get this
+  // first page = their newest uploads). Later rounds continue unfinished crawls.
+  for (let round = 0; round < 5; round++) {
+    const list = round === 0 ? due : due.filter(({ ch }) => scan[ch] && !scan[ch].done);
+    if (!list.length) break;
+    const res = await mapLimit(list, 8, pageOf);
+    if (!res.some(Boolean)) break;
   }
   const stats = await fetchVideoStats([...found.keys()]);
   const kept = {};
