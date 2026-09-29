@@ -5,7 +5,7 @@
 ## How it works
 
 ```
-GitHub Actions (every 6h)                                   Netlify (static hosting)
+GitHub Actions (daily)                                      Netlify (static hosting)
   scripts/fetch-youtube.js  ─┐                                        ▲
   scripts/fetch-apple.js    ─┼─► store/raw ─► scripts/build-data.js ─┤  hugo --minify ─► public/ ─► netlify deploy
   scripts/fetch-deezer.js   ─┤              (history, Global 200,     │
@@ -18,14 +18,14 @@ GitHub Actions (every 6h)                                   Netlify (static host
 - **Languages:** English at `/`, plus `/tr/ /es/ /pt/ /de/ /fr/ /ja/` (UI strings in `i18n/`, static pages in `content/<lang>/`).
 - **SEO/AEO/GEO:** localized titles & descriptions, hreflang, canonical, JSON-LD (Organization, WebSite+SearchAction, BreadcrumbList, ItemList, Dataset, MusicGroup, MusicRecording, Article, FAQPage), answer boxes, `llms.txt` with live data, sitemap per language, IndexNow ping, AI crawlers allowed in `robots.txt`.
 
-- **Storage:** `store/` is committed: `history/` (positions), `catalog/` (every song & artist that ever charted — pages stay online for 180 days after they leave the charts), `charts/` (last good copy of every chart, used if a source fails), `weekly/` (weekly recap archive), `cache/`. `data/` is regenerated from it on every build (`node scripts/build-data.js --offline` needs no network).
+- **Storage:** `store/` lives on the `store` branch (one fresh commit per day, so history never piles up; daily backups are kept 30 days as workflow artifacts). Check it out with `git worktree add store store` for local work. It holds: `history/` (positions), `catalog/` (every song & artist that ever charted — pages stay online for 180 days after they leave the charts), `charts/` (last good copy of every chart, used if a source fails), `weekly/` (weekly recap archive), `cache/`. `data/` is regenerated from it on every build (`node scripts/build-data.js --offline` needs no network).
 - **Schedule:** once a day (05:17 UTC).
 
 ## Data sources (all free)
 
 | Source | Key needed | Script |
 |---|---|---|
-| YouTube Data API v3 (trending music, views, channels) | `YOUTUBE_API_KEY` | `fetch-youtube.js` |
+| YouTube Data API v3 (trending music in every region, views of up to 60,000 videos incl. every music video on known artist channels, channels) — free quota, never billed; capped at 5,000 of 10,000 units/day | `YOUTUBE_API_KEY` | `fetch-youtube.js` |
 | Apple Music "Most Played" RSS (songs + albums) + iTunes top songs, ~170 storefronts | no | `fetch-apple.js` |
 | Deezer API (Deezer Charts playlists, artist fans) | no | `fetch-deezer.js` |
 | Last.fm API (optional) | `LASTFM_API_KEY` | `fetch-lastfm.js` |

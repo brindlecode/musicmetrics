@@ -11,8 +11,11 @@
   {{- else -}}
     {{- $c = $c | append (dict "name" (i18n "global_200") "url" "") -}}
   {{- end -}}
-{{- else if in (slice "chart-albums" "most-viewed") $p.Type -}}
-  {{- $c = $c | append $charts | append (dict "name" (cond (eq $p.Type "most-viewed") (i18n "most_viewed_videos") (i18n "top_albums")) "url" "") -}}
+{{- else if in (slice "chart-albums" "most-viewed" "yt-daily" "yt-artists") $p.Type -}}
+  {{- $names := dict "chart-albums" (i18n "top_albums") "most-viewed" (i18n "most_viewed_videos") "yt-daily" (i18n "h1_yt_daily") "yt-artists" (i18n "h1_yt_artists") -}}
+  {{- $c = $c | append $charts -}}
+  {{- if ne $p.Type "chart-albums" }}{{ $c = $c | append (dict "name" (i18n "hub_youtube") "url" ("/charts/youtube/" | relLangURL)) }}{{ end -}}
+  {{- $c = $c | append (dict "name" (index $names $p.Type) "url" "") -}}
 {{- else if and (eq $p.Type "charts") (eq $p.Layout "platform") -}}
   {{- $c = $c | append $charts | append (dict "name" (i18n (printf "hub_%s" $p.Params.platform)) "url" "") -}}
 {{- else if eq $p.Type "charts" -}}

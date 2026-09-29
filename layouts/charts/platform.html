@@ -10,6 +10,7 @@
       <h1>{{ i18n (printf "hub_%s" $p) }}</h1>
       <p class="page-head__lede">{{ i18n (printf "hub_desc_%s" $p) }}</p>
     </header>
+    {{- if eq $p "youtube" }}{{ partial "yt-nav.html" . }}{{ end }}
     {{- with index (sort $rows "w" "desc") 0 }}{{ $ch := index site.Data.charts .id }}
     <section class="section">
       <div class="section-head"><h2>{{ partialCached "func/chart-title.html" .id .id site.Language.Lang }}</h2><a href="{{ .url | relLangURL }}">{{ i18n "full_chart" (dict "N" $ch.total) }} →</a></div>

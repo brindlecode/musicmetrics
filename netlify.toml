@@ -2,7 +2,8 @@
 # .github/workflows/fetch-data.yml). These settings are only used if the
 # site is ever linked to the repository for Netlify-side builds.
 # Headers and redirects live in static/_headers and static/_redirects so
-# they apply to both deploy methods.
+# they apply to both deploy methods. A Netlify-side build would also need the
+# `store` branch checked out into ./store first.
 [build]
   publish = "public"
   command = "node scripts/build-data.js --offline && hugo --gc --minify"

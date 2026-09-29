@@ -119,11 +119,10 @@
   </section>
 
   {{- /* ---------- YouTube ---------- */}}
-  {{- $mv := site.Data.youtube_most_viewed }}
-  {{- $hot := first 6 (sort (where $mv "views_day" "ne" nil) "views_day" "desc") }}
+  {{- $hot := first 6 (site.Data.youtube_daily | default slice) }}
   {{- with $hot }}
   <section class="section">
-    <div class="section-head"><h2>{{ i18n "most_watched_24h" }}</h2><a href="{{ "/charts/youtube/most-viewed/" | relLangURL }}">{{ i18n "most_viewed_videos" }} →</a></div>
+    <div class="section-head"><h2>{{ i18n "most_watched_24h" }}</h2><a href="{{ "/charts/youtube/daily/" | relLangURL }}">{{ i18n "h1_yt_daily" }} →</a></div>
     <div class="grid grid--3">
       {{- range . }}
       <div style="position:relative">

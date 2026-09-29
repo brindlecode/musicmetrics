@@ -5,6 +5,7 @@ on:
   push:
     branches-ignore:
       - main
+      - store
 
 jobs:
   build:
@@ -13,6 +14,11 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: store
+          path: store
+          fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

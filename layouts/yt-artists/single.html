@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- $list := site.Data.youtube_artists -}}
+{{- $top := index $list 0 -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ partialCached "plogo.html" "youtube" "youtube" }}YouTube · {{ i18n "records" }}</span>
+      <h1>{{ i18n "h1_yt_artists" }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_yt_artists" (dict "Count" (len $list)) }}</p>
+      <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "updated" }} <time data-rel datetime="{{ site.Data.meta.updated }}">{{ (time.AsTime site.Data.meta.updated).Format "2006-01-02 15:04" }} UTC</time></span><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>
+    </header>
+    <p class="answer">{{ i18n "answer_yt_artists" (dict "Name" $top.name "Views" (lang.FormatNumberCustom 0 $top.total) "Videos" $top.videos) | safeHTML }}</p>
+    {{ partial "yt-nav.html" . }}
+    <div class="toolbar" data-filter-for="yta-list"><input class="input grow" type="search" placeholder="{{ i18n "filter_artists" }}" aria-label="{{ i18n "filter_artists" }}"></div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th class="r">#</th><th>{{ i18n "artist" }}</th><th class="r">{{ i18n "total_views" }}</th><th class="r hide-m">{{ i18n "views_24h" }}</th><th class="r hide-m">{{ i18n "videos" }}</th><th class="hide-m">{{ i18n "top_video" }}</th></tr></thead>
+        <tbody id="yta-list">
+        {{- range first 500 $list }}
+          <tr>
+            <td class="r big">{{ .rank }}</td>
+            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}{{ if .page }}<a href="{{ cond .loc (printf "/artists/%s/" .slug | relLangURL) (printf "/artists/%s/" .slug) }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</div></td>
+            <td class="r"><strong>{{ partial "func/num.html" .total }}</strong></td>
+            <td class="r hide-m">{{ if .daily }}+{{ partial "func/num.html" .daily }}{{ else }}–{{ end }}</td>
+            <td class="r hide-m">{{ .videos }}</td>
+            <td class="hide-m muted small">{{ with .top }}{{ .t | truncate 40 }}{{ end }}</td>
+          </tr>
+        {{- end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:12px">{{ i18n "yt_artists_note" }}</p>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}

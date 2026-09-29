@@ -33,6 +33,17 @@
   {{- $d = i18n "seo_desc_most_viewed" (dict "Title" $top.title "Artist" $top.artist "Views" (partial "func/num.html" $top.views)) -}}
   {{- $img = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $top.video_id -}}
   {{- $big = true -}}
+{{- else if eq .Type "yt-daily" -}}
+  {{- $top := index site.Data.youtube_daily 0 -}}
+  {{- $t = i18n "seo_title_yt_daily" -}}
+  {{- $d = i18n "seo_desc_yt_daily" (dict "Title" $top.title "Artist" $top.artist "Views" (partial "func/num.html" $top.views_day)) -}}
+  {{- $img = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $top.video_id -}}
+  {{- $big = true -}}
+{{- else if eq .Type "yt-artists" -}}
+  {{- $top := index site.Data.youtube_artists 0 -}}
+  {{- $t = i18n "seo_title_yt_artists" -}}
+  {{- $d = i18n "seo_desc_yt_artists" (dict "Name" $top.name "Views" (partial "func/num.html" $top.total)) -}}
+  {{- with $top.image }}{{ $img = . }}{{ end -}}
 {{- else if eq .Type "charts" -}}
   {{- if eq .Layout "platform" -}}
     {{- $pn := index (dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "itunes" "iTunes" "deezer" "Deezer" "lastfm" "Last.fm") .Params.platform -}}
