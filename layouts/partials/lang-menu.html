@@ -1,5 +1,7 @@
       <details class="lang-menu">
-        <summary class="icon-btn lang-menu__btn" aria-label="{{ i18n "language" }}">{{ partialCached "icons.html" (dict "n" "globe" "s" 18) "globe" 18 }}{{ upper site.Language.Lang }}</summary>
+        <summary class="icon-btn lang-menu__btn" aria-label="{{ i18n "language" }}">{{ partialCached "icons.html" (dict "n" "globe" "s" 18) "globe" 18 }}<span>{{ upper site.Language.Lang }}</span><span class="lang-menu__caret" aria-hidden="true"></span></summary>
+        <div class="lang-menu__pop">
+        <p class="lang-menu__head">{{ i18n "language" }}</p>
         <ul class="lang-menu__list">
           {{- $cur := . -}}
           {{- range site.Languages -}}
@@ -7,7 +9,8 @@
             {{- $href := printf "/%s/" $l -}}
             {{- if eq $l "en" }}{{ $href = "/" }}{{ end -}}
             {{- range $cur.AllTranslations }}{{ if eq .Language.Lang $l }}{{ $href = .RelPermalink }}{{ end }}{{ end -}}
-            <li><a href="{{ $href }}" hreflang="{{ $l }}" lang="{{ $l }}"{{ if eq $l site.Language.Lang }} aria-current="true"{{ end }}>{{ .LanguageName }}<span class="muted">{{ upper $l }}</span></a></li>
+            <li><a href="{{ $href }}" hreflang="{{ $l }}" lang="{{ $l }}"{{ if eq $l site.Language.Lang }} aria-current="true"{{ end }}><span class="lang-menu__name">{{ .LanguageName }}</span><span class="lang-menu__code" translate="no">{{ upper $l }}</span></a></li>
           {{- end }}
         </ul>
+        </div>
       </details>
