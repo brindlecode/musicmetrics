@@ -129,7 +129,11 @@ function updateYoutubeViews(charts) {
   }
   // Channel -> artist, for videos found through an artist's own channel.
   const chanArtist = {};
-  for (const [slug, a] of Object.entries(readJSON(path.join(CATALOG_DIR, 'artists.json'), {}))) if (a.yc) chanArtist[a.yc] = slug;
+  const wd = (readJSON(path.join(CACHE_DIR, 'wikidata_youtube.json'), {}) || {}).map || {};
+  for (const [slug, a] of Object.entries(readJSON(path.join(CATALOG_DIR, 'artists.json'), {}))) {
+    const ch = a.yc || wd[slug];
+    if (ch) chanArtist[ch] = slug;
+  }
   // Snapshots are [hours since epoch, views]; older runs stored ISO strings.
   const hrs = (t) => (typeof t === 'number' ? t : Math.round(Date.parse(t + 'Z') / 36e5));
   const nowH = Math.round(NOW.getTime() / 36e5);
@@ -574,6 +578,7 @@ function updateCatalog(songList, artistList, deezerCache, yt) {
   const aFile = path.join(CATALOG_DIR, 'artists.json');
   const songsCat = readJSON(sFile, {});
   const artistsCat = readJSON(aFile, {});
+  const wdYt = (readJSON(path.join(CACHE_DIR, 'wikidata_youtube.json'), {}) || {}).map || {};
   const cap = (arr, n) => arr.slice(-n);
 
   for (const s of songList) {
@@ -601,6 +606,7 @@ function updateCatalog(songList, artistList, deezerCache, yt) {
     if (a.ext.apple) c.l.apple = a.ext.apple;
     if (a.ext.deezer_id) c.l.deezer = `https://www.deezer.com/artist/${a.ext.deezer_id}`;
     if (a.ext.yt_channel) c.yc = a.ext.yt_channel;
+    if (!c.yc && wdYt[a.slug]) c.yc = wdYt[a.slug];
     c.ls = TODAY;
     if (a.best && a.best.r < c.b.r) c.b = { r: a.best.r, c: a.best.c, d: TODAY, t: a.best.t };
     for (const k of a.songs) if (!c.s.includes(k)) c.s.push(k);

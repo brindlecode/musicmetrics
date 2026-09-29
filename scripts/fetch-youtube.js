@@ -8,7 +8,7 @@
  * never bills: when the quota is used up, requests simply fail until the next
  * day. This script also enforces its own budget (UNIT_BUDGET, default 5,000)
  * so a daily run uses at most half of the free quota:
- *   ~1 unit per region (~110) + 1 per 50 tracked videos (≤ 60,000 → 1,200)
+ *   ~1 unit per region (~110) + 1 per 50 tracked videos (≤ 150,000 → 3,000)
  *   + 1 per 50 channels + artist-channel discovery (the rest of the budget,
  *   minus a safety reserve): 1 unit per 50 uploads listed + 1 per 50 checked.
  *
@@ -16,14 +16,14 @@
  * Output: store/raw/youtube_<cc>.json, store/raw/youtube_videos.json
  */
 const path = require('path');
-const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, FEAT_RE, today } = require('./lib/common');
+const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, FEAT_RE, today, slugify } = require('./lib/common');
 const { YOUTUBE } = require('./lib/countries');
 const { parseArtistAndTitle } = require('./lib/youtube-parse');
 
 const KEY = process.env.YOUTUBE_API_KEY;
 const API = 'https://www.googleapis.com/youtube/v3';
 const UNIT_BUDGET = Number(process.env.UNIT_BUDGET || 5000);
-const MAX_TRACKED = 60000;
+const MAX_TRACKED = 150000;
 const RESERVE = 300;              // never spend the last units of the budget on discovery
 const MAX_PAGES_PER_CHANNEL = 20; // up to 1,000 uploads per artist channel
 const RESCAN_DAYS = 7;            // look for new uploads of fully scanned channels weekly
@@ -127,6 +127,42 @@ async function fetchVideoStats(ids) {
 }
 
 /**
+ * Official YouTube channel ids of musicians from Wikidata (property P2397),
+ * matched to our artists by name. Free, no key; cached for a week.
+ */
+async function wikidataChannels() {
+  const file = path.join(HISTORY_DIR, '..', 'cache', 'wikidata_youtube.json');
+  const cache = readJSON(file, null);
+  if (cache && cache.ts && (Date.now() - Date.parse(cache.ts)) / 864e5 < 7) return cache.map;
+  const query = `SELECT ?item ?itemLabel ?yt ?links WHERE {
+    { VALUES ?occ { wd:Q177220 wd:Q639669 wd:Q2252262 wd:Q488205 wd:Q36834 wd:Q753110 wd:Q130857 wd:Q183945 wd:Q855091 } ?item wdt:P106 ?occ . }
+    UNION { ?item wdt:P31 wd:Q215380 . } UNION { ?item wdt:P31 wd:Q5741069 . } UNION { ?item wdt:P31 wd:Q9212979 . }
+    ?item wdt:P2397 ?yt ; wikibase:sitelinks ?links .
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en,mul,es,pt,fr,de,tr,ja,ko". }
+  }`;
+  try {
+    const d = await fetchJSON(`https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`, {
+      retries: 1, label: 'wikidata', headers: { Accept: 'application/sparql-results+json' },
+    });
+    const best = {};
+    for (const b of (d && d.results && d.results.bindings) || []) {
+      const slug = slugify(b.itemLabel && b.itemLabel.value);
+      const ch = b.yt && b.yt.value;
+      const links = Number(b.links && b.links.value) || 0;
+      if (!slug || !/^UC[\w-]{22}$/.test(ch || '')) continue;
+      if (!best[slug] || links > best[slug][1]) best[slug] = [ch, links];
+    }
+    const map = Object.fromEntries(Object.entries(best).map(([k, v]) => [k, v[0]]));
+    writeJSON(file, { ts: new Date().toISOString(), map });
+    console.log(`  wikidata: ${Object.keys(map).length} artist channels`);
+    return map;
+  } catch (e) {
+    console.warn('  wikidata:', e.message.slice(0, 120));
+    return (cache && cache.map) || {};
+  }
+}
+
+/**
  * Walks the uploads playlist of every artist channel we know (from the
  * catalog), a few pages per channel per run, and returns newly found music
  * videos (category Music, longer than a Short). Scan progress is kept in
@@ -136,10 +172,12 @@ async function discover(known) {
   const file = path.join(HISTORY_DIR, 'youtube_scan.json');
   const scan = readJSON(file, {});
   const catalog = readJSON(path.join(HISTORY_DIR, '..', 'catalog', 'artists.json'), {});
+  const wd = await wikidataChannels();
   const channels = Object.entries(catalog)
-    .filter(([, a]) => a.yc)
+    .map(([slug, a]) => [slug, a, a.yc || wd[slug]])
+    .filter(([, , ch]) => ch)
     .sort((x, y) => (y[1].ls || '').localeCompare(x[1].ls || '') || (x[1].b ? x[1].b.r : 999) - (y[1].b ? y[1].b.r : 999))
-    .map(([slug, a]) => ({ slug, ch: a.yc }));
+    .map(([slug, , ch]) => ({ slug, ch }));
   const day = today();
   const due = channels.filter(({ ch }) => {
     const st = scan[ch];
@@ -242,8 +280,7 @@ async function main() {
   console.log(`  channels: ${Object.keys(channels).length}`);
 
   // Artist-channel discovery with whatever budget is left.
-  const room = MAX_TRACKED - Object.keys(views).length;
-  const fresh = room > 0 ? await discover(new Set([...Object.keys(views), ...ids])) : {};
+  const fresh = await discover(new Set([...Object.keys(views), ...ids]));
   Object.assign(stats, fresh);
   console.log(`  quota used: ${units} of 10,000 free units (budget ${UNIT_BUDGET})`);
 
