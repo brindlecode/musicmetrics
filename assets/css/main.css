@@ -380,6 +380,7 @@ a.mini__t::after { content: ""; position: absolute; inset: 0; }
 .plogo--youtube { color: #ff0033; }
 .plogo--apple { color: #fa243c; }
 .plogo--deezer { color: #a238ff; }
+.plogo--itunes { color: #fb5bc5; }
 .plogo--lastfm { color: #d51007; }
 .plogo--spotify { color: #1db954; }
 .plogo--musicmetrics { color: var(--accent); }

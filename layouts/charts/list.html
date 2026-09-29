@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $platforms := slice "youtube" "apple" "apple-albums" "deezer" "lastfm" -}}
+{{- $platforms := slice "youtube" "apple" "itunes" "apple-albums" "deezer" "lastfm" -}}
 {{- $active := slice }}{{ range $platforms }}{{ $p := . }}{{ $n := 0 }}{{ range $id, $x := site.Data.charts }}{{ if strings.HasPrefix $id (printf "%s_" $p) }}{{ $n = add $n 1 }}{{ end }}{{ end }}{{ if $n }}{{ $active = $active | append (dict "p" $p "n" $n) }}{{ end }}{{ end -}}
 <div class="wrap layout">
   <div>

@@ -1,4 +1,9 @@
+{{- /* Every catalog song gets an English page; popular ones are also translated. */ -}}
 {{- $lm := time.AsTime site.Data.meta.updated -}}
+{{- $en := eq site.Language.Lang "en" -}}
 {{- range $key, $s := site.Data.songs -}}
-  {{- $.AddPage (dict "path" $s.slug "title" $s.title "kind" "page" "type" "song" "params" (dict "song" $key) "dates" (dict "lastmod" $lm)) -}}
+  {{- if or $en $s.loc -}}
+    {{- $d := cond $s.on $lm (time.AsTime $s.hist.last) -}}
+    {{- $.AddPage (dict "path" $s.slug "title" $s.title "kind" "page" "type" "song" "params" (dict "song" $key) "dates" (dict "lastmod" $d)) -}}
+  {{- end -}}
 {{- end -}}

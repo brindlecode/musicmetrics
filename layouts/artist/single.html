@@ -2,15 +2,17 @@
 {{- $a := index site.Data.artists .Params.artist -}}
 {{- $s0 := index $a.songs 0 -}}
 {{- $best := $a.best | default dict -}}
+{{- $cur := where $a.songs "on" true -}}
+{{- $hb := $a.hist.best -}}
 <div class="wrap layout layout--aside">
   <div>
     {{ partial "crumbs.html" . }}
     <header class="profile">
       {{- with $a.image_large | default $a.image }}<img class="profile__img" src="{{ . }}" alt="{{ $a.name }}" width="220" height="220">{{ else }}<div class="profile__img ph">{{ substr $a.name 0 1 }}</div>{{ end }}
       <div>
-        <span class="eyebrow eyebrow--accent">{{ i18n "artist" }} · #{{ $a.rank }} {{ i18n "worldwide_lower" }} {{ with $a.change }}{{ partialCached "move.html" . (printf "%v" .) site.Language.Lang }}{{ end }}</span>
+        <span class="eyebrow eyebrow--accent">{{ i18n "artist" }} · {{ if $a.on }}#{{ $a.rank }} {{ i18n "worldwide_lower" }} {{ with $a.change }}{{ partialCached "move.html" . (printf "%v" .) site.Language.Lang }}{{ end }}{{ else }}{{ i18n "not_charting" }}{{ end }}</span>
         <h1>{{ $a.name }}</h1>
-        <p class="page-head__lede">{{ i18n "artist_lede" (dict "Name" $a.name "Songs" (len $a.songs) "Countries" (len $a.countries) "Charts" $a.charts) }}</p>
+        <p class="page-head__lede">{{ if $a.on }}{{ i18n "artist_lede" (dict "Name" $a.name "Songs" (len $cur) "Countries" (len $a.countries) "Charts" $a.charts) }}{{ else }}{{ i18n "artist_lede_off" (dict "Name" $a.name "Songs" (len $a.songs) "Countries" $a.hist.countries) }}{{ end }}</p>
         <div class="profile__actions">
           {{- with $s0.vid }}<button class="btn" type="button" data-yt="{{ . }}">{{ partialCached "icons.html" (dict "n" "play" "s" 16) "play" 16 }}{{ i18n "play_top_song" }}</button>{{ end }}
           <a class="btn btn--ghost" href="#listen">{{ i18n "listen_and_buy" }}</a>
@@ -19,12 +21,22 @@
       </div>
     </header>
 
+    {{- if $a.on }}
     <p class="answer">{{ i18n "answer_artist" (dict "Name" $a.name "Song" $s0.t "Best" $best.rank "BestChart" (cond (isset $best "chart") (partialCached "func/chart-title.html" $best.chart $best.chart site.Language.Lang) "") "Countries" (len $a.countries)) | safeHTML }}</p>
+    {{- else }}
+    <p class="answer">{{ i18n "answer_artist_off" (dict "Name" $a.name "Song" $s0.t "Best" $hb.r "BestChart" (partialCached "func/chart-title.html" $hb.c $hb.c site.Language.Lang) "Last" ((time.AsTime $a.hist.last) | time.Format ":date_long")) | safeHTML }}</p>
+    {{- end }}
 
     <div class="stats">
+      {{- if $a.on }}
       <div class="stat"><span class="stat__v">#{{ $a.rank }}</span><span class="stat__l">{{ i18n "artist_rank" }}</span></div>
-      <div class="stat"><span class="stat__v">{{ len $a.songs }}</span><span class="stat__l">{{ i18n "charting_songs" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ len $cur }}</span><span class="stat__l">{{ i18n "charting_songs" }}</span></div>
       <div class="stat"><span class="stat__v">{{ len $a.countries }}</span><span class="stat__l">{{ i18n "countries" }}</span></div>
+      {{- else }}
+      <div class="stat"><span class="stat__v">#{{ $hb.r }}</span><span class="stat__l">{{ i18n "peak_ever" }}</span></div>
+      <div class="stat"><span class="stat__v">{{ len $a.songs }}</span><span class="stat__l">{{ i18n "songs" }}</span></div>
+      <div class="stat"><span class="stat__v" style="font-size:1.2rem">{{ (time.AsTime $a.hist.last) | time.Format ":date_medium" }}</span><span class="stat__l">{{ i18n "last_charted" }}</span></div>
+      {{- end }}
       {{- if $a.fans }}<div class="stat"><span class="stat__v">{{ partial "func/num.html" $a.fans }}</span><span class="stat__l">{{ i18n "deezer_fans" }}</span></div>
       {{- else if $a.subscribers }}<div class="stat"><span class="stat__v">{{ partial "func/num.html" $a.subscribers }}</span><span class="stat__l">{{ i18n "yt_subscribers" }}</span></div>
       {{- else }}<div class="stat"><span class="stat__v">#{{ $best.rank }}</span><span class="stat__l">{{ i18n "best_position" }}</span></div>{{ end }}
@@ -38,10 +50,10 @@
           <tbody>
           {{- range $a.songs }}
             <tr>
-              <td><div class="cell-song">{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span>{{ if .page }}<a href="{{ printf "/songs/%s/" (replace .k "--" "-") | relLangURL }}">{{ .t }}</a>{{ else }}{{ .t }}{{ end }}{{ if ne .a $a.name }}<br><span class="muted small">{{ .a }}</span>{{ end }}</span></div></td>
-              <td class="r big">#{{ .best }}</td>
-              <td class="r">{{ .n }}</td>
-              <td class="r hide-m">{{ if le .g 200 }}#{{ .g }}{{ else }}–{{ end }}</td>
+              <td><div class="cell-song">{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span>{{ if .page }}<a href="{{ cond .loc (printf "/songs/%s/" (replace .k "--" "-") | relLangURL) (printf "/songs/%s/" (replace .k "--" "-")) }}">{{ .t }}</a>{{ else }}{{ .t }}{{ end }}{{ if ne .a $a.name }}<br><span class="muted small">{{ .a }}</span>{{ end }}</span></div></td>
+              <td class="r big{{ if not .on }} muted{{ end }}">#{{ .best }}</td>
+              <td class="r">{{ if .on }}{{ .n }}{{ else }}<span class="muted small">{{ i18n "past" }}</span>{{ end }}</td>
+              <td class="r hide-m">{{ if and (gt .g 0) (le .g 200) }}#{{ .g }}{{ else }}–{{ end }}</td>
               <td class="r hide-m">{{ with .v }}{{ partial "func/num.html" . }}{{ else }}–{{ end }}</td>
               <td class="r">{{ with .vid }}<button class="play" type="button" data-yt="{{ . }}" aria-label="{{ i18n "play_video" }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button>{{ end }}</td>
             </tr>
@@ -77,7 +89,7 @@
         <div class="acard">
           {{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}
           <span class="acard__rank">#{{ .rank }}</span>
-          <a class="acard__name" href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a>
+          <a class="acard__name" href="{{ cond .loc (printf "/artists/%s/" .slug | relLangURL) (printf "/artists/%s/" .slug) }}">{{ .name }}</a>
           <span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }}</span>
         </div>
         {{- end }}{{ end }}

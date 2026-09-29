@@ -13,7 +13,7 @@
       <div class="section-head"><h2>{{ i18n "global_top_50" }}</h2></div>
       <ol class="mini">
         {{- range $w.top }}
-        <li><span class="mini__rank">{{ .r }}</span>{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .s }}<a class="mini__t" href="{{ printf "/songs/%s/" .s | relLangURL }}">{{ .t }}</a>{{ else }}<span class="mini__t">{{ .t }}</span>{{ end }}<span class="mini__a">{{ .a }}</span></span><span class="mini__m">{{ partialCached "move.html" .ch (printf "%v" .ch) site.Language.Lang }}</span></li>
+        <li><span class="mini__rank">{{ .r }}</span>{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .s }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .s | relLangURL) (printf "/songs/%s/" .s) }}">{{ .t }}</a>{{ else }}<span class="mini__t">{{ .t }}</span>{{ end }}<span class="mini__a">{{ .a }}</span></span><span class="mini__m">{{ partialCached "move.html" .ch (printf "%v" .ch) site.Language.Lang }}</span></li>
         {{- end }}
       </ol>
     </section>
@@ -24,7 +24,7 @@
         <thead><tr><th>{{ i18n "chart" }}</th><th>№1</th></tr></thead>
         <tbody>
         {{- range $id, $x := $w.number_ones }}{{ $ci := partialCached "func/chart-info.html" $id $id }}{{ if not $ci.albums }}
-          <tr><td>{{ partialCached "plogo.html" $ci.platform $ci.platform }} {{ partialCached "flag.html" $ci.cc $ci.cc }} {{ partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang }} <span class="muted small">{{ $ci.pname }}</span></td><td>{{ if $x.s }}<a href="{{ printf "/songs/%s/" $x.s | relLangURL }}">{{ $x.t }}</a>{{ else }}{{ $x.t }}{{ end }} <span class="muted">— {{ $x.a }}</span></td></tr>
+          <tr><td>{{ partialCached "plogo.html" $ci.platform $ci.platform }} {{ partialCached "flag.html" $ci.cc $ci.cc }} {{ partialCached "func/country-name.html" $ci.cc $ci.cc site.Language.Lang }} <span class="muted small">{{ $ci.pname }}</span></td><td>{{ if $x.s }}<a href="{{ cond $x.sl (printf "/songs/%s/" $x.s | relLangURL) (printf "/songs/%s/" $x.s) }}">{{ $x.t }}</a>{{ else }}{{ $x.t }}{{ end }} <span class="muted">— {{ $x.a }}</span></td></tr>
         {{- end }}{{ end }}
         </tbody>
       </table></div>
@@ -34,7 +34,7 @@
       <div class="section-head"><h2>{{ i18n "top_artists_week" }}</h2></div>
       <div class="grid grid--artists">
         {{- range first 12 . }}
-        <div class="acard">{{ with .img }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .n 0 1 }}</div>{{ end }}<span class="acard__rank">{{ .r }}</span>{{ if .s }}<a class="acard__name" href="{{ printf "/artists/%s/" .s | relLangURL }}">{{ .n }}</a>{{ else }}<span class="acard__name">{{ .n }}</span>{{ end }}</div>
+        <div class="acard">{{ with .img }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .n 0 1 }}</div>{{ end }}<span class="acard__rank">{{ .r }}</span>{{ if .s }}<a class="acard__name" href="{{ cond .sl (printf "/artists/%s/" .s | relLangURL) (printf "/artists/%s/" .s) }}">{{ .n }}</a>{{ else }}<span class="acard__name">{{ .n }}</span>{{ end }}</div>
         {{- end }}
       </div>
     </section>

@@ -8,10 +8,11 @@
   {{- $name := partialCached "func/chart-title.html" $p.Params.chart $p.Params.chart site.Language.Lang -}}
   {{- $els := slice -}}
   {{- range first 50 $c.items -}}
+    {{- $row := . -}}
     {{- $by := slice -}}
     {{- range .artists }}{{ $by = $by | append (dict "@type" "MusicGroup" "name" .n) }}{{ end -}}
     {{- $url := .url -}}
-    {{- with .song }}{{ $url = printf "%s%s" $base (printf "/songs/%s/" . | relLangURL) }}{{ end -}}
+    {{- with .song }}{{ $url = printf "%s%s" $base (cond $row.sl (printf "/songs/%s/" . | relLangURL) (printf "/songs/%s/" .)) }}{{ end -}}
     {{- $type := cond $ci.albums "MusicAlbum" "MusicRecording" -}}
     {{- $item := dict "@type" $type "name" .title "byArtist" $by -}}
     {{- with $url }}{{ $item = merge $item (dict "url" .) }}{{ end -}}
@@ -29,7 +30,7 @@
   {{- $tracks := slice -}}
   {{- range first 10 $a.songs -}}
     {{- $t := dict "@type" "MusicRecording" "name" .t -}}
-    {{- if .page }}{{ $t = merge $t (dict "url" (printf "%s%s" $base (printf "/songs/%s/" (replace .k "--" "-") | relLangURL))) }}{{ end -}}
+    {{- if .page }}{{ $t = merge $t (dict "url" (printf "%s%s" $base (cond .loc (printf "/songs/%s/" (replace .k "--" "-") | relLangURL) (printf "/songs/%s/" (replace .k "--" "-"))))) }}{{ end -}}
     {{- $tracks = $tracks | append $t -}}
   {{- end -}}
   {{- $e = dict "@type" "MusicGroup" "name" $a.name "url" $p.Permalink "track" $tracks -}}
@@ -40,7 +41,7 @@
   {{- $by := slice -}}
   {{- range $s.artists -}}
     {{- $g := dict "@type" "MusicGroup" "name" .n -}}
-    {{- if .page }}{{ $g = merge $g (dict "url" (printf "%s%s" $base (printf "/artists/%s/" .s | relLangURL))) }}{{ end -}}
+    {{- if .page }}{{ $g = merge $g (dict "url" (printf "%s%s" $base (cond .loc (printf "/artists/%s/" .s | relLangURL) (printf "/artists/%s/" .s)))) }}{{ end -}}
     {{- $by = $by | append $g -}}
   {{- end -}}
   {{- $same := slice -}}

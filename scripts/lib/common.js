@@ -144,12 +144,13 @@ function writeJSON(file, obj, { pretty = false } = {}) {
   if (pretty) s = JSON.stringify(obj, null, 1);
   else if (Array.isArray(obj)) s = '[\n' + obj.map((v) => JSON.stringify(v)).join(',\n') + '\n]';
   else if (obj && typeof obj === 'object') {
-    s = '{\n' + Object.entries(obj).map(([k, v]) => {
+    s = '{\n' + Object.entries(obj).filter(([, v]) => v !== undefined).map(([k, v]) => {
       if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
         return `${JSON.stringify(k)}: [\n` + v.map((x) => JSON.stringify(x)).join(',\n') + '\n]';
       }
       if (v && typeof v === 'object' && !Array.isArray(v) && Object.keys(v).length > 20) {
-        return `${JSON.stringify(k)}: {\n` + Object.entries(v).map(([k2, v2]) => `${JSON.stringify(k2)}: ${JSON.stringify(v2)}`).join(',\n') + '\n}';
+        const kv = Object.entries(v).filter(([, v2]) => v2 !== undefined);
+        return `${JSON.stringify(k)}: {\n` + kv.map(([k2, v2]) => `${JSON.stringify(k2)}: ${JSON.stringify(v2)}`).join(',\n') + '\n}';
       }
       return `${JSON.stringify(k)}: ${JSON.stringify(v)}`;
     }).join(',\n') + '\n}';

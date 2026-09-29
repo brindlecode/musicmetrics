@@ -1,10 +1,10 @@
 ---
 title: "Sobre o MusicMetrics"
-description: "O MusicMetrics é um site independente e gratuito de paradas musicais que acompanha o que o mundo está ouvindo no YouTube, Apple Music, Deezer e mais — atualizado a cada 6 horas."
+description: "O MusicMetrics é um site independente e gratuito de paradas musicais que acompanha o que o mundo está ouvindo no YouTube, Apple Music, Deezer e mais — atualizado diariamente."
 schemaType: "AboutPage"
 ---
 
-O MusicMetrics responde a uma única pergunta, a cada seis horas, para todos os países que conseguimos medir: **o que o mundo está ouvindo agora?**
+O MusicMetrics responde a uma única pergunta, diariamente, para todos os países que conseguimos medir: **o que o mundo está ouvindo agora?**
 
 Coletamos dados públicos das paradas das maiores plataformas de música, guardamos um histórico de longo prazo de cada posição e transformamos tudo em paradas fáceis de ler em qualquer tela — com os números que importam: variação, pico, dias na parada e, no YouTube, visualizações diárias.
 

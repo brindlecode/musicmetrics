@@ -1,10 +1,10 @@
 ---
 title: "MusicMetrics Hakkında"
-description: "MusicMetrics; YouTube, Apple Music, Deezer ve diğer platformlarda dünyanın ne dinlediğini takip eden bağımsız ve ücretsiz bir müzik listesi sitesidir — 6 saatte bir güncellenir."
+description: "MusicMetrics; YouTube, Apple Music, Deezer ve diğer platformlarda dünyanın ne dinlediğini takip eden bağımsız ve ücretsiz bir müzik listesi sitesidir — her gün güncellenir."
 schemaType: "AboutPage"
 ---
 
-MusicMetrics, ölçebildiğimiz her ülke için altı saatte bir tek bir soruyu yanıtlar: **Dünya şu anda ne dinliyor?**
+MusicMetrics, ölçebildiğimiz her ülke için her gün tek bir soruyu yanıtlar: **Dünya şu anda ne dinliyor?**
 
 En büyük müzik platformlarının herkese açık liste verilerini toplar, her sıranın uzun vadeli geçmişini saklar ve bunları her ekranda kolayca okunabilen listelere dönüştürürüz — önemli rakamlarla birlikte: sıra değişimi, zirve, listede kalınan gün sayısı ve YouTube için günlük izlenmeler.
 

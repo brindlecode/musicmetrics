@@ -1,10 +1,10 @@
 ---
 title: "À propos de MusicMetrics"
-description: "MusicMetrics est un site de classements musicaux indépendant et gratuit qui suit ce que le monde écoute sur YouTube, Apple Music, Deezer et d'autres plateformes, mis à jour toutes les 6 heures."
+description: "MusicMetrics est un site de classements musicaux indépendant et gratuit qui suit ce que le monde écoute sur YouTube, Apple Music, Deezer et d'autres plateformes, mis à jour chaque jour."
 schemaType: "AboutPage"
 ---
 
-Toutes les six heures, et pour chaque pays que nous pouvons mesurer, MusicMetrics répond à une seule question : **qu'écoute le monde en ce moment ?**
+Chaque jour, et pour chaque pays que nous pouvons mesurer, MusicMetrics répond à une seule question : **qu'écoute le monde en ce moment ?**
 
 Nous collectons les données publiques des classements des plus grandes plateformes musicales, conservons sur le long terme l'historique de chaque position et en faisons des classements faciles à lire sur tous les écrans, avec les chiffres qui comptent : évolution, meilleure position, jours au classement et, pour YouTube, vues quotidiennes.
 

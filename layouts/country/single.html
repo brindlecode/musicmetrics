@@ -40,7 +40,7 @@
         <div class="acard">
           {{ with $a }}{{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr $x.name 0 1 }}</div>{{ end }}{{ else }}<div class="ph">{{ substr $x.name 0 1 }}</div>{{ end }}
           <span class="acard__rank">{{ add $i 1 }}</span>
-          {{ if $a }}<a class="acard__name" href="{{ printf "/artists/%s/" $x.slug | relLangURL }}">{{ $x.name }}</a>{{ else }}<span class="acard__name">{{ $x.name }}</span>{{ end }}
+          {{ if $a }}<a class="acard__name" href="{{ cond $a.loc (printf "/artists/%s/" $x.slug | relLangURL) (printf "/artists/%s/" $x.slug) }}">{{ $x.name }}</a>{{ else }}<span class="acard__name">{{ $x.name }}</span>{{ end }}
           <span class="acard__meta">{{ i18n "entries_count" (dict "Count" (int $x.count)) }}</span>
         </div>
         {{- end }}

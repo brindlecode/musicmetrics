@@ -10,12 +10,13 @@ Bu sayfa, rakamlarımızın tam olarak nereden geldiğini ve nasıl hesaplandı�
 
 | Platform | Topladığımız veriler | Kapsam |
 |---|---|---|
-| YouTube | Trend müzik videoları (resmi YouTube Data API), izlenme sayıları, kanal istatistikleri | ~90 ülke, ilk 50 |
-| Apple Music | "En Çok Dinlenen" şarkılar ve albümler (resmi Apple Marketing Tools RSS) | ~65 mağaza, ilk 100 |
+| YouTube | Trend müzik videoları (resmi YouTube Data API), izlenme sayıları, kanal istatistikleri | ~110 ülke, ilk 50 |
+| Apple Music | "En Çok Dinlenen" şarkılar ve albümler (resmi Apple Marketing Tools RSS) | ~170 mağaza, ilk 100 |
+| iTunes | En çok satan şarkılar (resmi iTunes Store RSS) | ~170 mağaza, ilk 100 |
 | Deezer | Deezer Charts tarafından yayımlanan resmi "Top &lt;Ülke&gt;" çalma listeleri (herkese açık Deezer API) | Dünya geneli + ülke listeleri, ilk 100 |
 | Last.fm | Dinleyici sayısına göre en popüler şarkılar (resmi Last.fm API), etkinleştirildiğinde | Dünya geneli + ülkeler |
 
-Tüm veriler **6 saatte bir** otomatik olarak toplanır. Bir kaynak geçici olarak erişilemez durumdaysa, son başarılı sürüm en fazla 5 gün boyunca saklanır ve zaman damgasıyla açıkça belirtilir.
+Tüm veriler **her gün** otomatik olarak toplanır. Bir kaynak geçici olarak erişilemez durumdaysa, son başarılı sürüm en fazla 5 gün boyunca saklanır ve zaman damgasıyla açıkça belirtilir.
 
 ## Değişim, zirve ve listede kalınan gün
 
@@ -32,7 +33,7 @@ Her şarkı listesindeki her sıra puan kazanır:
 
 Burada *N* listenin uzunluğudur (50 veya 100). Üs, üst sıraları düz bir doğrunun yapacağından daha fazla ödüllendirir.
 
-- **Platform ağırlığı:** YouTube 1,0, Apple Music 1,0, Deezer 0,6, Last.fm 0,5.
+- **Platform ağırlığı:** YouTube 1,0, Apple Music 1,0, iTunes 0,6, Deezer 0,6, Last.fm 0,5.
 - **Pazar ağırlığı:** her ülkenin kayıtlı müzik pazarının büyüklüğüne göre — ABD 3,0; Japonya, Birleşik Krallık, Almanya 2,5; Fransa, Güney Kore, Brezilya, Kanada, Avustralya 2,0; Meksika, İtalya, İspanya, Hindistan 1,6; Hollanda 1,5; İsveç, Endonezya, Türkiye 1,4; Filipinler, Polonya 1,3; diğer tüm ülkeler 1,0. Dünya geneli listeler 3,0 sayılır.
 
 Bir şarkının puanları tüm listelerde toplanır ve en yüksek 200 toplam, Global 200'ü oluşturur. **Puan** sütunu, 1 numaralı şarkıya (= 100) göre gösterilir.
@@ -45,7 +46,7 @@ Sanatçılar şarkılarının puanlarını kazanır — ana sanatçı olarak tam
 
 ## YouTube günlük izlenmeleri
 
-Takip edilen her video için 6 saatte bir izlenme sayısının anlık görüntüsünü kaydederiz. Günlük izlenme, en son anlık görüntü ile 24 saat öncesine en yakın anlık görüntü arasındaki farktır ve tam 24 saate ölçeklenir.
+Takip edilen her video için her gün izlenme sayısının anlık görüntüsünü kaydederiz. Günlük izlenme, en son anlık görüntü ile 24 saat öncesine en yakın anlık görüntü arasındaki farktır ve tam 24 saate ölçeklenir.
 
 ## Sınırlamalar
 

@@ -9,21 +9,24 @@ GitHub Actions (every 6h)                                   Netlify (static host
   scripts/fetch-youtube.js  ─┐                                        ▲
   scripts/fetch-apple.js    ─┼─► store/raw ─► scripts/build-data.js ─┤  hugo --minify ─► public/ ─► netlify deploy
   scripts/fetch-deezer.js   ─┤              (history, Global 200,     │
-  scripts/fetch-lastfm.js   ─┘               artists, songs, weekly)  └─► data/*.json + store/history (committed)
+  scripts/fetch-lastfm.js   ─┘               artists, songs, weekly)  └─► data/*.json (generated, not committed)
 ```
 
 - **Static site generator:** Hugo extended 0.142 — pages for charts, countries, artists, songs and weekly recaps are generated from `data/*.json` by content adapters (`content/_gen/**/_content.gotmpl`), so no content files are committed per artist/song.
 - **History:** `store/history/*.json` keeps every chart position for 14 days (older days are folded into peak/days counters) → movement arrows, NEW/RE, peak, days on chart, weekly recaps.
-- **YouTube daily views:** view-count snapshots every 6 hours (`store/history/youtube_views.json`).
+- **YouTube daily views:** view-count snapshots every day (`store/history/youtube_views.json`).
 - **Languages:** English at `/`, plus `/tr/ /es/ /pt/ /de/ /fr/ /ja/` (UI strings in `i18n/`, static pages in `content/<lang>/`).
 - **SEO/AEO/GEO:** localized titles & descriptions, hreflang, canonical, JSON-LD (Organization, WebSite+SearchAction, BreadcrumbList, ItemList, Dataset, MusicGroup, MusicRecording, Article, FAQPage), answer boxes, `llms.txt` with live data, sitemap per language, IndexNow ping, AI crawlers allowed in `robots.txt`.
+
+- **Storage:** `store/` is committed: `history/` (positions), `catalog/` (every song & artist that ever charted — pages stay online for 180 days after they leave the charts), `charts/` (last good copy of every chart, used if a source fails), `weekly/` (weekly recap archive), `cache/`. `data/` is regenerated from it on every build (`node scripts/build-data.js --offline` needs no network).
+- **Schedule:** once a day (05:17 UTC).
 
 ## Data sources (all free)
 
 | Source | Key needed | Script |
 |---|---|---|
 | YouTube Data API v3 (trending music, views, channels) | `YOUTUBE_API_KEY` | `fetch-youtube.js` |
-| Apple Music "Most Played" RSS (songs + albums) | no | `fetch-apple.js` |
+| Apple Music "Most Played" RSS (songs + albums) + iTunes top songs, ~170 storefronts | no | `fetch-apple.js` |
 | Deezer API (Deezer Charts playlists, artist fans) | no | `fetch-deezer.js` |
 | Last.fm API (optional) | `LASTFM_API_KEY` | `fetch-lastfm.js` |
 

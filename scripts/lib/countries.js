@@ -21,13 +21,18 @@ const YOUTUBE = [
   'bh', 'tn', 'gh', 'tz', 'ug', 'lk', 'np', 'kz', 'az', 'ge', 'by',
 ];
 
-// Apple Music storefronts with public "most played" RSS feeds.
+// Apple Music / iTunes storefronts (public RSS feeds). Storefronts without a
+// feed simply return nothing and are skipped.
 const APPLE = [
-  'us', 'gb', 'ca', 'au', 'nz', 'ie', 'de', 'at', 'ch', 'fr', 'be', 'nl', 'lu', 'it', 'es', 'pt',
-  'se', 'no', 'dk', 'fi', 'is', 'pl', 'cz', 'sk', 'hu', 'ro', 'bg', 'gr', 'hr', 'si', 'ee', 'lv',
-  'lt', 'tr', 'il', 'ae', 'sa', 'eg', 'za', 'ng', 'ke', 'br', 'mx', 'ar', 'cl', 'co', 'pe', 'ec',
-  'uy', 'cr', 'gt', 'do', 'jp', 'kr', 'tw', 'hk', 'sg', 'my', 'th', 'id', 'ph', 'vn', 'in', 'pk',
-  'kz', 'ua', 'ru', 'cn',
+  'ae', 'ag', 'ai', 'am', 'ao', 'ar', 'at', 'au', 'az', 'ba', 'bb', 'be', 'bf', 'bg', 'bh', 'bj', 'bm', 'bn', 'bo', 'br',
+  'bs', 'bt', 'bw', 'by', 'bz', 'ca', 'cd', 'cg', 'ch', 'ci', 'cl', 'cm', 'cn', 'co', 'cr', 'cv', 'cy', 'cz', 'de', 'dk',
+  'dm', 'do', 'dz', 'ec', 'ee', 'eg', 'es', 'fi', 'fj', 'fm', 'fr', 'ga', 'gb', 'gd', 'ge', 'gh', 'gm', 'gr', 'gt', 'gw',
+  'gy', 'hk', 'hn', 'hr', 'hu', 'id', 'ie', 'il', 'in', 'iq', 'is', 'it', 'jm', 'jo', 'jp', 'ke', 'kg', 'kh', 'kn', 'kr',
+  'kw', 'ky', 'kz', 'la', 'lb', 'lc', 'lk', 'lr', 'lt', 'lu', 'lv', 'ly', 'ma', 'md', 'me', 'mg', 'mk', 'ml', 'mm', 'mn',
+  'mo', 'mr', 'ms', 'mt', 'mu', 'mv', 'mw', 'mx', 'my', 'mz', 'na', 'ne', 'ng', 'ni', 'nl', 'no', 'np', 'nz', 'om', 'pa',
+  'pe', 'pg', 'ph', 'pk', 'pl', 'pt', 'pw', 'py', 'qa', 'ro', 'rs', 'ru', 'rw', 'sa', 'sb', 'sc', 'se', 'sg', 'si', 'sk',
+  'sl', 'sn', 'sr', 'sv', 'sz', 'tc', 'td', 'th', 'tj', 'tm', 'tn', 'to', 'tr', 'tt', 'tw', 'tz', 'ua', 'ug', 'us', 'uy',
+  'uz', 'vc', 've', 'vg', 'vn', 'vu', 'xk', 'ye', 'za', 'zm', 'zw',
 ];
 
 // Featured on the home page country grid.

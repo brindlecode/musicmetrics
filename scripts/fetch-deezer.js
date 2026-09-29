@@ -24,7 +24,7 @@ function ccFromTitle(title) {
 async function discoverPlaylists() {
   const found = {};
   let url = `${API}/user/${DEEZER_CHARTS_USER}/playlists?limit=100`;
-  for (let page = 0; url && page < 5; page++) {
+  for (let page = 0; url && page < 10; page++) {
     let d;
     try { d = await fetchJSON(url, { label: 'deezer playlists' }); } catch (e) { console.warn('  ', e.message); break; }
     if (!d || d.error) break;

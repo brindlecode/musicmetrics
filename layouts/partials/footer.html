@@ -10,7 +10,7 @@
         <h2>{{ i18n "nav_charts" }}</h2>
         <ul>
           <li><a href="{{ "/charts/global/" | relLangURL }}">{{ i18n "global_200" }}</a></li>
-          {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "deezer" "deezer" }}
+          {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "itunes" "itunes" "deezer" "deezer" }}
           {{- with site.GetPage (printf "/charts/%s" $slug) }}<li><a href="{{ .RelPermalink }}">{{ i18n (printf "hub_%s" $p) }}</a></li>{{ end }}
           {{- end }}
           {{- with site.GetPage "/charts/lastfm" }}<li><a href="{{ .RelPermalink }}">{{ i18n "hub_lastfm" }}</a></li>{{ end }}
