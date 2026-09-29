@@ -1,4 +1,9 @@
+{{- /* Every catalog artist gets an English page; popular ones are also translated. */ -}}
 {{- $lm := time.AsTime site.Data.meta.updated -}}
+{{- $en := eq site.Language.Lang "en" -}}
 {{- range $slug, $a := site.Data.artists -}}
-  {{- $.AddPage (dict "path" $slug "title" $a.name "kind" "page" "type" "artist" "params" (dict "artist" $slug) "dates" (dict "lastmod" $lm)) -}}
+  {{- if or $en $a.loc -}}
+    {{- $d := cond $a.on $lm (time.AsTime $a.hist.last) -}}
+    {{- $.AddPage (dict "path" $slug "title" $a.name "kind" "page" "type" "artist" "params" (dict "artist" $slug) "dates" (dict "lastmod" $d)) -}}
+  {{- end -}}
 {{- end -}}

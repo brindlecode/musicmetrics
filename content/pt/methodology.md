@@ -10,12 +10,13 @@ Esta página explica exatamente de onde vêm nossos números e como eles são ca
 
 | Plataforma | O que coletamos | Cobertura |
 |---|---|---|
-| YouTube | Clipes em alta (YouTube Data API oficial), contagem de visualizações, estatísticas dos canais | ~90 países, top 50 |
-| Apple Music | Músicas e álbuns "Most Played" (RSS oficial do Apple Marketing Tools) | ~65 lojas, top 100 |
+| YouTube | Clipes em alta (YouTube Data API oficial), contagem de visualizações, estatísticas dos canais | ~110 países, top 50 |
+| Apple Music | Músicas e álbuns "Most Played" (RSS oficial do Apple Marketing Tools) | ~170 lojas, top 100 |
+| iTunes | Músicas mais vendidas (RSS oficial da iTunes Store) | ~170 lojas, top 100 |
 | Deezer | Playlists oficiais "Top &lt;País&gt;" publicadas pelo Deezer Charts (API pública do Deezer) | Mundial + paradas por país, top 100 |
 | Last.fm | Músicas mais ouvidas por número de ouvintes (API oficial do Last.fm), quando ativado | Mundial + países |
 
-Todos os dados são coletados automaticamente **a cada 6 horas**. Se uma fonte ficar temporariamente indisponível, a última versão bem-sucedida é mantida por até 5 dias, com data e hora claramente indicadas.
+Todos os dados são coletados automaticamente **diariamente**. Se uma fonte ficar temporariamente indisponível, a última versão bem-sucedida é mantida por até 5 dias, com data e hora claramente indicadas.
 
 ## Variação, pico e dias na parada
 
@@ -32,7 +33,7 @@ Cada posição em cada parada de músicas rende pontos:
 
 em que *N* é o tamanho da parada (50 ou 100). O expoente valoriza as primeiras posições mais do que uma linha reta faria.
 
-- **Peso da plataforma:** YouTube 1,0, Apple Music 1,0, Deezer 0,6, Last.fm 0,5.
+- **Peso da plataforma:** YouTube 1,0, Apple Music 1,0, iTunes 0,6, Deezer 0,6, Last.fm 0,5.
 - **Peso do mercado:** com base no tamanho de cada mercado de música gravada — Estados Unidos 3,0; Japão, Reino Unido, Alemanha 2,5; França, Coreia do Sul, Brasil, Canadá, Austrália 2,0; México, Itália, Espanha, Índia 1,6; Países Baixos 1,5; Suécia, Indonésia, Turquia 1,4; Filipinas, Polônia 1,3; todos os demais países 1,0. Paradas mundiais contam como 3,0.
 
 Os pontos de uma música são somados em todas as paradas, e os 200 maiores totais formam o Global 200. A coluna de **pontos** é exibida em relação à música nº 1 (= 100).
@@ -45,7 +46,7 @@ Os artistas recebem os pontos de suas músicas — pontos integrais como artista
 
 ## Visualizações diárias no YouTube
 
-A cada 6 horas, registramos um retrato da contagem de visualizações de cada vídeo acompanhado. As visualizações diárias são a diferença entre o registro mais recente e o mais próximo de 24 horas antes, ajustada para exatamente 24 horas.
+Diariamente, registramos um retrato da contagem de visualizações de cada vídeo acompanhado. As visualizações diárias são a diferença entre o registro mais recente e o mais próximo de 24 horas antes, ajustada para exatamente 24 horas.
 
 ## Limitações
 

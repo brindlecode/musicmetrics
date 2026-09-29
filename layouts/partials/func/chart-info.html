@@ -5,8 +5,8 @@
 {{- $cc := "global" -}}
 {{- if gt (len $parts) 1 }}{{ $cc = index $parts 1 }}{{ end -}}
 {{- if eq $id "global" }}{{ $p = "musicmetrics" }}{{ end -}}
-{{- $slugs := dict "youtube" "youtube" "apple" "apple-music" "apple-albums" "apple-music-albums" "deezer" "deezer" "lastfm" "lastfm" "musicmetrics" "global" -}}
-{{- $names := dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "deezer" "Deezer" "lastfm" "Last.fm" "musicmetrics" "MusicMetrics" -}}
+{{- $slugs := dict "youtube" "youtube" "apple" "apple-music" "apple-albums" "apple-music-albums" "itunes" "itunes" "deezer" "deezer" "lastfm" "lastfm" "musicmetrics" "global" -}}
+{{- $names := dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "itunes" "iTunes" "deezer" "Deezer" "lastfm" "Last.fm" "musicmetrics" "MusicMetrics" -}}
 {{- $slug := index $slugs $p -}}
 {{- $url := "" -}}
 {{- if eq $p "musicmetrics" }}{{ $url = "/charts/global/" }}{{ else }}{{ $url = printf "/charts/%s/%s/" $slug $cc }}{{ end -}}

@@ -1,6 +1,6 @@
 {{ define "main" }}
-{{- $list := slice }}{{ range $s, $a := site.Data.artists }}{{ $list = $list | append $a }}{{ end -}}
-{{- $list = first 500 (sort $list "rank") -}}
+{{- $list := slice }}{{ range $s, $a := site.Data.artists }}{{ if $a.on }}{{ $list = $list | append $a }}{{ end }}{{ end -}}
+{{- $list = first 1000 (sort $list "rank") -}}
 <div class="wrap layout layout--aside">
   <div>
     {{ partial "crumbs.html" . }}
@@ -12,7 +12,7 @@
     </header>
     <div class="grid grid--artists" style="margin-bottom:32px">
       {{- range first 6 $list }}
-      <div class="acard">{{ with .image }}<img src="{{ . }}" alt="" width="160" height="160">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}<span class="acard__rank">{{ .rank }}</span><a class="acard__name" href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a><span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }} · {{ i18n "in_countries" (dict "Count" (int (len .countries))) }}</span></div>
+      <div class="acard">{{ with .image }}<img src="{{ . }}" alt="" width="160" height="160">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}<span class="acard__rank">{{ .rank }}</span><a class="acard__name" href="{{ cond .loc (printf "/artists/%s/" .slug | relLangURL) (printf "/artists/%s/" .slug) }}">{{ .name }}</a><span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }} · {{ i18n "in_countries" (dict "Count" (int (len .countries))) }}</span></div>
       {{- end }}
     </div>
     <div class="toolbar" data-filter-for="artist-list"><input class="input grow" type="search" placeholder="{{ i18n "filter_artists" }}" aria-label="{{ i18n "filter_artists" }}"></div>
@@ -24,7 +24,7 @@
           <tr data-move="{{ printf "%v" .change }}">
             <td class="r big">{{ .rank }}</td>
             <td>{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</td>
-            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<a href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a></div></td>
+            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<a href="{{ cond .loc (printf "/artists/%s/" .slug | relLangURL) (printf "/artists/%s/" .slug) }}">{{ .name }}</a></div></td>
             <td class="r">{{ len .songs }}</td>
             <td class="r hide-m">{{ len .countries }}</td>
             <td class="hide-m muted small">{{ with index .songs 0 }}{{ .t }}{{ end }}</td>

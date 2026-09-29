@@ -22,12 +22,12 @@
     <img class="row__art{{ if eq $p "youtube" }} row__art--video{{ end }}" src="{{ $r.image }}" alt="" width="56" height="56" loading="{{ if lt $i 8 }}eager{{ else }}lazy{{ end }}" decoding="async">
     {{- else }}<span class="row__art ph" aria-hidden="true">♪</span>{{ end }}
     <div class="row__main">
-      {{- if $r.song }}<a class="row__title" href="{{ printf "/songs/%s/" $r.song | relLangURL }}">{{ $r.title }}</a>
+      {{- if $r.song }}<a class="row__title" href="{{ cond $r.sl (printf "/songs/%s/" $r.song | relLangURL) (printf "/songs/%s/" $r.song) }}">{{ $r.title }}</a>
       {{- else if $r.url }}<a class="row__title" href="{{ $r.url }}" rel="nofollow noopener" target="_blank">{{ $r.title }}</a>
       {{- else }}<span class="row__title">{{ $r.title }}</span>{{ end }}
       {{- if $r.explicit }}<span class="explicit" title="Explicit">E</span>{{ end }}
       <span class="row__artist">
-        {{- if $r.artists }}{{ range $j, $a := $r.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}{{ else }}{{ $r.artist }}{{ end -}}
+        {{- if $r.artists }}{{ range $j, $a := $r.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ cond $a.loc (printf "/artists/%s/" $a.s | relLangURL) (printf "/artists/%s/" $a.s) }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}{{ else }}{{ $r.artist }}{{ end -}}
       </span>
       <span class="row__sub row__sub--m">{{ i18n "peak_short" }} {{ $r.peak }} · {{ i18n "days_count" (dict "Count" (int $r.days)) }}{{ if eq $p "musicmetrics" }} · {{ i18n "in_countries" (dict "Count" (int $r.countries)) }}{{ end }}</span>
     </div>

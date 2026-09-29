@@ -6,7 +6,7 @@
     <span class="mini__rank">{{ .rank }}</span>
     {{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy" decoding="async">{{ else }}<span class="ph" style="width:40px;height:40px;font-size:1rem">♪</span>{{ end }}
     <span style="min-width:0">
-      {{- if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}
+      {{- if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}
       <span class="mini__a">{{ .artist }}</span>
     </span>
     <span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span>

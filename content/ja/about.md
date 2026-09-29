@@ -1,10 +1,10 @@
 ---
 title: "MusicMetricsについて"
-description: "MusicMetricsは、YouTube、Apple Music、Deezerなどで世界が今聴いている音楽を追跡する、独立系の無料音楽チャートサイトです。6時間ごとに更新。"
+description: "MusicMetricsは、YouTube、Apple Music、Deezerなどで世界が今聴いている音楽を追跡する、独立系の無料音楽チャートサイトです。毎日更新。"
 schemaType: "AboutPage"
 ---
 
-MusicMetricsは、計測できるすべての国について、6時間ごとにひとつの問いに答えます。**「今、世界は何を聴いているのか？」**
+MusicMetricsは、計測できるすべての国について、毎日ひとつの問いに答えます。**「今、世界は何を聴いているのか？」**
 
 主要な音楽プラットフォームの公開チャートデータを収集し、すべての順位の履歴を長期的に保存して、どんな画面でも読みやすいチャートにまとめています。順位変動、最高順位、ランクイン日数、そしてYouTubeの1日の再生回数など、本当に重要な数字を掲載しています。
 

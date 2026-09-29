@@ -10,12 +10,13 @@ Esta página explica exactamente de dónde salen nuestras cifras y cómo se calc
 
 | Plataforma | Qué recopilamos | Cobertura |
 |---|---|---|
-| YouTube | Vídeos musicales en tendencia (YouTube Data API oficial), número de vistas, estadísticas de canales | ~90 países, top 50 |
-| Apple Music | Canciones y álbumes «Most Played» (RSS oficial de Apple Marketing Tools) | ~65 tiendas, top 100 |
+| YouTube | Vídeos musicales en tendencia (YouTube Data API oficial), número de vistas, estadísticas de canales | ~110 países, top 50 |
+| Apple Music | Canciones y álbumes «Most Played» (RSS oficial de Apple Marketing Tools) | ~170 tiendas, top 100 |
+| iTunes | Canciones más vendidas (RSS oficial de iTunes Store) | ~170 tiendas, top 100 |
 | Deezer | Playlists oficiales «Top &lt;País&gt;» publicadas por Deezer Charts (API pública de Deezer) | Mundial + listas por país, top 100 |
 | Last.fm | Canciones más escuchadas por oyentes (API oficial de Last.fm), cuando está activada | Mundial + países |
 
-Todos los datos se recopilan automáticamente **cada 6 horas**. Si una fuente no está disponible temporalmente, se conserva la última versión correcta durante un máximo de 5 días, con su fecha y hora claramente indicadas.
+Todos los datos se recopilan automáticamente **cada día**. Si una fuente no está disponible temporalmente, se conserva la última versión correcta durante un máximo de 5 días, con su fecha y hora claramente indicadas.
 
 ## Movimiento, máximo y días en lista
 
@@ -32,7 +33,7 @@ Cada posición en cada lista de canciones suma puntos:
 
 donde *N* es la longitud de la lista (50 o 100). El exponente premia las primeras posiciones más de lo que lo haría una línea recta.
 
-- **Peso de la plataforma:** YouTube 1,0, Apple Music 1,0, Deezer 0,6, Last.fm 0,5.
+- **Peso de la plataforma:** YouTube 1,0, Apple Music 1,0, iTunes 0,6, Deezer 0,6, Last.fm 0,5.
 - **Peso del mercado:** según el tamaño de cada mercado de música grabada — Estados Unidos 3,0; Japón, Reino Unido, Alemania 2,5; Francia, Corea del Sur, Brasil, Canadá, Australia 2,0; México, Italia, España, India 1,6; Países Bajos 1,5; Suecia, Indonesia, Turquía 1,4; Filipinas, Polonia 1,3; el resto de países 1,0. Las listas mundiales cuentan como 3,0.
 
 Los puntos de una canción se suman en todas las listas y los 200 totales más altos forman el Global 200. La columna de **puntos** se muestra en relación con la canción n.º 1 (= 100).
@@ -45,7 +46,7 @@ Los artistas suman los puntos de sus canciones —puntos completos como artista 
 
 ## Vistas diarias en YouTube
 
-Guardamos cada 6 horas una instantánea del número de vistas de cada vídeo que seguimos. Las vistas diarias son la diferencia entre la instantánea más reciente y la más cercana a 24 horas antes, ajustada a exactamente 24 horas.
+Guardamos cada día una instantánea del número de vistas de cada vídeo que seguimos. Las vistas diarias son la diferencia entre la instantánea más reciente y la más cercana a 24 horas antes, ajustada a exactamente 24 horas.
 
 ## Limitaciones
 

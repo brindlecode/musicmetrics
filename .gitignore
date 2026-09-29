@@ -6,6 +6,9 @@ resources/_gen/
 # Raw API responses (regenerated every run)
 store/raw/
 
+# Site data is generated from store/ by scripts/build-data.js
+data/
+
 # OS / IDE
 .DS_Store
 Thumbs.db

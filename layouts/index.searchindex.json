@@ -5,15 +5,17 @@
   {{- $out = $out | append (dict "k" "c" "n" $c.names.en "l" $c.names "alt" (delimit $alt " ") "i" (printf "/flags/%s.png" $cc) "fl" 1 "u" (printf "countries/%s/" $cc) "w" 3) -}}
 {{- end -}}
 {{- range $s, $a := site.Data.artists -}}
-  {{- $w := 0 }}{{ if le $a.rank 100 }}{{ $w = 4 }}{{ else if le $a.rank 500 }}{{ $w = 2 }}{{ end -}}
+  {{- $w := 0 }}{{ if and $a.on (le $a.rank 100) }}{{ $w = 4 }}{{ else if and $a.on (le $a.rank 500) }}{{ $w = 2 }}{{ else if $a.on }}{{ $w = 1 }}{{ end -}}
   {{- $x := dict "k" "a" "n" $a.name "u" (printf "artists/%s/" $s) "w" $w -}}
-  {{- with $a.image }}{{ $x = merge $x (dict "i" .) }}{{ end -}}
+  {{- if not $a.loc }}{{ $x = merge $x (dict "e" 1) }}{{ end -}}
+  {{- if gt $w 0 }}{{ with $a.image }}{{ $x = merge $x (dict "i" .) }}{{ end }}{{ end -}}
   {{- $out = $out | append $x -}}
 {{- end -}}
 {{- range $k, $s := site.Data.songs -}}
-  {{- $w := 0 }}{{ if le $s.grank 50 }}{{ $w = 3 }}{{ else if le $s.grank 300 }}{{ $w = 1 }}{{ end -}}
+  {{- $w := 0 }}{{ if and (gt $s.grank 0) (le $s.grank 50) }}{{ $w = 3 }}{{ else if and (gt $s.grank 0) (le $s.grank 300) }}{{ $w = 1 }}{{ end -}}
   {{- $x := dict "k" "s" "n" $s.title "a" $s.artist "u" (printf "songs/%s/" $s.slug) "w" $w -}}
-  {{- with $s.image }}{{ $x = merge $x (dict "i" .) }}{{ end -}}
+  {{- if not $s.loc }}{{ $x = merge $x (dict "e" 1) }}{{ end -}}
+  {{- if gt $w 0 }}{{ with $s.image }}{{ $x = merge $x (dict "i" .) }}{{ end }}{{ end -}}
   {{- $out = $out | append $x -}}
 {{- end -}}
 {{- $out = $out | append (dict "k" "p" "n" "Global 200" "a" "MusicMetrics" "u" "charts/global/" "w" 5 "i" "/flags/global.svg" "fl" 1) -}}

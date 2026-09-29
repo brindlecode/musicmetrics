@@ -35,7 +35,7 @@
   {{- $big = true -}}
 {{- else if eq .Type "charts" -}}
   {{- if eq .Layout "platform" -}}
-    {{- $pn := index (dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "deezer" "Deezer" "lastfm" "Last.fm") .Params.platform -}}
+    {{- $pn := index (dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music" "itunes" "iTunes" "deezer" "Deezer" "lastfm" "Last.fm") .Params.platform -}}
     {{- $t = i18n (printf "seo_title_hub_%s" .Params.platform) (dict "Platform" $pn) -}}
     {{- $d = i18n "seo_desc_hub" (dict "Platform" $pn) -}}
   {{- else -}}
@@ -46,15 +46,22 @@
   {{- $a := index site.Data.artists .Params.artist -}}
   {{- $t = i18n "seo_title_artist" (dict "Name" $a.name) -}}
   {{- $s := index $a.songs 0 -}}
-  {{- $d = i18n "seo_desc_artist" (dict "Name" $a.name "Rank" $a.rank "Song" $s.t "Countries" (len $a.countries) "Charts" $a.charts) -}}
+  {{- if $a.on -}}
+    {{- $d = i18n "seo_desc_artist" (dict "Name" $a.name "Rank" $a.rank "Song" $s.t "Countries" (len $a.countries) "Charts" $a.charts) -}}
+  {{- else -}}
+    {{- $d = i18n "seo_desc_artist_off" (dict "Name" $a.name "Song" $s.t "Best" $a.hist.best.r "Songs" (len $a.songs)) -}}
+  {{- end -}}
   {{- $img = $a.image_large | default $a.image -}}
   {{- $ogType = "profile" -}}
 {{- else if eq .Type "song" -}}
   {{- $s := index site.Data.songs .Params.song -}}
   {{- $t = i18n "seo_title_song" (dict "Title" $s.title "Artist" $s.artist) -}}
-  {{- $best := index $s.positions 0 -}}
-  {{- $bci := partialCached "func/chart-info.html" $best.c $best.c -}}
-  {{- $d = i18n "seo_desc_song" (dict "Title" $s.title "Artist" $s.artist "Rank" $s.grank "Charts" (len $s.positions) "Countries" $s.countries "Best" $best.r "BestChart" (partialCached "func/chart-title.html" $best.c $best.c site.Language.Lang)) -}}
+  {{- if $s.on -}}
+    {{- $best := index $s.positions 0 -}}
+    {{- $d = i18n "seo_desc_song" (dict "Title" $s.title "Artist" $s.artist "Rank" $s.grank "Charts" (len $s.positions) "Countries" $s.countries "Best" $best.r "BestChart" (partialCached "func/chart-title.html" $best.c $best.c site.Language.Lang)) -}}
+  {{- else -}}
+    {{- $d = i18n "seo_desc_song_off" (dict "Title" $s.title "Artist" $s.artist "Best" $s.hist.best.r "BestChart" (partialCached "func/chart-title.html" $s.hist.best.c $s.hist.best.c site.Language.Lang)) -}}
+  {{- end -}}
   {{- $img = $s.image_large | default $s.image -}}
   {{- $ogType = "music.song" -}}
 {{- else if eq .Type "songs" -}}

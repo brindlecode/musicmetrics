@@ -16,7 +16,7 @@
         {{- range $list }}
           <tr>
             <td class="r big">{{ .rank }}</td>
-            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span><strong>{{ .title }}</strong><br><span class="muted small">{{ range $j, $a := .artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</span></span></div></td>
+            <td><div class="cell-song">{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span><strong>{{ .title }}</strong><br><span class="muted small">{{ range $j, $a := .artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ cond $a.loc (printf "/artists/%s/" $a.s | relLangURL) (printf "/artists/%s/" $a.s) }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</span></span></div></td>
             <td class="r">{{ .charts }}</td>
             <td class="r hide-m">#{{ .best }}</td>
             <td class="r">{{ with .url }}{{ $u := . }}{{ with site.Params.affiliate.appleToken }}{{ $u = printf "%s%sat=%s&ct=musicmetrics" $u (cond (in $u "?") "&" "?") . }}{{ end }}<a class="btn btn--ghost btn--sm" href="{{ $u }}" target="_blank" rel="sponsored noopener">Apple Music</a>{{ end }}</td>

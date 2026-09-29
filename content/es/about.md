@@ -1,10 +1,10 @@
 ---
 title: "Acerca de MusicMetrics"
-description: "MusicMetrics es una web independiente y gratuita de listas de éxitos que sigue lo que escucha el mundo en YouTube, Apple Music, Deezer y más, actualizada cada 6 horas."
+description: "MusicMetrics es una web independiente y gratuita de listas de éxitos que sigue lo que escucha el mundo en YouTube, Apple Music, Deezer y más, actualizada cada día."
 schemaType: "AboutPage"
 ---
 
-MusicMetrics responde a una sola pregunta, cada seis horas, en todos los países que podemos medir: **¿qué está escuchando el mundo ahora mismo?**
+MusicMetrics responde a una sola pregunta, cada día, en todos los países que podemos medir: **¿qué está escuchando el mundo ahora mismo?**
 
 Recopilamos datos públicos de las listas de las mayores plataformas de música, guardamos un historial a largo plazo de cada posición y lo convertimos en listas fáciles de leer en cualquier pantalla, con las cifras que importan: movimiento, posición máxima, días en lista y, en YouTube, vistas diarias.
 

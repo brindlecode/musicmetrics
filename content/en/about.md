@@ -1,10 +1,10 @@
 ---
 title: "About MusicMetrics"
-description: "MusicMetrics is an independent, free music chart site that tracks what the world is listening to across YouTube, Apple Music, Deezer and more — updated every 6 hours."
+description: "MusicMetrics is an independent, free music chart site that tracks what the world is listening to across YouTube, Apple Music, Deezer and more — updated daily."
 schemaType: "AboutPage"
 ---
 
-MusicMetrics answers one question, every six hours, for every country we can measure: **what is the world listening to right now?**
+MusicMetrics answers one question, every day, for every country we can measure: **what is the world listening to right now?**
 
 We collect public chart data from the biggest music platforms, keep a long-term history of every position, and turn it into charts that are easy to read on any screen — with the numbers that matter: movement, peak position, days on chart and, for YouTube, daily views.
 

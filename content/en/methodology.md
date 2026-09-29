@@ -10,12 +10,13 @@ This page explains exactly where our numbers come from and how they are calculat
 
 | Platform | What we collect | Coverage |
 |---|---|---|
-| YouTube | Trending music videos (official YouTube Data API), view counts, channel statistics | ~90 countries, top 50 |
-| Apple Music | "Most Played" songs and albums (official Apple Marketing Tools RSS) | ~65 storefronts, top 100 |
+| YouTube | Trending music videos (official YouTube Data API), view counts, channel statistics | ~110 countries, top 50 |
+| Apple Music | "Most Played" songs and albums (official Apple Marketing Tools RSS) | ~170 storefronts, top 100 |
+| iTunes | Top-selling songs (official iTunes Store RSS) | ~170 storefronts, top 100 |
 | Deezer | Official "Top &lt;Country&gt;" playlists published by Deezer Charts (public Deezer API) | Worldwide + country charts, top 100 |
 | Last.fm | Top tracks by listeners (official Last.fm API), when enabled | Worldwide + countries |
 
-All data is collected automatically **every 6 hours**. If a source is temporarily unavailable, the last successful version is kept for up to 5 days and is clearly timestamped.
+All data is collected automatically **every day**. If a source is temporarily unavailable, the last successful version is kept for up to 5 days and is clearly timestamped.
 
 ## Movement, peak and days on chart
 
@@ -32,7 +33,7 @@ Every position on every song chart earns points:
 
 where *N* is the length of the chart (50 or 100). The exponent rewards top positions more than a straight line would.
 
-- **Platform weight:** YouTube 1.0, Apple Music 1.0, Deezer 0.6, Last.fm 0.5.
+- **Platform weight:** YouTube 1.0, Apple Music 1.0, iTunes 0.6, Deezer 0.6, Last.fm 0.5.
 - **Market weight:** based on the size of each recorded-music market — United States 3.0; Japan, United Kingdom, Germany 2.5; France, South Korea, Brazil, Canada, Australia 2.0; Mexico, Italy, Spain, India 1.6; Netherlands 1.5; Sweden, Indonesia, Türkiye 1.4; Philippines, Poland 1.3; all other countries 1.0. Worldwide charts count as 3.0.
 
 A song's points are summed across all charts and the 200 highest totals form the Global 200. The **points** column is shown relative to the No. 1 song (= 100).
@@ -45,7 +46,7 @@ Artists earn the points of their songs — full points as the primary artist, ha
 
 ## YouTube daily views
 
-We store a view-count snapshot for each tracked video every 6 hours. Daily views are the difference between the latest snapshot and the one closest to 24 hours earlier, scaled to exactly 24 hours.
+We store a view-count snapshot for each tracked video every day. Daily views are the difference between the latest snapshot and the one closest to 24 hours earlier, scaled to exactly 24 hours.
 
 ## Limitations
 

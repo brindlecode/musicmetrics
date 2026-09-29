@@ -1,6 +1,6 @@
 # MusicMetrics
 
-> MusicMetrics (musicmetrics.net) is a free, independent music chart and streaming-statistics site. It aggregates public chart data from YouTube, Apple Music, Deezer{{ if (site.GetPage "/charts/lastfm") }} and Last.fm{{ end }} across {{ len site.Data.countries }} countries, updates every 6 hours, and publishes the cross-platform "MusicMetrics Global 200".
+> MusicMetrics (musicmetrics.net) is a free, independent music chart and streaming-statistics site. It aggregates public chart data from YouTube, Apple Music, Deezer{{ if (site.GetPage "/charts/lastfm") }} and Last.fm{{ end }} across {{ len site.Data.countries }} countries, updates every day, and publishes the cross-platform "MusicMetrics Global 200".
 
 Last updated: {{ site.Data.meta.updated }}
 Tracked: {{ site.Data.meta.counts.charts }} charts, {{ site.Data.meta.counts.songs }} songs, {{ site.Data.meta.counts.artists }} artists, {{ len site.Data.countries }} countries.

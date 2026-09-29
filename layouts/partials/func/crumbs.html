@@ -23,7 +23,7 @@
   {{- $s := index site.Data.songs $p.Params.song -}}
   {{- $a := index $s.artists 0 -}}
   {{- $c = $c | append (dict "name" (i18n "nav_artists") "url" ("/artists/" | relLangURL)) -}}
-  {{- if $a.page }}{{ $c = $c | append (dict "name" $a.n "url" (printf "/artists/%s/" $a.s | relLangURL)) }}{{ end -}}
+  {{- if $a.page }}{{ $c = $c | append (dict "name" $a.n "url" (cond $a.loc (printf "/artists/%s/" $a.s | relLangURL) (printf "/artists/%s/" $a.s))) }}{{ end -}}
   {{- $c = $c | append (dict "name" $s.title "url" "") -}}
 {{- else if eq $p.Type "country" -}}
   {{- $c = $c | append (dict "name" (i18n "nav_countries") "url" ("/countries/" | relLangURL)) | append (dict "name" (partialCached "func/country-name.html" $p.Params.cc $p.Params.cc site.Language.Lang) "url" "") -}}

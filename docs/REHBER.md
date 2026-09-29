@@ -16,7 +16,7 @@ _Son güncelleme: 26 Eylül 2026_
 ## 2. Yapılanlar
 
 **Veri (hepsi ücretsiz kaynaklar):**
-- YouTube: ~90 ülkede trend müzik videoları, toplam izlenme, **günlük izlenme** (6 saatte bir anlık görüntü), kanal bilgileri, **Milyar İzlenme Kulübü**
+- YouTube: ~90 ülkede trend müzik videoları, toplam izlenme, **günlük izlenme** (her gün anlık görüntü), kanal bilgileri, **Milyar İzlenme Kulübü**
 - Apple Music: ~65 ülkede Top 100 şarkı + Top 100 albüm (anahtar gerekmez)
 - Deezer: dünya + ülke Top 100 listeleri, sanatçı hayran sayıları (anahtar gerekmez)
 - Last.fm: isteğe bağlı (ücretsiz anahtar eklenince otomatik devreye girer)

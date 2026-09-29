@@ -21,11 +21,20 @@ const OFFLINE = process.argv.includes('--offline');
 const NOW = now();
 const TODAY = today();
 const STALE_DAYS = 5;
-const MAX_SONG_PAGES = 2500;
-const MAX_ARTIST_PAGES = 1500;
+// Every song/artist seen on any chart in the last KEEP_DAYS keeps its page
+// (the catalog only grows); the most popular ones are also translated.
+const KEEP_DAYS = 180;
+const LOC_SONGS = 1500;
+const LOC_ARTISTS = 1500;
+const ENRICH_PER_RUN = 1000;
 
-const PLATFORM_WEIGHT = { youtube: 1, apple: 1, deezer: 0.6, lastfm: 0.5 };
-const PLATFORMS = ['youtube', 'apple', 'apple-albums', 'deezer', 'lastfm'];
+const STORE_DIR = path.join(path.dirname(HISTORY_DIR));
+const STORE_CHARTS = path.join(STORE_DIR, 'charts');
+const CATALOG_DIR = path.join(STORE_DIR, 'catalog');
+const WEEKLY_STORE = path.join(STORE_DIR, 'weekly');
+
+const PLATFORM_WEIGHT = { youtube: 1, apple: 1, itunes: 0.6, deezer: 0.6, lastfm: 0.5 };
+const PLATFORMS = ['youtube', 'apple', 'itunes', 'apple-albums', 'deezer', 'lastfm'];
 
 const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
 
@@ -91,7 +100,8 @@ function loadCharts() {
     }
   }
   // Keep last good data for sources that failed this run (unless stale).
-  const chartsDir = path.join(DATA_DIR, 'charts');
+  const legacy = path.join(DATA_DIR, 'charts');
+  const chartsDir = fs.existsSync(STORE_CHARTS) ? STORE_CHARTS : legacy;
   if (fs.existsSync(chartsDir)) {
     for (const f of fs.readdirSync(chartsDir)) {
       const id = f.replace(/\.json$/, '');
@@ -124,30 +134,38 @@ function updateYoutubeViews(charts) {
       if (meta[id]) { h.a = meta[id].artist; h.tt = meta[id].title; }
       h.v = v.views;
       h.s.push([ts.slice(0, 16), v.views]);
-      // keep at most ~3 days of snapshots
-      h.s = h.s.filter(([t]) => (NOW - Date.parse(t + 'Z')) < 80 * 36e5).slice(-14);
+      // keep ~10 days of snapshots (one per run)
+      h.s = h.s.filter(([t]) => (NOW - Date.parse(t + 'Z')) < 10.5 * 864e5).slice(-12);
       h.seen = ts.slice(0, 10);
     }
   }
-  // Drop videos not refreshed for 30 days and under 1B views.
+  // Drop videos no longer refreshed for 60 days (unless in the Billion Views Club).
   for (const [id, h] of Object.entries(hist)) {
-    if (h.v < 1e9 && h.seen && daysBetween(h.seen, TODAY) > 30) delete hist[id];
+    if (h.v < 1e9 && h.seen && daysBetween(h.seen, TODAY) > 60) delete hist[id];
   }
   writeJSON(file, hist);
 
-  const daily = {};
-  for (const [id, h] of Object.entries(hist)) {
-    const s = h.s || [];
-    if (s.length < 2) continue;
+  // Views gained per day (snapshot closest to 24h ago) and per week (closest to 7 days).
+  const gain = (s, target, min) => {
     const [lt, lv] = s[s.length - 1];
     let best = null;
     for (const [t, v] of s) {
       const age = (Date.parse(lt + 'Z') - Date.parse(t + 'Z')) / 36e5;
-      if (age >= 12 && (!best || Math.abs(age - 24) < Math.abs(best.age - 24))) best = { age, v };
+      if (age >= min && (!best || Math.abs(age - target) < Math.abs(best.age - target))) best = { age, v };
     }
-    if (best && lv >= best.v) daily[id] = Math.round(((lv - best.v) / best.age) * 24);
+    return best && lv >= best.v ? Math.round(((lv - best.v) / best.age) * target) : undefined;
+  };
+  const daily = {};
+  const weekly = {};
+  for (const [id, h] of Object.entries(hist)) {
+    const s = h.s || [];
+    if (s.length < 2) continue;
+    const d = gain(s, 24, 12);
+    if (d !== undefined) daily[id] = d;
+    const w = gain(s, 168, 120);
+    if (w !== undefined) weekly[id] = w;
   }
-  return { hist, daily, channels: (raw && raw.channels) || readJSON(path.join(CACHE_DIR, 'youtube_channels.json'), {}) };
+  return { hist, daily, weekly, channels: (raw && raw.channels) || readJSON(path.join(CACHE_DIR, 'youtube_channels.json'), {}) };
 }
 
 // ---------------------------------------------------------- enrichment ----
@@ -158,7 +176,7 @@ async function enrichArtists(artists) {
   if (OFFLINE) return cache;
   const todo = artists
     .filter((a) => !cache[a.slug] || !cache[a.slug].v2 || daysBetween(cache[a.slug].ts, TODAY) > 14)
-    .slice(0, 300);
+    .slice(0, OFFLINE ? 0 : ENRICH_PER_RUN);
   let n = 0;
   for (const a of todo) {
     try {
@@ -306,88 +324,125 @@ async function main() {
   };
   songList.forEach((s, i) => { s.grank = i + 1; });
 
-  // ---- artists
-  let artistList = Object.values(artists)
+  // ---- artists (currently charting)
+  const artistList = Object.values(artists)
     .filter((a) => a.slug.length > 1 && !LABEL_RE.test(Object.keys(a.names)[0]))
     .map((a) => {
       a.name = Object.entries(a.names).sort((x, y) => y[1] - x[1])[0][0];
       return a;
     })
     .sort((a, b) => b.score - a.score);
-  const deezerCache = await enrichArtists(artistList.slice(0, MAX_ARTIST_PAGES));
+  artistList.forEach((a, i) => { a.rank = i + 1; });
+  const deezerCache = await enrichArtists(artistList);
   const aStats = applyHistory('artists', artistList.slice(0, 500).map((a, i) => ({ key: a.slug, rank: i + 1 })));
 
-  const songPages = new Set(songList.slice(0, MAX_SONG_PAGES).map((s) => s.key));
-  // Every song that is #1–#3 anywhere gets a page too.
-  for (const s of songList) if (s.positions.some((p) => p.r <= 3)) songPages.add(s.key);
-  const artistPages = new Set(artistList.slice(0, MAX_ARTIST_PAGES).map((a) => a.slug));
-  // Artists of song pages get pages as well.
-  for (const k of songPages) for (const cr of songs[k].artists.slice(0, 1)) if (artists[cr.s]) artistPages.add(cr.s);
+  // ---- catalog: everything that has ever charted (grows every day)
+  const cat = updateCatalog(songList, artistList, deezerCache, yt);
+  const cutoff = new Date(NOW.getTime() - KEEP_DAYS * 864e5).toISOString().slice(0, 10);
 
+  const songPages = new Set(Object.entries(cat.songs).filter(([, x]) => x.ls >= cutoff).map(([k]) => k));
+  const locSongs = new Set(songList.slice(0, LOC_SONGS).map((s) => s.key));
+  for (const s of songList) if (s.positions.some((p) => p.r <= 3)) locSongs.add(s.key);
+
+  const artistPages = new Set(Object.entries(cat.artists)
+    .filter(([, x]) => x.ls >= cutoff && !LABEL_RE.test(x.n) && (x.s || []).some((k) => songPages.has(k)))
+    .map(([k]) => k));
+  const locArtists = new Set(artistList.slice(0, LOC_ARTISTS).map((a) => a.slug));
+  for (const k of locSongs) for (const cr of songs[k].artists.slice(0, 1)) locArtists.add(cr.s);
+  for (const k of [...locArtists]) if (!artistPages.has(k)) locArtists.delete(k);
+  const songLoc = (k) => songPages.has(k) && locSongs.has(k);
+  const credit = (x) => ({ n: x.n, s: x.s, page: artistPages.has(x.s), loc: locArtists.has(x.s) });
+  const songSlug = (k) => k.replace(/--/g, '-');
+
+  // ---- artist pages
   const artistsOut = {};
-  artistList.forEach((a, i) => {
-    if (!artistPages.has(a.slug)) return;
-    const dz = deezerCache[a.slug] || {};
-    const ch = a.ext.yt_channel && yt.channels[a.ext.yt_channel];
-    const st = aStats[a.slug];
-    const aSongs = [...a.songs].map((k) => songs[k]).sort((x, y) => y.score - x.score);
-    artistsOut[a.slug] = {
-      slug: a.slug, name: a.name, rank: i + 1,
+  const songRow = (k, cur) => {
+    const c = cat.songs[k];
+    const s = songs[k];
+    return {
+      k, t: (s || c).title || c.t, a: (s && s.artist) || c.a, img: (s && s.image) || c.img,
+      page: songPages.has(k), loc: songLoc(k), on: !!s,
+      best: s ? Math.min(...s.positions.map((p) => p.r)) : c.b.r,
+      n: s ? s.positions.length : 0, g: s ? s.grank : 0,
+      v: (s && s.views) || c.vw || null, vd: (s && s.views_day) || null, vid: (s && s.video_id) || c.v || null,
+    };
+  };
+  for (const slug of artistPages) {
+    const c = cat.artists[slug];
+    const a = artists[slug];
+    const dz = deezerCache[slug] || {};
+    const current = a ? [...a.songs].filter((k) => songs[k]).sort((x, y) => songs[y].score - songs[x].score) : [];
+    const past = (c.s || []).filter((k) => !current.includes(k) && songPages.has(k))
+      .sort((x, y) => cat.songs[x].b.r - cat.songs[y].b.r);
+    const ch = c.yc && yt.channels[c.yc];
+    const st = aStats[slug];
+    artistsOut[slug] = {
+      slug, name: a ? a.name : c.n, rank: a ? a.rank : 0, on: !!a, loc: locArtists.has(slug),
       change: st ? st.change : null, peak: st ? st.peak : null,
-      image: dz.img || a.img.deezer || (ch && ch.image) || (aSongs[0] && aSongs[0].image) || '',
-      image_large: dz.img_l || '',
-      score: Math.round(a.score * 100) / 100,
-      charts: a.charts.size, countries: [...a.countries].sort(), platforms: [...a.platforms],
-      best: a.best ? { rank: a.best.r, chart: a.best.c, title: a.best.t } : null,
+      image: dz.img || c.img || (ch && ch.image) || '', image_large: dz.img_l || '',
+      score: a ? Math.round(a.score * 100) / 100 : 0,
+      charts: a ? a.charts.size : 0, countries: a ? [...a.countries].sort() : [], platforms: a ? [...a.platforms] : [],
+      best: a && a.best ? { rank: a.best.r, chart: a.best.c, title: a.best.t } : null,
+      hist: { first: c.f, last: c.ls, best: c.b, countries: (c.cc || []).length },
       fans: dz.fans || null, albums: dz.albums || null,
       subscribers: ch ? ch.subscribers : null, channel_views: ch ? ch.views : null,
-      links: { deezer: dz.url || (a.ext.deezer_id ? `https://www.deezer.com/artist/${a.ext.deezer_id}` : ''), apple: a.ext.apple || '', youtube: a.ext.yt_channel ? `https://www.youtube.com/channel/${a.ext.yt_channel}` : '' },
-      songs: aSongs.slice(0, 50).map((s) => ({
-        k: s.key, t: s.title, a: s.artist, img: s.image, page: songPages.has(s.key),
-        best: Math.min(...s.positions.map((p) => p.r)), n: s.positions.length, g: s.grank,
-        v: s.views || null, vd: s.views_day || null, vid: s.video_id || null,
-      })),
-      top1: aSongs.filter((s) => s.positions.some((p) => p.r === 1)).length,
+      links: { deezer: dz.url || c.l.deezer || '', apple: c.l.apple || '', youtube: c.yc ? `https://www.youtube.com/channel/${c.yc}` : '' },
+      songs: [...current.slice(0, 60), ...past.slice(0, 60)].map((k) => songRow(k)),
+      top1: current.filter((k) => songs[k].positions.some((p) => p.r === 1)).length,
+      related: [],
     };
-  });
-
-  // ---- related artists: overlap of the charts they appear in (Jaccard)
-  const pageArtists = Object.values(artistsOut);
-  const chartSets = Object.fromEntries(pageArtists.map((a) => [a.slug, artists[a.slug].charts]));
-  for (const a of pageArtists) {
-    const A = chartSets[a.slug];
-    const scored = [];
-    for (const b of pageArtists) {
-      if (b.slug === a.slug) continue;
-      const B = chartSets[b.slug];
-      let inter = 0;
-      for (const x of A) if (B.has(x)) inter++;
-      if (inter < 2) continue;
-      scored.push([inter / (A.size + B.size - inter) + b.score / 1e6, b.slug]);
-    }
-    a.related = scored.sort((x, y) => y[0] - x[0]).slice(0, 8).map((x) => x[1]);
   }
 
-  // ---- songs
+  // ---- related artists: co-occurrence on the same charts (inverted index)
+  const byChart = {};
+  for (const a of artistList) if (artistPages.has(a.slug)) for (const c of a.charts) (byChart[c] = byChart[c] || []).push(a.slug);
+  for (const a of artistList) {
+    if (!artistsOut[a.slug]) continue;
+    const co = {};
+    for (const c of a.charts) for (const b of byChart[c] || []) if (b !== a.slug) co[b] = (co[b] || 0) + 1;
+    artistsOut[a.slug].related = Object.entries(co)
+      .filter(([, n]) => n >= 2)
+      .map(([b, n]) => [n / (a.charts.size + artists[b].charts.size - n) + artists[b].score / 1e6, b])
+      .sort((x, y) => y[0] - x[0]).slice(0, 8).map((x) => x[1]);
+  }
+
+  // ---- song pages
   const songsOut = {};
-  for (const s of songList) {
-    if (!songPages.has(s.key)) continue;
-    songsOut[s.key] = {
-      key: s.key, slug: s.key.replace(/--/g, '-'), title: s.title, artist: s.artist,
-      artists: s.artists.map((x) => ({ ...x, page: artistPages.has(x.s) })),
-      image: s.image, image_large: s.image_large || s.image, grank: s.grank,
-      links: s.links, video_id: s.video_id || null, views: s.views || null, views_day: s.views_day || null,
-      genre: s.genre || '', release: s.release || '', album: s.album || '', explicit: !!s.explicit,
-      positions: s.positions.sort((x, y) => x.r - y.r || C.weight(y.cc) - C.weight(x.cc)),
-      countries: s.countries.size, platforms: [...s.platforms],
+  for (const k of songPages) {
+    const c = cat.songs[k];
+    const s = songs[k];
+    const base = {
+      key: k, slug: songSlug(k), on: !!s, loc: songLoc(k),
+      hist: { first: c.f, last: c.ls, best: c.b, charts: (c.cs || []).length },
     };
+    if (s) {
+      songsOut[k] = {
+        ...base, title: s.title, artist: s.artist, artists: s.artists.map(credit),
+        image: s.image, image_large: s.image_large || s.image, grank: s.grank,
+        links: s.links, video_id: s.video_id || null, views: s.views || null, views_day: s.views_day || null,
+        views_week: (s.video_id && yt.weekly[s.video_id]) || null,
+        genre: s.genre || '', release: s.release || '', album: s.album || '', explicit: !!s.explicit,
+        positions: s.positions.sort((x, y) => x.r - y.r || C.weight(y.cc) - C.weight(x.cc)),
+        countries: s.countries.size, platforms: [...s.platforms],
+      };
+    } else {
+      const vh = c.v && yt.hist[c.v];
+      songsOut[k] = {
+        ...base, title: c.t, artist: c.a, artists: (c.ar || []).map(credit),
+        image: c.img, image_large: c.imgL || c.img, grank: 0,
+        links: c.l || {}, video_id: c.v || null, views: (vh && vh.v) || c.vw || null,
+        views_day: (c.v && yt.daily[c.v]) || null, views_week: (c.v && yt.weekly[c.v]) || null,
+        genre: c.g || '', release: c.rd || '', album: c.al || '', explicit: false,
+        positions: [], countries: 0, platforms: [],
+      };
+    }
   }
 
-  // Link chart rows to pages that exist.
+  // Link chart rows to pages that exist (and say whether they are translated).
   for (const ch of Object.values(out)) {
     for (const r of ch.items) {
-      if (ch.type !== 'albums' && songsOut[r.key]) r.song = songsOut[r.key].slug;
-      r.artists = r.artists.map((x) => ({ ...x, page: artistPages.has(x.s) }));
+      if (ch.type !== 'albums' && songsOut[r.key]) { r.song = songsOut[r.key].slug; r.sl = songsOut[r.key].loc; }
+      r.artists = r.artists.map(credit);
     }
   }
 
@@ -404,7 +459,7 @@ async function main() {
     const top = main && main.items[0];
     countriesOut[cc] = {
       code: cc, flag: C.flag(cc), names: C.names(cc), charts: ids, featured: C.FEATURED.includes(cc), weight: C.weight(cc),
-      top: top ? { title: top.title, artist: top.artist, song: top.song || '', image: top.image, chart: main.id } : null,
+      top: top ? { title: top.title, artist: top.artist, song: top.song || '', sl: !!top.sl, image: top.image, chart: main.id } : null,
     };
   });
 
@@ -412,49 +467,109 @@ async function main() {
   const mostViewed = Object.entries(yt.hist)
     .filter(([, h]) => h.v >= 1e8 && (h.cat === '10' || h.v >= 1e9))
     .sort((a, b) => b[1].v - a[1].v)
-    .slice(0, 250)
+    .slice(0, 1000)
     .map(([id, h], i) => {
       const parsed = h.tt ? { title: h.tt, artist: h.a } : parseArtistAndTitle(h.t || '', h.c || '');
-      return { rank: i + 1, video_id: id, title: parsed.title, artist: parsed.artist, channel: h.c, views: h.v, views_day: yt.daily[id] || null, published: h.pub || '' };
+      return { rank: i + 1, video_id: id, title: parsed.title, artist: parsed.artist, channel: h.c, views: h.v, views_day: yt.daily[id] || null, views_week: yt.weekly[id] || null, published: h.pub || '' };
     });
 
-  // ---- albums (top 200)
-  const albumList = Object.values(albums).sort((a, b) => b.score - a.score).slice(0, 200)
-    .map((a, i) => ({ rank: i + 1, title: a.title, artist: a.artist, artists: a.artists.map((x) => ({ ...x, page: artistPages.has(x.s) })), image: a.image, url: a.url, charts: a.positions.length, best: Math.min(...a.positions.map((p) => p.r)) }));
+  // ---- albums (top 500)
+  const albumList = Object.values(albums).sort((a, b) => b.score - a.score).slice(0, 500)
+    .map((a, i) => ({ rank: i + 1, title: a.title, artist: a.artist, artists: a.artists.map(credit), image: a.image, url: a.url, charts: a.positions.length, best: Math.min(...a.positions.map((p) => p.r)) }));
 
-  // ---- weekly recap (overwritten until the ISO week ends)
+  // ---- weekly recap (overwritten until the ISO week ends; archive lives in store/weekly)
   const wk = isoWeek(NOW);
   const numberOnes = {};
-  for (const ch of Object.values(out)) if (ch.items[0] && ch.id !== 'global') numberOnes[ch.id] = { t: ch.items[0].title, a: ch.items[0].artist, s: ch.items[0].song || '', img: ch.items[0].image };
+  for (const ch of Object.values(out)) if (ch.items[0] && ch.id !== 'global') numberOnes[ch.id] = { t: ch.items[0].title, a: ch.items[0].artist, s: ch.items[0].song || '', sl: !!ch.items[0].sl, img: ch.items[0].image };
   const weekly = {
     id: wk.id, year: wk.year, week: wk.week, start: wk.start, end: wk.end, updated: NOW.toISOString(),
-    top: out.global.items.slice(0, 50).map((x) => ({ r: x.rank, t: x.title, a: x.artist, s: x.song || '', img: x.image, ch: x.change, pts: x.points })),
-    artists: artistList.slice(0, 20).map((a, i) => ({ r: i + 1, n: a.name, s: artistPages.has(a.slug) ? a.slug : '', img: (artistsOut[a.slug] || {}).image || '' })),
+    top: out.global.items.slice(0, 50).map((x) => ({ r: x.rank, t: x.title, a: x.artist, s: x.song || '', sl: !!x.sl, img: x.image, ch: x.change, pts: x.points })),
+    artists: artistList.slice(0, 20).map((a, i) => ({ r: i + 1, n: a.name, s: artistPages.has(a.slug) ? a.slug : '', sl: locArtists.has(a.slug), img: (artistsOut[a.slug] || {}).image || '' })),
     number_ones: numberOnes,
     videos: mostViewed.filter((v) => v.views_day).sort((a, b) => b.views_day - a.views_day).slice(0, 10),
   };
+  writeJSON(path.join(WEEKLY_STORE, `${wk.id}.json`), weekly);
 
-  // ---- write everything
-  const chartsDir = path.join(DATA_DIR, 'charts');
-  fs.rmSync(chartsDir, { recursive: true, force: true });
-  for (const ch of Object.values(out)) writeJSON(path.join(chartsDir, `${ch.id}.json`), ch);
+  // ---- persist last good charts (fallback for failed sources)
+  fs.rmSync(STORE_CHARTS, { recursive: true, force: true });
+  for (const ch of Object.values(out)) if (ch.id !== 'global') writeJSON(path.join(STORE_CHARTS, `${ch.id}.json`), ch);
+
+  // ---- write everything the site renders (data/ is generated, not committed)
+  fs.rmSync(DATA_DIR, { recursive: true, force: true });
+  for (const ch of Object.values(out)) writeJSON(path.join(DATA_DIR, 'charts', `${ch.id}.json`), ch);
   writeJSON(path.join(DATA_DIR, 'artists.json'), artistsOut);
   writeJSON(path.join(DATA_DIR, 'songs.json'), songsOut);
   writeJSON(path.join(DATA_DIR, 'countries.json'), countriesOut);
   writeJSON(path.join(DATA_DIR, 'albums.json'), albumList);
   writeJSON(path.join(DATA_DIR, 'youtube_most_viewed.json'), mostViewed);
-  writeJSON(path.join(DATA_DIR, 'weekly', `${wk.id}.json`), weekly);
+  if (fs.existsSync(WEEKLY_STORE)) for (const f of fs.readdirSync(WEEKLY_STORE)) fs.cpSync(path.join(WEEKLY_STORE, f), path.join(DATA_DIR, 'weekly', f));
+  const counts = {
+    charts: Object.keys(out).length, songs: Object.keys(cat.songs).length, artists: Object.keys(cat.artists).length,
+    songs_now: Object.keys(songs).length, artists_now: artistList.length,
+    song_pages: Object.keys(songsOut).length, artist_pages: Object.keys(artistsOut).length,
+    countries: Object.keys(countriesOut).length, videos: Object.keys(yt.hist).length,
+  };
   writeJSON(path.join(DATA_DIR, 'meta.json'), {
-    updated: NOW.toISOString(),
-    counts: {
-      charts: Object.keys(out).length, songs: Object.keys(songs).length, artists: artistList.length,
-      song_pages: Object.keys(songsOut).length, artist_pages: Object.keys(artistsOut).length,
-      countries: Object.keys(countriesOut).length, videos: Object.keys(yt.hist).length,
-    },
+    updated: NOW.toISOString(), counts,
     platforms: Object.fromEntries(PLATFORMS.map((p) => [p, Object.values(out).filter((c) => c.platform === p).length])),
   }, { pretty: true });
 
-  console.log(`  songs: ${Object.keys(songs).length} (${Object.keys(songsOut).length} pages), artists: ${artistList.length} (${Object.keys(artistsOut).length} pages), countries: ${Object.keys(countriesOut).length}, most viewed: ${mostViewed.length}`);
+  console.log(`  ${JSON.stringify(counts)}`);
+}
+
+// ------------------------------------------------------------- catalog ----
+
+/**
+ * Long-term memory of every song and artist that has ever charted.
+ * songs:   { key: { t, a, ar, img, imgL, l, v, vw, g, rd, al, f, ls, b: {r, c, d}, cs } }
+ * artists: { slug: { n, img, l, yc, f, ls, b: {r, c, d, t}, s: [song keys], cc: [countries] } }
+ */
+function updateCatalog(songList, artistList, deezerCache, yt) {
+  const sFile = path.join(CATALOG_DIR, 'songs.json');
+  const aFile = path.join(CATALOG_DIR, 'artists.json');
+  const songsCat = readJSON(sFile, {});
+  const artistsCat = readJSON(aFile, {});
+  const cap = (arr, n) => arr.slice(-n);
+
+  for (const s of songList) {
+    const c = songsCat[s.key] || (songsCat[s.key] = { f: TODAY, b: { r: 9999, c: '', d: '' }, cs: [], l: {} });
+    c.t = s.title; c.a = s.artist; c.ar = s.artists.map((x) => ({ n: x.n, s: x.s }));
+    if (s.image && (!c.img || !s._ytimg)) { c.img = s.image; c.imgL = s.image_large || s.image; }
+    c.l = { ...c.l, ...s.links };
+    if (s.video_id) { c.v = s.video_id; c.vw = s.views || c.vw; }
+    if (s.genre) c.g = s.genre;
+    if (s.release) c.rd = s.release;
+    if (s.album) c.al = s.album;
+    c.ls = TODAY;
+    for (const p of s.positions) {
+      const r = Math.min(p.r, p.pk || p.r);
+      if (r < c.b.r) c.b = { r, c: p.c, d: TODAY };
+      if (!c.cs.includes(p.c)) c.cs.push(p.c);
+    }
+    c.cs = cap(c.cs, 60);
+  }
+  for (const a of artistList) {
+    const c = artistsCat[a.slug] || (artistsCat[a.slug] = { f: TODAY, b: { r: 9999, c: '', d: '', t: '' }, s: [], cc: [], l: {} });
+    const dz = deezerCache[a.slug] || {};
+    c.n = a.name;
+    c.img = dz.img || a.img.deezer || c.img || '';
+    if (a.ext.apple) c.l.apple = a.ext.apple;
+    if (a.ext.deezer_id) c.l.deezer = `https://www.deezer.com/artist/${a.ext.deezer_id}`;
+    if (a.ext.yt_channel) c.yc = a.ext.yt_channel;
+    c.ls = TODAY;
+    if (a.best && a.best.r < c.b.r) c.b = { r: a.best.r, c: a.best.c, d: TODAY, t: a.best.t };
+    for (const k of a.songs) if (!c.s.includes(k)) c.s.push(k);
+    for (const cc of a.countries) if (!c.cc.includes(cc)) c.cc.push(cc);
+    c.s = cap(c.s, 400);
+    if (!c.img) {
+      const first = [...a.songs][0];
+      const song = songList.find((x) => x.key === first);
+      if (song) c.img = song.image;
+    }
+  }
+  writeJSON(sFile, songsCat);
+  writeJSON(aFile, artistsCat);
+  return { songs: songsCat, artists: artistsCat };
 }
 
 function isoWeek(d) {

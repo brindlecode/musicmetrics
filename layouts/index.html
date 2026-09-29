@@ -17,8 +17,8 @@
         <span class="kicker">{{ i18n "most_popular_song_world" }}</span>
         {{- $feat := findRE `\s*[\(\[](feat\.?|ft\.?|with|featuring)\s[^\)\]]*[\)\]]` $one.title 1 }}
         {{- $main := $one.title }}{{ with $feat }}{{ $main = replace $one.title (index . 0) "" }}{{ end }}
-        <h1 id="lead-title">{{ if $one.song }}<a href="{{ printf "/songs/%s/" $one.song | relLangURL }}" style="text-decoration:none">{{ $main }}</a>{{ else }}{{ $main }}{{ end }}{{ with $feat }}<small>{{ strings.TrimSpace (index . 0) }}</small>{{ end }}</h1>
-        <p class="lead-story__by">{{ range $j, $a := $one.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ printf "/artists/%s/" $a.s | relLangURL }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</p>
+        <h1 id="lead-title">{{ if $one.song }}<a href="{{ cond $one.sl (printf "/songs/%s/" $one.song | relLangURL) (printf "/songs/%s/" $one.song) }}" style="text-decoration:none">{{ $main }}</a>{{ else }}{{ $main }}{{ end }}{{ with $feat }}<small>{{ strings.TrimSpace (index . 0) }}</small>{{ end }}</h1>
+        <p class="lead-story__by">{{ range $j, $a := $one.artists }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ cond $a.loc (printf "/artists/%s/" $a.s | relLangURL) (printf "/artists/%s/" $a.s) }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</p>
         <p class="muted" style="margin-bottom:14px">{{ i18n "lead_stats" (dict "Countries" $one.countries "Charts" $one.charts "Days" $one.days) }}</p>
         <div class="profile__actions" style="margin-top:0">
           {{- with $one.video_id }}<button class="btn" type="button" data-yt="{{ . }}">{{ partialCached "icons.html" (dict "n" "play" "s" 16) "play" 16 }}{{ i18n "play_video" }}</button>{{ end }}
@@ -33,7 +33,7 @@
         <li>
           <span class="mini__rank">{{ .rank }}</span>
           {{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}
-          <span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span>
+          <span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span>
           <span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span>
         </li>
         {{- end }}
@@ -91,12 +91,12 @@
       <div>
         <div class="section-head"><h2>{{ i18n "biggest_climbers" }}</h2></div>
         {{- $real := where $climbers "change" "gt" 0 }}
-        {{- if $real }}<ol class="mini">{{ range $real }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
+        {{- if $real }}<ol class="mini">{{ range $real }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
         {{- else }}<p class="empty">{{ i18n "movers_tomorrow" }}</p>{{ end }}
       </div>
       <div>
         <div class="section-head"><h2>{{ i18n "hot_new_entries" }}</h2></div>
-        {{- if $new }}<ol class="mini">{{ range $new }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ printf "/songs/%s/" .song | relLangURL }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
+        {{- if $new }}<ol class="mini">{{ range $new }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
         {{- else }}<p class="empty">{{ i18n "no_new_entries" }}</p>{{ end }}
       </div>
     </div>
@@ -105,13 +105,13 @@
   {{- /* ---------- Top artists ---------- */}}
   <section class="section">
     <div class="section-head"><h2>{{ i18n "top_artists_now" }}</h2><a href="{{ "/artists/" | relLangURL }}">{{ i18n "artist_ranking" }} →</a></div>
-    {{- $al := slice }}{{ range $s, $a := site.Data.artists }}{{ if le $a.rank 12 }}{{ $al = $al | append $a }}{{ end }}{{ end }}
+    {{- $al := slice }}{{ range $s, $a := site.Data.artists }}{{ if and $a.on (le $a.rank 12) }}{{ $al = $al | append $a }}{{ end }}{{ end }}
     <div class="grid grid--artists">
       {{- range sort $al "rank" }}
       <div class="acard">
         {{ with .image }}<img src="{{ . }}" alt="" width="160" height="160" loading="lazy">{{ else }}<div class="ph">{{ substr .name 0 1 }}</div>{{ end }}
         <span class="acard__rank">{{ .rank }}</span>
-        <a class="acard__name" href="{{ printf "/artists/%s/" .slug | relLangURL }}">{{ .name }}</a>
+        <a class="acard__name" href="{{ cond .loc (printf "/artists/%s/" .slug | relLangURL) (printf "/artists/%s/" .slug) }}">{{ .name }}</a>
         <span class="acard__meta">{{ i18n "songs_count" (dict "Count" (int (len .songs))) }} · {{ i18n "in_countries" (dict "Count" (int (len .countries))) }}</span>
       </div>
       {{- end }}
@@ -151,7 +151,7 @@
   <section class="section">
     <div class="section-head"><h2>{{ i18n "browse_by_platform" }}</h2><a href="{{ "/charts/" | relLangURL }}">{{ i18n "all_charts" }} →</a></div>
     <div class="grid grid--4">
-      {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "deezer" "deezer" "lastfm" "lastfm" }}
+      {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "itunes" "itunes" "deezer" "deezer" "lastfm" "lastfm" }}
       {{- with site.GetPage (printf "/charts/%s" $slug) }}
       <a class="panel" href="{{ .RelPermalink }}" style="text-decoration:none"><span class="eyebrow">{{ partialCached "plogo.html" $p $p }}{{ len .Pages }} {{ i18n "countries_lower" }}</span><h3 style="font-size:1.4rem;margin-top:6px">{{ i18n (printf "hub_%s" $p) }}</h3></a>
       {{- end }}
