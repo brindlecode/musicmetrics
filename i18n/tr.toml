@@ -158,7 +158,7 @@ answer_song = "<strong>{{ .Artist }} – “{{ .Title }}”</strong> {{ .Countri
 
 # ------------------------------------------------------------------ home
 home_title = "MusicMetrics — Müzik Listeleri ve En Çok Dinlenen Şarkılar"
-home_description = "Dünya şu anda ne dinliyor? Bir numara: {{ .Artist }} – “{{ .Title }}”. 90'dan fazla ülke için YouTube, Apple Music ve Deezer müzik listeleri, her gün güncellenir."
+home_description = "Dünya şu anda ne dinliyor? Bir numara: {{ .Artist }} – “{{ .Title }}”. 170'ten fazla ülke için YouTube, Apple Music ve Deezer müzik listeleri, her gün güncellenir."
 home_description_generic = "Her ülke için YouTube, Apple Music ve Deezer'dan canlı müzik listeleri ve dinlenme istatistikleri."
 most_popular_song_world = "Şu anda dünyanın en popüler şarkısı"
 lead_stats = "{{ .Countries }} ülkede listede · {{ .Charts }} liste · Global 200'de {{ .Days }} gün"
@@ -245,7 +245,7 @@ seo_desc_apple = "{{ .Country }} Apple Music 1 numarası: {{ .Artist }} – “{
 seo_desc_apple-albums = "{{ .Country }} Apple Music 1 numaralı albüm: {{ .Artist }} – “{{ .Title }}”. Top {{ .Count }} albüm listesinin tamamı. {{ .Date }}."
 seo_desc_deezer = "{{ .Country }} Deezer 1 numarası: {{ .Artist }} – “{{ .Title }}”. Günlük değişim ve zirvelerle Top {{ .Count }} listesinin tamamı. {{ .Date }}."
 seo_desc_lastfm = "{{ .Country }} Last.fm 1 numarası: {{ .Artist }} – “{{ .Title }}”. Dinleyici sayısına göre top {{ .Count }} şarkı. {{ .Date }}."
-seo_desc_musicmetrics = "Şu anda dünyanın 1 numarası: {{ .Artist }} – “{{ .Title }}”. Global 200, 90'dan fazla ülkedeki YouTube, Apple Music ve Deezer listelerini birleştirir. {{ .Date }}."
+seo_desc_musicmetrics = "Şu anda dünyanın 1 numarası: {{ .Artist }} – “{{ .Title }}”. Global 200, 170'ten fazla ülkedeki YouTube, Apple Music ve Deezer listelerini birleştirir. {{ .Date }}."
 seo_title_hub_youtube = "Ülkelere Göre YouTube Müzik Listeleri — Trend Müzik Videoları"
 seo_title_hub_apple = "Ülkelere Göre Apple Music Listeleri — Top 100 Şarkı"
 seo_title_hub_apple-albums = "Ülkelere Göre Apple Music Albüm Listeleri — Top 100 Albüm"
@@ -268,7 +268,7 @@ seo_desc_country = "Şu anda {{ .Country }} listelerinin 1 numarası: {{ .Artist
 seo_title_countries = "Ülkelere Göre Müzik Listeleri ({{ .Count }} Ülke)"
 seo_desc_countries = "{{ .Count }} ülkede YouTube, Apple Music ve Deezer'da en çok dinlenen şarkılar. Her ülkenin 1 numaralı şarkısını bulun, her gün güncellenir."
 seo_title_artists = "Dünyanın En Popüler Sanatçıları — Global Sanatçı Sıralaması"
-seo_desc_artists = "Şu anda dünyanın en popüler sanatçıları; 90'dan fazla ülkede YouTube, Apple Music ve Deezer listelerindeki sıralarına göre."
+seo_desc_artists = "Şu anda dünyanın en popüler sanatçıları; 170'ten fazla ülkede YouTube, Apple Music ve Deezer listelerindeki sıralarına göre."
 seo_title_week = "{{ .Year }}, {{ .Week }}. Hafta: Dünyanın En Büyük Hitleri"
 seo_desc_week = "{{ .Year }} yılının {{ .Week }}. haftası Global 200 listesi. 1 numara: {{ .Artist }} – “{{ .Title }}”. Her ülkenin 1 numaraları ve haftanın sanatçıları."
 seo_title_weekly = "Haftalık Müzik Listesi Özetleri"

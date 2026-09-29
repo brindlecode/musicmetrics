@@ -158,7 +158,7 @@ answer_song = "<strong>{{ .Artist }}の「{{ .Title }}」</strong>は{{ .Countri
 
 # ------------------------------------------------------------------ home
 home_title = "MusicMetrics — 世界各国の音楽チャート・人気曲ランキング"
-home_description = "今、世界で聴かれている曲は？1位は{{ .Artist }}の「{{ .Title }}」。90か国以上のYouTube・Apple Music・Deezer音楽チャートを毎日更新。"
+home_description = "今、世界で聴かれている曲は？1位は{{ .Artist }}の「{{ .Title }}」。170か国以上のYouTube・Apple Music・Deezer音楽チャートを毎日更新。"
 home_description_generic = "YouTube・Apple Music・Deezerの世界各国の音楽チャートとストリーミング統計をリアルタイムで。"
 most_popular_song_world = "今、世界で最も人気の曲"
 lead_stats = "{{ .Countries }}か国でチャートイン · {{ .Charts }}チャート · Global 200に{{ .Days }}日"
@@ -245,7 +245,7 @@ seo_desc_apple = "{{ .Country }}のApple Music 1位は{{ .Artist }}の「{{ .Tit
 seo_desc_apple-albums = "{{ .Country }}のApple Musicアルバム1位は{{ .Artist }}の「{{ .Title }}」。Top {{ .Count }}アルバム全掲載。{{ .Date }}。"
 seo_desc_deezer = "{{ .Country }}のDeezer 1位は{{ .Artist }}の「{{ .Title }}」。Top {{ .Count }}を前日比・最高順位付きで。{{ .Date }}。"
 seo_desc_lastfm = "{{ .Country }}のLast.fm 1位は{{ .Artist }}の「{{ .Title }}」。リスナー数順Top {{ .Count }}。{{ .Date }}。"
-seo_desc_musicmetrics = "今、世界1位は{{ .Artist }}の「{{ .Title }}」。90か国以上のYouTube・Apple Music・Deezerを総合。{{ .Date }}。"
+seo_desc_musicmetrics = "今、世界1位は{{ .Artist }}の「{{ .Title }}」。170か国以上のYouTube・Apple Music・Deezerを総合。{{ .Date }}。"
 seo_title_hub_youtube = "国別YouTube音楽チャート｜急上昇MV"
 seo_title_hub_apple = "国別Apple Musicチャート｜Top 100"
 seo_title_hub_apple-albums = "国別Apple Musicアルバムチャート｜Top 100"
@@ -268,7 +268,7 @@ seo_desc_country = "今、{{ .Country }}の1位は{{ .Artist }}の「{{ .Title }
 seo_title_countries = "国別音楽チャート（{{ .Count }}か国）"
 seo_desc_countries = "{{ .Count }}か国のYouTube・Apple Music・Deezer人気曲。各国の1位を毎日更新。"
 seo_title_artists = "世界の人気アーティストランキング"
-seo_desc_artists = "今、世界で最も人気のアーティスト。90か国以上のYouTube・Apple Music・Deezerチャートの順位でランキング。"
+seo_desc_artists = "今、世界で最も人気のアーティスト。170か国以上のYouTube・Apple Music・Deezerチャートの順位でランキング。"
 seo_title_week = "{{ .Year }}年第{{ .Week }}週：世界のヒット曲"
 seo_desc_week = "{{ .Year }}年第{{ .Week }}週のGlobal 200。1位は{{ .Artist }}の「{{ .Title }}」。各国の1位と今週の人気アーティスト。"
 seo_title_weekly = "週間音楽チャートまとめ"
