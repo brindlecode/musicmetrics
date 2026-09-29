@@ -56,7 +56,7 @@
   {{- /* ---------- Local charts for the visitor's language ---------- */}}
   {{- with index site.Data.countries $hc }}
   <section class="section">
-    <div class="section-head"><h2>{{ .flag }} {{ i18n "charts_in" (dict "Country" $hcn) }}</h2><a href="{{ printf "/countries/%s/" $hc | relLangURL }}">{{ i18n "all_charts_in" (dict "Country" $hcn) }} →</a></div>
+    <div class="section-head"><h2>{{ partialCached "flag.html" $hc $hc }} {{ i18n "charts_in" (dict "Country" $hcn) }}</h2><a href="{{ printf "/countries/%s/" $hc | relLangURL }}">{{ i18n "all_charts_in" (dict "Country" $hcn) }} →</a></div>
     <div class="cols-3">
       {{- range first 3 .charts }}{{ $ch := index site.Data.charts . }}{{ $ci := partialCached "func/chart-info.html" . . }}
       <div class="panel">
@@ -75,7 +75,7 @@
       {{- $fl := slice }}{{ range $cc, $c := site.Data.countries }}{{ if $c.featured }}{{ $fl = $fl | append $c }}{{ end }}{{ end }}
       {{- range sort $fl "weight" "desc" }}
       <div class="ccard">
-        <span class="ccard__flag">{{ .flag }}</span>
+        <span class="ccard__flag">{{ partialCached "flag.html" .code .code }}</span>
         <span style="min-width:0"><a class="ccard__name" href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ index .names site.Language.Lang }}</a>
         <span class="ccard__top">{{ with .top }}<b>{{ .title }}</b> — {{ .artist }}{{ end }}</span></span>
       </div>

@@ -1,0 +1,5 @@
+{{- /* Flag image for a country code ("global" = globe). Self-hosted PNGs from flag-icons (MIT). */ -}}
+{{- $cc := . -}}
+{{- $src := cond (eq $cc "global") "/flags/global.svg" (printf "/flags/%s.png" $cc) -}}
+<img class="flag" src="{{ $src }}" width="20" height="15" alt="" loading="lazy" decoding="async">
+{{- /**/ -}}

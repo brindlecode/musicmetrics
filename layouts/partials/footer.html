@@ -32,7 +32,7 @@
         <ul>
           {{- $list := slice }}{{ range $cc, $c := site.Data.countries }}{{ $list = $list | append $c }}{{ end }}
           {{- range first 8 (sort $list "weight" "desc") }}
-          <li><a href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ .flag }} {{ index .names site.Language.Lang }}</a></li>
+          <li><a href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ partialCached "flag.html" .code .code }} {{ index .names site.Language.Lang }}</a></li>
           {{- end }}
         </ul>
       </div>

@@ -25,7 +25,7 @@
           <tbody id="hub-table">
           {{- range sort $rows "name" }}{{ $ch := index site.Data.charts .id }}{{ $t := index $ch.items 0 }}
             <tr>
-              <td><a href="{{ .url | relLangURL }}">{{ partialCached "func/flag.html" .cc .cc }} {{ .name }}</a></td>
+              <td><a href="{{ .url | relLangURL }}">{{ partialCached "flag.html" .cc .cc }} {{ .name }}</a></td>
               <td><div class="cell-song">{{ with $t.image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ end }}<span>{{ if $t.song }}<a href="{{ printf "/songs/%s/" $t.song | relLangURL }}">{{ $t.title }}</a>{{ else }}{{ $t.title }}{{ end }}<span class="hide-d muted small"><br>{{ $t.artist }}</span></span></div></td>
               <td class="hide-m">{{ $t.artist }}</td>
               <td class="r hide-m">{{ $t.days }}</td>

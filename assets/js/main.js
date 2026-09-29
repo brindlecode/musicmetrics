@@ -135,7 +135,7 @@
     if (!q) { ul.innerHTML = '<li class="search-empty">' + esc(I.searchHint || 'Search artists, songs and countries') + '</li>'; return; }
     if (!list.length) { ul.innerHTML = '<li class="search-empty">' + esc(I.noResults || 'No results') + '</li>'; return; }
     ul.innerHTML = list.map(function (x, i) {
-      var img = x.i ? '<img src="' + esc(x.i) + '" alt="" loading="lazy" width="40" height="40">' : '<span class="sr-ph">' + esc(x.f || '♪') + '</span>';
+      var img = x.i ? '<img src="' + esc(x.i) + '" alt="" loading="lazy" width="40" height="40"' + (x.fl ? ' class="is-flag"' : '') + '>' : '<span class="sr-ph">' + esc(x.f || '♪') + '</span>';
       var name = x.k === 'c' && x.l && x.l[lang] ? x.l[lang] : x.n;
       return '<li><a href="' + prefix + esc(x.u) + '"' + (i === 0 ? ' aria-selected="true"' : '') + '>' + img +
         '<span><span class="t">' + esc(name) + '</span>' + (x.a ? '<span class="s">' + esc(x.a) + '</span>' : '') + '</span>' +
@@ -199,7 +199,7 @@
         var list = search(box.value);
         target.innerHTML = list.length ? list.map(function (x) {
           var name = x.k === 'c' && x.l && x.l[lang] ? x.l[lang] : x.n;
-          var img = x.i ? '<img src="' + esc(x.i) + '" alt="" loading="lazy" width="40" height="40">' : '<span class="sr-ph">' + esc(x.f || '♪') + '</span>';
+          var img = x.i ? '<img src="' + esc(x.i) + '" alt="" loading="lazy" width="40" height="40"' + (x.fl ? ' class="is-flag"' : '') + '>' : '<span class="sr-ph">' + esc(x.f || '♪') + '</span>';
           return '<li><a href="' + prefix + esc(x.u) + '">' + img + '<span><span class="t">' + esc(name) + '</span>' + (x.a ? '<span class="s">' + esc(x.a) + '</span>' : '') + '</span><span class="k">' + esc(kindLabel(x.k)) + '</span></a></li>';
         }).join('') : (box.value ? '<li class="search-empty">' + esc(I.noResults || 'No results') + '</li>' : '');
       });
