@@ -158,7 +158,7 @@ answer_song = "<strong>“{{ .Title }}”, de {{ .Artist }}</strong>, está em {
 
 # ------------------------------------------------------------------ home
 home_title = "MusicMetrics — Paradas musicais e músicas mais tocadas de cada país"
-home_description = "O que o mundo está ouvindo agora: o nº 1 é “{{ .Title }}”, de {{ .Artist }}. Paradas musicais do YouTube, Apple Music e Deezer em 90+ países, diariamente."
+home_description = "O que o mundo está ouvindo agora: o nº 1 é “{{ .Title }}”, de {{ .Artist }}. Paradas musicais do YouTube, Apple Music e Deezer em 170+ países, diariamente."
 home_description_generic = "Paradas musicais ao vivo e estatísticas de streaming do YouTube, Apple Music e Deezer para cada país."
 most_popular_song_world = "A música mais popular do mundo agora"
 lead_stats = "Nas paradas de {{ .Countries }} países · {{ .Charts }} paradas · {{ .Days }} dias no Global 200"
@@ -245,7 +245,7 @@ seo_desc_apple = "Nº 1 no Apple Music em {{ .Country }}: “{{ .Title }}”, de
 seo_desc_apple-albums = "Álbum nº 1 no Apple Music em {{ .Country }}: “{{ .Title }}”, de {{ .Artist }}. Top {{ .Count }} álbuns completo. {{ .Date }}."
 seo_desc_deezer = "Nº 1 no Deezer em {{ .Country }}: “{{ .Title }}”, de {{ .Artist }}. Top {{ .Count }} completo com variação diária e picos. {{ .Date }}."
 seo_desc_lastfm = "Nº 1 no Last.fm em {{ .Country }}: “{{ .Title }}”, de {{ .Artist }}. Top {{ .Count }} músicas por ouvintes. {{ .Date }}."
-seo_desc_musicmetrics = "Nº 1 do mundo agora: “{{ .Title }}”, de {{ .Artist }}. O Global 200 combina as paradas do YouTube, Apple Music e Deezer em 90+ países. {{ .Date }}."
+seo_desc_musicmetrics = "Nº 1 do mundo agora: “{{ .Title }}”, de {{ .Artist }}. O Global 200 combina as paradas do YouTube, Apple Music e Deezer em 170+ países. {{ .Date }}."
 seo_title_hub_youtube = "Paradas musicais do YouTube por país — Clipes em alta"
 seo_title_hub_apple = "Paradas do Apple Music por país — Top 100 músicas"
 seo_title_hub_apple-albums = "Paradas de álbuns do Apple Music por país — Top 100"
@@ -268,7 +268,7 @@ seo_desc_country = "A música nº 1 em {{ .Country }} agora: “{{ .Title }}”,
 seo_title_countries = "Paradas musicais por país ({{ .Count }} países)"
 seo_desc_countries = "As músicas mais tocadas em {{ .Count }} países no YouTube, Apple Music e Deezer. Descubra o nº 1 de qualquer país, atualizado diariamente."
 seo_title_artists = "Os artistas mais populares do mundo agora — Ranking global"
-seo_desc_artists = "Os artistas mais populares do mundo agora, classificados pelas posições nas paradas do YouTube, Apple Music e Deezer em 90+ países."
+seo_desc_artists = "Os artistas mais populares do mundo agora, classificados pelas posições nas paradas do YouTube, Apple Music e Deezer em 170+ países."
 seo_title_week = "Semana {{ .Week }} de {{ .Year }}: os maiores sucessos do mundo"
 seo_desc_week = "O Global 200 da semana {{ .Week }} de {{ .Year }}. Nº 1: “{{ .Title }}”, de {{ .Artist }}. Os números um de cada país e os artistas da semana."
 seo_title_weekly = "Resumos semanais das paradas musicais"

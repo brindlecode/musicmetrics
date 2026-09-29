@@ -158,7 +158,7 @@ answer_song = "<strong>“{{ .Title }}” by {{ .Artist }}</strong> is on {{ .Ch
 
 # ------------------------------------------------------------------ home
 home_title = "MusicMetrics — Music Charts & Streaming Stats for Every Country"
-home_description = "What the world is listening to right now: #1 is “{{ .Title }}” by {{ .Artist }}. Live music charts from YouTube, Apple Music and Deezer for 90+ countries, updated daily."
+home_description = "What the world is listening to right now: #1 is “{{ .Title }}” by {{ .Artist }}. Live music charts from YouTube, Apple Music and Deezer for 170+ countries, updated daily."
 home_description_generic = "Live music charts and streaming statistics from YouTube, Apple Music and Deezer for every country."
 most_popular_song_world = "The most popular song in the world right now"
 lead_stats = "Charting in {{ .Countries }} countries · on {{ .Charts }} charts · days in the Global 200: {{ .Days }}"
@@ -180,7 +180,7 @@ artist_ranking = "Artist ranking"
 most_watched_24h = "Most watched on YouTube in the last 24 hours"
 browse_by_platform = "Browse by platform"
 about_home_h = "Music charts for every country, in one place"
-about_home_p1 = "MusicMetrics collects the official charts of YouTube, Apple Music and Deezer in more than 150 countries every day and keeps the full history: daily movement, peak positions, days on chart and YouTube daily views. The Global 200 combines all of them into one ranking of the most popular songs in the world."
+about_home_p1 = "MusicMetrics collects the official charts of YouTube, Apple Music and Deezer in more than 170 countries every day and keeps the full history: daily movement, peak positions, days on chart and YouTube daily views. The Global 200 combines all of them into one ranking of the most popular songs in the world."
 about_home_p2 = "Every number is calculated automatically from public data. Read exactly how in our"
 
 # ----------------------------------------------------------------- pages
@@ -245,7 +245,7 @@ seo_desc_apple = "#1 on Apple Music in {{ .Country }}: “{{ .Title }}” by {{ 
 seo_desc_apple-albums = "#1 album on Apple Music in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Full Top {{ .Count }} albums. {{ .Date }}."
 seo_desc_deezer = "#1 on Deezer in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Full Top {{ .Count }} with daily movement and peaks. {{ .Date }}."
 seo_desc_lastfm = "#1 on Last.fm in {{ .Country }}: “{{ .Title }}” by {{ .Artist }}. Top {{ .Count }} tracks by listeners. {{ .Date }}."
-seo_desc_musicmetrics = "#1 in the world right now: “{{ .Title }}” by {{ .Artist }}. The Global 200 combines YouTube, Apple Music and Deezer charts in 90+ countries. {{ .Date }}."
+seo_desc_musicmetrics = "#1 in the world right now: “{{ .Title }}” by {{ .Artist }}. The Global 200 combines YouTube, Apple Music and Deezer charts in 170+ countries. {{ .Date }}."
 seo_title_hub_youtube = "YouTube Music Charts by Country — Trending Music Videos"
 seo_title_hub_apple = "Apple Music Charts by Country — Top 100 Songs"
 seo_title_hub_apple-albums = "Apple Music Album Charts by Country — Top 100 Albums"
@@ -268,7 +268,7 @@ seo_desc_country = "The #1 song in {{ .Country }} right now: “{{ .Title }}” 
 seo_title_countries = "Music Charts by Country ({{ .Count }} Countries)"
 seo_desc_countries = "Top songs in {{ .Count }} countries on YouTube, Apple Music and Deezer. Find the #1 song in any country, updated daily."
 seo_title_artists = "Top Artists in the World Right Now — Global Artist Ranking"
-seo_desc_artists = "The most popular artists in the world right now, ranked by their chart positions across YouTube, Apple Music and Deezer in 90+ countries."
+seo_desc_artists = "The most popular artists in the world right now, ranked by their chart positions across YouTube, Apple Music and Deezer in 170+ countries."
 seo_title_week = "Week {{ .Week }}, {{ .Year }}: The Biggest Songs in the World"
 seo_desc_week = "The Global 200 for week {{ .Week }} of {{ .Year }}. #1: “{{ .Title }}” by {{ .Artist }}. Number ones in every country and the top artists of the week."
 seo_title_weekly = "Weekly Music Chart Recaps"
