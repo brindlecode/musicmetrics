@@ -12,19 +12,19 @@
 
     <div class="grid grid--3">
       <a class="panel panel--ink" href="{{ "/charts/global/" | relLangURL }}" style="text-decoration:none">
-        <span class="eyebrow eyebrow--accent"><span class="pmark pmark--musicmetrics"></span>{{ i18n "cross_platform" }}</span>
+        <span class="eyebrow eyebrow--accent">{{ partialCached "plogo.html" "musicmetrics" "musicmetrics" }}{{ i18n "cross_platform" }}</span>
         <h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "global_200" }}</h2>
         <p class="muted small" style="margin:0">{{ i18n "lede_musicmetrics" (dict "Count" 200 "Country" "") }}</p>
       </a>
       {{- range $active }}{{ $slug := (partial "func/chart-info.html" (printf "%s_x" .p)).slug }}
       <a class="panel" href="{{ printf "/charts/%s/" $slug | relLangURL }}" style="text-decoration:none">
-        <span class="eyebrow"><span class="pmark pmark--{{ .p }}"></span>{{ i18n "charts_count" (dict "Count" (int .n)) }}</span>
+        <span class="eyebrow">{{ partialCached "plogo.html" .p .p }}{{ i18n "charts_count" (dict "Count" (int .n)) }}</span>
         <h2 style="font-size:1.8rem;margin:6px 0">{{ i18n (printf "hub_%s" .p) }}</h2>
         <p class="muted small" style="margin:0">{{ i18n (printf "hub_desc_%s" .p) }}</p>
       </a>
       {{- end }}
-      {{- if site.Data.albums }}<a class="panel" href="{{ "/charts/albums/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--apple-albums"></span>{{ i18n "cross_country" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "top_albums" }}</h2><p class="muted small" style="margin:0">{{ i18n "albums_desc" }}</p></a>{{ end }}
-      <a class="panel" href="{{ "/charts/youtube/most-viewed/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--youtube"></span>{{ i18n "records" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "most_viewed_videos" }}</h2><p class="muted small" style="margin:0">{{ i18n "most_viewed_desc" }}</p></a>
+      {{- if site.Data.albums }}<a class="panel" href="{{ "/charts/albums/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow">{{ partialCached "plogo.html" "apple-albums" "apple-albums" }}{{ i18n "cross_country" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "top_albums" }}</h2><p class="muted small" style="margin:0">{{ i18n "albums_desc" }}</p></a>{{ end }}
+      <a class="panel" href="{{ "/charts/youtube/most-viewed/" | relLangURL }}" style="text-decoration:none"><span class="eyebrow">{{ partialCached "plogo.html" "youtube" "youtube" }}{{ i18n "records" }}</span><h2 style="font-size:1.8rem;margin:6px 0">{{ i18n "most_viewed_videos" }}</h2><p class="muted small" style="margin:0">{{ i18n "most_viewed_desc" }}</p></a>
     </div>
 
     <section class="section">

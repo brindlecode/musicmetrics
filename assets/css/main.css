@@ -375,14 +375,18 @@ a.mini__t::after { content: ""; position: absolute; inset: 0; }
 .panel__head h3 { font-size: 1.25rem; display: flex; align-items: center; gap: 8px; }
 .panel__head a { font-size: .8125rem; font-weight: 600; }
 
-/* platform marks */
-.pmark { display: inline-block; width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-.pmark--youtube { background: #ff0033; }
-.pmark--apple { background: #fa2d48; background: linear-gradient(135deg, #fa2d48, #fc5c7d); }
-.pmark--apple-albums { background: #fc5c7d; }
-.pmark--deezer { background: #a238ff; }
-.pmark--lastfm { background: #d51007; }
-.pmark--musicmetrics { background: var(--accent); }
+/* platform logos (sprite) */
+.plogo { display: inline-block; width: 1em; height: 1em; flex-shrink: 0; vertical-align: -.125em; }
+.plogo--youtube { color: #ff0033; }
+.plogo--apple { color: #fa243c; }
+.plogo--deezer { color: #a238ff; }
+.plogo--lastfm { color: #d51007; }
+.plogo--spotify { color: #1db954; }
+.plogo--musicmetrics { color: var(--accent); }
+.chip .plogo { width: 16px; height: 16px; }
+.cta .plogo { width: 22px; height: 22px; }
+.cta--primary .plogo--apple { color: #fff; }
+.cta--primary:hover .plogo { color: currentColor; }
 
 /* --------------------------------------------------------------- stats --- */
 .stats { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--rule-strong); border-left: 1px solid var(--rule); }

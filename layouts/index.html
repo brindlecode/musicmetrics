@@ -60,7 +60,7 @@
     <div class="cols-3">
       {{- range first 3 .charts }}{{ $ch := index site.Data.charts . }}{{ $ci := partialCached "func/chart-info.html" . . }}
       <div class="panel">
-        <div class="panel__head"><h3><span class="pmark pmark--{{ $ci.platform }}"></span>{{ i18n (printf "chip_%s" $ci.platform) }}</h3><a href="{{ $ci.url | relLangURL }}">{{ i18n "view_all" }}</a></div>
+        <div class="panel__head"><h3>{{ partialCached "plogo.html" $ci.platform $ci.platform }}{{ i18n (printf "chip_%s" $ci.platform) }}</h3><a href="{{ $ci.url | relLangURL }}">{{ i18n "view_all" }}</a></div>
         {{ partialCached "mini-list.html" (dict "chart" $ch "n" 10) $ch.id 10 site.Language.Lang }}
       </div>
       {{- end }}
@@ -153,7 +153,7 @@
     <div class="grid grid--4">
       {{- range $slug, $p := dict "youtube" "youtube" "apple-music" "apple" "deezer" "deezer" "lastfm" "lastfm" }}
       {{- with site.GetPage (printf "/charts/%s" $slug) }}
-      <a class="panel" href="{{ .RelPermalink }}" style="text-decoration:none"><span class="eyebrow"><span class="pmark pmark--{{ $p }}"></span>{{ len .Pages }} {{ i18n "countries_lower" }}</span><h3 style="font-size:1.4rem;margin-top:6px">{{ i18n (printf "hub_%s" $p) }}</h3></a>
+      <a class="panel" href="{{ .RelPermalink }}" style="text-decoration:none"><span class="eyebrow">{{ partialCached "plogo.html" $p $p }}{{ len .Pages }} {{ i18n "countries_lower" }}</span><h3 style="font-size:1.4rem;margin-top:6px">{{ i18n (printf "hub_%s" $p) }}</h3></a>
       {{- end }}
       {{- end }}
     </div>

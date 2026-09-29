@@ -9,10 +9,10 @@
 {{- $yt := "" }}{{ with .video_id }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ else }}{{ $yt = printf "https://www.youtube.com/results?search_query=%s" (urlquery $q) }}{{ end -}}
 {{- $deezer := index (.links | default dict) "deezer" | default (printf "https://www.deezer.com/search/%s" (urlquery $q)) -}}
 <div class="cta-grid">
-  <a class="cta cta--primary" href="{{ $apple }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "note") "note" 20 }}<span>Apple Music<small>{{ i18n "listen_free_trial" }}</small></span></a>
-  <a class="cta" href="https://open.spotify.com/search/{{ urlquery $q }}" target="_blank" rel="nofollow noopener">{{ partialCached "icons.html" (dict "n" "note") "note" 20 }}<span>Spotify<small>{{ i18n "listen" }}</small></span></a>
-  <a class="cta" href="{{ $yt }}" target="_blank" rel="nofollow noopener">{{ partialCached "icons.html" (dict "n" "play") "play" 20 }}<span>YouTube<small>{{ i18n "watch" }}</small></span></a>
-  <a class="cta" href="{{ $deezer }}" target="_blank" rel="nofollow noopener">{{ partialCached "icons.html" (dict "n" "note") "note" 20 }}<span>Deezer<small>{{ i18n "listen" }}</small></span></a>
+  <a class="cta cta--primary" href="{{ $apple }}" target="_blank" rel="sponsored noopener">{{ partialCached "plogo.html" "apple" "apple" }}<span>Apple Music<small>{{ i18n "listen_free_trial" }}</small></span></a>
+  <a class="cta" href="https://open.spotify.com/search/{{ urlquery $q }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "spotify" "spotify" }}<span>Spotify<small>{{ i18n "listen" }}</small></span></a>
+  <a class="cta" href="{{ $yt }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "youtube" "youtube" }}<span>YouTube<small>{{ i18n "watch" }}</small></span></a>
+  <a class="cta" href="{{ $deezer }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "deezer" "deezer" }}<span>Deezer<small>{{ i18n "listen" }}</small></span></a>
   <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery $q }}&i=digital-music{{ $tag }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "cart") "cart" 20 }}<span>Amazon Music<small>{{ i18n "stream_or_buy" }}</small></span></a>
   <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery (printf "%s vinyl" .artist) }}{{ $tag }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "disc") "disc" 20 }}<span>{{ i18n "vinyl_cds" }}<small>{{ i18n "shop_on" }} Amazon</small></span></a>
   {{- with $aff.ticketsUrl }}

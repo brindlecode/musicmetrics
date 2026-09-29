@@ -16,13 +16,13 @@
     {{- end }}
 
     <nav class="chips" aria-label="{{ i18n "other_charts" }}">
-      {{- range $c.charts }}{{ $oi := partialCached "func/chart-info.html" . . }}<a class="chip" href="{{ $oi.url | relLangURL }}"><span class="pmark pmark--{{ $oi.platform }}"></span>{{ i18n (printf "chip_%s" $oi.platform) }}</a>{{ end }}
+      {{- range $c.charts }}{{ $oi := partialCached "func/chart-info.html" . . }}<a class="chip" href="{{ $oi.url | relLangURL }}">{{ partialCached "plogo.html" $oi.platform $oi.platform }}{{ i18n (printf "chip_%s" $oi.platform) }}</a>{{ end }}
     </nav>
 
     <div class="cols-2">
       {{- range $c.charts }}{{ $ch := index site.Data.charts . }}{{ $oi := partialCached "func/chart-info.html" . . }}
       <section class="panel">
-        <div class="panel__head"><h3><span class="pmark pmark--{{ $oi.platform }}"></span>{{ partialCached "func/chart-title.html" . . site.Language.Lang }}</h3></div>
+        <div class="panel__head"><h3>{{ partialCached "plogo.html" $oi.platform $oi.platform }}{{ partialCached "func/chart-title.html" . . site.Language.Lang }}</h3></div>
         {{ partialCached "mini-list.html" (dict "chart" $ch "n" 10) $ch.id 10 site.Language.Lang }}
         <p style="margin:12px 0 0"><a class="btn btn--ghost btn--sm" href="{{ $oi.url | relLangURL }}">{{ i18n "full_chart" (dict "N" $ch.total) }} →</a></p>
       </section>

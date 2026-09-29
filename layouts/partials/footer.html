@@ -3,7 +3,7 @@
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotFooter "kind" "inline") }}
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="logo" href="{{ "/" | relLangURL }}">{{ partial "logo.html" . }}<span class="logo__word">Music<b>Metrics</b></span></a>
+        <a class="logo" href="{{ "/" | relLangURL }}">{{ partial "logo.html" . }}<span class="logo__word" lang="en" translate="no">Music<b>Metrics</b></span></a>
         <p>{{ i18n "footer_about" }}</p>
       </div>
       <div>
@@ -37,7 +37,7 @@
         </ul>
       </div>
       <div>
-        <h2>MusicMetrics</h2>
+        <h2 lang="en" translate="no">MusicMetrics</h2>
         <ul>
           <li><a href="{{ "/about/" | relLangURL }}">{{ i18n "about" }}</a></li>
           <li><a href="{{ "/methodology/" | relLangURL }}">{{ i18n "methodology" }}</a></li>
