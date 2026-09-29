@@ -3,8 +3,8 @@ public/
 resources/_gen/
 .hugo_build.lock
 
-# Raw API responses (regenerated every run)
-store/raw/
+# Data store: checked out from the `store` branch (see workflow)
+store/
 
 # Site data is generated from store/ by scripts/build-data.js
 data/

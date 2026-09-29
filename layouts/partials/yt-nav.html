@@ -1,0 +1,6 @@
+<nav class="chips" aria-label="YouTube">
+  <a class="chip" href="{{ "/charts/youtube/daily/" | relLangURL }}"{{ if eq .Type "yt-daily" }} aria-current="page"{{ end }}>{{ i18n "yt_nav_daily" }}</a>
+  <a class="chip" href="{{ "/charts/youtube/most-viewed/" | relLangURL }}"{{ if eq .Type "most-viewed" }} aria-current="page"{{ end }}>{{ i18n "yt_nav_alltime" }}</a>
+  <a class="chip" href="{{ "/charts/youtube/artists/" | relLangURL }}"{{ if eq .Type "yt-artists" }} aria-current="page"{{ end }}>{{ i18n "yt_nav_artists" }}</a>
+  <a class="chip" href="{{ "/charts/youtube/" | relLangURL }}">{{ i18n "yt_nav_countries" }}</a>
+</nav>

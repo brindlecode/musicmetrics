@@ -20,3 +20,9 @@
 {{- if site.Data.youtube_most_viewed -}}
   {{- $.AddPage (dict "path" "youtube/most-viewed" "title" "Most viewed" "kind" "page" "type" "most-viewed" "dates" (dict "lastmod" $updated)) -}}
 {{- end -}}
+{{- if site.Data.youtube_daily -}}
+  {{- $.AddPage (dict "path" "youtube/daily" "title" "YouTube daily" "kind" "page" "type" "yt-daily" "dates" (dict "lastmod" $updated)) -}}
+{{- end -}}
+{{- if site.Data.youtube_artists -}}
+  {{- $.AddPage (dict "path" "youtube/artists" "title" "YouTube artists" "kind" "page" "type" "yt-artists" "dates" (dict "lastmod" $updated)) -}}
+{{- end -}}

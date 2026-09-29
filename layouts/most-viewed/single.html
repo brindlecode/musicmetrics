@@ -12,6 +12,7 @@
       <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "updated" }} <time data-rel datetime="{{ site.Data.meta.updated }}">{{ (time.AsTime site.Data.meta.updated).Format "2006-01-02 15:04" }} UTC</time></span><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>
     </header>
     <p class="answer">{{ i18n "faq_mv_a1" (dict "Title" $top.title "Artist" $top.artist "Views" (lang.FormatNumberCustom 0 $top.views) "Date" "") | safeHTML }}</p>
+    {{ partial "yt-nav.html" . }}
     <div class="stats" style="margin-bottom:24px">
       <div class="stat"><span class="stat__v">{{ len $bill }}</span><span class="stat__l">{{ i18n "billion_club" }}</span></div>
       <div class="stat"><span class="stat__v">{{ partial "func/num.html" $top.views }}</span><span class="stat__l">{{ i18n "record_views" }}</span></div>
@@ -28,7 +29,7 @@
         {{- range $list }}
           <tr>
             <td class="r big">{{ .rank }}</td>
-            <td><div class="cell-song"><img src="https://i.ytimg.com/vi/{{ .video_id }}/default.jpg" alt="" width="53" height="40" style="width:53px" loading="lazy"><span><strong>{{ .title }}</strong><br><span class="muted small">{{ .artist }}</span></span></div></td>
+            <td><div class="cell-song"><img src="https://i.ytimg.com/vi/{{ .video_id }}/default.jpg" alt="" width="53" height="40" style="width:53px" loading="lazy"><span><strong>{{ .title }}</strong><br><span class="muted small">{{ if .a }}<a href="{{ cond .al (printf "/artists/%s/" .a | relLangURL) (printf "/artists/%s/" .a) }}">{{ .artist }}</a>{{ else }}{{ .artist }}{{ end }}</span></span></div></td>
             <td class="r"><strong>{{ lang.FormatNumberCustom 0 .views }}</strong></td>
             <td class="r hide-m">{{ with .views_day }}+{{ partial "func/num.html" . }}{{ else }}–{{ end }}</td>
             <td class="r hide-m">{{ with .published }}{{ substr . 0 4 }}{{ end }}</td>

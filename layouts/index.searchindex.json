@@ -20,4 +20,6 @@
 {{- end -}}
 {{- $out = $out | append (dict "k" "p" "n" "Global 200" "a" "MusicMetrics" "u" "charts/global/" "w" 5 "i" "/flags/global.svg" "fl" 1) -}}
 {{- $out = $out | append (dict "k" "p" "n" "YouTube most viewed music videos" "a" "Billion Views Club" "u" "charts/youtube/most-viewed/" "w" 3 "f" "▶") -}}
+{{- $out = $out | append (dict "k" "p" "n" "YouTube daily most viewed" "a" "Last 24 hours" "u" "charts/youtube/daily/" "w" 3 "f" "▶") -}}
+{{- $out = $out | append (dict "k" "p" "n" "Most viewed artists on YouTube" "a" "Total views" "u" "charts/youtube/artists/" "w" 3 "f" "▶") -}}
 {{- $out | jsonify -}}

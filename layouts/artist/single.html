@@ -63,6 +63,35 @@
       </div>
     </section>
 
+    {{- with $a.yt }}
+    <section class="section" id="youtube">
+      <div class="section-head"><h2>{{ partialCached "plogo.html" "youtube" "youtube" }} {{ i18n "yt_of" (dict "Name" $a.name) }}</h2><a href="{{ "/charts/youtube/artists/" | relLangURL }}">{{ i18n "yt_nav_artists" }} →</a></div>
+      <div class="stats" style="margin-bottom:16px">
+        <div class="stat"><span class="stat__v">{{ partial "func/num.html" .total }}</span><span class="stat__l">{{ i18n "total_views" }}</span></div>
+        <div class="stat"><span class="stat__v">{{ if .daily }}+{{ partial "func/num.html" .daily }}{{ else }}–{{ end }}</span><span class="stat__l">{{ i18n "views_24h" }}</span></div>
+        <div class="stat"><span class="stat__v">{{ .videos }}</span><span class="stat__l">{{ i18n "videos" }}</span></div>
+        {{- with $a.subscribers }}<div class="stat"><span class="stat__v">{{ partial "func/num.html" . }}</span><span class="stat__l">{{ i18n "yt_subscribers" }}</span></div>{{ end }}
+      </div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th class="r">#</th><th>{{ i18n "video" }}</th><th class="r">{{ i18n "views" }}</th><th class="r">{{ i18n "views_24h" }}</th><th class="r hide-m">{{ i18n "year" }}</th><th></th></tr></thead>
+          <tbody>
+          {{- range $i, $v := .top }}
+            <tr>
+              <td class="r big">{{ add $i 1 }}</td>
+              <td><div class="cell-song"><img src="https://i.ytimg.com/vi/{{ $v.id }}/default.jpg" alt="" width="53" height="40" style="width:53px" loading="lazy"><strong>{{ $v.t }}</strong></div></td>
+              <td class="r"><strong>{{ partial "func/num.html" $v.v }}</strong></td>
+              <td class="r">{{ with $v.vd }}+{{ partial "func/num.html" . }}{{ else }}–{{ end }}</td>
+              <td class="r hide-m">{{ with $v.pub }}{{ substr . 0 4 }}{{ end }}</td>
+              <td class="r"><button class="play" type="button" data-yt="{{ $v.id }}" aria-label="{{ i18n "play_video" }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button></td>
+            </tr>
+          {{- end }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+    {{- end }}
+
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
 
     {{- with $a.countries }}

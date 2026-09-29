@@ -127,21 +127,31 @@ function updateYoutubeViews(charts) {
     if (c.platform !== 'youtube') continue;
     for (const i of c.items) meta[i.video_id] = meta[i.video_id] || i;
   }
+  // Channel -> artist, for videos found through an artist's own channel.
+  const chanArtist = {};
+  for (const [slug, a] of Object.entries(readJSON(path.join(CATALOG_DIR, 'artists.json'), {}))) if (a.yc) chanArtist[a.yc] = slug;
+  // Snapshots are [hours since epoch, views]; older runs stored ISO strings.
+  const hrs = (t) => (typeof t === 'number' ? t : Math.round(Date.parse(t + 'Z') / 36e5));
+  const nowH = Math.round(NOW.getTime() / 36e5);
   if (raw && raw.videos) {
     for (const [id, v] of Object.entries(raw.videos)) {
       const h = hist[id] || (hist[id] = { s: [] });
       h.t = v.title; h.c = v.channel; h.ci = v.channel_id; h.cat = v.category; h.pub = (v.published || '').slice(0, 10);
+      if (v.artist) h.ar = v.artist;
+      if (!h.ar && chanArtist[h.ci]) h.ar = chanArtist[h.ci];
       if (meta[id]) { h.a = meta[id].artist; h.tt = meta[id].title; }
       h.v = v.views;
-      h.s.push([ts.slice(0, 16), v.views]);
+      h.s = h.s.map(([t, x]) => [hrs(t), x]).filter(([t]) => t !== nowH);
+      h.s.push([nowH, v.views]);
       // keep ~10 days of snapshots (one per run)
-      h.s = h.s.filter(([t]) => (NOW - Date.parse(t + 'Z')) < 10.5 * 864e5).slice(-12);
-      h.seen = ts.slice(0, 10);
+      h.s = h.s.filter(([t]) => nowH - t < 10.5 * 24).slice(-12);
+      h.seen = TODAY;
     }
   }
   // Drop videos no longer refreshed for 60 days (unless in the Billion Views Club).
   for (const [id, h] of Object.entries(hist)) {
     if (h.v < 1e9 && h.seen && daysBetween(h.seen, TODAY) > 60) delete hist[id];
+    else if (!h.ar && chanArtist[h.ci]) h.ar = chanArtist[h.ci];
   }
   writeJSON(file, hist);
 
@@ -150,7 +160,7 @@ function updateYoutubeViews(charts) {
     const [lt, lv] = s[s.length - 1];
     let best = null;
     for (const [t, v] of s) {
-      const age = (Date.parse(lt + 'Z') - Date.parse(t + 'Z')) / 36e5;
+      const age = hrs(lt) - hrs(t);
       if (age >= min && (!best || Math.abs(age - target) < Math.abs(best.age - target))) best = { age, v };
     }
     return best && lv >= best.v ? Math.round(((lv - best.v) / best.age) * target) : undefined;
@@ -393,6 +403,37 @@ async function main() {
     };
   }
 
+  // ---- YouTube: every tracked video grouped by artist (kworb-style artist pages)
+  const vtitle = (h) => h.tt || parseArtistAndTitle(h.t || '', h.c || '').title || h.t;
+  const byArtist = {};
+  for (const [id, h] of Object.entries(yt.hist)) {
+    if (!h.ar) continue;
+    (byArtist[h.ar] = byArtist[h.ar] || []).push([id, h]);
+  }
+  const ytArtists = [];
+  for (const [slug, vids] of Object.entries(byArtist)) {
+    const total = vids.reduce((n, [, h]) => n + (h.v || 0), 0);
+    const daily = vids.reduce((n, [id]) => n + (yt.daily[id] || 0), 0);
+    const top = vids.sort((x, y) => (y[1].v || 0) - (x[1].v || 0));
+    const entry = {
+      total, daily, videos: vids.length,
+      top: top.slice(0, 15).map(([id, h]) => ({ id, t: vtitle(h), v: h.v, vd: yt.daily[id] || null, pub: h.pub || '' })),
+    };
+    if (artistsOut[slug]) artistsOut[slug].yt = entry;
+    const c = cat.artists[slug];
+    if (c) ytArtists.push({ slug, name: c.n, total, daily, videos: vids.length, image: (artistsOut[slug] || {}).image || c.img || '', page: artistPages.has(slug), loc: locArtists.has(slug), top: entry.top[0] });
+  }
+  const ytArtistRank = ytArtists.sort((a, b) => b.total - a.total).slice(0, 1000).map((a, i) => ({ rank: i + 1, ...a }));
+  const ytDaily = Object.entries(yt.daily)
+    .filter(([id, d]) => d > 0 && yt.hist[id] && (yt.hist[id].cat === '10' || yt.hist[id].ar))
+    .sort((a, b) => b[1] - a[1]).slice(0, 500)
+    .map(([id, d], i) => {
+      const h = yt.hist[id];
+      const parsed = h.tt ? { title: h.tt, artist: h.a } : parseArtistAndTitle(h.t || '', h.c || '');
+      const ar = h.ar && artistPages.has(h.ar) ? h.ar : '';
+      return { rank: i + 1, video_id: id, title: parsed.title, artist: (h.ar && cat.artists[h.ar] && cat.artists[h.ar].n) || parsed.artist, a: ar, al: ar ? locArtists.has(ar) : false, views: h.v, views_day: d, views_week: yt.weekly[id] || null, published: h.pub || '' };
+    });
+
   // ---- related artists: co-occurrence on the same charts (inverted index)
   const byChart = {};
   for (const a of artistList) if (artistPages.has(a.slug)) for (const c of a.charts) (byChart[c] = byChart[c] || []).push(a.slug);
@@ -465,12 +506,13 @@ async function main() {
 
   // ---- YouTube most viewed / billion club
   const mostViewed = Object.entries(yt.hist)
-    .filter(([, h]) => h.v >= 1e8 && (h.cat === '10' || h.v >= 1e9))
+    .filter(([, h]) => h.v >= 1e8 && (h.cat === '10' || h.ar || h.v >= 1e9))
     .sort((a, b) => b[1].v - a[1].v)
     .slice(0, 1000)
     .map(([id, h], i) => {
       const parsed = h.tt ? { title: h.tt, artist: h.a } : parseArtistAndTitle(h.t || '', h.c || '');
-      return { rank: i + 1, video_id: id, title: parsed.title, artist: parsed.artist, channel: h.c, views: h.v, views_day: yt.daily[id] || null, views_week: yt.weekly[id] || null, published: h.pub || '' };
+      const ar = h.ar && artistPages.has(h.ar) ? h.ar : '';
+      return { rank: i + 1, video_id: id, title: parsed.title, artist: (h.ar && cat.artists[h.ar] && cat.artists[h.ar].n) || parsed.artist, a: ar, al: ar ? locArtists.has(ar) : false, channel: h.c, views: h.v, views_day: yt.daily[id] || null, views_week: yt.weekly[id] || null, published: h.pub || '' };
     });
 
   // ---- albums (top 500)
@@ -502,12 +544,15 @@ async function main() {
   writeJSON(path.join(DATA_DIR, 'countries.json'), countriesOut);
   writeJSON(path.join(DATA_DIR, 'albums.json'), albumList);
   writeJSON(path.join(DATA_DIR, 'youtube_most_viewed.json'), mostViewed);
+  writeJSON(path.join(DATA_DIR, 'youtube_daily.json'), ytDaily);
+  writeJSON(path.join(DATA_DIR, 'youtube_artists.json'), ytArtistRank);
   if (fs.existsSync(WEEKLY_STORE)) for (const f of fs.readdirSync(WEEKLY_STORE)) fs.cpSync(path.join(WEEKLY_STORE, f), path.join(DATA_DIR, 'weekly', f));
   const counts = {
     charts: Object.keys(out).length, songs: Object.keys(cat.songs).length, artists: Object.keys(cat.artists).length,
     songs_now: Object.keys(songs).length, artists_now: artistList.length,
     song_pages: Object.keys(songsOut).length, artist_pages: Object.keys(artistsOut).length,
     countries: Object.keys(countriesOut).length, videos: Object.keys(yt.hist).length,
+    yt_artists: ytArtists.length, yt_views: ytArtists.reduce((n, a) => n + a.total, 0),
   };
   writeJSON(path.join(DATA_DIR, 'meta.json'), {
     updated: NOW.toISOString(), counts,
