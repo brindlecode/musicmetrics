@@ -53,3 +53,4 @@ Guardamos cada día una instantánea del número de vistas de cada vídeo que se
 - En la mayoría de las listas, las plataformas publican rankings, no número de reproducciones; no estimamos reproducciones que no podemos medir.
 - Las «tendencias» de YouTube son una selección propia de YouTube de vídeos musicales populares en un país, no un ranking puro de vistas.
 - Los nombres de artistas se normalizan automáticamente; si ves un error, [avísanos](/es/contact/).
+- **Spotify:** Spotify no ofrece sus listas ni sus reproducciones mediante una API pública y sus términos no permiten recopilarlas automáticamente, por lo que MusicMetrics no incluye datos de Spotify. Las páginas de listas y países enlazan a las [listas oficiales de Spotify](https://charts.spotify.com/); las de artistas enlazan al artista en Spotify (ID de Wikidata, CC0) y pueden cargar el reproductor oficial de Spotify.

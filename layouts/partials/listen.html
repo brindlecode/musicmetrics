@@ -7,10 +7,11 @@
 {{- if and $apple $aff.appleToken }}{{ $apple = printf "%s%sat=%s&ct=musicmetrics" $apple (cond (in $apple "?") "&" "?") $aff.appleToken }}{{ end -}}
 {{- if not $apple }}{{ $apple = printf "https://music.apple.com/search?term=%s" (urlquery $q) }}{{ if $aff.appleToken }}{{ $apple = printf "%s&at=%s&ct=musicmetrics" $apple $aff.appleToken }}{{ end }}{{ end -}}
 {{- $yt := "" }}{{ with .video_id }}{{ $yt = printf "https://www.youtube.com/watch?v=%s" . }}{{ else }}{{ $yt = printf "https://www.youtube.com/results?search_query=%s" (urlquery $q) }}{{ end -}}
+{{- $spotify := index (.links | default dict) "spotify" | default (printf "https://open.spotify.com/search/%s" (urlquery $q)) -}}
 {{- $deezer := index (.links | default dict) "deezer" | default (printf "https://www.deezer.com/search/%s" (urlquery $q)) -}}
 <div class="cta-grid">
   <a class="cta cta--primary" href="{{ $apple }}" target="_blank" rel="sponsored noopener">{{ partialCached "plogo.html" "apple" "apple" }}<span>Apple Music<small>{{ i18n "listen_free_trial" }}</small></span></a>
-  <a class="cta" href="https://open.spotify.com/search/{{ urlquery $q }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "spotify" "spotify" }}<span>Spotify<small>{{ i18n "listen" }}</small></span></a>
+  <a class="cta" href="{{ $spotify }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "spotify" "spotify" }}<span>Spotify<small>{{ i18n "listen" }}</small></span></a>
   <a class="cta" href="{{ $yt }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "youtube" "youtube" }}<span>YouTube<small>{{ i18n "watch" }}</small></span></a>
   <a class="cta" href="{{ $deezer }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "deezer" "deezer" }}<span>Deezer<small>{{ i18n "listen" }}</small></span></a>
   <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery $q }}&i=digital-music{{ $tag }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "cart") "cart" 20 }}<span>Amazon Music<small>{{ i18n "stream_or_buy" }}</small></span></a>

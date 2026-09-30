@@ -364,3 +364,17 @@ seo_desc_yt_artists = "{{ .Name }}, {{ .Views }} YouTube izlenmesiyle zirvede. T
 yt_daily_desc = "Şu anda en hızlı izlenme kazanan müzik videoları."
 yt_artists_desc = "Müzik videolarının toplam izlenmesine göre sanatçılar."
 
+
+# Spotify (links and official embed only)
+[play_on_spotify]
+other = "Spotify'da çal"
+
+[spotify_embed_note]
+other = "Spotify'ın resmi oynatıcısı yüklenir. Spotify çerez kullanabilir."
+
+[spotify_official]
+other = "Spotify resmi listesi"
+
+[spotify_official_title]
+other = "charts.spotify.com'daki resmi Spotify listesi. MusicMetrics Spotify verilerini yeniden yayınlamaz."
+

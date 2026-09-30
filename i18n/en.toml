@@ -385,3 +385,17 @@ other = "{{ .Count }} songs"
 [in_countries]
 one = "{{ .Count }} country"
 other = "{{ .Count }} countries"
+
+# Spotify (links and official embed only)
+[play_on_spotify]
+other = "Play on Spotify"
+
+[spotify_embed_note]
+other = "Loads Spotify's official player. Spotify may set cookies."
+
+[spotify_official]
+other = "Spotify official chart"
+
+[spotify_official_title]
+other = "Official Spotify chart on charts.spotify.com. MusicMetrics does not republish Spotify data."
+

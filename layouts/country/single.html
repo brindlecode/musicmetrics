@@ -17,6 +17,7 @@
 
     <nav class="chips" aria-label="{{ i18n "other_charts" }}">
       {{- range $c.charts }}{{ $oi := partialCached "func/chart-info.html" . . }}<a class="chip" href="{{ $oi.url | relLangURL }}">{{ partialCached "plogo.html" $oi.platform $oi.platform }}{{ i18n (printf "chip_%s" $oi.platform) }}</a>{{ end }}
+      {{- partialCached "spotify-chip.html" $cc $cc site.Language.Lang }}
     </nav>
 
     <div class="cols-2">

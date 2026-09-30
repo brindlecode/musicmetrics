@@ -105,7 +105,13 @@
 
     <section class="section" id="listen">
       <div class="section-head"><h2>{{ i18n "listen_to" (dict "Name" $a.name) }}</h2></div>
-      {{ partial "listen.html" (dict "artist" $a.name "links" (dict "apple" $a.links.apple "deezer" $a.links.deezer) "video_id" "") }}
+      {{- with $a.sp }}
+      <div class="sp-embed" data-sp="artist/{{ . }}">
+        <button class="btn" type="button">{{ partialCached "plogo.html" "spotify" "spotify" }}{{ i18n "play_on_spotify" }}</button>
+        <small>{{ i18n "spotify_embed_note" }}</small>
+      </div>
+      {{- end }}
+      {{ partial "listen.html" (dict "artist" $a.name "links" (dict "apple" $a.links.apple "deezer" $a.links.deezer "spotify" $a.links.spotify) "video_id" "") }}
     </section>
 
     {{ partial "faq.html" . }}

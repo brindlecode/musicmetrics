@@ -1,0 +1,7 @@
+{{- /* Outbound chip to Spotify's own official chart for a country ("global" allowed).
+       MusicMetrics does not republish Spotify data; this only links to charts.spotify.com. */ -}}
+{{- $cc := . -}}
+{{- $markets := slice "global" "ae" "ar" "at" "au" "be" "bg" "bo" "br" "by" "ca" "ch" "cl" "co" "cr" "cy" "cz" "de" "dk" "do" "ec" "ee" "eg" "es" "fi" "fr" "gb" "gr" "gt" "hk" "hn" "hu" "id" "ie" "il" "in" "is" "it" "jp" "kr" "kz" "lt" "lu" "lv" "ma" "mx" "my" "ng" "ni" "nl" "no" "nz" "pa" "pe" "ph" "pk" "pl" "pt" "py" "ro" "sa" "se" "sg" "sk" "sv" "th" "tr" "tw" "ua" "us" "uy" "ve" "vn" "za" -}}
+{{- if in $markets $cc -}}
+<a class="chip chip--ext" href="https://charts.spotify.com/charts/view/regional-{{ $cc }}-daily/latest" target="_blank" rel="nofollow noopener" title="{{ i18n "spotify_official_title" }}">{{ partialCached "plogo.html" "spotify" "spotify" }}{{ i18n "spotify_official" }}<span aria-hidden="true">↗</span></a>
+{{- end -}}

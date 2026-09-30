@@ -21,6 +21,8 @@
 
     <p class="answer">{{ i18n (cond $ci.albums "answer_chart_album" "answer_chart") (dict "Country" $cn "Platform" (cond $isGlobal "MusicMetrics Global 200" $ci.pname) "Title" $top.title "Artist" $top.artist "Days" $top.days "Peak" $top.peak) | safeHTML }}</p>
 
+    {{- if $isGlobal }}<nav class="chips" aria-label="{{ i18n "other_charts" }}">{{ partialCached "spotify-chip.html" "global" "global" site.Language.Lang }}</nav>{{ end }}
+
     {{- /* Other platforms in the same country */}}
     {{- if not $isGlobal }}
     {{- $others := slice }}
@@ -31,6 +33,7 @@
       <a class="chip" href="{{ $oi.url | relLangURL }}"{{ if eq . $c.id }} aria-current="page"{{ end }}>{{ partialCached "plogo.html" $oi.platform $oi.platform }}{{ i18n (printf "chip_%s" $oi.platform) }}</a>
       {{- end }}
       {{- if ne $ci.cc "global" }}<a class="chip" href="{{ printf "/countries/%s/" $ci.cc | relLangURL }}">{{ partialCached "flag.html" $ci.cc $ci.cc }} {{ i18n "all_charts_in" (dict "Country" $cn) }}</a>{{ end }}
+      {{- partialCached "spotify-chip.html" $ci.cc $ci.cc site.Language.Lang }}
     </nav>
     {{- end }}
 

@@ -385,3 +385,17 @@ other = "{{ .Count }}曲"
 [in_countries]
 one = "{{ .Count }}か国"
 other = "{{ .Count }}か国"
+
+# Spotify (links and official embed only)
+[play_on_spotify]
+other = "Spotifyで再生"
+
+[spotify_embed_note]
+other = "Spotify公式プレーヤーを読み込みます。Spotifyがクッキーを使用する場合があります。"
+
+[spotify_official]
+other = "Spotify公式チャート"
+
+[spotify_official_title]
+other = "charts.spotify.com の Spotify 公式チャート。MusicMetrics は Spotify のデータを転載していません。"
+
