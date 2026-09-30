@@ -79,7 +79,7 @@
     {{ partial "faq.html" . }}
 
     {{- $a0 := index $s.artists 0 -}}
-    {{- with index site.Data.artists $a0.s }}{{ $others := where .songs "k" "ne" $s.key }}{{ with $others }}
+    {{- with and $a0 $a0.s (index site.Data.artists $a0.s) }}{{ $others := where .songs "k" "ne" $s.key }}{{ with $others }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "more_by" (dict "Name" $a0.n) }}</h2><a href="{{ cond $a0.loc (printf "/artists/%s/" $a0.s | relLangURL) (printf "/artists/%s/" $a0.s) }}">{{ i18n "view_artist" }} →</a></div>
       <ol class="mini">
