@@ -177,6 +177,18 @@
       }
     });
   }
+  // Spotify: load the official embed only when asked (no Spotify requests before a click).
+  document.querySelectorAll('[data-sp] button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var box = b.parentNode;
+      var f = document.createElement('iframe');
+      f.src = 'https://open.spotify.com/embed/' + box.getAttribute('data-sp') + '?utm_source=generator';
+      f.title = 'Spotify';
+      f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      box.innerHTML = '';
+      box.appendChild(f);
+    });
+  });
   // Language menu: close on outside click and Escape.
   var lm = document.querySelector('.lang-menu');
   if (lm) {

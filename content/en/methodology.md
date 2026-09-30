@@ -53,3 +53,4 @@ We store a view-count snapshot for each tracked video every day. Daily views are
 - Platforms publish rankings, not stream counts, for most charts; we do not estimate streams we cannot measure.
 - YouTube "trending" is YouTube's own selection of popular music videos in a country, not a pure view ranking.
 - Artist names are normalized automatically; if you spot a mistake, please [let us know](/contact/).
+- **Spotify:** Spotify does not offer its charts or stream counts through a public API, and its terms do not allow collecting them automatically, so MusicMetrics does not include Spotify data. Chart and country pages link to the [official Spotify charts](https://charts.spotify.com/), artist pages link to the artist on Spotify (IDs from Wikidata, CC0) and can load Spotify's official player on request.

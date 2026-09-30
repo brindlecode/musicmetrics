@@ -53,3 +53,4 @@ Diariamente, registramos um retrato da contagem de visualizações de cada víde
 - Na maioria das paradas, as plataformas publicam rankings, não números de streams; não estimamos streams que não conseguimos medir.
 - O "em alta" do YouTube é uma seleção do próprio YouTube de clipes populares em um país, não um ranking puro de visualizações.
 - Os nomes dos artistas são normalizados automaticamente; se encontrar algum erro, [avise a gente](/pt/contact/).
+- **Spotify:** O Spotify não oferece suas paradas nem contagens de streams por uma API pública, e seus termos não permitem coletá-las automaticamente; por isso o MusicMetrics não inclui dados do Spotify. As páginas de paradas e países apontam para as [paradas oficiais do Spotify](https://charts.spotify.com/); as de artistas apontam para o artista no Spotify (IDs do Wikidata, CC0) e podem carregar o player oficial do Spotify.

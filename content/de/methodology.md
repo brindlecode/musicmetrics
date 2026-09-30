@@ -53,3 +53,4 @@ Wir speichern täglich einen Snapshot der Aufrufzahl jedes erfassten Videos. Die
 - Für die meisten Charts veröffentlichen die Plattformen Rankings, keine Streamzahlen; wir schätzen keine Streams, die wir nicht messen können.
 - YouTube-„Trends“ sind YouTubes eigene Auswahl beliebter Musikvideos in einem Land, kein reines Aufruf-Ranking.
 - Künstlernamen werden automatisch vereinheitlicht; wenn dir ein Fehler auffällt, [sag uns Bescheid](/de/contact/).
+- **Spotify:** Spotify stellt seine Charts und Streamzahlen nicht über eine öffentliche API bereit, und die Nutzungsbedingungen erlauben kein automatisches Erfassen; MusicMetrics enthält daher keine Spotify-Daten. Chart- und Länderseiten verlinken auf die [offiziellen Spotify-Charts](https://charts.spotify.com/), Künstlerseiten auf den Künstler bei Spotify (IDs aus Wikidata, CC0) und können auf Wunsch den offiziellen Spotify-Player laden.

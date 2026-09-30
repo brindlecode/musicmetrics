@@ -366,6 +366,7 @@ async function main() {
   for (const k of [...locArtists]) if (!artistPages.has(k)) locArtists.delete(k);
   const songLoc = (k) => songPages.has(k) && locSongs.has(k);
   const credit = (x) => ({ n: x.n, s: x.s, page: artistPages.has(x.s), loc: locArtists.has(x.s) });
+  const spotifyIds = (readJSON(path.join(CACHE_DIR, 'wikidata_spotify.json'), {}) || {}).map || {};
   const songSlug = (k) => k.replace(/--/g, '-');
 
   // ---- artist pages
@@ -400,7 +401,11 @@ async function main() {
       hist: { first: c.f, last: c.ls, best: c.b, countries: (c.cc || []).length },
       fans: dz.fans || null, albums: dz.albums || null,
       subscribers: ch ? ch.subscribers : null, channel_views: ch ? ch.views : null,
-      links: { deezer: dz.url || c.l.deezer || '', apple: c.l.apple || '', youtube: c.yc ? `https://www.youtube.com/channel/${c.yc}` : '' },
+      links: {
+        deezer: dz.url || c.l.deezer || '', apple: c.l.apple || '', youtube: c.yc ? `https://www.youtube.com/channel/${c.yc}` : '',
+        spotify: spotifyIds[slug] ? `https://open.spotify.com/artist/${spotifyIds[slug]}` : '',
+      },
+      sp: spotifyIds[slug] || undefined,
       songs: [...current.slice(0, 60), ...past.slice(0, 60)].map((k) => songRow(k)),
       top1: current.filter((k) => songs[k].positions.some((p) => p.r === 1)).length,
       related: [],

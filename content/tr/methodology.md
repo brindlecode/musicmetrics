@@ -53,3 +53,4 @@ Takip edilen her video için her gün izlenme sayısının anlık görüntüsün
 - Platformlar çoğu liste için dinlenme sayısı değil, sıralama yayımlar; ölçemediğimiz dinlenme sayılarını tahmin etmeyiz.
 - YouTube "trendler", YouTube'un bir ülkedeki popüler müzik videolarından kendi yaptığı seçkidir; salt izlenme sıralaması değildir.
 - Sanatçı adları otomatik olarak normalleştirilir; bir hata fark ederseniz lütfen [bize bildirin](/tr/contact/).
+- **Spotify:** Spotify listelerini ve dinlenme sayılarını herkese açık bir API ile sunmuyor, kullanım şartları da bunların otomatik toplanmasına izin vermiyor; bu yüzden MusicMetrics Spotify verisi içermez. Liste ve ülke sayfaları [resmi Spotify listelerine](https://charts.spotify.com/) bağlantı verir; sanatçı sayfaları sanatçının Spotify sayfasına yönlendirir (kimlikler Wikidata'dan, CC0) ve istenirse Spotify'ın resmi oynatıcısını açar.

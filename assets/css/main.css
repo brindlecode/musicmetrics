@@ -287,6 +287,8 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--rule); border-radius: 999px; background: var(--card); text-decoration: none; font-size: .875rem; font-weight: 600; white-space: nowrap;
 }
 .chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip--ext { border-style: dashed; color: var(--muted); }
+.chip--ext:hover { border-style: solid; }
 .chip[aria-current="page"], .chip.is-active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
 /* ---------------------------------------------------------- buttons --- */
@@ -582,3 +584,9 @@ a.pill:hover { border-color: var(--ink); color: var(--ink); }
   .site-header, .ticker, .bottom-nav, .ad, .site-footer, .aside, .play { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* Spotify: official embed, loaded only after a click */
+.sp-embed { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 16px; }
+.sp-embed small { color: var(--muted); font-size: .8125rem; }
+.sp-embed .plogo { width: 18px; height: 18px; color: #1db954; }
+.sp-embed iframe { width: 100%; height: 352px; border: 0; border-radius: 12px; }
