@@ -2,8 +2,8 @@ name: Update charts & deploy
 
 on:
   schedule:
-    # Once a day at 05:17 UTC (08:17 in Türkiye). Minute 17 avoids the top-of-hour queue.
-    - cron: '17 5 * * *'
+    # Once a day at 05:23 UTC (08:23 in Türkiye). Off-the-hour minute avoids the top-of-hour queue.
+    - cron: '23 5 * * *'
   workflow_dispatch:
     inputs:
       deploy:
