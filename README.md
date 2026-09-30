@@ -19,7 +19,7 @@ GitHub Actions (daily)                                      Netlify (static host
 - **SEO/AEO/GEO:** localized titles & descriptions, hreflang, canonical, JSON-LD (Organization, WebSite+SearchAction, BreadcrumbList, ItemList, Dataset, MusicGroup, MusicRecording, Article, FAQPage), answer boxes, `llms.txt` with live data, sitemap per language, IndexNow ping, AI crawlers allowed in `robots.txt`.
 
 - **Storage:** `store/` lives on the `store` branch (one fresh commit per day, so history never piles up; daily backups are kept 30 days as workflow artifacts). Check it out with `git worktree add store store` for local work. It holds: `history/` (positions), `catalog/` (every song & artist that ever charted — pages stay online for 180 days after they leave the charts), `charts/` (last good copy of every chart, used if a source fails), `weekly/` (weekly recap archive), `cache/`. `data/` is regenerated from it on every build (`node scripts/build-data.js --offline` needs no network).
-- **Schedule:** once a day (05:23 UTC).
+- **Schedule:** once a day (22:03 UTC, 01:03 in Türkiye).
 
 ## Data sources (all free)
 
