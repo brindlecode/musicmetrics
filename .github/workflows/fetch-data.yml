@@ -2,8 +2,9 @@ name: Update charts & deploy
 
 on:
   schedule:
-    # Once a day at 22:03 UTC (01:03 in Türkiye). Off-the-hour minute avoids the top-of-hour queue.
-    - cron: '3 22 * * *'
+    # Once a day. GitHub has been starting this schedule ~3 h late (22:03 UTC fired at
+    # 01:03-01:17 UTC), so it is set to 19:03 UTC to land near 01:00 in Türkiye.
+    - cron: '3 19 * * *'
   workflow_dispatch:
     inputs:
       deploy:
