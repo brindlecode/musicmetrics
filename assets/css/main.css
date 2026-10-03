@@ -594,3 +594,31 @@ a.pill:hover { border-color: var(--ink); color: var(--ink); }
 
 /* The hidden attribute must win over component display rules (filters rely on it). */
 [hidden] { display: none !important; }
+
+/* Spotify weekly positions line on song / artist pages */
+.sp-line { margin: 20px 0 0; align-items: center; }
+.sp-line__l { display: inline-flex; align-items: center; gap: 6px; font-size: .8125rem; font-weight: 700; flex-shrink: 0; }
+.sp-line__l .plogo, .row__act .plogo--spotify { color: #1db954; }
+
+/* ------------------------------------------------------------ admin --- */
+.admin .section { margin-top: 40px; }
+.admin-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin: 16px 0; }
+.admin-card { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); min-width: 0; }
+.admin-card__l { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.admin-card__v { font-size: 1.375rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.admin-card__s { font-size: .8125rem; color: var(--muted); }
+.admin-steps { margin: 8px 0 16px; padding-left: 1.3em; display: grid; gap: 6px; max-width: 80ch; }
+.admin-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0 16px; }
+.admin-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; margin-left: auto; }
+.admin-table td { vertical-align: middle; }
+.admin-table tr.is-done { background: color-mix(in srgb, var(--up, #0b7a3b) 8%, transparent); }
+.admin-links { white-space: nowrap; }
+.admin-links a + a { margin-left: 12px; }
+.admin-badge { font-size: .6875rem; font-weight: 700; color: var(--accent); border: 1px solid currentColor; border-radius: 99px; padding: 0 6px; vertical-align: 1px; }
+.admin-ok { color: var(--up, #0b7a3b); font-weight: 600; }
+.admin-warn { color: #b45309; font-weight: 600; }
+.admin-check { width: 20px; height: 20px; accent-color: var(--accent); }
+.admin-links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.admin-links-grid a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); text-decoration: none; }
+.admin-links-grid a:hover { border-color: var(--ink); }
+.admin-links-grid span { font-size: .8125rem; color: var(--muted); }

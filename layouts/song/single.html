@@ -41,6 +41,7 @@
     </div>
 
     {{- if $s.on }}
+    {{ partial "sp-positions.html" $s.spw }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "chart_positions" }}</h2></div>
       <div class="table-wrap">

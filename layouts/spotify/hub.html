@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $sp := site.Data.spotify -}}
+{{- $range := partialCached "sp-range.html" "r" $sp.week site.Language.Lang -}}
+{{- $list := slice }}{{ range $cc, $c := $sp.charts }}{{ $list = $list | append (dict "cc" $cc "c" $c "name" (partialCached "func/country-name.html" $cc $cc site.Language.Lang) "o" (cond (eq $cc "global") 0 1)) }}{{ end -}}
+<div class="wrap layout">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ partialCached "plogo.html" "spotify" "spotify" }}<span lang="en" translate="no">Spotify</span> · {{ i18n "sp_weekly" }}</span>
+      <h1>{{ i18n "h1_sp_hub" }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_sp_hub" (dict "Count" (len $list) "Range" $range) }}</p>
+      <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "sp_week_of" (dict "Range" $range) }}</span><a href="https://charts.spotify.com/" target="_blank" rel="nofollow noopener">charts.spotify.com ↗</a></div>
+    </header>
+    {{- with index $sp.charts "global" }}{{ with index .songs 0 }}
+    <p class="answer">{{ i18n "answer_sp" (dict "Country" (i18n "worldwide") "Title" .t "Artist" .a "Weeks" .w) | safeHTML }}</p>
+    {{- end }}{{ end }}
+    <div class="toolbar" data-filter-for="sp-grid"><input class="input grow" type="search" placeholder="{{ i18n "filter_countries" }}" aria-label="{{ i18n "filter_countries" }}"></div>
+    <div class="grid grid--3" id="sp-grid">
+      {{- range sort (sort $list "name") "o" }}{{ $s1 := index .c.songs 0 }}{{ $a1 := index .c.artists 0 }}
+      <div class="ccard" data-f="{{ .cc }} {{ .name }}">
+        <span class="ccard__flag">{{ partialCached "flag.html" .cc .cc }}</span>
+        <span style="min-width:0"><a class="ccard__name" href="{{ printf "/charts/spotify/%s/" .cc | relLangURL }}">{{ .name }}</a>
+        {{- with $s1 }}<span class="ccard__top">№1 {{ .t }} — {{ .a }}</span>{{ end }}
+        {{- with $a1 }}<span class="ccard__top">{{ i18n "artist" }} №1: {{ .n }}</span>{{ end }}</span>
+      </div>
+      {{- end }}
+    </div>
+    <p class="note" style="margin-top:20px">{{ i18n "sp_source" (dict "Range" $range "Count" 20) }}</p>
+  </div>
+</div>
+{{ end }}

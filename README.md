@@ -29,6 +29,7 @@ GitHub Actions (daily)                                      Netlify (static host
 | Apple Music "Most Played" RSS (songs + albums) + iTunes top songs, ~170 storefronts | no | `fetch-apple.js` |
 | Deezer API (Deezer Charts playlists, artist fans) | no | `fetch-deezer.js` |
 | Wikidata (Spotify artist ids, P1902, CC0 — weekly; used only for direct Spotify links and the click-to-load official embed, no Spotify data is collected) | no | `fetch-wikidata-spotify.js` |
+| Spotify weekly charts — CSVs downloaded **by hand** from charts.spotify.com ("Download CSV") into `spotify/weekly/`; top 20 songs / top 10 artists shown, no stream counts, not part of the Global 200. Owner checklist and upload link: `/admin/` | no | `scripts/lib/spotify-weekly.js` |
 | Last.fm API (optional) | `LASTFM_API_KEY` | `fetch-lastfm.js` |
 
 ## Repository secrets (Settings → Secrets and variables → Actions)

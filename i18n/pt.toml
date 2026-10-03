@@ -399,3 +399,60 @@ other = "Parada oficial do Spotify"
 [spotify_official_title]
 other = "Parada oficial do Spotify em charts.spotify.com. O MusicMetrics não republica dados do Spotify."
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify semanal"
+
+[h1_sp]
+other = "Top músicas semanais do Spotify · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Paradas semanais do Spotify"
+
+[lede_sp]
+other = "As {{ .Count }} músicas mais ouvidas no Spotify em {{ .Country }} na semana de {{ .Range }}, segundo a parada semanal oficial do Spotify."
+
+[lede_sp_hub]
+other = "As músicas e artistas mais ouvidos da semana no Spotify em {{ .Count }} mercados, segundo as paradas semanais oficiais do Spotify ({{ .Range }})."
+
+[answer_sp]
+other = "A música nº 1 no Spotify em {{ .Country }} nesta semana é <strong>“{{ .Title }}” de {{ .Artist }}</strong> ({{ .Weeks }} semanas na parada)."
+
+[sp_top_artists]
+other = "Artistas mais ouvidos no Spotify nesta semana · {{ .Country }}"
+
+[weeks_short]
+other = "Sem."
+
+[sp_full_chart]
+other = "Top {{ .Count }} completo no Spotify"
+
+[sp_source]
+other = "Fonte: Spotify Charts (charts.spotify.com), parada semanal de {{ .Range }}. O MusicMetrics mostra o top {{ .Count }}; as contagens de streams não são republicadas."
+
+[sp_week_of]
+other = "Semana de {{ .Range }}"
+
+[open_on_spotify]
+other = "Abrir no Spotify"
+
+[seo_title_sp]
+other = "Top semanal do Spotify {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "Nº 1 no Spotify em {{ .Country }} nesta semana: “{{ .Title }}” de {{ .Artist }}. Top {{ .Count }} músicas e artistas da parada semanal oficial do Spotify."
+
+[seo_title_sp_hub]
+other = "Paradas semanais do Spotify por país — Os nº 1 da semana"
+
+[seo_desc_sp_hub]
+other = "As músicas e artistas nº 1 da semana no Spotify no mundo e em {{ .Count }} mercados, segundo as paradas semanais oficiais do Spotify."
+
+[weeks_count]
+one = "{{ .Count }} semana"
+other = "{{ .Count }} semanas"
+
+[sp_hub_desc]
+other = "As músicas e artistas mais ouvidos da semana, das paradas semanais oficiais do Spotify."
+

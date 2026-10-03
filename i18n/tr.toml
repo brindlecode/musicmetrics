@@ -378,3 +378,60 @@ other = "Spotify resmi listesi"
 [spotify_official_title]
 other = "charts.spotify.com'daki resmi Spotify listesi. MusicMetrics Spotify verilerini yeniden yayınlamaz."
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify Haftalık"
+
+[h1_sp]
+other = "Spotify Haftalık En İyi Şarkılar · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Spotify Haftalık Listeleri"
+
+[lede_sp]
+other = "{{ .Range }} haftasında {{ .Country }} Spotify'da en çok dinlenen {{ .Count }} şarkı; Spotify'ın resmi haftalık listesinden."
+
+[lede_sp_hub]
+other = "Bu hafta {{ .Count }} pazarda Spotify'ın en çok dinlenen şarkıları ve sanatçıları; Spotify'ın resmi haftalık listelerinden ({{ .Range }})."
+
+[answer_sp]
+other = "Bu hafta {{ .Country }} Spotify'da 1 numara <strong>{{ .Artist }} – “{{ .Title }}”</strong> ({{ .Weeks }} haftadır listede)."
+
+[sp_top_artists]
+other = "Bu hafta Spotify'da en çok dinlenen sanatçılar · {{ .Country }}"
+
+[weeks_short]
+other = "Hafta"
+
+[sp_full_chart]
+other = "Spotify'da tam ilk {{ .Count }}"
+
+[sp_source]
+other = "Kaynak: Spotify Charts (charts.spotify.com), {{ .Range }} haftalık listesi. MusicMetrics ilk {{ .Count }} sırayı gösterir; dinlenme sayıları yayınlanmaz."
+
+[sp_week_of]
+other = "{{ .Range }} haftası"
+
+[open_on_spotify]
+other = "Spotify'da aç"
+
+[seo_title_sp]
+other = "Spotify Haftalık Liste {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "Bu hafta {{ .Country }} Spotify'da 1 numara: {{ .Artist }} – “{{ .Title }}”. Spotify'ın resmi haftalık listesinden ilk {{ .Count }} şarkı ve en çok dinlenen sanatçılar."
+
+[seo_title_sp_hub]
+other = "Ülkelere Göre Spotify Haftalık Listeleri — Bu Haftanın 1 Numaraları"
+
+[seo_desc_sp_hub]
+other = "Bu hafta dünyada ve {{ .Count }} pazarda Spotify'da 1 numara olan şarkılar ve sanatçılar; Spotify'ın resmi haftalık listelerinden."
+
+[weeks_count]
+one = "{{ .Count }} hafta"
+other = "{{ .Count }} hafta"
+
+[sp_hub_desc]
+other = "Spotify'ın resmi haftalık listelerinden bu haftanın en çok dinlenen şarkıları ve sanatçıları."
+

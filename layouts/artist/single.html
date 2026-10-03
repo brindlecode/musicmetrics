@@ -42,6 +42,7 @@
       {{- else }}<div class="stat"><span class="stat__v">#{{ $best.rank }}</span><span class="stat__l">{{ i18n "best_position" }}</span></div>{{ end }}
     </div>
 
+    {{ partial "sp-positions.html" $a.spw }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "songs_on_charts" (dict "Name" $a.name) }}</h2></div>
       <div class="table-wrap">

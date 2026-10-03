@@ -39,6 +39,16 @@
   {{- $d = i18n "seo_desc_yt_daily" (dict "Title" $top.title "Artist" $top.artist "Views" (partial "func/num.html" $top.views_day)) -}}
   {{- $img = printf "https://i.ytimg.com/vi/%s/hqdefault.jpg" $top.video_id -}}
   {{- $big = true -}}
+{{- else if and (eq .Type "spotify") .Params.cc -}}
+  {{- $c := index site.Data.spotify.charts .Params.cc -}}
+  {{- $cn := partialCached "func/country-name.html" .Params.cc .Params.cc site.Language.Lang -}}
+  {{- $top := index $c.songs 0 -}}
+  {{- $t = i18n "seo_title_sp" (dict "Country" $cn "End" ((time.AsTime site.Data.spotify.week) | time.Format ":date_medium")) -}}
+  {{- $d = i18n "seo_desc_sp" (dict "Country" $cn "Title" $top.t "Artist" $top.a "Count" (len $c.songs)) -}}
+  {{- with $top.img }}{{ $img = . }}{{ end -}}
+{{- else if eq .Type "spotify" -}}
+  {{- $t = i18n "seo_title_sp_hub" -}}
+  {{- $d = i18n "seo_desc_sp_hub" (dict "Count" (len site.Data.spotify.charts)) -}}
 {{- else if eq .Type "yt-artists" -}}
   {{- $top := index site.Data.youtube_artists 0 -}}
   {{- $t = i18n "seo_title_yt_artists" -}}

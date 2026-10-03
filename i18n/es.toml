@@ -399,3 +399,60 @@ other = "Lista oficial de Spotify"
 [spotify_official_title]
 other = "Lista oficial de Spotify en charts.spotify.com. MusicMetrics no republica datos de Spotify."
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify semanal"
+
+[h1_sp]
+other = "Top canciones semanales de Spotify · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Listas semanales de Spotify"
+
+[lede_sp]
+other = "Las {{ .Count }} canciones más escuchadas en Spotify en {{ .Country }} la semana del {{ .Range }}, según la lista semanal oficial de Spotify."
+
+[lede_sp_hub]
+other = "Las canciones y artistas más escuchados esta semana en Spotify en {{ .Count }} mercados, según las listas semanales oficiales de Spotify ({{ .Range }})."
+
+[answer_sp]
+other = "La canción n.º 1 en Spotify en {{ .Country }} esta semana es <strong>“{{ .Title }}” de {{ .Artist }}</strong> ({{ .Weeks }} semanas en la lista)."
+
+[sp_top_artists]
+other = "Artistas más escuchados en Spotify esta semana · {{ .Country }}"
+
+[weeks_short]
+other = "Sem."
+
+[sp_full_chart]
+other = "Top {{ .Count }} completo en Spotify"
+
+[sp_source]
+other = "Fuente: Spotify Charts (charts.spotify.com), lista semanal del {{ .Range }}. MusicMetrics muestra el top {{ .Count }}; no se republican las reproducciones."
+
+[sp_week_of]
+other = "Semana del {{ .Range }}"
+
+[open_on_spotify]
+other = "Abrir en Spotify"
+
+[seo_title_sp]
+other = "Top semanal de Spotify {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "N.º 1 en Spotify en {{ .Country }} esta semana: “{{ .Title }}” de {{ .Artist }}. Top {{ .Count }} canciones y artistas de la lista semanal oficial de Spotify."
+
+[seo_title_sp_hub]
+other = "Listas semanales de Spotify por país — Los n.º 1 de la semana"
+
+[seo_desc_sp_hub]
+other = "Las canciones y artistas n.º 1 de la semana en Spotify en el mundo y en {{ .Count }} mercados, según las listas semanales oficiales de Spotify."
+
+[weeks_count]
+one = "{{ .Count }} semana"
+other = "{{ .Count }} semanas"
+
+[sp_hub_desc]
+other = "Las canciones y artistas más escuchados de la semana, de las listas semanales oficiales de Spotify."
+

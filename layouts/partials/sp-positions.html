@@ -1,0 +1,7 @@
+{{- /* "Spotify Weekly: Worldwide #3 · Brazil #5 …" — input: list of {cc, r}. */ -}}
+{{- with . }}
+<nav class="chips sp-line" aria-label="Spotify">
+  <span class="sp-line__l">{{ partialCached "plogo.html" "spotify" "spotify" }}{{ i18n "sp_weekly" }}</span>
+  {{- range first 10 . }}<a class="chip" href="{{ printf "/charts/spotify/%s/" .cc | relLangURL }}">{{ partialCached "flag.html" .cc .cc }} {{ partialCached "func/country-name.html" .cc .cc site.Language.Lang }} <strong>#{{ .r }}</strong></a>{{ end }}
+</nav>
+{{- end }}

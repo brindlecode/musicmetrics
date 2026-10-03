@@ -16,6 +16,13 @@
   {{- $c = $c | append $charts -}}
   {{- if ne $p.Type "chart-albums" }}{{ $c = $c | append (dict "name" (i18n "hub_youtube") "url" ("/charts/youtube/" | relLangURL)) }}{{ end -}}
   {{- $c = $c | append (dict "name" (index $names $p.Type) "url" "") -}}
+{{- else if eq $p.Type "spotify" -}}
+  {{- $c = $c | append $charts -}}
+  {{- if $p.Params.cc -}}
+    {{- $c = $c | append (dict "name" (i18n "sp_weekly") "url" ("/charts/spotify/" | relLangURL)) | append (dict "name" (partialCached "func/country-name.html" $p.Params.cc $p.Params.cc site.Language.Lang) "url" "") -}}
+  {{- else -}}
+    {{- $c = $c | append (dict "name" (i18n "sp_weekly") "url" "") -}}
+  {{- end -}}
 {{- else if and (eq $p.Type "charts") (eq $p.Layout "platform") -}}
   {{- $c = $c | append $charts | append (dict "name" (i18n (printf "hub_%s" $p.Params.platform)) "url" "") -}}
 {{- else if eq $p.Type "charts" -}}

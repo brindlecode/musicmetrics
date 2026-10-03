@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{- $sp := site.Data.spotify -}}
+{{- $cc := .Params.cc -}}
+{{- $c := index $sp.charts $cc -}}
+{{- $cn := partialCached "func/country-name.html" $cc $cc site.Language.Lang -}}
+{{- $range := partialCached "sp-range.html" "r" $sp.week site.Language.Lang -}}
+{{- $full := printf "https://charts.spotify.com/charts/view/regional-%s-weekly/%s" $cc $sp.week -}}
+<div class="wrap layout layout--aside">
+  <div>
+    {{ partial "crumbs.html" . }}
+    <header class="page-head">
+      <span class="eyebrow">{{ partialCached "plogo.html" "spotify" "spotify" }}<span lang="en" translate="no">Spotify</span> · {{ partialCached "flag.html" $cc $cc }} {{ $cn }}</span>
+      <h1>{{ i18n "h1_sp" (dict "Country" $cn) }}</h1>
+      <p class="page-head__lede">{{ i18n "lede_sp" (dict "Country" $cn "Count" (len $c.songs) "Range" $range) }}</p>
+      <div class="page-head__meta"><span><span class="live-dot"></span>{{ i18n "sp_week_of" (dict "Range" $range) }}</span><a href="{{ $full }}" target="_blank" rel="nofollow noopener">{{ i18n "sp_full_chart" (dict "Count" $c.total) }} ↗</a><button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button></div>
+    </header>
+    {{- with index $c.songs 0 }}
+    <p class="answer">{{ i18n "answer_sp" (dict "Country" $cn "Title" .t "Artist" .a "Weeks" .w) | safeHTML }}</p>
+    {{- end }}
+    {{ partial "sp-nav.html" $cc }}
+
+    <div class="chart__head" aria-hidden="true">
+      <span class="c-rank" style="text-align:center">#</span><span class="c-move hide-m" style="text-align:center">±</span><span class="c-art"></span>
+      <span>{{ i18n "song" }} / {{ i18n "artist" }}</span><span></span><span class="c-peak">{{ i18n "peak_short" }}</span><span class="c-days">{{ i18n "weeks_short" }}</span><span class="c-act"></span>
+    </div>
+    <ol class="chart" id="chart">
+    {{- range $i, $r := $c.songs }}
+      <li class="row{{ if eq $r.r 1 }} row--1{{ end }}">
+        <div class="row__pos"><span class="row__rank">{{ $r.r }}</span>{{ partialCached "move.html" $r.ch (printf "%v" $r.ch) site.Language.Lang }}</div>
+        {{- if $r.img }}<img class="row__art" src="{{ $r.img }}" alt="" width="56" height="56" loading="{{ if lt $i 8 }}eager{{ else }}lazy{{ end }}" decoding="async">{{ else }}<span class="row__art ph" aria-hidden="true">♪</span>{{ end }}
+        <div class="row__main">
+          {{- if $r.song }}<a class="row__title" href="{{ cond $r.sl (printf "/songs/%s/" $r.song | relLangURL) (printf "/songs/%s/" $r.song) }}">{{ $r.t }}</a>{{ else }}<span class="row__title">{{ $r.t }}</span>{{ end }}
+          <span class="row__artist">{{ range $j, $a := $r.ar }}{{ if $j }}, {{ end }}{{ if $a.page }}<a href="{{ cond $a.loc (printf "/artists/%s/" $a.s | relLangURL) (printf "/artists/%s/" $a.s) }}">{{ $a.n }}</a>{{ else }}{{ $a.n }}{{ end }}{{ end }}</span>
+          <span class="row__sub row__sub--m">{{ i18n "peak_short" }} {{ $r.pk }} · {{ i18n "weeks_count" (dict "Count" (int $r.w)) }}</span>
+        </div>
+        <div class="row__metric"></div>
+        <div class="row__peak">{{ $r.pk }}</div>
+        <div class="row__days">{{ $r.w }}</div>
+        <div class="row__act">{{ with $r.id }}<a class="play" href="https://open.spotify.com/track/{{ . }}" target="_blank" rel="nofollow noopener" aria-label="{{ i18n "open_on_spotify" }}: {{ $r.t }}">{{ partialCached "plogo.html" "spotify" "spotify" }}</a>{{ end }}</div>
+      </li>
+    {{- end }}
+    </ol>
+    <p style="margin:16px 0 0"><a class="btn btn--ghost btn--sm" href="{{ $full }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "spotify" "spotify" }}{{ i18n "sp_full_chart" (dict "Count" $c.total) }} ↗</a></p>
+
+    {{- with $c.artists }}
+    <section class="section">
+      <div class="section-head"><h2>{{ i18n "sp_top_artists" (dict "Country" $cn) }}</h2><a href="https://charts.spotify.com/charts/view/artist-{{ $cc }}-weekly/{{ $sp.week }}" target="_blank" rel="nofollow noopener">Spotify ↗</a></div>
+      <ol class="mini">
+        {{- range . }}
+        <li><span class="mini__rank">#{{ .r }}</span>{{ with .img }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .page }}<a class="mini__t" href="{{ cond .loc (printf "/artists/%s/" .s | relLangURL) (printf "/artists/%s/" .s) }}">{{ .n }}</a>{{ else }}<span class="mini__t">{{ .n }}</span>{{ end }}<span class="mini__a">{{ i18n "weeks_count" (dict "Count" (int .w)) }} · {{ i18n "peak_short" }} {{ .pk }}</span></span><span class="mini__m">{{ partialCached "move.html" .ch (printf "%v" .ch) site.Language.Lang }}</span></li>
+        {{- end }}
+      </ol>
+    </section>
+    {{- end }}
+
+    {{- if ne $cc "global" }}{{ with index site.Data.countries $cc }}
+    <p style="margin:24px 0 0"><a class="btn btn--ghost btn--sm" href="{{ printf "/countries/%s/" $cc | relLangURL }}">{{ partialCached "flag.html" $cc $cc }} {{ i18n "all_charts_in" (dict "Country" $cn) }} →</a></p>
+    {{- end }}{{ end }}
+    <p class="note" style="margin-top:20px">{{ i18n "sp_source" (dict "Range" $range "Count" (len $c.songs)) }}</p>
+  </div>
+  {{ partialCached "aside.html" . site.Language.Lang }}
+</div>
+{{ end }}
