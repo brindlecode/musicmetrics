@@ -132,8 +132,7 @@ p { margin: 0 0 1em; }
 }
 .eyebrow--accent { color: var(--accent); }
 .rule { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
-.stack > * + [hidden] { display: none !important; }
-* { margin-top: 16px; }
+.stack > * + * { margin-top: 16px; }
 
 /* ------------------------------------------------------------- header --- */
 .site-header {
