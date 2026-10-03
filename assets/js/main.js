@@ -85,10 +85,10 @@
     var only = bar.querySelector('input[data-only]');
     var rows = Array.prototype.slice.call(list.children).filter(function (el) { return !el.classList.contains('row-ad'); });
     function apply() {
-      var term = (q && q.value || '').toLowerCase().trim();
+      var term = norm(q && q.value || '').trim();
       var mode = only && only.checked ? only.getAttribute('data-only') : '';
       rows.forEach(function (r) {
-        var ok = !term || r.textContent.toLowerCase().indexOf(term) > -1;
+        var ok = !term || norm(r.getAttribute('data-f') || r.textContent).indexOf(term) > -1;
         if (ok && mode === 'new') ok = r.getAttribute('data-move') === 'new';
         if (ok && mode === 'up') ok = r.getAttribute('data-move') === 'new' || +r.getAttribute('data-move') > 0;
         r.hidden = !ok;

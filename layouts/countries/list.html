@@ -11,7 +11,7 @@
     <div class="toolbar" data-filter-for="country-grid"><input class="input grow" type="search" placeholder="{{ i18n "filter_countries" }}" aria-label="{{ i18n "filter_countries" }}"></div>
     <div class="grid grid--3" id="country-grid">
       {{- range sort $list "name" }}
-      <div class="ccard">
+      <div class="ccard" data-f="{{ .code }} {{ range .names }}{{ . }} {{ end }}">
         <span class="ccard__flag">{{ partialCached "flag.html" .code .code }}</span>
         <span style="min-width:0"><a class="ccard__name" href="{{ printf "/countries/%s/" .code | relLangURL }}">{{ .name }}</a>
         <span class="ccard__top">{{ with .top }}№1 {{ .title }} — {{ .artist }}{{ end }}</span>
