@@ -399,3 +399,60 @@ other = "Spotify公式チャート"
 [spotify_official_title]
 other = "charts.spotify.com の Spotify 公式チャート。MusicMetrics は Spotify のデータを転載していません。"
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify週間チャート"
+
+[h1_sp]
+other = "Spotify週間トップソング · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Spotify週間チャート"
+
+[lede_sp]
+other = "{{ .Range }}の週に{{ .Country }}のSpotifyで最も聴かれた{{ .Count }}曲（Spotify公式週間チャートより）。"
+
+[lede_sp_hub]
+other = "{{ .Count }}の市場で今週Spotifyで最も聴かれた曲とアーティスト（Spotify公式週間チャートより、{{ .Range }}）。"
+
+[answer_sp]
+other = "今週{{ .Country }}のSpotifyで1位は<strong>{{ .Artist }}の「{{ .Title }}」</strong>です（チャートイン{{ .Weeks }}週目）。"
+
+[sp_top_artists]
+other = "今週Spotifyで最も聴かれたアーティスト · {{ .Country }}"
+
+[weeks_short]
+other = "週"
+
+[sp_full_chart]
+other = "Spotifyでトップ{{ .Count }}をすべて見る"
+
+[sp_source]
+other = "出典：Spotify Charts（charts.spotify.com）、{{ .Range }}の週間チャート。MusicMetricsはトップ{{ .Count }}を掲載し、再生回数は転載していません。"
+
+[sp_week_of]
+other = "{{ .Range }}の週"
+
+[open_on_spotify]
+other = "Spotifyで開く"
+
+[seo_title_sp]
+other = "Spotify週間チャート {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "今週{{ .Country }}のSpotifyで1位：{{ .Artist }}の「{{ .Title }}」。Spotify公式週間チャートのトップ{{ .Count }}曲と人気アーティスト。"
+
+[seo_title_sp_hub]
+other = "国別Spotify週間チャート — 今週の1位"
+
+[seo_desc_sp_hub]
+other = "世界と{{ .Count }}の市場で今週Spotifyの1位になった曲とアーティスト（Spotify公式週間チャートより）。"
+
+[weeks_count]
+one = "{{ .Count }}週"
+other = "{{ .Count }}週"
+
+[sp_hub_desc]
+other = "Spotify公式週間チャートによる今週の人気曲とアーティスト。"
+

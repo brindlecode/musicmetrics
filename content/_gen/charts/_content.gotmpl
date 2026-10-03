@@ -26,3 +26,11 @@
 {{- if site.Data.youtube_artists -}}
   {{- $.AddPage (dict "path" "youtube/artists" "title" "YouTube artists" "kind" "page" "type" "yt-artists" "dates" (dict "lastmod" $updated)) -}}
 {{- end -}}
+{{- /* Spotify weekly (hand-downloaded official CSVs): hub + one page per market. */ -}}
+{{- with site.Data.spotify -}}
+  {{- $lm := time.AsTime (printf "%sT12:00:00Z" .week) -}}
+  {{- $.AddPage (dict "path" "spotify" "title" "Spotify Weekly" "kind" "section" "type" "spotify" "layout" "hub" "dates" (dict "lastmod" $lm "date" $lm)) -}}
+  {{- range $cc, $c := .charts -}}
+    {{- $.AddPage (dict "path" (printf "spotify/%s" $cc) "title" (printf "Spotify Weekly %s" $cc) "kind" "page" "type" "spotify" "params" (dict "cc" $cc) "dates" (dict "lastmod" $lm "date" $lm)) -}}
+  {{- end -}}
+{{- end -}}

@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /search/?
 Disallow: /*/search/?
+Disallow: /admin/
 
 # AI assistants & answer engines are welcome to read and cite MusicMetrics.
 User-agent: GPTBot

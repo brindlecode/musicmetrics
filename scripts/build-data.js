@@ -14,6 +14,7 @@ const {
   RAW_DIR, HISTORY_DIR, CACHE_DIR, DATA_DIR,
   fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, today, now,
 } = require('./lib/common');
+const { loadSpotifyWeekly, annotate } = require('./lib/spotify-weekly');
 const C = require('./lib/countries');
 const { LABEL_RE, parseArtistAndTitle } = require('./lib/youtube-parse');
 
@@ -496,6 +497,10 @@ async function main() {
     }
   }
 
+  // ---- Spotify weekly (hand-downloaded CSVs in spotify/weekly/)
+  const spotify = loadSpotifyWeekly();
+  if (spotify) annotate(spotify, songsOut, artistsOut, credit);
+
   // ---- countries
   const byCountry = {};
   for (const ch of Object.values(out)) {
@@ -555,6 +560,7 @@ async function main() {
   writeJSON(path.join(DATA_DIR, 'youtube_most_viewed.json'), mostViewed);
   writeJSON(path.join(DATA_DIR, 'youtube_daily.json'), ytDaily);
   writeJSON(path.join(DATA_DIR, 'youtube_artists.json'), ytArtistRank);
+  if (spotify) writeJSON(path.join(DATA_DIR, 'spotify.json'), spotify);
   if (fs.existsSync(WEEKLY_STORE)) for (const f of fs.readdirSync(WEEKLY_STORE)) fs.cpSync(path.join(WEEKLY_STORE, f), path.join(DATA_DIR, 'weekly', f));
   const counts = {
     charts: Object.keys(out).length, songs: Object.keys(cat.songs).length, artists: Object.keys(cat.artists).length,
@@ -562,6 +568,8 @@ async function main() {
     song_pages: Object.keys(songsOut).length, artist_pages: Object.keys(artistsOut).length,
     countries: Object.keys(countriesOut).length, videos: Object.keys(yt.hist).length,
     yt_artists: ytArtists.length, yt_views: ytArtists.reduce((n, a) => n + a.total, 0),
+    spotify_charts: spotify ? Object.keys(spotify.charts).length : 0,
+    spotify_ids: Object.values(artistsOut).filter((a) => a.sp).length,
   };
   writeJSON(path.join(DATA_DIR, 'meta.json'), {
     updated: NOW.toISOString(), counts,

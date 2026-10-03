@@ -399,3 +399,60 @@ other = "Classement officiel Spotify"
 [spotify_official_title]
 other = "Classement officiel Spotify sur charts.spotify.com. MusicMetrics ne republie pas les données de Spotify."
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify hebdo"
+
+[h1_sp]
+other = "Top titres hebdomadaire Spotify · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Classements hebdomadaires Spotify"
+
+[lede_sp]
+other = "Les {{ .Count }} titres les plus écoutés sur Spotify en {{ .Country }} la semaine du {{ .Range }}, d'après le classement hebdomadaire officiel de Spotify."
+
+[lede_sp_hub]
+other = "Les titres et artistes les plus écoutés de la semaine sur Spotify dans {{ .Count }} marchés, d'après les classements hebdomadaires officiels de Spotify ({{ .Range }})."
+
+[answer_sp]
+other = "Le n° 1 sur Spotify en {{ .Country }} cette semaine est <strong>« {{ .Title }} » de {{ .Artist }}</strong> ({{ .Weeks }} semaines au classement)."
+
+[sp_top_artists]
+other = "Artistes les plus écoutés sur Spotify cette semaine · {{ .Country }}"
+
+[weeks_short]
+other = "Sem."
+
+[sp_full_chart]
+other = "Top {{ .Count }} complet sur Spotify"
+
+[sp_source]
+other = "Source : Spotify Charts (charts.spotify.com), classement hebdomadaire du {{ .Range }}. MusicMetrics affiche le top {{ .Count }} ; les nombres d'écoutes ne sont pas republiés."
+
+[sp_week_of]
+other = "Semaine du {{ .Range }}"
+
+[open_on_spotify]
+other = "Ouvrir dans Spotify"
+
+[seo_title_sp]
+other = "Top hebdo Spotify {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "N° 1 sur Spotify en {{ .Country }} cette semaine : « {{ .Title }} » de {{ .Artist }}. Top {{ .Count }} titres et artistes du classement hebdomadaire officiel de Spotify."
+
+[seo_title_sp_hub]
+other = "Classements hebdomadaires Spotify par pays — les n° 1 de la semaine"
+
+[seo_desc_sp_hub]
+other = "Les titres et artistes n° 1 de la semaine sur Spotify dans le monde et dans {{ .Count }} marchés, d'après les classements hebdomadaires officiels de Spotify."
+
+[weeks_count]
+one = "{{ .Count }} semaine"
+other = "{{ .Count }} semaines"
+
+[sp_hub_desc]
+other = "Les titres et artistes les plus écoutés de la semaine, d'après les classements hebdomadaires officiels de Spotify."
+

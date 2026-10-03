@@ -399,3 +399,60 @@ other = "Spotify official chart"
 [spotify_official_title]
 other = "Official Spotify chart on charts.spotify.com. MusicMetrics does not republish Spotify data."
 
+
+# Spotify weekly (hand-downloaded official charts)
+[sp_weekly]
+other = "Spotify Weekly"
+
+[h1_sp]
+other = "Spotify Weekly Top Songs · {{ .Country }}"
+
+[h1_sp_hub]
+other = "Spotify Weekly Charts"
+
+[lede_sp]
+other = "The top {{ .Count }} songs on Spotify in {{ .Country }} for the week of {{ .Range }}, from Spotify's official weekly chart."
+
+[lede_sp_hub]
+other = "This week's top songs and artists on Spotify in {{ .Count }} markets, from Spotify's official weekly charts ({{ .Range }})."
+
+[answer_sp]
+other = "The #1 song on Spotify in {{ .Country }} this week is <strong>“{{ .Title }}” by {{ .Artist }}</strong> ({{ .Weeks }} weeks on the chart)."
+
+[sp_top_artists]
+other = "Top artists on Spotify this week · {{ .Country }}"
+
+[weeks_short]
+other = "Wks"
+
+[sp_full_chart]
+other = "Full top {{ .Count }} on Spotify"
+
+[sp_source]
+other = "Source: Spotify Charts (charts.spotify.com), weekly chart for {{ .Range }}. MusicMetrics shows the top {{ .Count }}; stream counts are not republished."
+
+[sp_week_of]
+other = "Week of {{ .Range }}"
+
+[open_on_spotify]
+other = "Open on Spotify"
+
+[seo_title_sp]
+other = "Spotify Weekly Top Songs {{ .Country }} — {{ .End }}"
+
+[seo_desc_sp]
+other = "#1 on Spotify in {{ .Country }} this week: “{{ .Title }}” by {{ .Artist }}. Top {{ .Count }} songs and top artists from Spotify's official weekly chart."
+
+[seo_title_sp_hub]
+other = "Spotify Weekly Charts by Country — This Week's #1s"
+
+[seo_desc_sp_hub]
+other = "This week's #1 songs and artists on Spotify worldwide and in {{ .Count }} markets, from Spotify's official weekly charts."
+
+[weeks_count]
+one = "{{ .Count }} week"
+other = "{{ .Count }} weeks"
+
+[sp_hub_desc]
+other = "This week's top songs and artists from Spotify's official weekly charts."
+

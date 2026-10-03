@@ -1,0 +1,200 @@
+{{ define "main" }}
+{{- /* Owner's dashboard (Turkish). Not linked, noindex, not in the sitemap; shows only public data. */ -}}
+{{- $repo := site.Params.repo -}}
+{{- $gh := printf "https://github.com/%s" $repo.name -}}
+{{- $meta := site.Data.meta -}}
+{{- $updated := time.AsTime $meta.updated -}}
+{{- $sp := site.Data.spotify -}}
+{{- $rec := site.Params.spotify.recommended -}}
+{{- $next := "" }}{{ $range := "" -}}
+{{- if $sp }}{{ $next = ((time.AsTime $sp.week).AddDate 0 0 7).Format "2006-01-02" }}{{ $range = printf "%s – %s" ((time.AsTime $sp.start).Format "02.01.2006") ((time.AsTime $sp.week).Format "02.01.2006") }}{{ end -}}
+{{- $ccName := dict -}}
+{{- range site.Params.spotify.markets -}}
+  {{- $n := upper . -}}
+  {{- if eq . "global" }}{{ $n = "Global (Dünya)" }}{{ else }}{{ with index site.Data.countries . }}{{ $n = .names.tr | default .names.en }}{{ end }}{{ end -}}
+  {{- $ccName = merge $ccName (dict . $n) -}}
+{{- end -}}
+<div class="wrap admin">
+  <header class="page-head">
+    <span class="eyebrow">MusicMetrics</span>
+    <h1>Yönetim Paneli</h1>
+    <p class="page-head__lede">Spotify haftalık listelerini yükle, sitenin güncelleme durumunu ve ayarlarını kontrol et.</p>
+    <div class="page-head__meta">
+      <span><span class="live-dot"></span>Son güncelleme: <strong>{{ (time.AsTime $meta.updated "Europe/Istanbul").Format "02.01.2006 15:04" }} TSİ</strong></span>
+      <span>Otomatik güncelleme: her gece ~01:00–02:00 TSİ</span>
+    </div>
+  </header>
+
+  <nav class="chips" aria-label="Bölümler">
+    <a class="chip" href="#spotify">{{ partialCached "plogo.html" "spotify" "spotify" }}Spotify haftalık</a>
+    <a class="chip" href="#durum">Site durumu</a>
+    <a class="chip" href="#ayarlar">Ayarlar</a>
+    <a class="chip" href="#baglantilar">Bağlantılar</a>
+  </nav>
+
+  {{/* ------------------------------------------------------------ Spotify */}}
+  <section class="section" id="spotify">
+    <div class="section-head"><h2>{{ partialCached "plogo.html" "spotify" "spotify" }} Spotify haftalık listeleri</h2>{{ if $sp }}<a href="/charts/spotify/">Sitede gör →</a>{{ end }}</div>
+
+    <div class="admin-cards">
+      <div class="admin-card">
+        <span class="admin-card__l">Sitedeki hafta</span>
+        {{- if $sp }}<span class="admin-card__v">{{ $range }}</span><span class="admin-card__s">{{ len $sp.charts }} liste yüklü</span>
+        {{- else }}<span class="admin-card__v">Henüz yok</span><span class="admin-card__s">İlk dosyaları yükle</span>{{ end }}
+      </div>
+      <div class="admin-card">
+        <span class="admin-card__l">Sıradaki hafta (bitiş)</span>
+        <span class="admin-card__v" id="next-week" data-next="{{ $next }}">{{ with $next }}{{ (time.AsTime .).Format "02.01.2006" }}{{ else }}–{{ end }}</span>
+        <span class="admin-card__s" id="next-hint">Spotify yeni haftayı cuma günü yayınlar</span>
+      </div>
+      <div class="admin-card">
+        <span class="admin-card__l">Bu haftaki ilerleme</span>
+        <span class="admin-card__v"><span id="done-count">0</span> / <span id="todo-count">{{ len $rec }}</span></span>
+        <span class="admin-card__s">işaretlediğin önerilen liste</span>
+      </div>
+    </div>
+
+    <ol class="admin-steps">
+      <li><strong>Her cumartesi</strong> (en geç 22:00 TSİ) aşağıdaki listede her ülke için <em>Şarkılar</em> ve <em>Sanatçılar</em> bağlantısını aç. Spotify'a giriş yapmış olman gerekir.</li>
+      <li>Açılan sayfada Spotify'ın <strong>Download CSV</strong> düğmesine bas, sonra satırdaki kutuyu işaretle. Dosya adlarını değiştirme.</li>
+      <li>Hepsi bitince <strong>Dosyaları yükle</strong> düğmesine bas. GitHub'da açılan ekrana <strong>.csv dosyalarını</strong> sürükle (zip değil) ve en alttaki yeşil <strong>Commit changes</strong> düğmesine bas.</li>
+      <li>O gece otomatik güncelleme yeni haftayı siteye koyar. Hemen yayınlamak istersen <strong>Şimdi güncelle</strong> düğmesine bas, sonra <em>Run workflow</em>.</li>
+    </ol>
+
+    <div class="admin-actions">
+      <a class="btn" href="{{ $gh }}/upload/{{ $repo.branch }}/spotify/weekly" target="_blank" rel="noopener">⬆ Dosyaları yükle</a>
+      <a class="btn btn--ghost" href="{{ $gh }}/actions/workflows/fetch-data.yml" target="_blank" rel="noopener">↻ Şimdi güncelle</a>
+      <a class="btn btn--ghost" href="{{ $gh }}/tree/{{ $repo.branch }}/spotify/weekly" target="_blank" rel="noopener">Yüklenen dosyalar</a>
+      <label class="admin-toggle"><input type="checkbox" id="show-all"> Tüm Spotify ülkelerini göster ({{ len site.Params.spotify.markets }})</label>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table admin-table" id="sp-table">
+        <thead><tr><th></th><th>Ülke</th><th>Spotify'da aç</th><th>Sitede</th><th class="r">İndirdim</th></tr></thead>
+        <tbody>
+        {{- range site.Params.spotify.markets }}{{ $cc := . }}{{ $isRec := in $rec $cc }}{{ $have := and $sp (index $sp.charts $cc) }}
+          <tr data-cc="{{ $cc }}"{{ if $isRec }} data-rec{{ else }} hidden{{ end }}>
+            <td>{{ partialCached "flag.html" $cc $cc }}</td>
+            <td><strong>{{ index $ccName $cc }}</strong>{{ if $isRec }} <span class="admin-badge">önerilen</span>{{ end }}</td>
+            <td class="admin-links">
+              <a href="https://charts.spotify.com/charts/view/regional-{{ $cc }}-weekly/latest" target="_blank" rel="noopener">Şarkılar ↗</a>
+              <a href="https://charts.spotify.com/charts/view/artist-{{ $cc }}-weekly/latest" target="_blank" rel="noopener">Sanatçılar ↗</a>
+            </td>
+            <td>{{ if $have }}<a class="admin-ok" href="/charts/spotify/{{ $cc }}/">✓ {{ $range }}</a>{{ else }}<span class="muted">–</span>{{ end }}</td>
+            <td class="r"><input type="checkbox" class="admin-check" aria-label="{{ index $ccName $cc }} indirildi"></td>
+          </tr>
+        {{- end }}
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Sitede yalnızca ilk 20 şarkı ve ilk 10 sanatçı, kaynak ve tam liste bağlantısıyla gösterilir; dinlenme sayıları yayınlanmaz. İşaretler yalnızca bu tarayıcıda saklanır ve her yeni hafta sıfırlanır.</p>
+  </section>
+
+  {{/* ------------------------------------------------------------- Status */}}
+  <section class="section" id="durum">
+    <div class="section-head"><h2>Site durumu</h2><a href="{{ $gh }}/actions/workflows/fetch-data.yml" target="_blank" rel="noopener">Güncelleme kayıtları ↗</a></div>
+    {{- with $meta.counts }}
+    <div class="admin-cards">
+      <div class="admin-card"><span class="admin-card__l">Takip edilen liste</span><span class="admin-card__v">{{ lang.FormatNumberCustom 0 .charts }}</span></div>
+      <div class="admin-card"><span class="admin-card__l">Ülke</span><span class="admin-card__v">{{ .countries }}</span></div>
+      <div class="admin-card"><span class="admin-card__l">Şarkı sayfası</span><span class="admin-card__v">{{ lang.FormatNumberCustom 0 .song_pages }}</span><span class="admin-card__s">şu an listede: {{ lang.FormatNumberCustom 0 .songs_now }}</span></div>
+      <div class="admin-card"><span class="admin-card__l">Sanatçı sayfası</span><span class="admin-card__v">{{ lang.FormatNumberCustom 0 .artist_pages }}</span><span class="admin-card__s">şu an listede: {{ lang.FormatNumberCustom 0 .artists_now }}</span></div>
+      <div class="admin-card"><span class="admin-card__l">YouTube videosu</span><span class="admin-card__v">{{ lang.FormatNumberCustom 0 .videos }}</span><span class="admin-card__s">{{ .yt_artists }} sanatçı kanalı</span></div>
+      <div class="admin-card"><span class="admin-card__l">Spotify linki olan sanatçı</span><span class="admin-card__v">{{ lang.FormatNumberCustom 0 (.spotify_ids | default 0) }}</span><span class="admin-card__s">Wikidata + yüklenen listeler</span></div>
+    </div>
+    {{- end }}
+
+    <h3 style="margin:28px 0 10px">Platformlar</h3>
+    {{- $names := dict "youtube" "YouTube" "apple" "Apple Music" "apple-albums" "Apple Music albüm" "itunes" "iTunes" "deezer" "Deezer" "lastfm" "Last.fm" -}}
+    {{- $stale := slice -}}
+    {{- range $id, $c := site.Data.charts }}{{ if and $c.updated (gt (sub $updated.Unix (time.AsTime $c.updated).Unix) 172800) }}{{ $stale = $stale | append $id }}{{ end }}{{ end }}
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Platform</th><th class="r">Liste</th><th>Durum</th></tr></thead>
+        <tbody>
+        {{- range $p, $n := $meta.platforms }}{{ $old := 0 }}{{ range $stale }}{{ if hasPrefix . (printf "%s_" $p) }}{{ $old = add $old 1 }}{{ end }}{{ end }}
+          <tr><td>{{ partialCached "plogo.html" $p $p }} {{ index $names $p | default $p }}</td><td class="r">{{ $n }}</td>
+          <td>{{ if not $n }}<span class="muted">Kapalı</span>{{ else if $old }}<span class="admin-warn">{{ $old }} liste 2 günden eski</span>{{ else }}<span class="admin-ok">✓ Güncel</span>{{ end }}</td></tr>
+        {{- end }}
+        </tbody>
+      </table>
+    </div>
+    {{- with $stale }}<p class="note">2 günden eski listeler (kaynak geçici olarak yanıt vermiyor olabilir; son sağlam kopya gösteriliyor): {{ delimit (first 30 .) ", " }}{{ if gt (len .) 30 }} …{{ end }}</p>{{ end }}
+  </section>
+
+  {{/* ----------------------------------------------------------- Settings */}}
+  <section class="section" id="ayarlar">
+    <div class="section-head"><h2>Ayarlar</h2><a href="{{ $gh }}/edit/{{ $repo.branch }}/hugo.toml" target="_blank" rel="noopener">hugo.toml'u düzenle ↗</a></div>
+    {{- $p := site.Params -}}
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Ayar</th><th>Durum</th><th>Ne işe yarar</th></tr></thead>
+        <tbody>
+          <tr><td>Google AdSense</td><td>{{ if $p.ads.adsenseClient }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Reklam geliri. Onaydan sonra <code>ads.adsenseClient</code> doldurulur.</td></tr>
+          <tr><td>Google Analytics</td><td>{{ if $p.analytics.ga4 }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Ziyaretçi istatistikleri (<code>analytics.ga4</code>).</td></tr>
+          <tr><td>Microsoft Clarity</td><td>{{ if $p.analytics.clarity }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Ücretsiz ısı haritası ve oturum kaydı.</td></tr>
+          <tr><td>Google Search Console</td><td>{{ if $p.verify.google }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Google'da görünürlük ve aramalar (<code>verify.google</code>).</td></tr>
+          <tr><td>Bing Webmaster</td><td>{{ if $p.verify.bing }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Bing ve ChatGPT araması (<code>verify.bing</code>).</td></tr>
+          <tr><td>Apple Music ortaklık</td><td>{{ if $p.affiliate.appleToken }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>“Apple Music'te dinle” tıklamalarından komisyon.</td></tr>
+          <tr><td>Amazon ortaklık</td><td>{{ if $p.affiliate.amazonTag }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Plak/CD ve Amazon Music tıklamalarından komisyon.</td></tr>
+          <tr><td>Konser bileti ortaklık</td><td>{{ if $p.affiliate.ticketsUrl }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Sanatçı sayfalarında bilet bağlantısı.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Bir ayarı açmak için kodu bana gönder, ben eklerim; ya da “hugo.toml'u düzenle” bağlantısından ilgili satıra yapıştır.</p>
+  </section>
+
+  {{/* -------------------------------------------------------------- Links */}}
+  <section class="section" id="baglantilar">
+    <div class="section-head"><h2>Bağlantılar</h2></div>
+    <div class="admin-links-grid">
+      <a href="{{ $gh }}/actions" target="_blank" rel="noopener"><strong>GitHub Actions</strong><span>Günlük güncellemelerin kayıtları</span></a>
+      <a href="https://app.netlify.com/projects/{{ $repo.netlifySite }}/deploys" target="_blank" rel="noopener"><strong>Netlify yayınları</strong><span>Sitenin yayın geçmişi</span></a>
+      <a href="https://app.netlify.com/projects/{{ $repo.netlifySite }}/usage" target="_blank" rel="noopener"><strong>Netlify kullanım</strong><span>Bant genişliği (aylık 100 GB ücretsiz)</span></a>
+      <a href="https://console.cloud.google.com/apis/api/youtube.googleapis.com/quotas" target="_blank" rel="noopener"><strong>YouTube kotası</strong><span>Günlük 10.000 birim, ücretsiz</span></a>
+      <a href="https://search.google.com/search-console" target="_blank" rel="noopener"><strong>Google Search Console</strong><span>Google aramaları ve dizinleme</span></a>
+      <a href="https://www.bing.com/webmasters" target="_blank" rel="noopener"><strong>Bing Webmaster</strong><span>Bing aramaları ve dizinleme</span></a>
+      <a href="https://charts.spotify.com/" target="_blank" rel="noopener"><strong>Spotify Charts</strong><span>Haftalık listelerin kaynağı</span></a>
+      <a href="{{ $gh }}" target="_blank" rel="noopener"><strong>GitHub deposu</strong><span>Sitenin kodu</span></a>
+      <a href="/methodology/"><strong>Yöntem sayfası</strong><span>Verilerin nasıl hesaplandığı</span></a>
+      <a href="/sitemap.xml"><strong>Site haritası</strong><span>Arama motorları için</span></a>
+      <a href="/llms.txt"><strong>llms.txt</strong><span>Yapay zekâ asistanları için özet</span></a>
+    </div>
+  </section>
+</div>
+<script>
+(function () {
+  var next = (document.getElementById('next-week') || {}).getAttribute ? document.getElementById('next-week').getAttribute('data-next') : '';
+  var key = 'mm-admin-sp-' + (next || 'first');
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+  var rows = document.querySelectorAll('#sp-table tbody tr');
+  function count() {
+    var d = 0, t = 0;
+    rows.forEach(function (r) { if (r.hasAttribute('data-rec')) { t++; if (r.querySelector('.admin-check').checked) d++; } });
+    document.getElementById('done-count').textContent = d;
+    document.getElementById('todo-count').textContent = t;
+  }
+  rows.forEach(function (r) {
+    var cb = r.querySelector('.admin-check'), cc = r.getAttribute('data-cc');
+    cb.checked = !!saved[cc];
+    r.classList.toggle('is-done', cb.checked);
+    cb.addEventListener('change', function () {
+      saved[cc] = cb.checked; r.classList.toggle('is-done', cb.checked);
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch (e) {}
+      count();
+    });
+  });
+  document.getElementById('show-all').addEventListener('change', function (e) {
+    rows.forEach(function (r) { if (!r.hasAttribute('data-rec')) r.hidden = !e.target.checked; });
+  });
+  if (next) {
+    var ready = new Date(next + 'T00:00:00Z').getTime() + 864e5; // published the Friday after the week ends
+    var hint = document.getElementById('next-hint');
+    hint.textContent = Date.now() >= ready ? 'Yeni hafta Spotify’da hazır, indirebilirsin' : 'Spotify bu haftayı cuma günü yayınlayacak';
+    if (Date.now() >= ready) hint.classList.add('admin-ok');
+  }
+  count();
+})();
+</script>
+{{ end }}

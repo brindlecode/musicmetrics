@@ -1,0 +1,9 @@
+{{- /* Chips: every Spotify weekly market we have. Param: current cc ("" on the hub). */ -}}
+{{- $cur := . -}}
+{{- $sp := site.Data.spotify -}}
+<nav class="chips" aria-label="Spotify">
+  <a class="chip" href="{{ "/charts/spotify/" | relLangURL }}"{{ if eq $cur "" }} aria-current="page"{{ end }}>{{ partialCached "plogo.html" "spotify" "spotify" }}{{ i18n "sp_weekly" }}</a>
+  {{- with index $sp.charts "global" }}<a class="chip" href="{{ "/charts/spotify/global/" | relLangURL }}"{{ if eq $cur "global" }} aria-current="page"{{ end }}>{{ partialCached "flag.html" "global" "global" }} {{ i18n "worldwide" }}</a>{{ end }}
+  {{- $list := slice }}{{ range $cc, $c := $sp.charts }}{{ if ne $cc "global" }}{{ $list = $list | append (dict "cc" $cc "name" (partialCached "func/country-name.html" $cc $cc site.Language.Lang)) }}{{ end }}{{ end }}
+  {{- range sort $list "name" }}<a class="chip" href="{{ printf "/charts/spotify/%s/" .cc | relLangURL }}"{{ if eq $cur .cc }} aria-current="page"{{ end }}>{{ partialCached "flag.html" .cc .cc }} {{ .name }}</a>{{ end }}
+</nav>
