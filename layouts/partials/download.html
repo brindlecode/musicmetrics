@@ -6,7 +6,7 @@
   "link" (i18n "dl_col_link") "chart" (i18n "dl_col_chart") "source" (i18n "dl_col_source") "updated" (i18n "dl_updated") "summary" (i18n "dl_summary")
   "footer" (i18n "dl_footer") "new" (i18n "new") "views" (i18n "views") "views_day" (i18n "views_24h") "points" (i18n "points") "charts" (i18n "charts")
   "genre" (i18n "genre") "album" (i18n "album") "listeners" (i18n "listeners") "error" (i18n "dl_error") -}}
-{{- $cfg := dict "kind" $p.kind "file" $p.file "title" $p.title "source" ($p.source | default "") "platform" ($p.platform | default "") "updated" ($p.updated | default "") "url" $p.url "lang" site.Language.Lang "labels" $labels -}}
+{{- $cfg := dict "kind" $p.kind "file" $p.file "title" $p.title "short" ($p.short | default "") "source" ($p.source | default "") "platform" ($p.platform | default "") "updated" ($p.updated | default "") "url" $p.url "lang" site.Language.Lang "labels" $labels -}}
 {{- with $p.charts }}{{ $cfg = merge $cfg (dict "charts" .) }}{{ end -}}
 <details class="dl-menu" data-dl="{{ $cfg | jsonify }}">
   <summary class="btn btn--ghost btn--sm"><svg class="i" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>{{ if eq $p.kind "country" }}{{ i18n "dl_all" }}{{ else }}{{ i18n "dl_download" }}{{ end }}</summary>

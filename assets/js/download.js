@@ -59,14 +59,14 @@
   // Each chart: { title, source, platform, url, updated, rows }
   function loadCharts(cfg) {
     if (cfg.kind !== 'country') {
-      return Promise.resolve([{ title: cfg.title, source: cfg.source, platform: cfg.platform, url: cfg.url, updated: cfg.updated, rows: parseRows(document, location.href) }]);
+      return Promise.resolve([{ title: cfg.title, short: cfg.short, source: cfg.source, platform: cfg.platform, url: cfg.url, updated: cfg.updated, rows: parseRows(document, location.href) }]);
     }
     return Promise.all(cfg.charts.map(function (c) {
       var url = new URL(c.url, location.href).href;
       return fetch(url).then(function (r) { return r.text(); }).then(function (html) {
         var doc = new DOMParser().parseFromString(html, 'text/html');
         var t = doc.querySelector('time[datetime]');
-        return { title: c.title, source: c.source, platform: c.platform, url: url, updated: t ? t.getAttribute('datetime') : cfg.updated, rows: parseRows(doc, url) };
+        return { title: c.title, short: c.short, source: c.source, platform: c.platform, url: url, updated: t ? t.getAttribute('datetime') : cfg.updated, rows: parseRows(doc, url) };
       });
     }));
   }
@@ -84,7 +84,7 @@
     charts.forEach(function (c) {
       var own = METRICS[c.platform] || [];
       c.rows.forEach(function (r) {
-        var mv = r.move === 'new' ? 'NEW' : r.move === 're' ? 'RE' : (r.move && r.move !== '<nil>' ? (parseInt(r.move, 10) > 0 ? '+' + parseInt(r.move, 10) : r.move) : '');
+        var mv = r.move === 'new' ? 'NEW' : r.move === 're' ? 'RE' : (r.move && r.move !== '<nil>' ? (parseInt(r.move, 10) > 0 ? '+' + parseInt(r.move, 10) : parseInt(r.move, 10) === 0 ? '=' : r.move) : '');
         var metrics = mk.map(function (k) { var i = own.indexOf(k); return i < 0 ? '' : (i === 0 ? r.m1 : r.m2); });
         var row = (multi ? [c.title] : []).concat([r.rank, mv, r.title, r.artist, r.peak, r.days], metrics, [r.href, 'MusicMetrics · ' + c.source, isoDay(c.updated)]);
         lines.push(row.map(esc).join(sep));
@@ -164,7 +164,7 @@
   function addChartSheet(wb, used, logoId, c, L) {
     var mk = METRICS[c.platform] || [];
     var cols = [{ w: 6 }, { w: 8 }, { w: 44 }, { w: 34 }, { w: 7 }, { w: 7 }].concat(mk.map(function (k) { return { w: NUMERIC[k] ? 15 : 22 }; }), [{ w: 50 }]);
-    var ws = wb.addWorksheet(sheetName(c.title, used), {
+    var ws = wb.addWorksheet(sheetName(c.short || c.title, used), {
       views: [{ state: 'frozen', ySplit: 6, showGridLines: false }],
       pageSetup: { paperSize: 9, orientation: 'portrait', fitToPage: true, fitToWidth: 1, fitToHeight: 0, margins: { left: 0.4, right: 0.4, top: 0.5, bottom: 0.6, header: 0.2, footer: 0.3 } },
       headerFooter: { oddFooter: '&L&8MusicMetrics · musicmetrics.net&R&8&P / &N' }
@@ -175,7 +175,7 @@
     headerRow(ws, 6, [L.rank, L.change, L.title, L.artist, L.peak, L.days].concat(mk.map(function (k) { return L[k] || k; }), [L.link]), { 1: 1, 2: 1, 5: 1, 6: 1 });
     c.rows.forEach(function (r, i) {
       var vals = [r.rank, moveLabel(r.move, L), r.title, r.artist, r.peak, r.days];
-      mk.forEach(function (k, j) { var v = j === 0 ? r.m1 : r.m2; vals.push(NUMERIC[k] ? num(v) : v); });
+      mk.forEach(function (k, j) { var v = j === 0 ? r.m1 : r.m2; var n = Number(v); vals.push(NUMERIC[k] ? (v !== '' && isFinite(n) ? n : null) : v); });
       vals.push(r.href ? { text: r.href.replace(/^https?:\/\//, ''), hyperlink: r.href } : '');
       var row = ws.getRow(7 + i);
       row.values = vals;
@@ -190,7 +190,7 @@
       row.getCell(3).font = { name: 'Arial', size: 10, bold: true, color: { argb: BRAND.ink } };
       var mv = row.getCell(2);
       mv.font = { name: 'Arial', size: 9, bold: true, color: { argb: /▲/.test(mv.value) ? BRAND.up : /▼/.test(mv.value) ? BRAND.down : (r.move === 'new' || r.move === 're') ? BRAND.accent : BRAND.muted } };
-      mk.forEach(function (k, j) { if (NUMERIC[k]) ws.getCell(7 + i, 7 + j).numFmt = '#,##0'; });
+      mk.forEach(function (k, j) { if (NUMERIC[k]) ws.getCell(7 + i, 7 + j).numFmt = k === 'points' ? '#,##0.0' : '#,##0'; });
       var link = row.getCell(last);
       if (r.href) link.font = { name: 'Arial', size: 9, color: { argb: BRAND.accent } };
     });
@@ -217,7 +217,7 @@
         ws.columns = [{ width: 46 }, { width: 18 }, { width: 44 }, { width: 34 }];
         brandHeader(ws, wb, logoId, 4, cfg.title, L.updated + ': ' + fmtDate(cfg.updated, true), cfg.url);
         headerRow(ws, 6, [L.chart, L.source, '#1 ' + L.title, L.artist], {});
-        var names = charts.map(function (c) { return c.title; });
+        var names = charts.map(function (c) { return c.short || c.title; });
         var sheetNames = [];
         var tmpUsed = JSON.parse(JSON.stringify(used));
         names.forEach(function (n) { sheetNames.push(sheetName(n, tmpUsed)); });
