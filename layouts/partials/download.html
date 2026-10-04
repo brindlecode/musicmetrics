@@ -1,0 +1,18 @@
+{{- /* Download menu (Excel / CSV), generated in the browser from the chart rows.
+  Params: kind ("chart" | "country"), file (base name), title, source, updated, charts (country: slice of dict id url title source) */ -}}
+{{- $p := . -}}
+{{- $labels := dict
+  "rank" "#" "change" (i18n "dl_col_change") "title" (i18n "song") "artist" (i18n "artist") "peak" (i18n "peak_short") "days" (i18n "days_short")
+  "link" (i18n "dl_col_link") "chart" (i18n "dl_col_chart") "source" (i18n "dl_col_source") "updated" (i18n "dl_updated") "summary" (i18n "dl_summary")
+  "footer" (i18n "dl_footer") "new" (i18n "new") "views" (i18n "views") "views_day" (i18n "views_24h") "points" (i18n "points") "charts" (i18n "charts")
+  "genre" (i18n "genre") "album" (i18n "album") "listeners" (i18n "listeners") "error" (i18n "dl_error") -}}
+{{- $cfg := dict "kind" $p.kind "file" $p.file "title" $p.title "short" ($p.short | default "") "source" ($p.source | default "") "platform" ($p.platform | default "") "updated" ($p.updated | default "") "url" $p.url "lang" site.Language.Lang "labels" $labels -}}
+{{- with $p.charts }}{{ $cfg = merge $cfg (dict "charts" .) }}{{ end -}}
+<details class="dl-menu" data-dl="{{ $cfg | jsonify }}">
+  <summary class="btn btn--ghost btn--sm"><svg class="i" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>{{ if eq $p.kind "country" }}{{ i18n "dl_all" }}{{ else }}{{ i18n "dl_download" }}{{ end }}</summary>
+  <div class="dl-menu__pop">
+    <button type="button" data-dl-fmt="xlsx"><span class="dl-menu__ic dl-menu__ic--x" aria-hidden="true">X</span><span><strong>Excel</strong><small>{{ i18n "dl_xlsx_sub" }}</small></span></button>
+    <button type="button" data-dl-fmt="csv"><span class="dl-menu__ic" aria-hidden="true">,</span><span><strong>CSV</strong><small>{{ i18n "dl_csv_sub" }}</small></span></button>
+    <p class="dl-menu__note">{{ i18n "dl_note" }}</p>
+  </div>
+</details>

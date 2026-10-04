@@ -456,3 +456,44 @@ other = "{{ .Count }} semanas"
 [sp_hub_desc]
 other = "As músicas e artistas mais ouvidos da semana, das paradas semanais oficiais do Spotify."
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "Baixar"
+
+[dl_all]
+other = "Baixar todas as paradas"
+
+[dl_xlsx_sub]
+other = "Planilha formatada (.xlsx)"
+
+[dl_csv_sub]
+other = "Dados brutos (.csv)"
+
+[dl_note]
+other = "Uso livre para rádio, imprensa e pesquisa. Cite o MusicMetrics como fonte."
+
+[dl_col_change]
+other = "Variação"
+
+[dl_col_link]
+other = "Link"
+
+[dl_col_chart]
+other = "Parada"
+
+[dl_col_source]
+other = "Fonte"
+
+[dl_updated]
+other = "Atualizado"
+
+[dl_summary]
+other = "Resumo"
+
+[dl_footer]
+other = "Dados: {source}. Compilado por MusicMetrics (musicmetrics.net). Uso livre com crédito ao MusicMetrics."
+
+[dl_error]
+other = "Não foi possível preparar o download. Tente novamente."
+

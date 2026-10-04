@@ -621,3 +621,24 @@ a.pill:hover { border-color: var(--ink); color: var(--ink); }
 .admin-links-grid a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); text-decoration: none; }
 .admin-links-grid a:hover { border-color: var(--ink); }
 .admin-links-grid span { font-size: .8125rem; color: var(--muted); }
+
+/* ------------------------------------------------- download menu --- */
+.dl-menu { position: relative; display: inline-block; }
+.dl-menu > summary { list-style: none; cursor: pointer; }
+.dl-menu > summary::-webkit-details-marker { display: none; }
+.dl-menu__pop {
+  position: absolute; left: 0; top: calc(100% + 6px); z-index: 60; width: 260px; max-width: calc(100vw - 32px); padding: 6px;
+  background: var(--card); border: 1px solid var(--rule-strong); box-shadow: var(--shadow); border-radius: var(--radius);
+}
+.dl-menu__pop button {
+  display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 10px; border: 0; background: none; border-radius: 2px;
+  font: inherit; color: var(--ink); text-align: left; cursor: pointer;
+}
+.dl-menu__pop button:hover, .dl-menu__pop button:focus-visible { background: var(--paper-2); outline: none; }
+.dl-menu__pop button span:last-child { display: flex; flex-direction: column; line-height: 1.25; }
+.dl-menu__pop small { font-size: .75rem; color: var(--muted); }
+.dl-menu__ic { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 4px; background: var(--ink); color: var(--paper); font-weight: 800; font-size: .875rem; }
+.dl-menu__ic--x { background: #1d6f42; color: #fff; }
+.dl-menu__note { margin: 6px 10px 4px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: .75rem; color: var(--muted); line-height: 1.4; }
+.dl-menu.is-busy button { cursor: progress; opacity: .6; }
+.dl-menu button[aria-busy="true"] small::after { content: " …"; }

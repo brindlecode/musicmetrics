@@ -16,6 +16,7 @@
         <span>{{ i18n "entries_count" (dict "Count" (int $c.total)) }}</span>
         {{- if $isGlobal }}<a href="{{ "/methodology/" | relLangURL }}">{{ i18n "how_calculated" }}</a>{{ end }}
         <button class="btn btn--ghost btn--sm" type="button" data-share>{{ partialCached "icons.html" (dict "n" "share" "s" 14) "share" 14 }}{{ i18n "share" }}</button>
+        {{ partial "download.html" (dict "kind" "chart" "file" (printf "musicmetrics_%s" (cond $isGlobal "global-200" (printf "%s_%s" $ci.slug $ci.cc))) "title" (partialCached "func/chart-title.html" $c.id $c.id site.Language.Lang) "source" (cond $isGlobal "MusicMetrics Global 200" $ci.pname) "platform" $ci.platform "short" (cond $isGlobal "Global 200" (i18n (printf "chip_%s" $ci.platform))) "updated" $c.updated "url" .Permalink) }}
       </div>
     </header>
 

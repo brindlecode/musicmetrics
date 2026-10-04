@@ -456,3 +456,44 @@ other = "{{ .Count }}週"
 [sp_hub_desc]
 other = "Spotify公式週間チャートによる今週の人気曲とアーティスト。"
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "ダウンロード"
+
+[dl_all]
+other = "全チャートをダウンロード"
+
+[dl_xlsx_sub]
+other = "書式付きスプレッドシート（.xlsx）"
+
+[dl_csv_sub]
+other = "生データ（.csv）"
+
+[dl_note]
+other = "ラジオ・編集・研究目的で自由に利用できます。出典としてMusicMetricsを明記してください。"
+
+[dl_col_change]
+other = "変動"
+
+[dl_col_link]
+other = "リンク"
+
+[dl_col_chart]
+other = "チャート"
+
+[dl_col_source]
+other = "出典"
+
+[dl_updated]
+other = "更新"
+
+[dl_summary]
+other = "概要"
+
+[dl_footer]
+other = "データ：{source}。編集：MusicMetrics（musicmetrics.net）。MusicMetricsを出典として明記すれば自由に利用できます。"
+
+[dl_error]
+other = "ダウンロードを準備できませんでした。もう一度お試しください。"
+

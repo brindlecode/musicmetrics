@@ -456,3 +456,44 @@ other = "{{ .Count }} Wochen"
 [sp_hub_desc]
 other = "Die meistgehörten Songs und Künstler der Woche aus den offiziellen Spotify-Wochencharts."
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "Herunterladen"
+
+[dl_all]
+other = "Alle Charts herunterladen"
+
+[dl_xlsx_sub]
+other = "Formatierte Tabelle (.xlsx)"
+
+[dl_csv_sub]
+other = "Rohdaten (.csv)"
+
+[dl_note]
+other = "Frei für Radio, Redaktion und Forschung. Bitte MusicMetrics als Quelle nennen."
+
+[dl_col_change]
+other = "Veränderung"
+
+[dl_col_link]
+other = "Link"
+
+[dl_col_chart]
+other = "Chart"
+
+[dl_col_source]
+other = "Quelle"
+
+[dl_updated]
+other = "Aktualisiert"
+
+[dl_summary]
+other = "Übersicht"
+
+[dl_footer]
+other = "Daten: {source}. Zusammengestellt von MusicMetrics (musicmetrics.net). Freie Nutzung mit Quellenangabe MusicMetrics."
+
+[dl_error]
+other = "Der Download konnte nicht vorbereitet werden. Bitte erneut versuchen."
+

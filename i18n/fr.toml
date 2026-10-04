@@ -456,3 +456,44 @@ other = "{{ .Count }} semaines"
 [sp_hub_desc]
 other = "Les titres et artistes les plus écoutés de la semaine, d'après les classements hebdomadaires officiels de Spotify."
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "Télécharger"
+
+[dl_all]
+other = "Télécharger tous les classements"
+
+[dl_xlsx_sub]
+other = "Tableur mis en forme (.xlsx)"
+
+[dl_csv_sub]
+other = "Données brutes (.csv)"
+
+[dl_note]
+other = "Libre pour la radio, la presse et la recherche. Merci de citer MusicMetrics."
+
+[dl_col_change]
+other = "Évolution"
+
+[dl_col_link]
+other = "Lien"
+
+[dl_col_chart]
+other = "Classement"
+
+[dl_col_source]
+other = "Source"
+
+[dl_updated]
+other = "Mis à jour"
+
+[dl_summary]
+other = "Résumé"
+
+[dl_footer]
+other = "Données : {source}. Compilé par MusicMetrics (musicmetrics.net). Utilisation libre en citant MusicMetrics."
+
+[dl_error]
+other = "Le téléchargement n'a pas pu être préparé. Veuillez réessayer."
+

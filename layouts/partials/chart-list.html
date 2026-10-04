@@ -16,7 +16,9 @@
 <ol class="chart" id="{{ .id | default "chart" }}">
 {{- range $i, $r := $items }}
   {{- $mv := printf "%v" $r.change }}
-  <li class="row{{ if eq $r.rank 1 }} row--1{{ end }}" data-move="{{ $mv }}">
+  {{- $m1 := "" }}{{ $m2 := "" }}
+  {{- if eq $p "youtube" }}{{ with $r.views }}{{ $m1 = int . }}{{ end }}{{ with $r.views_day }}{{ $m2 = int . }}{{ end }}{{ else if eq $p "musicmetrics" }}{{ $m1 = $r.points }}{{ with $r.charts }}{{ $m2 = int . }}{{ end }}{{ else if eq $p "lastfm" }}{{ with $r.listeners }}{{ $m1 = int . }}{{ end }}{{ else if in (slice "apple" "apple-albums") $p }}{{ $m1 = $r.genre }}{{ else if eq $p "deezer" }}{{ $m1 = $r.album }}{{ end }}
+  <li class="row{{ if eq $r.rank 1 }} row--1{{ end }}" data-move="{{ $mv }}"{{ with $m1 }} data-m1="{{ . }}"{{ end }}{{ with $m2 }} data-m2="{{ . }}"{{ end }}>
     <div class="row__pos"><span class="row__rank">{{ $r.rank }}</span>{{ partialCached "move.html" $r.change (printf "%v" $r.change) site.Language.Lang }}</div>
     {{- if $r.image }}
     <img class="row__art{{ if eq $p "youtube" }} row__art--video{{ end }}" src="{{ $r.image }}" alt="" width="56" height="56" loading="{{ if lt $i 8 }}eager{{ else }}lazy{{ end }}" decoding="async">

@@ -456,3 +456,44 @@ other = "{{ .Count }} weeks"
 [sp_hub_desc]
 other = "This week's top songs and artists from Spotify's official weekly charts."
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "Download"
+
+[dl_all]
+other = "Download all charts"
+
+[dl_xlsx_sub]
+other = "Formatted spreadsheet (.xlsx)"
+
+[dl_csv_sub]
+other = "Raw data (.csv)"
+
+[dl_note]
+other = "Free for radio, editorial and research use. Please credit MusicMetrics."
+
+[dl_col_change]
+other = "Change"
+
+[dl_col_link]
+other = "Link"
+
+[dl_col_chart]
+other = "Chart"
+
+[dl_col_source]
+other = "Source"
+
+[dl_updated]
+other = "Updated"
+
+[dl_summary]
+other = "Summary"
+
+[dl_footer]
+other = "Data: {source}. Compiled by MusicMetrics (musicmetrics.net). Free to use with credit to MusicMetrics."
+
+[dl_error]
+other = "The download could not be prepared. Please try again."
+
