@@ -1,3 +1,22 @@
+# Home page only: open the site in the visitor's language.
+# 1) Country (GeoIP): Türkiye -> Turkish, Spanish-speaking countries -> Spanish, ...
+# 2) Otherwise the browser language (Accept-Language).
+# Deep links are never redirected, and crawlers (no Accept-Language, US IPs) get
+# English at /. Choosing a language in the menu sets the nf_lang / nf_country
+# cookies, which Netlify uses instead of GeoIP, so the choice sticks.
+/  /tr/  302!  Country=tr
+/  /es/  302!  Country=es,mx,ar,co,cl,pe,ve,ec,gt,cu,bo,do,hn,py,sv,ni,cr,pa,uy,pr,gq
+/  /pt/  302!  Country=br,pt,ao,mz,cv,gw,st,tl
+/  /de/  302!  Country=de,at,li
+/  /fr/  302!  Country=fr,mc,sn,ci,cd,cm,ml,bf,ne,tg,bj,ga,cg,mg,ht,gn,re,gp,mq
+/  /ja/  302!  Country=jp
+/  /tr/  302!  Language=tr
+/  /es/  302!  Language=es
+/  /pt/  302!  Language=pt
+/  /de/  302!  Language=de
+/  /fr/  302!  Language=fr
+/  /ja/  302!  Language=ja
+
 # Old URL structure (English used to live under /en/)
 /en              /                           301!
 /en/*            /:splat                     301!
@@ -17,8 +36,6 @@
 /trending/*      /charts/youtube/            301
 /:lang/trending  /:lang/charts/youtube/      301
 /:lang/trending/* /:lang/charts/youtube/     301
-/charts/spotify/:cc  /countries/:cc/         301
-/:lang/charts/spotify/:cc /:lang/countries/:cc/ 301
 
 # Language 404 pages
 /tr/*  /tr/404.html  404

@@ -189,6 +189,17 @@
       box.appendChild(f);
     });
   });
+  // Remember an explicit language choice. Netlify's home-page language redirect
+  // (static/_redirects) reads these cookies instead of GeoIP / Accept-Language.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[hreflang]');
+    if (!a) return;
+    var l = a.getAttribute('hreflang');
+    if (!/^(en|tr|es|pt|de|fr|ja)$/.test(l)) return;
+    var c = ';path=/;max-age=31536000;samesite=lax';
+    document.cookie = 'nf_lang=' + l + c;
+    document.cookie = 'nf_country=xx' + c;
+  });
   // Language menu: close on outside click and Escape.
   var lm = document.querySelector('.lang-menu');
   if (lm) {
