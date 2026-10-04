@@ -435,3 +435,44 @@ other = "{{ .Count }} hafta"
 [sp_hub_desc]
 other = "Spotify'ın resmi haftalık listelerinden bu haftanın en çok dinlenen şarkıları ve sanatçıları."
 
+
+# Chart downloads (Excel / CSV)
+[dl_download]
+other = "İndir"
+
+[dl_all]
+other = "Tüm listeleri indir"
+
+[dl_xlsx_sub]
+other = "Biçimlendirilmiş tablo (.xlsx)"
+
+[dl_csv_sub]
+other = "Ham veri (.csv)"
+
+[dl_note]
+other = "Radyo, yayın ve araştırma için ücretsizdir. Lütfen kaynak olarak MusicMetrics'i belirtin."
+
+[dl_col_change]
+other = "Değişim"
+
+[dl_col_link]
+other = "Bağlantı"
+
+[dl_col_chart]
+other = "Liste"
+
+[dl_col_source]
+other = "Kaynak"
+
+[dl_updated]
+other = "Güncellendi"
+
+[dl_summary]
+other = "Özet"
+
+[dl_footer]
+other = "Veri: {source}. Derleyen: MusicMetrics (musicmetrics.net). MusicMetrics kaynak gösterilerek ücretsiz kullanılabilir."
+
+[dl_error]
+other = "Dosya hazırlanamadı. Lütfen tekrar deneyin."
+

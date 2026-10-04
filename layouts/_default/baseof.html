@@ -67,6 +67,8 @@
 <script>window.MM_I18N={{ dict "copied" (i18n "link_copied") "noResults" (i18n "no_results") "searchHint" (i18n "search_hint") "kinds" (dict "a" (i18n "kind_artist") "s" (i18n "kind_song") "c" (i18n "kind_country") "p" (i18n "kind_chart")) | jsonify | safeJS }};</script>
 {{- $js := resources.Get "js/main.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- if in (slice "chart" "country") .Type }}{{ $dl := resources.Get "js/download.js" | minify | fingerprint }}
+<script src="{{ $dl.RelPermalink }}" integrity="{{ $dl.Data.Integrity }}" defer></script>{{ end }}
 {{- partial "tracking-body.html" . }}
 </body>
 </html>
