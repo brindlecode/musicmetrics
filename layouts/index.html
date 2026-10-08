@@ -84,14 +84,14 @@
   </section>
 
   {{- /* ---------- Movers ---------- */}}
-  {{- $climbers := first 8 (sort (where (where $g.items "change" "ne" "new") "change" "ne" "re") "change" "desc") }}
+  {{- /* "gt" skips "new"/"re" on its own; "ne" against a string drops every number too. */}}
+  {{- $climbers := first 8 (sort (where $g.items "change" "gt" 0) "change" "desc") }}
   {{- $new := first 8 (where $g.items "change" "new") }}
   <section class="section">
     <div class="cols-2">
       <div>
         <div class="section-head"><h2>{{ i18n "biggest_climbers" }}</h2></div>
-        {{- $real := where $climbers "change" "gt" 0 }}
-        {{- if $real }}<ol class="mini">{{ range $real }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
+        {{- if $climbers }}<ol class="mini">{{ range $climbers }}<li><span class="mini__rank">{{ .rank }}</span>{{ with .image }}<img src="{{ . }}" alt="" width="40" height="40" loading="lazy">{{ else }}<span></span>{{ end }}<span style="min-width:0">{{ if .song }}<a class="mini__t" href="{{ cond .sl (printf "/songs/%s/" .song | relLangURL) (printf "/songs/%s/" .song) }}">{{ .title }}</a>{{ else }}<span class="mini__t">{{ .title }}</span>{{ end }}<span class="mini__a">{{ .artist }}</span></span><span class="mini__m">{{ partialCached "move.html" .change (printf "%v" .change) site.Language.Lang }}</span></li>{{ end }}</ol>
         {{- else }}<p class="empty">{{ i18n "movers_tomorrow" }}</p>{{ end }}
       </div>
       <div>
