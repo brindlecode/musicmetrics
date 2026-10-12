@@ -14,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  issues: write   # the "Report problems" step opens an issue when a run goes wrong
 
 concurrency:
   group: update-charts-${{ github.ref }}
@@ -27,6 +26,20 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    # Read by the "report" job below.
+    outputs:
+      big: ${{ steps.sizes.outputs.big }}
+      outcomes: |
+        Fetch YouTube=${{ steps.youtube.outcome }}
+        Fetch Apple Music=${{ steps.apple.outcome }}
+        Fetch Deezer=${{ steps.deezer.outcome }}
+        Fetch Spotify artist ids=${{ steps.wikidata.outcome }}
+        Fetch Last.fm=${{ steps.lastfm.outcome }}
+        Build data=${{ steps.data.outcome }}
+        Build site=${{ steps.site.outcome }}
+        Save data store=${{ steps.save.outcome }}
+        Deploy to Netlify=${{ steps.deploy.outcome }}
+        Ping IndexNow=${{ steps.indexnow.outcome }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -143,27 +156,32 @@ jobs:
           }
 
       - name: Ping IndexNow (Bing, Yandex, Seznam, Naver)
+        id: indexnow
         if: ${{ success() && (github.event_name == 'schedule' || inputs.deploy) }}
         run: node scripts/indexnow.js
         continue-on-error: true
 
-      # Opens (or comments on) one GitHub issue when anything went wrong, so a
-      # failure never goes unnoticed again. The repository owner gets an email.
+  # Opens (or comments on) one GitHub issue when anything went wrong, so a
+  # failure never goes unnoticed again; the repository owner gets an email.
+  # A separate job, so it still runs when "update" hits its time limit.
+  report:
+    needs: update
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: scripts
       - name: Report problems
-        if: ${{ always() }}
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          BIG: ${{ steps.sizes.outputs.big }}
-          OUTCOMES: |
-            Fetch YouTube=${{ steps.youtube.outcome }}
-            Fetch Apple Music=${{ steps.apple.outcome }}
-            Fetch Deezer=${{ steps.deezer.outcome }}
-            Fetch Spotify artist ids=${{ steps.wikidata.outcome }}
-            Fetch Last.fm=${{ steps.lastfm.outcome }}
-            Build data=${{ steps.data.outcome }}
-            Build site=${{ steps.site.outcome }}
-            Save data store=${{ steps.save.outcome }}
-            Deploy to Netlify=${{ steps.deploy.outcome }}
-          JOB_STATUS: ${{ job.status }}
+          BIG: ${{ needs.update.outputs.big }}
+          OUTCOMES: ${{ needs.update.outputs.outcomes }}
+          JOB_STATUS: ${{ needs.update.result }}
         run: bash scripts/report-run.sh
