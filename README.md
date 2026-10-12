@@ -14,7 +14,7 @@ GitHub Actions (daily)                                      Netlify (static host
 
 - **Static site generator:** Hugo extended 0.142 — pages for charts, countries, artists, songs and weekly recaps are generated from `data/*.json` by content adapters (`content/_gen/**/_content.gotmpl`), so no content files are committed per artist/song.
 - **History:** `store/history/*.json` keeps every chart position for 14 days (older days are folded into peak/days counters) → movement arrows, NEW/RE, peak, days on chart, weekly recaps.
-- **YouTube daily views:** view-count snapshots every day (`store/history/youtube_views.json`).
+- **YouTube daily views:** view-count snapshots every day (`store/history/youtube_views/*.json`, split in 16 files to stay under GitHub's 100 MB file limit).
 - **Languages:** English at `/`, plus `/tr/ /es/ /pt/ /de/ /fr/ /ja/` (UI strings in `i18n/`, static pages in `content/<lang>/`).
 - **SEO/AEO/GEO:** localized titles & descriptions, hreflang, canonical, JSON-LD (Organization, WebSite+SearchAction, BreadcrumbList, ItemList, Dataset, MusicGroup, MusicRecording, Article, FAQPage), answer boxes, `llms.txt` with live data, sitemap per language, IndexNow ping, AI crawlers allowed in `robots.txt`.
 

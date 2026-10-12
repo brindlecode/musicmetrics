@@ -158,6 +158,29 @@ function writeJSON(file, obj, { pretty = false } = {}) {
   fs.writeFileSync(file, s + '\n');
 }
 
+/**
+ * YouTube view history ({ videoId: {...} }), split over VIEW_SHARDS files in
+ * history/youtube_views/ because one file outgrew GitHub's 100 MB limit.
+ * Still reads the old single history/youtube_views.json, and removes it on write.
+ */
+const VIEWS_FILE = path.join(HISTORY_DIR, 'youtube_views.json');
+const VIEWS_DIR = path.join(HISTORY_DIR, 'youtube_views');
+const VIEW_SHARDS = 16;
+const viewShard = (id) => { let h = 0; for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % VIEW_SHARDS; };
+
+function readViews() {
+  const all = readJSON(VIEWS_FILE, {}) || {};
+  for (let i = 0; i < VIEW_SHARDS; i++) Object.assign(all, readJSON(path.join(VIEWS_DIR, `${i}.json`), {}));
+  return all;
+}
+
+function writeViews(hist) {
+  const shards = Array.from({ length: VIEW_SHARDS }, () => ({}));
+  for (const [id, h] of Object.entries(hist)) shards[viewShard(id)][id] = h;
+  shards.forEach((s, i) => writeJSON(path.join(VIEWS_DIR, `${i}.json`), s));
+  fs.rmSync(VIEWS_FILE, { force: true });
+}
+
 function formatNumber(n) {
   n = Number(n) || 0;
   if (n >= 1e9) return (n / 1e9).toFixed(n >= 1e10 ? 1 : 2).replace(/\.0+$/, '') + 'B';
@@ -169,5 +192,5 @@ function formatNumber(n) {
 module.exports = {
   ROOT, RAW_DIR, HISTORY_DIR, CACHE_DIR, DATA_DIR,
   sleep, httpGet, fetchJSON, mapLimit, slugify, cleanTitle, baseTitle, splitArtists, songKey,
-  now, today, FEAT_RE, readJSON, writeJSON, formatNumber,
+  now, today, FEAT_RE, readJSON, writeJSON, readViews, writeViews, formatNumber,
 };
