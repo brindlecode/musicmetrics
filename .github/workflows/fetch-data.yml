@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # the "Report problems" step opens an issue when a run goes wrong
 
 concurrency:
   group: update-charts-${{ github.ref }}
@@ -45,30 +46,36 @@ jobs:
           node-version: '22'
 
       - name: Fetch YouTube
+        id: youtube
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/fetch-youtube.js
         continue-on-error: true
 
       - name: Fetch Apple Music
+        id: apple
         run: node scripts/fetch-apple.js
         continue-on-error: true
 
       - name: Fetch Deezer
+        id: deezer
         run: node scripts/fetch-deezer.js
         continue-on-error: true
 
       - name: Fetch Spotify artist ids (Wikidata, weekly)
+        id: wikidata
         run: node scripts/fetch-wikidata-spotify.js
         continue-on-error: true
 
       - name: Fetch Last.fm (optional)
+        id: lastfm
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
         run: node scripts/fetch-lastfm.js
         continue-on-error: true
 
       - name: Build data (history, Global 200, artists, songs)
+        id: data
         run: node scripts/build-data.js
 
       - name: Install Hugo
@@ -79,6 +86,7 @@ jobs:
           hugo version
 
       - name: Build site
+        id: site
         run: hugo --gc --minify
 
       - name: Back up data store
@@ -91,7 +99,23 @@ jobs:
             !store/.git
           retention-days: 30
 
+      # GitHub rejects files over 100 MB (that stopped the site on 2026-10-11).
+      # Warn well before a store file gets there.
+      - name: Check data store file sizes
+        id: sizes
+        run: |
+          big=$(find store -path store/.git -prune -o -path store/raw -prune -o -type f -size +80M -printf '%s bytes  %p\n')
+          if [ -n "$big" ]; then
+            echo "::warning::Data store files over 80 MB (GitHub's limit is 100 MB):"
+            echo "$big"
+            { echo 'big<<EOF'; echo "$big"; echo 'EOF'; } >> "$GITHUB_OUTPUT"
+          fi
+
+      # If saving fails the site is still deployed with today's data;
+      # "Report problems" below opens an issue and marks the run as failed.
       - name: Save data store
+        id: save
+        continue-on-error: true
         working-directory: store
         run: |
           git config user.name "musicmetrics-bot"
@@ -102,6 +126,7 @@ jobs:
           git push -q -f origin fresh:store
 
       - name: Deploy to Netlify
+        id: deploy
         if: ${{ github.event_name == 'schedule' || inputs.deploy }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -121,3 +146,24 @@ jobs:
         if: ${{ success() && (github.event_name == 'schedule' || inputs.deploy) }}
         run: node scripts/indexnow.js
         continue-on-error: true
+
+      # Opens (or comments on) one GitHub issue when anything went wrong, so a
+      # failure never goes unnoticed again. The repository owner gets an email.
+      - name: Report problems
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          BIG: ${{ steps.sizes.outputs.big }}
+          OUTCOMES: |
+            Fetch YouTube=${{ steps.youtube.outcome }}
+            Fetch Apple Music=${{ steps.apple.outcome }}
+            Fetch Deezer=${{ steps.deezer.outcome }}
+            Fetch Spotify artist ids=${{ steps.wikidata.outcome }}
+            Fetch Last.fm=${{ steps.lastfm.outcome }}
+            Build data=${{ steps.data.outcome }}
+            Build site=${{ steps.site.outcome }}
+            Save data store=${{ steps.save.outcome }}
+            Deploy to Netlify=${{ steps.deploy.outcome }}
+          JOB_STATUS: ${{ job.status }}
+        run: bash scripts/report-run.sh
