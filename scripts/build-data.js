@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   RAW_DIR, HISTORY_DIR, CACHE_DIR, DATA_DIR,
-  fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, today, now,
+  fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, readViews, writeViews, today, now,
 } = require('./lib/common');
 const { loadSpotifyWeekly, annotate } = require('./lib/spotify-weekly');
 const C = require('./lib/countries');
@@ -119,8 +119,7 @@ function loadCharts() {
 // ------------------------------------------------------ youtube views -----
 
 function updateYoutubeViews(charts) {
-  const file = path.join(HISTORY_DIR, 'youtube_views.json');
-  const hist = readJSON(file, {});
+  const hist = readViews();
   const raw = readJSON(path.join(RAW_DIR, 'youtube_videos.json'), null);
   const ts = NOW.toISOString();
   const meta = {};
@@ -158,7 +157,7 @@ function updateYoutubeViews(charts) {
     if (h.v < 1e9 && h.seen && daysBetween(h.seen, TODAY) > 60) delete hist[id];
     else if (!h.ar && chanArtist[h.ci]) h.ar = chanArtist[h.ci];
   }
-  writeJSON(file, hist);
+  writeViews(hist);
 
   // Views gained per day (snapshot closest to 24h ago) and per week (closest to 7 days).
   const gain = (s, target, min) => {
