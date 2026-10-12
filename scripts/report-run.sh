@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
-# Called by the last step of .github/workflows/fetch-data.yml.
+# Called by the "report" job of .github/workflows/fetch-data.yml.
 # If a step failed or a data store file is getting too big, opens one GitHub
 # issue (or comments on the open one) and, for failures, marks the run failed.
 #
 # Env: OUTCOMES ("Step name=outcome" lines), BIG (files over 80 MB),
-#      JOB_STATUS, RUN_URL, GH_TOKEN.
+#      JOB_STATUS (result of the update job), RUN_URL, GH_TOKEN.
 set -uo pipefail
 
 TITLE="Nightly update needs attention"
 failed=$(printf '%s\n' "${OUTCOMES:-}" | sed -n 's/^\(.*\)=failure$/\1/p')
-[ "${JOB_STATUS:-success}" != "success" ] && [ -z "$failed" ] && failed="(a step outside the list above)"
+if [ "${JOB_STATUS:-success}" != "success" ] && [ -z "$failed" ]; then
+  failed="The update job ended as \"${JOB_STATUS}\" (cancelled, or over its 120-minute limit)"
+fi
 
 if [ -z "$failed" ] && [ -z "${BIG:-}" ]; then
   echo "No problems."
