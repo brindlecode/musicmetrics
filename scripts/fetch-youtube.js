@@ -16,7 +16,7 @@
  * Output: store/raw/youtube_<cc>.json, store/raw/youtube_videos.json
  */
 const path = require('path');
-const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, FEAT_RE, today, slugify } = require('./lib/common');
+const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, readViews, FEAT_RE, today, slugify } = require('./lib/common');
 const { YOUTUBE } = require('./lib/countries');
 const { parseArtistAndTitle } = require('./lib/youtube-parse');
 
@@ -268,7 +268,7 @@ async function main() {
 
   // View snapshots: every video currently charting + everything we have ever
   // tracked (biggest first) + seeds, capped at MAX_TRACKED videos.
-  const views = readJSON(path.join(HISTORY_DIR, 'youtube_views.json'), {});
+  const views = readViews();
   const tracked = Object.entries(views).sort((a, b) => (b[1].v || 0) - (a[1].v || 0)).slice(0, MAX_TRACKED).map(([id]) => id);
   const current = charts.flatMap((c) => c.items.map((i) => i.video_id));
   const ids = [...new Set([...current, ...SEED_VIDEOS, ...tracked])].slice(0, MAX_TRACKED);
