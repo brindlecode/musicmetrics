@@ -1,0 +1,38 @@
+name: Watch live site
+
+# Between nightly deploys: if Netlify publishes anything that is not one of our
+# "Charts update" deploys (on 2026-10-25 it built the old main branch by
+# itself), the latest good deploy is published again and an issue is opened.
+on:
+  schedule:
+    - cron: '41 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: scripts
+      - name: Check live site
+        id: live
+        continue-on-error: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: node scripts/check-live.js watch
+      - name: Report problems
+        if: ${{ steps.live.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Live site check failed
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          OUTCOMES: Check live site=failure
+        run: bash scripts/report-run.sh

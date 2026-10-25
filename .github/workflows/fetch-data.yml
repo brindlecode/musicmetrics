@@ -39,6 +39,7 @@ jobs:
         Build site=${{ steps.site.outcome }}
         Save data store=${{ steps.save.outcome }}
         Deploy to Netlify=${{ steps.deploy.outcome }}
+        Check live site=${{ steps.live.outcome }}
         Ping IndexNow=${{ steps.indexnow.outcome }}
     steps:
       - uses: actions/checkout@v4
@@ -100,7 +101,10 @@ jobs:
 
       - name: Build site
         id: site
-        run: hugo --gc --minify
+        run: |
+          hugo --gc --minify
+          # Read by scripts/check-live.js to confirm the live site is this build.
+          printf 'run=%s\ncommit=%s\nbuilt=%s\n' "$GITHUB_RUN_NUMBER" "$GITHUB_SHA" "$(date -u +'%Y-%m-%dT%H:%MZ')" > public/build.txt
 
       - name: Back up data store
         uses: actions/upload-artifact@v4
@@ -149,11 +153,26 @@ jobs:
             echo "::error::NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID secrets are missing. See README → Deployment."
             exit 1
           fi
+          # "Charts update" marks our deploys; the run number ties the deploy to /build.txt.
+          title="Charts update $(date -u +'%Y-%m-%d %H:%M') UTC (run ${GITHUB_RUN_NUMBER})"
+          echo "title=$title" >> "$GITHUB_OUTPUT"
           npx -y netlify-cli deploy --prod --no-build --dir=public --timeout=5400 --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" \
-            --message "Charts update $(date -u +'%Y-%m-%d %H:%M') UTC" || {
+            --message "$title" || {
             echo "::error::Netlify deploy failed. If the log says Unauthorized, create a new Personal Access Token at https://app.netlify.com/user/applications and update the NETLIFY_AUTH_TOKEN repository secret."
             exit 1
           }
+
+      # Netlify once published an old Git build over the site (2026-10-25).
+      # Confirms our deploy is the published one and musicmetrics.net serves it.
+      - name: Check live site
+        id: live
+        if: ${{ steps.deploy.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          TITLE: ${{ steps.deploy.outputs.title }}
+        run: node scripts/check-live.js verify "$TITLE"
 
       - name: Ping IndexNow (Bing, Yandex, Seznam, Naver)
         id: indexnow
