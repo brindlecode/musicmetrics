@@ -93,11 +93,23 @@ async function main() {
     }
     await checkLive(title);
   } else if (!ours(live)) {
+    // A nightly deploy still uploading will publish (and verify) itself;
+    // restoring an older one now could land on top of it.
+    const uploading = deploys.find((d) => ours(d) && !['ready', 'error', 'rejected'].includes(d.state));
     const good = deploys.find((d) => d.state === 'ready' && d.context === 'production' && ours(d));
-    if (!good) throw new Error(`Production is ${describe(live)} and no "${PREFIX}" deploy was found to restore`);
-    problems.push(`Production was ${describe(live)}, not a "${PREFIX}" deploy; restored ${describe(good)}.`);
-    await publish(good, 'production was not ours');
-    await checkLive(good.title);
+    // Re-read just before restoring, in case a nightly deploy finished meanwhile.
+    const now = (await api('GET', `/sites/${SITE}`)).published_deploy || {};
+    if (uploading) {
+      problems.push(`Production is ${describe(live)}, not a "${PREFIX}" deploy; not restoring because ${describe(uploading)} is still ${uploading.state}.`);
+    } else if (ours(now)) {
+      console.log(`Production is now ${describe(now)}; nothing to restore.`);
+    } else if (!good) {
+      throw new Error(`Production is ${describe(live)} and no "${PREFIX}" deploy was found to restore`);
+    } else {
+      problems.push(`Production was ${describe(live)}, not a "${PREFIX}" deploy; restored ${describe(good)}.`);
+      await publish(good, 'production was not ours');
+      await checkLive(good.title);
+    }
   } else {
     await checkLive(live.title);
   }
