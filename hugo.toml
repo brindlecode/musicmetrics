@@ -177,7 +177,7 @@ summaryLength = 30
 
   # Repository used by the admin panel (/admin/) for upload and workflow links.
   [params.repo]
-    name = "ilkukaya/musicmetrics"
+    name = "brindlecode/musicmetrics"
     branch = "claude/analyze-kworb-metrics-2mIwb"
     netlifySite = "musicmetrics-net"
 

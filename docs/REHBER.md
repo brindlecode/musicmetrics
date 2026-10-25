@@ -53,10 +53,10 @@ _Son güncelleme: 26 Eylül 2026_
 Bu yapılmadan site güncellenmez.
 1. https://app.netlify.com/user/applications adresine gir → **Personal access tokens** → **New access token**
 2. Ad: `github-actions`, süre: **No expiration** (veya en uzun) → oluştur, çıkan kodu kopyala
-3. https://github.com/ilkukaya/musicmetrics/settings/secrets/actions adresine gir
+3. https://github.com/brindlecode/musicmetrics/settings/secrets/actions adresine gir
 4. `NETLIFY_AUTH_TOKEN` → **Update** → kopyaladığın kodu yapıştır → Save
 5. `NETLIFY_SITE_ID` değerinin `01306bca-34a8-4f76-996a-3f6c3e92b6b7` olduğundan emin ol
-6. https://github.com/ilkukaya/musicmetrics/actions → "Update charts & deploy" → **Run workflow**
+6. https://github.com/brindlecode/musicmetrics/actions → "Update charts & deploy" → **Run workflow**
 
 ### B) Google Search Console (10 dakika)
 1. https://search.google.com/search-console → Mülk ekle → **Alan adı** → `musicmetrics.net`
