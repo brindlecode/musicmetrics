@@ -41,7 +41,7 @@ GitHub Actions (daily)                                      Netlify (static host
 | `NETLIFY_SITE_ID` | yes | `01306bca-34a8-4f76-996a-3f6c3e92b6b7` (musicmetrics-net) |
 | `LASTFM_API_KEY` | optional | https://www.last.fm/api/account/create |
 
-**Live site guard.** Only GitHub Actions deploys the site; Netlify's own Git builds must stay stopped (Netlify → Build & deploy → Stop builds). After each deploy, `scripts/check-live.js verify` makes sure our deploy is the published one and that `https://musicmetrics.net/build.txt` shows this run. Every 3 hours `.github/workflows/site-watch.yml` re-publishes the latest "Charts update" deploy if anything else is in production, and opens an issue.
+**Live site guard.** Only GitHub Actions deploys the site; Netlify's own Git builds must stay stopped (Netlify → Build & deploy → Stop builds); `scripts/check-live.js` turns them off through the Netlify API whenever it finds them on. After each deploy, `scripts/check-live.js verify` makes sure our deploy is the published one and that `https://musicmetrics.net/build.txt` shows this run. Every 3 hours `.github/workflows/site-watch.yml` re-publishes the latest "Charts update" deploy if anything else is in production, and opens an issue.
 
 ## Monetization & tracking settings (`hugo.toml` → `[params]`)
 

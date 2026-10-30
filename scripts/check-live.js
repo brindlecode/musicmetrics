@@ -14,7 +14,8 @@
  *     Between deploys: if production is not a "Charts update" deploy, the
  *     newest one is published again.
  *
- * Both warn when Netlify can still build from Git ("Stop builds" is off).
+ * Both turn Netlify's own Git builds off ("Stop builds") if they are on, and
+ * report it only if that fails.
  * Exit code 1 = something was wrong (the workflow then opens an issue).
  * Env: NETLIFY_AUTH_TOKEN, NETLIFY_SITE_ID.
  */
@@ -26,10 +27,11 @@ const problems = [];
 const warnings = [];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function api(method, path) {
+async function api(method, path, body) {
   const res = await fetch(`https://api.netlify.com/api/v1${path}`, {
     method,
-    headers: { Authorization: `Bearer ${TOKEN}` },
+    headers: { Authorization: `Bearer ${TOKEN}`, ...(body && { 'Content-Type': 'application/json' }) },
+    body: body && JSON.stringify(body),
   });
   if (!res.ok) throw new Error(`Netlify API ${method} ${path}: HTTP ${res.status}`);
   return res.json();
@@ -61,15 +63,18 @@ async function checkLive(title) {
   problems.push(`${SITE_URL}/build.txt does not show run ${run} (got: ${last.trim().slice(0, 120)})`);
 }
 
-// An error after a deploy (once a day); only a log warning in watch mode.
-function checkGitBuilds(site, mode) {
+// Netlify must never build from Git by itself: turn "Stop builds" on. If that
+// fails it is an error after a deploy (once a day), only a warning in watch mode.
+async function checkGitBuilds(site, mode) {
   const b = site.build_settings || {};
-  if (b.repo_url && !b.stop_builds) {
-    (mode === 'verify' ? problems : warnings).push(`Netlify can still build from Git (${b.repo_url}, branch ${b.repo_branch || '?'}). ` +
-      'Turn it off: Netlify → musicmetrics-net → Project configuration → Build & deploy → Continuous deployment → Build settings → Configure → Stop builds.');
-  } else {
-    console.log('Netlify Git builds: ' + (b.repo_url ? 'stopped' : 'not linked') + '.');
-  }
+  if (!b.repo_url || b.stop_builds) return console.log('Netlify Git builds: ' + (b.repo_url ? 'stopped' : 'not linked') + '.');
+  console.log(`Netlify can build from Git (${b.repo_url}, branch ${b.repo_branch || '?'}); stopping builds.`);
+  try {
+    await api('PATCH', `/sites/${SITE}`, { build_settings: { stop_builds: true } });
+    if ((await api('GET', `/sites/${SITE}`)).build_settings?.stop_builds) return console.log('Netlify Git builds: stopped now.');
+  } catch (e) { console.log(e.message); }
+  (mode === 'verify' ? problems : warnings).push(`Netlify can still build from Git (${b.repo_url}, branch ${b.repo_branch || '?'}) and stopping it failed. ` +
+    'Turn it off: Netlify → musicmetrics-net → Project configuration → Build & deploy → Continuous deployment → Build settings → Configure → Stop builds.');
 }
 
 async function main() {
@@ -114,7 +119,7 @@ async function main() {
     await checkLive(live.title);
   }
 
-  checkGitBuilds(site, mode);
+  await checkGitBuilds(site, mode);
 }
 
 main()
