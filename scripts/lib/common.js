@@ -159,27 +159,36 @@ function writeJSON(file, obj, { pretty = false } = {}) {
 }
 
 /**
- * YouTube view history ({ videoId: {...} }), split over VIEW_SHARDS files in
- * history/youtube_views/ because one file outgrew GitHub's 100 MB limit.
- * Still reads the old single history/youtube_views.json, and removes it on write.
+ * Big { key: value } maps in the store, split over a fixed number of files in
+ * <dir>/0.json, 1.json, ... because single files outgrow GitHub's 100 MB limit.
+ * Still reads an old single <dir>.json, and removes it on write.
  */
-const VIEWS_FILE = path.join(HISTORY_DIR, 'youtube_views.json');
-const VIEWS_DIR = path.join(HISTORY_DIR, 'youtube_views');
-const VIEW_SHARDS = 16;
-const viewShard = (id) => { let h = 0; for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % VIEW_SHARDS; };
+const shardOf = (key, n) => { let h = 0; for (const c of key) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % n; };
 
-function readViews() {
-  const all = readJSON(VIEWS_FILE, {}) || {};
-  for (let i = 0; i < VIEW_SHARDS; i++) Object.assign(all, readJSON(path.join(VIEWS_DIR, `${i}.json`), {}));
+function readSharded(dir, n) {
+  const all = readJSON(`${dir}.json`, {}) || {};
+  for (let i = 0; i < n; i++) Object.assign(all, readJSON(path.join(dir, `${i}.json`), {}));
   return all;
 }
 
-function writeViews(hist) {
-  const shards = Array.from({ length: VIEW_SHARDS }, () => ({}));
-  for (const [id, h] of Object.entries(hist)) shards[viewShard(id)][id] = h;
-  shards.forEach((s, i) => writeJSON(path.join(VIEWS_DIR, `${i}.json`), s));
-  fs.rmSync(VIEWS_FILE, { force: true });
+function writeSharded(dir, n, obj) {
+  const shards = Array.from({ length: n }, () => ({}));
+  for (const [k, v] of Object.entries(obj)) shards[shardOf(k, n)][k] = v;
+  shards.forEach((s, i) => writeJSON(path.join(dir, `${i}.json`), s));
+  fs.rmSync(`${dir}.json`, { force: true });
 }
+
+// YouTube view history ({ videoId: {...} }): history/youtube_views/
+const VIEWS_DIR = path.join(HISTORY_DIR, 'youtube_views');
+const VIEW_SHARDS = 16;
+const readViews = () => readSharded(VIEWS_DIR, VIEW_SHARDS);
+const writeViews = (hist) => writeSharded(VIEWS_DIR, VIEW_SHARDS, hist);
+
+// Every song and artist that has ever charted: catalog/songs/, catalog/artists/
+const CATALOG_DIR = path.join(ROOT, 'store', 'catalog');
+const CATALOG_SHARDS = { songs: 16, artists: 4 };
+const readCatalog = (name) => readSharded(path.join(CATALOG_DIR, name), CATALOG_SHARDS[name]);
+const writeCatalog = (name, obj) => writeSharded(path.join(CATALOG_DIR, name), CATALOG_SHARDS[name], obj);
 
 function formatNumber(n) {
   n = Number(n) || 0;
@@ -192,5 +201,5 @@ function formatNumber(n) {
 module.exports = {
   ROOT, RAW_DIR, HISTORY_DIR, CACHE_DIR, DATA_DIR,
   sleep, httpGet, fetchJSON, mapLimit, slugify, cleanTitle, baseTitle, splitArtists, songKey,
-  now, today, FEAT_RE, readJSON, writeJSON, readViews, writeViews, formatNumber,
+  now, today, FEAT_RE, readJSON, writeJSON, readViews, writeViews, readCatalog, writeCatalog, formatNumber,
 };
