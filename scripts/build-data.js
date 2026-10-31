@@ -12,7 +12,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   RAW_DIR, HISTORY_DIR, CACHE_DIR, DATA_DIR,
-  fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, readViews, writeViews, today, now,
+  fetchJSON, sleep, slugify, songKey, splitArtists, readJSON, writeJSON, readViews, writeViews, readCatalog, writeCatalog, today, now,
 } = require('./lib/common');
 const { loadSpotifyWeekly, annotate } = require('./lib/spotify-weekly');
 const C = require('./lib/countries');
@@ -31,7 +31,6 @@ const ENRICH_PER_RUN = 1000;
 
 const STORE_DIR = path.join(path.dirname(HISTORY_DIR));
 const STORE_CHARTS = path.join(STORE_DIR, 'charts');
-const CATALOG_DIR = path.join(STORE_DIR, 'catalog');
 const WEEKLY_STORE = path.join(STORE_DIR, 'weekly');
 
 const PLATFORM_WEIGHT = { youtube: 1, apple: 1, itunes: 0.6, deezer: 0.6, lastfm: 0.5 };
@@ -130,7 +129,7 @@ function updateYoutubeViews(charts) {
   // Channel -> artist, for videos found through an artist's own channel.
   const chanArtist = {};
   const wd = (readJSON(path.join(CACHE_DIR, 'wikidata_youtube.json'), {}) || {}).map || {};
-  for (const [slug, a] of Object.entries(readJSON(path.join(CATALOG_DIR, 'artists.json'), {}))) {
+  for (const [slug, a] of Object.entries(readCatalog('artists'))) {
     const ch = a.yc || wd[slug];
     if (ch) chanArtist[ch] = slug;
   }
@@ -586,10 +585,8 @@ async function main() {
  * artists: { slug: { n, img, l, yc, f, ls, b: {r, c, d, t}, s: [song keys], cc: [countries] } }
  */
 function updateCatalog(songList, artistList, deezerCache, yt) {
-  const sFile = path.join(CATALOG_DIR, 'songs.json');
-  const aFile = path.join(CATALOG_DIR, 'artists.json');
-  const songsCat = readJSON(sFile, {});
-  const artistsCat = readJSON(aFile, {});
+  const songsCat = readCatalog('songs');
+  const artistsCat = readCatalog('artists');
   const wdYt = (readJSON(path.join(CACHE_DIR, 'wikidata_youtube.json'), {}) || {}).map || {};
   const cap = (arr, n) => arr.slice(-n);
 
@@ -630,8 +627,8 @@ function updateCatalog(songList, artistList, deezerCache, yt) {
       if (song) c.img = song.image;
     }
   }
-  writeJSON(sFile, songsCat);
-  writeJSON(aFile, artistsCat);
+  writeCatalog('songs', songsCat);
+  writeCatalog('artists', artistsCat);
   return { songs: songsCat, artists: artistsCat };
 }
 

@@ -16,7 +16,7 @@
  * Output: store/raw/youtube_<cc>.json, store/raw/youtube_videos.json
  */
 const path = require('path');
-const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, readViews, FEAT_RE, today, slugify } = require('./lib/common');
+const { RAW_DIR, HISTORY_DIR, fetchJSON, mapLimit, splitArtists, writeJSON, readJSON, readViews, readCatalog, FEAT_RE, today, slugify } = require('./lib/common');
 const { YOUTUBE } = require('./lib/countries');
 const { parseArtistAndTitle } = require('./lib/youtube-parse');
 
@@ -171,7 +171,7 @@ async function wikidataChannels() {
 async function discover(known) {
   const file = path.join(HISTORY_DIR, 'youtube_scan.json');
   const scan = readJSON(file, {});
-  const catalog = readJSON(path.join(HISTORY_DIR, '..', 'catalog', 'artists.json'), {});
+  const catalog = readCatalog('artists');
   const wd = await wikidataChannels();
   const channels = Object.entries(catalog)
     .map(([slug, a]) => [slug, a, a.yc || wd[slug]])
