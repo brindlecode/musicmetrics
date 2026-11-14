@@ -47,7 +47,7 @@ GitHub Actions (daily)                                      Netlify (static host
 
 - `ads.adsenseClient` (+ optional `slotInline`, `slotSidebar`, `slotFooter`) — ads and `/ads.txt` appear automatically.
 - `affiliate.appleToken`, `affiliate.amazonTag`, `affiliate.ticketsUrl` — added to every Listen/Buy button.
-- `analytics.ga4`, `analytics.clarity`, `analytics.cloudflare`; `verify.google`, `verify.bing`, `verify.yandex`.
+- `analytics.googleTag` (Google tag from the GA4 data stream; replaces `analytics.ga4`), `analytics.ga4`, `analytics.clarity`, `analytics.cloudflare`; `verify.google`, `verify.bing`, `verify.yandex`.
 
 ## Local development
 

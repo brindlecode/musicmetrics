@@ -131,7 +131,7 @@
         <thead><tr><th>Ayar</th><th>Durum</th><th>Ne işe yarar</th></tr></thead>
         <tbody>
           <tr><td>Google AdSense</td><td>{{ if $p.ads.adsenseClient }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Reklam geliri. Onaydan sonra <code>ads.adsenseClient</code> doldurulur.</td></tr>
-          <tr><td>Google Analytics</td><td>{{ if $p.analytics.ga4 }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Ziyaretçi istatistikleri (<code>analytics.ga4</code>).</td></tr>
+          <tr><td>Google Analytics</td><td>{{ if or $p.analytics.googleTag $p.analytics.ga4 }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Ziyaretçi istatistikleri (<code>analytics.googleTag</code>).</td></tr>
           <tr><td>Microsoft Clarity</td><td>{{ if $p.analytics.clarity }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Ücretsiz ısı haritası ve oturum kaydı.</td></tr>
           <tr><td>Google Search Console</td><td>{{ if $p.verify.google }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Google'da görünürlük ve aramalar (<code>verify.google</code>).</td></tr>
           <tr><td>Bing Webmaster</td><td>{{ if $p.verify.bing }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Bing ve ChatGPT araması (<code>verify.bing</code>).</td></tr>

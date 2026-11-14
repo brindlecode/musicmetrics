@@ -198,7 +198,11 @@ summaryLength = 30
 
   # Free analytics. Leave empty to disable.
   [params.analytics]
-    ga4 = ""          # e.g. "G-XXXXXXXXXX"
+    # Google tag (gtm.js) from the GA4 web data stream. It already sends page
+    # views to the stream's measurement id (G-4DK7E6SQDV), so leave ga4 empty
+    # while this is set, or every page view is counted twice.
+    googleTag = "GTM-TFX57NZ5"
+    ga4 = ""          # e.g. "G-XXXXXXXXXX" (ignored while googleTag is set)
     clarity = ""      # Microsoft Clarity project id
     cloudflare = ""   # Cloudflare Web Analytics token
 
