@@ -1,12 +1,13 @@
 {{- /* Manual AdSense unit with a fixed, reserved size (see .ad-slot--* in main.css).
      Params: slot, kind (inline | billboard | sidebar). Renders nothing until
-     ads.enabled, adsenseClient AND the slot id are set. */ -}}
+     ads.enabled, adsenseClient AND the slot id are set. A unit that is hidden
+     (the sidebar below 1100px) is never requested. */ -}}
 {{- $client := "" }}{{ if site.Params.ads.enabled }}{{ $client = site.Params.ads.adsenseClient }}{{ end -}}
 {{- $kind := .kind | default "inline" -}}
 {{- if and $client .slot -}}
 <div class="ad ad--{{ $kind }}">
   <span class="ad__label">{{ i18n "advertisement" }}</span>
   <ins class="adsbygoogle ad-slot--{{ $kind }}" data-ad-client="{{ $client }}" data-ad-slot="{{ .slot }}"></ins>
-  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+  <script>(function(s){var i=s.previousElementSibling;if(i&&i.offsetParent)(adsbygoogle=window.adsbygoogle||[]).push({});})(document.currentScript);</script>
 </div>
 {{- end -}}
