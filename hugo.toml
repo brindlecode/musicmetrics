@@ -206,10 +206,12 @@ summaryLength = 30
     clarity = ""      # Microsoft Clarity project id
     cloudflare = ""   # Cloudflare Web Analytics token
 
-  # Google AdSense. Set client to "ca-pub-XXXXXXXXXXXXXXXX" once approved.
-  # With only the client set, Auto ads are used; add slot ids for manual units.
+  # Google AdSense. The client id alone only verifies the site for AdSense
+  # (google-adsense-account meta tag + /ads.txt); no ad script is loaded and
+  # no ads are shown until enabled = true. Add slot ids for manual units.
   [params.ads]
-    adsenseClient = ""
+    enabled = false
+    adsenseClient = "ca-pub-9110547384071189"
     slotInline = ""
     slotSidebar = ""
     slotFooter = ""

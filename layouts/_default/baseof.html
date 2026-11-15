@@ -45,6 +45,7 @@
 <meta name="twitter:title" content="{{ $seo.ogTitle }}">
 <meta name="twitter:description" content="{{ $seo.description }}">
 <meta name="twitter:image" content="{{ $seo.image }}">
+{{- with site.Params.ads.adsenseClient }}<meta name="google-adsense-account" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.google }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.bing }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.yandex }}<meta name="yandex-verification" content="{{ . }}">{{ end }}

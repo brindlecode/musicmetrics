@@ -7,7 +7,7 @@
 {{- if .limit }}{{ $items = first .limit $items }}{{ end -}}
 {{- $metric := "" -}}
 {{- if eq $p "youtube" }}{{ $metric = i18n "views" }}{{ else if eq $p "musicmetrics" }}{{ $metric = i18n "points" }}{{ else if eq $p "lastfm" }}{{ $metric = i18n "listeners" }}{{ else if in (slice "apple" "apple-albums") $p }}{{ $metric = i18n "genre" }}{{ else if eq $p "deezer" }}{{ $metric = i18n "album" }}{{ end -}}
-{{- $showAds := and .ads site.Params.ads.adsenseClient site.Params.ads.slotInline -}}
+{{- $showAds := and .ads site.Params.ads.enabled site.Params.ads.adsenseClient site.Params.ads.slotInline -}}
 <div class="chart__head" aria-hidden="true">
   <span class="c-rank" style="text-align:center">#</span><span class="c-move hide-m" style="text-align:center">±</span><span class="c-art"></span>
   <span>{{ if $ci.albums }}{{ i18n "album" }}{{ else }}{{ i18n "song" }}{{ end }} / {{ i18n "artist" }}</span>

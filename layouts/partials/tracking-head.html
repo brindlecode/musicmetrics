@@ -1,5 +1,6 @@
 {{- $a := site.Params.analytics -}}
-{{- $ads := site.Params.ads.adsenseClient -}}
+{{- /* The ad script only loads once ads.enabled is true; the client id alone just verifies the site. */ -}}
+{{- $ads := "" }}{{ if site.Params.ads.enabled }}{{ $ads = site.Params.ads.adsenseClient }}{{ end -}}
 {{- if or $a.googleTag $a.ga4 $ads -}}
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
