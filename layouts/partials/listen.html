@@ -2,7 +2,11 @@
 {{- $aff := site.Params.affiliate -}}
 {{- $q := trim (printf "%s %s" .artist (.title | default "")) " " -}}
 {{- $amz := site.Language.Params.amazonDomain | default "amazon.com" -}}
-{{- $tag := cond (ne $aff.amazonTag "") (printf "&tag=%s" $aff.amazonTag) "" -}}
+{{- /* An Associates tag only works on its own storefront, so it is set per language (languages.<lang>.params.amazonTag). */ -}}
+{{- $amzTag := site.Language.Params.amazonTag | default "" -}}
+{{- $tag := cond (ne $amzTag "") (printf "&tag=%s" $amzTag) "" -}}
+{{- $amzRel := cond (ne $amzTag "") "sponsored noopener" "nofollow noopener" -}}
+{{- $appleRel := cond (ne ($aff.appleToken | default "") "") "sponsored noopener" "nofollow noopener" -}}
 {{- $apple := index (.links | default dict) "apple" -}}
 {{- if and $apple $aff.appleToken }}{{ $apple = printf "%s%sat=%s&ct=musicmetrics" $apple (cond (in $apple "?") "&" "?") $aff.appleToken }}{{ end -}}
 {{- if not $apple }}{{ $apple = printf "https://music.apple.com/search?term=%s" (urlquery $q) }}{{ if $aff.appleToken }}{{ $apple = printf "%s&at=%s&ct=musicmetrics" $apple $aff.appleToken }}{{ end }}{{ end -}}
@@ -10,14 +14,21 @@
 {{- $spotify := index (.links | default dict) "spotify" | default (printf "https://open.spotify.com/search/%s" (urlquery $q)) -}}
 {{- $deezer := index (.links | default dict) "deezer" | default (printf "https://www.deezer.com/search/%s" (urlquery $q)) -}}
 <div class="cta-grid">
-  <a class="cta cta--primary" href="{{ $apple }}" target="_blank" rel="sponsored noopener">{{ partialCached "plogo.html" "apple" "apple" }}<span>Apple Music<small>{{ i18n "listen_free_trial" }}</small></span></a>
+  <a class="cta cta--primary" href="{{ $apple }}" target="_blank" rel="{{ $appleRel }}">{{ partialCached "plogo.html" "apple" "apple" }}<span>Apple Music<small>{{ i18n "listen_free_trial" }}</small></span></a>
   <a class="cta" href="{{ $spotify }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "spotify" "spotify" }}<span>Spotify<small>{{ i18n "listen" }}</small></span></a>
   <a class="cta" href="{{ $yt }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "youtube" "youtube" }}<span>YouTube<small>{{ i18n "watch" }}</small></span></a>
   <a class="cta" href="{{ $deezer }}" target="_blank" rel="nofollow noopener">{{ partialCached "plogo.html" "deezer" "deezer" }}<span>Deezer<small>{{ i18n "listen" }}</small></span></a>
-  <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery $q }}&i=digital-music{{ $tag }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "cart") "cart" 20 }}<span>Amazon Music<small>{{ i18n "stream_or_buy" }}</small></span></a>
-  <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery (printf "%s vinyl" .artist) }}{{ $tag }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "disc") "disc" 20 }}<span>{{ i18n "vinyl_cds" }}<small>{{ i18n "shop_on" }} Amazon</small></span></a>
+  <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery $q }}&i=digital-music{{ $tag }}" target="_blank" rel="{{ $amzRel }}">{{ partialCached "icons.html" (dict "n" "cart") "cart" 20 }}<span>Amazon Music<small>{{ i18n "stream_or_buy" }}</small></span></a>
+  <a class="cta" href="https://www.{{ $amz }}/s?k={{ urlquery (printf "%s vinyl" .artist) }}{{ $tag }}" target="_blank" rel="{{ $amzRel }}">{{ partialCached "icons.html" (dict "n" "disc") "disc" 20 }}<span>{{ i18n "vinyl_cds" }}<small>{{ i18n "shop_on" }} Amazon</small></span></a>
   {{- with $aff.ticketsUrl }}
   <a class="cta" href="{{ replace . "{q}" (urlquery $.artist) }}" target="_blank" rel="sponsored noopener">{{ partialCached "icons.html" (dict "n" "ticket") "ticket" 20 }}<span>{{ i18n "concert_tickets" }}<small>{{ $.artist }}</small></span></a>
   {{- end }}
 </div>
-{{- if or $aff.appleToken $aff.amazonTag $aff.ticketsUrl }}<p class="disclosure">{{ i18n "affiliate_disclosure" }}</p>{{ end }}
+{{- if $amzTag }}
+<p class="gear"><span class="gear__label">{{ i18n "gear_title" }}</span>
+  {{- range slice "gear_headphones" "gear_earbuds" "gear_speakers" "gear_turntables" }}
+  <a href="https://www.{{ $amz }}/s?k={{ urlquery (i18n .) }}{{ $tag }}" target="_blank" rel="sponsored noopener">{{ i18n . }}</a>
+  {{- end }}
+  <span class="gear__on">Amazon</span></p>
+{{- end }}
+{{- if or $aff.appleToken $amzTag $aff.ticketsUrl }}<p class="disclosure">{{ i18n "affiliate_disclosure" }}{{ if $amzTag }} {{ i18n "amazon_disclosure" }}{{ end }}</p>{{ end }}

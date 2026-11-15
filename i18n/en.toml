@@ -232,6 +232,13 @@ vinyl_cds = "Vinyl & CDs"
 shop_on = "Shop on"
 concert_tickets = "Concert tickets"
 affiliate_disclosure = "Some links are affiliate links: we may earn a commission at no extra cost to you. It never affects the charts."
+show_all_charts = "Show all {{ .N }} charts"
+gear_title = "Listen on better gear:"
+gear_headphones = "Headphones"
+gear_earbuds = "Wireless earbuds"
+gear_speakers = "Bluetooth speakers"
+gear_turntables = "Turntables"
+amazon_disclosure = "As an Amazon Associate we earn from qualifying purchases."
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "Trending Music Videos in {{ .Country }} Today — YouTube Chart"

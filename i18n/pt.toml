@@ -232,6 +232,13 @@ vinyl_cds = "Vinis e CDs"
 shop_on = "Comprar na"
 concert_tickets = "Ingressos para shows"
 affiliate_disclosure = "Alguns links são de afiliados: podemos receber uma comissão sem custo extra para você. Isso nunca afeta as paradas."
+show_all_charts = "Ver todas as {{ .N }} paradas"
+gear_title = "Ouça com um equipamento melhor:"
+gear_headphones = "Fones de ouvido"
+gear_earbuds = "Fones sem fio"
+gear_speakers = "Caixas de som Bluetooth"
+gear_turntables = "Toca-discos"
+amazon_disclosure = "Como Associado da Amazon, ganhamos com compras qualificadas."
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "Músicas em alta no YouTube hoje: {{ .Country }} — Parada"

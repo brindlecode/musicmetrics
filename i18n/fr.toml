@@ -232,6 +232,13 @@ vinyl_cds = "Vinyles et CD"
 shop_on = "Acheter sur"
 concert_tickets = "Billets de concert"
 affiliate_disclosure = "Certains liens sont des liens d'affiliation : nous pouvons percevoir une commission, sans frais supplémentaires pour vous. Cela n'influence jamais les classements."
+show_all_charts = "Afficher les {{ .N }} classements"
+gear_title = "Écoutez avec un meilleur équipement :"
+gear_headphones = "Casques audio"
+gear_earbuds = "Écouteurs sans fil"
+gear_speakers = "Enceintes Bluetooth"
+gear_turntables = "Platines vinyle"
+amazon_disclosure = "En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises."
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "Clips en tendance {{ .Country }} aujourd'hui – Classement YouTube"

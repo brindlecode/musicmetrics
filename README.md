@@ -45,8 +45,8 @@ GitHub Actions (daily)                                      Netlify (static host
 
 ## Monetization & tracking settings (`hugo.toml` → `[params]`)
 
-- `ads.adsenseClient` — verifies the site for AdSense (`google-adsense-account` meta tag and `/ads.txt`). Ads are only loaded once `ads.enabled = true`; `slotInline`, `slotSidebar`, `slotFooter` are the manual units.
-- `affiliate.appleToken`, `affiliate.amazonTag`, `affiliate.ticketsUrl` — added to every Listen/Buy button.
+- `ads.adsenseClient` — verifies the site for AdSense (`google-adsense-account` meta tag and `/ads.txt`). Ads are only loaded once `ads.enabled = true`; `slotInline`, `slotBillboard`, `slotSidebar` are the manual, fixed-size units. Ads never load on YouTube-only, Spotify, search, legal or list pages (`layouts/partials/func/ads-on.html`).
+- `affiliate.appleToken`, `affiliate.ticketsUrl` — added to every Listen/Buy button. Amazon Associates tags are per storefront: `amazonTag` in each `[languages.<lang>.params]`; setting one also shows the gear links and the Amazon disclosure in that language.
 - `analytics.googleTag` (Google tag from the GA4 data stream; replaces `analytics.ga4`), `analytics.ga4`, `analytics.clarity`, `analytics.cloudflare`; `verify.google`, `verify.bing`, `verify.yandex`.
 
 ## Local development

@@ -136,7 +136,7 @@
           <tr><td>Google Search Console</td><td>{{ if $p.verify.google }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Google'da görünürlük ve aramalar (<code>verify.google</code>).</td></tr>
           <tr><td>Bing Webmaster</td><td>{{ if $p.verify.bing }}<span class="admin-ok">✓ Doğrulandı</span>{{ else }}<span class="muted">Bekliyor</span>{{ end }}</td><td>Bing ve ChatGPT araması (<code>verify.bing</code>).</td></tr>
           <tr><td>Apple Music ortaklık</td><td>{{ if $p.affiliate.appleToken }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>“Apple Music'te dinle” tıklamalarından komisyon.</td></tr>
-          <tr><td>Amazon ortaklık</td><td>{{ if $p.affiliate.amazonTag }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Plak/CD ve Amazon Music tıklamalarından komisyon.</td></tr>
+          <tr><td>Amazon ortaklık</td><td>{{ $amz := false }}{{ range site.Languages }}{{ if .Params.amazonTag }}{{ $amz = true }}{{ end }}{{ end }}{{ if $amz }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Plak/CD ve Amazon Music tıklamalarından komisyon.</td></tr>
           <tr><td>Konser bileti ortaklık</td><td>{{ if $p.affiliate.ticketsUrl }}<span class="admin-ok">✓ Açık</span>{{ else }}<span class="muted">Kapalı</span>{{ end }}</td><td>Sanatçı sayfalarında bilet bağlantısı.</td></tr>
         </tbody>
       </table>

@@ -40,12 +40,17 @@
       {{- else if $s.on }}<div class="stat"><span class="stat__v">#{{ $best.r }}</span><span class="stat__l">{{ i18n "best_position" }}</span></div>{{ end }}
     </div>
 
+    <section class="section" id="listen">
+      <div class="section-head"><h2>{{ i18n "listen_to" (dict "Name" $s.title) }}</h2></div>
+      {{ partial "listen.html" (dict "artist" $s.artist "title" $s.title "links" $s.links "video_id" $s.video_id) }}
+    </section>
+
     {{- if $s.on }}
     {{ partial "sp-positions.html" $s.spw }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "chart_positions" }}</h2></div>
       <div class="table-wrap">
-        <table class="table">
+        <table class="table{{ if gt (len $s.positions) 12 }} is-collapsed{{ end }}" id="positions">
           <thead><tr><th>{{ i18n "chart" }}</th><th class="r">{{ i18n "position" }}</th><th class="r">±</th><th class="r">{{ i18n "peak_short" }}</th><th class="r">{{ i18n "days_short" }}</th></tr></thead>
           <tbody>
           {{- range $s.positions }}{{ $ci := partialCached "func/chart-info.html" .c .c }}
@@ -60,8 +65,18 @@
           </tbody>
         </table>
       </div>
+      {{- if gt (len $s.positions) 12 }}
+      <button class="btn btn--ghost table-more" type="button" data-expand="positions">{{ i18n "show_all_charts" (dict "N" (len $s.positions)) }}</button>
+      <noscript><style>.table.is-collapsed tbody tr{display:table-row}.table-more{display:none}</style></noscript>
+      {{- end }}
     </section>
     {{- end }}
+
+    {{- if $s.on }}
+    {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+    {{- end }}
+
+    {{ partial "faq.html" . }}
 
     {{- with $s.video_id }}
     <section class="section">
@@ -69,15 +84,6 @@
       <div class="embed" data-yt="{{ . }}" style="background-image:url(https://i.ytimg.com/vi/{{ . }}/hqdefault.jpg)" role="button" tabindex="0" aria-label="{{ i18n "play_video" }}"><span class="play">{{ partialCached "icons.html" (dict "n" "play" "s" 28) "play" 28 }}</span></div>
     </section>
     {{- end }}
-
-    {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
-
-    <section class="section" id="listen">
-      <div class="section-head"><h2>{{ i18n "listen_to" (dict "Name" $s.title) }}</h2></div>
-      {{ partial "listen.html" (dict "artist" $s.artist "title" $s.title "links" $s.links "video_id" $s.video_id) }}
-    </section>
-
-    {{ partial "faq.html" . }}
 
     {{- $a0 := index $s.artists 0 -}}
     {{- with and $a0 $a0.s (index site.Data.artists $a0.s) }}{{ $others := where .songs "k" "ne" $s.key }}{{ with $others }}
@@ -92,6 +98,6 @@
     {{- end }}{{ end }}
     <p class="note" style="margin-top:24px">{{ i18n "data_note" }}</p>
   </div>
-  {{ partialCached "aside.html" . site.Language.Lang }}
+  {{ partialCached "aside.html" (dict "ads" true) site.Language.Lang "ads" }}
 </div>
 {{ end }}

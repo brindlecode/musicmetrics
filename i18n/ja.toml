@@ -232,6 +232,13 @@ vinyl_cds = "レコード・CD"
 shop_on = "購入先"
 concert_tickets = "コンサートチケット"
 affiliate_disclosure = "一部のリンクはアフィリエイトリンクです。追加費用なしで当サイトに紹介料が入る場合がありますが、チャートには一切影響しません。"
+show_all_charts = "{{ .N }}件のチャートをすべて表示"
+gear_title = "もっといい音で聴く："
+gear_headphones = "ヘッドホン"
+gear_earbuds = "ワイヤレスイヤホン"
+gear_speakers = "Bluetoothスピーカー"
+gear_turntables = "レコードプレーヤー"
+amazon_disclosure = "Amazonのアソシエイトとして、MusicMetricsは適格販売により収入を得ています。"
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "今日の{{ .Country }} YouTube急上昇音楽チャート"

@@ -118,6 +118,7 @@ summaryLength = 30
       homeCountry = "us"
       locale = "en_US"
       amazonDomain = "amazon.com"
+      amazonTag = ""
   [languages.tr]
     languageName = "Türkçe"
     languageCode = "tr"
@@ -126,6 +127,7 @@ summaryLength = 30
       homeCountry = "tr"
       locale = "tr_TR"
       amazonDomain = "amazon.com.tr"
+      amazonTag = ""
   [languages.es]
     languageName = "Español"
     languageCode = "es"
@@ -134,6 +136,7 @@ summaryLength = 30
       homeCountry = "es"
       locale = "es_ES"
       amazonDomain = "amazon.es"
+      amazonTag = ""
   [languages.pt]
     languageName = "Português"
     languageCode = "pt"
@@ -142,6 +145,7 @@ summaryLength = 30
       homeCountry = "br"
       locale = "pt_BR"
       amazonDomain = "amazon.com.br"
+      amazonTag = ""
   [languages.de]
     languageName = "Deutsch"
     languageCode = "de"
@@ -150,6 +154,7 @@ summaryLength = 30
       homeCountry = "de"
       locale = "de_DE"
       amazonDomain = "amazon.de"
+      amazonTag = ""
   [languages.fr]
     languageName = "Français"
     languageCode = "fr"
@@ -158,6 +163,7 @@ summaryLength = 30
       homeCountry = "fr"
       locale = "fr_FR"
       amazonDomain = "amazon.fr"
+      amazonTag = ""
   [languages.ja]
     languageName = "日本語"
     languageCode = "ja"
@@ -166,6 +172,7 @@ summaryLength = 30
       homeCountry = "jp"
       locale = "ja_JP"
       amazonDomain = "amazon.co.jp"
+      amazonTag = ""
 
 # ----------------------------------------------------------------- params --
 [params]
@@ -212,12 +219,13 @@ summaryLength = 30
   [params.ads]
     enabled = false
     adsenseClient = "ca-pub-9110547384071189"
-    slotInline = ""
-    slotSidebar = ""
-    slotFooter = ""
+    slotInline = ""      # 728x90 desktop / 300x250 mobile, between sections and chart rows
+    slotBillboard = ""   # 970x250 desktop / 300x250 mobile, home page only
+    slotSidebar = ""     # 300x600, sticky sidebar (desktop only)
 
   # Affiliate programs. Every value is optional; links still work without them.
   [params.affiliate]
     appleToken = ""       # Apple Services Performance Partners "at" token
-    amazonTag = ""        # Amazon Associates tag, e.g. "musicmetrics-20"
+    # Amazon Associates tags are per storefront: set amazonTag next to
+    # amazonDomain in [languages.<lang>.params] above.
     ticketsUrl = ""       # Ticket affiliate deep link; "{q}" is replaced by the artist name

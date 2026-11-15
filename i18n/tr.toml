@@ -232,6 +232,13 @@ vinyl_cds = "Plak ve CD"
 shop_on = "Satın al:"
 concert_tickets = "Konser biletleri"
 affiliate_disclosure = "Bazı bağlantılar satış ortaklığı bağlantılarıdır: size ek bir maliyeti olmadan komisyon kazanabiliriz. Bu, listeleri asla etkilemez."
+show_all_charts = "{{ .N }} listenin tümünü göster"
+gear_title = "Daha iyi dinlemek için:"
+gear_headphones = "Kulaklık"
+gear_earbuds = "Kablosuz kulaklık"
+gear_speakers = "Bluetooth hoparlör"
+gear_turntables = "Pikap"
+amazon_disclosure = "Bir Amazon İş Ortağı olarak uygun nitelikteki satın alımlardan gelir elde ediyoruz."
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "{{ .Country }} YouTube Trend Müzikler Bugün — Müzik Listesi"

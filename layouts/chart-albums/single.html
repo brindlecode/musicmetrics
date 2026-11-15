@@ -26,6 +26,6 @@
       </table>
     </div>
   </div>
-  {{ partialCached "aside.html" . site.Language.Lang }}
+  {{ partialCached "aside.html" (dict "ads" true) site.Language.Lang "ads" }}
 </div>
 {{ end }}

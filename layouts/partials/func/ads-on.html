@@ -1,0 +1,12 @@
+{{- /* Whether this page may carry ads. Ads stay off pages built only from
+     YouTube or Spotify data, and off search, legal, admin and list pages. */ -}}
+{{- $on := false -}}
+{{- if and site.Params.ads.enabled site.Params.ads.adsenseClient -}}
+  {{- if .IsHome }}{{ $on = true -}}
+  {{- else if and (eq .Kind "page") (in (slice "song" "artist" "country" "weekly" "chart-albums") .Type) }}{{ $on = true -}}
+  {{- else if and (eq .Kind "page") (eq .Type "chart") -}}
+    {{- $ci := partialCached "func/chart-info.html" .Params.chart .Params.chart -}}
+    {{- $on = ne $ci.platform "youtube" -}}
+  {{- end -}}
+{{- end -}}
+{{- return $on -}}

@@ -232,6 +232,13 @@ vinyl_cds = "Vinilos y CD"
 shop_on = "Comprar en"
 concert_tickets = "Entradas para conciertos"
 affiliate_disclosure = "Algunos enlaces son de afiliado: podemos ganar una comisión sin coste adicional para ti. Nunca influye en las listas."
+show_all_charts = "Ver las {{ .N }} listas"
+gear_title = "Escucha con mejor equipo:"
+gear_headphones = "Auriculares"
+gear_earbuds = "Auriculares inalámbricos"
+gear_speakers = "Altavoces Bluetooth"
+gear_turntables = "Tocadiscos"
+amazon_disclosure = "En calidad de Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables."
 
 # ------------------------------------------------------------------- SEO
 seo_title_youtube = "Vídeos musicales en tendencia en {{ .Country }} hoy — YouTube"

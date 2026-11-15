@@ -72,6 +72,15 @@
     });
   });
 
+  /* ---------------------------------------------------- expand table --- */
+  document.querySelectorAll('[data-expand]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = document.getElementById(b.getAttribute('data-expand'));
+      if (t) t.classList.remove('is-collapsed');
+      b.hidden = true;
+    });
+  });
+
   /* ------------------------------------------------- select navigate --- */
   document.querySelectorAll('select[data-nav]').forEach(function (s) {
     s.addEventListener('change', function () { if (s.value) location.href = s.value; });

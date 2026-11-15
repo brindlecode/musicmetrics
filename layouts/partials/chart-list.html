@@ -44,7 +44,8 @@
     <div class="row__days">{{ $r.days }}</div>
     <div class="row__act">{{ with $r.video_id }}<button class="play" type="button" data-yt="{{ . }}" aria-label="{{ i18n "play_video" }}: {{ $r.title }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button>{{ end }}</div>
   </li>
-  {{- if and $showAds (in (slice 10 40 80) (add $i 1)) }}
+  {{- $n := add $i 1 }}
+  {{- if and $showAds (ge $n 10) (eq (mod (sub $n 10) 50) 0) (ge (sub (len $items) $n) 5) }}
   <li class="row-ad">{{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}</li>
   {{- end }}
 {{- end }}

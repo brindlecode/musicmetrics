@@ -520,9 +520,20 @@ a.acard__name::after { content: ""; position: absolute; inset: 0; }
 /* ----------------------------------------------------------------- ads --- */
 .ad { margin: 24px 0; text-align: center; }
 .ad__label { display: block; font-size: .625rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
-.ad--inline { min-height: 280px; }
-.ad--sidebar { min-height: 600px; }
-.row-ad { list-style: none; border-bottom: 1px solid var(--rule); padding: 12px 0; }
+/* Fixed sizes: the space is reserved before the ad loads, so nothing shifts. */
+.adsbygoogle { display: block; margin: 0 auto; }
+.ad-slot--inline, .ad-slot--billboard { width: 300px; height: 250px; }
+.ad-slot--sidebar { width: 300px; height: 600px; }
+@media (min-width: 860px) { .ad-slot--inline { width: 728px; height: 90px; } }
+@media (min-width: 1100px) { .ad-slot--billboard { width: 970px; height: 250px; } }
+.ad--sidebar { margin: 0; }
+.row-ad { list-style: none; border-bottom: 1px solid var(--rule); padding: 24px 0; }
+.row-ad .ad { margin: 0; }
+.gear { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-top: 12px; font-size: .875rem; }
+.gear__label { font-weight: 700; }
+.gear__on { color: var(--muted); font-size: .75rem; }
+.table.is-collapsed tbody tr:nth-child(n+11) { display: none; }
+.table-more { margin-top: 12px; }
 
 /* ------------------------------------------------------------- footer --- */
 .site-footer { border-top: 2px solid var(--rule-strong); padding: 40px 0 32px; margin-top: 24px; background: var(--paper); }
