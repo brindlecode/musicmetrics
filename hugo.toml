@@ -211,7 +211,7 @@ summaryLength = 30
   # Google AdSense. Set client to "ca-pub-XXXXXXXXXXXXXXXX" once approved.
   # With only the client set, Auto ads are used; add slot ids for manual units.
   [params.ads]
-    adsenseClient = ""
+    adsenseClient = "ca-pub-9110547384071189"
     slotInline = ""
     slotSidebar = ""
     slotFooter = ""
