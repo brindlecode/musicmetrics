@@ -11,7 +11,7 @@ jobs:
   build:
     if: ${{ !startsWith(github.event.head_commit.message, 'data:') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -31,4 +31,8 @@ jobs:
       - name: Generate site data from store/
         run: node scripts/build-data.js --offline
       - name: Build site
+        # Same memory limits as the deploy workflow (see fetch-data.yml).
+        env:
+          GOMEMLIMIT: 10GiB
+          HUGO_NUMWORKERMULTIPLIER: '2'
         run: hugo --gc --minify
