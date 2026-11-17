@@ -102,6 +102,12 @@ jobs:
 
       - name: Build site
         id: site
+        # ~220,000 pages: Hugo's heap grows past what the runner has and the
+        # runner dies ("lost communication"). A soft Go memory limit makes the
+        # GC work harder instead; fewer render workers lower the peak.
+        env:
+          GOMEMLIMIT: 10GiB
+          HUGO_NUMWORKERMULTIPLIER: '2'
         run: |
           hugo --gc --minify
           # Read by scripts/check-live.js to confirm the live site is this build.
