@@ -45,7 +45,7 @@ GitHub Actions (daily)                                      Netlify (static host
 
 ## Monetization & tracking settings (`hugo.toml` → `[params]`)
 
-- `ads.adsenseClient` (+ optional `slotInline`, `slotSidebar`, `slotFooter`) — ads and `/ads.txt` appear automatically.
+- `ads.adsenseClient` (+ optional `slotInline`, `slotSidebar`, `slotFooter`) — `/ads.txt` appears automatically and the ad script loads, but only on pages that may carry ads (home, song, artist, country, weekly, album and non-YouTube chart pages; see `layouts/partials/func/ads-on.html`). It never loads on 404, search, admin, legal, list-index, YouTube or Spotify pages.
 - `affiliate.appleToken`, `affiliate.amazonTag`, `affiliate.ticketsUrl` — added to every Listen/Buy button.
 - `analytics.googleTag` (Google tag from the GA4 data stream; replaces `analytics.ga4`), `analytics.ga4`, `analytics.clarity`, `analytics.cloudflare`; `verify.google`, `verify.bing`, `verify.yandex`.
 

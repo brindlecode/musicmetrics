@@ -470,6 +470,12 @@ other = "Tableur mis en forme (.xlsx)"
 [dl_csv_sub]
 other = "Données brutes (.csv)"
 
+[dl_pdf_sub]
+other = "Document prêt à imprimer (enregistrer en .pdf)"
+
+[dl_pdf_wait]
+other = "Préparation du PDF…"
+
 [dl_note]
 other = "Libre pour la radio, la presse et la recherche. Merci de citer MusicMetrics."
 

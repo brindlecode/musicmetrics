@@ -470,6 +470,12 @@ other = "書式付きスプレッドシート（.xlsx）"
 [dl_csv_sub]
 other = "生データ（.csv）"
 
+[dl_pdf_sub]
+other = "印刷用ドキュメント（PDFとして保存）"
+
+[dl_pdf_wait]
+other = "PDFを準備しています…"
+
 [dl_note]
 other = "ラジオ・編集・研究目的で自由に利用できます。出典としてMusicMetricsを明記してください。"
 

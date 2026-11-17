@@ -470,6 +470,12 @@ other = "Formatierte Tabelle (.xlsx)"
 [dl_csv_sub]
 other = "Rohdaten (.csv)"
 
+[dl_pdf_sub]
+other = "Druckfertiges Dokument (als .pdf speichern)"
+
+[dl_pdf_wait]
+other = "PDF wird vorbereitet …"
+
 [dl_note]
 other = "Frei für Radio, Redaktion und Forschung. Bitte MusicMetrics als Quelle nennen."
 

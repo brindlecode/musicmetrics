@@ -470,6 +470,12 @@ other = "Planilha formatada (.xlsx)"
 [dl_csv_sub]
 other = "Dados brutos (.csv)"
 
+[dl_pdf_sub]
+other = "Documento pronto para imprimir (salvar como .pdf)"
+
+[dl_pdf_wait]
+other = "Preparando o PDF…"
+
 [dl_note]
 other = "Uso livre para rádio, imprensa e pesquisa. Cite o MusicMetrics como fonte."
 

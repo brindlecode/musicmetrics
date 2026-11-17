@@ -1,0 +1,15 @@
+{{- /* Whether this page may carry ads. AdSense policy keeps ads off pages without
+     publisher content (404, search, admin, legal pages, bare list indexes); the
+     site also keeps them off pages built only from YouTube or Spotify data. The
+     home page and the song, artist, country, weekly, album and non-YouTube chart
+     pages are the only ones that load the ad script. */ -}}
+{{- $on := false -}}
+{{- if site.Params.ads.adsenseClient -}}
+  {{- if .IsHome }}{{ $on = true -}}
+  {{- else if and (eq .Kind "page") (in (slice "song" "artist" "country" "weekly" "chart-albums") .Type) }}{{ $on = true -}}
+  {{- else if and (eq .Kind "page") (eq .Type "chart") -}}
+    {{- $ci := partialCached "func/chart-info.html" .Params.chart .Params.chart -}}
+    {{- $on = ne $ci.platform "youtube" -}}
+  {{- end -}}
+{{- end -}}
+{{- return $on -}}
