@@ -647,6 +647,7 @@ a.pill:hover { border-color: var(--ink); color: var(--ink); }
 .dl-menu__pop small { font-size: .75rem; color: var(--muted); }
 .dl-menu__ic { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 4px; background: var(--ink); color: var(--paper); font-weight: 800; font-size: .875rem; }
 .dl-menu__ic--x { background: #1d6f42; color: #fff; }
+.dl-menu__ic--p { background: #c42b2b; color: #fff; }
 .dl-menu__note { margin: 6px 10px 4px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: .75rem; color: var(--muted); line-height: 1.4; }
 .dl-menu.is-busy button { cursor: progress; opacity: .6; }
 .dl-menu button[aria-busy="true"] small::after { content: " …"; }

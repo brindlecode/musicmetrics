@@ -470,6 +470,12 @@ other = "Formatted spreadsheet (.xlsx)"
 [dl_csv_sub]
 other = "Raw data (.csv)"
 
+[dl_pdf_sub]
+other = "Print-ready document (save as .pdf)"
+
+[dl_pdf_wait]
+other = "Preparing your PDF…"
+
 [dl_note]
 other = "Free for radio, editorial and research use. Please credit MusicMetrics."
 

@@ -1,4 +1,4 @@
-/* MusicMetrics — chart downloads (Excel / CSV), built in the browser from the
+/* MusicMetrics — chart downloads (Excel / CSV / PDF), built in the browser from the
    chart rows on the page. ExcelJS (MIT) is self-hosted and loaded on first use. */
 (function () {
   'use strict';
@@ -241,6 +241,103 @@
     });
   }
 
+  /* ------------------------------------------------------------- PDF --- */
+  // A hand-built PDF needs a font for every script the chart titles use (CJK, Thai,
+  // Arabic, Cyrillic, ...). Instead the chart is laid out as a print-ready page and
+  // handed to the browser's print dialog ("Save as PDF"), which uses system fonts.
+  function h(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+
+  function fmtMetric(k, v, lang) {
+    if (v === '' || v == null) return '';
+    if (!NUMERIC[k]) return h(v);
+    var n = Number(v);
+    if (!isFinite(n)) return h(v);
+    try { return n.toLocaleString(lang, { maximumFractionDigits: k === 'points' ? 1 : 0 }); } catch (e) { return String(n); }
+  }
+
+  function printHTML(cfg, charts, docTitle) {
+    var L = cfg.labels;
+    var css =
+      '@page{size:A4;margin:14mm 12mm}' +
+      '*{box-sizing:border-box}' +
+      'html{-webkit-print-color-adjust:exact;print-color-adjust:exact}' +
+      'body{margin:0;font:10pt/1.35 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;color:#141412}' +
+      'section{break-after:page}section:last-child{break-after:auto}' +
+      '.bar{background:#141412;color:#fff;padding:8px 12px;display:flex;justify-content:space-between;align-items:baseline;font-size:15pt}' +
+      '.bar b{font-weight:800}.bar span{font-size:8.5pt;color:#b8b4aa}' +
+      'h1{font-size:15pt;line-height:1.2;margin:12px 0 4px}' +
+      '.meta{font-size:8.5pt;color:#6b675e;margin:0}.meta a{color:#1f3dff}' +
+      '.rule{border-bottom:2px solid #1f3dff;margin:8px 0 6px}' +
+      'table{width:100%;border-collapse:collapse}thead{display:table-header-group}' +
+      'th{background:#1f3dff;color:#fff;font-size:8pt;text-align:left;padding:5px 6px}' +
+      'td{padding:4px 6px;border-bottom:1px solid #d9d4c8;vertical-align:middle}' +
+      'tr{break-inside:avoid}tbody tr:nth-child(even) td{background:#f4f2ec}' +
+      '.c{text-align:center}.n{text-align:right;white-space:nowrap}th.n{text-align:right}th.c{text-align:center}' +
+      '.rk{font-weight:700}.mv{font-size:8pt;font-weight:700;white-space:nowrap}' +
+      '.up{color:#0a8047}.dn{color:#c42b2b}.nw{color:#1f3dff}.eq{color:#6b675e}' +
+      '.t{font-weight:700;color:inherit;text-decoration:none}.a{display:block;font-size:8.5pt;color:#6b675e}' +
+      '.foot{font-size:8pt;font-style:italic;color:#6b675e;margin:8px 0 0}';
+    var body = charts.map(function (c) {
+      var mk = METRICS[c.platform] || [];
+      var head = '<tr><th class="c">' + h(L.rank) + '</th><th class="c">' + h(L.change) + '</th><th>' + h(L.title) + ' / ' + h(L.artist) + '</th>' +
+        '<th class="c">' + h(L.peak) + '</th><th class="c">' + h(L.days) + '</th>' +
+        mk.map(function (k) { return '<th class="' + (NUMERIC[k] ? 'n' : '') + '">' + h(L[k] || k) + '</th>'; }).join('') + '</tr>';
+      var rows = c.rows.map(function (r) {
+        var mv = moveLabel(r.move, L);
+        var cls = /▲/.test(mv) ? 'up' : /▼/.test(mv) ? 'dn' : (r.move === 'new' || r.move === 're') ? 'nw' : 'eq';
+        var title = r.href ? '<a class="t" href="' + h(r.href) + '">' + h(r.title) + '</a>' : '<span class="t">' + h(r.title) + '</span>';
+        return '<tr><td class="c rk">' + h(r.rank) + '</td><td class="c mv ' + cls + '">' + h(mv) + '</td><td>' + title +
+          (r.artist ? '<span class="a">' + h(r.artist) + '</span>' : '') + '</td><td class="c">' + h(r.peak) + '</td><td class="c">' + h(r.days) + '</td>' +
+          mk.map(function (k, j) { return '<td class="' + (NUMERIC[k] ? 'n' : '') + '">' + fmtMetric(k, j === 0 ? r.m1 : r.m2, cfg.lang) + '</td>'; }).join('') + '</tr>';
+      }).join('');
+      return '<section><div class="bar"><div>MUSIC<b>METRICS</b></div><span>musicmetrics.net</span></div>' +
+        '<h1>' + h(c.title) + '</h1>' +
+        '<p class="meta">' + h(L.updated) + ': ' + h(fmtDate(c.updated, true)) + ' &nbsp;·&nbsp; ' + h(L.source) + ': ' + h(c.source) + '</p>' +
+        '<p class="meta"><a href="' + h(c.url) + '">' + h(c.url.replace(/^https?:\/\//, '')) + '</a></p><div class="rule"></div>' +
+        '<table><thead>' + head + '</thead><tbody>' + rows + '</tbody></table>' +
+        '<p class="foot">' + h(L.footer.replace('{source}', c.source)) + '</p></section>';
+    }).join('');
+    return '<!doctype html><html lang="' + h(cfg.lang) + '"><head><meta charset="utf-8"><title>' + h(docTitle) + '</title><style>' + css + '</style></head><body>' + body + '</body></html>';
+  }
+
+  // The window is opened straight from the click (before the chart is prepared) so
+  // popup blockers allow it; it shows a short note until the document is ready.
+  function openPrintWindow(cfg) {
+    var w = null;
+    try { w = window.open('', '_blank'); } catch (e) { w = null; }
+    if (w) {
+      try { w.document.write('<!doctype html><meta charset="utf-8"><title>MusicMetrics</title><p style="font:16px system-ui,sans-serif;margin:32px">' + h(cfg.labels.pdf_wait) + '</p>'); } catch (e) {}
+    }
+    return w;
+  }
+
+  function printViaFrame(html, docTitle) {
+    var f = document.createElement('iframe');
+    f.setAttribute('aria-hidden', 'true');
+    f.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0';
+    document.body.appendChild(f);
+    var d = f.contentWindow.document;
+    d.open(); d.write(html); d.close();
+    var prev = document.title;
+    document.title = docTitle;
+    var done = function () { document.title = prev; setTimeout(function () { f.remove(); }, 500); };
+    f.contentWindow.onafterprint = done;
+    setTimeout(function () { f.contentWindow.focus(); f.contentWindow.print(); setTimeout(done, 60000); }, 300);
+  }
+
+  function printCharts(cfg, charts, base, w) {
+    var html = printHTML(cfg, charts, base);
+    if (w && !w.closed) {
+      w.document.open(); w.document.write(html); w.document.close();
+      var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+      w.onafterprint = function () { if (!coarse) w.close(); };
+      setTimeout(function () { w.focus(); w.print(); }, 400);
+    } else {
+      printViaFrame(html, base);
+    }
+    return Promise.resolve();
+  }
+
   /* -------------------------------------------------------------- UI --- */
   menus.forEach(function (menu) {
     var cfg;
@@ -252,12 +349,15 @@
         if (menu.classList.contains('is-busy')) return;
         menu.classList.add('is-busy');
         btn.setAttribute('aria-busy', 'true');
+        var pw = fmt === 'pdf' ? openPrintWindow(cfg) : null;
         loadCharts(cfg).then(function (charts) {
           charts = charts.filter(function (c) { return c.rows.length; });
-          var name = cfg.file + '_' + isoDay(cfg.updated) + '.' + fmt;
-          return (fmt === 'csv' ? Promise.resolve(toCSV(cfg, charts)) : toXLSX(cfg, charts)).then(function (blob) { save(blob, name); });
+          var base = cfg.file + '_' + isoDay(cfg.updated);
+          if (fmt === 'pdf') return printCharts(cfg, charts, base, pw);
+          return (fmt === 'csv' ? Promise.resolve(toCSV(cfg, charts)) : toXLSX(cfg, charts)).then(function (blob) { save(blob, base + '.' + fmt); });
         }).catch(function (err) {
           console.error(err);
+          if (pw && !pw.closed) pw.close();
           alert(cfg.labels.error);
         }).then(function () {
           menu.classList.remove('is-busy');

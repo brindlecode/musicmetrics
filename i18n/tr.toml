@@ -449,6 +449,12 @@ other = "Biçimlendirilmiş tablo (.xlsx)"
 [dl_csv_sub]
 other = "Ham veri (.csv)"
 
+[dl_pdf_sub]
+other = "Yazdırmaya hazır belge (.pdf olarak kaydet)"
+
+[dl_pdf_wait]
+other = "PDF hazırlanıyor…"
+
 [dl_note]
 other = "Radyo, yayın ve araştırma için ücretsizdir. Lütfen kaynak olarak MusicMetrics'i belirtin."
 

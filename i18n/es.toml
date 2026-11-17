@@ -470,6 +470,12 @@ other = "Hoja de cálculo con formato (.xlsx)"
 [dl_csv_sub]
 other = "Datos sin formato (.csv)"
 
+[dl_pdf_sub]
+other = "Documento listo para imprimir (guardar como .pdf)"
+
+[dl_pdf_wait]
+other = "Preparando el PDF…"
+
 [dl_note]
 other = "Uso libre para radio, medios e investigación. Cita a MusicMetrics como fuente."
 
