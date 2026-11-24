@@ -96,3 +96,17 @@ Existing affiliate density: song and artist pages already carry Listen/Buy butto
 - 320 px-wide phones get no ads (the 288 px column is narrower than every unit).
 - Country-level, regional consent is a browser time-zone heuristic, and only applies in `regional` mode (off).
 - Emergency shutdown through the site needs a full deploy (45–90 min); the instant stop is in the Adsterra dashboard (ADVERTISING_ROLLBACK.md).
+
+## 8. Deployment status (24 November 2026)
+
+- Implemented, built and tested on branch `claude/ecstatic-keller-i4yien` (full production build OK, 3,898 automated checks passed — ADVERTISING_TEST_REPORT.md).
+- **Not merged and not deployed.** Production deploys come from the default branch (`claude/analyze-kworb-metrics-2mIwb`) through the daily "Update charts & deploy" workflow, so merging the pull request deploys it at the next run. It is left for the owner's review because it changes every page (consent banner, AdSense script removed) and because Adsterra must stay off until §6 is done.
+- After merge and deploy, verify on musicmetrics.net: consent banner appears; `/ads.txt` unchanged; no request to bauval.org without `?mm-ads-preview=on` + Accept; GA4 real-time still receives page views after Accept; footer "Cookie settings" works.
+
+## 9. Files changed
+
+New: `layouts/partials/advertising/{state,eligibility,slot,manager}.html`, `layouts/partials/consent/{head,banner}.html`, `assets/js/advertising.js`, `assets/js/consent.js`, `assets/css/advertising.css`, `scripts/test-advertising.js`, `scripts/test-advertising.pages.json`, `scripts/perf-lab.js`, `scripts/perf-lab.urls.json`, the seven `*.md` documents.
+
+Changed: `hugo.toml` (`[params.advertising]`, AdSense comment), `layouts/_default/baseof.html` (consent + manager partials, CSS/JS bundles, AdSense verification meta), `layouts/partials/tracking-head.html` (AdSense script gated, Consent Mode update), `layouts/partials/ad.html`, `layouts/partials/chart-list.html`, `layouts/partials/footer.html` (Cookie settings), `layouts/index.html`, `layouts/chart/single.html`, `layouts/chart-albums/single.html`, `layouts/country/single.html`, `layouts/artist/single.html`, `layouts/song/single.html`, `layouts/weekly/single.html` (slots), `layouts/index.ads.txt` (same output, optional verified extra lines), `layouts/_default/admin.html` (status rows), `i18n/*.toml` (banner strings), `content/*/privacy.md` (7 languages), `README.md`.
+
+Not touched: data scripts (`scripts/fetch-*.js`, `scripts/build-data.js`, `scripts/lib/`), the Global 200 algorithm, the `store` branch, workflows, `static/_headers`, `robots.txt`, sitemaps, hreflang/canonical/SEO partials, affiliate code, GTM/GA ids.
