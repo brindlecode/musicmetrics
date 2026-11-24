@@ -1,2 +1,8 @@
-{{- with site.Params.ads.adsenseClient }}google.com, {{ replace . "ca-" "" }}, DIRECT, f08c47fec0942fa0
+{{- /* /ads.txt. The Google line comes from the AdSense publisher id and stays
+     even while AdSense ads are switched off. Extra lines must be verified
+     records from a provider dashboard (params.advertising.adsTxt.extra). */ -}}
+{{- $pub := site.Params.ads.adsenseClient | default site.Params.advertising.adsense.publisherId -}}
+{{- with $pub }}google.com, {{ replace . "ca-" "" }}, DIRECT, f08c47fec0942fa0
+{{ end -}}
+{{- range site.Params.advertising.adsTxt.extra }}{{ . }}
 {{ end -}}

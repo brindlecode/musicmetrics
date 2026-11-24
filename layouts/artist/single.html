@@ -94,6 +94,7 @@
     {{- end }}
 
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "mid") }}
 
     {{- with $a.countries }}
     <section class="section">
@@ -116,6 +117,7 @@
     </section>
 
     {{ partial "faq.html" . }}
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "end") }}
 
     {{- with $a.related }}
     <section class="section">

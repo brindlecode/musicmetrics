@@ -366,6 +366,22 @@ yt_artists_desc = "Müzik videolarının toplam izlenmesine göre sanatçılar."
 
 
 # Spotify (links and official embed only)
+# consent banner
+consent_title = "Gizlilik tercihleriniz"
+consent_text = "Analiz için ve yalnızca onay verirseniz üçüncü taraf reklam ağlarının (Adsterra) reklamları için çerezler ve benzeri teknolojiler kullanıyoruz. Tercihinizi istediğiniz zaman “Çerez ayarları” bölümünden değiştirebilirsiniz."
+consent_accept = "Tümünü kabul et"
+consent_reject = "Tümünü reddet"
+consent_manage = "Tercihleri yönet"
+consent_save = "Seçimleri kaydet"
+consent_settings = "Çerez ayarları"
+consent_dialog_text = "Hangi isteğe bağlı teknolojilerin kullanılabileceğini seçin. Zorunlu depolama (tema, dil ve bu tercih) her zaman açıktır ve tarayıcınızda kalır."
+consent_necessary = "Zorunlu"
+consent_necessary_desc = "Tema, dil ve gizlilik tercihleri. Her zaman açık."
+consent_analytics = "Analiz"
+consent_analytics_desc = "Google Analytics (Google Tag Manager üzerinden) hangi sayfaların kullanıldığını ölçer."
+consent_ads = "Reklam"
+consent_ads_desc = "Adsterra reklamlarını yükler; Adsterra reklam göstermek ve ölçmek için çerez kullanabilir, IP adresinizi ve cihaz verilerinizi işleyebilir."
+
 [play_on_spotify]
 other = "Spotify'da çal"
 

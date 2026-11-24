@@ -71,6 +71,7 @@
     {{- end }}
 
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "mid") }}
 
     <section class="section" id="listen">
       <div class="section-head"><h2>{{ i18n "listen_to" (dict "Name" $s.title) }}</h2></div>

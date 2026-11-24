@@ -1,11 +1,16 @@
 {{- $a := site.Params.analytics -}}
 {{- /* The ad script only loads on pages that may carry ads (func/ads-on.html). */ -}}
-{{- $ads := "" }}{{ if partial "func/ads-on.html" . }}{{ $ads = site.Params.ads.adsenseClient }}{{ end -}}
+{{- /* AdSense also needs [params.advertising.adsense] enabled and provider "adsense";
+     until then no request goes to Google's ad servers (ads.txt and the
+     verification meta tag stay in place). */ -}}
+{{- $st := partialCached "advertising/state.html" "state" -}}
+{{- $ads := "" }}{{ if and $st.adsenseLive (partial "func/ads-on.html" .) }}{{ $ads = site.Params.ads.adsenseClient }}{{ end -}}
 {{- if or $a.googleTag $a.ga4 $ads -}}
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+if(window.MMConsent)MMConsent.gtagUpdate();
 </script>
 {{- end -}}
 {{- /* Google tag as issued by the GA4 data stream; the consent defaults above run first. */ -}}

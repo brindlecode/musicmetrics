@@ -366,6 +366,22 @@ seo_desc_yt_artists = "{{ .Name }} leads with {{ .Views }} YouTube views. Artist
 yt_daily_desc = "The music videos gaining the most views right now."
 yt_artists_desc = "Artists ranked by the total views of their music videos."
 
+# consent banner
+consent_title = "Your privacy choices"
+consent_text = "We use cookies and similar technologies for analytics and, only if you agree, for advertising by third-party ad networks (Adsterra). You can change your choice at any time under “Cookie settings”."
+consent_accept = "Accept all"
+consent_reject = "Reject all"
+consent_manage = "Manage preferences"
+consent_save = "Save choices"
+consent_settings = "Cookie settings"
+consent_dialog_text = "Choose which optional technologies may be used. Necessary storage (theme, language and this choice) is always on and stays in your browser."
+consent_necessary = "Necessary"
+consent_necessary_desc = "Theme, language and privacy choices. Always on."
+consent_analytics = "Analytics"
+consent_analytics_desc = "Google Analytics (via Google Tag Manager) measures which pages are used."
+consent_ads = "Advertising"
+consent_ads_desc = "Loads ads from Adsterra, which may set cookies and process your IP address and device data to show and measure ads."
+
 [days_count]
 one = "{{ .Count }} day"
 other = "{{ .Count }} days"

@@ -9,6 +9,7 @@
       <h1>{{ i18n "h1_week" (dict "Title" $top.t "Artist" $top.a) }}</h1>
       <p class="page-head__lede">{{ i18n "lede_week" (dict "Week" $w.week "Year" $w.year "Title" $top.t "Artist" $top.a) }}</p>
     </header>
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "top") }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "global_top_50" }}</h2></div>
       <ol class="mini">
@@ -18,6 +19,7 @@
       </ol>
     </section>
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "mid") }}
     <section class="section">
       <div class="section-head"><h2>{{ i18n "number_ones_by_country" }}</h2></div>
       <div class="table-wrap"><table class="table">

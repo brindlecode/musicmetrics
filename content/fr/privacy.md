@@ -3,7 +3,7 @@ title: "Politique de confidentialité"
 description: "Comment MusicMetrics traite les données, les cookies, la publicité et les statistiques d'audience."
 ---
 
-_Dernière mise à jour : 26 septembre 2026_
+_Dernière mise à jour : 24 novembre 2026_
 
 MusicMetrics (« nous ») exploite musicmetrics.net. Cette politique explique quelles informations sont traitées lorsque vous utilisez le site.
 
@@ -13,11 +13,21 @@ Nous ne vous demandons pas de créer de compte et nous ne collectons ni nom, ni 
 
 Notre hébergeur (Netlify) traite des données techniques telles que l'adresse IP, le type de navigateur et les pages demandées dans des journaux serveur, à des fins de sécurité et de fiabilité.
 
-## Cookies et stockage local
+## Cookies, stockage local et votre consentement {#cookies}
 
-- **Préférences :** vos choix de thème (clair/sombre) et de bannière de langue sont enregistrés dans le stockage local de votre navigateur. Ils ne quittent jamais votre appareil.
-- **Statistiques d'audience :** le cas échéant, nous utilisons des outils d'analyse respectueux de la vie privée (Google Analytics 4, Microsoft Clarity ou Cloudflare Web Analytics) pour comprendre quelles pages sont utiles. Dans l'EEE, au Royaume-Uni et en Suisse, ils ne fonctionnent qu'après consentement.
-- **Publicité :** nous utilisons Google AdSense pour afficher des annonces. Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces en fonction de vos visites précédentes sur ce site et sur d'autres sites web. Vous pouvez désactiver la publicité personnalisée dans les [paramètres des annonces Google](https://adssettings.google.com/) ou sur [www.aboutads.info](https://www.aboutads.info/). Les visiteurs de l'EEE, du Royaume-Uni et de la Suisse sont invités à donner leur consentement via une plateforme de gestion du consentement certifiée par Google.
+Lors de votre première visite, un bandeau vous demande votre choix. **La publicité n’est jamais chargée sauf si vous choisissez « Tout accepter » ou activez « Publicité »** dans les paramètres des cookies. Vous pouvez modifier ou retirer votre choix à tout moment via **« Paramètres des cookies »** en bas de chaque page ; si vous retirez votre consentement à la publicité, la page en cours se recharge sans annonces. Les cookies déjà déposés par des tiers restent dans votre navigateur jusqu’à leur expiration ou jusqu’à ce que vous les supprimiez dans les réglages du navigateur.
+
+- **Nécessaires (toujours actifs) :** vos choix de thème, de bandeau de langue et de confidentialité (enregistrés sous « mm-consent ») sont conservés dans le stockage local de votre navigateur et ne quittent jamais votre appareil.
+- **Mesure d’audience :** Google Analytics 4, chargé via Google Tag Manager, avec le mode Consentement de Google. Dans l’EEE, au Royaume-Uni et en Suisse, les cookies de mesure ne sont utilisés qu’après votre consentement ; ailleurs, ils sont actifs par défaut et vous pouvez les désactiver dans les paramètres des cookies. « Tout refuser » les désactive partout.
+- **Publicité :** uniquement avec votre consentement ; voir la section suivante.
+
+## Publicité
+
+Nous affichons des publicités d’**Adsterra**, une régie publicitaire tierce, sur certaines pages de classements, de pays, d’artistes, de titres et de bilans hebdomadaires. Elles sont signalées par la mention « Publicité », séparées de nos classements et n’influencent jamais les positions. Les annonces ne se chargent qu’après votre consentement à la publicité. Une fois chargés, les scripts d’Adsterra (actuellement servis depuis le domaine bauval.org) et les annonceurs avec lesquels Adsterra travaille peuvent déposer des cookies ou utiliser des technologies similaires et recevoir votre adresse IP, des informations sur votre navigateur et votre appareil ainsi que l’adresse de la page consultée, afin de diffuser les annonces, d’en limiter la répétition, de les mesurer et de les protéger contre la fraude. Adsterra décrit ces traitements dans sa [politique de confidentialité](https://adsterra.com/privacy-policy/).
+
+Nous n’utilisons ni pop-ups, ni pop-unders, ni notifications push, ni redirections forcées, ni détection de bloqueurs de publicité, et les publicités pour adultes sont désactivées dans notre compte. Si une annonce vous semble trompeuse ou nuisible, signalez-la-nous via la page de contact.
+
+Notre compte Google AdSense (l’identifiant d’éditeur figure dans notre fichier ads.txt) est conservé uniquement à des fins de vérification : aucune publicité Google n’est actuellement affichée et aucun code publicitaire Google n’est chargé.
 
 ## Contenus tiers
 

@@ -1,0 +1,23 @@
+{
+  "eligible": [
+    { "url": "/", "type": "home", "expect": { "desktop": ["leaderboard", "nativebanner"], "mobile": ["mobilebanner", "mediumrectangle"] } },
+    { "url": "/charts/global/", "type": "global200", "expect": { "desktop": ["leaderboard", "mediumrectangle"], "mobile": ["mobilebanner", "mediumrectangle"] } },
+    { "url": "/countries/us/", "type": "country", "expect": { "desktop": ["leaderboard", "nativebanner"], "mobile": ["mobilebanner", "mediumrectangle"] } },
+    { "url": "/charts/apple-music/us/", "type": "platform", "expect": { "desktop": ["leaderboard", "mediumrectangle"], "mobile": ["mobilebanner", "mediumrectangle"] } },
+    { "url": "/artists/olivia-rodrigo/", "type": "artist", "expect": { "desktop": ["mediumrectangle", "nativebanner"], "mobile": ["mediumrectangle"] } },
+    { "url": "/songs/justice-flower-in-a-hurricane/", "type": "song", "expect": { "desktop": ["mediumrectangle"], "mobile": ["mediumrectangle"] } },
+    { "url": "/weekly/2026-w47/", "type": "research", "expect": { "desktop": ["leaderboard", "nativebanner"], "mobile": ["mobilebanner", "mediumrectangle"] } },
+    { "url": "/tr/", "type": "home", "expect": {} },
+    { "url": "/de/charts/global/", "type": "global200", "expect": {} },
+    { "url": "/ja/countries/jp/", "type": "country", "expect": {} },
+    { "url": "/fr/artists/olivia-rodrigo/", "type": "artist", "expect": {} },
+    { "url": "/es/charts/deezer/es/", "type": "platform", "expect": {} },
+    { "url": "/pt/weekly/2026-w47/", "type": "research", "expect": {} }
+  ],
+  "ineligible": [
+    "/privacy/", "/tr/privacy/", "/contact/", "/terms/", "/about/", "/methodology/", "/search/", "/admin/", "/404.html",
+    "/charts/", "/countries/", "/artists/", "/weekly/", "/charts/apple-music/",
+    "/charts/youtube/us/", "/charts/youtube/most-viewed/", "/charts/youtube/daily/", "/charts/spotify/",
+    "/artists/10/", "/songs/envido6-dama-y-vagabundo/"
+  ]
+}

@@ -366,6 +366,22 @@ seo_desc_yt_artists = "{{ .Name }} lidera com {{ .Views }} visualizações no Yo
 yt_daily_desc = "Os clipes que mais ganham visualizações agora."
 yt_artists_desc = "Artistas por visualizações totais dos clipes."
 
+# consent banner
+consent_title = "Suas escolhas de privacidade"
+consent_text = "Usamos cookies e tecnologias semelhantes para análise e, somente se você concordar, para publicidade de redes de anúncios de terceiros (Adsterra). Você pode mudar sua escolha a qualquer momento em “Configurações de cookies”."
+consent_accept = "Aceitar tudo"
+consent_reject = "Rejeitar tudo"
+consent_manage = "Gerenciar preferências"
+consent_save = "Salvar escolhas"
+consent_settings = "Configurações de cookies"
+consent_dialog_text = "Escolha quais tecnologias opcionais podem ser usadas. O armazenamento necessário (tema, idioma e esta escolha) está sempre ativo e fica no seu navegador."
+consent_necessary = "Necessários"
+consent_necessary_desc = "Tema, idioma e escolhas de privacidade. Sempre ativos."
+consent_analytics = "Análise"
+consent_analytics_desc = "O Google Analytics (via Google Tag Manager) mede quais páginas são usadas."
+consent_ads = "Publicidade"
+consent_ads_desc = "Carrega anúncios da Adsterra, que pode usar cookies e tratar seu endereço IP e dados do dispositivo para exibir e medir anúncios."
+
 [days_count]
 one = "{{ .Count }} dia"
 other = "{{ .Count }} dias"

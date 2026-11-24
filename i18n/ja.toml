@@ -366,6 +366,22 @@ seo_desc_yt_artists = "{{ .Name }}が{{ .Views }}回でトップ。MVの総再�
 yt_daily_desc = "今もっとも再生回数が伸びているMV。"
 yt_artists_desc = "MVの総再生回数によるアーティストランキング。"
 
+# consent banner
+consent_title = "プライバシーの設定"
+consent_text = "当サイトでは、アクセス解析のため、また同意いただいた場合に限り第三者の広告ネットワーク（Adsterra）による広告配信のために、Cookie などの技術を使用します。選択内容は「Cookie 設定」からいつでも変更できます。"
+consent_accept = "すべて許可"
+consent_reject = "すべて拒否"
+consent_manage = "設定を管理"
+consent_save = "選択を保存"
+consent_settings = "Cookie 設定"
+consent_dialog_text = "使用を許可する任意の技術を選択してください。必須の保存データ（テーマ、言語、この選択）は常に有効で、お使いのブラウザ内にのみ保存されます。"
+consent_necessary = "必須"
+consent_necessary_desc = "テーマ、言語、プライバシーの選択。常に有効。"
+consent_analytics = "アクセス解析"
+consent_analytics_desc = "Google アナリティクス（Google タグマネージャー経由）で利用されたページを測定します。"
+consent_ads = "広告"
+consent_ads_desc = "Adsterra の広告を読み込みます。Adsterra は広告の表示と測定のために Cookie を使用し、IP アドレスや端末情報を処理する場合があります。"
+
 [days_count]
 one = "{{ .Count }}日"
 other = "{{ .Count }}日"

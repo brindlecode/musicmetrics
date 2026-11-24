@@ -1,0 +1,42 @@
+{{- /* Advertising eligibility. Returns the page's placement type (a key of
+     params.advertising.pages) or "" when the page must not carry ads.
+     Whitelist only: anything not listed here (404, search, admin, legal and
+     contact pages, list indexes, YouTube- or Spotify-only pages, thin pages)
+     gets no ads. When in doubt, the answer is "". Excluding a page from ads
+     never changes its indexing, canonical or sitemap entry. */ -}}
+{{- $t := "" -}}
+{{- if .IsHome -}}
+  {{- with site.Data.charts.global }}{{ if ge (len .items) 50 }}{{ $t = "home" }}{{ end }}{{ end -}}
+{{- else if and (eq .Kind "page") (not .Params.noindex) -}}
+  {{- if eq .Type "chart" -}}
+    {{- $c := index site.Data.charts .Params.chart -}}
+    {{- $ci := partialCached "func/chart-info.html" .Params.chart .Params.chart -}}
+    {{- /* YouTube charts are built only from YouTube data: no ads (as before). */ -}}
+    {{- if and $c (ne $ci.platform "youtube") (ge (len $c.items) 20) -}}
+      {{- $t = cond (eq $ci.platform "musicmetrics") "global200" "platform" -}}
+    {{- end -}}
+  {{- else if eq .Type "chart-albums" -}}
+    {{- if ge (len (site.Data.albums | default slice)) 20 }}{{ $t = "platform" }}{{ end -}}
+  {{- else if eq .Type "country" -}}
+    {{- with index site.Data.countries .Params.cc }}{{ if ge (len .charts) 2 }}{{ $t = "country" }}{{ end }}{{ end -}}
+  {{- else if eq .Type "weekly" -}}
+    {{- with index site.Data.weekly .Params.week }}{{ if ge (len .top) 10 }}{{ $t = "research" }}{{ end }}{{ end -}}
+  {{- else if eq .Type "artist" -}}
+    {{- /* Qualified artist: charting now, on 3+ charts, 2+ songs, and not
+         known from YouTube alone. */ -}}
+    {{- with index site.Data.artists .Params.artist -}}
+      {{- $nonYT := false }}{{ range .platforms }}{{ if ne . "youtube" }}{{ $nonYT = true }}{{ end }}{{ end -}}
+      {{- if and .on (ge (int .charts) 3) (ge (len .songs) 2) $nonYT }}{{ $t = "artist" }}{{ end -}}
+    {{- end -}}
+  {{- else if eq .Type "song" -}}
+    {{- /* Qualified song: charting now on 3+ charts, at least one of them
+         outside YouTube, with title and artist data. */ -}}
+    {{- with index site.Data.songs .Params.song -}}
+      {{- $pos := .positions | default slice -}}
+      {{- $nonYT := false }}{{ range $pos }}{{ if ne .p "youtube" }}{{ $nonYT = true }}{{ end }}{{ end -}}
+      {{- if and .on .title .artist (ge (len $pos) 3) $nonYT }}{{ $t = "song" }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if .Params.noads }}{{ $t = "" }}{{ end -}}
+{{- return $t -}}

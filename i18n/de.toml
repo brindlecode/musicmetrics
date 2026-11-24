@@ -366,6 +366,22 @@ seo_desc_yt_artists = "{{ .Name }} führt mit {{ .Views }} YouTube-Aufrufen. Kü
 yt_daily_desc = "Die Musikvideos mit dem stärksten Zuwachs gerade."
 yt_artists_desc = "Künstler nach Gesamtaufrufen ihrer Musikvideos."
 
+# consent banner
+consent_title = "Ihre Datenschutz-Einstellungen"
+consent_text = "Wir verwenden Cookies und ähnliche Technologien für Statistik und – nur mit Ihrer Einwilligung – für Werbung durch Werbenetzwerke Dritter (Adsterra). Sie können Ihre Auswahl jederzeit unter „Cookie-Einstellungen“ ändern."
+consent_accept = "Alle akzeptieren"
+consent_reject = "Alle ablehnen"
+consent_manage = "Einstellungen verwalten"
+consent_save = "Auswahl speichern"
+consent_settings = "Cookie-Einstellungen"
+consent_dialog_text = "Wählen Sie, welche optionalen Technologien verwendet werden dürfen. Notwendige Speicherung (Design, Sprache und diese Auswahl) ist immer aktiv und bleibt in Ihrem Browser."
+consent_necessary = "Notwendig"
+consent_necessary_desc = "Design, Sprache und Datenschutz-Auswahl. Immer aktiv."
+consent_analytics = "Statistik"
+consent_analytics_desc = "Google Analytics (über den Google Tag Manager) misst, welche Seiten genutzt werden."
+consent_ads = "Werbung"
+consent_ads_desc = "Lädt Anzeigen von Adsterra; Adsterra kann Cookies setzen und Ihre IP-Adresse und Gerätedaten verarbeiten, um Anzeigen auszuliefern und zu messen."
+
 [days_count]
 one = "{{ .Count }} Tag"
 other = "{{ .Count }} Tage"

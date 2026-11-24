@@ -366,6 +366,22 @@ seo_desc_yt_artists = "{{ .Name }} en tête avec {{ .Views }} vues YouTube. Clas
 yt_daily_desc = "Les clips qui gagnent le plus de vues en ce moment."
 yt_artists_desc = "Artistes classés par vues totales de leurs clips."
 
+# consent banner
+consent_title = "Vos choix de confidentialité"
+consent_text = "Nous utilisons des cookies et technologies similaires pour la mesure d’audience et, uniquement avec votre accord, pour la publicité de régies tierces (Adsterra). Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies »."
+consent_accept = "Tout accepter"
+consent_reject = "Tout refuser"
+consent_manage = "Gérer les préférences"
+consent_save = "Enregistrer mes choix"
+consent_settings = "Paramètres des cookies"
+consent_dialog_text = "Choisissez les technologies facultatives autorisées. Le stockage nécessaire (thème, langue et ce choix) est toujours actif et reste dans votre navigateur."
+consent_necessary = "Nécessaires"
+consent_necessary_desc = "Thème, langue et choix de confidentialité. Toujours actifs."
+consent_analytics = "Mesure d’audience"
+consent_analytics_desc = "Google Analytics (via Google Tag Manager) mesure les pages consultées."
+consent_ads = "Publicité"
+consent_ads_desc = "Charge des publicités d’Adsterra, qui peut déposer des cookies et traiter votre adresse IP et des données de l’appareil pour afficher et mesurer les annonces."
+
 [days_count]
 one = "{{ .Count }} jour"
 other = "{{ .Count }} jours"
