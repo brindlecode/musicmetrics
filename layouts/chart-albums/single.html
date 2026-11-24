@@ -8,6 +8,7 @@
       <h1>{{ i18n "seo_title_albums" }}</h1>
       <p class="page-head__lede">{{ i18n "albums_desc" }}</p>
     </header>
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "top") }}
     <div class="toolbar" data-filter-for="album-list"><input class="input grow" type="search" placeholder="{{ i18n "filter_chart" }}" aria-label="{{ i18n "filter_chart" }}"></div>
     <div class="table-wrap">
       <table class="table">

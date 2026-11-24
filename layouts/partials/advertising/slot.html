@@ -1,0 +1,24 @@
+{{- /* One advertising slot placeholder. No vendor code is rendered here:
+     assets/js/advertising.js decides at run time (consent, real width, page
+     limit) whether to fill it and with which unit.
+     Params: page, slot (name in params.advertising.pages.<type>), tag ("div"|"li"). */ -}}
+{{- $st := partialCached "advertising/state.html" "state" -}}
+{{- if and (or $st.adsterraLive $st.adsterraPreview) $st.units -}}
+  {{- $pt := partial "advertising/eligibility.html" .page -}}
+  {{- with and $pt (index site.Params.advertising.pages $pt) -}}
+    {{- with index . $.slot -}}
+      {{- /* Hugo lower-cases config keys, so unit names are compared in lower case. */ -}}
+      {{- $d := slice }}{{ range .desktop }}{{ if index $st.units (lower .) }}{{ $d = $d | append (lower .) }}{{ end }}{{ end -}}
+      {{- $m := slice }}{{ range .mobile }}{{ if index $st.units (lower .) }}{{ $m = $m | append (lower .) }}{{ end }}{{ end -}}
+      {{- if or $d $m -}}
+        {{- $tag := $.tag | default "div" -}}
+        {{- $cls := "adslot" }}{{ with $d }}{{ $cls = printf "%s adslot--d adslot--d-%s" $cls (index . 0) }}{{ end }}{{ with $m }}{{ $cls = printf "%s adslot--m adslot--m-%s" $cls (index . 0) }}{{ end -}}
+{{- if eq $tag "li" -}}
+<li class="{{ $cls }} row-ad" data-adslot="{{ $.slot }}" data-d="{{ delimit $d " " }}" data-m="{{ delimit $m " " }}"><div class="adslot__box"><span class="adslot__label">{{ i18n "advertisement" }}</span><div class="adslot__unit"></div></div></li>
+{{- else -}}
+<div class="{{ $cls }}" data-adslot="{{ $.slot }}" data-d="{{ delimit $d " " }}" data-m="{{ delimit $m " " }}"><div class="adslot__box"><span class="adslot__label">{{ i18n "advertisement" }}</span><div class="adslot__unit"></div></div></div>
+{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

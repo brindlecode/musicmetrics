@@ -1,0 +1,27 @@
+{{- /* Consent banner + preferences dialog (assets/js/consent.js). Hidden until
+     the script finds no stored choice. Accept and Reject are equally prominent. */ -}}
+<div class="consent" id="mm-consent" role="region" aria-labelledby="mm-consent-title" hidden>
+  <div class="consent__body">
+    <p class="consent__title" id="mm-consent-title">{{ i18n "consent_title" }}</p>
+    <p class="consent__text">{{ i18n "consent_text" }} <a href="{{ "/privacy/#cookies" | relLangURL }}">{{ i18n "privacy_policy" }}</a></p>
+  </div>
+  <div class="consent__actions">
+    <button class="btn btn--ghost btn--sm" type="button" data-consent="manage">{{ i18n "consent_manage" }}</button>
+    <button class="btn btn--sm" type="button" data-consent="reject">{{ i18n "consent_reject" }}</button>
+    <button class="btn btn--sm" type="button" data-consent="accept">{{ i18n "consent_accept" }}</button>
+  </div>
+</div>
+<dialog id="consent-dialog" class="consent-dialog" aria-labelledby="consent-dialog-title">
+  <form method="dialog">
+    <h2 id="consent-dialog-title">{{ i18n "consent_settings" }}</h2>
+    <p class="muted small">{{ i18n "consent_dialog_text" }}</p>
+    <label class="consent-opt"><input type="checkbox" checked disabled> <span><b>{{ i18n "consent_necessary" }}</b><small>{{ i18n "consent_necessary_desc" }}</small></span></label>
+    <label class="consent-opt"><input type="checkbox" name="analytics"> <span><b>{{ i18n "consent_analytics" }}</b><small>{{ i18n "consent_analytics_desc" }}</small></span></label>
+    <label class="consent-opt"><input type="checkbox" name="ads"> <span><b>{{ i18n "consent_ads" }}</b><small>{{ i18n "consent_ads_desc" }}</small></span></label>
+    <div class="consent__actions">
+      <button class="btn btn--sm" type="button" data-consent="reject">{{ i18n "consent_reject" }}</button>
+      <button class="btn btn--ghost btn--sm" type="button" data-consent="save">{{ i18n "consent_save" }}</button>
+      <button class="btn btn--sm" type="button" data-consent="accept">{{ i18n "consent_accept" }}</button>
+    </div>
+  </form>
+</dialog>

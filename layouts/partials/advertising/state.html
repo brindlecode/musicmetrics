@@ -1,0 +1,27 @@
+{{- /* Build-wide advertising state (same for every page). Call with partialCached. */ -}}
+{{- $a := site.Params.advertising | default dict -}}
+{{- $envOK := in ($a.environments | default (slice "production")) hugo.Environment -}}
+{{- $on := and $a.enabled $envOK -}}
+{{- $p := $a.provider | default "none" -}}
+{{- $as := $a.adsterra | default dict -}}
+{{- $ad := $a.adsense | default dict -}}
+{{- $adsterraLive := and $on (eq $p "adsterra") $as.enabled -}}
+{{- $adsterraPreview := and $on (eq $p "adsterra") (not $as.enabled) $as.ownerPreview -}}
+{{- $adsenseLive := and $on (eq $p "adsense") $ad.enabled -}}
+{{- /* Enabled units, in a fixed order; the 160x600 unit stays off by config. */ -}}
+{{- $units := dict -}}
+{{- if or $adsterraLive $adsterraPreview -}}
+  {{- range $name, $u := $as.units -}}
+    {{- if $u.enabled -}}
+      {{- $units = merge $units (dict $name (dict "id" (string $u.id) "type" $u.type "key" $u.key "src" $u.src "w" (int $u.width) "h" (int $u.height))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Guard: no page type may list more slots per device than maxAdsPerPage. */ -}}
+{{- $max := int ($a.maxAdsPerPage | default 2) -}}
+{{- range $pt, $slots := $a.pages -}}
+  {{- $d := 0 }}{{ $m := 0 -}}
+  {{- range $sn, $s := $slots }}{{ if $s.desktop }}{{ $d = add $d 1 }}{{ end }}{{ if $s.mobile }}{{ $m = add $m 1 }}{{ end }}{{ end -}}
+  {{- if or (gt $d $max) (gt $m $max) }}{{ errorf "advertising: page type %q lists more than %d slots per device" $pt $max }}{{ end -}}
+{{- end -}}
+{{- return dict "on" $on "provider" $p "adsterraLive" $adsterraLive "adsterraPreview" $adsterraPreview "adsenseLive" $adsenseLive "units" $units "max" $max -}}

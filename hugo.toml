@@ -208,8 +208,10 @@ summaryLength = 30
     clarity = ""      # Microsoft Clarity project id
     cloudflare = ""   # Cloudflare Web Analytics token
 
-  # Google AdSense. Set client to "ca-pub-XXXXXXXXXXXXXXXX" once approved.
-  # With only the client set, Auto ads are used; add slot ids for manual units.
+  # Google AdSense publisher id. It always feeds /ads.txt and the
+  # google-adsense-account verification meta tag. The AdSense ad script itself
+  # only loads when [params.advertising.adsense] enabled = true (see below).
+  # Slot ids are only used by layouts/partials/ad.html (manual AdSense units).
   [params.ads]
     adsenseClient = "ca-pub-9110547384071189"
     slotInline = ""
@@ -221,3 +223,156 @@ summaryLength = 30
     appleToken = ""       # Apple Services Performance Partners "at" token
     amazonTag = ""        # Amazon Associates tag, e.g. "musicmetrics-20"
     ticketsUrl = ""       # Ticket affiliate deep link; "{q}" is replaced by the artist name
+
+  # -------------------------------------------------------- advertising --
+  # Central advertising switchboard. Read ADVERTISING_CONFIGURATION.md first.
+  # Templates never contain vendor code: they render empty slot placeholders
+  # (layouts/partials/advertising/slot.html) and assets/js/advertising.js fills
+  # at most maxAdsPerPage of them, only after the visitor accepted advertising
+  # cookies in the consent banner, only on musicmetrics.net, only on eligible
+  # pages (layouts/partials/advertising/eligibility.html).
+  [params.advertising]
+    # Master switch / emergency shutdown: false removes every ad slot and
+    # every advertising script from the next build (AdSense and Adsterra).
+    enabled = true
+    # The one provider allowed to fill slots: "adsterra", "adsense" or "none".
+    provider = "adsterra"
+    maxAdsPerPage = 2
+    # Ads only ever load after an explicit "Accept" in the consent banner.
+    respectConsent = true
+    # Never enable: no adblock detection, no adult ads (also OFF in the dashboard).
+    antiAdblock = false
+    allowAdultAds = false
+    # Viewports at least this wide use the "desktop" placement lists.
+    desktopMinWidth = 1024
+    # Real vendor scripts only load on these hosts (never on deploy previews,
+    # branch deploys or localhost).
+    allowedHosts = ["musicmetrics.net", "www.musicmetrics.net"]
+    # Hugo environments that may emit ad code. `hugo server` is "development".
+    environments = ["production"]
+    # Sends ad_slot_* events to the existing Google tag (GA4), which keeps
+    # obeying Consent Mode. Used for fill-rate monitoring.
+    ga4Events = true
+
+  [params.advertising.consent]
+    # "global": everyone must opt in before ads load (default, strictest).
+    # "regional": opt-in only where the browser time zone is in the EEA, UK or
+    # Switzerland (or unknown); elsewhere ads load unless the visitor rejects.
+    mode = "global"
+    # Bump to ask everybody again after a material policy change.
+    version = 1
+
+  [params.advertising.adsterra]
+    # Off until the live verification in ADSTERRA_INTEGRATION.md section 6 has
+    # passed (loader behaviour could not be inspected from the build machine).
+    enabled = false
+    # While enabled = false, a browser that opened any page with
+    # ?mm-ads-preview=on gets real ads (after consent) for owner checks;
+    # ?mm-ads-preview=off ends it. Visitors are unaffected.
+    ownerPreview = true
+    websiteId = "6226100"
+    [params.advertising.adsterra.units.leaderboard]
+      enabled = true
+      id = "32459344"
+      type = "banner"
+      key = "cc214508ace844d55261ffecb39dab1c"
+      src = "https://bauval.org/22/cc214508ace844d55261ffecb39dab1c"
+      width = 728
+      height = 90
+    [params.advertising.adsterra.units.mobileBanner]
+      enabled = true
+      id = "32459341"
+      type = "banner"
+      key = "29f652a74a0dcb4863974b3a3295c845"
+      src = "https://bauval.org/22/29f652a74a0dcb4863974b3a3295c845"
+      width = 320
+      height = 50
+    [params.advertising.adsterra.units.mediumRectangle]
+      enabled = true
+      id = "32459342"
+      type = "banner"
+      key = "3d5a3cce6a4902147f0630529efadbc7"
+      src = "https://bauval.org/22/3d5a3cce6a4902147f0630529efadbc7"
+      width = 300
+      height = 250
+    # Kept disabled: the only sidebar (.aside) is sticky, and sticky ads are
+    # not allowed. Needs a non-sticky placement before it can be enabled.
+    [params.advertising.adsterra.units.wideSkyscraper]
+      enabled = false
+      id = "32459343"
+      type = "banner"
+      key = "899922d170840173a62ac9d2bd1077eb"
+      src = "https://bauval.org/22/899922d170840173a62ac9d2bd1077eb"
+      width = 160
+      height = 600
+    # Native Banner, layout 4:1, font size and colour "Inherit" (dashboard).
+    [params.advertising.adsterra.units.nativeBanner]
+      enabled = true
+      id = "32459340"
+      type = "native"
+      key = "c7dd716ce6f6c63289752773346124cb"
+      src = "https://bauval.org/21/c7dd716ce6f6c63289752773346124cb"
+      width = 300
+      height = 220
+
+  # Google AdSense stays verified (ads.txt + meta tag) but sends no ad
+  # requests while the site is not approved. Turn on only after approval and
+  # after setting provider = "adsense" (a Google-certified CMP is required in
+  # the EEA/UK/CH before that).
+  [params.advertising.adsense]
+    enabled = false
+    publisherId = "ca-pub-9110547384071189"
+
+  # Placeholder for direct sponsorships; nothing renders yet.
+  [params.advertising.sponsorship]
+    enabled = false
+
+  # Extra ads.txt lines. Add ONLY lines copied from the Adsterra dashboard or
+  # given by Adsterra support in writing. Adsterra's help centre says it does
+  # not require ads.txt, so this is empty.
+  [params.advertising.adsTxt]
+    extra = []
+
+  # Placement inventory per page type (from eligibility.html). Each slot lists
+  # the units to try, in order, for desktop and for mobile/tablet widths; the
+  # first one that fits the slot's real width is used, otherwise the slot is
+  # skipped. A page type may not list more slots per device than maxAdsPerPage.
+  [params.advertising.pages.home.top]
+    desktop = ["leaderboard"]
+    mobile = ["mobileBanner"]
+  [params.advertising.pages.home.mid]
+    desktop = ["nativeBanner"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.global200.top]
+    desktop = ["leaderboard"]
+    mobile = ["mobileBanner"]
+  [params.advertising.pages.global200.list]
+    desktop = ["mediumRectangle"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.country.top]
+    desktop = ["leaderboard"]
+    mobile = ["mobileBanner"]
+  [params.advertising.pages.country.mid]
+    desktop = ["nativeBanner"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.platform.top]
+    desktop = ["leaderboard"]
+    mobile = ["mobileBanner"]
+  [params.advertising.pages.platform.list]
+    desktop = ["mediumRectangle"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.artist.mid]
+    desktop = ["mediumRectangle"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.artist.end]
+    desktop = ["nativeBanner"]
+    mobile = []
+  [params.advertising.pages.song.mid]
+    desktop = ["mediumRectangle"]
+    mobile = ["mediumRectangle"]
+  [params.advertising.pages.research.top]
+    desktop = ["leaderboard"]
+    mobile = ["mobileBanner"]
+  [params.advertising.pages.research.mid]
+    desktop = ["nativeBanner"]
+    mobile = ["mediumRectangle"]

@@ -22,7 +22,7 @@
 {{- end }}
 <script>(function(){try{var t=localStorage.getItem('mm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 <link rel="preload" href="/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
-{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+{{- $css := slice (resources.Get "css/main.css") (resources.Get "css/advertising.css") | resources.Concat "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <meta name="theme-color" content="#f4f2ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f0f0d" media="(prefers-color-scheme: dark)">
@@ -48,11 +48,15 @@
 {{- with site.Params.verify.google }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.bing }}<meta name="msvalidate.01" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.yandex }}<meta name="yandex-verification" content="{{ . }}">{{ end }}
+{{- /* AdSense ownership verification without loading any ad code. */ -}}
+{{- with site.Params.ads.adsenseClient }}<meta name="google-adsense-account" content="{{ . }}">{{ end }}
 {{- with site.Params.verify.mitgo }}<meta name="mitgo-verification" content="{{ . }}">{{ end }}
 <link rel="alternate" type="application/rss+xml" title="MusicMetrics Weekly" href="{{ "/weekly/index.xml" | relLangURL }}">
 {{- partial "schema/base.html" . }}
 {{- partial "schema/page.html" (dict "page" . "seo" $seo) }}
+{{- partial "consent/head.html" . }}
 {{- partial "tracking-head.html" . }}
+{{- partial "advertising/manager.html" . }}
 </head>
 <body>
 <a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
@@ -65,8 +69,9 @@
 {{ partialCached "footer.html" . site.Language.Lang }}
 {{ partialCached "bottom-nav.html" . site.Language.Lang .Section .IsHome }}
 {{ partialCached "dialogs.html" . site.Language.Lang }}
+{{ partialCached "consent/banner.html" . site.Language.Lang }}
 <script>window.MM_I18N={{ dict "copied" (i18n "link_copied") "noResults" (i18n "no_results") "searchHint" (i18n "search_hint") "kinds" (dict "a" (i18n "kind_artist") "s" (i18n "kind_song") "c" (i18n "kind_country") "p" (i18n "kind_chart")) | jsonify | safeJS }};</script>
-{{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+{{- $js := slice (resources.Get "js/main.js") (resources.Get "js/consent.js") | resources.Concat "js/main.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{- if in (slice "chart" "country") .Type }}{{ $dl := resources.Get "js/download.js" | minify | fingerprint }}
 <script src="{{ $dl.RelPermalink }}" integrity="{{ $dl.Data.Integrity }}" defer></script>{{ end }}

@@ -38,6 +38,8 @@
     </nav>
     {{- end }}
 
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "top") }}
+
     <div class="toolbar" data-filter-for="chart-list">
       {{- if not $isGlobal }}
       <label class="sr-only" for="cc-select">{{ i18n "select_country" }}</label>
@@ -52,7 +54,7 @@
       <label class="toggle"><input type="checkbox" data-only="new"> {{ i18n "new_entries_only" }}</label>
     </div>
 
-    {{ partial "chart-list.html" (dict "chart" $c "id" "chart-list" "ads" true) }}
+    {{ partial "chart-list.html" (dict "chart" $c "id" "chart-list" "ads" true "page" .) }}
 
     <p class="note" style="margin-top:12px">{{ i18n (printf "source_%s" $ci.platform) }} {{ i18n "chart_legend" }}</p>
 

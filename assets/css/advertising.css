@@ -1,0 +1,59 @@
+/* ------------------------------------------------------- advertising --- */
+/* Slots are invisible until <html data-ads="1"> (set before first paint when
+   advertising consent is stored, or by advertising.js on consent). Space for
+   the unit is then reserved from the start, sized for the unit that
+   advertising.js will pick (same rules: device width + real slot width), so
+   ads do not shift the layout. Never sticky, never fixed. */
+.adslot { display: none; container: adslot / inline-size; margin: 0; padding: 0; list-style: none; }
+html[data-ads="1"] .adslot { display: block; }
+html[data-ads="1"] .adslot[data-state="skipped"] { display: none; }
+@media (min-width: 1024px) { html[data-ads="1"] .adslot:not(.adslot--d) { display: none; } }
+@media (max-width: 1023.98px) { html[data-ads="1"] .adslot:not(.adslot--m) { display: none; } }
+.adslot__box { margin: 24px auto; text-align: center; max-width: 100%; overflow: hidden; }
+.adslot__label { display: block; font-size: .625rem; line-height: 14px; height: 14px; margin-bottom: 4px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.adslot__unit { margin: 0 auto; display: flex; justify-content: center; align-items: flex-start; }
+.adslot__unit iframe { display: block; max-width: 100%; border: 0; }
+.adslot__unit [id^="container-"] { width: 100%; text-align: left; font: inherit; color: inherit; }
+.chart > li.adslot { border: 0; background: none; }
+
+/* Reserved heights = label (18px) + unit height. */
+@media (min-width: 1024px) {
+  .adslot--d-leaderboard .adslot__box { min-height: 108px; }
+  .adslot--d-leaderboard .adslot__unit { min-height: 90px; }
+  .adslot--d-mediumrectangle .adslot__box { min-height: 268px; }
+  .adslot--d-mediumrectangle .adslot__unit { min-height: 250px; }
+  .adslot--d-nativebanner .adslot__box { min-height: 258px; }
+  .adslot--d-nativebanner .adslot__unit { min-height: 240px; }
+  @container adslot (max-width: 727.98px) { .adslot--d-leaderboard .adslot__box { display: none; } }
+  @container adslot (max-width: 299.98px) { .adslot--d-mediumrectangle .adslot__box, .adslot--d-nativebanner .adslot__box { display: none; } }
+}
+@media (max-width: 1023.98px) {
+  .adslot--m-mobilebanner .adslot__box { min-height: 68px; }
+  .adslot--m-mobilebanner .adslot__unit { min-height: 50px; }
+  .adslot--m-mediumrectangle .adslot__box { min-height: 268px; }
+  .adslot--m-mediumrectangle .adslot__unit { min-height: 250px; }
+  @container adslot (max-width: 319.98px) { .adslot--m-mobilebanner .adslot__box { display: none; } }
+  @container adslot (max-width: 299.98px) { .adslot--m-mediumrectangle .adslot__box { display: none; } }
+}
+@media print { .adslot, .consent { display: none !important; } }
+
+/* ----------------------------------------------------------- consent --- */
+.consent {
+  position: fixed; z-index: 60; left: 12px; right: 12px;
+  bottom: calc(var(--bottom-nav-h) + 12px + env(safe-area-inset-bottom, 0px));
+  max-width: 760px; margin: 0 auto; padding: 14px 16px;
+  background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: var(--radius);
+  box-shadow: var(--shadow); display: grid; gap: 10px;
+}
+.consent[hidden] { display: none; }
+.consent__title { font-weight: 700; margin: 0 0 2px; }
+.consent__text { margin: 0; font-size: .875rem; color: var(--ink-2); }
+.consent__actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+@media (min-width: 760px) { .consent { grid-template-columns: 1fr auto; align-items: center; } }
+.consent-dialog { max-width: 520px; width: calc(100% - 24px); padding: 20px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); color: var(--ink); }
+.consent-dialog::backdrop { background: rgba(10, 10, 9, .55); }
+.consent-dialog h2 { font-size: 1.25rem; margin: 0 0 6px; }
+.consent-opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--rule); }
+.consent-opt input { margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; }
+.consent-opt small { display: block; color: var(--muted); }
+.consent-dialog .consent__actions { margin-top: 12px; }

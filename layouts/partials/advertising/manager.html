@@ -1,0 +1,17 @@
+{{- /* <head> part of the advertising engine. Emits a small JSON config and the
+     loader only on eligible pages; no third-party request is made here.
+     The inline script marks <html data-ads="1"> before first paint when the
+     visitor has already accepted advertising cookies, so reserved slot space
+     is there from the start (no layout shift). */ -}}
+{{- $st := partialCached "advertising/state.html" "state" -}}
+{{- $a := site.Params.advertising -}}
+{{- if and (or $st.adsterraLive $st.adsterraPreview) $st.units -}}
+{{- $pt := partial "advertising/eligibility.html" . -}}
+{{- if $pt -}}
+{{- $cfg := dict "v" 1 "provider" "adsterra" "live" $st.adsterraLive "preview" $st.adsterraPreview "pageType" $pt "max" $st.max "desktopMin" (int ($a.desktopMinWidth | default 1024)) "hosts" $a.allowedHosts "units" $st.units "ga4" $a.ga4Events "consentMode" ($a.consent.mode | default "global") -}}
+<script id="mm-ads-config" type="application/json">{{ $cfg | jsonify | safeJS }}</script>
+<script>(function(){try{var c=JSON.parse(document.getElementById('mm-ads-config').textContent),p=false;try{ {{- if $st.adsterraPreview }}var q=location.search.match(/[?&]mm-ads-preview=(on|off)\b/);if(q){if(q[1]==='on')localStorage.setItem('mm-ads-preview','on');else localStorage.removeItem('mm-ads-preview')}{{ end }}p=localStorage.getItem('mm-ads-preview')==='on'}catch(e){}if((c.live||p)&&c.hosts.indexOf(location.hostname)>-1&&window.MMConsent&&MMConsent.adsAllowed())document.documentElement.setAttribute('data-ads','1')}catch(e){}})();</script>
+{{- $js := resources.Get "js/advertising.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- end -}}
+{{- end -}}

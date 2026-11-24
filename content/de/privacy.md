@@ -3,7 +3,7 @@ title: "Datenschutzerklärung"
 description: "Wie MusicMetrics mit Daten, Cookies, Werbung und Analysen umgeht."
 ---
 
-_Zuletzt aktualisiert: 26. September 2026_
+_Zuletzt aktualisiert: 24. November 2026_
 
 MusicMetrics („wir“) betreibt musicmetrics.net. Diese Erklärung beschreibt, welche Informationen verarbeitet werden, wenn du die Seite nutzt.
 
@@ -13,11 +13,21 @@ Wir verlangen kein Benutzerkonto und erheben keine Namen, E-Mail-Adressen oder a
 
 Unser Hosting-Anbieter (Netlify) verarbeitet technische Daten wie IP-Adresse, Browsertyp und aufgerufene Seiten in Server-Logs, um Sicherheit und Zuverlässigkeit zu gewährleisten.
 
-## Cookies und lokaler Speicher
+## Cookies, lokaler Speicher und deine Einwilligung {#cookies}
 
-- **Einstellungen:** Deine Auswahl für das Farbschema (hell/dunkel) und das Sprachbanner wird im lokalen Speicher deines Browsers abgelegt. Sie verlässt nie dein Gerät.
-- **Analyse:** Sofern aktiviert, nutzen wir datenschutzfreundliche Analysedienste (Google Analytics 4, Microsoft Clarity oder Cloudflare Web Analytics), um zu verstehen, welche Seiten nützlich sind. Im EWR, im Vereinigten Königreich und in der Schweiz laufen sie erst nach Einwilligung.
-- **Werbung:** Wir verwenden Google AdSense, um Anzeigen einzublenden. Google und seine Partner können Cookies verwenden, um Anzeigen auf Grundlage deiner früheren Besuche auf dieser und anderen Websites auszuliefern. Personalisierte Werbung kannst du in den [Google-Anzeigeneinstellungen](https://adssettings.google.com/) oder unter [www.aboutads.info](https://www.aboutads.info/) deaktivieren. Besucher im EWR, im Vereinigten Königreich und in der Schweiz werden über eine von Google zertifizierte Consent-Management-Plattform um ihre Einwilligung gebeten.
+Bei deinem ersten Besuch fragt dich ein Banner nach deiner Auswahl. **Werbung wird nur geladen, wenn du „Alle akzeptieren“ wählst oder in den Cookie-Einstellungen „Werbung“ einschaltest.** Du kannst deine Auswahl jederzeit über **„Cookie-Einstellungen“** unten auf jeder Seite ändern oder widerrufen; widerrufst du die Einwilligung in Werbung, wird die aktuelle Seite ohne Anzeigen neu geladen. Cookies, die Dritte bereits gesetzt haben, bleiben in deinem Browser, bis sie ablaufen oder du sie in den Browsereinstellungen löschst.
+
+- **Notwendig (immer aktiv):** deine Auswahl für Farbschema, Sprachbanner und Datenschutz (gespeichert als „mm-consent“) liegt im lokalen Speicher deines Browsers und verlässt nie dein Gerät.
+- **Statistik:** Google Analytics 4, geladen über den Google Tag Manager, mit dem Google-Einwilligungsmodus (Consent Mode). Im EWR, im Vereinigten Königreich und in der Schweiz werden Statistik-Cookies erst nach deiner Einwilligung verwendet; anderswo sind sie standardmäßig aktiv und lassen sich in den Cookie-Einstellungen abschalten. „Alle ablehnen“ schaltet sie überall ab.
+- **Werbung:** nur mit deiner Einwilligung; siehe den nächsten Abschnitt.
+
+## Werbung
+
+Auf einigen Chart-, Länder-, Künstler-, Song- und Wochenseiten zeigen wir Anzeigen von **Adsterra**, einem Werbenetzwerk eines Drittanbieters. Sie sind als „Anzeige“ gekennzeichnet, von unseren Charts getrennt und beeinflussen niemals Platzierungen. Anzeigen werden erst geladen, nachdem du in Werbung eingewilligt hast. Dann können die Skripte von Adsterra (derzeit von der Domain bauval.org ausgeliefert) und die Werbetreibenden, mit denen Adsterra zusammenarbeitet, Cookies oder ähnliche Technologien verwenden und deine IP-Adresse, Browser- und Geräteinformationen sowie die Adresse der aufgerufenen Seite erhalten, um Anzeigen auszuliefern, ihre Häufigkeit zu begrenzen, sie zu messen und vor Betrug zu schützen. Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG), die du jederzeit mit Wirkung für die Zukunft widerrufen kannst. Adsterra erläutert die Verarbeitung in seiner [Datenschutzerklärung](https://adsterra.com/privacy-policy/).
+
+Wir verwenden keine Pop-ups, Pop-unders, Push-Benachrichtigungen, erzwungenen Weiterleitungen oder Adblock-Erkennung; Werbung für Erwachsene ist in unserem Konto abgeschaltet. Wenn dir eine Anzeige irreführend oder schädlich vorkommt, melde sie uns bitte über die Kontaktseite.
+
+Unser Google-AdSense-Konto (die Publisher-ID steht in unserer ads.txt-Datei) wird nur zur Verifizierung geführt: Derzeit werden keine Google-Anzeigen gezeigt und kein Google-Anzeigencode geladen.
 
 ## Inhalte Dritter
 

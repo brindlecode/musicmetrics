@@ -3,7 +3,7 @@ title: "Política de privacidad"
 description: "Cómo trata MusicMetrics los datos, las cookies, la publicidad y la analítica."
 ---
 
-_Última actualización: 26 de septiembre de 2026_
+_Última actualización: 24 de noviembre de 2026_
 
 MusicMetrics («nosotros») gestiona musicmetrics.net. Esta política explica qué información se trata cuando usas la web.
 
@@ -13,11 +13,21 @@ No te pedimos que crees una cuenta y no recopilamos nombres, direcciones de corr
 
 Nuestro proveedor de alojamiento (Netlify) trata datos técnicos como la dirección IP, el tipo de navegador y las páginas solicitadas en los registros del servidor, por motivos de seguridad y fiabilidad.
 
-## Cookies y almacenamiento local
+## Cookies, almacenamiento local y tu consentimiento {#cookies}
 
-- **Preferencias:** tu tema (claro/oscuro) y tus elecciones en el aviso de idioma se guardan en el almacenamiento local de tu navegador. Nunca salen de tu dispositivo.
-- **Analítica:** si está activada, usamos herramientas de analítica respetuosas con la privacidad (Google Analytics 4, Microsoft Clarity o Cloudflare Web Analytics) para saber qué páginas resultan útiles. En el EEE, el Reino Unido y Suiza solo se ejecutan tras obtener tu consentimiento.
-- **Publicidad:** usamos Google AdSense para mostrar anuncios. Google y sus socios pueden usar cookies para mostrar anuncios basados en tus visitas anteriores a esta y otras webs. Puedes desactivar la publicidad personalizada en la [Configuración de anuncios de Google](https://adssettings.google.com/) o en [www.aboutads.info](https://www.aboutads.info/). A los visitantes del EEE, el Reino Unido y Suiza se les pide su consentimiento mediante una plataforma de gestión del consentimiento certificada por Google.
+En tu primera visita, un aviso te pide que elijas. **La publicidad nunca se carga salvo que elijas «Aceptar todo» o actives «Publicidad»** en la configuración de cookies. Puedes cambiar o retirar tu elección en cualquier momento con **«Configuración de cookies»** al pie de cada página; al retirar el consentimiento publicitario, la página actual se recarga sin anuncios. Las cookies que terceros ya hayan instalado permanecen en tu navegador hasta que caduquen o las borres en la configuración del navegador.
+
+- **Necesarias (siempre activas):** tus opciones de tema, aviso de idioma y privacidad (guardadas como «mm-consent») se guardan en el almacenamiento local de tu navegador y nunca salen de tu dispositivo.
+- **Analítica:** Google Analytics 4, cargado mediante Google Tag Manager, con el modo de consentimiento de Google. En el EEE, el Reino Unido y Suiza, las cookies de analítica solo se usan tras tu consentimiento; en otros lugares están activas por defecto y puedes desactivarlas en la configuración de cookies. «Rechazar todo» las desactiva en todas partes.
+- **Publicidad:** solo con tu consentimiento; consulta la sección siguiente.
+
+## Publicidad
+
+Mostramos anuncios de **Adsterra**, una red publicitaria de terceros, en algunas páginas de listas, países, artistas, canciones y resúmenes semanales. Se identifican como «Publicidad», se mantienen separados de nuestras listas y nunca influyen en las clasificaciones. Los anuncios solo se cargan después de que consientas la publicidad. Cuando se cargan, los scripts de Adsterra (servidos actualmente desde el dominio bauval.org) y los anunciantes con los que trabaja pueden usar cookies o tecnologías similares y recibir tu dirección IP, información del navegador y del dispositivo y la dirección de la página que ves, para mostrar, limitar la frecuencia, medir y proteger los anuncios frente al fraude. Adsterra explica este tratamiento en su [Política de privacidad](https://adsterra.com/privacy-policy/).
+
+No usamos ventanas emergentes, pop-unders, notificaciones push, redirecciones forzadas ni detección de bloqueadores de anuncios, y los anuncios para adultos están desactivados en nuestra cuenta. Si ves un anuncio que parezca engañoso o dañino, avísanos a través de la página de contacto.
+
+Nuestra cuenta de Google AdSense (el ID de editor figura en nuestro archivo ads.txt) se mantiene solo para verificación: actualmente no se muestran anuncios de Google ni se carga código publicitario de Google.
 
 ## Contenido de terceros
 

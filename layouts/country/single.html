@@ -22,6 +22,8 @@
       {{- partialCached "spotify-chip.html" $cc $cc site.Language.Lang }}
     </nav>
 
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "top") }}
+
     <div class="cols-2">
       {{- range $c.charts }}{{ $ch := index site.Data.charts . }}{{ $oi := partialCached "func/chart-info.html" . . }}
       <section class="panel">
@@ -33,6 +35,7 @@
     </div>
 
     {{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}
+    {{ partial "advertising/slot.html" (dict "page" . "slot" "mid") }}
 
     {{- $ta := partialCached "func/country-artists.html" $cc $cc -}}
     {{- with $ta }}

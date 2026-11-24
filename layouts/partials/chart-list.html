@@ -7,7 +7,10 @@
 {{- if .limit }}{{ $items = first .limit $items }}{{ end -}}
 {{- $metric := "" -}}
 {{- if eq $p "youtube" }}{{ $metric = i18n "views" }}{{ else if eq $p "musicmetrics" }}{{ $metric = i18n "points" }}{{ else if eq $p "lastfm" }}{{ $metric = i18n "listeners" }}{{ else if in (slice "apple" "apple-albums") $p }}{{ $metric = i18n "genre" }}{{ else if eq $p "deezer" }}{{ $metric = i18n "album" }}{{ end -}}
-{{- $showAds := and .ads site.Params.ads.adsenseClient site.Params.ads.slotInline -}}
+{{- $st := partialCached "advertising/state.html" "state" -}}
+{{- $showAds := and .ads $st.adsenseLive site.Params.ads.adsenseClient site.Params.ads.slotInline -}}
+{{- $page := .page -}}
+{{- $slotList := and .ads .page (gt (len $items) 15) -}}
 <div class="chart__head" aria-hidden="true">
   <span class="c-rank" style="text-align:center">#</span><span class="c-move hide-m" style="text-align:center">±</span><span class="c-art"></span>
   <span>{{ if $ci.albums }}{{ i18n "album" }}{{ else }}{{ i18n "song" }}{{ end }} / {{ i18n "artist" }}</span>
@@ -44,6 +47,7 @@
     <div class="row__days">{{ $r.days }}</div>
     <div class="row__act">{{ with $r.video_id }}<button class="play" type="button" data-yt="{{ . }}" aria-label="{{ i18n "play_video" }}: {{ $r.title }}">{{ partialCached "icons.html" (dict "n" "play" "s" 14) "play" 14 }}</button>{{ end }}</div>
   </li>
+  {{- if and $slotList (eq (add $i 1) 10) }}{{ partial "advertising/slot.html" (dict "page" $page "slot" "list" "tag" "li") }}{{ end }}
   {{- if and $showAds (in (slice 10 40 80) (add $i 1)) }}
   <li class="row-ad">{{ partial "ad.html" (dict "slot" site.Params.ads.slotInline "kind" "inline") }}</li>
   {{- end }}

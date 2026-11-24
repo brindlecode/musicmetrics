@@ -1,0 +1,11 @@
+{{- /* Consent state, shared by the banner (assets/js/consent.js), Google
+     Consent Mode (tracking-head.html) and the ad loader. Stored only in this
+     browser: localStorage "mm-consent" = {v, ads, analytics, ts}. */ -}}
+{{- $c := site.Params.advertising.consent | default dict -}}
+<script>window.MMConsent=(function(){var V={{ $c.version | default 1 }},M={{ $c.mode | default "global" }},K='mm-consent';
+function get(){try{var c=JSON.parse(localStorage.getItem(K)||'null');return c&&c.v===V?c:null}catch(e){return null}}
+function optIn(){if(M!=='regional')return true;var z='';try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}return !z||/^(Europe|Arctic)\//.test(z)||/^Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe)$/.test(z)||z==='Asia/Nicosia'||z==='Asia/Famagusta'}
+function allowed(k){var c=get();if(c)return c[k]===true;if(k==='ads'&&navigator.globalPrivacyControl)return false;return !optIn()}
+function gtagUpdate(){var c=get();if(!c||typeof window.gtag!=='function')return;var a=c.ads?'granted':'denied';window.gtag('consent','update',{ad_storage:a,ad_user_data:a,ad_personalization:a,analytics_storage:c.analytics?'granted':'denied'})}
+function set(ads,analytics){var c={v:V,ads:!!ads,analytics:!!analytics,ts:new Date().toISOString()};try{localStorage.setItem(K,JSON.stringify(c))}catch(e){}gtagUpdate();try{document.dispatchEvent(new CustomEvent('mm:consent',{detail:c}))}catch(e){}return c}
+return{version:V,mode:M,get:get,set:set,needsOptIn:optIn,adsAllowed:function(){return allowed('ads')},analyticsAllowed:function(){return allowed('analytics')},gtagUpdate:gtagUpdate}})();</script>

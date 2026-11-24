@@ -3,7 +3,7 @@ title: "Política de Privacidade"
 description: "Como o MusicMetrics trata dados, cookies, publicidade e análises."
 ---
 
-_Última atualização: 26 de setembro de 2026_
+_Última atualização: 24 de novembro de 2026_
 
 O MusicMetrics ("nós") opera o musicmetrics.net. Esta política explica quais informações são tratadas quando você usa o site.
 
@@ -13,11 +13,23 @@ Não pedimos que você crie uma conta e não coletamos nomes, endereços de e-ma
 
 Nosso provedor de hospedagem (Netlify) trata dados técnicos, como endereço IP, tipo de navegador e páginas solicitadas, em registros de servidor, para fins de segurança e confiabilidade.
 
-## Cookies e armazenamento local
+## Cookies, armazenamento local e seu consentimento {#cookies}
 
-- **Preferências:** suas escolhas de tema (claro/escuro) e do aviso de idioma ficam salvas no armazenamento local do seu navegador. Elas nunca saem do seu dispositivo.
-- **Análises:** quando ativadas, usamos ferramentas de análise que respeitam a privacidade (Google Analytics 4, Microsoft Clarity ou Cloudflare Web Analytics) para entender quais páginas são úteis. No EEE, no Reino Unido e na Suíça, elas só funcionam após o consentimento.
-- **Publicidade:** usamos o Google AdSense para exibir anúncios. O Google e seus parceiros podem usar cookies para exibir anúncios com base nas suas visitas anteriores a este e a outros sites. Você pode desativar a publicidade personalizada nas [Configurações de anúncios do Google](https://adssettings.google.com/) ou em [www.aboutads.info](https://www.aboutads.info/). Visitantes do EEE, do Reino Unido e da Suíça recebem um pedido de consentimento por meio de uma plataforma de gestão de consentimento certificada pelo Google.
+Na sua primeira visita, um aviso pede a sua escolha. **A publicidade nunca é carregada, a menos que você escolha "Aceitar tudo" ou ative "Publicidade"** nas configurações de cookies. Você pode alterar ou retirar sua escolha a qualquer momento em **"Configurações de cookies"**, no rodapé de cada página; ao retirar o consentimento para publicidade, a página atual é recarregada sem anúncios. Cookies já definidos por terceiros permanecem no navegador até expirarem ou até você apagá-los nas configurações do navegador.
+
+- **Necessários (sempre ativos):** suas escolhas de tema, aviso de idioma e privacidade (guardadas como "mm-consent") ficam no armazenamento local do navegador e nunca saem do seu dispositivo.
+- **Análise:** Google Analytics 4, carregado pelo Google Tag Manager, com o Modo de consentimento do Google. No EEE, no Reino Unido e na Suíça, os cookies de análise só são usados após o seu consentimento; em outros lugares ficam ativos por padrão e você pode desativá-los nas configurações de cookies. "Rejeitar tudo" os desativa em todos os lugares.
+- **Publicidade:** somente com seu consentimento; veja a próxima seção.
+
+## Publicidade
+
+Exibimos anúncios da **Adsterra**, uma rede de publicidade de terceiros, em algumas páginas de paradas, países, artistas, músicas e resumos semanais. Eles são identificados como "Publicidade", ficam separados das nossas paradas e nunca influenciam as classificações. Os anúncios só são carregados depois que você consente com a publicidade. Quando carregados, os scripts da Adsterra (atualmente servidos a partir do domínio bauval.org) e os anunciantes com quem ela trabalha podem usar cookies ou tecnologias semelhantes e receber seu endereço IP, informações do navegador e do dispositivo e o endereço da página que você está vendo, para exibir, limitar a frequência, medir e proteger os anúncios contra fraudes. A Adsterra explica esse tratamento na sua [Política de Privacidade](https://adsterra.com/privacy-policy/).
+
+Não usamos pop-ups, pop-unders, notificações push, redirecionamentos forçados nem detecção de bloqueadores de anúncios, e os anúncios adultos estão desativados na nossa conta. Se você vir um anúncio que pareça enganoso ou prejudicial, avise-nos pela página de contato.
+
+Nos termos da LGPD, o uso de cookies de publicidade se baseia no seu consentimento, que pode ser revogado a qualquer momento em "Configurações de cookies".
+
+Nossa conta do Google AdSense (o ID de editor consta do nosso arquivo ads.txt) é mantida apenas para verificação: no momento não são exibidos anúncios do Google nem é carregado código de anúncios do Google.
 
 ## Conteúdo de terceiros
 
