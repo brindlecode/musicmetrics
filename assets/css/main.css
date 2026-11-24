@@ -158,7 +158,14 @@ p { margin: 0 0 1em; }
 .primary-nav a[aria-current="page"], .primary-nav a.is-active { color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); border-radius: 0; }
 @media (min-width: 860px) { .primary-nav { display: block; } }
 
-.header-tools { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+.header-tools { display: flex; align-items: center; gap: 4px; margin-left: auto; min-width: 0; }
+/* Narrowest phones (320px): tighten the header so logo + tools fit without scrolling.
+   The language button keeps its code ("EN") and caret; only the globe icon goes. */
+@media (max-width: 359px) {
+  .site-header__inner { gap: 8px; }
+  .header-tools { gap: 0; }
+  .lang-menu__btn > svg { display: none; }
+}
 .icon-btn {
   display: inline-grid; place-items: center; width: 40px; height: 40px; border: 0; background: none; cursor: pointer; border-radius: var(--radius); color: var(--ink);
 }
@@ -251,11 +258,12 @@ p { margin: 0 0 1em; }
 .section { margin-top: 48px; }
 .section:first-child { margin-top: 0; }
 .section-head {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px;
   border-top: 2px solid var(--rule-strong); padding-top: 10px; margin-bottom: 14px;
 }
 .section-head h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
 .section-head a { font-size: .875rem; font-weight: 600; white-space: nowrap; }
+@media (max-width: 599px) { .section-head a { white-space: normal; min-width: 0; } }
 .grid { display: grid; gap: 16px; }
 .grid--2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); }
 .grid--3 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
@@ -270,7 +278,7 @@ p { margin: 0 0 1em; }
 .page-head { padding-bottom: 20px; border-bottom: 1px solid var(--rule); margin-bottom: 20px; }
 .page-head h1 { font-size: clamp(2.1rem, 5.4vw, 4rem); margin: 6px 0 10px; }
 .page-head__lede { font-size: 1.0625rem; color: var(--ink-2); max-width: 70ch; margin: 0; }
-.page-head__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 14px; font-size: .8125rem; color: var(--muted); }
+.page-head__meta { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 14px; font-size: .8125rem; color: var(--muted); }
 .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--up); box-shadow: 0 0 0 3px color-mix(in srgb, var(--up) 25%, transparent); margin-right: 6px; vertical-align: 1px; }
 
 /* Answer box: the one-sentence answer search engines & LLMs quote. */
@@ -632,6 +640,9 @@ a.pill:hover { border-color: var(--ink); color: var(--ink); }
 
 /* ------------------------------------------------- download menu --- */
 .dl-menu { position: relative; display: inline-block; }
+/* On phones the menu button can sit anywhere in the wrapping meta row, so anchor the
+   popover to the row's left edge instead of the button to keep it inside the viewport. */
+@media (max-width: 599px) { .page-head__meta .dl-menu { position: static; } }
 .dl-menu > summary { list-style: none; cursor: pointer; }
 .dl-menu > summary::-webkit-details-marker { display: none; }
 .dl-menu__pop {
