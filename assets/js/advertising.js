@@ -24,6 +24,9 @@
   try { cfg = JSON.parse(el.textContent); } catch (e) { return; }
   var root = document.documentElement;
   var started = false, used = 0, busy = false, queue = [], nativeDone = false;
+  // Set when a banner script timed out: it may still run later and read
+  // window.atOptions, so no other banner may touch atOptions on this page.
+  var bannersHalted = false;
 
   function previewOn() { try { return localStorage.getItem('mm-ads-preview') === 'on'; } catch (e) { return false; } }
   function permitted() {
@@ -54,10 +57,21 @@
     t = setTimeout(function () { end(!!box.querySelector('iframe,img,a')); }, ms);
   }
 
+  function isDesktop() { return window.matchMedia('(min-width: ' + cfg.desktopMin + 'px)').matches; }
+  // Does `name` still belong to this slot's list for the current viewport, and fit its current width?
+  function stillFits(slot, name) {
+    var list = (slot.getAttribute(isDesktop() ? 'data-d' : 'data-m') || '').split(' ');
+    var u = cfg.units[name];
+    return !!u && list.indexOf(name) > -1 && slot.offsetParent !== null && u.w <= slot.clientWidth;
+  }
+
   function next() {
     if (busy || !queue.length) return;
     var job = queue.shift(), slot = job.slot, u = cfg.units[job.name];
     if (slot.getAttribute('data-started')) return next();
+    // The viewport may have changed (rotation, resize) since the unit was picked.
+    if (!stillFits(slot, job.name)) { track(slot, 'skipped'); return next(); }
+    if (u.type !== 'native' && bannersHalted) { track(slot, 'halted'); return next(); } // keeps its reserved space: no layout shift
     slot.setAttribute('data-started', '1');
     var box = slot.querySelector('.adslot__unit');
     var s = document.createElement('script');
@@ -81,6 +95,9 @@
     var released = false;
     function release(state) {
       if (released) return; released = true;
+      // A script that is still pending can execute later against window.atOptions:
+      // stop starting banners on this page (natives do not use atOptions).
+      if (state === 'timeout') bannersHalted = true;
       track(slot, state);
       busy = false;
       next();
@@ -99,7 +116,7 @@
     if (started || !permitted()) return;
     started = true;
     root.setAttribute('data-ads', '1');
-    cfg._desktop = window.matchMedia('(min-width: ' + cfg.desktopMin + 'px)').matches;
+    cfg._desktop = isDesktop();
     var slots = Array.prototype.slice.call(document.querySelectorAll('[data-adslot]'));
     var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {

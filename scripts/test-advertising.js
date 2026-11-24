@@ -67,6 +67,7 @@ async function newPage(browser, opts) {
       log.vendor.push(u.pathname);
       const m = u.pathname.match(/^\/(21|22)\/([0-9a-f]{32})$/);
       if (!m) return route.abort();
+      if (opts.delay && opts.delay[m[2]]) await new Promise((r) => setTimeout(r, opts.delay[m[2]]));
       return route.fulfill({ status: 200, contentType: 'application/javascript', body: m[1] === '22' ? BANNER_MOCK : NATIVE_MOCK(m[2]) });
     }
     log.third.push(u.hostname);
@@ -234,6 +235,34 @@ const REJECT = { v: 1, ads: false, analytics: false, ts: '2026-11-24T00:00:00Z' 
     await page.goto(ORIGIN + pages.eligible[0].url); await page.waitForTimeout(400);
     await page.click('#mm-consent [data-consent="reject"]'); await settle(page);
     check('reject via banner: no vendor request', log.vendor.length === 0);
+    await ctx.close();
+  }
+
+  // 6. atOptions isolation when a banner script times out: no other banner may start.
+  {
+    const { ctx, page, log } = await newPage(browser, { width: 1440, live: true, consent: ACCEPT, delay: { [units.leaderboard.key]: 12500 } });
+    await page.goto(ORIGIN + '/charts/global/'); await settle(page); await page.waitForTimeout(10500);
+    const r = await inspect(page);
+    const list = r.slots.find((s) => s.slot === 'list'), top = r.slots.find((s) => s.slot === 'top');
+    check('timeout: slow banner marked timeout', top && top.state === 'timeout', top && top.state);
+    check('timeout: next banner not started (halted, space kept)', list && list.state === 'halted' && list.iframes.length === 0 && list.visible, JSON.stringify(list));
+    check('timeout: only the slow banner was requested', log.vendor.length === 1, log.vendor.join(','));
+    await page.waitForTimeout(3000);
+    const r2 = await inspect(page);
+    const top2 = r2.slots.find((s) => s.slot === 'top');
+    check('timeout: late script still used its own atOptions', top2.iframes.length === 1 && top2.iframes[0] === units.leaderboard.key, JSON.stringify(top2.iframes));
+    await ctx.close();
+  }
+  // 7. Rotation/resize after consent: a lazy slot is re-checked before it loads.
+  {
+    const { ctx, page, log } = await newPage(browser, { width: 1440, live: true, consent: ACCEPT });
+    await page.goto(ORIGIN + '/'); await page.waitForTimeout(800);
+    await page.setViewportSize({ width: 390, height: 900 }); await page.waitForTimeout(300);
+    await settle(page);
+    const r = await inspect(page);
+    const mid = r.slots.find((s) => s.slot === 'mid');
+    check('resize: desktop native not loaded after switching to mobile width', mid && mid.state === 'skipped' && !log.vendor.some((v) => v.startsWith('/21/')), JSON.stringify(mid) + ' ' + log.vendor.join(','));
+    check('resize: no JS errors', !log.errors.length, log.errors.join(' | '));
     await ctx.close();
   }
 

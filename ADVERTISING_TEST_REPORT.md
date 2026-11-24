@@ -31,7 +31,7 @@ Data: `node scripts/build-data.js --offline` from the `store` branch of 24 Novem
 
 Chromium (Playwright), site served as `https://musicmetrics.net/` from the built files, bauval.org replaced by local mocks that read `window.atOptions` like the real snippet, every other third-party host blocked.
 
-**Result on the full production build: 3,898 checks, 0 failed.** (Same result on the reduced build.)
+**Result on the full production build: 3,898 checks, 0 failed.** After the review fixes (timeout isolation, resize re-check) the suite has 3,904 checks: **0 failed** on the reduced build (all charting songs/artists, same templates).
 
 Covered:
 
@@ -41,6 +41,8 @@ Covered:
   - no JS errors; no duplicate DOM ids; GTM tag present; no AdSense ad script; ads/banner add no horizontal overflow.
 - Not live: consent alone → no requests; `?mm-ads-preview=on` → ads; `?mm-ads-preview=off` → stops.
 - 20 ineligible pages (privacy ×2, contact, terms, about, methodology, search, admin, 404, list indexes, platform hub, YouTube chart/most-viewed/daily, Spotify, a non-charting artist and song): no slots, no config, no requests, no JS errors.
+- Slow network: a banner script that answers after the 10 s timeout keeps its own `atOptions`; no other banner starts on that page (`halted`, space kept).
+- Rotation/resize after consent: a desktop-only lazy unit is not loaded once the viewport is mobile width.
 - Real banner flow: first visit shows banner, nothing loads; **Accept** starts ads without reload; footer **Cookie settings** opens the dialog with the stored state; **Reject** there reloads with no new ad request; **Manage** → analytics only saved; banner **Reject** on mobile → no request.
 
 At 320 px no unit fits the 288 px column, so no ad loads (by design).
