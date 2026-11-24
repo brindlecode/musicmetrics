@@ -45,7 +45,8 @@ GitHub Actions (daily)                                      Netlify (static host
 
 ## Monetization & tracking settings (`hugo.toml` → `[params]`)
 
-- `ads.adsenseClient` (+ optional `slotInline`, `slotSidebar`, `slotFooter`) — `/ads.txt` appears automatically and the ad script loads, but only on pages that may carry ads (home, song, artist, country, weekly, album and non-YouTube chart pages; see `layouts/partials/func/ads-on.html`). It never loads on 404, search, admin, legal, list-index, YouTube or Spotify pages.
+- `advertising.*` — all advertising (Adsterra now, AdSense later): master switch, provider, units, placements, consent. See **ADVERTISING_CONFIGURATION.md** (switches), **ADSTERRA_INTEGRATION.md** (how it works, owner checklist), **ADVERTISING_ROLLBACK.md** (emergency stop). Ads only load after the visitor accepts advertising cookies in the consent banner, only on eligible pages (`layouts/partials/advertising/eligibility.html`), max 2 per page. Tests: `node scripts/test-advertising.js public` (Playwright, mocked ad scripts).
+- `ads.adsenseClient` — AdSense publisher id: feeds `/ads.txt` and the `google-adsense-account` verification meta tag. The AdSense ad script only loads when `advertising.adsense.enabled = true` and `advertising.provider = "adsense"` (off while the site is not approved).
 - `affiliate.appleToken`, `affiliate.amazonTag`, `affiliate.ticketsUrl` — added to every Listen/Buy button.
 - `analytics.googleTag` (Google tag from the GA4 data stream; replaces `analytics.ga4`), `analytics.ga4`, `analytics.clarity`, `analytics.cloudflare`; `verify.google`, `verify.bing`, `verify.yandex`.
 
